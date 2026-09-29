@@ -337,7 +337,7 @@ public class MainActivity extends Activity {
     private void addCard(Wallpapers.Collection col) {
         GlassCard card = new GlassCard(this);
         int n = col.items.size();
-        card.bind(col.name, n + (n == 1 ? " wallpaper" : " wallpapers"), col.source);
+        card.bind(col.name, n + (n == 1 ? " wallpaper" : " wallpapers") + " · " + col.source, cardIcon(col.name));
         card.setOnClickListener(v -> startActivity(PreviewActivity.intent(this, col, 0)));
         LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(-1, -2);
         int m = Ui.dp(this, 16);
@@ -361,6 +361,19 @@ public class MainActivity extends Activity {
                 Log.w("TapOff", "no cover for " + col.name, e);
             }
         });
+    }
+
+    private static int cardIcon(String name) {
+        switch (name) {
+            case "Pixel": return R.drawable.ic_card_pixel;
+            case "Cutout": return R.drawable.ic_card_cutout;
+            case "Today": return R.drawable.ic_card_today;
+            case "Abstract": return R.drawable.ic_card_abstract;
+            case "Minimal": return R.drawable.ic_card_minimal;
+            case "Dreamscape": return R.drawable.ic_card_dream;
+            case "Space": return R.drawable.ic_card_space;
+            default: return R.drawable.ic_grid;
+        }
     }
 
     // Cards that scroll up stack into a deck at the top: each older one sits a little higher, smaller and

@@ -23,10 +23,10 @@ import java.util.Random;
 final class CutoutArt {
     static final String SCHEME = "cutout:";
     private static final String[] NAMES = {"Gargantua", "Galaxy", "Sunflower", "Vinyl", "Hole in one", "Donut",
-        "Iris", "Keyhole", "Bullseye", "Lollipop", "Neon", "Pixel pulse"};
+        "Iris", "Keyhole", "Bullseye", "Lollipop", "Neon", "Pixel pulse", "Tap tap"};
 
     // The order they're shown in; the first is the card's cover.
-    private static final int[] ORDER = {2, 1, 5, 3, 7, 10, 6, 0, 9, 8, 4, 11};
+    private static final int[] ORDER = {2, 12, 1, 5, 3, 7, 10, 6, 0, 9, 8, 4, 11};
 
     static Wallpapers.Collection collection() {
         List<Wallpapers.Item> items = new ArrayList<>();
@@ -63,6 +63,7 @@ final class CutoutArt {
             case 8: bullseye(cv, w, h, cx, cy, r); break;
             case 9: lollipop(cv, w, h, cx, cy, r); break;
             case 10: neon(cv, w, h, cx, cy, r); break;
+            case 12: tapTap(c, cv, w, h, cx, cy, r); break;
             default: pixelPulse(cv, w, h, cx, cy, r); break;
         }
         cv.drawCircle(cx, cy, r * 1.03f, fill(0xFF000000)); // the camera itself
@@ -533,6 +534,29 @@ final class CutoutArt {
         cv.drawArc(box, 20, 140, false, stroke(alpha(40, rgb), k * 34));
         cv.drawArc(box, 20, 140, false, stroke(alpha(110, rgb), k * 14));
         cv.drawArc(box, 20, 140, false, stroke(alpha(255, rgb | 0x404040), k * 5));
+    }
+
+    // The double-tap tile's art as a wallpaper: an LED grid lit by ripples from the camera, and the pixel hand
+    // tapping it.
+    private static void tapTap(Context c, Canvas cv, int w, int h, float cx, float cy, float r) {
+        float k = w / 1080f, step = k * 34, dot = k * 10, reach = h * 0.55f;
+        background(cv, w, h, 0xFF24242C, 0xFF0B0B0E);
+        Paint p = fill(0);
+        for (float y = step / 2; y < h; y += step)
+            for (float x = step / 2; x < w; x += step) {
+                float lit = Math.max(0, 1 - (float) Math.hypot(x - cx, y - cy) / reach);
+                p.setColor(alpha((int) (16 + 110 * lit * lit), 0xFFFFFF));
+                cv.drawRect(x - dot / 2, y - dot / 2, x + dot / 2, y + dot / 2, p);
+            }
+        for (int i = 1; i <= 4; i++)
+            cv.drawCircle(cx, cy, r * 1.4f + k * 70 * i, stroke(alpha(120 - i * 25, 0xFFFFFF), k * 3));
+        android.graphics.drawable.Drawable hand = c.getDrawable(R.drawable.ic_tap).mutate();
+        hand.setTint(0xFFFFFFFF);
+        hand.setAlpha(110);
+        // ic_tap's fingertip is at (0.41, 0.15) of its box; put it just under the camera.
+        int size = Math.round(w * 0.62f), left = Math.round(cx - size * 0.41f), top = Math.round(cy + r * 1.2f - size * 0.15f);
+        hand.setBounds(left, top, left + size, top + size);
+        hand.draw(cv);
     }
 
     // TapOff's own look: a dark LED wall with rings of light rippling out from the camera, as if just tapped.

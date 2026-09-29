@@ -14,7 +14,7 @@ through a case, or just too far away. Plus a wallpaper browser with wallpapers d
   TapOff's is off all the time and switches on for about a second only while it turns the screen off.
 - **Fingerprint unlock still works** afterwards. The screen fades to black instead of flashing the lock screen.
 - **Wallpapers:** Pixel's built-in ones, today's Bing photo, hand-checked art from Wallhaven, your own photo,
-  and **Cutout**: 12 designs drawn live around your phone's camera hole (a black hole, a galaxy, a sunflower,
+  and **Cutout**: 13 designs drawn live around your phone's camera hole (a black hole, a galaxy, a sunflower,
   a record, a keyhole...). Whatever you pick goes on the home and lock screen.
 - **Quick Settings tiles** for Screen off and Volume.
 - Light, dark or follow the system.
