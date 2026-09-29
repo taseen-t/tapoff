@@ -25,10 +25,12 @@ final class CutoutArt {
     private static final String[] NAMES = {"Gargantua", "Galaxy", "Sunflower", "Vinyl", "Hole in one", "Donut",
         "Iris", "Keyhole", "Bullseye", "Lollipop", "Neon", "Pixel pulse"};
 
+    // The order they're shown in; the first is the card's cover.
+    private static final int[] ORDER = {2, 1, 5, 3, 7, 10, 6, 0, 9, 8, 4, 11};
+
     static Wallpapers.Collection collection() {
         List<Wallpapers.Item> items = new ArrayList<>();
-        for (int i = 0; i < NAMES.length; i++)
-            items.add(new Wallpapers.Item(NAMES[i], SCHEME + i, null, "Drawn around your camera", 0));
+        for (int i : ORDER) items.add(new Wallpapers.Item(NAMES[i], SCHEME + i, null, "Drawn around your camera", 0));
         return new Wallpapers.Collection("Cutout", "TapOff", items);
     }
 

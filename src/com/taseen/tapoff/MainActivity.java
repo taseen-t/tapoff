@@ -100,6 +100,10 @@ public class MainActivity extends Activity {
             return insets;
         });
         setContentView(root);
+        // Dark status and navigation icons on the light theme, light ones on the dark theme.
+        int lightBars = android.view.WindowInsetsController.APPEARANCE_LIGHT_STATUS_BARS
+            | android.view.WindowInsetsController.APPEARANCE_LIGHT_NAVIGATION_BARS;
+        getWindow().getInsetsController().setSystemBarsAppearance(Ui.dark(this) ? 0 : lightBars, lightBars);
         select(0);
 
         bg.execute(() -> Wallpapers.load(this, col -> runOnUiThread(() -> addCard(col))));

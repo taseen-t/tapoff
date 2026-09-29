@@ -102,11 +102,11 @@ public class PreviewActivity extends Activity {
         top = topBar;
         root.addView(topBar, new FrameLayout.LayoutParams(-1, -2, Gravity.TOP));
 
+        // Full-bleed fade from the middle of the photo to the very bottom edge, behind the gesture bar.
         LinearLayout panel = new LinearLayout(this);
         panel.setOrientation(LinearLayout.VERTICAL);
-        panel.setBackground(Ui.glass(this, 28, 0x8C0A0A0B));
-        int pad = Ui.dp(this, 20);
-        panel.setPadding(pad, pad, pad, pad);
+        panel.setBackground(new android.graphics.drawable.GradientDrawable(
+            android.graphics.drawable.GradientDrawable.Orientation.BOTTOM_TOP, new int[] {0xE6000000, 0x99000000, 0x00000000}));
         title = Ui.text(this, "", 22, 700, 0xFFFFFFFF);
         credit = Ui.text(this, "", 12.5f, 400, 0xB3FFFFFF);
         credit.setMaxLines(2);
@@ -133,7 +133,7 @@ public class PreviewActivity extends Activity {
             Insets bars = insets.getInsets(WindowInsets.Type.systemBars());
             int m = Ui.dp(this, 16);
             ((FrameLayout.LayoutParams) topBar.getLayoutParams()).setMargins(m, bars.top + Ui.dp(this, 8), m, 0);
-            ((FrameLayout.LayoutParams) panel.getLayoutParams()).setMargins(m, 0, m, bars.bottom + m);
+            panel.setPadding(Ui.dp(this, 20), Ui.dp(this, 72), Ui.dp(this, 20), bars.bottom + Ui.dp(this, 20));
             topBar.requestLayout();
             return insets;
         });
