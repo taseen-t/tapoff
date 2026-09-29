@@ -48,7 +48,8 @@ nav { display: flex; align-items: center; justify-content: space-between; paddin
 .navlinks { display: flex; align-items: center; gap: 22px; font-size: 15px; }
 .navlinks a { color: var(--muted); text-decoration: none; }
 .navlinks a:hover { color: var(--ink); }
-.navlinks .get { color: var(--on-accent); background: var(--accent); padding: 9px 16px; border-radius: 999px; font-weight: 600; }
+.navlinks a.get, .navlinks a.get:hover { color: var(--on-accent); background: var(--accent); padding: 9px 16px; border-radius: 999px; font-weight: 600; }
+.navlinks a.get:hover { opacity: .88; }
 @media (max-width: 640px) { .navlinks .opt { display: none; } }
 
 /* hero: the icon, tapping */

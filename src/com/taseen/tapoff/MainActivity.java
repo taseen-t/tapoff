@@ -35,6 +35,7 @@ public class MainActivity extends Activity {
     private static final int PICK = 1;
     private static final String BUG_REPORTS = "https://x.com/taseen_tariq_";
     private static final int CARD_GAP_DP = 14;
+    private static final long THEME_FADE_MS = 420;
     // Deck tuning: how far each older card peeks out above the next, and how many stay visible.
     private static final int PEEK_DP = 10, DECK_DEPTH = 3;
     // Appearance choices, stored as the index; following the system is the default.
@@ -44,6 +45,11 @@ public class MainActivity extends Activity {
     private final ExecutorService bg = Executors.newFixedThreadPool(3);
     // ponytail: every card stays alive (no recycling) so the deck can show; fine for the ~8 collections.
     private final List<GlassCard> cards = new ArrayList<>();
+    // Kept across a theme change, so switching light/dark repaints without reloading anything.
+    private final List<Wallpapers.Collection> collections = new ArrayList<>();
+    private final java.util.Map<String, Bitmap> covers = new java.util.HashMap<>();
+    private Bitmap tileBitmap;
+    private final TextView[] segments = new TextView[3];
     private ScrollView feed, settings;
     private LinearLayout feedList;
     private TextView lockStatus;
@@ -61,6 +67,45 @@ public class MainActivity extends Activity {
 
     @Override protected void onCreate(Bundle saved) {
         super.onCreate(saved);
+        buildUi(saved != null ? saved.getInt("tab", 0) : 0);
+        bg.execute(() -> Wallpapers.load(this, col -> runOnUiThread(() -> {
+            collections.add(col);
+            addCard(col);
+        })));
+    }
+
+    @Override protected void onSaveInstanceState(Bundle out) {
+        super.onSaveInstanceState(out);
+        out.putInt("tab", tab);
+    }
+
+    // Light/dark changed (the manifest routes uiMode here instead of restarting the screen): repaint in place,
+    // on the same tab and scroll position, reusing the wallpapers already loaded.
+    @Override public void onConfigurationChanged(android.content.res.Configuration c) {
+        super.onConfigurationChanged(c);
+        int keep = tab, feedY = feed.getScrollY(), settingsY = settings.getScrollY();
+        // Snapshot the old look, repaint underneath it, then fade the snapshot away.
+        FrameLayout content = findViewById(android.R.id.content);
+        Bitmap before = null;
+        if (content.getWidth() > 0 && content.getHeight() > 0) {
+            before = Bitmap.createBitmap(content.getWidth(), content.getHeight(), Bitmap.Config.ARGB_8888);
+            content.draw(new android.graphics.Canvas(before));
+        }
+        buildUi(keep);
+        feed.post(() -> feed.scrollTo(0, feedY));
+        settings.post(() -> settings.scrollTo(0, settingsY));
+        refreshState();
+        if (before != null) {
+            ImageView fade = new ImageView(this);
+            fade.setImageBitmap(before);
+            content.addView(fade, new FrameLayout.LayoutParams(-1, -1));
+            fade.animate().alpha(0f).setStartDelay(60).setDuration(THEME_FADE_MS).withEndAction(() -> content.removeView(fade));
+        }
+    }
+
+    private void buildUi(int showTab) {
+        cards.clear();
+        tab = -1;
         FrameLayout root = new FrameLayout(this);
         root.setBackgroundColor(Ui.bg(this));
 
@@ -104,13 +149,16 @@ public class MainActivity extends Activity {
         int lightBars = android.view.WindowInsetsController.APPEARANCE_LIGHT_STATUS_BARS
             | android.view.WindowInsetsController.APPEARANCE_LIGHT_NAVIGATION_BARS;
         getWindow().getInsetsController().setSystemBarsAppearance(Ui.dark(this) ? 0 : lightBars, lightBars);
-        select(0);
-
-        bg.execute(() -> Wallpapers.load(this, col -> runOnUiThread(() -> addCard(col))));
+        for (Wallpapers.Collection col : collections) addCard(col);
+        select(showTab);
     }
 
     @Override protected void onResume() {
         super.onResume();
+        refreshState();
+    }
+
+    private void refreshState() {
         loadTileImage();
         homeSwitch.setChecked(TapWallpaper.enabled(this));
         lockSwitch.setChecked(LockService.lockScreenOn(this));
@@ -210,11 +258,17 @@ public class MainActivity extends Activity {
 
     // Behind the tile: TapOff's own art, a dark LED grid lit up by tap ripples around a big pixel hand.
     private void loadTileImage() {
-        if (tileImage.getDrawable() != null) return;
+        if (tileBitmap != null) {
+            tileImage.setImageBitmap(tileBitmap);
+            return;
+        }
         int w = getResources().getDisplayMetrics().widthPixels - 2 * Ui.dp(this, 16), h = Ui.dp(this, 200);
         bg.execute(() -> {
             Bitmap b = tileArt(w, h);
-            runOnUiThread(() -> tileImage.setImageBitmap(b));
+            runOnUiThread(() -> {
+                tileBitmap = b;
+                tileImage.setImageBitmap(b);
+            });
         });
     }
 
@@ -288,11 +342,19 @@ public class MainActivity extends Activity {
         lp.setMargins(m, 0, m, Ui.dp(this, CARD_GAP_DP));
         feedList.addView(card, lp);
         cards.add(card);
+        Bitmap cached = covers.get(col.name);
+        if (cached != null) {
+            card.setPhoto(cached);
+            return;
+        }
         int w = Math.max(1, getResources().getDisplayMetrics().widthPixels - 2 * m);
         bg.execute(() -> {
             try {
                 Bitmap b = Wallpapers.decode(this, col.items.get(0), true, w, Math.round(w * 0.62f));
-                runOnUiThread(() -> card.setPhoto(b));
+                runOnUiThread(() -> {
+                    covers.put(col.name, b);
+                    card.setPhoto(b);
+                });
             } catch (Exception e) {
                 Log.w("TapOff", "no cover for " + col.name, e);
             }
@@ -340,17 +402,20 @@ public class MainActivity extends Activity {
         seg.setBackground(Ui.shape(this, 22, Ui.dark(this) ? 0x14FFFFFF : 0x0D000000, 0));
         int sp = Ui.dp(this, 4);
         seg.setPadding(sp, sp, sp, sp);
-        int chosen = getSharedPreferences("tapoff", MODE_PRIVATE).getInt("appearance", 0);
         for (int i = 0; i < APPEARANCE.length; i++) {
-            boolean on = i == chosen;
-            TextView t = Ui.text(this, APPEARANCE[i], 14, on ? 600 : 500, on ? Ui.ink(this) : Ui.muted(this));
+            TextView t = Ui.text(this, APPEARANCE[i], 14, 500, Ui.muted(this));
             t.setGravity(Gravity.CENTER);
             t.setMinHeight(Ui.dp(this, 40));
-            if (on) t.setBackground(Ui.shape(this, 18, Ui.dark(this) ? 0x33FFFFFF : 0xFFFFFFFF, 0));
             int which = i;
-            t.setOnClickListener(v -> { if (which != chosen) setAppearance(which); });
+            // Marks the choice straight away: picking System can leave the colours as they are.
+            t.setOnClickListener(v -> {
+                styleSegments(which);
+                setAppearance(which);
+            });
+            segments[i] = t;
             seg.addView(t, new LinearLayout.LayoutParams(0, -2, 1));
         }
+        styleSegments(getSharedPreferences("tapoff", MODE_PRIVATE).getInt("appearance", 0));
         LinearLayout.LayoutParams segLp = new LinearLayout.LayoutParams(-1, -2);
         segLp.topMargin = Ui.dp(this, 12);
         look.addView(seg, segLp);
@@ -395,6 +460,15 @@ public class MainActivity extends Activity {
         scroll.setVerticalScrollBarEnabled(false);
         scroll.addView(list);
         return scroll;
+    }
+
+    private void styleSegments(int chosen) {
+        for (int i = 0; i < segments.length; i++) {
+            boolean on = i == chosen;
+            segments[i].setTypeface(Ui.font(on ? 600 : 500));
+            segments[i].setTextColor(on ? Ui.ink(this) : Ui.muted(this));
+            segments[i].setBackground(on ? Ui.shape(this, 18, Ui.dark(this) ? 0x33FFFFFF : 0xFFFFFFFF, 0) : null);
+        }
     }
 
     private LinearLayout card(LinearLayout parent) {
