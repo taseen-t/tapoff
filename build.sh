@@ -17,7 +17,7 @@ KS_PASS="${TAPOFF_KEYSTORE_PASS:-android}"
 rm -rf out && mkdir -p out/classes
 "$BT/aapt2" compile --dir res -o out/res.zip
 "$BT/aapt2" link out/res.zip -I "$JAR" --manifest AndroidManifest.xml \
-  --min-sdk-version 33 --target-sdk-version 35 --version-code 4 --version-name 1.2 \
+  --min-sdk-version 33 --target-sdk-version 35 --version-code 5 --version-name 1.3 \
   --java out/gen -o out/unsigned.apk
 javac -source 17 -target 17 -cp "$JAR" -d out/classes $(find src out/gen -name '*.java')
 "$BT/d8" --min-api 33 --lib "$JAR" --output out $(find out/classes -name '*.class')

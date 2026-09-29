@@ -35,7 +35,7 @@ public class MainActivity extends Activity {
     private static final int PICK = 1;
     private static final String BUG_REPORTS = "https://x.com/taseen_tariq_";
     private static final int CARD_GAP_DP = 14;
-    private static final long THEME_FADE_MS = 420;
+    private static final long THEME_FADE_MS = 420, TAB_SLIDE_MS = 300;
     // Deck tuning: how far each older card peeks out above the next, and how many stay visible.
     private static final int PEEK_DP = 10, DECK_DEPTH = 3;
     // Appearance choices, stored as the index; following the system is the default.
@@ -129,6 +129,8 @@ public class MainActivity extends Activity {
         View scrim = new View(this);
         scrim.setBackground(new GradientDrawable(GradientDrawable.Orientation.TOP_BOTTOM,
             new int[] {Ui.bg(this), Ui.bg(this) & 0x00FFFFFF}));
+        scrim.setOutlineProvider(null); // no shadow, just stacked above the sliding pages
+        scrim.setElevation(Ui.dp(this, 14));
         root.addView(scrim, new FrameLayout.LayoutParams(-1, 0, Gravity.TOP));
 
         LinearLayout tabBar = buildTabBar();
@@ -458,8 +460,17 @@ public class MainActivity extends Activity {
         ScrollView scroll = new ScrollView(this);
         scroll.setClipToPadding(false);
         scroll.setVerticalScrollBarEnabled(false);
+        scroll.setBackgroundColor(Ui.bg(this)); // opaque, so it covers Wallpapers as it slides over
+        scroll.setElevation(Ui.dp(this, 12)); // a soft edge shadow while it moves
         scroll.addView(list);
         return scroll;
+    }
+
+    // Hidden and reset, ready for the next slide.
+    private void park(View page) {
+        page.setVisibility(View.GONE);
+        page.setTranslationX(0);
+        page.setAlpha(1f);
     }
 
     private void styleSegments(int chosen) {
@@ -507,7 +518,7 @@ public class MainActivity extends Activity {
     private LinearLayout buildTabBar() {
         LinearLayout bar = new LinearLayout(this);
         bar.setBackground(Ui.shape(this, 32, Ui.dark(this) ? 0xE61A1B1E : 0xF2FFFFFF, Ui.line(this)));
-        bar.setElevation(Ui.dp(this, 6));
+        bar.setElevation(Ui.dp(this, 16)); // above the Settings page as it slides
         int p = Ui.dp(this, 6);
         bar.setPadding(p, p, p, p);
         String[] names = {"Wallpapers", "Settings"};
@@ -526,21 +537,31 @@ public class MainActivity extends Activity {
         return bar;
     }
 
-    // The outgoing page fades down a little while the new one rises into place.
+    // Like swiping between wallpapers: Settings slides in from the right over Wallpapers, which drifts a third as
+    // far to the left and dims; going back runs the same motion in reverse.
     private void select(int which) {
         if (which == tab) return;
-        View in = which == 0 ? feed : settings, out = which == 0 ? settings : feed;
-        float shift = Ui.dp(this, 14);
+        float w = getResources().getDisplayMetrics().widthPixels;
+        for (View v : new View[] {feed, settings}) v.animate().setListener(null).cancel();
         if (tab == -1) {
-            out.setVisibility(View.GONE);
-            in.setVisibility(View.VISIBLE);
+            feed.setVisibility(which == 0 ? View.VISIBLE : View.GONE);
+            settings.setVisibility(which == 1 ? View.VISIBLE : View.GONE);
         } else {
-            out.animate().alpha(0f).translationY(shift).setStartDelay(0).setDuration(140)
-                .withEndAction(() -> out.setVisibility(View.GONE));
-            in.setAlpha(0f);
-            in.setTranslationY(shift);
-            in.setVisibility(View.VISIBLE);
-            in.animate().alpha(1f).translationY(0).setStartDelay(60).setDuration(240);
+            android.view.animation.DecelerateInterpolator ease = new android.view.animation.DecelerateInterpolator(1.6f);
+            feed.setVisibility(View.VISIBLE);
+            settings.setVisibility(View.VISIBLE);
+            if (which == 1) {
+                settings.setTranslationX(w);
+                settings.animate().translationX(0).setDuration(TAB_SLIDE_MS).setInterpolator(ease);
+                feed.animate().translationX(-w * 0.3f).alpha(0.6f).setDuration(TAB_SLIDE_MS).setInterpolator(ease)
+                    .withEndAction(() -> park(feed));
+            } else {
+                feed.setTranslationX(-w * 0.3f);
+                feed.setAlpha(0.6f);
+                feed.animate().translationX(0).alpha(1f).setDuration(TAB_SLIDE_MS).setInterpolator(ease);
+                settings.animate().translationX(w).setDuration(TAB_SLIDE_MS).setInterpolator(ease)
+                    .withEndAction(() -> park(settings));
+            }
         }
         tab = which;
         for (int i = 0; i < tabs.length; i++) {
