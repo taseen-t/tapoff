@@ -17,6 +17,9 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
+import android.view.ViewConfiguration;
+import android.view.VelocityTracker;
+import android.view.MotionEvent;
 import android.view.WindowInsets;
 import android.widget.Button;
 import android.widget.FrameLayout;
@@ -106,7 +109,7 @@ public class MainActivity extends Activity {
     private void buildUi(int showTab) {
         cards.clear();
         tab = -1;
-        FrameLayout root = new FrameLayout(this);
+        FrameLayout root = new SwipeRoot(this);
         root.setBackgroundColor(Ui.bg(this));
 
         feed = new ScrollView(this);
@@ -479,6 +482,109 @@ public class MainActivity extends Activity {
         return scroll;
     }
 
+    // Swiping sideways moves between Wallpapers and Settings, following the finger like the wallpaper preview.
+    // It only takes over a clearly sideways drag, so vertical scrolling and taps work as before.
+    private final class SwipeRoot extends FrameLayout {
+        private final int slop = ViewConfiguration.get(getContext()).getScaledTouchSlop();
+        private float downX, downY;
+        private boolean dragging;
+        private VelocityTracker vt;
+
+        SwipeRoot(Context c) { super(c); }
+
+        @Override public boolean onInterceptTouchEvent(MotionEvent e) {
+            switch (e.getActionMasked()) {
+                case MotionEvent.ACTION_DOWN:
+                    downX = e.getX();
+                    downY = e.getY();
+                    dragging = false;
+                    if (vt != null) vt.recycle();
+                    vt = VelocityTracker.obtain();
+                    vt.addMovement(e);
+                    return false;
+                case MotionEvent.ACTION_MOVE:
+                    if (vt == null) return false;
+                    vt.addMovement(e);
+                    float mx = e.getX() - downX, my = e.getY() - downY;
+                    boolean towardsOther = tab == 0 ? mx < 0 : mx > 0;
+                    if (towardsOther && Math.abs(mx) > slop * 2 && Math.abs(mx) > Math.abs(my) * 1.5f) {
+                        dragging = true;
+                        downX = e.getX();
+                        beginPageDrag();
+                        return true;
+                    }
+                    return false;
+                default:
+                    return false;
+            }
+        }
+
+        @Override public boolean onTouchEvent(MotionEvent e) {
+            if (!dragging || vt == null) return false;
+            vt.addMovement(e);
+            switch (e.getActionMasked()) {
+                case MotionEvent.ACTION_MOVE:
+                    dragPages(e.getX() - downX);
+                    return true;
+                case MotionEvent.ACTION_UP:
+                case MotionEvent.ACTION_CANCEL:
+                    vt.computeCurrentVelocity(1000);
+                    releasePages(e.getX() - downX, vt.getXVelocity());
+                    dragging = false;
+                    return true;
+                default:
+                    return true;
+            }
+        }
+    }
+
+    private void beginPageDrag() {
+        float w = getResources().getDisplayMetrics().widthPixels;
+        for (View v : new View[] {feed, settings}) v.animate().setListener(null).cancel();
+        feed.setVisibility(View.VISIBLE);
+        settings.setVisibility(View.VISIBLE);
+        if (tab == 0) {
+            settings.setTranslationX(w);
+        } else {
+            feed.setTranslationX(-w * 0.3f);
+            feed.setAlpha(0.6f);
+        }
+    }
+
+    private void dragPages(float dx) {
+        float w = getResources().getDisplayMetrics().widthPixels;
+        if (tab == 0) {
+            float d = Math.max(-w, Math.min(0, dx));
+            settings.setTranslationX(w + d);
+            feed.setTranslationX(d * 0.3f);
+            feed.setAlpha(1 + 0.4f * d / w);
+        } else {
+            float d = Math.max(0, Math.min(w, dx));
+            settings.setTranslationX(d);
+            feed.setTranslationX(-w * 0.3f + d * 0.3f);
+            feed.setAlpha(0.6f + 0.4f * d / w);
+        }
+    }
+
+    // Far or fast enough: finish the move. Otherwise spring back to where it started.
+    private void releasePages(float dx, float vx) {
+        float w = getResources().getDisplayMetrics().widthPixels;
+        boolean go = tab == 0 ? (dx < -w * 0.3f || vx < -800) : (dx > w * 0.3f || vx > 800);
+        if (go) {
+            select(1 - tab, true);
+            return;
+        }
+        android.view.animation.DecelerateInterpolator ease = new android.view.animation.DecelerateInterpolator(1.6f);
+        if (tab == 0) {
+            feed.animate().translationX(0).alpha(1f).setDuration(TAB_SLIDE_MS).setInterpolator(ease);
+            settings.animate().translationX(w).setDuration(TAB_SLIDE_MS).setInterpolator(ease).withEndAction(() -> park(settings));
+        } else {
+            settings.animate().translationX(0).setDuration(TAB_SLIDE_MS).setInterpolator(ease);
+            feed.animate().translationX(-w * 0.3f).alpha(0.6f).setDuration(TAB_SLIDE_MS).setInterpolator(ease)
+                .withEndAction(() -> park(feed));
+        }
+    }
+
     // Hidden and reset, ready for the next slide.
     private void park(View page) {
         page.setVisibility(View.GONE);
@@ -553,6 +659,11 @@ public class MainActivity extends Activity {
     // Like swiping between wallpapers: Settings slides in from the right over Wallpapers, which drifts a third as
     // far to the left and dims; going back runs the same motion in reverse.
     private void select(int which) {
+        select(which, false);
+    }
+
+    // fromDrag: the pages are already part-way, so animate on from where the finger left them.
+    private void select(int which, boolean fromDrag) {
         if (which == tab) return;
         float w = getResources().getDisplayMetrics().widthPixels;
         for (View v : new View[] {feed, settings}) v.animate().setListener(null).cancel();
@@ -564,13 +675,15 @@ public class MainActivity extends Activity {
             feed.setVisibility(View.VISIBLE);
             settings.setVisibility(View.VISIBLE);
             if (which == 1) {
-                settings.setTranslationX(w);
+                if (!fromDrag) settings.setTranslationX(w);
                 settings.animate().translationX(0).setDuration(TAB_SLIDE_MS).setInterpolator(ease);
                 feed.animate().translationX(-w * 0.3f).alpha(0.6f).setDuration(TAB_SLIDE_MS).setInterpolator(ease)
                     .withEndAction(() -> park(feed));
             } else {
-                feed.setTranslationX(-w * 0.3f);
-                feed.setAlpha(0.6f);
+                if (!fromDrag) {
+                    feed.setTranslationX(-w * 0.3f);
+                    feed.setAlpha(0.6f);
+                }
                 feed.animate().translationX(0).alpha(1f).setDuration(TAB_SLIDE_MS).setInterpolator(ease);
                 settings.animate().translationX(w).setDuration(TAB_SLIDE_MS).setInterpolator(ease)
                     .withEndAction(() -> park(settings));
