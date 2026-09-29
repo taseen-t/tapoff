@@ -1,0 +1,11 @@
+# Build output
+out/
+*.apk
+*.idsig
+
+# The signing key never leaves the machine that owns it. build.sh makes a new one if it's missing.
+*.keystore
+*.jks
+
+.DS_Store
+.vercel

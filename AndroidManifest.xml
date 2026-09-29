@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.taseen.tapoff">
+
+    <uses-feature android:name="android.software.live_wallpaper" android:required="true" />
+    <!-- Only granted over adb; lets TapOff switch its lock service on for a moment. -->
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <!-- Downloads wallpapers from Bing and Wallhaven. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Sets the lock screen wallpaper. -->
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <!-- The tap you feel when double-tap locks. -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- Read Pixel's built-in wallpapers in place. -->
+    <queries>
+        <package android:name="com.google.android.apps.wallpaper.pixel" />
+    </queries>
+
+    <application android:label="TapOff" android:icon="@mipmap/ic_launcher" android:allowBackup="false"
+        android:theme="@style/App">
+
+        <activity android:name=".MainActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".PreviewActivity" android:exported="false" />
+
+        <!-- Own process: a crash in the app's screens must never make Android drop the wallpaper. -->
+        <service android:name=".TapWallpaper"
+            android:process=":wallpaper"
+            android:label="TapOff (double-tap to lock)"
+            android:permission="android.permission.BIND_WALLPAPER"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/wallpaper" />
+        </service>
+
+        <service android:name=".LockService"
+            android:label="TapOff screen lock"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data android:name="android.accessibilityservice" android:resource="@xml/lock_service" />
+        </service>
+
+        <service android:name=".ScreenOffTile"
+            android:label="Screen off"
+            android:icon="@drawable/ic_moon"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".VolumeTile"
+            android:label="Volume"
+            android:icon="@drawable/ic_volume"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+    </application>
+</manifest>

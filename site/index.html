@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TapOff</title>
+<meta name="description" content="Double-tap to turn your Android phone's screen off. Free, open source, and it keeps your bank apps working.">
+<meta property="og:title" content="TapOff: double-tap, screen off">
+<meta property="og:description" content="For Android phones with a worn-out power button or a stiff case. Free and open source.">
+<meta property="og:image" content="https://tapoff.vercel.app/img/main.webp">
+<meta name="theme-color" content="#0a0a0b">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0a0a0b; --surface: rgba(255,255,255,.06); --line: rgba(255,255,255,.12);
+  --ink: #f6f6f7; --muted: #a6a8ae; --faint: #7d8087; --accent: #fff;
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --bg: #f4f4f5; --surface: #fff; --line: rgba(0,0,0,.08);
+    --ink: #0d0e10; --muted: #55585f; --faint: #6b6f76; --accent: #0d0e10;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font: 16px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif;
+  background-image: radial-gradient(circle, var(--line) 1.2px, transparent 1.4px);
+  background-size: 22px 22px;
+}
+a { color: inherit; }
+.wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+.pixel { font-family: "Silkscreen", monospace; letter-spacing: .04em; }
+
+nav { display: flex; align-items: center; justify-content: space-between; padding: 22px 0; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 20px; text-decoration: none; }
+.brand img { width: 36px; height: 36px; border-radius: 10px; box-shadow: 0 0 0 1px var(--line); }
+.navlink { color: var(--muted); text-decoration: none; font-size: 15px; }
+.navlink:hover { color: var(--ink); }
+
+.hero { display: grid; grid-template-columns: 1.1fr .9fr; gap: 40px; align-items: center; padding: 40px 0 64px; }
+.tag { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; color: var(--muted);
+  border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px; background: var(--surface); }
+.tag svg { width: 14px; height: 18px; color: var(--ink); }
+h1 { font-size: clamp(44px, 7vw, 76px); line-height: 1.02; letter-spacing: -.03em; margin: 18px 0 18px; }
+h1 .pixel { font-size: .52em; display: block; letter-spacing: .06em; color: var(--muted); margin-bottom: 10px; font-weight: 400; }
+.lede { font-size: 19px; color: var(--muted); max-width: 30em; margin: 0 0 28px; }
+.ctas { display: flex; gap: 12px; flex-wrap: wrap; }
+.btn { display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 22px; border-radius: 999px;
+  font-weight: 600; text-decoration: none; border: 1px solid var(--line); transition: transform .15s ease; }
+.btn:hover { transform: translateY(-1px); }
+.btn.primary { background: var(--accent); color: var(--bg); border-color: transparent; }
+.btn svg { width: 18px; height: 18px; }
+.meta { margin-top: 16px; font-size: 13px; color: var(--faint); }
+
+.phones { position: relative; height: 560px; }
+.phone { position: absolute; width: 230px; border-radius: 34px; overflow: hidden; border: 1px solid var(--line);
+  box-shadow: 0 30px 80px rgba(0,0,0,.45); background: #000; }
+.phone img { display: block; width: 100%; height: auto; }
+.phone.a { left: 0; top: 40px; transform: rotate(-6deg); }
+.phone.b { left: 50%; top: 0; transform: translateX(-50%); z-index: 2; }
+.phone.c { right: 0; top: 40px; transform: rotate(6deg); }
+
+section { padding: 56px 0; }
+h2 { font-size: clamp(28px, 4vw, 40px); letter-spacing: -.02em; margin: 0 0 8px; }
+.sub { color: var(--muted); margin: 0 0 28px; max-width: 36em; }
+.grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 24px; padding: 22px; }
+.card h3 { margin: 12px 0 6px; font-size: 18px; }
+.card p { margin: 0; color: var(--muted); font-size: 15px; }
+.icon { width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center;
+  border: 1px solid var(--line); }
+.icon svg { width: 20px; height: 20px; }
+
+.steps { counter-reset: step; display: grid; gap: 14px; }
+.step { display: grid; grid-template-columns: 44px 1fr; gap: 16px; background: var(--surface); border: 1px solid var(--line);
+  border-radius: 24px; padding: 22px; }
+.step::before { counter-increment: step; content: counter(step); font-family: "Silkscreen", monospace; font-size: 22px;
+  width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center; border: 1px solid var(--line); }
+.step h3 { margin: 6px 0 6px; font-size: 18px; }
+.step p, .step li { color: var(--muted); font-size: 15px; margin: 0 0 6px; }
+.step ol { margin: 6px 0 0; padding-left: 20px; }
+.code { display: flex; align-items: center; gap: 10px; margin-top: 10px; background: rgba(0,0,0,.35); border: 1px solid var(--line);
+  border-radius: 14px; padding: 12px 12px 12px 16px; }
+@media (prefers-color-scheme: light) { :root:not([data-theme="dark"]) .code { background: #0d0e10; } }
+.code code { flex: 1; color: #f6f6f7; font: 13px/1.5 ui-monospace, "SF Mono", Menlo, monospace; overflow-x: auto; white-space: nowrap; }
+.copy { background: rgba(255,255,255,.12); color: #fff; border: 0; border-radius: 10px; padding: 8px 12px; font-weight: 600;
+  cursor: pointer; min-height: 36px; }
+
+details { background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 18px 22px; margin-bottom: 10px; }
+summary { cursor: pointer; font-weight: 600; }
+details p { color: var(--muted); margin: 10px 0 0; font-size: 15px; }
+
+footer { border-top: 1px solid var(--line); padding: 28px 0 48px; color: var(--faint); font-size: 14px;
+  display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+
+@media (max-width: 860px) {
+  .hero { grid-template-columns: 1fr; padding-top: 16px; }
+  .phones { height: 440px; }
+  .phone { width: 180px; border-radius: 28px; }
+  .grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 420px) {
+  .phones { height: 380px; }
+  .phone { width: 150px; }
+  .btn { width: 100%; justify-content: center; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <a class="brand" href="/"><img src="icon.svg" alt="">TapOff</a>
+    <a class="navlink" href="https://github.com/taseen-t/tapoff">GitHub</a>
+  </nav>
+
+  <header class="hero">
+    <div>
+      <span class="tag"><svg viewBox="34 27 40 56" aria-hidden="true"><path d="M41.17,30.00H43.14V31.97H41.17ZM43.14,31.97H45.12V33.95H43.14ZM48.08,30.00H50.05V33.95H48.08ZM54.99,30.00H56.96V31.97H54.99ZM53.01,31.97H54.99V33.95H53.01ZM38.87,36.91H42.82V38.88H38.87ZM54.99,36.91H58.93V38.88H54.99Z" fill="currentColor" fill-opacity=".55"/><path d="M47.09,35.92H51.04V37.89H47.09ZM45.12,37.89H47.09V59.93H45.12ZM51.04,37.89H53.01V55.99H51.04ZM53.01,46.12H56.96V48.09H53.01ZM56.96,48.09H62.88V50.07H56.96ZM56.96,48.09H58.93V55.99H56.96ZM62.88,50.07H66.83V52.04H62.88ZM62.88,50.07H64.86V57.96H62.88ZM66.83,52.04H69.13V54.01H66.83ZM69.13,54.01H71.11V70.13H69.13ZM36.89,54.01H42.82V55.99H36.89ZM36.89,54.01H38.87V59.93H36.89ZM42.82,55.99H45.12V57.96H42.82ZM38.87,59.93H40.84V61.91H38.87ZM40.84,61.91H42.82V65.86H40.84ZM42.82,65.86H44.79V69.80H42.82ZM44.79,69.80H46.76V74.08H44.79ZM47.09,74.08H49.07V80.00H47.09ZM47.09,78.03H66.83V80.00H47.09ZM65.18,74.08H67.16V80.00H65.18ZM67.16,70.13H69.13V74.08H67.16Z" fill="currentColor"/></svg>Free and open source · Android 13+</span>
+      <h1><span class="pixel">tap tap</span>Double-tap.<br>Screen off.</h1>
+      <p class="lede">For Android phones with a worn-out power button, a case that makes it hard to press, or a thumb that's
+        just tired of reaching. Double-tap empty space on your home or lock screen and the screen goes dark.</p>
+      <div class="ctas">
+        <a class="btn primary" href="https://github.com/taseen-t/tapoff/releases/latest/download/TapOff.apk">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>
+          Download APK</a>
+        <a class="btn" href="https://github.com/taseen-t/tapoff">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 7l-5 5 5 5M15 7l5 5-5 5"/></svg>
+          View the code</a>
+      </div>
+      <p class="meta">About 70 KB · no ads, no accounts, no tracking · MIT license</p>
+    </div>
+    <div class="phones" aria-label="TapOff screenshots">
+      <div class="phone a"><img src="img/sunflower.webp" alt="Sunflower wallpaper drawn around the camera hole" width="540" height="1200"></div>
+      <div class="phone b"><img src="img/main.webp" alt="TapOff main screen with the double-tap switches and wallpaper cards" width="540" height="1200"></div>
+      <div class="phone c"><img src="img/iris.webp" alt="Iris wallpaper with the camera as the pupil" width="540" height="1200"></div>
+    </div>
+  </header>
+
+  <section>
+    <h2>What it does</h2>
+    <p class="sub">Small app, one job done properly, plus a wallpaper browser you'll actually open.</p>
+    <div class="grid">
+      <div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M10 18h4"/></svg></div>
+        <h3>Home screen double-tap</h3><p>Tap empty space twice and the screen fades off, with a tap you feel.</p></div>
+      <div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="5" y="10" width="14" height="11" rx="2.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div>
+        <h3>Lock screen too</h3><p>On Pixels, one switch turns on Android's own lock-screen double-tap. No vibration.</p></div>
+      <div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h3>Bank apps keep working</h3><p>Banking apps block phones with accessibility on. TapOff's is off, except for the second it turns the screen off.</p></div>
+      <div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3" fill="currentColor"/></svg></div>
+        <h3>Cutout wallpapers</h3><p>12 designs drawn live around your camera hole: a black hole, a galaxy, a keyhole, a vinyl record and more.</p></div>
+      <div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3.5" y="3.5" width="7" height="9" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="5" rx="1.5"/><rect x="13.5" y="11.5" width="7" height="9" rx="1.5"/><rect x="3.5" y="15.5" width="7" height="5" rx="1.5"/></svg></div>
+        <h3>More wallpapers</h3><p>Pixel's own, today's Bing photo, hand-picked art, or your own photo, on home and lock screen at once.</p></div>
+      <div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="17" r="2"/></svg></div>
+        <h3>Quick Settings tiles</h3><p>Screen off and Volume, one swipe down from anywhere.</p></div>
+    </div>
+  </section>
+
+  <section id="setup">
+    <h2>Set it up</h2>
+    <p class="sub">Five minutes, once. The last step needs a computer for about a minute.</p>
+    <div class="steps">
+      <div class="step"><div>
+        <h3>Install the APK</h3>
+        <p>Download TapOff.apk on your phone and open it. Allow your browser to install apps when Android asks.</p>
+      </div></div>
+      <div class="step"><div>
+        <h3>Set TapOff as your wallpaper</h3>
+        <p>Open TapOff, go to Settings, tap <b>Set TapOff as home wallpaper</b> and choose <b>Home screen and lock screen</b>.
+          The double-tap works through the wallpaper, so this part matters.</p>
+      </div></div>
+      <div class="step"><div>
+        <h3>Give it one permission from a computer</h3>
+        <ol>
+          <li>On the phone: Settings → About phone → tap <b>Build number</b> 7 times. Then Settings → System → Developer options → turn on <b>USB debugging</b>.</li>
+          <li>On the computer: install <a href="https://developer.android.com/tools/releases/platform-tools">Android platform-tools</a>, plug the phone in and accept the prompt.</li>
+          <li>Run this, then you can turn USB debugging off again:</li>
+        </ol>
+        <div class="code"><code id="cmd">adb shell pm grant com.taseen.tapoff android.permission.WRITE_SECURE_SETTINGS</code>
+          <button class="copy" type="button" data-copy="cmd">Copy</button></div>
+      </div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Questions</h2>
+    <details><summary>Why does it need a computer once?</summary>
+      <p>To turn the screen off, Android needs an accessibility service. Leaving one on blocks many banking apps, so
+        TapOff switches its own on for a second and off again. Only a computer can grant the permission that allows
+        that. Without it the app still works as a wallpaper browser.</p></details>
+    <details><summary>Is it safe?</summary>
+      <p>The code is open for anyone to read. TapOff reads nothing on your screen, has no accounts or analytics, and only
+        goes online to download wallpapers.</p></details>
+    <details><summary>Does it work on phones other than Pixels?</summary>
+      <p>The home-screen double-tap works with launchers that pass taps on empty space to the wallpaper, which includes
+        Pixel Launcher and most launchers based on it. The lock-screen switch uses a Pixel feature. Built and tested on a
+        Pixel 7 running Android 17.</p></details>
+    <details><summary>Found a bug?</summary>
+      <p>Message <a href="https://x.com/taseen_tariq_">@taseen_tariq_</a> on X. If you can't send a DM, reply to any
+        post, or open an issue on <a href="https://github.com/taseen-t/tapoff/issues">GitHub</a>.</p></details>
+  </section>
+
+  <footer>
+    <span>TapOff by <a href="https://x.com/taseen_tariq_">Taseen</a> · MIT license</span>
+    <span><a href="https://github.com/taseen-t/tapoff">Source on GitHub</a></span>
+  </footer>
+</div>
+<script>
+  document.querySelectorAll('[data-copy]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var text = document.getElementById(b.dataset.copy).textContent;
+      navigator.clipboard.writeText(text).then(function () {
+        b.textContent = 'Copied';
+        setTimeout(function () { b.textContent = 'Copy'; }, 1500);
+      });
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wallpaper_desc">Double-tap empty space on the home screen to turn the screen off.</string>
+    <string name="lock_desc">Turns the screen off, then switches itself off. It reads nothing on screen.</string>
+</resources>
