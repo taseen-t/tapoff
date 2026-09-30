@@ -133,11 +133,17 @@ Every request goes here the moment it's asked. Tick subtasks as they land. Never
           ("App blocked to protect your device"), filmed as a still; TapOff unchanged
     - [x] Shizuku's Play Store page
     - [x] About phone left out: it shows device identifiers; the Build number step will be a drawn card instead
-    - [ ] Developer options → Wireless debugging, Shizuku start, permission flow, wallpaper preview, sliders setup
-          (phone disconnected from USB mid-session; waiting for it)
+    - [x] Developer options → Wireless debugging; Shizuku pairing and Start (done by Taseen on camera, including one
+          failed pairing and the retry); Play Protect → Pause app scanning (done by Taseen on camera; a security
+          setting, so not tapped by Claude); install succeeding once scanning was paused ("App updated"); permission
+          flow (Shizuku remembered TapOff, so its Allow dialog comes from the 2026-09-30 test screenshot); wallpaper
+          preview and chooser (backed out, nothing set); Sliders switch and Quick Tap → Open app → TapOff
+    - [x] Taseen asked for the Play Protect workaround in the guide (Play Store → profile → Play Protect → gear →
+          switch off; he chose Pause, which turns back on by itself the next day)
   - [ ] Voiceover: 8 of 12 lines made (intro, install, Play Protect, Shizuku, Developer options, Start, permission,
         wallpaper); ElevenLabs then disabled the account's free tier ("unusual activity"), probably from 12 requests at
-        once; Wireless debugging, Pairing, Sliders and the ending are missing; no upgrade without Taseen
+        once; Taseen chose: sliders and ending lines reused from the brag voiceover, Wireless debugging and Pairing
+        carried by captions
   - [ ] Voiceover (Jerry), build in the brag video's 3D style, check stills, render, send
 - [ ] Taseen tests on a second Android, then fixes
 - [ ] Refresh site screenshots (tile changed) with the video footage
