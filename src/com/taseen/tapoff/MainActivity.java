@@ -61,6 +61,8 @@ public class MainActivity extends Activity {
     private View setupCard;
     private Button setTapOff;
     private final TextView[] tabs = new TextView[2];
+    private View indicator;
+    private int tabW;
     private int tab = -1;
 
     static Intent chooser(Context c) {
@@ -136,7 +138,7 @@ public class MainActivity extends Activity {
         scrim.setElevation(Ui.dp(this, 14));
         root.addView(scrim, new FrameLayout.LayoutParams(-1, 0, Gravity.TOP));
 
-        LinearLayout tabBar = buildTabBar();
+        FrameLayout tabBar = buildTabBar();
         root.addView(tabBar, new FrameLayout.LayoutParams(-2, -2, Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL));
 
         root.setOnApplyWindowInsetsListener((v, insets) -> {
@@ -553,6 +555,8 @@ public class MainActivity extends Activity {
 
     private void dragPages(float dx) {
         float w = getResources().getDisplayMetrics().widthPixels;
+        float towardsSettings = tab == 0 ? Math.max(0, Math.min(1, -dx / w)) : 1 - Math.max(0, Math.min(1, dx / w));
+        indicator.setTranslationX(towardsSettings * tabW);
         if (tab == 0) {
             float d = Math.max(-w, Math.min(0, dx));
             settings.setTranslationX(w + d);
@@ -575,6 +579,7 @@ public class MainActivity extends Activity {
             return;
         }
         android.view.animation.DecelerateInterpolator ease = new android.view.animation.DecelerateInterpolator(1.6f);
+        indicator.animate().translationX(tab * tabW).setDuration(TAB_SLIDE_MS).setInterpolator(ease);
         if (tab == 0) {
             feed.animate().translationX(0).alpha(1f).setDuration(TAB_SLIDE_MS).setInterpolator(ease);
             settings.animate().translationX(w).setDuration(TAB_SLIDE_MS).setInterpolator(ease).withEndAction(() -> park(settings));
@@ -634,12 +639,17 @@ public class MainActivity extends Activity {
         parent.addView(row);
     }
 
-    private LinearLayout buildTabBar() {
-        LinearLayout bar = new LinearLayout(this);
+    // The floating tab bar. The highlight is its own view behind the tabs, so it can slide between them.
+    private FrameLayout buildTabBar() {
+        FrameLayout bar = new FrameLayout(this);
         bar.setBackground(Ui.shape(this, 32, Ui.dark(this) ? 0xE61A1B1E : 0xF2FFFFFF, Ui.line(this)));
         bar.setElevation(Ui.dp(this, 16)); // above the Settings page as it slides
         int p = Ui.dp(this, 6);
         bar.setPadding(p, p, p, p);
+        indicator = new View(this);
+        indicator.setBackground(Ui.shape(this, 26, Ui.dark(this) ? 0x26FFFFFF : 0x12000000, 0));
+        bar.addView(indicator, new FrameLayout.LayoutParams(0, 0)); // sized to the tabs once they're measured
+        LinearLayout row = new LinearLayout(this);
         String[] names = {"Wallpapers", "Settings"};
         int[] icons = {R.drawable.ic_grid, R.drawable.ic_sliders};
         for (int i = 0; i < 2; i++) {
@@ -651,8 +661,23 @@ public class MainActivity extends Activity {
             int which = i;
             t.setOnClickListener(v -> select(which));
             tabs[i] = t;
-            bar.addView(t);
+            row.addView(t);
         }
+        bar.addView(row);
+        // Once measured, give both tabs the wider one's width so the highlight only has to move, not resize.
+        tabW = 0;
+        row.addOnLayoutChangeListener((v, l, t, r, b, ol, ot, or, ob) -> {
+            int widest = Math.max(tabs[0].getWidth(), tabs[1].getWidth());
+            if (widest == 0 || (widest == tabW && indicator.getHeight() == v.getHeight())) return;
+            tabW = widest;
+            v.post(() -> {
+                for (TextView tv : tabs) tv.getLayoutParams().width = tabW;
+                indicator.getLayoutParams().width = tabW;
+                indicator.getLayoutParams().height = v.getHeight();
+                indicator.setTranslationX(Math.max(tab, 0) * tabW);
+                row.requestLayout();
+            });
+        });
         return bar;
     }
 
@@ -689,10 +714,12 @@ public class MainActivity extends Activity {
                     .withEndAction(() -> park(settings));
             }
         }
+        if (tab == -1) indicator.setTranslationX(which * tabW);
+        else indicator.animate().translationX(which * tabW).setDuration(TAB_SLIDE_MS)
+            .setInterpolator(new android.view.animation.DecelerateInterpolator(1.6f));
         tab = which;
         for (int i = 0; i < tabs.length; i++) {
             boolean on = i == which;
-            tabs[i].setBackground(on ? Ui.shape(this, 26, Ui.dark(this) ? 0x26FFFFFF : 0x12000000, 0) : null);
             int color = on ? Ui.ink(this) : Ui.faint(this);
             tabs[i].setTextColor(color);
             tabs[i].setCompoundDrawableTintList(ColorStateList.valueOf(color));
