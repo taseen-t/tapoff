@@ -86,7 +86,15 @@ Every request goes here the moment it's asked. Tick subtasks as they land. Never
 - [ ] Back tap not opening the sliders on Taseen's phone: Quick Tap was off; to retest with it on (and with "Take
       screenshot" to rule out the acrylic case)
 - [x] Landscape: sliders open at the top centre and slide up into the top edge to close
-- [ ] Decide the no-PC setup path (built-in wireless-debugging pairing vs Shizuku vs keep PC) — see [[Decisions]] note below
+- [x] Decide the no-PC setup path: Taseen chose Shizuku (built-in wireless-debugging pairing needs SPAKE2 + TLS export + AES-GCM, too big for the no-Gradle app)
+- [ ] Grant WRITE_SECURE_SETTINGS through Shizuku, no computer needed
+  - [ ] Settings setup card: "Set up without a computer" option
+  - [ ] Shizuku not installed: link to its Play Store page and guide
+  - [ ] Shizuku running: ask its permission, run `pm grant com.taseen.tapoff android.permission.WRITE_SECURE_SETTINGS` as shell
+  - [ ] No Gradle: vendor the minimal Apache-2.0 Shizuku API/AIDL classes, or talk to its binder via ShizukuProvider
+  - [ ] Site setup, README, docs, Graphify (installing from the web still hits Play Protect in some regions, so the computer install stays there)
+  - [ ] Release with the landscape sliders (755a74d) as the next version, deploy the site
+- [ ] Setup videos (portrait + landscape): confirm with Taseen whether still wanted now that Shizuku removes the PC step
 - [ ] Taseen tests on a second Android, then fixes
 - [ ] Refresh site screenshots (tile changed) with the video footage
 
