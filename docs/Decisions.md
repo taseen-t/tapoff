@@ -115,7 +115,8 @@ Newest at the bottom. Each one says why, so nobody undoes it by accident.
     (2026-09-30)
 37. **Videos use a free 3D Pixel 7 Pro, credited.** No free, license-clean model of the regular Pixel 7 could be
     downloaded (the one on Sketchfab was deleted, Printables sits behind a bot check, the good one is paid). Taseen
-    chose Aborsoft 3D's Pixel 7 Pro (CC BY 4.0) over a hand-built model or buying one: recoloured to Snow, credited on
+    chose Aborsoft 3D's Pixel 7 Pro (CC BY 4.0) over a hand-built model or buying one: black glass with a silver frame and
+    camera bar (Taseen switched from Snow so the bar stands out), credited on
     each video's outro card and in its share copy. It shows the Pro's three lenses, not the Pixel 7's two. The model
     file stays out of the repo. (2026-09-30)
 38. **The no-computer setup starts with Shizuku, which installs TapOff too.** #18 said Play Protect's block had no way
@@ -128,4 +129,7 @@ Newest at the bottom. Each one says why, so nobody undoes it by accident.
     countries. Nothing in TapOff's manifest can avoid it: the
     accessibility service *is* the screen-off feature, and device-admin `lockNow()` was already ruled out in
     `LockService`'s note (it forces the PIN instead of leaving the fingerprint). (2026-09-30)
-
+38. **Video case look: clear, shiny, nothing on the screen.** The acrylic case is drawn as reflections only (additive,
+    no body colour), so it stays see-through and shines at the edges; a soft light band on the case back follows the
+    phone's turn, because real reflections of thin lights pass in under a frame during a flip. The screen gets no
+    glare so the recordings stay clean (Taseen's call). (2026-09-30)

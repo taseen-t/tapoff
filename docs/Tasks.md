@@ -66,8 +66,14 @@ Every request goes here the moment it's asked. Tick subtasks as they land. Never
         - [x] Clear acrylic case: thin rim plus a back plate on the glass; the camera bar pokes out through a
               full-width cutout (Taseen: "this camera bump should be out of the case")
         - [x] Gentle sway so the phone feels held; the hand's tap points come from the 3D projection
-        - [x] TAP · TAP label and knock rings dark on the white back
-      - [ ] Re-render both formats and send
+        - [x] TAP · TAP label and knock rings dark on the white back (white again after the switch to black)
+        - [x] Camera bar stands out: phone tilts top-towards-you while its back shows, soft shadows, polished bar
+        - [x] Case shines and is see-through (Taseen: not matte): clear material that shows only reflections, thin
+              studio softbox strips, and a shine band on the case back that slides with the phone's turn
+        - [x] No reflection on the screen, only on the case (Taseen); back rendered at 2x so it's as clear as possible
+        - [x] Phone switched to black glass with the silver frame and bar, so the bar stands out (Taseen)
+        - [x] Hook caption moved right in landscape so the hand doesn't overlap it
+      - [x] Re-rendered both formats and sent (23 s each)
   - [x] Record TapOff on the phone over USB (brag: screen-off and sliders; more for the walkthrough later)
   - [ ] Build, check stills, render all six
 

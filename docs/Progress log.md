@@ -37,8 +37,15 @@ Newest first. Each entry: done / blocked / next.
 - One timing-test tap went to the phone (status-bar corner) before its screenshot was looked at; nothing happened.
   Screenshot first, every time.
 
+- Review round 1 (Taseen): bezels thinned to a real phone's; the flat CSS phone replaced by a 3D Pixel 7 Pro
+  (Aborsoft 3D, CC BY 4.0, downloaded by Taseen) in three.js with the recordings on its screen, a clear shiny acrylic
+  case with the camera bar out through a cutout, a tilt and shadows so the bar reads as a bump, black glass with a
+  silver bar, no screen reflections. Bugs found on the way: the model's screen UVs cover only part of the texture
+  (recordings were cut off at the bottom and sides until fitted), the camera's matrices weren't ready before the first
+  render, and the model's root carries a transform the raw mesh numbers don't show.
+
 **Next**
-- Taseen reviews the brag video; then the walkthrough, case study and Shizuku setup videos.
+- Taseen reviews the new cut; then the walkthrough, case study and Shizuku setup videos.
 
 ## 2026-09-30 (evening) · 1.9: setup without a computer
 **Done**
