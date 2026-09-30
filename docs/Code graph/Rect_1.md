@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "android.content.Context"
+community: "Wallpapers"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidcontentContext
+  - community/Wallpapers
 ---
 
 # Rect
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[dot-screenCrop()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidcontentContext
+#graphify/code #graphify/EXTRACTED #community/Wallpapers

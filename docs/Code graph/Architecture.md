@@ -17,6 +17,7 @@ tags:
 - [[Icons]] - `contains` [EXTRACTED]
 - [[Processes]] - `contains` [EXTRACTED]
 - [[Screen off]] - `contains` [EXTRACTED]
+- [[Setup without a computer (`ShizukuSetup.java`)]] - `contains` [EXTRACTED]
 - [[UI_1]] - `contains` [EXTRACTED]
 - [[Wallpapers_1]] - `contains` [EXTRACTED]
 - [[Website (`site`)]] - `contains` [EXTRACTED]

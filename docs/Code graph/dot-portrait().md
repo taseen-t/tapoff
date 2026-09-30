@@ -12,7 +12,6 @@ tags:
 # .portrait()
 
 ## Connections
-- [[dot-open()]] - `calls` [EXTRACTED]
 - [[NotchPanel]] - `method` [EXTRACTED]
 - [[android.content.Context]] - `references` [EXTRACTED]
 

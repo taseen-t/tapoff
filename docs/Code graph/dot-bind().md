@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/GlassCard.java"
 type: "code"
-community: "android.graphics.Bitmap"
+community: "Wallpapers"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidgraphicsBitmap
+  - community/Wallpapers
 ---
 
 # .bind()
@@ -15,4 +15,4 @@ tags:
 - [[dot-addCard()]] - `calls` [INFERRED]
 - [[GlassCard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidgraphicsBitmap
+#graphify/code #graphify/EXTRACTED #community/Wallpapers

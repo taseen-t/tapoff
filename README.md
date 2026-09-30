@@ -28,8 +28,22 @@ a wallpaper browser with wallpapers drawn around your camera hole.
 
 ## Install
 
-TapOff needs Android 13 or newer. It was built and tested on a Pixel 7 running Android 17. A computer installs it and
-gives it its one permission in a single step:
+TapOff needs Android 13 or newer. It was built and tested on a Pixel 7 running Android 17. It needs one permission
+that apps can't give themselves, so setup is a one-time step, on the phone or from a computer.
+
+### Without a computer (Shizuku)
+
+1. On the phone, download [TapOff.apk](https://github.com/taseen-t/tapoff/releases/latest/download/TapOff.apk) and
+   install it.
+2. Install [Shizuku](https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api) from the Play Store,
+   open it and start it with **Wireless debugging** (it walks you through pairing on the phone; needs Wi-Fi).
+3. Open TapOff → Settings → **Set up without a computer** → **Allow**. The permission stays, so you can remove Shizuku
+   afterwards.
+
+Where Google's fraud protection is on (Pakistan, India and others), Play Protect blocks installing any app with an
+accessibility service from a browser or file manager. Use the computer install then; `adb install` isn't blocked.
+
+### With a computer
 
 1. On the phone: Settings → About phone → tap **Build number** 7 times, then Settings → System → Developer options →
    turn on **USB debugging**.
@@ -40,17 +54,17 @@ gives it its one permission in a single step:
    adb install -r TapOff.apk && adb shell pm grant com.taseen.tapoff android.permission.WRITE_SECURE_SETTINGS
    ```
    You can turn USB debugging off again afterwards; the permission stays.
-3. Open TapOff and tap **Set TapOff as home wallpaper**. Choose **Home screen and lock screen**. The home-screen
-   double-tap works through the wallpaper, so this step is required.
-4. Optional: turn on **Sliders**, allow **Display over other apps**, then **Set up back tap** → Quick Tap → **Open app**
-   → the gear → **TapOff Sliders**.
 
-Installing the APK straight from a browser works on most phones, but where Google's fraud protection is on (Pakistan,
-India and others) Play Protect blocks any app with an accessibility service that way. The computer route isn't blocked.
+### Then
+
+1. Open TapOff and tap **Set TapOff as home wallpaper**. Choose **Home screen and lock screen**. The home-screen
+   double-tap works through the wallpaper, so this step is required.
+2. Optional: turn on **Sliders**, allow **Display over other apps**, then **Set up back tap** → Quick Tap → **Open app**
+   → the gear → **TapOff Sliders**.
 
 ## Build from source
 
-No Gradle. You need JDK 17 and the Android SDK (`platforms;android-35`, `build-tools;35.0.0`).
+No Gradle. You need JDK 17 and the Android SDK (`platforms;android-35`, `build-tools;35.0.0`, which includes `aidl`).
 
 ```
 ./build.sh            # builds TapOff.apk
@@ -73,6 +87,7 @@ Set `JAVA_HOME` and `ANDROID_HOME` if they aren't the Homebrew defaults. The fir
 | Main screen, deck of cards, settings | `MainActivity.java`, `GlassCard.java` |
 | Full-screen preview with swipe, double-tap to favourite | `PreviewActivity.java`, `SwipeHint.java`, `DoubleTapHint.java` |
 | Quick Settings tiles | `ScreenOffTile.java`, `VolumeTile.java` |
+| Setup without a computer: receives Shizuku's binder and runs `pm grant` through it | `ShizukuSetup.java`, `src/moe/shizuku/` |
 
 ## Privacy
 
@@ -85,6 +100,8 @@ screen; it only turns the screen off.
 - Photos of the day from Bing; space photos from the [NASA Image and Video Library](https://images.nasa.gov); art
   from [Wallhaven](https://wallhaven.cc). Each belongs to its owner.
 - Pixel wallpapers are read from the Pixel wallpaper app already on your phone; none are included here.
+- The no-computer setup talks to [Shizuku](https://github.com/RikkaApps/Shizuku); its interface files in
+  `src/moe/shizuku/` come from [Shizuku-API](https://github.com/RikkaApps/Shizuku-API) (Apache 2.0).
 - App icons are [Material Symbols](https://fonts.google.com/icons) and the swipe hint's hand is Material Icons
   "touch_app" (Apache 2.0). Website icons are [Lucide](https://lucide.dev) (ISC).
 

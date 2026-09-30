@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/MainActivity.java"
 type: "code"
-community: "MainActivity"
-location: "L827"
+community: "android.content.Context"
+location: "L868"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MainActivity
+  - community/androidcontentContext
 ---
 
 # .park()
@@ -17,4 +17,4 @@ tags:
 - [[MainActivity]] - `method` [EXTRACTED]
 - [[android.view.View]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MainActivity
+#graphify/code #graphify/EXTRACTED #community/androidcontentContext

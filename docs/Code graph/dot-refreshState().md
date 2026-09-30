@@ -25,6 +25,7 @@ tags:
 - [[dot-refreshFavourites()]] - `calls` [EXTRACTED]
 - [[dot-refreshStatus()]] - `calls` [EXTRACTED]
 - [[dot-setEnabled()_1]] - `calls` [EXTRACTED]
+- [[dot-setupWithShizuku()]] - `calls` [EXTRACTED]
 - [[MainActivity]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/NotchPanel

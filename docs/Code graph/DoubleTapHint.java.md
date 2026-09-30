@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/DoubleTapHint.java"
 type: "code"
-community: "android.graphics.Paint"
+community: "GlassCard"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidgraphicsPaint
+  - community/GlassCard
 ---
 
 # DoubleTapHint.java
@@ -21,4 +21,4 @@ tags:
 - [[android.view.View]] - `imports` [EXTRACTED]
 - [[linearinterpolator]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidgraphicsPaint
+#graphify/code #graphify/EXTRACTED #community/GlassCard

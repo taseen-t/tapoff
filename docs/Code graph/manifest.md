@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "concept"
-community: "LockService.java"
+community: "ShizukuSetup.java"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/LockServicejava
+  - community/ShizukuSetupjava
 ---
 
 # manifest
 
 ## Connections
 - [[LockService.java]] - `imports` [EXTRACTED]
+- [[ShizukuSetup.java]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/LockServicejava
+#graphify/concept #graphify/EXTRACTED #community/ShizukuSetupjava

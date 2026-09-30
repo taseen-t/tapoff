@@ -1,12 +1,12 @@
 ---
 source_file: "docs/Architecture.md"
 type: "document"
-community: "MainActivity"
-location: "L46"
+community: "android.content.Context"
+location: "L59"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/MainActivity
+  - community/androidcontentContext
 ---
 
 # UI
@@ -17,4 +17,4 @@ tags:
 - [[dot-switchArt()]] - `references` [INFERRED]
 - [[Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/MainActivity
+#graphify/document #graphify/INFERRED #community/androidcontentContext

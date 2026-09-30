@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "MainActivity"
+community: "android.content.Context"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MainActivity
+  - community/androidcontentContext
 ---
 
 # android.widget.FrameLayout
@@ -21,4 +21,4 @@ tags:
 - [[PreviewActivity.java]] - `imports` [EXTRACTED]
 - [[SwipeRoot]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MainActivity
+#graphify/code #graphify/EXTRACTED #community/androidcontentContext

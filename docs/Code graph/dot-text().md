@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/Ui.java"
 type: "code"
-community: "MainActivity"
+community: "android.content.Context"
 location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MainActivity
+  - community/androidcontentContext
 ---
 
 # .text()
@@ -27,4 +27,4 @@ tags:
 - [[android.content.Context]] - `references` [EXTRACTED]
 - [[android.widget.TextView]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MainActivity
+#graphify/code #graphify/EXTRACTED #community/androidcontentContext

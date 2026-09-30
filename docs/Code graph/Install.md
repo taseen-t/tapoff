@@ -13,5 +13,8 @@ tags:
 
 ## Connections
 - [[TapOff]] - `contains` [EXTRACTED]
+- [[Then]] - `contains` [EXTRACTED]
+- [[With a computer]] - `contains` [EXTRACTED]
+- [[Without a computer (Shizuku)]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/TapOff

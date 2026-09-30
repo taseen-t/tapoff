@@ -1,20 +1,19 @@
 ---
-source_file: "src/com/taseen/tapoff/DoubleTapHint.java"
+source_file: "src/com/taseen/tapoff/GlassCard.java"
 type: "code"
-community: "android.graphics.Paint"
-location: "L49"
+community: "GlassCard"
+location: "L94"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidgraphicsPaint
+  - community/GlassCard
 ---
 
 # .onDraw()
 
 ## Connections
-- [[dot-press()]] - `calls` [EXTRACTED]
-- [[DoubleTapHint]] - `method` [EXTRACTED]
-- [[Override_7]] - `references` [EXTRACTED]
+- [[GlassCard]] - `method` [EXTRACTED]
+- [[Override_9]] - `references` [EXTRACTED]
 - [[android.graphics.Canvas]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidgraphicsPaint
+#graphify/code #graphify/EXTRACTED #community/GlassCard

@@ -1,19 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "TapWallpaper"
+community: "ShizukuSetup.java"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TapWallpaper
+  - community/ShizukuSetupjava
 ---
 
 # Override
 
 ## Connections
-- [[dot-onAccessibilityEvent()]] - `references` [EXTRACTED]
-- [[dot-onDraw()_1]] - `references` [EXTRACTED]
-- [[dot-onInterrupt()]] - `references` [EXTRACTED]
-- [[dot-onServiceConnected()]] - `references` [EXTRACTED]
+- [[dot-describeContents()]] - `references` [EXTRACTED]
+- [[dot-writeToParcel()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TapWallpaper
+#graphify/code #graphify/EXTRACTED #community/ShizukuSetupjava

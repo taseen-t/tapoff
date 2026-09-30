@@ -1,11 +1,11 @@
 ---
 type: community
-members: 10
+members: 13
 ---
 
 # TapOff
 
-**Members:** 10 nodes
+**Members:** 13 nodes
 
 ## Members
 - [[Bugs]] - document - README.md
@@ -17,7 +17,10 @@ members: 10
 - [[Privacy]] - document - README.md
 - [[README]] - document - README.md
 - [[TapOff]] - document - README.md
+- [[Then]] - document - README.md
 - [[What it does]] - document - README.md
+- [[With a computer]] - document - README.md
+- [[Without a computer (Shizuku)]] - document - README.md
 
 ## Live Query (requires Dataview plugin)
 

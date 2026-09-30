@@ -1,11 +1,11 @@
 ---
 type: community
-members: 51
+members: 52
 ---
 
 # MainActivity.java
 
-**Members:** 51 nodes
+**Members:** 52 nodes
 
 ## Members
 - [[dot-apply()]] - code - src/com/taseen/tapoff/PreviewActivity.java
@@ -14,6 +14,7 @@ members: 51
 - [[dot-favouriteAt()]] - code - src/com/taseen/tapoff/PreviewActivity.java
 - [[dot-image()]] - code - src/com/taseen/tapoff/PreviewActivity.java
 - [[dot-intent()]] - code - src/com/taseen/tapoff/PreviewActivity.java
+- [[dot-isFavourite()]] - code - src/com/taseen/tapoff/Wallpapers.java
 - [[dot-load()]] - code - src/com/taseen/tapoff/PreviewActivity.java
 - [[dot-onActivityResult()]] - code - src/com/taseen/tapoff/MainActivity.java
 - [[dot-onCreate()_1]] - code - src/com/taseen/tapoff/PreviewActivity.java
@@ -68,21 +69,22 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 37 edges to [[_COMMUNITY_MainActivity]]
-- 11 edges to [[_COMMUNITY_android.content.Context]]
-- 7 edges to [[_COMMUNITY_NotchPanel.java]]
-- 6 edges to [[_COMMUNITY_NotchPanel]]
+- 42 edges to [[_COMMUNITY_android.content.Context]]
+- 12 edges to [[_COMMUNITY_Wallpapers]]
 - 6 edges to [[_COMMUNITY_LockService.java]]
-- 4 edges to [[_COMMUNITY_android.graphics.Bitmap]]
+- 6 edges to [[_COMMUNITY_NotchPanel.java]]
 - 4 edges to [[_COMMUNITY_TapWallpaper.java]]
-- 3 edges to [[_COMMUNITY_android.graphics.Paint]]
+- 3 edges to [[_COMMUNITY_GlassCard]]
+- 3 edges to [[_COMMUNITY_SlidersActivity]]
 - 3 edges to [[_COMMUNITY_Override]]
+- 3 edges to [[_COMMUNITY_NotchPanel]]
+- 3 edges to [[_COMMUNITY_ShizukuSetup.java]]
 - 2 edges to [[_COMMUNITY_TapWallpaper]]
 - 2 edges to [[_COMMUNITY_log]]
 
 ## Top bridge nodes
 - [[MainActivity.java]] - degree 34, connects to 9 communities
-- [[PreviewActivity.java]] - degree 32, connects to 9 communities
-- [[PreviewActivity]] - degree 29, connects to 6 communities
-- [[android.os.Bundle]] - degree 9, connects to 5 communities
+- [[PreviewActivity.java]] - degree 32, connects to 8 communities
+- [[android.os.Bundle]] - degree 11, connects to 6 communities
+- [[PreviewActivity]] - degree 29, connects to 5 communities
 - [[android.view.MotionEvent]] - degree 7, connects to 3 communities

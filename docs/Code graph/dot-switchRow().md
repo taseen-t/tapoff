@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/MainActivity.java"
 type: "code"
-community: "MainActivity"
+community: "android.content.Context"
 location: "L455"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MainActivity
+  - community/androidcontentContext
 ---
 
 # .switchRow()
@@ -21,4 +21,4 @@ tags:
 - [[android.widget.LinearLayout]] - `references` [EXTRACTED]
 - [[android.widget.Switch]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MainActivity
+#graphify/code #graphify/EXTRACTED #community/androidcontentContext

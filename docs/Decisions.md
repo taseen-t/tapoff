@@ -93,3 +93,23 @@ Newest at the bottom. Each one says why, so nobody undoes it by accident.
 32. **Landscape sliders sit at the top centre.** In landscape the camera is off to one side, so the sliders no longer
     grow from it; they slide down from the top-centre edge (fading in) and scale back up into it. Portrait still grows
     them from the camera hole. (2026-09-30)
+33. **No-computer setup through Shizuku, not built-in wireless-debugging pairing.** Pairing with adbd ourselves needs
+    SPAKE2, TLS keying-material export and AES-GCM, far too much for a ~100 KB no-Gradle app. Shizuku does the pairing and
+    runs as shell; TapOff asks it to run the same `pm grant` a computer would. The computer install stays, because Play
+    Protect's fraud protection blocks browser installs of accessibility apps in some regions and `adb install` is
+    exempt (#18). (2026-09-30)
+34. **Shizuku's interfaces vendored as AIDL, compiled by build-tools' `aidl`.** No Gradle means no Maven library, and
+    hand-written transaction codes are easy to get wrong (AIDL's `= N` is `FIRST_CALL_TRANSACTION + N` on the wire).
+    Only the four `IShizukuService` calls TapOff uses are kept, with their ids; `IRemoteProcess` has no ids, so it's
+    verbatim. `BinderContainer` keeps its `moe.shizuku.api` name because Shizuku parcels its binder in it. All Apache
+    2.0, credited in the README. (2026-09-30)
+35. **New exported provider and permission for Shizuku.** Shizuku sends its binder only to apps that request
+    `moe.shizuku.manager.permission.API_V23`, by calling their `<package>.shizuku` provider. `ShizukuSetup` is exported
+    (Shizuku runs as shell, another uid) but guarded by `INTERACT_ACROSS_USERS_FULL`, which shell and system hold and
+    normal apps can't get; it only stores the binder and has no data. Known side effects, from Shizuku's server source:
+    while Shizuku runs it may start TapOff's main process to deliver the binder, and if the provider ever looks dead it
+    force-stops the app once and retries (that could also restart the wallpaper process). (2026-09-30)
+36. **Attach once per Shizuku binder.** Shizuku keeps one client record per process with the app binder from the first
+    `attachApplication`; a second attach from the same process crashes in the server (null client record) and the old
+    binder would get the permission result anyway. So one static app binder handles results for whatever is pending.
+    (2026-09-30)

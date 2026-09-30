@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/MainActivity.java"
 type: "code"
-community: "MainActivity"
-location: "L876"
+community: "android.content.Context"
+location: "L917"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MainActivity
+  - community/androidcontentContext
 ---
 
 # .buildTabBar()
@@ -23,4 +23,4 @@ tags:
 - [[MainActivity]] - `method` [EXTRACTED]
 - [[android.widget.FrameLayout]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MainActivity
+#graphify/code #graphify/EXTRACTED #community/androidcontentContext

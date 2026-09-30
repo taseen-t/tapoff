@@ -1,19 +1,19 @@
 ---
-source_file: "src/com/taseen/tapoff/GlassCard.java"
+source_file: "src/com/taseen/tapoff/LockService.java"
 type: "code"
-community: "android.graphics.Bitmap"
-location: "L94"
+community: "TapWallpaper"
+location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidgraphicsBitmap
+  - community/TapWallpaper
 ---
 
 # .onDraw()
 
 ## Connections
-- [[GlassCard]] - `method` [EXTRACTED]
-- [[Override_4]] - `references` [EXTRACTED]
+- [[Iris]] - `method` [EXTRACTED]
+- [[Override_6]] - `references` [EXTRACTED]
 - [[android.graphics.Canvas]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidgraphicsBitmap
+#graphify/code #graphify/EXTRACTED #community/TapWallpaper

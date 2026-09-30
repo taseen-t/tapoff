@@ -1,23 +1,23 @@
 ---
 source_file: "src/com/taseen/tapoff/DoubleTapHint.java"
 type: "code"
-community: "android.graphics.Paint"
+community: "GlassCard"
 location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidgraphicsPaint
+  - community/GlassCard
 ---
 
 # DoubleTapHint
 
 ## Connections
 - [[dot-DoubleTapHint()]] - `method` [EXTRACTED]
-- [[dot-onDraw()_2]] - `method` [EXTRACTED]
+- [[dot-onDraw()_1]] - `method` [EXTRACTED]
 - [[dot-press()]] - `method` [EXTRACTED]
 - [[DoubleTapHint.java]] - `contains` [EXTRACTED]
 - [[android.graphics.Paint]] - `references` [EXTRACTED]
 - [[android.graphics.drawable.Drawable]] - `references` [EXTRACTED]
 - [[android.view.View]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidgraphicsPaint
+#graphify/code #graphify/EXTRACTED #community/GlassCard

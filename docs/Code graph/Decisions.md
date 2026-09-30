@@ -1,20 +1,19 @@
 ---
 source_file: "docs/Decisions.md"
 type: "document"
-community: "Checks.md"
-location: "L1"
+community: "SlidersActivity"
+location: "L4"
 tags:
   - graphify/document
-  - graphify/EXTRACTED
-  - community/Checksmd
+  - graphify/INFERRED
+  - community/SlidersActivity
 ---
 
-# Decisions.md
+# Decisions
 
 ## Connections
-- [[Architecture_1]] - `references` [EXTRACTED]
-- [[Checks]] - `references` [EXTRACTED]
 - [[Decisions_1]] - `contains` [EXTRACTED]
-- [[Home]] - `references` [EXTRACTED]
+- [[ShizukuSetup]] - `references` [INFERRED]
+- [[SlidersActivity]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Checksmd
+#graphify/document #graphify/INFERRED #community/SlidersActivity

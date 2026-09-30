@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/MainActivity.java"
 type: "code"
-community: "MainActivity"
+community: "android.content.Context"
 location: "L220"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MainActivity
+  - community/androidcontentContext
 ---
 
 # .checkForUpdate()
@@ -20,4 +20,4 @@ tags:
 - [[MainActivity]] - `method` [EXTRACTED]
 - [[UI_1]] - `references` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/MainActivity
+#graphify/code #graphify/EXTRACTED #community/androidcontentContext

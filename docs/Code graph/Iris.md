@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/LockService.java"
 type: "code"
-community: "TapWallpaper"
+community: "GlassCard"
 location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TapWallpaper
+  - community/GlassCard
 ---
 
 # Iris
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[dot-Iris()]] - `method` [EXTRACTED]
 - [[dot-close()]] - `method` [EXTRACTED]
-- [[dot-onDraw()_1]] - `method` [EXTRACTED]
+- [[dot-onDraw()]] - `method` [EXTRACTED]
 - [[LockService]] - `contains` [EXTRACTED]
 - [[android.graphics.Paint]] - `references` [EXTRACTED]
 - [[android.view.View]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TapWallpaper
+#graphify/code #graphify/EXTRACTED #community/GlassCard

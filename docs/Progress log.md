@@ -5,6 +5,24 @@ tags: [tapoff, log]
 
 Newest first. Each entry: done / blocked / next.
 
+## 2026-09-30 (evening) · 1.9: setup without a computer
+**Done**
+- Settings' setup card has **Set up without a computer**: guide + Play Store link when Shizuku is missing, opens
+  Shizuku when it isn't started, otherwise asks Shizuku's permission and runs `pm grant` as shell.
+- Shizuku's AIDL vendored (trimmed, Apache 2.0) and compiled by build-tools' `aidl`; transaction codes checked against
+  the generated stubs. APK still ~109 KB.
+- Tested on the Pixel 7: revoked the permission, tapped the button, allowed TapOff in Shizuku, permission back, card
+  gone, wallpaper intact.
+- Site setup, FAQ and README describe both paths; the computer install stays for Play Protect regions.
+- Released 1.9 together with the landscape sliders.
+
+**Not tested**
+- The "Shizuku not installed" dialog and "not started" paths on a device (Shizuku was already installed and running).
+
+**Next**
+- Shizuku PR only with Taseen's yes (candidate: a second `attachApplication` from one process crashes the server).
+- Videos (setup videos now show Shizuku), second-phone test, retests.
+
 ## 2026-09-30 (later) · 1.8: back-tap sliders, favourites, NASA
 **Done**
 - Fixed a second phone's issues: lock/home framing, copyable setup command, Play Protect block (computer install).

@@ -1,19 +1,20 @@
 ---
-source_file: "src/com/taseen/tapoff/LockService.java"
+source_file: "src/com/taseen/tapoff/DoubleTapHint.java"
 type: "code"
-community: "TapWallpaper"
-location: "L93"
+community: "GlassCard"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TapWallpaper
+  - community/GlassCard
 ---
 
 # .onDraw()
 
 ## Connections
-- [[Iris]] - `method` [EXTRACTED]
-- [[Override_5]] - `references` [EXTRACTED]
+- [[dot-press()]] - `calls` [EXTRACTED]
+- [[DoubleTapHint]] - `method` [EXTRACTED]
+- [[Override_8]] - `references` [EXTRACTED]
 - [[android.graphics.Canvas]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TapWallpaper
+#graphify/code #graphify/EXTRACTED #community/GlassCard

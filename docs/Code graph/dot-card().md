@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/MainActivity.java"
 type: "code"
-community: "MainActivity"
-location: "L842"
+community: "android.content.Context"
+location: "L883"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MainActivity
+  - community/androidcontentContext
 ---
 
 # .card()
@@ -20,4 +20,4 @@ tags:
 - [[MainActivity]] - `method` [EXTRACTED]
 - [[android.widget.LinearLayout]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MainActivity
+#graphify/code #graphify/EXTRACTED #community/androidcontentContext

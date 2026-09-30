@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/Wallpapers.java"
 type: "code"
-community: "android.content.Context"
+community: "Wallpapers"
 location: "L259"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidcontentContext
+  - community/Wallpapers
 ---
 
 # .sha1()
@@ -16,4 +16,4 @@ tags:
 - [[dot-wallhaven()]] - `calls` [EXTRACTED]
 - [[Wallpapers]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidcontentContext
+#graphify/code #graphify/EXTRACTED #community/Wallpapers

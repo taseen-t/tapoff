@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "NotchPanel"
+community: "SlidersActivity"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NotchPanel
+  - community/SlidersActivity
 ---
 
 # Context
@@ -14,4 +14,4 @@ tags:
 - [[dot-backTapSeen()]] - `references` [EXTRACTED]
 - [[dot-forgetBackTap()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NotchPanel
+#graphify/code #graphify/EXTRACTED #community/SlidersActivity

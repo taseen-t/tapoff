@@ -2,7 +2,7 @@
 source_file: "docs/Checks.md"
 type: "document"
 community: "Checks.md"
-location: "L24"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED

@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/SlidersActivity.java"
 type: "code"
-community: "NotchPanel"
+community: "SlidersActivity"
 location: "L16"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NotchPanel
+  - community/SlidersActivity
 ---
 
 # .backTapSeen()
@@ -17,4 +17,4 @@ tags:
 - [[Context_1]] - `references` [EXTRACTED]
 - [[SlidersActivity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NotchPanel
+#graphify/code #graphify/EXTRACTED #community/SlidersActivity

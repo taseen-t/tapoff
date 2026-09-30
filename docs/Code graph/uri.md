@@ -1,18 +1,13 @@
 ---
 source_file: ""
 type: "concept"
-community: "NotchPanel.java"
+community: "uri"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/NotchPaneljava
+  - community/uri
 ---
 
 # uri
 
-## Connections
-- [[MainActivity.java]] - `imports` [EXTRACTED]
-- [[SlidersActivity.java]] - `imports` [EXTRACTED]
-- [[Wallpapers.java]] - `imports` [EXTRACTED]
-
-#graphify/concept #graphify/EXTRACTED #community/NotchPaneljava
+#graphify/concept #graphify/EXTRACTED #community/uri

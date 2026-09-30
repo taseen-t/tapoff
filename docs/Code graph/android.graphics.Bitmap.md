@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "android.graphics.Bitmap"
+community: "Wallpapers"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidgraphicsBitmap
+  - community/Wallpapers
 ---
 
 # android.graphics.Bitmap
@@ -29,4 +29,4 @@ tags:
 - [[TapWallpaper.java]] - `imports` [EXTRACTED]
 - [[Wallpapers.java]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidgraphicsBitmap
+#graphify/code #graphify/EXTRACTED #community/Wallpapers

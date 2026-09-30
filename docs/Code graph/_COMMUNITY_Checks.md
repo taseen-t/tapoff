@@ -9,6 +9,7 @@ members: 25
 
 ## Members
 - [[2026-09-30]] - document - docs/Tasks.md
+- [[2026-09-30 (evening) · 1.9 setup without a computer]] - document - docs/Progress log.md
 - [[2026-09-30 (later) · 1.8]] - document - docs/Tasks.md
 - [[2026-09-30 (later) · 1.8 back-tap sliders, favourites, NASA]] - document - docs/Progress log.md
 - [[2026-09-30 · 1.7 slide the edges]] - document - docs/Progress log.md
@@ -18,7 +19,6 @@ members: 25
 - [[Checks_1]] - document - docs/Checks.md
 - [[Checks]] - document - docs/Checks.md
 - [[Decisions_1]] - document - docs/Decisions.md
-- [[Decisions]] - document - docs/Decisions.md
 - [[Done before this vault existed (v1.0–1.6)]] - document - docs/Tasks.md
 - [[Home]] - document - docs/Home.md
 - [[Keeping this current]] - document - docs/Home.md
@@ -42,9 +42,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_NotchPanel]]
 - 1 edge to [[_COMMUNITY_TapWallpaper]]
+- 1 edge to [[_COMMUNITY_SlidersActivity]]
 
 ## Top bridge nodes
 - [[Architecture_1]] - degree 5, connects to 1 community
-- [[Decisions_1]] - degree 2, connects to 1 community
+- [[Decisions_1]] - degree 4, connects to 1 community

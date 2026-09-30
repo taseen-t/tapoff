@@ -1,11 +1,11 @@
 ---
 type: community
-members: 12
+members: 11
 ---
 
 # NotchPanel.java
 
-**Members:** 12 nodes
+**Members:** 11 nodes
 
 ## Members
 - [[NotchPanel.java]] - code - src/com/taseen/tapoff/NotchPanel.java
@@ -15,11 +15,10 @@ members: 12
 - [[file]] - concept
 - [[intent]] - concept
 - [[ioexception]] - concept
-- [[linearinterpolator]] - concept
 - [[pixelformat]] - concept
 - [[settings]] - concept
 - [[toast]] - concept
-- [[uri]] - concept
+- [[vibrationattributes]] - concept
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,19 +28,21 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_MainActivity.java]]
+- 6 edges to [[_COMMUNITY_MainActivity.java]]
 - 6 edges to [[_COMMUNITY_LockService.java]]
-- 5 edges to [[_COMMUNITY_NotchPanel]]
-- 5 edges to [[_COMMUNITY_android.graphics.Paint]]
+- 5 edges to [[_COMMUNITY_GlassCard]]
 - 4 edges to [[_COMMUNITY_TapWallpaper.java]]
-- 3 edges to [[_COMMUNITY_Wallpapers.java]]
+- 3 edges to [[_COMMUNITY_NotchPanel]]
+- 2 edges to [[_COMMUNITY_SlidersActivity]]
 - 2 edges to [[_COMMUNITY_log]]
+- 2 edges to [[_COMMUNITY_Wallpapers.java]]
 - 1 edge to [[_COMMUNITY_android.content.Context]]
+- 1 edge to [[_COMMUNITY_ShizukuSetup.java]]
 - 1 edge to [[_COMMUNITY_android.graphics.Canvas]]
 
 ## Top bridge nodes
 - [[NotchPanel.java]] - degree 27, connects to 8 communities
+- [[SlidersActivity.java]] - degree 8, connects to 3 communities
 - [[file]] - degree 5, connects to 3 communities
-- [[SlidersActivity.java]] - degree 8, connects to 2 communities
 - [[ioexception]] - degree 4, connects to 2 communities
-- [[uri]] - degree 3, connects to 2 communities
+- [[toast]] - degree 3, connects to 1 community

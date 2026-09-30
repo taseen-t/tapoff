@@ -87,14 +87,16 @@ Every request goes here the moment it's asked. Tick subtasks as they land. Never
       screenshot" to rule out the acrylic case)
 - [x] Landscape: sliders open at the top centre and slide up into the top edge to close
 - [x] Decide the no-PC setup path: Taseen chose Shizuku (built-in wireless-debugging pairing needs SPAKE2 + TLS export + AES-GCM, too big for the no-Gradle app)
-- [ ] Grant WRITE_SECURE_SETTINGS through Shizuku, no computer needed
-  - [ ] Settings setup card: "Set up without a computer" option
-  - [ ] Shizuku not installed: link to its Play Store page and guide
-  - [ ] Shizuku running: ask its permission, run `pm grant com.taseen.tapoff android.permission.WRITE_SECURE_SETTINGS` as shell
-  - [ ] No Gradle: vendor the minimal Apache-2.0 Shizuku API/AIDL classes, or talk to its binder via ShizukuProvider
-  - [ ] Site setup, README, docs, Graphify (installing from the web still hits Play Protect in some regions, so the computer install stays there)
-  - [ ] Release with the landscape sliders (755a74d) as the next version, deploy the site
-- [ ] Setup videos (portrait + landscape): confirm with Taseen whether still wanted now that Shizuku removes the PC step
+- [x] Grant WRITE_SECURE_SETTINGS through Shizuku, no computer needed
+  - [x] Settings setup card: "Set up without a computer" option
+  - [x] Shizuku not installed: link to its Play Store page and guide
+  - [x] Shizuku running: ask its permission, run `pm grant com.taseen.tapoff android.permission.WRITE_SECURE_SETTINGS` as shell
+  - [x] No Gradle: vendored the trimmed Apache-2.0 Shizuku AIDL + BinderContainer, compiled with build-tools' aidl
+  - [x] Site setup, README, docs, Graphify (installing from the web still hits Play Protect in some regions, so the computer install stays there)
+  - [x] Tested end to end on the Pixel (revoked, then Set up without a computer → Shizuku's Allow → granted, card gone)
+  - [ ] Look through Shizuku's code for bugs worth a PR (found: a second attachApplication from one process crashes the server); PR only with Taseen's yes
+  - [x] Release with the landscape sliders (755a74d) as 1.9, deploy the site
+- [ ] Setup videos (portrait + landscape): still wanted (Taseen, 2026-09-30), now showing the Shizuku setup
 - [ ] Taseen tests on a second Android, then fixes
 - [ ] Refresh site screenshots (tile changed) with the video footage
 

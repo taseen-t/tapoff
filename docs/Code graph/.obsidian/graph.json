@@ -1,7 +1,7 @@
 {
   "colorGroups": [
     {
-      "query": "tag:#community/MainActivity",
+      "query": "tag:#community/androidcontentContext",
       "color": {
         "a": 1,
         "rgb": 5142951
@@ -22,7 +22,7 @@
       }
     },
     {
-      "query": "tag:#community/androidgraphicsPaint",
+      "query": "tag:#community/GlassCard",
       "color": {
         "a": 1,
         "rgb": 7780274
@@ -57,7 +57,7 @@
       }
     },
     {
-      "query": "tag:#community/androidcontentContext",
+      "query": "tag:#community/Wallpapers",
       "color": {
         "a": 1,
         "rgb": 10253663
@@ -106,7 +106,14 @@
       }
     },
     {
-      "query": "tag:#community/androidgraphicsBitmap",
+      "query": "tag:#community/ShizukuSetupjava",
+      "color": {
+        "a": 1,
+        "rgb": 15583560
+      }
+    },
+    {
+      "query": "tag:#community/uri",
       "color": {
         "a": 1,
         "rgb": 11565729
@@ -131,6 +138,13 @@
       "color": {
         "a": 1,
         "rgb": 12234924
+      }
+    },
+    {
+      "query": "tag:#community/SlidersActivity",
+      "color": {
+        "a": 1,
+        "rgb": 5142951
       }
     }
   ]

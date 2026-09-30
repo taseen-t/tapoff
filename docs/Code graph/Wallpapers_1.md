@@ -1,12 +1,12 @@
 ---
 source_file: "docs/Architecture.md"
 type: "document"
-community: "android.content.Context"
-location: "L37"
+community: "Wallpapers"
+location: "L50"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/androidcontentContext
+  - community/Wallpapers
 ---
 
 # Wallpapers
@@ -20,4 +20,4 @@ tags:
 - [[Architecture]] - `contains` [EXTRACTED]
 - [[TapWallpaper]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/androidcontentContext
+#graphify/document #graphify/INFERRED #community/Wallpapers

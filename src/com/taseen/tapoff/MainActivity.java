@@ -615,6 +615,40 @@ public class MainActivity extends Activity {
         }
     }
 
+    // The one-time permission from Shizuku instead of a computer: get it, start it, allow TapOff, done.
+    private void setupWithShizuku() {
+        if (!ShizukuSetup.installed(this)) {
+            new android.app.AlertDialog.Builder(this)
+                .setTitle("Set up without a computer")
+                .setMessage("Shizuku is a free app that uses your phone's own Wireless debugging instead of a computer.\n\n"
+                    + "1. Install Shizuku.\n"
+                    + "2. Open it and start it with Wireless debugging (it walks you through pairing; needs Wi-Fi).\n"
+                    + "3. Come back here, tap Set up without a computer again, and allow TapOff.\n\n"
+                    + "The permission stays after that, so you can remove Shizuku if you like.")
+                .setPositiveButton("Get Shizuku", (d, w) -> {
+                    try {
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + ShizukuSetup.PACKAGE)));
+                    } catch (android.content.ActivityNotFoundException e) { // no Play Store
+                        startActivity(new Intent(Intent.ACTION_VIEW,
+                            Uri.parse("https://play.google.com/store/apps/details?id=" + ShizukuSetup.PACKAGE)));
+                    }
+                })
+                .setNegativeButton("Not now", null)
+                .show();
+        } else if (!ShizukuSetup.running()) {
+            Toast.makeText(this, "Start Shizuku, then come back", Toast.LENGTH_LONG).show();
+            Intent open = getPackageManager().getLaunchIntentForPackage(ShizukuSetup.PACKAGE);
+            if (open != null) startActivity(open);
+        } else {
+            ShizukuSetup.grant(getPackageName(), () -> {
+                if (isDestroyed()) return;
+                refreshState();
+                Toast.makeText(this, LockService.canLock(this) ? "Done. Double-tap turns the screen off now"
+                    : "Shizuku didn't give the permission. Try again, or use a computer", Toast.LENGTH_LONG).show();
+            });
+        }
+    }
+
     private ScrollView buildSettings() {
         LinearLayout list = new LinearLayout(this);
         list.setOrientation(LinearLayout.VERTICAL);
@@ -624,10 +658,17 @@ public class MainActivity extends Activity {
 
         LinearLayout setup = card(list);
         setup.addView(Ui.text(this, "One-time setup", 18, 600, Ui.ink(this)));
-        TextView how = Ui.text(this, "Turning the screen off needs one permission that only a computer can give. "
-            + "Turn on USB debugging, plug the phone in, and run this on the computer:", 14, 400, Ui.muted(this));
-        how.setPadding(0, Ui.dp(this, 6), 0, Ui.dp(this, 10));
+        TextView how = Ui.text(this, "Turning the screen off needs one permission. The free Shizuku app can give it "
+            + "on the phone itself.", 14, 400, Ui.muted(this));
+        how.setPadding(0, Ui.dp(this, 6), 0, Ui.dp(this, 12));
         setup.addView(how);
+        Button noPc = Ui.pill(this, "Set up without a computer", Ui.Pill.PRIMARY);
+        noPc.setOnClickListener(v -> setupWithShizuku());
+        setup.addView(noPc, new LinearLayout.LayoutParams(-1, -2));
+        TextView orPc = Ui.text(this, "Or with a computer: turn on USB debugging, plug the phone in, and run this on "
+            + "the computer:", 14, 400, Ui.muted(this));
+        orPc.setPadding(0, Ui.dp(this, 16), 0, Ui.dp(this, 10));
+        setup.addView(orPc);
         TextView cmd = Ui.text(this, GRANT, 12, 400, Ui.ink(this));
         cmd.setTypeface(android.graphics.Typeface.MONOSPACE);
         cmd.setTextIsSelectable(true);
@@ -635,7 +676,7 @@ public class MainActivity extends Activity {
         int pad = Ui.dp(this, 12);
         cmd.setPadding(pad, pad, pad, pad);
         setup.addView(cmd, new LinearLayout.LayoutParams(-1, -2));
-        Button copy = Ui.pill(this, "Copy command", Ui.Pill.PRIMARY);
+        Button copy = Ui.pill(this, "Copy command", Ui.Pill.SECONDARY);
         copy.setOnClickListener(v -> getSystemService(android.content.ClipboardManager.class)
             .setPrimaryClip(android.content.ClipData.newPlainText("TapOff setup", GRANT)));
         LinearLayout.LayoutParams copyLp = new LinearLayout.LayoutParams(-1, -2);

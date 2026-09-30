@@ -1,17 +1,19 @@
 ---
 source_file: ""
 type: "code"
-community: "NotchPanel"
+community: "GlassCard"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NotchPanel
+  - community/GlassCard
 ---
 
 # Override
 
 ## Connections
-- [[dot-onDraw()_4]] - `references` [EXTRACTED]
-- [[dot-onTouchEvent()_1]] - `references` [EXTRACTED]
+- [[dot-onDraw()_2]] - `references` [EXTRACTED]
+- [[dot-onMeasure()]] - `references` [EXTRACTED]
+- [[dot-onSizeChanged()]] - `references` [EXTRACTED]
+- [[dot-setPressed()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NotchPanel
+#graphify/code #graphify/EXTRACTED #community/GlassCard

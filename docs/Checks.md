@@ -15,6 +15,9 @@ tags: [tapoff, checks]
 4. Volume: `adb shell input swipe 20 1600 20 1000 800` and compare `streamVolume` in `adb shell dumpsys audio`.
 5. Brightness: slide at x=1068 and read `adb shell settings get system screen_brightness`; put it back afterwards.
 6. Screenshot before every tap. Taseen may be using the phone at the same time.
+7. No-computer setup (needs Shizuku running and Taseen's OK): `adb shell pm revoke com.taseen.tapoff
+   android.permission.WRITE_SECURE_SETTINGS` (at least 12 s after an install), then Settings → Set up without a
+   computer → Allow; re-grant over adb if it fails.
 
 ## Before every commit
 1. Builds, installed, and the changed feature checked on the phone.

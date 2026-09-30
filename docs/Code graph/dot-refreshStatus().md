@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/MainActivity.java"
 type: "code"
-community: "NotchPanel"
+community: "android.content.Context"
 location: "L528"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NotchPanel
+  - community/androidcontentContext
 ---
 
 # .refreshStatus()
@@ -19,4 +19,4 @@ tags:
 - [[dot-volumeTile()]] - `calls` [EXTRACTED]
 - [[MainActivity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NotchPanel
+#graphify/code #graphify/EXTRACTED #community/androidcontentContext

@@ -1,8 +1,8 @@
 {
   "build.sh": {
-    "mtime": 1790762346.0899527,
-    "seen": 1790762750.000919,
-    "ast_hash": "0c090e19f2919e3cdf891f99dc1ec2c4",
+    "mtime": 1790781034.208062,
+    "seen": 1790781305.2598789,
+    "ast_hash": "c8c6371d4975c7b45c98c8693fe0670b",
     "semantic_hash": ""
   },
   "src/com/taseen/tapoff/CutoutArt.java": {
@@ -18,15 +18,15 @@
     "semantic_hash": ""
   },
   "src/com/taseen/tapoff/LockService.java": {
-    "mtime": 1790703947.2537768,
-    "seen": 1790736508.017938,
-    "ast_hash": "18467a9b884995370044ce435a82517f",
+    "mtime": 1790763111.5371888,
+    "seen": 1790763904.907715,
+    "ast_hash": "5cc892718ac99b9d3283d72bb957010c",
     "semantic_hash": ""
   },
   "src/com/taseen/tapoff/MainActivity.java": {
-    "mtime": 1790762803.5688124,
-    "seen": 1790762877.680686,
-    "ast_hash": "cbc1328c9c516dba46ced277018bfeec",
+    "mtime": 1790781130.8710215,
+    "seen": 1790781305.2598872,
+    "ast_hash": "ea3e3e0721cf6bff461d10436fac8ccb",
     "semantic_hash": ""
   },
   "src/com/taseen/tapoff/PreviewActivity.java": {
@@ -36,9 +36,9 @@
     "semantic_hash": ""
   },
   "src/com/taseen/tapoff/ScreenOffTile.java": {
-    "mtime": 1790686598.7638013,
-    "seen": 1790736508.01794,
-    "ast_hash": "37425500bd391c3e12f886ddc6247ed8",
+    "mtime": 1790763058.8651652,
+    "seen": 1790763904.9077172,
+    "ast_hash": "6d116fa6e91f30dc0d8ac7bba5fdf878",
     "semantic_hash": ""
   },
   "src/com/taseen/tapoff/SwipeHint.java": {
@@ -48,9 +48,9 @@
     "semantic_hash": ""
   },
   "src/com/taseen/tapoff/TapWallpaper.java": {
-    "mtime": 1790762007.8755605,
-    "seen": 1790762750.000932,
-    "ast_hash": "86cb1d436f91e893cfc42f6a62151c44",
+    "mtime": 1790763486.3683257,
+    "seen": 1790763904.907719,
+    "ast_hash": "3e2d5e401e7b6263664f91dc5449d970",
     "semantic_hash": ""
   },
   "src/com/taseen/tapoff/Ui.java": {
@@ -72,15 +72,15 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1790762692.9243011,
-    "seen": 1790762750.0009348,
-    "ast_hash": "2c080f85f12e54c5a404cc9572e0d33d",
+    "mtime": 1790781261.1158605,
+    "seen": 1790781305.259896,
+    "ast_hash": "b87f646c0a195ed50ae7bb1fbe729517",
     "semantic_hash": ""
   },
   "docs/Architecture.md": {
-    "mtime": 1790762749.0003679,
-    "seen": 1790762750.000936,
-    "ast_hash": "4573d013a90e6deab92c00c830d286b2",
+    "mtime": 1790781285.36794,
+    "seen": 1790781305.259897,
+    "ast_hash": "8e335bd29b76921c998a1b2403e30960",
     "semantic_hash": ""
   },
   "docs/Checks.md": {
@@ -90,9 +90,9 @@
     "semantic_hash": ""
   },
   "docs/Decisions.md": {
-    "mtime": 1790762876.7652266,
-    "seen": 1790762877.680696,
-    "ast_hash": "f3b33cbc137556228ed493f786be6918",
+    "mtime": 1790781285.3301651,
+    "seen": 1790781305.2598982,
+    "ast_hash": "239f71fa1547936afc5e4bab3cec91a1",
     "semantic_hash": ""
   },
   "docs/Home.md": {
@@ -108,15 +108,15 @@
     "semantic_hash": ""
   },
   "docs/Tasks.md": {
-    "mtime": 1790762876.765541,
-    "seen": 1790762877.6806982,
-    "ast_hash": "5889f35d088a56ad2ebe752dc7c3fdb4",
+    "mtime": 1790781285.3683748,
+    "seen": 1790781305.2598999,
+    "ast_hash": "09864df49e99cd929b4338d20f91b84b",
     "semantic_hash": ""
   },
   "site/index.html": {
-    "mtime": 1790762692.9002874,
-    "seen": 1790762750.00094,
-    "ast_hash": "18bf064ea60747137cf453aac1b156c9",
+    "mtime": 1790781239.2250497,
+    "seen": 1790781305.259901,
+    "ast_hash": "a3c5db0ab8df88f10115d1757d7a6699",
     "semantic_hash": ""
   },
   "site/icon.svg": {
@@ -132,15 +132,27 @@
     "semantic_hash": ""
   },
   "src/com/taseen/tapoff/NotchPanel.java": {
-    "mtime": 1790762007.875249,
-    "seen": 1790762750.000928,
-    "ast_hash": "bd5f9b2ffc9395e5556718af32a33c05",
+    "mtime": 1790764480.1722214,
+    "seen": 1790781305.2598872,
+    "ast_hash": "05a0fca0de124ae409046ab1bfab267d",
     "semantic_hash": ""
   },
   "src/com/taseen/tapoff/SlidersActivity.java": {
-    "mtime": 1790762803.5445628,
-    "seen": 1790762877.6806889,
-    "ast_hash": "0fa28d3542c638c3a0a480c8fb99b9ed",
+    "mtime": 1790763421.3419263,
+    "seen": 1790763904.907718,
+    "ast_hash": "5ca372bd81129ea658aa095aa3280f7a",
+    "semantic_hash": ""
+  },
+  "src/com/taseen/tapoff/ShizukuSetup.java": {
+    "mtime": 1790781083.1164906,
+    "seen": 1790781305.2598898,
+    "ast_hash": "f713a4f1bd344fa4b80743cb2f198681",
+    "semantic_hash": ""
+  },
+  "src/moe/shizuku/api/BinderContainer.java": {
+    "mtime": 1790781017.5795505,
+    "seen": 1790781305.259896,
+    "ast_hash": "161f18f2c21de15aba465254d59d2863",
     "semantic_hash": ""
   }
 }

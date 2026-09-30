@@ -10,6 +10,7 @@ members: 16
 ## Members
 - [[CutoutArt.java]] - code - src/com/taseen/tapoff/CutoutArt.java
 - [[LockService.java]] - code - src/com/taseen/tapoff/LockService.java
+- [[android.accessibilityservice.AccessibilityService]] - code
 - [[android.view.WindowManager]] - code
 - [[arraylist]] - concept
 - [[componentname]] - concept
@@ -18,7 +19,6 @@ members: 16
 - [[displaycutout]] - concept
 - [[files]] - concept
 - [[list]] - concept
-- [[manifest]] - concept
 - [[packagemanager]] - concept
 - [[radialgradient]] - concept
 - [[random]] - concept
@@ -33,7 +33,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_android.graphics.Paint]]
+- 7 edges to [[_COMMUNITY_GlassCard]]
 - 6 edges to [[_COMMUNITY_MainActivity.java]]
 - 6 edges to [[_COMMUNITY_NotchPanel.java]]
 - 4 edges to [[_COMMUNITY_Wallpapers.java]]
@@ -41,11 +41,12 @@ SORT file.name ASC
 - 3 edges to [[_COMMUNITY_android.graphics.Canvas]]
 - 2 edges to [[_COMMUNITY_NotchPanel]]
 - 2 edges to [[_COMMUNITY_android.content.Context]]
-- 1 edge to [[_COMMUNITY_android.graphics.Bitmap]]
+- 1 edge to [[_COMMUNITY_Wallpapers]]
+- 1 edge to [[_COMMUNITY_ShizukuSetup.java]]
 
 ## Top bridge nodes
+- [[LockService.java]] - degree 22, connects to 6 communities
 - [[CutoutArt.java]] - degree 17, connects to 6 communities
-- [[LockService.java]] - degree 22, connects to 5 communities
 - [[arraylist]] - degree 5, connects to 2 communities
 - [[list]] - degree 5, connects to 2 communities
 - [[android.view.WindowManager]] - degree 3, connects to 2 communities

@@ -1,19 +1,22 @@
 ---
 source_file: ""
 type: "code"
-community: "android.graphics.Bitmap"
+community: "ShizukuSetup.java"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidgraphicsBitmap
+  - community/ShizukuSetupjava
 ---
 
 # Override
 
 ## Connections
-- [[dot-onDraw()]] - `references` [EXTRACTED]
-- [[dot-onMeasure()]] - `references` [EXTRACTED]
-- [[dot-onSizeChanged()]] - `references` [EXTRACTED]
-- [[dot-setPressed()]] - `references` [EXTRACTED]
+- [[dot-call()]] - `references` [EXTRACTED]
+- [[dot-delete()]] - `references` [EXTRACTED]
+- [[dot-getType()]] - `references` [EXTRACTED]
+- [[dot-insert()]] - `references` [EXTRACTED]
+- [[dot-onCreate()_2]] - `references` [EXTRACTED]
+- [[dot-query()]] - `references` [EXTRACTED]
+- [[dot-update()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidgraphicsBitmap
+#graphify/code #graphify/EXTRACTED #community/ShizukuSetupjava

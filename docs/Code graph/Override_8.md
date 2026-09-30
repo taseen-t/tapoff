@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "android.graphics.Paint"
+community: "GlassCard"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidgraphicsPaint
+  - community/GlassCard
 ---
 
 # Override
 
 ## Connections
-- [[dot-onDraw()_3]] - `references` [EXTRACTED]
+- [[dot-onDraw()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidgraphicsPaint
+#graphify/code #graphify/EXTRACTED #community/GlassCard

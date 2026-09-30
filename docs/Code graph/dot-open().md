@@ -19,7 +19,6 @@ tags:
 - [[dot-enabled()_1]] - `calls` [EXTRACTED]
 - [[dot-hole()_1]] - `calls` [EXTRACTED]
 - [[dot-overlay()]] - `calls` [EXTRACTED]
-- [[dot-portrait()]] - `calls` [EXTRACTED]
 - [[dot-statusBar()]] - `calls` [EXTRACTED]
 - [[NotchPanel]] - `method` [EXTRACTED]
 

@@ -479,14 +479,25 @@ footer { border-top: 1px solid var(--line); margin-top: 64px; padding: 28px 0 48
   <section id="setup">
     <p class="eyebrow">set it up</p>
     <h2>Five minutes, once</h2>
-    <p class="sub">A computer does the install and one permission in a single step. After that, you never think about it again.</p>
+    <p class="sub">Install TapOff and give it one permission, on the phone with the free Shizuku app or from a computer.
+      After that, you never think about it again.</p>
     <div class="steps">
-      <div class="step"><div><h3>Turn on USB debugging</h3>
-        <p>On the phone: Settings → About phone → tap <b>Build number</b> 7 times, then Settings → System → Developer options →
-          <b>USB debugging</b> on.</p></div></div>
-      <div class="step"><div><h3>Install it from a computer</h3>
+      <div class="step"><div><h3>No computer: install it and use Shizuku</h3>
         <ol>
-          <li>Download <a href="https://github.com/taseen-t/tapoff/releases/latest/download/TapOff.apk">TapOff.apk</a> and
+          <li>On the phone, download <a href="https://github.com/taseen-t/tapoff/releases/latest/download/TapOff.apk">TapOff.apk</a>
+            and install it.</li>
+          <li>Install <a href="https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api">Shizuku</a> from the
+            Play Store, open it and start it with <b>Wireless debugging</b>. It walks you through pairing on the phone
+            itself; you need Wi-Fi.</li>
+          <li>Open TapOff → Settings → <b>Set up without a computer</b> → <b>Allow</b>.</li>
+        </ol>
+        <p class="note">The permission stays, so you can remove Shizuku afterwards. Play Protect says "App blocked to
+          protect your device"? Use the computer install below.</p></div></div>
+      <div class="step"><div><h3>Or: install it from a computer</h3>
+        <ol>
+          <li>On the phone: Settings → About phone → tap <b>Build number</b> 7 times, then Settings → System → Developer
+            options → <b>USB debugging</b> on.</li>
+          <li>On the computer, download <a href="https://github.com/taseen-t/tapoff/releases/latest/download/TapOff.apk">TapOff.apk</a> and
             <a href="https://developer.android.com/tools/releases/platform-tools">Android platform-tools</a>.</li>
           <li>Plug the phone in and allow the prompt on it.</li>
           <li>In the folder with TapOff.apk, run this. It installs TapOff and gives it its one permission:</li>
@@ -508,11 +519,12 @@ footer { border-top: 1px solid var(--line); margin-top: 64px; padding: 28px 0 48
     <div class="faq">
     <details><summary>Play Protect says "App blocked to protect your device"</summary>
       <p>Some phones (Google's fraud protection, on in countries like Pakistan and India) block installing any app with an
-        accessibility service from a browser or file manager. Installing from a computer isn't blocked, which is why the
-        setup above uses one: <code>adb install</code> puts it on the phone.</p></details>
-    <details><summary>Why does it need a computer once?</summary>
-      <p>Switching an accessibility service on and off by itself needs a permission that only a computer can grant. Without it,
-        TapOff still works as a wallpaper app; the double-tap just won't turn the screen off.</p></details>
+        accessibility service from a browser or file manager. Installing from a computer isn't blocked: use the computer
+        install above, where <code>adb install</code> puts it on the phone.</p></details>
+    <details><summary>Why does it need Shizuku or a computer once?</summary>
+      <p>Switching an accessibility service on and off by itself needs a permission that apps can't give themselves; only
+        Android's debugging tools can. Shizuku uses Wireless debugging on the phone to give it; a computer uses USB
+        debugging. Without it, TapOff still works as a wallpaper app; the double-tap just won't turn the screen off.</p></details>
     <details><summary>Is it safe?</summary>
       <p>The code is open for anyone to read. TapOff reads nothing on your screen, has no accounts or analytics, and only goes
         online to download wallpapers.</p></details>

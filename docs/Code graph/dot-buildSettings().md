@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/MainActivity.java"
 type: "code"
-community: "MainActivity"
-location: "L618"
+community: "android.content.Context"
+location: "L652"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MainActivity
+  - community/androidcontentContext
 ---
 
 # .buildSettings()
@@ -23,6 +23,7 @@ tags:
 - [[dot-muted()]] - `calls` [EXTRACTED]
 - [[dot-pill()]] - `calls` [EXTRACTED]
 - [[dot-setAppearance()]] - `calls` [EXTRACTED]
+- [[dot-setupWithShizuku()]] - `calls` [EXTRACTED]
 - [[dot-shape()]] - `calls` [EXTRACTED]
 - [[dot-styleSegments()]] - `calls` [EXTRACTED]
 - [[dot-text()]] - `calls` [EXTRACTED]
@@ -32,4 +33,4 @@ tags:
 - [[MainActivity]] - `method` [EXTRACTED]
 - [[android.widget.ScrollView]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MainActivity
+#graphify/code #graphify/EXTRACTED #community/androidcontentContext

@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/MainActivity.java"
 type: "code"
-community: "android.graphics.Bitmap"
+community: "Wallpapers"
 location: "L384"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidgraphicsBitmap
+  - community/Wallpapers
 ---
 
 # .loadTileImage()
@@ -18,4 +18,4 @@ tags:
 - [[dot-volumeArt()]] - `calls` [EXTRACTED]
 - [[MainActivity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidgraphicsBitmap
+#graphify/code #graphify/EXTRACTED #community/Wallpapers

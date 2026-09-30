@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "NotchPanel"
+community: "GlassCard"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NotchPanel
+  - community/GlassCard
 ---
 
 # Override
 
 ## Connections
-- [[dot-onCreate()_3]] - `references` [EXTRACTED]
+- [[dot-onDraw()_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NotchPanel
+#graphify/code #graphify/EXTRACTED #community/GlassCard

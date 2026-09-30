@@ -17,8 +17,10 @@ KS_PASS="${TAPOFF_KEYSTORE_PASS:-android}"
 rm -rf out && mkdir -p out/classes
 "$BT/aapt2" compile --dir res -o out/res.zip
 "$BT/aapt2" link out/res.zip -I "$JAR" --manifest AndroidManifest.xml \
-  --min-sdk-version 33 --target-sdk-version 35 --version-code 12 --version-name 1.8.1 \
+  --min-sdk-version 33 --target-sdk-version 35 --version-code 13 --version-name 1.9 \
   --java out/gen -o out/unsigned.apk
+# Shizuku's binder interfaces (src/moe/shizuku/server) become Java stubs next to R.java.
+"$BT/aidl" --lang=java -p"$SDK/platforms/android-35/framework.aidl" -Isrc -oout/gen $(find src -name '*.aidl')
 javac -source 17 -target 17 -cp "$JAR" -d out/classes $(find src out/gen -name '*.java')
 "$BT/d8" --min-api 33 --lib "$JAR" --output out $(find out/classes -name '*.class')
 (cd out && zip -q unsigned.apk classes.dex)

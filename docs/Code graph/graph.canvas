@@ -3,7 +3,7 @@
     {
       "id": "g0",
       "type": "group",
-      "label": "MainActivity",
+      "label": "android.content.Context",
       "x": 0,
       "y": 0,
       "width": 1760,
@@ -218,11 +218,20 @@
       "height": 60
     },
     {
+      "id": "n_src_com_taseen_tapoff_mainactivity_mainactivity_onconfigurationchanged",
+      "type": "file",
+      "file": "dot-onConfigurationChanged().md",
+      "x": 1420,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
       "id": "n_src_com_taseen_tapoff_mainactivity_mainactivity_oncreate",
       "type": "file",
       "file": "dot-onCreate().md",
-      "x": 1420,
-      "y": 240,
+      "x": 20,
+      "y": 320,
       "width": 180,
       "height": 60
     },
@@ -230,7 +239,7 @@
       "id": "n_src_com_taseen_tapoff_mainactivity_swiperoot_ontouchevent",
       "type": "file",
       "file": "dot-onTouchEvent().md",
-      "x": 20,
+      "x": 220,
       "y": 320,
       "width": 180,
       "height": 60
@@ -239,7 +248,7 @@
       "id": "n_src_com_taseen_tapoff_mainactivity_mainactivity_park",
       "type": "file",
       "file": "dot-park().md",
-      "x": 220,
+      "x": 420,
       "y": 320,
       "width": 180,
       "height": 60
@@ -248,7 +257,16 @@
       "id": "n_src_com_taseen_tapoff_ui_ui_pill",
       "type": "file",
       "file": "dot-pill().md",
-      "x": 420,
+      "x": 620,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_com_taseen_tapoff_mainactivity_mainactivity_refreshstatus",
+      "type": "file",
+      "file": "dot-refreshStatus().md",
+      "x": 820,
       "y": 320,
       "width": 180,
       "height": 60
@@ -257,7 +275,7 @@
       "id": "n_src_com_taseen_tapoff_mainactivity_mainactivity_releasepages",
       "type": "file",
       "file": "dot-releasePages().md",
-      "x": 620,
+      "x": 1020,
       "y": 320,
       "width": 180,
       "height": 60
@@ -266,7 +284,7 @@
       "id": "n_src_com_taseen_tapoff_mainactivity_mainactivity_section",
       "type": "file",
       "file": "dot-section().md",
-      "x": 820,
+      "x": 1220,
       "y": 320,
       "width": 180,
       "height": 60
@@ -275,7 +293,7 @@
       "id": "n_src_com_taseen_tapoff_mainactivity_mainactivity_select",
       "type": "file",
       "file": "dot-select().md",
-      "x": 1020,
+      "x": 1420,
       "y": 320,
       "width": 180,
       "height": 60
@@ -284,8 +302,8 @@
       "id": "n_src_com_taseen_tapoff_mainactivity_mainactivity_setappearance",
       "type": "file",
       "file": "dot-setAppearance().md",
-      "x": 1220,
-      "y": 320,
+      "x": 20,
+      "y": 400,
       "width": 180,
       "height": 60
     },
@@ -293,8 +311,8 @@
       "id": "n_src_com_taseen_tapoff_ui_ui_shape",
       "type": "file",
       "file": "dot-shape().md",
-      "x": 1420,
-      "y": 320,
+      "x": 220,
+      "y": 400,
       "width": 180,
       "height": 60
     },
@@ -302,7 +320,7 @@
       "id": "n_src_com_taseen_tapoff_mainactivity_mainactivity_showupdate",
       "type": "file",
       "file": "dot-showUpdate().md",
-      "x": 20,
+      "x": 420,
       "y": 400,
       "width": 180,
       "height": 60
@@ -311,7 +329,7 @@
       "id": "n_src_com_taseen_tapoff_mainactivity_mainactivity_stackcards",
       "type": "file",
       "file": "dot-stackCards().md",
-      "x": 220,
+      "x": 620,
       "y": 400,
       "width": 180,
       "height": 60
@@ -320,7 +338,7 @@
       "id": "n_src_com_taseen_tapoff_mainactivity_mainactivity_stylesegments",
       "type": "file",
       "file": "dot-styleSegments().md",
-      "x": 420,
+      "x": 820,
       "y": 400,
       "width": 180,
       "height": 60
@@ -329,7 +347,7 @@
       "id": "n_src_com_taseen_tapoff_ui_ui_surface",
       "type": "file",
       "file": "dot-surface().md",
-      "x": 620,
+      "x": 1020,
       "y": 400,
       "width": 180,
       "height": 60
@@ -338,7 +356,7 @@
       "id": "n_src_com_taseen_tapoff_mainactivity_mainactivity_switchart",
       "type": "file",
       "file": "dot-switchArt().md",
-      "x": 820,
+      "x": 1220,
       "y": 400,
       "width": 180,
       "height": 60
@@ -347,7 +365,7 @@
       "id": "n_src_com_taseen_tapoff_mainactivity_mainactivity_switchrow",
       "type": "file",
       "file": "dot-switchRow().md",
-      "x": 1020,
+      "x": 1420,
       "y": 400,
       "width": 180,
       "height": 60
@@ -356,8 +374,8 @@
       "id": "n_src_com_taseen_tapoff_ui_ui_text",
       "type": "file",
       "file": "dot-text().md",
-      "x": 1220,
-      "y": 400,
+      "x": 20,
+      "y": 480,
       "width": 180,
       "height": 60
     },
@@ -365,8 +383,8 @@
       "id": "n_src_com_taseen_tapoff_mainactivity_mainactivity_tileartview",
       "type": "file",
       "file": "dot-tileArtView().md",
-      "x": 1420,
-      "y": 400,
+      "x": 220,
+      "y": 480,
       "width": 180,
       "height": 60
     },
@@ -374,7 +392,7 @@
       "id": "n_src_com_taseen_tapoff_mainactivity_mainactivity_tilerow",
       "type": "file",
       "file": "dot-tileRow().md",
-      "x": 20,
+      "x": 420,
       "y": 480,
       "width": 180,
       "height": 60
@@ -383,7 +401,7 @@
       "id": "n_src_com_taseen_tapoff_mainactivity_mainactivity_title",
       "type": "file",
       "file": "dot-title().md",
-      "x": 220,
+      "x": 620,
       "y": 480,
       "width": 180,
       "height": 60
@@ -392,7 +410,7 @@
       "id": "n_src_com_taseen_tapoff_mainactivity_mainactivity_versionname",
       "type": "file",
       "file": "dot-versionName().md",
-      "x": 420,
+      "x": 820,
       "y": 480,
       "width": 180,
       "height": 60
@@ -401,7 +419,7 @@
       "id": "n_src_com_taseen_tapoff_mainactivity_mainactivity_volumetile",
       "type": "file",
       "file": "dot-volumeTile().md",
-      "x": 620,
+      "x": 1020,
       "y": 480,
       "width": 180,
       "height": 60
@@ -410,7 +428,16 @@
       "id": "n_argbevaluator",
       "type": "file",
       "file": "ArgbEvaluator.md",
-      "x": 820,
+      "x": 1220,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_com_taseen_tapoff_mainactivity_java_configuration",
+      "type": "file",
+      "file": "Configuration.md",
+      "x": 1420,
       "y": 480,
       "width": 180,
       "height": 60
@@ -419,8 +446,8 @@
       "id": "n_src_com_taseen_tapoff_mainactivity_mainactivity",
       "type": "file",
       "file": "MainActivity.md",
-      "x": 1020,
-      "y": 480,
+      "x": 20,
+      "y": 560,
       "width": 180,
       "height": 60
     },
@@ -428,8 +455,8 @@
       "id": "n_src_com_taseen_tapoff_ui_pill_on_photo",
       "type": "file",
       "file": "ON_PHOTO.md",
-      "x": 1220,
-      "y": 480,
+      "x": 220,
+      "y": 560,
       "width": 180,
       "height": 60
     },
@@ -437,8 +464,8 @@
       "id": "n_src_com_taseen_tapoff_ui_pill_primary",
       "type": "file",
       "file": "PRIMARY.md",
-      "x": 1420,
-      "y": 480,
+      "x": 420,
+      "y": 560,
       "width": 180,
       "height": 60
     },
@@ -446,7 +473,7 @@
       "id": "n_src_com_taseen_tapoff_ui_pill",
       "type": "file",
       "file": "Pill.md",
-      "x": 20,
+      "x": 620,
       "y": 560,
       "width": 180,
       "height": 60
@@ -455,7 +482,7 @@
       "id": "n_src_com_taseen_tapoff_ui_pill_secondary",
       "type": "file",
       "file": "SECONDARY.md",
-      "x": 220,
+      "x": 820,
       "y": 560,
       "width": 180,
       "height": 60
@@ -464,7 +491,7 @@
       "id": "n_src_com_taseen_tapoff_mainactivity_swiperoot",
       "type": "file",
       "file": "SwipeRoot.md",
-      "x": 420,
+      "x": 1020,
       "y": 560,
       "width": 180,
       "height": 60
@@ -473,7 +500,7 @@
       "id": "n_docs_architecture_ui",
       "type": "file",
       "file": "UI_1.md",
-      "x": 620,
+      "x": 1220,
       "y": 560,
       "width": 180,
       "height": 60
@@ -482,8 +509,17 @@
       "id": "n_src_com_taseen_tapoff_ui_ui",
       "type": "file",
       "file": "Ui.md",
-      "x": 820,
+      "x": 1420,
       "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_android_content_context",
+      "type": "file",
+      "file": "android.content.Context.md",
+      "x": 20,
+      "y": 640,
       "width": 180,
       "height": 60
     },
@@ -491,8 +527,8 @@
       "id": "n_android_graphics_drawable_gradientdrawable",
       "type": "file",
       "file": "android.graphics.drawable.GradientDrawable.md",
-      "x": 1020,
-      "y": 560,
+      "x": 220,
+      "y": 640,
       "width": 180,
       "height": 60
     },
@@ -500,8 +536,8 @@
       "id": "n_android_widget_framelayout",
       "type": "file",
       "file": "android.widget.FrameLayout.md",
-      "x": 1220,
-      "y": 560,
+      "x": 420,
+      "y": 640,
       "width": 180,
       "height": 60
     },
@@ -509,8 +545,8 @@
       "id": "n_android_widget_linearlayout",
       "type": "file",
       "file": "android.widget.LinearLayout.md",
-      "x": 1420,
-      "y": 560,
+      "x": 620,
+      "y": 640,
       "width": 180,
       "height": 60
     },
@@ -518,7 +554,7 @@
       "id": "n_android_widget_scrollview",
       "type": "file",
       "file": "android.widget.ScrollView.md",
-      "x": 20,
+      "x": 820,
       "y": 640,
       "width": 180,
       "height": 60
@@ -527,7 +563,7 @@
       "id": "n_android_widget_switch",
       "type": "file",
       "file": "android.widget.Switch.md",
-      "x": 220,
+      "x": 1020,
       "y": 640,
       "width": 180,
       "height": 60
@@ -536,7 +572,7 @@
       "id": "n_android_widget_textview",
       "type": "file",
       "file": "android.widget.TextView.md",
-      "x": 420,
+      "x": 1220,
       "y": 640,
       "width": 180,
       "height": 60
@@ -606,10 +642,19 @@
       "height": 60
     },
     {
+      "id": "n_src_com_taseen_tapoff_wallpapers_wallpapers_isfavourite",
+      "type": "file",
+      "file": "dot-isFavourite().md",
+      "x": 3060,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
       "id": "n_src_com_taseen_tapoff_previewactivity_previewactivity_load",
       "type": "file",
       "file": "dot-load().md",
-      "x": 3060,
+      "x": 3260,
       "y": 80,
       "width": 180,
       "height": 60
@@ -618,8 +663,8 @@
       "id": "n_src_com_taseen_tapoff_mainactivity_mainactivity_onactivityresult",
       "type": "file",
       "file": "dot-onActivityResult().md",
-      "x": 3260,
-      "y": 80,
+      "x": 1860,
+      "y": 160,
       "width": 180,
       "height": 60
     },
@@ -627,7 +672,7 @@
       "id": "n_src_com_taseen_tapoff_previewactivity_previewactivity_oncreate",
       "type": "file",
       "file": "dot-onCreate()_1.md",
-      "x": 1860,
+      "x": 2060,
       "y": 160,
       "width": 180,
       "height": 60
@@ -636,7 +681,7 @@
       "id": "n_src_com_taseen_tapoff_previewactivity_previewactivity_ondestroy",
       "type": "file",
       "file": "dot-onDestroy().md",
-      "x": 2060,
+      "x": 2260,
       "y": 160,
       "width": 180,
       "height": 60
@@ -645,7 +690,7 @@
       "id": "n_src_com_taseen_tapoff_mainactivity_swiperoot_onintercepttouchevent",
       "type": "file",
       "file": "dot-onInterceptTouchEvent().md",
-      "x": 2260,
+      "x": 2460,
       "y": 160,
       "width": 180,
       "height": 60
@@ -654,7 +699,7 @@
       "id": "n_src_com_taseen_tapoff_mainactivity_mainactivity_onsaveinstancestate",
       "type": "file",
       "file": "dot-onSaveInstanceState().md",
-      "x": 2460,
+      "x": 2660,
       "y": 160,
       "width": 180,
       "height": 60
@@ -663,7 +708,7 @@
       "id": "n_src_com_taseen_tapoff_previewactivity_previewactivity_ontouch",
       "type": "file",
       "file": "dot-onTouch().md",
-      "x": 2660,
+      "x": 2860,
       "y": 160,
       "width": 180,
       "height": 60
@@ -672,7 +717,7 @@
       "id": "n_src_com_taseen_tapoff_previewactivity_previewactivity_setfavourite",
       "type": "file",
       "file": "dot-setFavourite().md",
-      "x": 2860,
+      "x": 3060,
       "y": 160,
       "width": 180,
       "height": 60
@@ -681,7 +726,7 @@
       "id": "n_src_com_taseen_tapoff_previewactivity_previewactivity_settle",
       "type": "file",
       "file": "dot-settle().md",
-      "x": 3060,
+      "x": 3260,
       "y": 160,
       "width": 180,
       "height": 60
@@ -690,8 +735,8 @@
       "id": "n_src_com_taseen_tapoff_previewactivity_previewactivity_show",
       "type": "file",
       "file": "dot-show().md",
-      "x": 3260,
-      "y": 160,
+      "x": 1860,
+      "y": 240,
       "width": 180,
       "height": 60
     },
@@ -699,7 +744,7 @@
       "id": "n_src_com_taseen_tapoff_previewactivity_previewactivity_showheart",
       "type": "file",
       "file": "dot-showHeart().md",
-      "x": 1860,
+      "x": 2060,
       "y": 240,
       "width": 180,
       "height": 60
@@ -708,7 +753,7 @@
       "id": "n_src_com_taseen_tapoff_previewactivity_previewactivity_showtip",
       "type": "file",
       "file": "dot-showTip().md",
-      "x": 2060,
+      "x": 2260,
       "y": 240,
       "width": 180,
       "height": 60
@@ -717,7 +762,7 @@
       "id": "n_src_com_taseen_tapoff_previewactivity_previewactivity_tapped",
       "type": "file",
       "file": "dot-tapped().md",
-      "x": 2260,
+      "x": 2460,
       "y": 240,
       "width": 180,
       "height": 60
@@ -726,7 +771,7 @@
       "id": "n_src_com_taseen_tapoff_previewactivity_previewactivity_togglecontrols",
       "type": "file",
       "file": "dot-toggleControls().md",
-      "x": 2460,
+      "x": 2660,
       "y": 240,
       "width": 180,
       "height": 60
@@ -735,7 +780,7 @@
       "id": "n_src_com_taseen_tapoff_mainactivity",
       "type": "file",
       "file": "MainActivity.java.md",
-      "x": 2660,
+      "x": 2860,
       "y": 240,
       "width": 180,
       "height": 60
@@ -744,7 +789,7 @@
       "id": "n_src_com_taseen_tapoff_previewactivity_java_override",
       "type": "file",
       "file": "Override.md",
-      "x": 2860,
+      "x": 3060,
       "y": 240,
       "width": 180,
       "height": 60
@@ -753,7 +798,7 @@
       "id": "n_src_com_taseen_tapoff_previewactivity_previewactivity",
       "type": "file",
       "file": "PreviewActivity.md",
-      "x": 3060,
+      "x": 3260,
       "y": 240,
       "width": 180,
       "height": 60
@@ -762,8 +807,8 @@
       "id": "n_src_com_taseen_tapoff_previewactivity",
       "type": "file",
       "file": "PreviewActivity.java.md",
-      "x": 3260,
-      "y": 240,
+      "x": 1860,
+      "y": 320,
       "width": 180,
       "height": 60
     },
@@ -771,7 +816,7 @@
       "id": "n_src_com_taseen_tapoff_ui",
       "type": "file",
       "file": "Ui.java.md",
-      "x": 1860,
+      "x": 2060,
       "y": 320,
       "width": 180,
       "height": 60
@@ -780,7 +825,7 @@
       "id": "n_android_content_intent",
       "type": "file",
       "file": "android.content.Intent.md",
-      "x": 2060,
+      "x": 2260,
       "y": 320,
       "width": 180,
       "height": 60
@@ -789,7 +834,7 @@
       "id": "n_android_graphics_typeface",
       "type": "file",
       "file": "android.graphics.Typeface.md",
-      "x": 2260,
+      "x": 2460,
       "y": 320,
       "width": 180,
       "height": 60
@@ -798,7 +843,7 @@
       "id": "n_android_os_bundle",
       "type": "file",
       "file": "android.os.Bundle.md",
-      "x": 2460,
+      "x": 2660,
       "y": 320,
       "width": 180,
       "height": 60
@@ -807,7 +852,7 @@
       "id": "n_android_view_motionevent",
       "type": "file",
       "file": "android.view.MotionEvent.md",
-      "x": 2660,
+      "x": 2860,
       "y": 320,
       "width": 180,
       "height": 60
@@ -816,7 +861,7 @@
       "id": "n_android_view_velocitytracker",
       "type": "file",
       "file": "android.view.VelocityTracker.md",
-      "x": 2860,
+      "x": 3060,
       "y": 320,
       "width": 180,
       "height": 60
@@ -825,7 +870,7 @@
       "id": "n_android_widget_button",
       "type": "file",
       "file": "android.widget.Button.md",
-      "x": 3060,
+      "x": 3260,
       "y": 320,
       "width": 180,
       "height": 60
@@ -834,8 +879,8 @@
       "id": "n_android_widget_imagebutton",
       "type": "file",
       "file": "android.widget.ImageButton.md",
-      "x": 3260,
-      "y": 320,
+      "x": 1860,
+      "y": 400,
       "width": 180,
       "height": 60
     },
@@ -843,7 +888,7 @@
       "id": "n_android_widget_imageview",
       "type": "file",
       "file": "android.widget.ImageView.md",
-      "x": 1860,
+      "x": 2060,
       "y": 400,
       "width": 180,
       "height": 60
@@ -852,7 +897,7 @@
       "id": "n_android_widget_progressbar",
       "type": "file",
       "file": "android.widget.ProgressBar.md",
-      "x": 2060,
+      "x": 2260,
       "y": 400,
       "width": 180,
       "height": 60
@@ -861,7 +906,7 @@
       "id": "n_colorstatelist",
       "type": "file",
       "file": "colorstatelist.md",
-      "x": 2260,
+      "x": 2460,
       "y": 400,
       "width": 180,
       "height": 60
@@ -870,7 +915,7 @@
       "id": "n_configuration",
       "type": "file",
       "file": "configuration_2.md",
-      "x": 2460,
+      "x": 2660,
       "y": 400,
       "width": 180,
       "height": 60
@@ -879,7 +924,7 @@
       "id": "n_decelerateinterpolator",
       "type": "file",
       "file": "decelerateinterpolator.md",
-      "x": 2660,
+      "x": 2860,
       "y": 400,
       "width": 180,
       "height": 60
@@ -888,7 +933,7 @@
       "id": "n_executors",
       "type": "file",
       "file": "executors.md",
-      "x": 2860,
+      "x": 3060,
       "y": 400,
       "width": 180,
       "height": 60
@@ -897,7 +942,7 @@
       "id": "n_executorservice",
       "type": "file",
       "file": "executorservice.md",
-      "x": 3060,
+      "x": 3260,
       "y": 400,
       "width": 180,
       "height": 60
@@ -906,8 +951,8 @@
       "id": "n_gravity",
       "type": "file",
       "file": "gravity.md",
-      "x": 3260,
-      "y": 400,
+      "x": 1860,
+      "y": 480,
       "width": 180,
       "height": 60
     },
@@ -915,7 +960,7 @@
       "id": "n_hashmap",
       "type": "file",
       "file": "hashmap.md",
-      "x": 1860,
+      "x": 2060,
       "y": 480,
       "width": 180,
       "height": 60
@@ -924,7 +969,7 @@
       "id": "n_hashset",
       "type": "file",
       "file": "hashset.md",
-      "x": 2060,
+      "x": 2260,
       "y": 480,
       "width": 180,
       "height": 60
@@ -933,7 +978,7 @@
       "id": "n_icon",
       "type": "file",
       "file": "icon.md",
-      "x": 2260,
+      "x": 2460,
       "y": 480,
       "width": 180,
       "height": 60
@@ -942,7 +987,7 @@
       "id": "n_insets",
       "type": "file",
       "file": "insets.md",
-      "x": 2460,
+      "x": 2660,
       "y": 480,
       "width": 180,
       "height": 60
@@ -951,7 +996,7 @@
       "id": "n_map",
       "type": "file",
       "file": "map.md",
-      "x": 2660,
+      "x": 2860,
       "y": 480,
       "width": 180,
       "height": 60
@@ -960,7 +1005,7 @@
       "id": "n_rippledrawable",
       "type": "file",
       "file": "rippledrawable.md",
-      "x": 2860,
+      "x": 3060,
       "y": 480,
       "width": 180,
       "height": 60
@@ -969,7 +1014,7 @@
       "id": "n_set",
       "type": "file",
       "file": "set.md",
-      "x": 3060,
+      "x": 3260,
       "y": 480,
       "width": 180,
       "height": 60
@@ -978,8 +1023,8 @@
       "id": "n_statusbarmanager",
       "type": "file",
       "file": "statusbarmanager.md",
-      "x": 3260,
-      "y": 480,
+      "x": 1860,
+      "y": 560,
       "width": 180,
       "height": 60
     },
@@ -987,7 +1032,7 @@
       "id": "n_uimodemanager",
       "type": "file",
       "file": "uimodemanager.md",
-      "x": 1860,
+      "x": 2060,
       "y": 560,
       "width": 180,
       "height": 60
@@ -996,7 +1041,7 @@
       "id": "n_windowinsets",
       "type": "file",
       "file": "windowinsets.md",
-      "x": 2060,
+      "x": 2260,
       "y": 560,
       "width": 180,
       "height": 60
@@ -1005,7 +1050,7 @@
       "id": "n_windowinsetscontroller",
       "type": "file",
       "file": "windowinsetscontroller.md",
-      "x": 2260,
+      "x": 2460,
       "y": 560,
       "width": 180,
       "height": 60
@@ -1017,32 +1062,14 @@
       "x": 3680,
       "y": 0,
       "width": 1540,
-      "height": 820,
+      "height": 720,
       "color": "3"
-    },
-    {
-      "id": "n_src_com_taseen_tapoff_lockservice_iris_iris",
-      "type": "file",
-      "file": "dot-Iris().md",
-      "x": 3700,
-      "y": 80,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_com_taseen_tapoff_lockservice_iris_close",
-      "type": "file",
-      "file": "dot-close().md",
-      "x": 3900,
-      "y": 80,
-      "width": 180,
-      "height": 60
     },
     {
       "id": "n_src_com_taseen_tapoff_tapwallpaper_tapengine_draw",
       "type": "file",
       "file": "dot-draw().md",
-      "x": 4100,
+      "x": 3700,
       "y": 80,
       "width": 180,
       "height": 60
@@ -1051,7 +1078,7 @@
       "id": "n_src_com_taseen_tapoff_tapwallpaper_tapwallpaper_enabled",
       "type": "file",
       "file": "dot-enabled().md",
-      "x": 4300,
+      "x": 3900,
       "y": 80,
       "width": 180,
       "height": 60
@@ -1060,7 +1087,7 @@
       "id": "n_src_com_taseen_tapoff_tapwallpaper_tapengine_load",
       "type": "file",
       "file": "dot-load()_1.md",
-      "x": 4500,
+      "x": 4100,
       "y": 80,
       "width": 180,
       "height": 60
@@ -1069,7 +1096,7 @@
       "id": "n_src_com_taseen_tapoff_lockservice_lockservice_lock",
       "type": "file",
       "file": "dot-lock().md",
-      "x": 4700,
+      "x": 4300,
       "y": 80,
       "width": 180,
       "height": 60
@@ -1078,7 +1105,7 @@
       "id": "n_src_com_taseen_tapoff_lockservice_lockservice_onaccessibilityevent",
       "type": "file",
       "file": "dot-onAccessibilityEvent().md",
-      "x": 4900,
+      "x": 4500,
       "y": 80,
       "width": 180,
       "height": 60
@@ -1087,8 +1114,8 @@
       "id": "n_src_com_taseen_tapoff_tapwallpaper_tapengine_oncommand",
       "type": "file",
       "file": "dot-onCommand().md",
-      "x": 3700,
-      "y": 160,
+      "x": 4700,
+      "y": 80,
       "width": 180,
       "height": 60
     },
@@ -1096,8 +1123,8 @@
       "id": "n_src_com_taseen_tapoff_tapwallpaper_tapengine_oncomputecolors",
       "type": "file",
       "file": "dot-onComputeColors().md",
-      "x": 3900,
-      "y": 160,
+      "x": 4900,
+      "y": 80,
       "width": 180,
       "height": 60
     },
@@ -1105,16 +1132,7 @@
       "id": "n_src_com_taseen_tapoff_tapwallpaper_tapwallpaper_onconfigurationchanged",
       "type": "file",
       "file": "dot-onConfigurationChanged()_1.md",
-      "x": 4100,
-      "y": 160,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_com_taseen_tapoff_tapwallpaper_tapwallpaper_oncreate",
-      "type": "file",
-      "file": "dot-onCreate()_2.md",
-      "x": 4300,
+      "x": 3700,
       "y": 160,
       "width": 180,
       "height": 60
@@ -1123,7 +1141,7 @@
       "id": "n_src_com_taseen_tapoff_tapwallpaper_tapwallpaper_oncreateengine",
       "type": "file",
       "file": "dot-onCreateEngine().md",
-      "x": 4500,
+      "x": 3900,
       "y": 160,
       "width": 180,
       "height": 60
@@ -1132,7 +1150,7 @@
       "id": "n_src_com_taseen_tapoff_tapwallpaper_tapwallpaper_ondestroy",
       "type": "file",
       "file": "dot-onDestroy()_2.md",
-      "x": 4700,
+      "x": 4100,
       "y": 160,
       "width": 180,
       "height": 60
@@ -1140,8 +1158,8 @@
     {
       "id": "n_src_com_taseen_tapoff_lockservice_iris_ondraw",
       "type": "file",
-      "file": "dot-onDraw()_1.md",
-      "x": 4900,
+      "file": "dot-onDraw().md",
+      "x": 4300,
       "y": 160,
       "width": 180,
       "height": 60
@@ -1150,8 +1168,8 @@
       "id": "n_src_com_taseen_tapoff_lockservice_lockservice_oninterrupt",
       "type": "file",
       "file": "dot-onInterrupt().md",
-      "x": 3700,
-      "y": 240,
+      "x": 4500,
+      "y": 160,
       "width": 180,
       "height": 60
     },
@@ -1159,8 +1177,8 @@
       "id": "n_src_com_taseen_tapoff_lockservice_lockservice_onserviceconnected",
       "type": "file",
       "file": "dot-onServiceConnected().md",
-      "x": 3900,
-      "y": 240,
+      "x": 4700,
+      "y": 160,
       "width": 180,
       "height": 60
     },
@@ -1168,8 +1186,8 @@
       "id": "n_src_com_taseen_tapoff_tapwallpaper_tapengine_onsurfaceredrawneeded",
       "type": "file",
       "file": "dot-onSurfaceRedrawNeeded().md",
-      "x": 4100,
-      "y": 240,
+      "x": 4900,
+      "y": 160,
       "width": 180,
       "height": 60
     },
@@ -1177,16 +1195,7 @@
       "id": "n_src_com_taseen_tapoff_tapwallpaper_tapengine_onvisibilitychanged",
       "type": "file",
       "file": "dot-onVisibilityChanged().md",
-      "x": 4300,
-      "y": 240,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_com_taseen_tapoff_tapwallpaper_tapwallpaper_photo",
-      "type": "file",
-      "file": "dot-photo().md",
-      "x": 4500,
+      "x": 3700,
       "y": 240,
       "width": 180,
       "height": 60
@@ -1195,7 +1204,7 @@
       "id": "n_src_com_taseen_tapoff_notchpanel_notchpanel_remove",
       "type": "file",
       "file": "dot-remove().md",
-      "x": 4700,
+      "x": 3900,
       "y": 240,
       "width": 180,
       "height": 60
@@ -1204,7 +1213,7 @@
       "id": "n_src_com_taseen_tapoff_tapwallpaper_tapwallpaper_setenabled",
       "type": "file",
       "file": "dot-setEnabled().md",
-      "x": 4900,
+      "x": 4100,
       "y": 240,
       "width": 180,
       "height": 60
@@ -1213,8 +1222,8 @@
       "id": "n_src_com_taseen_tapoff_lockservice_lockservice_tapfile",
       "type": "file",
       "file": "dot-tapFile().md",
-      "x": 3700,
-      "y": 320,
+      "x": 4300,
+      "y": 240,
       "width": 180,
       "height": 60
     },
@@ -1222,8 +1231,8 @@
       "id": "n_src_com_taseen_tapoff_lockservice_lockservice_tappoint",
       "type": "file",
       "file": "dot-tapPoint().md",
-      "x": 3900,
-      "y": 320,
+      "x": 4500,
+      "y": 240,
       "width": 180,
       "height": 60
     },
@@ -1231,8 +1240,8 @@
       "id": "n_docs_architecture_architecture",
       "type": "file",
       "file": "Architecture.md",
-      "x": 4100,
-      "y": 320,
+      "x": 4700,
+      "y": 240,
       "width": 180,
       "height": 60
     },
@@ -1240,8 +1249,8 @@
       "id": "n_docs_architecture_brightness_and_volume_sliders_notchpanel_java",
       "type": "file",
       "file": "Brightness and volume sliders (`NotchPanel.java`).md",
-      "x": 4300,
-      "y": 320,
+      "x": 4900,
+      "y": 240,
       "width": 180,
       "height": 60
     },
@@ -1249,7 +1258,7 @@
       "id": "n_broadcastreceiver",
       "type": "file",
       "file": "BroadcastReceiver.md",
-      "x": 4500,
+      "x": 3700,
       "y": 320,
       "width": 180,
       "height": 60
@@ -1258,7 +1267,7 @@
       "id": "n_src_com_taseen_tapoff_tapwallpaper_java_configuration",
       "type": "file",
       "file": "Configuration_1.md",
-      "x": 4700,
+      "x": 3900,
       "y": 320,
       "width": 180,
       "height": 60
@@ -1267,7 +1276,7 @@
       "id": "n_contentobserver",
       "type": "file",
       "file": "ContentObserver.md",
-      "x": 4900,
+      "x": 4100,
       "y": 320,
       "width": 180,
       "height": 60
@@ -1276,8 +1285,8 @@
       "id": "n_src_com_taseen_tapoff_tapwallpaper_java_context",
       "type": "file",
       "file": "Context.md",
-      "x": 3700,
-      "y": 400,
+      "x": 4300,
+      "y": 320,
       "width": 180,
       "height": 60
     },
@@ -1285,8 +1294,8 @@
       "id": "n_engine",
       "type": "file",
       "file": "Engine.md",
-      "x": 3900,
-      "y": 400,
+      "x": 4500,
+      "y": 320,
       "width": 180,
       "height": 60
     },
@@ -1294,17 +1303,8 @@
       "id": "n_docs_architecture_icons",
       "type": "file",
       "file": "Icons.md",
-      "x": 4100,
-      "y": 400,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_com_taseen_tapoff_lockservice_iris",
-      "type": "file",
-      "file": "Iris.md",
-      "x": 4300,
-      "y": 400,
+      "x": 4700,
+      "y": 320,
       "width": 180,
       "height": 60
     },
@@ -1312,16 +1312,16 @@
       "id": "n_src_com_taseen_tapoff_lockservice_lockservice",
       "type": "file",
       "file": "LockService.md",
-      "x": 4500,
-      "y": 400,
+      "x": 4900,
+      "y": 320,
       "width": 180,
       "height": 60
     },
     {
       "id": "n_src_com_taseen_tapoff_lockservice_java_override",
       "type": "file",
-      "file": "Override_5.md",
-      "x": 4700,
+      "file": "Override_6.md",
+      "x": 3700,
       "y": 400,
       "width": 180,
       "height": 60
@@ -1329,8 +1329,8 @@
     {
       "id": "n_src_com_taseen_tapoff_tapwallpaper_java_override",
       "type": "file",
-      "file": "Override_6.md",
-      "x": 4900,
+      "file": "Override_7.md",
+      "x": 3900,
       "y": 400,
       "width": 180,
       "height": 60
@@ -1339,8 +1339,8 @@
       "id": "n_docs_architecture_processes",
       "type": "file",
       "file": "Processes.md",
-      "x": 3700,
-      "y": 480,
+      "x": 4100,
+      "y": 400,
       "width": 180,
       "height": 60
     },
@@ -1348,8 +1348,8 @@
       "id": "n_docs_architecture_screen_off",
       "type": "file",
       "file": "Screen off.md",
-      "x": 3900,
-      "y": 480,
+      "x": 4300,
+      "y": 400,
       "width": 180,
       "height": 60
     },
@@ -1357,8 +1357,8 @@
       "id": "n_src_com_taseen_tapoff_tapwallpaper_tapengine",
       "type": "file",
       "file": "TapEngine.md",
-      "x": 4100,
-      "y": 480,
+      "x": 4500,
+      "y": 400,
       "width": 180,
       "height": 60
     },
@@ -1366,8 +1366,8 @@
       "id": "n_src_com_taseen_tapoff_tapwallpaper_tapwallpaper",
       "type": "file",
       "file": "TapWallpaper.md",
-      "x": 4300,
-      "y": 480,
+      "x": 4700,
+      "y": 400,
       "width": 180,
       "height": 60
     },
@@ -1375,17 +1375,8 @@
       "id": "n_docs_architecture_website_site",
       "type": "file",
       "file": "Website (`site`).md",
-      "x": 4500,
-      "y": 480,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_android_accessibilityservice_accessibilityservice",
-      "type": "file",
-      "file": "android.accessibilityservice.AccessibilityService.md",
-      "x": 4700,
-      "y": 480,
+      "x": 4900,
+      "y": 400,
       "width": 180,
       "height": 60
     },
@@ -1393,7 +1384,7 @@
       "id": "n_android_app_wallpapercolors",
       "type": "file",
       "file": "android.app.WallpaperColors.md",
-      "x": 4900,
+      "x": 3700,
       "y": 480,
       "width": 180,
       "height": 60
@@ -1402,8 +1393,8 @@
       "id": "n_android_service_wallpaper_wallpaperservice",
       "type": "file",
       "file": "android.service.wallpaper.WallpaperService.md",
-      "x": 3700,
-      "y": 560,
+      "x": 3900,
+      "y": 480,
       "width": 180,
       "height": 60
     },
@@ -1411,8 +1402,8 @@
       "id": "n_android_view_surfaceholder",
       "type": "file",
       "file": "android.view.SurfaceHolder.md",
-      "x": 3900,
-      "y": 560,
+      "x": 4100,
+      "y": 480,
       "width": 180,
       "height": 60
     },
@@ -1420,19 +1411,19 @@
       "id": "n_android_view_accessibility_accessibilityevent",
       "type": "file",
       "file": "android.view.accessibility.AccessibilityEvent.md",
-      "x": 4100,
-      "y": 560,
+      "x": 4300,
+      "y": 480,
       "width": 180,
       "height": 60
     },
     {
       "id": "g3",
       "type": "group",
-      "label": "android.graphics.Paint",
+      "label": "GlassCard",
       "x": 5300,
       "y": 0,
-      "width": 1100,
-      "height": 620,
+      "width": 1320,
+      "height": 720,
       "color": "4"
     },
     {
@@ -1445,10 +1436,28 @@
       "height": 60
     },
     {
+      "id": "n_src_com_taseen_tapoff_lockservice_iris_iris",
+      "type": "file",
+      "file": "dot-Iris().md",
+      "x": 5520,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
       "id": "n_src_com_taseen_tapoff_swipehint_swipehint_swipehint",
       "type": "file",
       "file": "dot-SwipeHint().md",
-      "x": 5520,
+      "x": 5720,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_com_taseen_tapoff_lockservice_iris_close",
+      "type": "file",
+      "file": "dot-close().md",
+      "x": 5920,
       "y": 80,
       "width": 180,
       "height": 60
@@ -1456,8 +1465,17 @@
     {
       "id": "n_src_com_taseen_tapoff_doubletaphint_doubletaphint_ondraw",
       "type": "file",
+      "file": "dot-onDraw()_1.md",
+      "x": 6120,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_com_taseen_tapoff_glasscard_glasscard_ondraw",
+      "type": "file",
       "file": "dot-onDraw()_2.md",
-      "x": 5720,
+      "x": 6320,
       "y": 80,
       "width": 180,
       "height": 60
@@ -1466,8 +1484,26 @@
       "id": "n_src_com_taseen_tapoff_swipehint_swipehint_ondraw",
       "type": "file",
       "file": "dot-onDraw()_3.md",
-      "x": 5920,
-      "y": 80,
+      "x": 5320,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_com_taseen_tapoff_glasscard_glasscard_onmeasure",
+      "type": "file",
+      "file": "dot-onMeasure().md",
+      "x": 5520,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_com_taseen_tapoff_glasscard_glasscard_onsizechanged",
+      "type": "file",
+      "file": "dot-onSizeChanged().md",
+      "x": 5720,
+      "y": 160,
       "width": 180,
       "height": 60
     },
@@ -1475,8 +1511,44 @@
       "id": "n_src_com_taseen_tapoff_doubletaphint_doubletaphint_press",
       "type": "file",
       "file": "dot-press().md",
+      "x": 5920,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_com_taseen_tapoff_glasscard_glasscard_setdim",
+      "type": "file",
+      "file": "dot-setDim().md",
       "x": 6120,
-      "y": 80,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_com_taseen_tapoff_glasscard_glasscard_setphoto",
+      "type": "file",
+      "file": "dot-setPhoto().md",
+      "x": 6320,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_com_taseen_tapoff_glasscard_glasscard_setpressed",
+      "type": "file",
+      "file": "dot-setPressed().md",
+      "x": 5320,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_com_taseen_tapoff_glasscard_glasscard_updatecrop",
+      "type": "file",
+      "file": "dot-updateCrop().md",
+      "x": 5520,
+      "y": 240,
       "width": 180,
       "height": 60
     },
@@ -1484,8 +1556,8 @@
       "id": "n_src_com_taseen_tapoff_doubletaphint_doubletaphint",
       "type": "file",
       "file": "DoubleTapHint.md",
-      "x": 5320,
-      "y": 160,
+      "x": 5720,
+      "y": 240,
       "width": 180,
       "height": 60
     },
@@ -1493,8 +1565,17 @@
       "id": "n_src_com_taseen_tapoff_doubletaphint",
       "type": "file",
       "file": "DoubleTapHint.java.md",
-      "x": 5520,
-      "y": 160,
+      "x": 5920,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_com_taseen_tapoff_glasscard_glasscard",
+      "type": "file",
+      "file": "GlassCard.md",
+      "x": 6120,
+      "y": 240,
       "width": 180,
       "height": 60
     },
@@ -1502,26 +1583,44 @@
       "id": "n_src_com_taseen_tapoff_glasscard",
       "type": "file",
       "file": "GlassCard.java.md",
-      "x": 5720,
-      "y": 160,
+      "x": 6320,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_com_taseen_tapoff_lockservice_iris",
+      "type": "file",
+      "file": "Iris.md",
+      "x": 5320,
+      "y": 320,
       "width": 180,
       "height": 60
     },
     {
       "id": "n_src_com_taseen_tapoff_doubletaphint_java_override",
       "type": "file",
-      "file": "Override_7.md",
-      "x": 5920,
-      "y": 160,
+      "file": "Override_8.md",
+      "x": 5520,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_com_taseen_tapoff_glasscard_java_override",
+      "type": "file",
+      "file": "Override_9.md",
+      "x": 5720,
+      "y": 320,
       "width": 180,
       "height": 60
     },
     {
       "id": "n_src_com_taseen_tapoff_swipehint_java_override",
       "type": "file",
-      "file": "Override_8.md",
-      "x": 6120,
-      "y": 160,
+      "file": "Override_10.md",
+      "x": 5920,
+      "y": 320,
       "width": 180,
       "height": 60
     },
@@ -1529,8 +1628,8 @@
       "id": "n_src_com_taseen_tapoff_swipehint_swipehint",
       "type": "file",
       "file": "SwipeHint.md",
-      "x": 5320,
-      "y": 240,
+      "x": 6120,
+      "y": 320,
       "width": 180,
       "height": 60
     },
@@ -1538,8 +1637,8 @@
       "id": "n_src_com_taseen_tapoff_swipehint",
       "type": "file",
       "file": "SwipeHint.java.md",
-      "x": 5520,
-      "y": 240,
+      "x": 6320,
+      "y": 320,
       "width": 180,
       "height": 60
     },
@@ -1547,8 +1646,8 @@
       "id": "n_acceleratedecelerateinterpolator",
       "type": "file",
       "file": "acceleratedecelerateinterpolator.md",
-      "x": 5720,
-      "y": 240,
+      "x": 5320,
+      "y": 400,
       "width": 180,
       "height": 60
     },
@@ -1556,8 +1655,8 @@
       "id": "n_android_animation_valueanimator",
       "type": "file",
       "file": "android.animation.ValueAnimator.md",
-      "x": 5920,
-      "y": 240,
+      "x": 5520,
+      "y": 400,
       "width": 180,
       "height": 60
     },
@@ -1565,8 +1664,8 @@
       "id": "n_android_graphics_matrix",
       "type": "file",
       "file": "android.graphics.Matrix.md",
-      "x": 6120,
-      "y": 240,
+      "x": 5720,
+      "y": 400,
       "width": 180,
       "height": 60
     },
@@ -1574,8 +1673,8 @@
       "id": "n_android_graphics_paint",
       "type": "file",
       "file": "android.graphics.Paint.md",
-      "x": 5320,
-      "y": 320,
+      "x": 5920,
+      "y": 400,
       "width": 180,
       "height": 60
     },
@@ -1583,8 +1682,8 @@
       "id": "n_android_graphics_drawable_drawable",
       "type": "file",
       "file": "android.graphics.drawable.Drawable.md",
-      "x": 5520,
-      "y": 320,
+      "x": 6120,
+      "y": 400,
       "width": 180,
       "height": 60
     },
@@ -1592,8 +1691,8 @@
       "id": "n_android_view_view",
       "type": "file",
       "file": "android.view.View.md",
-      "x": 5720,
-      "y": 320,
+      "x": 6320,
+      "y": 400,
       "width": 180,
       "height": 60
     },
@@ -1601,8 +1700,17 @@
       "id": "n_lineargradient",
       "type": "file",
       "file": "lineargradient.md",
-      "x": 5920,
-      "y": 320,
+      "x": 5320,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_linearinterpolator",
+      "type": "file",
+      "file": "linearinterpolator.md",
+      "x": 5520,
+      "y": 480,
       "width": 180,
       "height": 60
     },
@@ -1610,8 +1718,8 @@
       "id": "n_path",
       "type": "file",
       "file": "path_1.md",
-      "x": 6120,
-      "y": 320,
+      "x": 5720,
+      "y": 480,
       "width": 180,
       "height": 60
     },
@@ -1619,8 +1727,8 @@
       "id": "n_rectf",
       "type": "file",
       "file": "rectf.md",
-      "x": 5320,
-      "y": 400,
+      "x": 5920,
+      "y": 480,
       "width": 180,
       "height": 60
     },
@@ -1628,8 +1736,8 @@
       "id": "n_shader",
       "type": "file",
       "file": "shader.md",
-      "x": 5520,
-      "y": 400,
+      "x": 6120,
+      "y": 480,
       "width": 180,
       "height": 60
     },
@@ -1640,7 +1748,7 @@
       "x": 6700,
       "y": 0,
       "width": 1540,
-      "height": 820,
+      "height": 720,
       "color": "5"
     },
     {
@@ -1680,28 +1788,10 @@
       "height": 60
     },
     {
-      "id": "n_src_com_taseen_tapoff_slidersactivity_slidersactivity_backtapseen",
-      "type": "file",
-      "file": "dot-backTapSeen().md",
-      "x": 7520,
-      "y": 80,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_com_taseen_tapoff_lockservice_lockservice_canlock",
-      "type": "file",
-      "file": "dot-canLock().md",
-      "x": 7720,
-      "y": 80,
-      "width": 180,
-      "height": 60
-    },
-    {
       "id": "n_src_com_taseen_tapoff_notchpanel_notchpanel_changed",
       "type": "file",
       "file": "dot-changed().md",
-      "x": 7920,
+      "x": 7520,
       "y": 80,
       "width": 180,
       "height": 60
@@ -1710,8 +1800,8 @@
       "id": "n_src_com_taseen_tapoff_notchpanel_notchpanel_display",
       "type": "file",
       "file": "dot-display().md",
-      "x": 6720,
-      "y": 160,
+      "x": 7720,
+      "y": 80,
       "width": 180,
       "height": 60
     },
@@ -1719,8 +1809,8 @@
       "id": "n_src_com_taseen_tapoff_notchpanel_panel_drawpill",
       "type": "file",
       "file": "dot-drawPill().md",
-      "x": 6920,
-      "y": 160,
+      "x": 7920,
+      "y": 80,
       "width": 180,
       "height": 60
     },
@@ -1728,16 +1818,7 @@
       "id": "n_src_com_taseen_tapoff_notchpanel_notchpanel_enabled",
       "type": "file",
       "file": "dot-enabled()_1.md",
-      "x": 7120,
-      "y": 160,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_com_taseen_tapoff_slidersactivity_slidersactivity_forgetbacktap",
-      "type": "file",
-      "file": "dot-forgetBackTap().md",
-      "x": 7320,
+      "x": 6720,
       "y": 160,
       "width": 180,
       "height": 60
@@ -1746,7 +1827,7 @@
       "id": "n_src_com_taseen_tapoff_slidersactivity_slidersactivity_fromlauncher",
       "type": "file",
       "file": "dot-fromLauncher().md",
-      "x": 7520,
+      "x": 6920,
       "y": 160,
       "width": 180,
       "height": 60
@@ -1755,7 +1836,7 @@
       "id": "n_src_com_taseen_tapoff_notchpanel_panel_hit",
       "type": "file",
       "file": "dot-hit().md",
-      "x": 7720,
+      "x": 7120,
       "y": 160,
       "width": 180,
       "height": 60
@@ -1764,7 +1845,7 @@
       "id": "n_src_com_taseen_tapoff_cutoutart_cutoutart_hole",
       "type": "file",
       "file": "dot-hole().md",
-      "x": 7920,
+      "x": 7320,
       "y": 160,
       "width": 180,
       "height": 60
@@ -1773,8 +1854,8 @@
       "id": "n_src_com_taseen_tapoff_notchpanel_notchpanel_hole",
       "type": "file",
       "file": "dot-hole()_1.md",
-      "x": 6720,
-      "y": 240,
+      "x": 7520,
+      "y": 160,
       "width": 180,
       "height": 60
     },
@@ -1782,8 +1863,8 @@
       "id": "n_src_com_taseen_tapoff_wallpapers_wallpapers_isactive",
       "type": "file",
       "file": "dot-isActive().md",
-      "x": 6920,
-      "y": 240,
+      "x": 7720,
+      "y": 160,
       "width": 180,
       "height": 60
     },
@@ -1791,7 +1872,16 @@
       "id": "n_src_com_taseen_tapoff_slidersactivity_slidersactivity_oncreate",
       "type": "file",
       "file": "dot-onCreate()_3.md",
-      "x": 7120,
+      "x": 7920,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_com_taseen_tapoff_tapwallpaper_tapwallpaper_oncreate",
+      "type": "file",
+      "file": "dot-onCreate()_4.md",
+      "x": 6720,
       "y": 240,
       "width": 180,
       "height": 60
@@ -1800,7 +1890,7 @@
       "id": "n_src_com_taseen_tapoff_notchpanel_panel_ondraw",
       "type": "file",
       "file": "dot-onDraw()_4.md",
-      "x": 7320,
+      "x": 6920,
       "y": 240,
       "width": 180,
       "height": 60
@@ -1809,7 +1899,7 @@
       "id": "n_src_com_taseen_tapoff_mainactivity_mainactivity_onresume",
       "type": "file",
       "file": "dot-onResume().md",
-      "x": 7520,
+      "x": 7120,
       "y": 240,
       "width": 180,
       "height": 60
@@ -1818,7 +1908,7 @@
       "id": "n_src_com_taseen_tapoff_notchpanel_panel_ontouchevent",
       "type": "file",
       "file": "dot-onTouchEvent()_1.md",
-      "x": 7720,
+      "x": 7320,
       "y": 240,
       "width": 180,
       "height": 60
@@ -1827,7 +1917,7 @@
       "id": "n_src_com_taseen_tapoff_notchpanel_notchpanel_open",
       "type": "file",
       "file": "dot-open().md",
-      "x": 7920,
+      "x": 7520,
       "y": 240,
       "width": 180,
       "height": 60
@@ -1836,8 +1926,8 @@
       "id": "n_src_com_taseen_tapoff_notchpanel_notchpanel_overlay",
       "type": "file",
       "file": "dot-overlay().md",
-      "x": 6720,
-      "y": 320,
+      "x": 7720,
+      "y": 240,
       "width": 180,
       "height": 60
     },
@@ -1845,8 +1935,8 @@
       "id": "n_src_com_taseen_tapoff_notchpanel_notchpanel_portrait",
       "type": "file",
       "file": "dot-portrait().md",
-      "x": 6920,
-      "y": 320,
+      "x": 7920,
+      "y": 240,
       "width": 180,
       "height": 60
     },
@@ -1854,7 +1944,7 @@
       "id": "n_src_com_taseen_tapoff_notchpanel_notchpanel_read",
       "type": "file",
       "file": "dot-read().md",
-      "x": 7120,
+      "x": 6720,
       "y": 320,
       "width": 180,
       "height": 60
@@ -1863,16 +1953,7 @@
       "id": "n_src_com_taseen_tapoff_mainactivity_mainactivity_refreshstate",
       "type": "file",
       "file": "dot-refreshState().md",
-      "x": 7320,
-      "y": 320,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_com_taseen_tapoff_mainactivity_mainactivity_refreshstatus",
-      "type": "file",
-      "file": "dot-refreshStatus().md",
-      "x": 7520,
+      "x": 6920,
       "y": 320,
       "width": 180,
       "height": 60
@@ -1881,7 +1962,7 @@
       "id": "n_src_com_taseen_tapoff_notchpanel_notchpanel_requestopen",
       "type": "file",
       "file": "dot-requestOpen().md",
-      "x": 7720,
+      "x": 7120,
       "y": 320,
       "width": 180,
       "height": 60
@@ -1890,7 +1971,7 @@
       "id": "n_src_com_taseen_tapoff_notchpanel_panel_set",
       "type": "file",
       "file": "dot-set().md",
-      "x": 7920,
+      "x": 7320,
       "y": 320,
       "width": 180,
       "height": 60
@@ -1899,8 +1980,8 @@
       "id": "n_src_com_taseen_tapoff_notchpanel_notchpanel_setenabled",
       "type": "file",
       "file": "dot-setEnabled()_1.md",
-      "x": 6720,
-      "y": 400,
+      "x": 7520,
+      "y": 320,
       "width": 180,
       "height": 60
     },
@@ -1908,8 +1989,8 @@
       "id": "n_src_com_taseen_tapoff_notchpanel_notchpanel_statusbar",
       "type": "file",
       "file": "dot-statusBar().md",
-      "x": 6920,
-      "y": 400,
+      "x": 7720,
+      "y": 320,
       "width": 180,
       "height": 60
     },
@@ -1917,8 +1998,8 @@
       "id": "n_src_com_taseen_tapoff_notchpanel_notchpanel_stream",
       "type": "file",
       "file": "dot-stream().md",
-      "x": 7120,
-      "y": 400,
+      "x": 7920,
+      "y": 320,
       "width": 180,
       "height": 60
     },
@@ -1926,7 +2007,7 @@
       "id": "n_src_com_taseen_tapoff_notchpanel_notchpanel_sync",
       "type": "file",
       "file": "dot-sync().md",
-      "x": 7320,
+      "x": 6720,
       "y": 400,
       "width": 180,
       "height": 60
@@ -1935,7 +2016,7 @@
       "id": "n_src_com_taseen_tapoff_notchpanel_notchpanel_tolinear",
       "type": "file",
       "file": "dot-toLinear().md",
-      "x": 7520,
+      "x": 6920,
       "y": 400,
       "width": 180,
       "height": 60
@@ -1944,7 +2025,7 @@
       "id": "n_src_com_taseen_tapoff_notchpanel_notchpanel_toposition",
       "type": "file",
       "file": "dot-toPosition().md",
-      "x": 7720,
+      "x": 7120,
       "y": 400,
       "width": 180,
       "height": 60
@@ -1953,17 +2034,8 @@
       "id": "n_src_com_taseen_tapoff_notchpanel_notchpanel_write",
       "type": "file",
       "file": "dot-write().md",
-      "x": 7920,
+      "x": 7320,
       "y": 400,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_com_taseen_tapoff_slidersactivity_java_context",
-      "type": "file",
-      "file": "Context_1.md",
-      "x": 6720,
-      "y": 480,
       "width": 180,
       "height": 60
     },
@@ -1971,8 +2043,8 @@
       "id": "n_layoutparams",
       "type": "file",
       "file": "LayoutParams.md",
-      "x": 6920,
-      "y": 480,
+      "x": 7520,
+      "y": 400,
       "width": 180,
       "height": 60
     },
@@ -1980,25 +2052,25 @@
       "id": "n_src_com_taseen_tapoff_notchpanel_notchpanel",
       "type": "file",
       "file": "NotchPanel.md",
-      "x": 7120,
-      "y": 480,
+      "x": 7720,
+      "y": 400,
       "width": 180,
       "height": 60
     },
     {
       "id": "n_src_com_taseen_tapoff_notchpanel_java_override",
       "type": "file",
-      "file": "Override_9.md",
-      "x": 7320,
-      "y": 480,
+      "file": "Override_11.md",
+      "x": 7920,
+      "y": 400,
       "width": 180,
       "height": 60
     },
     {
       "id": "n_src_com_taseen_tapoff_slidersactivity_java_override",
       "type": "file",
-      "file": "Override_10.md",
-      "x": 7520,
+      "file": "Override_12.md",
+      "x": 6720,
       "y": 480,
       "width": 180,
       "height": 60
@@ -2007,26 +2079,8 @@
       "id": "n_src_com_taseen_tapoff_notchpanel_panel",
       "type": "file",
       "file": "Panel.md",
-      "x": 7720,
+      "x": 6920,
       "y": 480,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_com_taseen_tapoff_slidersactivity_slidersactivity",
-      "type": "file",
-      "file": "SlidersActivity.md",
-      "x": 7920,
-      "y": 480,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_android_app_activity",
-      "type": "file",
-      "file": "android.app.Activity.md",
-      "x": 6720,
-      "y": 560,
       "width": 180,
       "height": 60
     },
@@ -2034,8 +2088,8 @@
       "id": "n_android_graphics_rectf",
       "type": "file",
       "file": "android.graphics.RectF.md",
-      "x": 6920,
-      "y": 560,
+      "x": 7120,
+      "y": 480,
       "width": 180,
       "height": 60
     },
@@ -2043,8 +2097,8 @@
       "id": "n_android_view_animation_overshootinterpolator",
       "type": "file",
       "file": "android.view.animation.OvershootInterpolator.md",
-      "x": 7120,
-      "y": 560,
+      "x": 7320,
+      "y": 480,
       "width": 180,
       "height": 60
     },
@@ -2294,10 +2348,19 @@
       "height": 60
     },
     {
+      "id": "n_docs_progress_log_2026_09_30_evening_1_9_setup_without_a_computer",
+      "type": "file",
+      "file": "2026-09-30 (evening) \u00b7 1.9 setup without a computer.md",
+      "x": 2060,
+      "y": 1080,
+      "width": 180,
+      "height": 60
+    },
+    {
       "id": "n_docs_tasks_2026_09_30_later_1_8",
       "type": "file",
       "file": "2026-09-30 (later) \u00b7 1.8.md",
-      "x": 2060,
+      "x": 2260,
       "y": 1080,
       "width": 180,
       "height": 60
@@ -2306,7 +2369,7 @@
       "id": "n_docs_progress_log_2026_09_30_later_1_8_back_tap_sliders_favourites_nasa",
       "type": "file",
       "file": "2026-09-30 (later) \u00b7 1.8 back-tap sliders, favourites, NASA.md",
-      "x": 2260,
+      "x": 2460,
       "y": 1080,
       "width": 180,
       "height": 60
@@ -2315,7 +2378,7 @@
       "id": "n_docs_progress_log_2026_09_30_1_7_slide_the_edges",
       "type": "file",
       "file": "2026-09-30 \u00b7 1.7 slide the edges.md",
-      "x": 2460,
+      "x": 2660,
       "y": 1080,
       "width": 180,
       "height": 60
@@ -2324,8 +2387,8 @@
       "id": "n_docs_architecture",
       "type": "file",
       "file": "Architecture_1.md",
-      "x": 2660,
-      "y": 1080,
+      "x": 1860,
+      "y": 1160,
       "width": 180,
       "height": 60
     },
@@ -2333,7 +2396,7 @@
       "id": "n_docs_progress_log_before_2026_09_30_1_0_to_1_6",
       "type": "file",
       "file": "Before 2026-09-30 \u00b7 1.0 to 1.6.md",
-      "x": 1860,
+      "x": 2060,
       "y": 1160,
       "width": 180,
       "height": 60
@@ -2342,7 +2405,7 @@
       "id": "n_docs_checks_before_every_commit",
       "type": "file",
       "file": "Before every commit.md",
-      "x": 2060,
+      "x": 2260,
       "y": 1160,
       "width": 180,
       "height": 60
@@ -2351,7 +2414,7 @@
       "id": "n_docs_checks_checks",
       "type": "file",
       "file": "Checks_1.md",
-      "x": 2260,
+      "x": 2460,
       "y": 1160,
       "width": 180,
       "height": 60
@@ -2360,15 +2423,6 @@
       "id": "n_docs_checks",
       "type": "file",
       "file": "Checks.md",
-      "x": 2460,
-      "y": 1160,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_docs_decisions_decisions",
-      "type": "file",
-      "file": "Decisions_1.md",
       "x": 2660,
       "y": 1160,
       "width": 180,
@@ -2377,7 +2431,7 @@
     {
       "id": "n_docs_decisions",
       "type": "file",
-      "file": "Decisions.md",
+      "file": "Decisions_1.md",
       "x": 1860,
       "y": 1240,
       "width": 180,
@@ -2693,11 +2747,11 @@
     {
       "id": "g8",
       "type": "group",
-      "label": "android.content.Context",
+      "label": "Wallpapers",
       "x": 5300,
       "y": 1000,
       "width": 1320,
-      "height": 620,
+      "height": 720,
       "color": "3"
     },
     {
@@ -2719,10 +2773,28 @@
       "height": 60
     },
     {
+      "id": "n_src_com_taseen_tapoff_mainactivity_mainactivity_addcard",
+      "type": "file",
+      "file": "dot-addCard().md",
+      "x": 5720,
+      "y": 1080,
+      "width": 180,
+      "height": 60
+    },
+    {
       "id": "n_src_com_taseen_tapoff_wallpapers_wallpapers_apply",
       "type": "file",
       "file": "dot-apply()_1.md",
-      "x": 5720,
+      "x": 5920,
+      "y": 1080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_com_taseen_tapoff_glasscard_glasscard_bind",
+      "type": "file",
+      "file": "dot-bind().md",
+      "x": 6120,
       "y": 1080,
       "width": 180,
       "height": 60
@@ -2731,7 +2803,7 @@
       "id": "n_src_com_taseen_tapoff_wallpapers_wallpapers_bing",
       "type": "file",
       "file": "dot-bing().md",
-      "x": 5920,
+      "x": 6320,
       "y": 1080,
       "width": 180,
       "height": 60
@@ -2740,8 +2812,17 @@
       "id": "n_src_com_taseen_tapoff_wallpapers_wallpapers_cached",
       "type": "file",
       "file": "dot-cached().md",
-      "x": 6120,
-      "y": 1080,
+      "x": 5320,
+      "y": 1160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_com_taseen_tapoff_mainactivity_mainactivity_cardicon",
+      "type": "file",
+      "file": "dot-cardIcon().md",
+      "x": 5520,
+      "y": 1160,
       "width": 180,
       "height": 60
     },
@@ -2749,8 +2830,8 @@
       "id": "n_src_com_taseen_tapoff_cutoutart_cutoutart_collection",
       "type": "file",
       "file": "dot-collection().md",
-      "x": 6320,
-      "y": 1080,
+      "x": 5720,
+      "y": 1160,
       "width": 180,
       "height": 60
     },
@@ -2758,7 +2839,7 @@
       "id": "n_src_com_taseen_tapoff_wallpapers_wallpapers_decode",
       "type": "file",
       "file": "dot-decode().md",
-      "x": 5320,
+      "x": 5920,
       "y": 1160,
       "width": 180,
       "height": 60
@@ -2767,7 +2848,7 @@
       "id": "n_src_com_taseen_tapoff_wallpapers_wallpapers_download",
       "type": "file",
       "file": "dot-download().md",
-      "x": 5520,
+      "x": 6120,
       "y": 1160,
       "width": 180,
       "height": 60
@@ -2776,16 +2857,7 @@
       "id": "n_src_com_taseen_tapoff_wallpapers_wallpapers_favourites",
       "type": "file",
       "file": "dot-favourites().md",
-      "x": 5720,
-      "y": 1160,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_com_taseen_tapoff_wallpapers_wallpapers_isfavourite",
-      "type": "file",
-      "file": "dot-isFavourite().md",
-      "x": 5920,
+      "x": 6320,
       "y": 1160,
       "width": 180,
       "height": 60
@@ -2794,8 +2866,8 @@
       "id": "n_src_com_taseen_tapoff_wallpapers_wallpapers_key",
       "type": "file",
       "file": "dot-key().md",
-      "x": 6120,
-      "y": 1160,
+      "x": 5320,
+      "y": 1240,
       "width": 180,
       "height": 60
     },
@@ -2803,8 +2875,8 @@
       "id": "n_src_com_taseen_tapoff_wallpapers_wallpapers_list",
       "type": "file",
       "file": "dot-list().md",
-      "x": 6320,
-      "y": 1160,
+      "x": 5520,
+      "y": 1240,
       "width": 180,
       "height": 60
     },
@@ -2812,7 +2884,16 @@
       "id": "n_src_com_taseen_tapoff_wallpapers_wallpapers_load",
       "type": "file",
       "file": "dot-load()_2.md",
-      "x": 5320,
+      "x": 5720,
+      "y": 1240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_com_taseen_tapoff_mainactivity_mainactivity_loadtileimage",
+      "type": "file",
+      "file": "dot-loadTileImage().md",
+      "x": 5920,
       "y": 1240,
       "width": 180,
       "height": 60
@@ -2821,7 +2902,7 @@
       "id": "n_src_com_taseen_tapoff_wallpapers_wallpapers_nasa",
       "type": "file",
       "file": "dot-nasa().md",
-      "x": 5520,
+      "x": 6120,
       "y": 1240,
       "width": 180,
       "height": 60
@@ -2830,8 +2911,17 @@
       "id": "n_src_com_taseen_tapoff_wallpapers_wallpapers_pause",
       "type": "file",
       "file": "dot-pause().md",
-      "x": 5720,
+      "x": 6320,
       "y": 1240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_com_taseen_tapoff_tapwallpaper_tapwallpaper_photo",
+      "type": "file",
+      "file": "dot-photo().md",
+      "x": 5320,
+      "y": 1320,
       "width": 180,
       "height": 60
     },
@@ -2839,8 +2929,8 @@
       "id": "n_src_com_taseen_tapoff_wallpapers_wallpapers_pixel",
       "type": "file",
       "file": "dot-pixel().md",
-      "x": 5920,
-      "y": 1240,
+      "x": 5520,
+      "y": 1320,
       "width": 180,
       "height": 60
     },
@@ -2848,8 +2938,17 @@
       "id": "n_src_com_taseen_tapoff_wallpapers_wallpapers_pixelres",
       "type": "file",
       "file": "dot-pixelRes().md",
-      "x": 6120,
-      "y": 1240,
+      "x": 5720,
+      "y": 1320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_com_taseen_tapoff_mainactivity_mainactivity_refreshfavourites",
+      "type": "file",
+      "file": "dot-refreshFavourites().md",
+      "x": 5920,
+      "y": 1320,
       "width": 180,
       "height": 60
     },
@@ -2857,8 +2956,8 @@
       "id": "n_src_com_taseen_tapoff_wallpapers_wallpapers_screencrop",
       "type": "file",
       "file": "dot-screenCrop().md",
-      "x": 6320,
-      "y": 1240,
+      "x": 6120,
+      "y": 1320,
       "width": 180,
       "height": 60
     },
@@ -2866,7 +2965,7 @@
       "id": "n_src_com_taseen_tapoff_wallpapers_wallpapers_setfavourite",
       "type": "file",
       "file": "dot-setFavourite()_1.md",
-      "x": 5320,
+      "x": 6320,
       "y": 1320,
       "width": 180,
       "height": 60
@@ -2875,8 +2974,17 @@
       "id": "n_src_com_taseen_tapoff_wallpapers_wallpapers_sha1",
       "type": "file",
       "file": "dot-sha1().md",
+      "x": 5320,
+      "y": 1400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_com_taseen_tapoff_mainactivity_mainactivity_tileart",
+      "type": "file",
+      "file": "dot-tileArt().md",
       "x": 5520,
-      "y": 1320,
+      "y": 1400,
       "width": 180,
       "height": 60
     },
@@ -2885,7 +2993,16 @@
       "type": "file",
       "file": "dot-trimCache().md",
       "x": 5720,
-      "y": 1320,
+      "y": 1400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_com_taseen_tapoff_mainactivity_mainactivity_volumeart",
+      "type": "file",
+      "file": "dot-volumeArt().md",
+      "x": 5920,
+      "y": 1400,
       "width": 180,
       "height": 60
     },
@@ -2893,8 +3010,8 @@
       "id": "n_src_com_taseen_tapoff_wallpapers_wallpapers_wallhaven",
       "type": "file",
       "file": "dot-wallhaven().md",
-      "x": 5920,
-      "y": 1320,
+      "x": 6120,
+      "y": 1400,
       "width": 180,
       "height": 60
     },
@@ -2902,8 +3019,8 @@
       "id": "n_src_com_taseen_tapoff_wallpapers_collection",
       "type": "file",
       "file": "Collection.md",
-      "x": 6120,
-      "y": 1320,
+      "x": 6320,
+      "y": 1400,
       "width": 180,
       "height": 60
     },
@@ -2911,8 +3028,8 @@
       "id": "n_src_com_taseen_tapoff_wallpapers_item",
       "type": "file",
       "file": "Item.md",
-      "x": 6320,
-      "y": 1320,
+      "x": 5320,
+      "y": 1480,
       "width": 180,
       "height": 60
     },
@@ -2920,8 +3037,8 @@
       "id": "n_src_com_taseen_tapoff_wallpapers_java_rect",
       "type": "file",
       "file": "Rect_1.md",
-      "x": 5320,
-      "y": 1400,
+      "x": 5520,
+      "y": 1480,
       "width": 180,
       "height": 60
     },
@@ -2929,8 +3046,8 @@
       "id": "n_src_com_taseen_tapoff_wallpapers_wallpapers",
       "type": "file",
       "file": "Wallpapers.md",
-      "x": 5520,
-      "y": 1400,
+      "x": 5720,
+      "y": 1480,
       "width": 180,
       "height": 60
     },
@@ -2938,17 +3055,8 @@
       "id": "n_docs_architecture_wallpapers",
       "type": "file",
       "file": "Wallpapers_1.md",
-      "x": 5720,
-      "y": 1400,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_android_content_context",
-      "type": "file",
-      "file": "android.content.Context.md",
       "x": 5920,
-      "y": 1400,
+      "y": 1480,
       "width": 180,
       "height": 60
     },
@@ -2957,7 +3065,16 @@
       "type": "file",
       "file": "android.content.res.Resources.md",
       "x": 6120,
-      "y": 1400,
+      "y": 1480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_android_graphics_bitmap",
+      "type": "file",
+      "file": "android.graphics.Bitmap.md",
+      "x": 6320,
+      "y": 1480,
       "width": 180,
       "height": 60
     },
@@ -2967,7 +3084,7 @@
       "label": "TapWallpaper.java",
       "x": 6700,
       "y": 1000,
-      "width": 880,
+      "width": 660,
       "height": 420,
       "color": "4"
     },
@@ -3002,8 +3119,8 @@
       "id": "n_color",
       "type": "file",
       "file": "color.md",
-      "x": 7320,
-      "y": 1080,
+      "x": 6720,
+      "y": 1160,
       "width": 180,
       "height": 60
     },
@@ -3011,15 +3128,6 @@
       "id": "n_systemclock",
       "type": "file",
       "file": "systemclock.md",
-      "x": 6720,
-      "y": 1160,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_vibrationattributes",
-      "type": "file",
-      "file": "vibrationattributes.md",
       "x": 6920,
       "y": 1160,
       "width": 180,
@@ -3038,8 +3146,8 @@
       "id": "n_vibratormanager",
       "type": "file",
       "file": "vibratormanager.md",
-      "x": 7320,
-      "y": 1160,
+      "x": 6720,
+      "y": 1240,
       "width": 180,
       "height": 60
     },
@@ -3047,7 +3155,7 @@
       "id": "n_viewconfiguration",
       "type": "file",
       "file": "viewconfiguration.md",
-      "x": 6720,
+      "x": 6920,
       "y": 1240,
       "width": 180,
       "height": 60
@@ -3056,7 +3164,7 @@
       "id": "n_wallpapermanager",
       "type": "file",
       "file": "wallpapermanager.md",
-      "x": 6920,
+      "x": 7120,
       "y": 1240,
       "width": 180,
       "height": 60
@@ -3066,7 +3174,7 @@
       "type": "group",
       "label": "Override",
       "x": 0,
-      "y": 1700,
+      "y": 1800,
       "width": 880,
       "height": 520,
       "color": "5"
@@ -3076,7 +3184,7 @@
       "type": "file",
       "file": "dot-SwitchPart().md",
       "x": 20,
-      "y": 1780,
+      "y": 1880,
       "width": 180,
       "height": 60
     },
@@ -3085,7 +3193,7 @@
       "type": "file",
       "file": "dot-getIntrinsicHeight().md",
       "x": 220,
-      "y": 1780,
+      "y": 1880,
       "width": 180,
       "height": 60
     },
@@ -3094,7 +3202,7 @@
       "type": "file",
       "file": "dot-getIntrinsicWidth().md",
       "x": 420,
-      "y": 1780,
+      "y": 1880,
       "width": 180,
       "height": 60
     },
@@ -3103,7 +3211,7 @@
       "type": "file",
       "file": "dot-getOpacity().md",
       "x": 620,
-      "y": 1780,
+      "y": 1880,
       "width": 180,
       "height": 60
     },
@@ -3112,16 +3220,7 @@
       "type": "file",
       "file": "dot-onBoundsChange().md",
       "x": 20,
-      "y": 1860,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_com_taseen_tapoff_mainactivity_mainactivity_onconfigurationchanged",
-      "type": "file",
-      "file": "dot-onConfigurationChanged().md",
-      "x": 220,
-      "y": 1860,
+      "y": 1960,
       "width": 180,
       "height": 60
     },
@@ -3129,8 +3228,8 @@
       "id": "n_src_com_taseen_tapoff_mainactivity_mainactivity_ondestroy",
       "type": "file",
       "file": "dot-onDestroy()_1.md",
-      "x": 420,
-      "y": 1860,
+      "x": 220,
+      "y": 1960,
       "width": 180,
       "height": 60
     },
@@ -3138,8 +3237,8 @@
       "id": "n_src_com_taseen_tapoff_mainactivity_switchpart_setalpha",
       "type": "file",
       "file": "dot-setAlpha().md",
-      "x": 620,
-      "y": 1860,
+      "x": 420,
+      "y": 1960,
       "width": 180,
       "height": 60
     },
@@ -3147,8 +3246,8 @@
       "id": "n_src_com_taseen_tapoff_mainactivity_switchpart_setcolorfilter",
       "type": "file",
       "file": "dot-setColorFilter().md",
-      "x": 20,
-      "y": 1940,
+      "x": 620,
+      "y": 1960,
       "width": 180,
       "height": 60
     },
@@ -3156,17 +3255,8 @@
       "id": "n_colorfilter",
       "type": "file",
       "file": "ColorFilter.md",
-      "x": 220,
-      "y": 1940,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_com_taseen_tapoff_mainactivity_java_configuration",
-      "type": "file",
-      "file": "Configuration.md",
-      "x": 420,
-      "y": 1940,
+      "x": 20,
+      "y": 2040,
       "width": 180,
       "height": 60
     },
@@ -3174,8 +3264,8 @@
       "id": "n_drawable",
       "type": "file",
       "file": "Drawable.md",
-      "x": 620,
-      "y": 1940,
+      "x": 220,
+      "y": 2040,
       "width": 180,
       "height": 60
     },
@@ -3183,8 +3273,8 @@
       "id": "n_src_com_taseen_tapoff_mainactivity_java_override",
       "type": "file",
       "file": "Override_1.md",
-      "x": 20,
-      "y": 2020,
+      "x": 420,
+      "y": 2040,
       "width": 180,
       "height": 60
     },
@@ -3192,8 +3282,8 @@
       "id": "n_src_com_taseen_tapoff_mainactivity_java_rect",
       "type": "file",
       "file": "Rect.md",
-      "x": 220,
-      "y": 2020,
+      "x": 620,
+      "y": 2040,
       "width": 180,
       "height": 60
     },
@@ -3201,8 +3291,8 @@
       "id": "n_src_com_taseen_tapoff_mainactivity_switchpart",
       "type": "file",
       "file": "SwitchPart.md",
-      "x": 420,
-      "y": 2020,
+      "x": 20,
+      "y": 2120,
       "width": 180,
       "height": 60
     },
@@ -3211,7 +3301,7 @@
       "type": "group",
       "label": "log",
       "x": 1840,
-      "y": 1700,
+      "y": 1800,
       "width": 880,
       "height": 420,
       "color": "6"
@@ -3221,7 +3311,7 @@
       "type": "file",
       "file": "dot-onClick().md",
       "x": 1860,
-      "y": 1780,
+      "y": 1880,
       "width": 180,
       "height": 60
     },
@@ -3230,7 +3320,7 @@
       "type": "file",
       "file": "dot-onClick()_1.md",
       "x": 2060,
-      "y": 1780,
+      "y": 1880,
       "width": 180,
       "height": 60
     },
@@ -3239,7 +3329,7 @@
       "type": "file",
       "file": "Override_2.md",
       "x": 2260,
-      "y": 1780,
+      "y": 1880,
       "width": 180,
       "height": 60
     },
@@ -3248,7 +3338,7 @@
       "type": "file",
       "file": "Override_3.md",
       "x": 2460,
-      "y": 1780,
+      "y": 1880,
       "width": 180,
       "height": 60
     },
@@ -3257,7 +3347,7 @@
       "type": "file",
       "file": "ScreenOffTile.md",
       "x": 1860,
-      "y": 1860,
+      "y": 1960,
       "width": 180,
       "height": 60
     },
@@ -3266,7 +3356,7 @@
       "type": "file",
       "file": "ScreenOffTile.java.md",
       "x": 2060,
-      "y": 1860,
+      "y": 1960,
       "width": 180,
       "height": 60
     },
@@ -3275,7 +3365,7 @@
       "type": "file",
       "file": "VolumeTile.md",
       "x": 2260,
-      "y": 1860,
+      "y": 1960,
       "width": 180,
       "height": 60
     },
@@ -3284,7 +3374,7 @@
       "type": "file",
       "file": "VolumeTile.java.md",
       "x": 2460,
-      "y": 1860,
+      "y": 1960,
       "width": 180,
       "height": 60
     },
@@ -3293,7 +3383,7 @@
       "type": "file",
       "file": "android.media.AudioManager.md",
       "x": 1860,
-      "y": 1940,
+      "y": 2040,
       "width": 180,
       "height": 60
     },
@@ -3302,7 +3392,7 @@
       "type": "file",
       "file": "android.service.quicksettings.TileService.md",
       "x": 2060,
-      "y": 1940,
+      "y": 2040,
       "width": 180,
       "height": 60
     },
@@ -3311,7 +3401,7 @@
       "type": "file",
       "file": "log.md",
       "x": 2260,
-      "y": 1940,
+      "y": 2040,
       "width": 180,
       "height": 60
     },
@@ -3320,9 +3410,9 @@
       "type": "group",
       "label": "TapOff",
       "x": 3680,
-      "y": 1700,
+      "y": 1800,
       "width": 880,
-      "height": 420,
+      "height": 520,
       "color": "1"
     },
     {
@@ -3330,7 +3420,7 @@
       "type": "file",
       "file": "Bugs.md",
       "x": 3700,
-      "y": 1780,
+      "y": 1880,
       "width": 180,
       "height": 60
     },
@@ -3339,7 +3429,7 @@
       "type": "file",
       "file": "Build from source.md",
       "x": 3900,
-      "y": 1780,
+      "y": 1880,
       "width": 180,
       "height": 60
     },
@@ -3348,7 +3438,7 @@
       "type": "file",
       "file": "Credits.md",
       "x": 4100,
-      "y": 1780,
+      "y": 1880,
       "width": 180,
       "height": 60
     },
@@ -3357,7 +3447,7 @@
       "type": "file",
       "file": "How it works.md",
       "x": 4300,
-      "y": 1780,
+      "y": 1880,
       "width": 180,
       "height": 60
     },
@@ -3366,7 +3456,7 @@
       "type": "file",
       "file": "Install.md",
       "x": 3700,
-      "y": 1860,
+      "y": 1960,
       "width": 180,
       "height": 60
     },
@@ -3375,7 +3465,7 @@
       "type": "file",
       "file": "License.md",
       "x": 3900,
-      "y": 1860,
+      "y": 1960,
       "width": 180,
       "height": 60
     },
@@ -3384,7 +3474,7 @@
       "type": "file",
       "file": "Privacy.md",
       "x": 4100,
-      "y": 1860,
+      "y": 1960,
       "width": 180,
       "height": 60
     },
@@ -3393,7 +3483,7 @@
       "type": "file",
       "file": "README.md",
       "x": 4300,
-      "y": 1860,
+      "y": 1960,
       "width": 180,
       "height": 60
     },
@@ -3402,7 +3492,16 @@
       "type": "file",
       "file": "TapOff.md",
       "x": 3700,
-      "y": 1940,
+      "y": 2040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_then",
+      "type": "file",
+      "file": "Then.md",
+      "x": 3900,
+      "y": 2040,
       "width": 180,
       "height": 60
     },
@@ -3410,8 +3509,26 @@
       "id": "n_readme_what_it_does",
       "type": "file",
       "file": "What it does.md",
-      "x": 3900,
-      "y": 1940,
+      "x": 4100,
+      "y": 2040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_with_a_computer",
+      "type": "file",
+      "file": "With a computer.md",
+      "x": 4300,
+      "y": 2040,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_without_a_computer_shizuku",
+      "type": "file",
+      "file": "Without a computer (Shizuku).md",
+      "x": 3700,
+      "y": 2120,
       "width": 180,
       "height": 60
     },
@@ -3420,7 +3537,7 @@
       "type": "group",
       "label": "LockService.java",
       "x": 5300,
-      "y": 1700,
+      "y": 1800,
       "width": 880,
       "height": 520,
       "color": "2"
@@ -3430,7 +3547,7 @@
       "type": "file",
       "file": "CutoutArt.java.md",
       "x": 5320,
-      "y": 1780,
+      "y": 1880,
       "width": 180,
       "height": 60
     },
@@ -3439,7 +3556,16 @@
       "type": "file",
       "file": "LockService.java.md",
       "x": 5520,
-      "y": 1780,
+      "y": 1880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_android_accessibilityservice_accessibilityservice",
+      "type": "file",
+      "file": "android.accessibilityservice.AccessibilityService.md",
+      "x": 5720,
+      "y": 1880,
       "width": 180,
       "height": 60
     },
@@ -3447,8 +3573,8 @@
       "id": "n_android_view_windowmanager",
       "type": "file",
       "file": "android.view.WindowManager.md",
-      "x": 5720,
-      "y": 1780,
+      "x": 5920,
+      "y": 1880,
       "width": 180,
       "height": 60
     },
@@ -3456,8 +3582,8 @@
       "id": "n_arraylist",
       "type": "file",
       "file": "arraylist.md",
-      "x": 5920,
-      "y": 1780,
+      "x": 5320,
+      "y": 1960,
       "width": 180,
       "height": 60
     },
@@ -3465,8 +3591,8 @@
       "id": "n_componentname",
       "type": "file",
       "file": "componentname.md",
-      "x": 5320,
-      "y": 1860,
+      "x": 5520,
+      "y": 1960,
       "width": 180,
       "height": 60
     },
@@ -3474,8 +3600,8 @@
       "id": "n_contentresolver",
       "type": "file",
       "file": "contentresolver.md",
-      "x": 5520,
-      "y": 1860,
+      "x": 5720,
+      "y": 1960,
       "width": 180,
       "height": 60
     },
@@ -3483,8 +3609,8 @@
       "id": "n_dashpatheffect",
       "type": "file",
       "file": "dashpatheffect.md",
-      "x": 5720,
-      "y": 1860,
+      "x": 5920,
+      "y": 1960,
       "width": 180,
       "height": 60
     },
@@ -3492,8 +3618,8 @@
       "id": "n_displaycutout",
       "type": "file",
       "file": "displaycutout.md",
-      "x": 5920,
-      "y": 1860,
+      "x": 5320,
+      "y": 2040,
       "width": 180,
       "height": 60
     },
@@ -3501,8 +3627,8 @@
       "id": "n_files",
       "type": "file",
       "file": "files.md",
-      "x": 5320,
-      "y": 1940,
+      "x": 5520,
+      "y": 2040,
       "width": 180,
       "height": 60
     },
@@ -3510,17 +3636,8 @@
       "id": "n_list",
       "type": "file",
       "file": "list.md",
-      "x": 5520,
-      "y": 1940,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_manifest",
-      "type": "file",
-      "file": "manifest.md",
       "x": 5720,
-      "y": 1940,
+      "y": 2040,
       "width": 180,
       "height": 60
     },
@@ -3529,7 +3646,7 @@
       "type": "file",
       "file": "packagemanager.md",
       "x": 5920,
-      "y": 1940,
+      "y": 2040,
       "width": 180,
       "height": 60
     },
@@ -3538,7 +3655,7 @@
       "type": "file",
       "file": "radialgradient.md",
       "x": 5320,
-      "y": 2020,
+      "y": 2120,
       "width": 180,
       "height": 60
     },
@@ -3547,7 +3664,7 @@
       "type": "file",
       "file": "random.md",
       "x": 5520,
-      "y": 2020,
+      "y": 2120,
       "width": 180,
       "height": 60
     },
@@ -3556,7 +3673,7 @@
       "type": "file",
       "file": "standardcharsets.md",
       "x": 5720,
-      "y": 2020,
+      "y": 2120,
       "width": 180,
       "height": 60
     },
@@ -3565,7 +3682,7 @@
       "type": "file",
       "file": "sweepgradient.md",
       "x": 5920,
-      "y": 2020,
+      "y": 2120,
       "width": 180,
       "height": 60
     },
@@ -3574,7 +3691,7 @@
       "type": "group",
       "label": "build.sh",
       "x": 6700,
-      "y": 1700,
+      "y": 1800,
       "width": 600,
       "height": 400,
       "color": "3"
@@ -3584,7 +3701,7 @@
       "type": "file",
       "file": "JAVA_HOME.md",
       "x": 6720,
-      "y": 1780,
+      "y": 1880,
       "width": 180,
       "height": 60
     },
@@ -3593,7 +3710,7 @@
       "type": "file",
       "file": "PATH.md",
       "x": 6920,
-      "y": 1780,
+      "y": 1880,
       "width": 180,
       "height": 60
     },
@@ -3602,7 +3719,7 @@
       "type": "file",
       "file": "build.sh.md",
       "x": 6720,
-      "y": 1860,
+      "y": 1960,
       "width": 180,
       "height": 60
     },
@@ -3611,170 +3728,378 @@
       "type": "file",
       "file": "build.sh script.md",
       "x": 6920,
-      "y": 1860,
+      "y": 1960,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g15",
+      "type": "group",
+      "label": "ShizukuSetup.java",
+      "x": 0,
+      "y": 2400,
+      "width": 1540,
+      "height": 720,
+      "color": "4"
+    },
+    {
+      "id": "n_src_moe_shizuku_api_bindercontainer_bindercontainer_bindercontainer",
+      "type": "file",
+      "file": "dot-BinderContainer().md",
+      "x": 20,
+      "y": 2480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_com_taseen_tapoff_shizukusetup_shizukusetup_call",
+      "type": "file",
+      "file": "dot-call().md",
+      "x": 220,
+      "y": 2480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_com_taseen_tapoff_lockservice_lockservice_canlock",
+      "type": "file",
+      "file": "dot-canLock().md",
+      "x": 420,
+      "y": 2480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_com_taseen_tapoff_shizukusetup_shizukusetup_delete",
+      "type": "file",
+      "file": "dot-delete().md",
+      "x": 620,
+      "y": 2480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_moe_shizuku_api_bindercontainer_bindercontainer_describecontents",
+      "type": "file",
+      "file": "dot-describeContents().md",
+      "x": 820,
+      "y": 2480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_com_taseen_tapoff_shizukusetup_shizukusetup_gettype",
+      "type": "file",
+      "file": "dot-getType().md",
+      "x": 1020,
+      "y": 2480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_com_taseen_tapoff_shizukusetup_shizukusetup_grant",
+      "type": "file",
+      "file": "dot-grant().md",
+      "x": 1220,
+      "y": 2480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_com_taseen_tapoff_shizukusetup_shizukusetup_insert",
+      "type": "file",
+      "file": "dot-insert().md",
+      "x": 20,
+      "y": 2560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_com_taseen_tapoff_shizukusetup_shizukusetup_installed",
+      "type": "file",
+      "file": "dot-installed().md",
+      "x": 220,
+      "y": 2560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_com_taseen_tapoff_shizukusetup_shizukusetup_oncreate",
+      "type": "file",
+      "file": "dot-onCreate()_2.md",
+      "x": 420,
+      "y": 2560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_com_taseen_tapoff_shizukusetup_shizukusetup_pmgrant",
+      "type": "file",
+      "file": "dot-pmGrant().md",
+      "x": 620,
+      "y": 2560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_com_taseen_tapoff_shizukusetup_shizukusetup_query",
+      "type": "file",
+      "file": "dot-query().md",
+      "x": 820,
+      "y": 2560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_com_taseen_tapoff_shizukusetup_shizukusetup_running",
+      "type": "file",
+      "file": "dot-running().md",
+      "x": 1020,
+      "y": 2560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_com_taseen_tapoff_mainactivity_mainactivity_setupwithshizuku",
+      "type": "file",
+      "file": "dot-setupWithShizuku().md",
+      "x": 1220,
+      "y": 2560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_com_taseen_tapoff_shizukusetup_shizukusetup_update",
+      "type": "file",
+      "file": "dot-update().md",
+      "x": 20,
+      "y": 2640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_moe_shizuku_api_bindercontainer_bindercontainer_writetoparcel",
+      "type": "file",
+      "file": "dot-writeToParcel().md",
+      "x": 220,
+      "y": 2640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_moe_shizuku_api_bindercontainer_bindercontainer",
+      "type": "file",
+      "file": "BinderContainer.md",
+      "x": 420,
+      "y": 2640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_moe_shizuku_api_bindercontainer",
+      "type": "file",
+      "file": "BinderContainer.java.md",
+      "x": 620,
+      "y": 2640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_creator",
+      "type": "file",
+      "file": "Creator.md",
+      "x": 820,
+      "y": 2640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_com_taseen_tapoff_shizukusetup_java_override",
+      "type": "file",
+      "file": "Override_4.md",
+      "x": 1020,
+      "y": 2640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_moe_shizuku_api_bindercontainer_java_override",
+      "type": "file",
+      "file": "Override_5.md",
+      "x": 1220,
+      "y": 2640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docs_architecture_setup_without_a_computer_shizukusetup_java",
+      "type": "file",
+      "file": "Setup without a computer (`ShizukuSetup.java`).md",
+      "x": 20,
+      "y": 2720,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_com_taseen_tapoff_shizukusetup_shizukusetup",
+      "type": "file",
+      "file": "ShizukuSetup.md",
+      "x": 220,
+      "y": 2720,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_com_taseen_tapoff_shizukusetup",
+      "type": "file",
+      "file": "ShizukuSetup.java.md",
+      "x": 420,
+      "y": 2720,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stub",
+      "type": "file",
+      "file": "Stub.md",
+      "x": 620,
+      "y": 2720,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_android_content_contentprovider",
+      "type": "file",
+      "file": "android.content.ContentProvider.md",
+      "x": 820,
+      "y": 2720,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_android_content_contentvalues",
+      "type": "file",
+      "file": "android.content.ContentValues.md",
+      "x": 1020,
+      "y": 2720,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_android_database_cursor",
+      "type": "file",
+      "file": "android.database.Cursor.md",
+      "x": 1220,
+      "y": 2720,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_android_net_uri",
+      "type": "file",
+      "file": "android.net.Uri.md",
+      "x": 20,
+      "y": 2800,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_android_os_handler",
+      "type": "file",
+      "file": "android.os.Handler.md",
+      "x": 220,
+      "y": 2800,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_android_os_ibinder",
+      "type": "file",
+      "file": "android.os.IBinder.md",
+      "x": 420,
+      "y": 2800,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_android_os_parcel",
+      "type": "file",
+      "file": "android.os.Parcel.md",
+      "x": 620,
+      "y": 2800,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_android_os_parcelable",
+      "type": "file",
+      "file": "android.os.Parcelable.md",
+      "x": 820,
+      "y": 2800,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ishizukuapplication",
+      "type": "file",
+      "file": "ishizukuapplication.md",
+      "x": 1020,
+      "y": 2800,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ishizukuservice",
+      "type": "file",
+      "file": "ishizukuservice.md",
+      "x": 1220,
+      "y": 2800,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_looper",
+      "type": "file",
+      "file": "looper.md",
+      "x": 20,
+      "y": 2880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_manifest",
+      "type": "file",
+      "file": "manifest.md",
+      "x": 220,
+      "y": 2880,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_remoteexception",
+      "type": "file",
+      "file": "remoteexception.md",
+      "x": 420,
+      "y": 2880,
       "width": 180,
       "height": 60
     },
     {
       "id": "g16",
       "type": "group",
-      "label": "android.graphics.Bitmap",
-      "x": 0,
-      "y": 2300,
-      "width": 1100,
-      "height": 520,
-      "color": "4"
+      "label": "uri",
+      "x": 1840,
+      "y": 2400,
+      "width": 600,
+      "height": 400,
+      "color": "5"
     },
     {
-      "id": "n_src_com_taseen_tapoff_mainactivity_mainactivity_addcard",
+      "id": "n_uri",
       "type": "file",
-      "file": "dot-addCard().md",
-      "x": 20,
-      "y": 2380,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_com_taseen_tapoff_glasscard_glasscard_bind",
-      "type": "file",
-      "file": "dot-bind().md",
-      "x": 220,
-      "y": 2380,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_com_taseen_tapoff_mainactivity_mainactivity_cardicon",
-      "type": "file",
-      "file": "dot-cardIcon().md",
-      "x": 420,
-      "y": 2380,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_com_taseen_tapoff_mainactivity_mainactivity_loadtileimage",
-      "type": "file",
-      "file": "dot-loadTileImage().md",
-      "x": 620,
-      "y": 2380,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_com_taseen_tapoff_glasscard_glasscard_ondraw",
-      "type": "file",
-      "file": "dot-onDraw().md",
-      "x": 820,
-      "y": 2380,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_com_taseen_tapoff_glasscard_glasscard_onmeasure",
-      "type": "file",
-      "file": "dot-onMeasure().md",
-      "x": 20,
-      "y": 2460,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_com_taseen_tapoff_glasscard_glasscard_onsizechanged",
-      "type": "file",
-      "file": "dot-onSizeChanged().md",
-      "x": 220,
-      "y": 2460,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_com_taseen_tapoff_mainactivity_mainactivity_refreshfavourites",
-      "type": "file",
-      "file": "dot-refreshFavourites().md",
-      "x": 420,
-      "y": 2460,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_com_taseen_tapoff_glasscard_glasscard_setdim",
-      "type": "file",
-      "file": "dot-setDim().md",
-      "x": 620,
-      "y": 2460,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_com_taseen_tapoff_glasscard_glasscard_setphoto",
-      "type": "file",
-      "file": "dot-setPhoto().md",
-      "x": 820,
-      "y": 2460,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_com_taseen_tapoff_glasscard_glasscard_setpressed",
-      "type": "file",
-      "file": "dot-setPressed().md",
-      "x": 20,
-      "y": 2540,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_com_taseen_tapoff_mainactivity_mainactivity_tileart",
-      "type": "file",
-      "file": "dot-tileArt().md",
-      "x": 220,
-      "y": 2540,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_com_taseen_tapoff_glasscard_glasscard_updatecrop",
-      "type": "file",
-      "file": "dot-updateCrop().md",
-      "x": 420,
-      "y": 2540,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_com_taseen_tapoff_mainactivity_mainactivity_volumeart",
-      "type": "file",
-      "file": "dot-volumeArt().md",
-      "x": 620,
-      "y": 2540,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_com_taseen_tapoff_glasscard_glasscard",
-      "type": "file",
-      "file": "GlassCard.md",
-      "x": 820,
-      "y": 2540,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_com_taseen_tapoff_glasscard_java_override",
-      "type": "file",
-      "file": "Override_4.md",
-      "x": 20,
-      "y": 2620,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_android_graphics_bitmap",
-      "type": "file",
-      "file": "android.graphics.Bitmap.md",
-      "x": 220,
-      "y": 2620,
+      "file": "uri.md",
+      "x": 1860,
+      "y": 2480,
       "width": 180,
       "height": 60
     },
@@ -3782,18 +4107,18 @@
       "id": "g17",
       "type": "group",
       "label": "imagebutton",
-      "x": 1840,
-      "y": 2300,
+      "x": 3680,
+      "y": 2400,
       "width": 600,
       "height": 400,
-      "color": "5"
+      "color": "6"
     },
     {
       "id": "n_imagebutton",
       "type": "file",
       "file": "imagebutton.md",
-      "x": 1860,
-      "y": 2380,
+      "x": 3700,
+      "y": 2480,
       "width": 180,
       "height": 60
     },
@@ -3801,18 +4126,18 @@
       "id": "g18",
       "type": "group",
       "label": "overshootinterpolator",
-      "x": 3680,
-      "y": 2300,
+      "x": 5300,
+      "y": 2400,
       "width": 600,
       "height": 400,
-      "color": "6"
+      "color": "1"
     },
     {
       "id": "n_overshootinterpolator",
       "type": "file",
       "file": "overshootinterpolator.md",
-      "x": 3700,
-      "y": 2380,
+      "x": 5320,
+      "y": 2480,
       "width": 180,
       "height": 60
     },
@@ -3820,18 +4145,18 @@
       "id": "g19",
       "type": "group",
       "label": "NotchPanel.java",
-      "x": 5300,
-      "y": 2300,
+      "x": 6700,
+      "y": 2400,
       "width": 880,
       "height": 420,
-      "color": "1"
+      "color": "2"
     },
     {
       "id": "n_src_com_taseen_tapoff_notchpanel",
       "type": "file",
       "file": "NotchPanel.java.md",
-      "x": 5320,
-      "y": 2380,
+      "x": 6720,
+      "y": 2480,
       "width": 180,
       "height": 60
     },
@@ -3839,8 +4164,8 @@
       "id": "n_src_com_taseen_tapoff_slidersactivity",
       "type": "file",
       "file": "SlidersActivity.java.md",
-      "x": 5520,
-      "y": 2380,
+      "x": 6920,
+      "y": 2480,
       "width": 180,
       "height": 60
     },
@@ -3848,8 +4173,8 @@
       "id": "n_display",
       "type": "file",
       "file": "display.md",
-      "x": 5720,
-      "y": 2380,
+      "x": 7120,
+      "y": 2480,
       "width": 180,
       "height": 60
     },
@@ -3857,8 +4182,8 @@
       "id": "n_displaymanager",
       "type": "file",
       "file": "displaymanager.md",
-      "x": 5920,
-      "y": 2380,
+      "x": 7320,
+      "y": 2480,
       "width": 180,
       "height": 60
     },
@@ -3866,8 +4191,8 @@
       "id": "n_file",
       "type": "file",
       "file": "file.md",
-      "x": 5320,
-      "y": 2460,
+      "x": 6720,
+      "y": 2560,
       "width": 180,
       "height": 60
     },
@@ -3875,8 +4200,8 @@
       "id": "n_intent",
       "type": "file",
       "file": "intent.md",
-      "x": 5520,
-      "y": 2460,
+      "x": 6920,
+      "y": 2560,
       "width": 180,
       "height": 60
     },
@@ -3884,17 +4209,8 @@
       "id": "n_ioexception",
       "type": "file",
       "file": "ioexception.md",
-      "x": 5720,
-      "y": 2460,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_linearinterpolator",
-      "type": "file",
-      "file": "linearinterpolator.md",
-      "x": 5920,
-      "y": 2460,
+      "x": 7120,
+      "y": 2560,
       "width": 180,
       "height": 60
     },
@@ -3902,8 +4218,8 @@
       "id": "n_pixelformat",
       "type": "file",
       "file": "pixelformat.md",
-      "x": 5320,
-      "y": 2540,
+      "x": 7320,
+      "y": 2560,
       "width": 180,
       "height": 60
     },
@@ -3911,8 +4227,8 @@
       "id": "n_settings",
       "type": "file",
       "file": "settings.md",
-      "x": 5520,
-      "y": 2540,
+      "x": 6720,
+      "y": 2640,
       "width": 180,
       "height": 60
     },
@@ -3920,17 +4236,81 @@
       "id": "n_toast",
       "type": "file",
       "file": "toast.md",
-      "x": 5720,
-      "y": 2540,
+      "x": 6920,
+      "y": 2640,
       "width": 180,
       "height": 60
     },
     {
-      "id": "n_uri",
+      "id": "n_vibrationattributes",
       "type": "file",
-      "file": "uri.md",
-      "x": 5920,
-      "y": 2540,
+      "file": "vibrationattributes.md",
+      "x": 7120,
+      "y": 2640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g20",
+      "type": "group",
+      "label": "SlidersActivity",
+      "x": 0,
+      "y": 3200,
+      "width": 660,
+      "height": 400,
+      "color": "3"
+    },
+    {
+      "id": "n_src_com_taseen_tapoff_slidersactivity_slidersactivity_backtapseen",
+      "type": "file",
+      "file": "dot-backTapSeen().md",
+      "x": 20,
+      "y": 3280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_com_taseen_tapoff_slidersactivity_slidersactivity_forgetbacktap",
+      "type": "file",
+      "file": "dot-forgetBackTap().md",
+      "x": 220,
+      "y": 3280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_com_taseen_tapoff_slidersactivity_java_context",
+      "type": "file",
+      "file": "Context_1.md",
+      "x": 420,
+      "y": 3280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_docs_decisions_decisions",
+      "type": "file",
+      "file": "Decisions.md",
+      "x": 20,
+      "y": 3360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_com_taseen_tapoff_slidersactivity_slidersactivity",
+      "type": "file",
+      "file": "SlidersActivity.md",
+      "x": 220,
+      "y": 3360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_android_app_activity",
+      "type": "file",
+      "file": "android.app.Activity.md",
+      "x": 420,
+      "y": 3360,
       "width": 180,
       "height": 60
     }
@@ -4013,6 +4393,12 @@
       "fromNode": "n_src_com_taseen_tapoff_mainactivity_mainactivity",
       "toNode": "n_android_app_activity",
       "label": "inherits [EXTRACTED]"
+    },
+    {
+      "id": "e_src_com_taseen_tapoff_mainactivity_mainactivity_src_com_taseen_tapoff_mainactivity_mainactivity_onactivityresult",
+      "fromNode": "n_src_com_taseen_tapoff_mainactivity_mainactivity",
+      "toNode": "n_src_com_taseen_tapoff_mainactivity_mainactivity_onactivityresult",
+      "label": "method [EXTRACTED]"
     },
     {
       "id": "e_src_com_taseen_tapoff_mainactivity_mainactivity_src_com_taseen_tapoff_mainactivity_mainactivity_onconfigurationchanged",
@@ -4177,6 +4563,12 @@
       "label": "method [EXTRACTED]"
     },
     {
+      "id": "e_src_com_taseen_tapoff_mainactivity_mainactivity_src_com_taseen_tapoff_mainactivity_mainactivity_setupwithshizuku",
+      "fromNode": "n_src_com_taseen_tapoff_mainactivity_mainactivity",
+      "toNode": "n_src_com_taseen_tapoff_mainactivity_mainactivity_setupwithshizuku",
+      "label": "method [EXTRACTED]"
+    },
+    {
       "id": "e_src_com_taseen_tapoff_mainactivity_mainactivity_src_com_taseen_tapoff_mainactivity_mainactivity_buildsettings",
       "fromNode": "n_src_com_taseen_tapoff_mainactivity_mainactivity",
       "toNode": "n_src_com_taseen_tapoff_mainactivity_mainactivity_buildsettings",
@@ -4186,6 +4578,12 @@
       "id": "e_src_com_taseen_tapoff_mainactivity_mainactivity_src_com_taseen_tapoff_mainactivity_mainactivity_beginpagedrag",
       "fromNode": "n_src_com_taseen_tapoff_mainactivity_mainactivity",
       "toNode": "n_src_com_taseen_tapoff_mainactivity_mainactivity_beginpagedrag",
+      "label": "method [EXTRACTED]"
+    },
+    {
+      "id": "e_src_com_taseen_tapoff_mainactivity_mainactivity_src_com_taseen_tapoff_mainactivity_mainactivity_chooser",
+      "fromNode": "n_src_com_taseen_tapoff_mainactivity_mainactivity",
+      "toNode": "n_src_com_taseen_tapoff_mainactivity_mainactivity_chooser",
       "label": "method [EXTRACTED]"
     },
     {
@@ -4207,15 +4605,15 @@
       "label": "method [EXTRACTED]"
     },
     {
-      "id": "e_src_com_taseen_tapoff_mainactivity_mainactivity_src_com_taseen_tapoff_mainactivity_mainactivity_chooser",
-      "fromNode": "n_src_com_taseen_tapoff_mainactivity_mainactivity",
-      "toNode": "n_src_com_taseen_tapoff_mainactivity_mainactivity_chooser",
-      "label": "method [EXTRACTED]"
-    },
-    {
       "id": "e_src_com_taseen_tapoff_mainactivity_mainactivity_src_com_taseen_tapoff_mainactivity_mainactivity_stylesegments",
       "fromNode": "n_src_com_taseen_tapoff_mainactivity_mainactivity",
       "toNode": "n_src_com_taseen_tapoff_mainactivity_mainactivity_stylesegments",
+      "label": "method [EXTRACTED]"
+    },
+    {
+      "id": "e_src_com_taseen_tapoff_mainactivity_mainactivity_src_com_taseen_tapoff_mainactivity_mainactivity_oncreate",
+      "fromNode": "n_src_com_taseen_tapoff_mainactivity_mainactivity",
+      "toNode": "n_src_com_taseen_tapoff_mainactivity_mainactivity_oncreate",
       "label": "method [EXTRACTED]"
     },
     {
@@ -4237,21 +4635,9 @@
       "label": "method [EXTRACTED]"
     },
     {
-      "id": "e_src_com_taseen_tapoff_mainactivity_mainactivity_src_com_taseen_tapoff_mainactivity_mainactivity_oncreate",
-      "fromNode": "n_src_com_taseen_tapoff_mainactivity_mainactivity",
-      "toNode": "n_src_com_taseen_tapoff_mainactivity_mainactivity_oncreate",
-      "label": "method [EXTRACTED]"
-    },
-    {
       "id": "e_src_com_taseen_tapoff_mainactivity_mainactivity_src_com_taseen_tapoff_mainactivity_mainactivity_select",
       "fromNode": "n_src_com_taseen_tapoff_mainactivity_mainactivity",
       "toNode": "n_src_com_taseen_tapoff_mainactivity_mainactivity_select",
-      "label": "method [EXTRACTED]"
-    },
-    {
-      "id": "e_src_com_taseen_tapoff_mainactivity_mainactivity_src_com_taseen_tapoff_mainactivity_mainactivity_onactivityresult",
-      "fromNode": "n_src_com_taseen_tapoff_mainactivity_mainactivity",
-      "toNode": "n_src_com_taseen_tapoff_mainactivity_mainactivity_onactivityresult",
       "label": "method [EXTRACTED]"
     },
     {
@@ -4687,141 +5073,165 @@
       "label": "method [EXTRACTED]"
     },
     {
-      "id": "e_src_com_taseen_tapoff_glasscard_glasscard_android_graphics_paint",
-      "fromNode": "n_src_com_taseen_tapoff_glasscard_glasscard",
-      "toNode": "n_android_graphics_paint",
+      "id": "e_src_com_taseen_tapoff_shizukusetup_shizukusetup_android_os_handler",
+      "fromNode": "n_src_com_taseen_tapoff_shizukusetup_shizukusetup",
+      "toNode": "n_android_os_handler",
       "label": "references [EXTRACTED]"
     },
     {
-      "id": "e_src_com_taseen_tapoff_glasscard_glasscard_android_graphics_matrix",
-      "fromNode": "n_src_com_taseen_tapoff_glasscard_glasscard",
-      "toNode": "n_android_graphics_matrix",
+      "id": "e_src_com_taseen_tapoff_shizukusetup_shizukusetup_android_os_ibinder",
+      "fromNode": "n_src_com_taseen_tapoff_shizukusetup_shizukusetup",
+      "toNode": "n_android_os_ibinder",
       "label": "references [EXTRACTED]"
     },
     {
-      "id": "e_src_com_taseen_tapoff_glasscard_glasscard_android_graphics_drawable_drawable",
-      "fromNode": "n_src_com_taseen_tapoff_glasscard_glasscard",
-      "toNode": "n_android_graphics_drawable_drawable",
+      "id": "e_src_com_taseen_tapoff_shizukusetup_shizukusetup_stub",
+      "fromNode": "n_src_com_taseen_tapoff_shizukusetup_shizukusetup",
+      "toNode": "n_stub",
       "label": "references [EXTRACTED]"
     },
     {
-      "id": "e_src_com_taseen_tapoff_glasscard_glasscard_android_graphics_bitmap",
-      "fromNode": "n_src_com_taseen_tapoff_glasscard_glasscard",
-      "toNode": "n_android_graphics_bitmap",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_src_com_taseen_tapoff_glasscard_glasscard_src_com_taseen_tapoff_mainactivity_mainactivity_addcard",
-      "fromNode": "n_src_com_taseen_tapoff_glasscard_glasscard",
-      "toNode": "n_src_com_taseen_tapoff_mainactivity_mainactivity_addcard",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_src_com_taseen_tapoff_glasscard_glasscard_src_com_taseen_tapoff_glasscard",
-      "fromNode": "n_src_com_taseen_tapoff_glasscard_glasscard",
-      "toNode": "n_src_com_taseen_tapoff_glasscard",
+      "id": "e_src_com_taseen_tapoff_shizukusetup_shizukusetup_src_com_taseen_tapoff_shizukusetup",
+      "fromNode": "n_src_com_taseen_tapoff_shizukusetup_shizukusetup",
+      "toNode": "n_src_com_taseen_tapoff_shizukusetup",
       "label": "contains [EXTRACTED]"
     },
     {
-      "id": "e_src_com_taseen_tapoff_glasscard_glasscard_android_view_view",
-      "fromNode": "n_src_com_taseen_tapoff_glasscard_glasscard",
-      "toNode": "n_android_view_view",
+      "id": "e_src_com_taseen_tapoff_shizukusetup_shizukusetup_android_content_contentprovider",
+      "fromNode": "n_src_com_taseen_tapoff_shizukusetup_shizukusetup",
+      "toNode": "n_android_content_contentprovider",
       "label": "inherits [EXTRACTED]"
     },
     {
-      "id": "e_src_com_taseen_tapoff_glasscard_glasscard_src_com_taseen_tapoff_glasscard_glasscard_setpressed",
-      "fromNode": "n_src_com_taseen_tapoff_glasscard_glasscard",
-      "toNode": "n_src_com_taseen_tapoff_glasscard_glasscard_setpressed",
+      "id": "e_src_com_taseen_tapoff_shizukusetup_shizukusetup_src_com_taseen_tapoff_shizukusetup_shizukusetup_call",
+      "fromNode": "n_src_com_taseen_tapoff_shizukusetup_shizukusetup",
+      "toNode": "n_src_com_taseen_tapoff_shizukusetup_shizukusetup_call",
       "label": "method [EXTRACTED]"
     },
     {
-      "id": "e_src_com_taseen_tapoff_glasscard_glasscard_src_com_taseen_tapoff_glasscard_glasscard_glasscard",
-      "fromNode": "n_src_com_taseen_tapoff_glasscard_glasscard",
-      "toNode": "n_src_com_taseen_tapoff_glasscard_glasscard_glasscard",
+      "id": "e_src_com_taseen_tapoff_shizukusetup_shizukusetup_src_com_taseen_tapoff_shizukusetup_shizukusetup_oncreate",
+      "fromNode": "n_src_com_taseen_tapoff_shizukusetup_shizukusetup",
+      "toNode": "n_src_com_taseen_tapoff_shizukusetup_shizukusetup_oncreate",
       "label": "method [EXTRACTED]"
     },
     {
-      "id": "e_src_com_taseen_tapoff_glasscard_glasscard_src_com_taseen_tapoff_glasscard_glasscard_bind",
-      "fromNode": "n_src_com_taseen_tapoff_glasscard_glasscard",
-      "toNode": "n_src_com_taseen_tapoff_glasscard_glasscard_bind",
+      "id": "e_src_com_taseen_tapoff_shizukusetup_shizukusetup_src_com_taseen_tapoff_shizukusetup_shizukusetup_query",
+      "fromNode": "n_src_com_taseen_tapoff_shizukusetup_shizukusetup",
+      "toNode": "n_src_com_taseen_tapoff_shizukusetup_shizukusetup_query",
       "label": "method [EXTRACTED]"
     },
     {
-      "id": "e_src_com_taseen_tapoff_glasscard_glasscard_src_com_taseen_tapoff_glasscard_glasscard_setphoto",
-      "fromNode": "n_src_com_taseen_tapoff_glasscard_glasscard",
-      "toNode": "n_src_com_taseen_tapoff_glasscard_glasscard_setphoto",
+      "id": "e_src_com_taseen_tapoff_shizukusetup_shizukusetup_src_com_taseen_tapoff_shizukusetup_shizukusetup_gettype",
+      "fromNode": "n_src_com_taseen_tapoff_shizukusetup_shizukusetup",
+      "toNode": "n_src_com_taseen_tapoff_shizukusetup_shizukusetup_gettype",
       "label": "method [EXTRACTED]"
     },
     {
-      "id": "e_src_com_taseen_tapoff_glasscard_glasscard_src_com_taseen_tapoff_glasscard_glasscard_setdim",
-      "fromNode": "n_src_com_taseen_tapoff_glasscard_glasscard",
-      "toNode": "n_src_com_taseen_tapoff_glasscard_glasscard_setdim",
+      "id": "e_src_com_taseen_tapoff_shizukusetup_shizukusetup_src_com_taseen_tapoff_shizukusetup_shizukusetup_insert",
+      "fromNode": "n_src_com_taseen_tapoff_shizukusetup_shizukusetup",
+      "toNode": "n_src_com_taseen_tapoff_shizukusetup_shizukusetup_insert",
       "label": "method [EXTRACTED]"
     },
     {
-      "id": "e_src_com_taseen_tapoff_glasscard_glasscard_src_com_taseen_tapoff_glasscard_glasscard_onmeasure",
-      "fromNode": "n_src_com_taseen_tapoff_glasscard_glasscard",
-      "toNode": "n_src_com_taseen_tapoff_glasscard_glasscard_onmeasure",
+      "id": "e_src_com_taseen_tapoff_shizukusetup_shizukusetup_src_com_taseen_tapoff_shizukusetup_shizukusetup_delete",
+      "fromNode": "n_src_com_taseen_tapoff_shizukusetup_shizukusetup",
+      "toNode": "n_src_com_taseen_tapoff_shizukusetup_shizukusetup_delete",
       "label": "method [EXTRACTED]"
     },
     {
-      "id": "e_src_com_taseen_tapoff_glasscard_glasscard_src_com_taseen_tapoff_glasscard_glasscard_onsizechanged",
-      "fromNode": "n_src_com_taseen_tapoff_glasscard_glasscard",
-      "toNode": "n_src_com_taseen_tapoff_glasscard_glasscard_onsizechanged",
+      "id": "e_src_com_taseen_tapoff_shizukusetup_shizukusetup_src_com_taseen_tapoff_shizukusetup_shizukusetup_update",
+      "fromNode": "n_src_com_taseen_tapoff_shizukusetup_shizukusetup",
+      "toNode": "n_src_com_taseen_tapoff_shizukusetup_shizukusetup_update",
       "label": "method [EXTRACTED]"
     },
     {
-      "id": "e_src_com_taseen_tapoff_glasscard_glasscard_src_com_taseen_tapoff_glasscard_glasscard_updatecrop",
-      "fromNode": "n_src_com_taseen_tapoff_glasscard_glasscard",
-      "toNode": "n_src_com_taseen_tapoff_glasscard_glasscard_updatecrop",
+      "id": "e_src_com_taseen_tapoff_shizukusetup_shizukusetup_src_com_taseen_tapoff_shizukusetup_shizukusetup_installed",
+      "fromNode": "n_src_com_taseen_tapoff_shizukusetup_shizukusetup",
+      "toNode": "n_src_com_taseen_tapoff_shizukusetup_shizukusetup_installed",
       "label": "method [EXTRACTED]"
     },
     {
-      "id": "e_src_com_taseen_tapoff_glasscard_glasscard_src_com_taseen_tapoff_glasscard_glasscard_ondraw",
-      "fromNode": "n_src_com_taseen_tapoff_glasscard_glasscard",
-      "toNode": "n_src_com_taseen_tapoff_glasscard_glasscard_ondraw",
+      "id": "e_src_com_taseen_tapoff_shizukusetup_shizukusetup_src_com_taseen_tapoff_shizukusetup_shizukusetup_running",
+      "fromNode": "n_src_com_taseen_tapoff_shizukusetup_shizukusetup",
+      "toNode": "n_src_com_taseen_tapoff_shizukusetup_shizukusetup_running",
       "label": "method [EXTRACTED]"
     },
     {
-      "id": "e_src_com_taseen_tapoff_lockservice_iris_android_graphics_paint",
-      "fromNode": "n_src_com_taseen_tapoff_lockservice_iris",
-      "toNode": "n_android_graphics_paint",
+      "id": "e_src_com_taseen_tapoff_shizukusetup_shizukusetup_src_com_taseen_tapoff_shizukusetup_shizukusetup_grant",
+      "fromNode": "n_src_com_taseen_tapoff_shizukusetup_shizukusetup",
+      "toNode": "n_src_com_taseen_tapoff_shizukusetup_shizukusetup_grant",
+      "label": "method [EXTRACTED]"
+    },
+    {
+      "id": "e_src_com_taseen_tapoff_shizukusetup_shizukusetup_src_com_taseen_tapoff_shizukusetup_shizukusetup_pmgrant",
+      "fromNode": "n_src_com_taseen_tapoff_shizukusetup_shizukusetup",
+      "toNode": "n_src_com_taseen_tapoff_shizukusetup_shizukusetup_pmgrant",
+      "label": "method [EXTRACTED]"
+    },
+    {
+      "id": "e_src_com_taseen_tapoff_shizukusetup_shizukusetup_docs_decisions_decisions",
+      "fromNode": "n_src_com_taseen_tapoff_shizukusetup_shizukusetup",
+      "toNode": "n_docs_decisions_decisions",
+      "label": "references [INFERRED]"
+    },
+    {
+      "id": "e_src_moe_shizuku_api_bindercontainer_bindercontainer_android_os_ibinder",
+      "fromNode": "n_src_moe_shizuku_api_bindercontainer_bindercontainer",
+      "toNode": "n_android_os_ibinder",
       "label": "references [EXTRACTED]"
     },
     {
-      "id": "e_src_com_taseen_tapoff_lockservice_iris_src_com_taseen_tapoff_lockservice_lockservice",
-      "fromNode": "n_src_com_taseen_tapoff_lockservice_iris",
-      "toNode": "n_src_com_taseen_tapoff_lockservice_lockservice",
+      "id": "e_src_moe_shizuku_api_bindercontainer_bindercontainer_creator",
+      "fromNode": "n_src_moe_shizuku_api_bindercontainer_bindercontainer",
+      "toNode": "n_creator",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_src_moe_shizuku_api_bindercontainer_bindercontainer_src_moe_shizuku_api_bindercontainer",
+      "fromNode": "n_src_moe_shizuku_api_bindercontainer_bindercontainer",
+      "toNode": "n_src_moe_shizuku_api_bindercontainer",
       "label": "contains [EXTRACTED]"
     },
     {
-      "id": "e_src_com_taseen_tapoff_lockservice_iris_android_view_view",
-      "fromNode": "n_src_com_taseen_tapoff_lockservice_iris",
-      "toNode": "n_android_view_view",
-      "label": "inherits [EXTRACTED]"
+      "id": "e_src_moe_shizuku_api_bindercontainer_bindercontainer_android_os_parcelable",
+      "fromNode": "n_src_moe_shizuku_api_bindercontainer_bindercontainer",
+      "toNode": "n_android_os_parcelable",
+      "label": "implements [EXTRACTED]"
     },
     {
-      "id": "e_src_com_taseen_tapoff_lockservice_iris_src_com_taseen_tapoff_lockservice_iris_iris",
-      "fromNode": "n_src_com_taseen_tapoff_lockservice_iris",
-      "toNode": "n_src_com_taseen_tapoff_lockservice_iris_iris",
+      "id": "e_src_moe_shizuku_api_bindercontainer_bindercontainer_src_com_taseen_tapoff_shizukusetup",
+      "fromNode": "n_src_moe_shizuku_api_bindercontainer_bindercontainer",
+      "toNode": "n_src_com_taseen_tapoff_shizukusetup",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_moe_shizuku_api_bindercontainer_bindercontainer_src_moe_shizuku_api_bindercontainer_bindercontainer_bindercontainer",
+      "fromNode": "n_src_moe_shizuku_api_bindercontainer_bindercontainer",
+      "toNode": "n_src_moe_shizuku_api_bindercontainer_bindercontainer_bindercontainer",
       "label": "method [EXTRACTED]"
     },
     {
-      "id": "e_src_com_taseen_tapoff_lockservice_iris_src_com_taseen_tapoff_lockservice_iris_close",
-      "fromNode": "n_src_com_taseen_tapoff_lockservice_iris",
-      "toNode": "n_src_com_taseen_tapoff_lockservice_iris_close",
+      "id": "e_src_moe_shizuku_api_bindercontainer_bindercontainer_src_moe_shizuku_api_bindercontainer_bindercontainer_describecontents",
+      "fromNode": "n_src_moe_shizuku_api_bindercontainer_bindercontainer",
+      "toNode": "n_src_moe_shizuku_api_bindercontainer_bindercontainer_describecontents",
       "label": "method [EXTRACTED]"
     },
     {
-      "id": "e_src_com_taseen_tapoff_lockservice_iris_src_com_taseen_tapoff_lockservice_iris_ondraw",
-      "fromNode": "n_src_com_taseen_tapoff_lockservice_iris",
-      "toNode": "n_src_com_taseen_tapoff_lockservice_iris_ondraw",
+      "id": "e_src_moe_shizuku_api_bindercontainer_bindercontainer_src_moe_shizuku_api_bindercontainer_bindercontainer_writetoparcel",
+      "fromNode": "n_src_moe_shizuku_api_bindercontainer_bindercontainer",
+      "toNode": "n_src_moe_shizuku_api_bindercontainer_bindercontainer_writetoparcel",
       "label": "method [EXTRACTED]"
     },
     {
       "id": "e_src_com_taseen_tapoff_lockservice_lockservice_src_com_taseen_tapoff_lockservice",
       "fromNode": "n_src_com_taseen_tapoff_lockservice_lockservice",
       "toNode": "n_src_com_taseen_tapoff_lockservice",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_com_taseen_tapoff_lockservice_lockservice_src_com_taseen_tapoff_lockservice_iris",
+      "fromNode": "n_src_com_taseen_tapoff_lockservice_lockservice",
+      "toNode": "n_src_com_taseen_tapoff_lockservice_iris",
       "label": "contains [EXTRACTED]"
     },
     {
@@ -5041,6 +5451,54 @@
       "label": "references [INFERRED]"
     },
     {
+      "id": "e_src_com_taseen_tapoff_slidersactivity_slidersactivity_src_com_taseen_tapoff_slidersactivity",
+      "fromNode": "n_src_com_taseen_tapoff_slidersactivity_slidersactivity",
+      "toNode": "n_src_com_taseen_tapoff_slidersactivity",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_com_taseen_tapoff_slidersactivity_slidersactivity_android_app_activity",
+      "fromNode": "n_src_com_taseen_tapoff_slidersactivity_slidersactivity",
+      "toNode": "n_android_app_activity",
+      "label": "inherits [EXTRACTED]"
+    },
+    {
+      "id": "e_src_com_taseen_tapoff_slidersactivity_slidersactivity_src_com_taseen_tapoff_slidersactivity_slidersactivity_backtapseen",
+      "fromNode": "n_src_com_taseen_tapoff_slidersactivity_slidersactivity",
+      "toNode": "n_src_com_taseen_tapoff_slidersactivity_slidersactivity_backtapseen",
+      "label": "method [EXTRACTED]"
+    },
+    {
+      "id": "e_src_com_taseen_tapoff_slidersactivity_slidersactivity_src_com_taseen_tapoff_slidersactivity_slidersactivity_forgetbacktap",
+      "fromNode": "n_src_com_taseen_tapoff_slidersactivity_slidersactivity",
+      "toNode": "n_src_com_taseen_tapoff_slidersactivity_slidersactivity_forgetbacktap",
+      "label": "method [EXTRACTED]"
+    },
+    {
+      "id": "e_src_com_taseen_tapoff_slidersactivity_slidersactivity_src_com_taseen_tapoff_slidersactivity_slidersactivity_oncreate",
+      "fromNode": "n_src_com_taseen_tapoff_slidersactivity_slidersactivity",
+      "toNode": "n_src_com_taseen_tapoff_slidersactivity_slidersactivity_oncreate",
+      "label": "method [EXTRACTED]"
+    },
+    {
+      "id": "e_src_com_taseen_tapoff_slidersactivity_slidersactivity_src_com_taseen_tapoff_slidersactivity_slidersactivity_fromlauncher",
+      "fromNode": "n_src_com_taseen_tapoff_slidersactivity_slidersactivity",
+      "toNode": "n_src_com_taseen_tapoff_slidersactivity_slidersactivity_fromlauncher",
+      "label": "method [EXTRACTED]"
+    },
+    {
+      "id": "e_src_com_taseen_tapoff_slidersactivity_slidersactivity_docs_architecture_brightness_and_volume_sliders_notchpanel_java",
+      "fromNode": "n_src_com_taseen_tapoff_slidersactivity_slidersactivity",
+      "toNode": "n_docs_architecture_brightness_and_volume_sliders_notchpanel_java",
+      "label": "references [INFERRED]"
+    },
+    {
+      "id": "e_src_com_taseen_tapoff_slidersactivity_slidersactivity_docs_decisions_decisions",
+      "fromNode": "n_src_com_taseen_tapoff_slidersactivity_slidersactivity",
+      "toNode": "n_docs_decisions_decisions",
+      "label": "references [INFERRED]"
+    },
+    {
       "id": "e_src_com_taseen_tapoff_doubletaphint_doubletaphint_android_graphics_drawable_drawable",
       "fromNode": "n_src_com_taseen_tapoff_doubletaphint_doubletaphint",
       "toNode": "n_android_graphics_drawable_drawable",
@@ -5057,84 +5515,6 @@
       "fromNode": "n_src_com_taseen_tapoff_doubletaphint_doubletaphint",
       "toNode": "n_src_com_taseen_tapoff_doubletaphint",
       "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_src_com_taseen_tapoff_doubletaphint_doubletaphint_android_view_view",
-      "fromNode": "n_src_com_taseen_tapoff_doubletaphint_doubletaphint",
-      "toNode": "n_android_view_view",
-      "label": "inherits [EXTRACTED]"
-    },
-    {
-      "id": "e_src_com_taseen_tapoff_doubletaphint_doubletaphint_src_com_taseen_tapoff_doubletaphint_doubletaphint_doubletaphint",
-      "fromNode": "n_src_com_taseen_tapoff_doubletaphint_doubletaphint",
-      "toNode": "n_src_com_taseen_tapoff_doubletaphint_doubletaphint_doubletaphint",
-      "label": "method [EXTRACTED]"
-    },
-    {
-      "id": "e_src_com_taseen_tapoff_doubletaphint_doubletaphint_src_com_taseen_tapoff_doubletaphint_doubletaphint_press",
-      "fromNode": "n_src_com_taseen_tapoff_doubletaphint_doubletaphint",
-      "toNode": "n_src_com_taseen_tapoff_doubletaphint_doubletaphint_press",
-      "label": "method [EXTRACTED]"
-    },
-    {
-      "id": "e_src_com_taseen_tapoff_doubletaphint_doubletaphint_src_com_taseen_tapoff_doubletaphint_doubletaphint_ondraw",
-      "fromNode": "n_src_com_taseen_tapoff_doubletaphint_doubletaphint",
-      "toNode": "n_src_com_taseen_tapoff_doubletaphint_doubletaphint_ondraw",
-      "label": "method [EXTRACTED]"
-    },
-    {
-      "id": "e_src_com_taseen_tapoff_swipehint_swipehint_android_graphics_drawable_drawable",
-      "fromNode": "n_src_com_taseen_tapoff_swipehint_swipehint",
-      "toNode": "n_android_graphics_drawable_drawable",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_src_com_taseen_tapoff_swipehint_swipehint_android_graphics_paint",
-      "fromNode": "n_src_com_taseen_tapoff_swipehint_swipehint",
-      "toNode": "n_android_graphics_paint",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_src_com_taseen_tapoff_swipehint_swipehint_src_com_taseen_tapoff_swipehint",
-      "fromNode": "n_src_com_taseen_tapoff_swipehint_swipehint",
-      "toNode": "n_src_com_taseen_tapoff_swipehint",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_src_com_taseen_tapoff_swipehint_swipehint_android_view_view",
-      "fromNode": "n_src_com_taseen_tapoff_swipehint_swipehint",
-      "toNode": "n_android_view_view",
-      "label": "inherits [EXTRACTED]"
-    },
-    {
-      "id": "e_src_com_taseen_tapoff_swipehint_swipehint_src_com_taseen_tapoff_swipehint_swipehint_swipehint",
-      "fromNode": "n_src_com_taseen_tapoff_swipehint_swipehint",
-      "toNode": "n_src_com_taseen_tapoff_swipehint_swipehint_swipehint",
-      "label": "method [EXTRACTED]"
-    },
-    {
-      "id": "e_src_com_taseen_tapoff_swipehint_swipehint_src_com_taseen_tapoff_swipehint_swipehint_ondraw",
-      "fromNode": "n_src_com_taseen_tapoff_swipehint_swipehint",
-      "toNode": "n_src_com_taseen_tapoff_swipehint_swipehint_ondraw",
-      "label": "method [EXTRACTED]"
-    },
-    {
-      "id": "e_src_com_taseen_tapoff_notchpanel_notchpanel_android_content_context",
-      "fromNode": "n_src_com_taseen_tapoff_notchpanel_notchpanel",
-      "toNode": "n_android_content_context",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_src_com_taseen_tapoff_notchpanel_notchpanel_android_view_windowmanager",
-      "fromNode": "n_src_com_taseen_tapoff_notchpanel_notchpanel",
-      "toNode": "n_android_view_windowmanager",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_src_com_taseen_tapoff_notchpanel_notchpanel_android_media_audiomanager",
-      "fromNode": "n_src_com_taseen_tapoff_notchpanel_notchpanel",
-      "toNode": "n_android_media_audiomanager",
-      "label": "references [EXTRACTED]"
     }
   ]
 }

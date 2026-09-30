@@ -32,10 +32,11 @@ SORT file.name ASC
 - 2 edges to [[_COMMUNITY_NotchPanel.java]]
 - 1 edge to [[_COMMUNITY_NotchPanel]]
 - 1 edge to [[_COMMUNITY_TapWallpaper]]
+- 1 edge to [[_COMMUNITY_ShizukuSetup.java]]
 - 1 edge to [[_COMMUNITY_Wallpapers.java]]
 - 1 edge to [[_COMMUNITY_TapWallpaper.java]]
 
 ## Top bridge nodes
-- [[log]] - degree 6, connects to 4 communities
+- [[log]] - degree 7, connects to 5 communities
 - [[android.media.AudioManager]] - degree 3, connects to 2 communities
 - [[dot-onClick()]] - degree 3, connects to 1 community

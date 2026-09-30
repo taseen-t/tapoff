@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-enabled()]] - `method` [EXTRACTED]
 - [[dot-onConfigurationChanged()_1]] - `method` [EXTRACTED]
-- [[dot-onCreate()_2]] - `method` [EXTRACTED]
+- [[dot-onCreate()_4]] - `method` [EXTRACTED]
 - [[dot-onCreateEngine()]] - `method` [EXTRACTED]
 - [[dot-onDestroy()_2]] - `method` [EXTRACTED]
 - [[dot-photo()]] - `method` [EXTRACTED]

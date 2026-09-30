@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/SlidersActivity.java"
 type: "code"
-community: "NotchPanel"
+community: "SlidersActivity"
 location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NotchPanel
+  - community/SlidersActivity
 ---
 
 # SlidersActivity
@@ -17,8 +17,8 @@ tags:
 - [[dot-fromLauncher()]] - `method` [EXTRACTED]
 - [[dot-onCreate()_3]] - `method` [EXTRACTED]
 - [[Brightness and volume sliders (`NotchPanel.java`)]] - `references` [INFERRED]
-- [[Decisions_1]] - `references` [INFERRED]
+- [[Decisions]] - `references` [INFERRED]
 - [[SlidersActivity.java]] - `contains` [EXTRACTED]
 - [[android.app.Activity]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NotchPanel
+#graphify/code #graphify/EXTRACTED #community/SlidersActivity

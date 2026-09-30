@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "MainActivity"
+community: "android.content.Context"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MainActivity
+  - community/androidcontentContext
 ---
 
 # android.graphics.drawable.GradientDrawable
@@ -16,4 +16,4 @@ tags:
 - [[MainActivity.java]] - `imports` [EXTRACTED]
 - [[Ui.java]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MainActivity
+#graphify/code #graphify/EXTRACTED #community/androidcontentContext
