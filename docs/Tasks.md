@@ -122,13 +122,13 @@ Every request goes here the moment it's asked. Tick subtasks as they land. Never
   - [x] Look through Shizuku's code for bugs worth a PR: a second attachApplication from one process crashes the server. Taseen said yes; opened https://github.com/RikkaApps/Shizuku/pull/2537 (found by reading, not reproduced)
   - [x] Release with the landscape sliders (755a74d) as 1.9, deploy the site
 - [ ] Setup videos (portrait + landscape): still wanted (Taseen, 2026-09-30), now showing the Shizuku setup
-- [ ] Guide video, portrait only (Taseen, 2026-09-30): the complete path from installing TapOff, through setting up
+- [x] Guide video, portrait only (Taseen, 2026-09-30): the complete path from installing TapOff, through setting up
       Shizuku, to granting the permission and being good to go
   - [x] Plan and script; Taseen OKs the phone actions it needs: redo the permission flow (revoke over adb, switch
         TapOff off in Shizuku, film Set up without a computer → Allow), download the APK in Chrome and open the
         installer (stop if Play Protect blocks), view Settings/Developer options/Wireless debugging/Shizuku/Play Store,
         restart Shizuku on camera; voiceover about 90 s in Jerry's voice; ends with the back-tap sliders
-  - [ ] Record the real screens on the Pixel (Do Not Disturb on, screenshot before every tap)
+  - [x] Record the real screens on the Pixel (Do Not Disturb on, screenshot before every tap)
     - [x] Site in Chrome → Get the APK → Downloads → installer ("Update this app?"); Play Protect then blocked it
           ("App blocked to protect your device"), filmed as a still; TapOff unchanged
     - [x] Shizuku's Play Store page
@@ -159,7 +159,10 @@ Every request goes here the moment it's asked. Tick subtasks as they land. Never
         name OCR read with spaces, the edge of an account photo, faint rows behind installer dialogs)
   - [x] Built in the brag video's 3D style: STEP n/7 header and progress bar, word-by-word captions with UI terms
         highlighted, tap chain for the Play Protect path, pixel-hand taps and zooms, drawn About phone screen
-  - [ ] Render, check, send (portrait only, ~99 s)
+  - [x] Render, check, send (portrait only, 98.9 s, −14.2 LUFS): guide-portrait.mp4, poster guide-portrait.jpg,
+        guide-share-copy.txt; final render scanned too (1,483 frames, 0 leaks)
+  - [ ] Taseen watches it; re-roll anything
+  - [ ] Site and README: add the Play Protect pause workaround next to the computer install (ask Taseen first)
 - [ ] Taseen tests on a second Android, then fixes
 - [ ] Refresh site screenshots (tile changed) with the video footage
 

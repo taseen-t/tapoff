@@ -23,6 +23,26 @@ Newest first. Each entry: done / blocked / next.
 - Confirm the Shizuku + InstallerX install there; try the Play Protect "turn off app scanning" toggle as a shorter
   route and add it to the FAQ if it works; consider the free Play Protect appeal.
 
+## 2026-10-01 · Setup guide video
+**Done**
+- Guide video (portrait, 98.9 s): install, the Play Protect workaround Taseen asked for, Shizuku, Developer options,
+  Wireless debugging, pairing and starting Shizuku, TapOff's permission, wallpaper, optional sliders, it working.
+  Recorded on the Pixel with Do Not Disturb on; Taseen did the Shizuku pairing and the Play Protect switch on camera.
+- Voice: Jerry, 11 new lines. ElevenLabs blocked the free tier after a burst of 12 requests; one line per request
+  worked later. About 1,264 credits for the guide (about 1,250 approved).
+- Privacy, following Taseen's UplinkeSIM video method: OCR scan, blur, re-scan to 0 leaks (3,142 source frames, then
+  1,483 final frames), and contact sheets by eye, which caught three things OCR missed. About phone was drawn, not
+  filmed. New [[Videos]] note with the whole recipe.
+- Remote Control turned on for this session.
+
+**Found**
+- Pausing Play Protect's app scanning lets a browser install of TapOff through ([[Decisions]] #39), so #18's "no way
+  past it" was wrong. The site and README don't say so yet.
+- Apple Vision's "accurate" OCR fails on this macOS build (e5rt error 13); "fast" works.
+
+**Next**
+- Taseen reviews the guide. Site/README Play Protect workaround with Taseen's OK. Then the walkthrough and case study.
+
 ## 2026-09-30 (night) · Shizuku PR, brag video
 **Done**
 - Shizuku PR https://github.com/RikkaApps/Shizuku/pull/2537 (re-attach crash; found by reading, not reproduced).
