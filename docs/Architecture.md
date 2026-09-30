@@ -60,4 +60,4 @@ targetSdk 35. Package `com.taseen.tapoff`, sources in `src/com/taseen/tapoff/`.
 ## Website (`site/`)
 One static `index.html` (no build step, no trackers), images in `site/img/`. Deployed with
 `npx vercel@latest deploy --prod --yes` from `site/`. Sections: hero with spec strip, store-style screenshots, brags,
-edge sliders demo, cutout gallery, story, double-tap demo, setup, FAQ.
+double-tap demo, cutout gallery, story, edge sliders demo, setup, FAQ.

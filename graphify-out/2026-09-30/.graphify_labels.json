@@ -1,18 +1,16 @@
 {
   "0": "android.content.Context",
   "1": "MainActivity.java",
-  "2": "TapWallpaper",
+  "2": "LockService.java",
   "3": "CutoutArt.java",
   "4": "EdgeSlider",
   "5": "android.graphics.Canvas",
   "6": "Checks.md",
   "7": "Wallpapers.java",
   "8": "Wallpapers",
-  "9": "EdgeSlider.java",
+  "9": ".onDraw",
   "10": "Override",
-  "11": "log",
   "12": "TapOff",
-  "13": "LockService.java",
   "14": "build.sh",
   "15": "Pill"
 }

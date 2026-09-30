@@ -338,27 +338,27 @@ footer { border-top: 1px solid var(--line); margin-top: 64px; padding: 28px 0 48
     </div>
   </section>
 
-  <section id="edges">
-    <p class="eyebrow">new · slide the edges</p>
-    <h2>Your buttons, moved to the edges.</h2>
-    <p class="sub">Case making the buttons stiff? Slide your thumb up or down the left edge for volume and the right edge for
-      brightness, in any app, like in VLC. No buttons, no pulling down Quick Settings.</p>
+  <section id="how">
+    <p class="eyebrow">under the hood</p>
+    <h2>What happens when you double-tap</h2>
+    <p class="sub">Tap tap, you feel it, and the screen fades out smoothly. No jump to the lock screen on the way down, and your
+      fingerprint still unlocks it.</p>
     <div class="edges">
-      <div class="phone" aria-hidden="true">
-        <span class="grid"></span><span class="cam"></span>
-        <span class="island"><b></b><i><svg class="lucide lucide-sun sun" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg></i></span>
-        <span class="vol"><i></i></span>
-        <span class="thumb l"></span><span class="thumb r"></span>
+      <div class="phone tapdemo" aria-hidden="true">
+        <span class="wall"></span><span class="clock">9:41</span><span class="apps"></span><span class="cam"></span>
+        <span class="ring"></span><span class="ring two"></span><span class="off"></span>
       </div>
-      <div class="edgecards">
-        <div class="card"><span class="tag">left edge</span><h3>Volume, one notch per swipe step</h3>
-          <p>Android's own volume panel slides in, with a small tick you can feel for every step. During a call it changes the
-            call volume, like the buttons would.</p></div>
-        <div class="card"><span class="tag">right edge</span><h3>Brightness that drops out of your camera</h3>
-          <p>A little slider grows out of the camera hole in your wallpaper's colours, follows your thumb, and tucks back in
-            when you let go. Adaptive brightness stays on and keeps what you picked.</p></div>
-        <div class="card"><span class="tag">still works</span><h3>Back gesture untouched</h3>
-          <p>The strips are thin and only listen for up and down. Swipe inwards and Android's back gesture works as always.</p></div>
+      <div class="steps2">
+        <div class="card"><span class="tag">0 s</span><h3>You tap twice</h3>
+          <p>The TapOff wallpaper hears two taps on empty home-screen space, less than 0.4 s apart, and you feel a crisp
+            tap straight away.</p></div>
+        <div class="card"><span class="tag">+0.1 s</span><h3>Accessibility, briefly</h3>
+          <p>TapOff switches its accessibility service on, only to press Android's own "lock" for you.</p></div>
+        <div class="card"><span class="tag">0.15 s</span><h3>Fade to black</h3>
+          <p>A black layer fades in over the screen while the phone locks, so it goes dark smoothly instead of flashing the
+            lock screen.</p></div>
+        <div class="card"><span class="tag">1 s</span><h3>Off again</h3>
+          <p>The service switches itself straight back off. Your bank apps never see it running.</p></div>
       </div>
     </div>
   </section>
@@ -411,27 +411,27 @@ footer { border-top: 1px solid var(--line); margin-top: 64px; padding: 28px 0 48
     </div>
   </section>
 
-  <section id="how">
-    <p class="eyebrow">under the hood</p>
-    <h2>What happens when you double-tap</h2>
-    <p class="sub">Tap tap, you feel it, and the screen fades out smoothly. No jump to the lock screen on the way down, and your
-      fingerprint still unlocks it.</p>
+  <section id="edges">
+    <p class="eyebrow">new · slide the edges</p>
+    <h2>Your buttons, moved to the edges.</h2>
+    <p class="sub">Case making the buttons stiff? Slide your thumb up or down the left edge for volume and the right edge for
+      brightness, in any app, like in VLC. No buttons, no pulling down Quick Settings.</p>
     <div class="edges">
-      <div class="phone tapdemo" aria-hidden="true">
-        <span class="wall"></span><span class="clock">9:41</span><span class="apps"></span><span class="cam"></span>
-        <span class="ring"></span><span class="ring two"></span><span class="off"></span>
+      <div class="phone" aria-hidden="true">
+        <span class="grid"></span><span class="cam"></span>
+        <span class="island"><b></b><i><svg class="lucide lucide-sun sun" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg></i></span>
+        <span class="vol"><i></i></span>
+        <span class="thumb l"></span><span class="thumb r"></span>
       </div>
-      <div class="steps2">
-        <div class="card"><span class="tag">0 s</span><h3>You tap twice</h3>
-          <p>The TapOff wallpaper hears two taps on empty home-screen space, less than 0.4 s apart, and you feel a crisp
-            tap straight away.</p></div>
-        <div class="card"><span class="tag">+0.1 s</span><h3>Accessibility, briefly</h3>
-          <p>TapOff switches its accessibility service on, only to press Android's own "lock" for you.</p></div>
-        <div class="card"><span class="tag">0.15 s</span><h3>Fade to black</h3>
-          <p>A black layer fades in over the screen while the phone locks, so it goes dark smoothly instead of flashing the
-            lock screen.</p></div>
-        <div class="card"><span class="tag">1 s</span><h3>Off again</h3>
-          <p>The service switches itself straight back off. Your bank apps never see it running.</p></div>
+      <div class="edgecards">
+        <div class="card"><span class="tag">left edge</span><h3>Volume, one notch per swipe step</h3>
+          <p>Android's own volume panel slides in, with a small tick you can feel for every step. During a call it changes the
+            call volume, like the buttons would.</p></div>
+        <div class="card"><span class="tag">right edge</span><h3>Brightness that drops out of your camera</h3>
+          <p>A little slider grows out of the camera hole in your wallpaper's colours, follows your thumb, and tucks back in
+            when you let go. Adaptive brightness stays on and keeps what you picked.</p></div>
+        <div class="card"><span class="tag">still works</span><h3>Back gesture untouched</h3>
+          <p>The strips are thin and only listen for up and down. Swipe inwards and Android's back gesture works as always.</p></div>
       </div>
     </div>
   </section>

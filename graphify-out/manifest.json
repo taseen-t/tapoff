@@ -84,9 +84,9 @@
     "semantic_hash": ""
   },
   "docs/Architecture.md": {
-    "mtime": 1790737063.0460887,
-    "seen": 1790737063.840611,
-    "ast_hash": "8c6f426d6cc433a1acdac0836bbbad7e",
+    "mtime": 1790737628.4711268,
+    "seen": 1790737629.252831,
+    "ast_hash": "7b04a95cd1836813ccdcaa148166c976",
     "semantic_hash": ""
   },
   "docs/Checks.md": {
@@ -114,15 +114,15 @@
     "semantic_hash": ""
   },
   "docs/Tasks.md": {
-    "mtime": 1790737063.0457723,
-    "seen": 1790737063.8406148,
-    "ast_hash": "726ff046b0e0890337df481b0bb18c52",
+    "mtime": 1790737628.4705415,
+    "seen": 1790737629.252834,
+    "ast_hash": "7830d1699b05a9ea28a2d70550f924b1",
     "semantic_hash": ""
   },
   "site/index.html": {
-    "mtime": 1790736894.3561568,
-    "seen": 1790737036.106791,
-    "ast_hash": "990d2d0a5f94c3b91cbe6711f10b6e16",
+    "mtime": 1790737613.0847704,
+    "seen": 1790737629.252835,
+    "ast_hash": "b78d310a47521fcb6583be6475a4b2ff",
     "semantic_hash": ""
   },
   "site/icon.svg": {

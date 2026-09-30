@@ -69,32 +69,6 @@
       "source_location": "L449"
     },
     {
-      "id": "src_com_taseen_tapoff_screenofftile_screenofftile",
-      "label": "ScreenOffTile",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "log",
-      "file_type": "code",
-      "norm_label": "screenofftile",
-      "source_file": "src/com/taseen/tapoff/ScreenOffTile.java",
-      "source_location": "L7"
-    },
-    {
-      "id": "src_com_taseen_tapoff_volumetile_volumetile",
-      "label": "VolumeTile",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "log",
-      "file_type": "code",
-      "norm_label": "volumetile",
-      "source_file": "src/com/taseen/tapoff/VolumeTile.java",
-      "source_location": "L7"
-    },
-    {
       "id": "src_com_taseen_tapoff_ui_pill",
       "label": "Pill",
       "_callable": true,
@@ -114,7 +88,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "TapWallpaper",
+      "community_name": "LockService.java",
       "file_type": "code",
       "norm_label": "lockservice",
       "source_file": "src/com/taseen/tapoff/LockService.java",
@@ -127,7 +101,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "TapWallpaper",
+      "community_name": "LockService.java",
       "file_type": "code",
       "norm_label": "tapengine",
       "source_file": "src/com/taseen/tapoff/TapWallpaper.java",
@@ -140,11 +114,24 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "TapWallpaper",
+      "community_name": "LockService.java",
       "file_type": "code",
       "norm_label": "tapwallpaper",
       "source_file": "src/com/taseen/tapoff/TapWallpaper.java",
       "source_location": "L23"
+    },
+    {
+      "id": "src_com_taseen_tapoff_edgeslider_notch",
+      "label": "Notch",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "CutoutArt.java",
+      "file_type": "code",
+      "norm_label": "notch",
+      "source_file": "src/com/taseen/tapoff/EdgeSlider.java",
+      "source_location": "L205"
     },
     {
       "id": "src_com_taseen_tapoff_glasscard_glasscard",
@@ -186,19 +173,6 @@
       "source_location": "L29"
     },
     {
-      "id": "src_com_taseen_tapoff_edgeslider_notch",
-      "label": "Notch",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "EdgeSlider",
-      "file_type": "code",
-      "norm_label": "notch",
-      "source_file": "src/com/taseen/tapoff/EdgeSlider.java",
-      "source_location": "L205"
-    },
-    {
       "id": "src_com_taseen_tapoff_cutoutart_cutoutart",
       "label": "CutoutArt",
       "_callable": true,
@@ -210,6 +184,32 @@
       "norm_label": "cutoutart",
       "source_file": "src/com/taseen/tapoff/CutoutArt.java",
       "source_location": "L23"
+    },
+    {
+      "id": "src_com_taseen_tapoff_screenofftile_screenofftile",
+      "label": "ScreenOffTile",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "Wallpapers.java",
+      "file_type": "code",
+      "norm_label": "screenofftile",
+      "source_file": "src/com/taseen/tapoff/ScreenOffTile.java",
+      "source_location": "L7"
+    },
+    {
+      "id": "src_com_taseen_tapoff_volumetile_volumetile",
+      "label": "VolumeTile",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "Wallpapers.java",
+      "file_type": "code",
+      "norm_label": "volumetile",
+      "source_file": "src/com/taseen/tapoff/VolumeTile.java",
+      "source_location": "L7"
     },
     {
       "id": "src_com_taseen_tapoff_wallpapers_collection",
@@ -2651,24 +2651,12 @@
       "source_location": "L453"
     },
     {
-      "id": "src_com_taseen_tapoff_volumetile_volumetile_onclick",
-      "label": ".onClick()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "log",
-      "file_type": "code",
-      "norm_label": ".onclick()",
-      "source_file": "src/com/taseen/tapoff/VolumeTile.java",
-      "source_location": "L8"
-    },
-    {
       "id": "src_com_taseen_tapoff_lockservice_lockservice_lock",
       "label": ".lock()",
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "TapWallpaper",
+      "community_name": "LockService.java",
       "file_type": "code",
       "metadata": {
         "unresolved_calls": [
@@ -2696,7 +2684,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "TapWallpaper",
+      "community_name": "LockService.java",
       "file_type": "code",
       "metadata": {
         "unresolved_calls": [
@@ -2718,7 +2706,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "TapWallpaper",
+      "community_name": "LockService.java",
       "file_type": "code",
       "norm_label": ".onaccessibilityevent()",
       "source_file": "src/com/taseen/tapoff/LockService.java",
@@ -2730,7 +2718,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "TapWallpaper",
+      "community_name": "LockService.java",
       "file_type": "code",
       "norm_label": ".oninterrupt()",
       "source_file": "src/com/taseen/tapoff/LockService.java",
@@ -2742,7 +2730,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "TapWallpaper",
+      "community_name": "LockService.java",
       "file_type": "code",
       "metadata": {
         "unresolved_calls": [
@@ -2800,7 +2788,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "TapWallpaper",
+      "community_name": "LockService.java",
       "file_type": "code",
       "metadata": {
         "unresolved_calls": [
@@ -2828,7 +2816,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "TapWallpaper",
+      "community_name": "LockService.java",
       "file_type": "code",
       "metadata": {
         "unresolved_calls": [
@@ -2850,7 +2838,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "TapWallpaper",
+      "community_name": "LockService.java",
       "file_type": "code",
       "metadata": {
         "unresolved_calls": [
@@ -2932,7 +2920,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "TapWallpaper",
+      "community_name": "LockService.java",
       "file_type": "code",
       "metadata": {
         "unresolved_calls": [
@@ -2954,7 +2942,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "TapWallpaper",
+      "community_name": "LockService.java",
       "file_type": "code",
       "metadata": {
         "unresolved_calls": [
@@ -3006,7 +2994,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "TapWallpaper",
+      "community_name": "LockService.java",
       "file_type": "code",
       "metadata": {
         "unresolved_calls": [
@@ -3028,7 +3016,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "TapWallpaper",
+      "community_name": "LockService.java",
       "file_type": "code",
       "norm_label": ".onsurfaceredrawneeded()",
       "source_file": "src/com/taseen/tapoff/TapWallpaper.java",
@@ -3040,7 +3028,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "TapWallpaper",
+      "community_name": "LockService.java",
       "file_type": "code",
       "norm_label": ".onvisibilitychanged()",
       "source_file": "src/com/taseen/tapoff/TapWallpaper.java",
@@ -3052,7 +3040,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "TapWallpaper",
+      "community_name": "LockService.java",
       "file_type": "code",
       "metadata": {
         "unresolved_calls": [
@@ -3074,7 +3062,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "TapWallpaper",
+      "community_name": "LockService.java",
       "file_type": "code",
       "norm_label": ".oncreate()",
       "source_file": "src/com/taseen/tapoff/TapWallpaper.java",
@@ -3086,7 +3074,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "TapWallpaper",
+      "community_name": "LockService.java",
       "file_type": "code",
       "norm_label": ".oncreateengine()",
       "source_file": "src/com/taseen/tapoff/TapWallpaper.java",
@@ -3098,7 +3086,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "TapWallpaper",
+      "community_name": "LockService.java",
       "file_type": "code",
       "norm_label": ".ondestroy()",
       "source_file": "src/com/taseen/tapoff/TapWallpaper.java",
@@ -3110,7 +3098,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "TapWallpaper",
+      "community_name": "LockService.java",
       "file_type": "code",
       "metadata": {
         "unresolved_calls": [
@@ -3132,7 +3120,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "TapWallpaper",
+      "community_name": "LockService.java",
       "file_type": "code",
       "metadata": {
         "unresolved_calls": [
@@ -3160,7 +3148,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
-      "community_name": "TapWallpaper",
+      "community_name": "LockService.java",
       "file_type": "code",
       "metadata": {
         "unresolved_calls": [
@@ -3193,6 +3181,224 @@
       "norm_label": ".apply()",
       "source_file": "src/com/taseen/tapoff/Wallpapers.java",
       "source_location": "L267"
+    },
+    {
+      "id": "src_com_taseen_tapoff_cutoutart_cutoutart_hole",
+      "label": ".hole()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "CutoutArt.java",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "getDisplay",
+            "receiver_type": "Context",
+            "lang": "java",
+            "line": "L75"
+          },
+          {
+            "callee": "getCutoutPath",
+            "receiver_type": "DisplayCutout",
+            "lang": "java",
+            "line": "L76"
+          },
+          {
+            "callee": "isEmpty",
+            "receiver_type": "RectF",
+            "lang": "java",
+            "line": "L79"
+          }
+        ]
+      },
+      "norm_label": ".hole()",
+      "source_file": "src/com/taseen/tapoff/CutoutArt.java",
+      "source_location": "L73"
+    },
+    {
+      "id": "src_com_taseen_tapoff_edgeslider_edgeslider_showlevel",
+      "label": ".showLevel()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "CutoutArt.java",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "createDisplayContext",
+            "receiver_type": "Context",
+            "lang": "java",
+            "line": "L191"
+          },
+          {
+            "callee": "getSystemService",
+            "receiver_type": "Context",
+            "lang": "java",
+            "line": "L192"
+          },
+          {
+            "callee": "addView",
+            "receiver_type": "WindowManager",
+            "lang": "java",
+            "line": "L194"
+          }
+        ]
+      },
+      "norm_label": ".showlevel()",
+      "source_file": "src/com/taseen/tapoff/EdgeSlider.java",
+      "source_location": "L189"
+    },
+    {
+      "id": "src_com_taseen_tapoff_edgeslider_notch_animateto",
+      "label": ".animateTo()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "CutoutArt.java",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "cancel",
+            "receiver_type": "ValueAnimator",
+            "lang": "java",
+            "line": "L252"
+          },
+          {
+            "callee": "ofFloat",
+            "receiver_type": "ValueAnimator",
+            "lang": "java",
+            "line": "L253"
+          },
+          {
+            "callee": "setDuration",
+            "receiver_type": "ValueAnimator",
+            "lang": "java",
+            "line": "L254"
+          },
+          {
+            "callee": "setInterpolator",
+            "receiver_type": "ValueAnimator",
+            "lang": "java",
+            "line": "L255"
+          },
+          {
+            "callee": "addUpdateListener",
+            "receiver_type": "ValueAnimator",
+            "lang": "java",
+            "line": "L257"
+          },
+          {
+            "callee": "addListener",
+            "receiver_type": "ValueAnimator",
+            "lang": "java",
+            "line": "L261"
+          },
+          {
+            "callee": "start",
+            "receiver_type": "ValueAnimator",
+            "lang": "java",
+            "line": "L269"
+          }
+        ]
+      },
+      "norm_label": ".animateto()",
+      "source_file": "src/com/taseen/tapoff/EdgeSlider.java",
+      "source_location": "L249"
+    },
+    {
+      "id": "src_com_taseen_tapoff_edgeslider_notch_notch",
+      "label": ".Notch()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "CutoutArt.java",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "getResources",
+            "receiver_type": "Context",
+            "lang": "java",
+            "line": "L217"
+          },
+          {
+            "callee": "centerX",
+            "receiver_type": "RectF",
+            "lang": "java",
+            "line": "L220"
+          },
+          {
+            "callee": "centerY",
+            "receiver_type": "RectF",
+            "lang": "java",
+            "line": "L221"
+          },
+          {
+            "callee": "width",
+            "receiver_type": "RectF",
+            "lang": "java",
+            "line": "L222"
+          },
+          {
+            "callee": "min",
+            "receiver_type": "Math",
+            "lang": "java",
+            "line": "L223"
+          },
+          {
+            "callee": "getColor",
+            "receiver_type": "Context",
+            "lang": "java",
+            "line": "L226"
+          },
+          {
+            "callee": "getDrawable",
+            "receiver_type": "Context",
+            "lang": "java",
+            "line": "L228"
+          },
+          {
+            "callee": "setTint",
+            "receiver_type": "Drawable",
+            "lang": "java",
+            "line": "L229"
+          }
+        ]
+      },
+      "norm_label": ".notch()",
+      "source_file": "src/com/taseen/tapoff/EdgeSlider.java",
+      "source_location": "L215"
+    },
+    {
+      "id": "src_com_taseen_tapoff_edgeslider_notch_params",
+      "label": ".params()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "CutoutArt.java",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "round",
+            "receiver_type": "Math",
+            "lang": "java",
+            "line": "L235"
+          },
+          {
+            "callee": "setTitle",
+            "receiver_type": "LayoutParams",
+            "lang": "java",
+            "line": "L244"
+          }
+        ]
+      },
+      "norm_label": ".params()",
+      "source_file": "src/com/taseen/tapoff/EdgeSlider.java",
+      "source_location": "L234"
     },
     {
       "id": "src_com_taseen_tapoff_glasscard_glasscard_bind",
@@ -3733,40 +3939,6 @@
       "source_location": "L24"
     },
     {
-      "id": "src_com_taseen_tapoff_cutoutart_cutoutart_hole",
-      "label": ".hole()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "EdgeSlider",
-      "file_type": "code",
-      "metadata": {
-        "unresolved_calls": [
-          {
-            "callee": "getDisplay",
-            "receiver_type": "Context",
-            "lang": "java",
-            "line": "L75"
-          },
-          {
-            "callee": "getCutoutPath",
-            "receiver_type": "DisplayCutout",
-            "lang": "java",
-            "line": "L76"
-          },
-          {
-            "callee": "isEmpty",
-            "receiver_type": "RectF",
-            "lang": "java",
-            "line": "L79"
-          }
-        ]
-      },
-      "norm_label": ".hole()",
-      "source_file": "src/com/taseen/tapoff/CutoutArt.java",
-      "source_location": "L73"
-    },
-    {
       "id": "src_com_taseen_tapoff_edgeslider_edgeslider_add",
       "label": ".add()",
       "_callable": true,
@@ -4125,40 +4297,6 @@
       "source_location": "L43"
     },
     {
-      "id": "src_com_taseen_tapoff_edgeslider_edgeslider_showlevel",
-      "label": ".showLevel()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "EdgeSlider",
-      "file_type": "code",
-      "metadata": {
-        "unresolved_calls": [
-          {
-            "callee": "createDisplayContext",
-            "receiver_type": "Context",
-            "lang": "java",
-            "line": "L191"
-          },
-          {
-            "callee": "getSystemService",
-            "receiver_type": "Context",
-            "lang": "java",
-            "line": "L192"
-          },
-          {
-            "callee": "addView",
-            "receiver_type": "WindowManager",
-            "lang": "java",
-            "line": "L194"
-          }
-        ]
-      },
-      "norm_label": ".showlevel()",
-      "source_file": "src/com/taseen/tapoff/EdgeSlider.java",
-      "source_location": "L189"
-    },
-    {
       "id": "src_com_taseen_tapoff_edgeslider_edgeslider_sync",
       "label": ".sync()",
       "_callable": true,
@@ -4225,250 +4363,6 @@
       "norm_label": ".toposition()",
       "source_file": "src/com/taseen/tapoff/EdgeSlider.java",
       "source_location": "L305"
-    },
-    {
-      "id": "src_com_taseen_tapoff_edgeslider_notch_animateto",
-      "label": ".animateTo()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "EdgeSlider",
-      "file_type": "code",
-      "metadata": {
-        "unresolved_calls": [
-          {
-            "callee": "cancel",
-            "receiver_type": "ValueAnimator",
-            "lang": "java",
-            "line": "L252"
-          },
-          {
-            "callee": "ofFloat",
-            "receiver_type": "ValueAnimator",
-            "lang": "java",
-            "line": "L253"
-          },
-          {
-            "callee": "setDuration",
-            "receiver_type": "ValueAnimator",
-            "lang": "java",
-            "line": "L254"
-          },
-          {
-            "callee": "setInterpolator",
-            "receiver_type": "ValueAnimator",
-            "lang": "java",
-            "line": "L255"
-          },
-          {
-            "callee": "addUpdateListener",
-            "receiver_type": "ValueAnimator",
-            "lang": "java",
-            "line": "L257"
-          },
-          {
-            "callee": "addListener",
-            "receiver_type": "ValueAnimator",
-            "lang": "java",
-            "line": "L261"
-          },
-          {
-            "callee": "start",
-            "receiver_type": "ValueAnimator",
-            "lang": "java",
-            "line": "L269"
-          }
-        ]
-      },
-      "norm_label": ".animateto()",
-      "source_file": "src/com/taseen/tapoff/EdgeSlider.java",
-      "source_location": "L249"
-    },
-    {
-      "id": "src_com_taseen_tapoff_edgeslider_notch_notch",
-      "label": ".Notch()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "EdgeSlider",
-      "file_type": "code",
-      "metadata": {
-        "unresolved_calls": [
-          {
-            "callee": "getResources",
-            "receiver_type": "Context",
-            "lang": "java",
-            "line": "L217"
-          },
-          {
-            "callee": "centerX",
-            "receiver_type": "RectF",
-            "lang": "java",
-            "line": "L220"
-          },
-          {
-            "callee": "centerY",
-            "receiver_type": "RectF",
-            "lang": "java",
-            "line": "L221"
-          },
-          {
-            "callee": "width",
-            "receiver_type": "RectF",
-            "lang": "java",
-            "line": "L222"
-          },
-          {
-            "callee": "min",
-            "receiver_type": "Math",
-            "lang": "java",
-            "line": "L223"
-          },
-          {
-            "callee": "getColor",
-            "receiver_type": "Context",
-            "lang": "java",
-            "line": "L226"
-          },
-          {
-            "callee": "getDrawable",
-            "receiver_type": "Context",
-            "lang": "java",
-            "line": "L228"
-          },
-          {
-            "callee": "setTint",
-            "receiver_type": "Drawable",
-            "lang": "java",
-            "line": "L229"
-          }
-        ]
-      },
-      "norm_label": ".notch()",
-      "source_file": "src/com/taseen/tapoff/EdgeSlider.java",
-      "source_location": "L215"
-    },
-    {
-      "id": "src_com_taseen_tapoff_edgeslider_notch_ondraw",
-      "label": ".onDraw()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "EdgeSlider",
-      "file_type": "code",
-      "metadata": {
-        "unresolved_calls": [
-          {
-            "callee": "max",
-            "receiver_type": "Math",
-            "lang": "java",
-            "line": "L274"
-          },
-          {
-            "callee": "min",
-            "receiver_type": "Math",
-            "lang": "java",
-            "line": "L274"
-          },
-          {
-            "callee": "set",
-            "receiver_type": "RectF",
-            "lang": "java",
-            "line": "L276"
-          },
-          {
-            "callee": "setColor",
-            "receiver_type": "Paint",
-            "lang": "java",
-            "line": "L280"
-          },
-          {
-            "callee": "drawRoundRect",
-            "receiver_type": "Canvas",
-            "lang": "java",
-            "line": "L281"
-          },
-          {
-            "callee": "save",
-            "receiver_type": "Canvas",
-            "lang": "java",
-            "line": "L283"
-          },
-          {
-            "callee": "clipRect",
-            "receiver_type": "Canvas",
-            "lang": "java",
-            "line": "L284"
-          },
-          {
-            "callee": "width",
-            "receiver_type": "RectF",
-            "lang": "java",
-            "line": "L286"
-          },
-          {
-            "callee": "restore",
-            "receiver_type": "Canvas",
-            "lang": "java",
-            "line": "L288"
-          },
-          {
-            "callee": "round",
-            "receiver_type": "Math",
-            "lang": "java",
-            "line": "L290"
-          },
-          {
-            "callee": "setBounds",
-            "receiver_type": "Drawable",
-            "lang": "java",
-            "line": "L291"
-          },
-          {
-            "callee": "setAlpha",
-            "receiver_type": "Drawable",
-            "lang": "java",
-            "line": "L292"
-          },
-          {
-            "callee": "draw",
-            "receiver_type": "Drawable",
-            "lang": "java",
-            "line": "L293"
-          }
-        ]
-      },
-      "norm_label": ".ondraw()",
-      "source_file": "src/com/taseen/tapoff/EdgeSlider.java",
-      "source_location": "L272"
-    },
-    {
-      "id": "src_com_taseen_tapoff_edgeslider_notch_params",
-      "label": ".params()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "EdgeSlider",
-      "file_type": "code",
-      "metadata": {
-        "unresolved_calls": [
-          {
-            "callee": "round",
-            "receiver_type": "Math",
-            "lang": "java",
-            "line": "L235"
-          },
-          {
-            "callee": "setTitle",
-            "receiver_type": "LayoutParams",
-            "lang": "java",
-            "line": "L244"
-          }
-        ]
-      },
-      "norm_label": ".params()",
-      "source_file": "src/com/taseen/tapoff/EdgeSlider.java",
-      "source_location": "L234"
     },
     {
       "id": "src_com_taseen_tapoff_lockservice_lockservice_canlock",
@@ -4587,28 +4481,6 @@
       "norm_label": ".setedge()",
       "source_file": "src/com/taseen/tapoff/MainActivity.java",
       "source_location": "L304"
-    },
-    {
-      "id": "src_com_taseen_tapoff_ui_ui_blend",
-      "label": ".blend()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "EdgeSlider",
-      "file_type": "code",
-      "metadata": {
-        "unresolved_calls": [
-          {
-            "callee": "evaluate",
-            "receiver_type": "ArgbEvaluator",
-            "lang": "java",
-            "line": "L98"
-          }
-        ]
-      },
-      "norm_label": ".blend()",
-      "source_file": "src/com/taseen/tapoff/Ui.java",
-      "source_location": "L97"
     },
     {
       "id": "src_com_taseen_tapoff_wallpapers_wallpapers_isactive",
@@ -5867,6 +5739,18 @@
       "source_location": "L228"
     },
     {
+      "id": "src_com_taseen_tapoff_volumetile_volumetile_onclick",
+      "label": ".onClick()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "Wallpapers.java",
+      "file_type": "code",
+      "norm_label": ".onclick()",
+      "source_file": "src/com/taseen/tapoff/VolumeTile.java",
+      "source_location": "L8"
+    },
+    {
       "id": "src_com_taseen_tapoff_cutoutart_cutoutart_collection",
       "label": ".collection()",
       "_callable": true,
@@ -6359,6 +6243,122 @@
       "source_location": "L130"
     },
     {
+      "id": "src_com_taseen_tapoff_edgeslider_notch_ondraw",
+      "label": ".onDraw()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": ".onDraw",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "max",
+            "receiver_type": "Math",
+            "lang": "java",
+            "line": "L274"
+          },
+          {
+            "callee": "min",
+            "receiver_type": "Math",
+            "lang": "java",
+            "line": "L274"
+          },
+          {
+            "callee": "set",
+            "receiver_type": "RectF",
+            "lang": "java",
+            "line": "L276"
+          },
+          {
+            "callee": "setColor",
+            "receiver_type": "Paint",
+            "lang": "java",
+            "line": "L280"
+          },
+          {
+            "callee": "drawRoundRect",
+            "receiver_type": "Canvas",
+            "lang": "java",
+            "line": "L281"
+          },
+          {
+            "callee": "save",
+            "receiver_type": "Canvas",
+            "lang": "java",
+            "line": "L283"
+          },
+          {
+            "callee": "clipRect",
+            "receiver_type": "Canvas",
+            "lang": "java",
+            "line": "L284"
+          },
+          {
+            "callee": "width",
+            "receiver_type": "RectF",
+            "lang": "java",
+            "line": "L286"
+          },
+          {
+            "callee": "restore",
+            "receiver_type": "Canvas",
+            "lang": "java",
+            "line": "L288"
+          },
+          {
+            "callee": "round",
+            "receiver_type": "Math",
+            "lang": "java",
+            "line": "L290"
+          },
+          {
+            "callee": "setBounds",
+            "receiver_type": "Drawable",
+            "lang": "java",
+            "line": "L291"
+          },
+          {
+            "callee": "setAlpha",
+            "receiver_type": "Drawable",
+            "lang": "java",
+            "line": "L292"
+          },
+          {
+            "callee": "draw",
+            "receiver_type": "Drawable",
+            "lang": "java",
+            "line": "L293"
+          }
+        ]
+      },
+      "norm_label": ".ondraw()",
+      "source_file": "src/com/taseen/tapoff/EdgeSlider.java",
+      "source_location": "L272"
+    },
+    {
+      "id": "src_com_taseen_tapoff_ui_ui_blend",
+      "label": ".blend()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": ".onDraw",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "evaluate",
+            "receiver_type": "ArgbEvaluator",
+            "lang": "java",
+            "line": "L98"
+          }
+        ]
+      },
+      "norm_label": ".blend()",
+      "source_file": "src/com/taseen/tapoff/Ui.java",
+      "source_location": "L97"
+    },
+    {
       "id": "android_content_context",
       "label": "android.content.Context",
       "_origin": "ast",
@@ -6645,61 +6645,6 @@
       "source_location": ""
     },
     {
-      "id": "android_media_audiomanager",
-      "label": "android.media.AudioManager",
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "log",
-      "file_type": "code",
-      "norm_label": "android.media.audiomanager",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "android_service_quicksettings_tileservice",
-      "label": "android.service.quicksettings.TileService",
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "log",
-      "file_type": "code",
-      "norm_label": "android.service.quicksettings.tileservice",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "src_com_taseen_tapoff_screenofftile",
-      "label": "ScreenOffTile.java",
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "log",
-      "file_type": "code",
-      "norm_label": "screenofftile.java",
-      "source_file": "src/com/taseen/tapoff/ScreenOffTile.java",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_com_taseen_tapoff_volumetile",
-      "label": "VolumeTile.java",
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "log",
-      "file_type": "code",
-      "norm_label": "volumetile.java",
-      "source_file": "src/com/taseen/tapoff/VolumeTile.java",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_com_taseen_tapoff_volumetile_java_override",
-      "label": "Override",
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "log",
-      "file_type": "code",
-      "norm_label": "override",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
       "id": "readme",
       "label": "README.md",
       "_origin": "ast",
@@ -6820,28 +6765,6 @@
       "source_location": "L10"
     },
     {
-      "id": "android_view_windowmanager",
-      "label": "android.view.WindowManager",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "LockService.java",
-      "file_type": "code",
-      "norm_label": "android.view.windowmanager",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "src_com_taseen_tapoff_lockservice",
-      "label": "LockService.java",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "LockService.java",
-      "file_type": "code",
-      "norm_label": "lockservice.java",
-      "source_file": "src/com/taseen/tapoff/LockService.java",
-      "source_location": "L1"
-    },
-    {
       "id": "build",
       "label": "build.sh",
       "_origin": "ast",
@@ -6939,7 +6862,7 @@
       "label": "android.accessibilityservice.AccessibilityService",
       "_origin": "ast",
       "community": 2,
-      "community_name": "TapWallpaper",
+      "community_name": "LockService.java",
       "file_type": "code",
       "norm_label": "android.accessibilityservice.accessibilityservice",
       "source_file": "",
@@ -6950,20 +6873,9 @@
       "label": "android.app.WallpaperColors",
       "_origin": "ast",
       "community": 2,
-      "community_name": "TapWallpaper",
+      "community_name": "LockService.java",
       "file_type": "code",
       "norm_label": "android.app.wallpapercolors",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "android_graphics_paint",
-      "label": "android.graphics.Paint",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "TapWallpaper",
-      "file_type": "code",
-      "norm_label": "android.graphics.paint",
       "source_file": "",
       "source_location": ""
     },
@@ -6972,7 +6884,7 @@
       "label": "android.service.wallpaper.WallpaperService",
       "_origin": "ast",
       "community": 2,
-      "community_name": "TapWallpaper",
+      "community_name": "LockService.java",
       "file_type": "code",
       "norm_label": "android.service.wallpaper.wallpaperservice",
       "source_file": "",
@@ -6983,7 +6895,7 @@
       "label": "android.view.accessibility.AccessibilityEvent",
       "_origin": "ast",
       "community": 2,
-      "community_name": "TapWallpaper",
+      "community_name": "LockService.java",
       "file_type": "code",
       "norm_label": "android.view.accessibility.accessibilityevent",
       "source_file": "",
@@ -6994,9 +6906,20 @@
       "label": "android.view.SurfaceHolder",
       "_origin": "ast",
       "community": 2,
-      "community_name": "TapWallpaper",
+      "community_name": "LockService.java",
       "file_type": "code",
       "norm_label": "android.view.surfaceholder",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "android_view_windowmanager",
+      "label": "android.view.WindowManager",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "LockService.java",
+      "file_type": "code",
+      "norm_label": "android.view.windowmanager",
       "source_file": "",
       "source_location": ""
     },
@@ -7005,7 +6928,7 @@
       "label": "BroadcastReceiver",
       "_origin": "ast",
       "community": 2,
-      "community_name": "TapWallpaper",
+      "community_name": "LockService.java",
       "file_type": "code",
       "norm_label": "broadcastreceiver",
       "source_file": "",
@@ -7016,18 +6939,29 @@
       "label": "Engine",
       "_origin": "ast",
       "community": 2,
-      "community_name": "TapWallpaper",
+      "community_name": "LockService.java",
       "file_type": "code",
       "norm_label": "engine",
       "source_file": "",
       "source_location": ""
     },
     {
+      "id": "src_com_taseen_tapoff_lockservice",
+      "label": "LockService.java",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "LockService.java",
+      "file_type": "code",
+      "norm_label": "lockservice.java",
+      "source_file": "src/com/taseen/tapoff/LockService.java",
+      "source_location": "L1"
+    },
+    {
       "id": "src_com_taseen_tapoff_lockservice_java_override",
       "label": "Override",
       "_origin": "ast",
       "community": 2,
-      "community_name": "TapWallpaper",
+      "community_name": "LockService.java",
       "file_type": "code",
       "norm_label": "override",
       "source_file": "",
@@ -7038,7 +6972,7 @@
       "label": "Override",
       "_origin": "ast",
       "community": 2,
-      "community_name": "TapWallpaper",
+      "community_name": "LockService.java",
       "file_type": "code",
       "norm_label": "override",
       "source_file": "",
@@ -7049,7 +6983,7 @@
       "label": "Context",
       "_origin": "ast",
       "community": 2,
-      "community_name": "TapWallpaper",
+      "community_name": "LockService.java",
       "file_type": "code",
       "norm_label": "context",
       "source_file": "",
@@ -7060,7 +6994,7 @@
       "label": "Override",
       "_origin": "ast",
       "community": 2,
-      "community_name": "TapWallpaper",
+      "community_name": "LockService.java",
       "file_type": "code",
       "norm_label": "override",
       "source_file": "",
@@ -7071,7 +7005,7 @@
       "label": "Architecture",
       "_origin": "ast",
       "community": 2,
-      "community_name": "TapWallpaper",
+      "community_name": "LockService.java",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "architecture",
@@ -7083,7 +7017,7 @@
       "label": "Icons",
       "_origin": "ast",
       "community": 2,
-      "community_name": "TapWallpaper",
+      "community_name": "LockService.java",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "icons",
@@ -7095,7 +7029,7 @@
       "label": "Processes",
       "_origin": "ast",
       "community": 2,
-      "community_name": "TapWallpaper",
+      "community_name": "LockService.java",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "processes",
@@ -7107,7 +7041,7 @@
       "label": "Screen off",
       "_origin": "ast",
       "community": 2,
-      "community_name": "TapWallpaper",
+      "community_name": "LockService.java",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "screen off",
@@ -7119,7 +7053,7 @@
       "label": "Wallpapers",
       "_origin": "ast",
       "community": 2,
-      "community_name": "TapWallpaper",
+      "community_name": "LockService.java",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "wallpapers",
@@ -7131,7 +7065,7 @@
       "label": "Website (`site/`)",
       "_origin": "ast",
       "community": 2,
-      "community_name": "TapWallpaper",
+      "community_name": "LockService.java",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "website (`site/`)",
@@ -7183,6 +7117,28 @@
       "source_location": ""
     },
     {
+      "id": "android_graphics_paint",
+      "label": "android.graphics.Paint",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "CutoutArt.java",
+      "file_type": "code",
+      "norm_label": "android.graphics.paint",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "android_graphics_rectf",
+      "label": "android.graphics.RectF",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "CutoutArt.java",
+      "file_type": "code",
+      "norm_label": "android.graphics.rectf",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
       "id": "android_view_view",
       "label": "android.view.View",
       "_origin": "ast",
@@ -7190,6 +7146,17 @@
       "community_name": "CutoutArt.java",
       "file_type": "code",
       "norm_label": "android.view.view",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "layoutparams",
+      "label": "LayoutParams",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "CutoutArt.java",
+      "file_type": "code",
+      "norm_label": "layoutparams",
       "source_file": "",
       "source_location": ""
     },
@@ -7203,6 +7170,17 @@
       "norm_label": "cutoutart.java",
       "source_file": "src/com/taseen/tapoff/CutoutArt.java",
       "source_location": "L1"
+    },
+    {
+      "id": "src_com_taseen_tapoff_edgeslider_java_drawable",
+      "label": "Drawable",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "CutoutArt.java",
+      "file_type": "code",
+      "norm_label": "drawable",
+      "source_file": "",
+      "source_location": ""
     },
     {
       "id": "src_com_taseen_tapoff_glasscard",
@@ -7249,17 +7227,6 @@
       "source_location": ""
     },
     {
-      "id": "android_graphics_rectf",
-      "label": "android.graphics.RectF",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "EdgeSlider",
-      "file_type": "code",
-      "norm_label": "android.graphics.rectf",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
       "id": "android_view_motionevent",
       "label": "android.view.MotionEvent",
       "_origin": "ast",
@@ -7282,39 +7249,6 @@
       "source_location": ""
     },
     {
-      "id": "layoutparams",
-      "label": "LayoutParams",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "EdgeSlider",
-      "file_type": "code",
-      "norm_label": "layoutparams",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "src_com_taseen_tapoff_edgeslider_java_drawable",
-      "label": "Drawable",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "EdgeSlider",
-      "file_type": "code",
-      "norm_label": "drawable",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "src_com_taseen_tapoff_edgeslider_java_override",
-      "label": "Override",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "EdgeSlider",
-      "file_type": "code",
-      "norm_label": "override",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
       "id": "docs_architecture_edge_sliders_edgeslider_java",
       "label": "Edge sliders (`EdgeSlider.java`)",
       "_origin": "ast",
@@ -7325,18 +7259,6 @@
       "norm_label": "edge sliders (`edgeslider.java`)",
       "source_file": "docs/Architecture.md",
       "source_location": "L25"
-    },
-    {
-      "id": "docs_architecture_ui",
-      "label": "UI",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "EdgeSlider",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "ui",
-      "source_file": "docs/Architecture.md",
-      "source_location": "L45"
     },
     {
       "id": "android_graphics_canvas",
@@ -7581,7 +7503,7 @@
       "node_kind": "heading",
       "norm_label": "before 2026-09-30 \u00b7 1.0 to 1.6",
       "source_file": "docs/Progress log.md",
-      "source_location": "L27"
+      "source_location": "L33"
     },
     {
       "id": "docs_progress_log_progress_log",
@@ -7629,7 +7551,7 @@
       "node_kind": "heading",
       "norm_label": "open",
       "source_file": "docs/Tasks.md",
-      "source_location": "L44"
+      "source_location": "L50"
     },
     {
       "id": "docs_tasks_tasks",
@@ -7642,6 +7564,83 @@
       "norm_label": "tasks",
       "source_file": "docs/Tasks.md",
       "source_location": "L4"
+    },
+    {
+      "id": "android_media_audiomanager",
+      "label": "android.media.AudioManager",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "Wallpapers.java",
+      "file_type": "code",
+      "norm_label": "android.media.audiomanager",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "android_service_quicksettings_tileservice",
+      "label": "android.service.quicksettings.TileService",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "Wallpapers.java",
+      "file_type": "code",
+      "norm_label": "android.service.quicksettings.tileservice",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "src_com_taseen_tapoff_edgeslider",
+      "label": "EdgeSlider.java",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "Wallpapers.java",
+      "file_type": "code",
+      "norm_label": "edgeslider.java",
+      "source_file": "src/com/taseen/tapoff/EdgeSlider.java",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_com_taseen_tapoff_screenofftile",
+      "label": "ScreenOffTile.java",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "Wallpapers.java",
+      "file_type": "code",
+      "norm_label": "screenofftile.java",
+      "source_file": "src/com/taseen/tapoff/ScreenOffTile.java",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_com_taseen_tapoff_tapwallpaper",
+      "label": "TapWallpaper.java",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "Wallpapers.java",
+      "file_type": "code",
+      "norm_label": "tapwallpaper.java",
+      "source_file": "src/com/taseen/tapoff/TapWallpaper.java",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_com_taseen_tapoff_volumetile",
+      "label": "VolumeTile.java",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "Wallpapers.java",
+      "file_type": "code",
+      "norm_label": "volumetile.java",
+      "source_file": "src/com/taseen/tapoff/VolumeTile.java",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_com_taseen_tapoff_volumetile_java_override",
+      "label": "Override",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "Wallpapers.java",
+      "file_type": "code",
+      "norm_label": "override",
+      "source_file": "",
+      "source_location": ""
     },
     {
       "id": "src_com_taseen_tapoff_wallpapers",
@@ -7666,26 +7665,27 @@
       "source_location": ""
     },
     {
-      "id": "src_com_taseen_tapoff_edgeslider",
-      "label": "EdgeSlider.java",
+      "id": "src_com_taseen_tapoff_edgeslider_java_override",
+      "label": "Override",
       "_origin": "ast",
       "community": 9,
-      "community_name": "EdgeSlider.java",
+      "community_name": ".onDraw",
       "file_type": "code",
-      "norm_label": "edgeslider.java",
-      "source_file": "src/com/taseen/tapoff/EdgeSlider.java",
-      "source_location": "L1"
+      "norm_label": "override",
+      "source_file": "",
+      "source_location": ""
     },
     {
-      "id": "src_com_taseen_tapoff_tapwallpaper",
-      "label": "TapWallpaper.java",
+      "id": "docs_architecture_ui",
+      "label": "UI",
       "_origin": "ast",
       "community": 9,
-      "community_name": "EdgeSlider.java",
-      "file_type": "code",
-      "norm_label": "tapwallpaper.java",
-      "source_file": "src/com/taseen/tapoff/TapWallpaper.java",
-      "source_location": "L1"
+      "community_name": ".onDraw",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "ui",
+      "source_file": "docs/Architecture.md",
+      "source_location": "L45"
     },
     {
       "id": "colorstatelist",
@@ -7916,22 +7916,10 @@
       "type": "external"
     },
     {
-      "id": "log",
-      "label": "log",
-      "_origin": "semantic",
-      "community": 11,
-      "community_name": "log",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "log",
-      "source_file": "",
-      "type": "external"
-    },
-    {
       "id": "color",
       "label": "color",
       "_origin": "semantic",
-      "community": 13,
+      "community": 2,
       "community_name": "LockService.java",
       "external": true,
       "file_type": "concept",
@@ -7943,7 +7931,7 @@
       "id": "componentname",
       "label": "componentname",
       "_origin": "semantic",
-      "community": 13,
+      "community": 2,
       "community_name": "LockService.java",
       "external": true,
       "file_type": "concept",
@@ -7955,7 +7943,7 @@
       "id": "contentresolver",
       "label": "contentresolver",
       "_origin": "semantic",
-      "community": 13,
+      "community": 2,
       "community_name": "LockService.java",
       "external": true,
       "file_type": "concept",
@@ -7967,7 +7955,7 @@
       "id": "manifest",
       "label": "manifest",
       "_origin": "semantic",
-      "community": 13,
+      "community": 2,
       "community_name": "LockService.java",
       "external": true,
       "file_type": "concept",
@@ -7979,7 +7967,7 @@
       "id": "packagemanager",
       "label": "packagemanager",
       "_origin": "semantic",
-      "community": 13,
+      "community": 2,
       "community_name": "LockService.java",
       "external": true,
       "file_type": "concept",
@@ -7991,7 +7979,7 @@
       "id": "pixelformat",
       "label": "pixelformat",
       "_origin": "semantic",
-      "community": 13,
+      "community": 2,
       "community_name": "LockService.java",
       "external": true,
       "file_type": "concept",
@@ -8003,7 +7991,7 @@
       "id": "settings",
       "label": "settings",
       "_origin": "semantic",
-      "community": 13,
+      "community": 2,
       "community_name": "LockService.java",
       "external": true,
       "file_type": "concept",
@@ -8168,6 +8156,30 @@
       "type": "external"
     },
     {
+      "id": "bitmapfactory",
+      "label": "bitmapfactory",
+      "_origin": "semantic",
+      "community": 7,
+      "community_name": "Wallpapers.java",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "bitmapfactory",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "canvas",
+      "label": "canvas",
+      "_origin": "semantic",
+      "community": 7,
+      "community_name": "Wallpapers.java",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "canvas",
+      "source_file": "",
+      "type": "external"
+    },
+    {
       "id": "comparator",
       "label": "comparator",
       "_origin": "semantic",
@@ -8188,6 +8200,42 @@
       "external": true,
       "file_type": "concept",
       "norm_label": "consumer",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "display",
+      "label": "display",
+      "_origin": "semantic",
+      "community": 7,
+      "community_name": "Wallpapers.java",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "display",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "displaymanager",
+      "label": "displaymanager",
+      "_origin": "semantic",
+      "community": 7,
+      "community_name": "Wallpapers.java",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "displaymanager",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "file",
+      "label": "file",
+      "_origin": "semantic",
+      "community": 7,
+      "community_name": "Wallpapers.java",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "file",
       "source_file": "",
       "type": "external"
     },
@@ -8252,6 +8300,30 @@
       "type": "external"
     },
     {
+      "id": "intent",
+      "label": "intent",
+      "_origin": "semantic",
+      "community": 7,
+      "community_name": "Wallpapers.java",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "intent",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "ioexception",
+      "label": "ioexception",
+      "_origin": "semantic",
+      "community": 7,
+      "community_name": "Wallpapers.java",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "ioexception",
+      "source_file": "",
+      "type": "external"
+    },
+    {
       "id": "jsonarray",
       "label": "jsonarray",
       "_origin": "semantic",
@@ -8288,6 +8360,18 @@
       "type": "external"
     },
     {
+      "id": "log",
+      "label": "log",
+      "_origin": "semantic",
+      "community": 7,
+      "community_name": "Wallpapers.java",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "log",
+      "source_file": "",
+      "type": "external"
+    },
+    {
       "id": "messagedigest",
       "label": "messagedigest",
       "_origin": "semantic",
@@ -8308,6 +8392,18 @@
       "external": true,
       "file_type": "concept",
       "norm_label": "nosuchalgorithmexception",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "overshootinterpolator",
+      "label": "overshootinterpolator",
+      "_origin": "semantic",
+      "community": 7,
+      "community_name": "Wallpapers.java",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "overshootinterpolator",
       "source_file": "",
       "type": "external"
     },
@@ -8348,6 +8444,18 @@
       "type": "external"
     },
     {
+      "id": "systemclock",
+      "label": "systemclock",
+      "_origin": "semantic",
+      "community": 7,
+      "community_name": "Wallpapers.java",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "systemclock",
+      "source_file": "",
+      "type": "external"
+    },
+    {
       "id": "url",
       "label": "url",
       "_origin": "semantic",
@@ -8372,6 +8480,66 @@
       "type": "external"
     },
     {
+      "id": "vibrationattributes",
+      "label": "vibrationattributes",
+      "_origin": "semantic",
+      "community": 7,
+      "community_name": "Wallpapers.java",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "vibrationattributes",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "vibrationeffect",
+      "label": "vibrationeffect",
+      "_origin": "semantic",
+      "community": 7,
+      "community_name": "Wallpapers.java",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "vibrationeffect",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "vibratormanager",
+      "label": "vibratormanager",
+      "_origin": "semantic",
+      "community": 7,
+      "community_name": "Wallpapers.java",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "vibratormanager",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "viewconfiguration",
+      "label": "viewconfiguration",
+      "_origin": "semantic",
+      "community": 7,
+      "community_name": "Wallpapers.java",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "viewconfiguration",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "wallpapermanager",
+      "label": "wallpapermanager",
+      "_origin": "semantic",
+      "community": 7,
+      "community_name": "Wallpapers.java",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "wallpapermanager",
+      "source_file": "",
+      "type": "external"
+    },
+    {
       "id": "xmlpullparser",
       "label": "xmlpullparser",
       "_origin": "semantic",
@@ -8392,174 +8560,6 @@
       "external": true,
       "file_type": "concept",
       "norm_label": "xmlresourceparser",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "bitmapfactory",
-      "label": "bitmapfactory",
-      "_origin": "semantic",
-      "community": 9,
-      "community_name": "EdgeSlider.java",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "bitmapfactory",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "canvas",
-      "label": "canvas",
-      "_origin": "semantic",
-      "community": 9,
-      "community_name": "EdgeSlider.java",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "canvas",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "display",
-      "label": "display",
-      "_origin": "semantic",
-      "community": 9,
-      "community_name": "EdgeSlider.java",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "display",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "displaymanager",
-      "label": "displaymanager",
-      "_origin": "semantic",
-      "community": 9,
-      "community_name": "EdgeSlider.java",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "displaymanager",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "file",
-      "label": "file",
-      "_origin": "semantic",
-      "community": 9,
-      "community_name": "EdgeSlider.java",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "file",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "intent",
-      "label": "intent",
-      "_origin": "semantic",
-      "community": 9,
-      "community_name": "EdgeSlider.java",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "intent",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "ioexception",
-      "label": "ioexception",
-      "_origin": "semantic",
-      "community": 9,
-      "community_name": "EdgeSlider.java",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "ioexception",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "overshootinterpolator",
-      "label": "overshootinterpolator",
-      "_origin": "semantic",
-      "community": 9,
-      "community_name": "EdgeSlider.java",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "overshootinterpolator",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "systemclock",
-      "label": "systemclock",
-      "_origin": "semantic",
-      "community": 9,
-      "community_name": "EdgeSlider.java",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "systemclock",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "vibrationattributes",
-      "label": "vibrationattributes",
-      "_origin": "semantic",
-      "community": 9,
-      "community_name": "EdgeSlider.java",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "vibrationattributes",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "vibrationeffect",
-      "label": "vibrationeffect",
-      "_origin": "semantic",
-      "community": 9,
-      "community_name": "EdgeSlider.java",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "vibrationeffect",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "vibratormanager",
-      "label": "vibratormanager",
-      "_origin": "semantic",
-      "community": 9,
-      "community_name": "EdgeSlider.java",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "vibratormanager",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "viewconfiguration",
-      "label": "viewconfiguration",
-      "_origin": "semantic",
-      "community": 9,
-      "community_name": "EdgeSlider.java",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "viewconfiguration",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "wallpapermanager",
-      "label": "wallpapermanager",
-      "_origin": "semantic",
-      "community": 9,
-      "community_name": "EdgeSlider.java",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "wallpapermanager",
       "source_file": "",
       "type": "external"
     }
@@ -16902,7 +16902,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/Progress log.md",
-      "source_location": "L27",
+      "source_location": "L33",
       "weight": 1.0
     },
     {
@@ -16946,7 +16946,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/Tasks.md",
-      "source_location": "L44",
+      "source_location": "L50",
       "weight": 1.0
     },
     {
@@ -19301,6 +19301,17 @@
       "confidence_score": 1.0,
       "source_file": "docs/Home.md",
       "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_progress_log",
+      "target": "docs_architecture",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/Progress log.md",
+      "source_location": "L31",
       "weight": 1.0
     },
     {

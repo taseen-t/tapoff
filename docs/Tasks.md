@@ -46,6 +46,11 @@ Every request goes here the moment it's asked. Tick subtasks as they land. Never
   - [x] Right-edge back gesture tested
   - [x] Setup section mentions "Display over other apps"
   - [x] Screenshots retaken on the final build
+- [x] Site: "What happens when you double-tap" moved up to where the edge sliders were, edge sliders moved down to its old spot
+- [ ] Videos: brag, full walkthrough, case study, each vertical and landscape, ElevenLabs voice, playful pixel style
+  - [ ] Taseen picks a voice, films the case clips, answers the case-study questions
+  - [ ] Record TapOff on the phone over USB
+  - [ ] Build, check stills, render all six
 
 ## Open
 - [ ] Play Store listing? Costs $25 once. Waiting on Taseen (never spend without a yes).
