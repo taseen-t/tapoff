@@ -49,6 +49,10 @@ Every request goes here the moment it's asked. Tick subtasks as they land. Never
 - [x] Site: "What happens when you double-tap" moved up to where the edge sliders were, edge sliders moved down to its old spot
 - [ ] Videos: brag, full walkthrough, case study, each vertical and landscape, ElevenLabs voice, playful pixel style
   - [ ] Taseen picks a voice, films the case clips, answers the case-study questions
+    - [x] Answers (2026-09-30): male voice that sounds most human (not AI-like), bank not named, first person with
+          handle only (no face), brag video first; setup videos still wanted, now showing Shizuku
+    - [ ] Voice picked from samples
+    - [ ] Case clips in ~/Desktop/tapoff-clips (folder doesn't exist yet)
   - [ ] Record TapOff on the phone over USB
   - [ ] Build, check stills, render all six
 
