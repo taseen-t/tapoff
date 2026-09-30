@@ -129,7 +129,7 @@ final class NotchPanel {
         Context dc = display();
         android.graphics.Point size = new android.graphics.Point();
         dc.getDisplay().getRealSize(size);
-        panel = new Panel(dc, hole(dc), portrait(dc) ? statusBar(dc) : 0, size.x, size.y);
+        panel = new Panel(dc, hole(dc), statusBar(dc), size.x, size.y);
         RectF f = panel.frame;
         WindowManager.LayoutParams lp = overlay(Math.round(f.width()), Math.round(f.height()));
         lp.flags |= WindowManager.LayoutParams.FLAG_WATCH_OUTSIDE_TOUCH;
@@ -150,7 +150,8 @@ final class NotchPanel {
     // The two sliders, drawn in the window's own coordinates.
     private final class Panel extends View {
         final RectF frame; // the window, on screen
-        private final RectF from; // where they grow from: the camera, or in landscape the middle of the sliders
+        private final RectF from; // where they grow from: the camera, or in landscape the top centre of the screen
+        private final int start; // their colour as they leave it: black like the camera hole, or clear in landscape
         private final int[] kind;
         private final float[] level;
         private final RectF[] target;
@@ -182,25 +183,28 @@ final class NotchPanel {
             track = dc.getColor(android.R.color.system_neutral1_800);
             fill = dc.getColor(android.R.color.system_accent1_200);
 
-            // Portrait: stacked under the camera. Landscape: in the middle of the screen.
+            // Portrait: stacked under the camera. Landscape: centred at the top of the screen (the camera is off to the
+            // side), sliding down from the top edge and back up into it.
             float ph = PILL_H_DP * dp, gap = PILL_GAP_DP * dp, pw = Math.min(w - 48 * dp, PILL_MAX_W_DP * dp);
             float total = kind.length * ph + (kind.length - 1) * gap, left, top;
             boolean landscape = w > h;
+            start = landscape ? 0x00000000 : 0xFF000000;
             if (landscape) {
                 left = (w - pw) / 2;
-                top = (h - total) / 2;
+                top = statusBar + 12 * dp;
             } else {
                 left = Math.max(24 * dp, Math.min(w - 24 * dp - pw, hole.centerX() - pw / 2));
                 top = Math.max(hole.bottom, statusBar) + 14 * dp;
             }
             frame = new RectF(left - 16 * dp, top - 8 * dp, left + pw + 16 * dp, top + total + 8 * dp); // room to overshoot
             if (landscape) {
-                float r = hole.width() / 2, cx = w / 2f, cy = top + total / 2;
-                from = new RectF(cx - r, cy - r, cx + r, cy + r);
+                float r = hole.width() / 2, cx = w / 2f;
+                from = new RectF(cx - r, -r, cx + r, r);
             } else {
                 from = new RectF(hole);
-                frame.union(from);
             }
+            frame.union(from);
+            frame.top = Math.max(0, frame.top);
             from.offset(-frame.left, -frame.top);
             for (int i = 0; i < kind.length; i++) {
                 target[i].set(left, top + i * (ph + gap), left + pw, top + i * (ph + gap) + ph);
@@ -243,19 +247,21 @@ final class NotchPanel {
                 float cx = from.centerX() + (to.centerX() - from.centerX()) * m;
                 float cy = from.centerY() + (to.centerY() - from.centerY()) * m;
                 pill.set(cx - w / 2, cy - h / 2, cx + w / 2, cy + h / 2);
-                drawPill(canvas, i, Math.max(0, Math.min(1, (e - 0.25f) / 0.5f)));
+                float fade = start == 0 ? e / 0.4f : (e - 0.25f) / 0.5f; // clear ones fade in from the start
+                drawPill(canvas, i, Math.max(0, Math.min(1, fade)));
             }
         }
 
         // Black while it leaves the camera, so it looks like the hole itself stretching; then the colours come in.
+        // In landscape they come from the top edge instead, fading in as they slide down.
         private void drawPill(Canvas canvas, int i, float show) {
             float r = pill.height() / 2;
-            paint.setColor(Ui.blend(0xFF000000, track, show));
+            paint.setColor(Ui.blend(start, track, show));
             canvas.drawRoundRect(pill, r, r, paint);
             if (show == 0) return;
             canvas.save();
             canvas.clipRect(pill);
-            paint.setColor(Ui.blend(0xFF000000, fill, show));
+            paint.setColor(Ui.blend(start, fill, show));
             float right = pill.left + pill.height() + (pill.width() - pill.height()) * level[i]; // never less than a circle
             canvas.drawRoundRect(pill.left, pill.top, right, pill.bottom, r, r, paint);
             canvas.restore();

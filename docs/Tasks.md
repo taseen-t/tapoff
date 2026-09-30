@@ -85,6 +85,8 @@ Every request goes here the moment it's asked. Tick subtasks as they land. Never
 - [x] Button stops saying "Back tap is set up" when Quick Tap is changed or turned off
 - [ ] Back tap not opening the sliders on Taseen's phone: Quick Tap was off; to retest with it on (and with "Take
       screenshot" to rule out the acrylic case)
+- [x] Landscape: sliders open at the top centre and slide up into the top edge to close
+- [ ] Decide the no-PC setup path (built-in wireless-debugging pairing vs Shizuku vs keep PC) — see [[Decisions]] note below
 - [ ] Taseen tests on a second Android, then fixes
 - [ ] Refresh site screenshots (tile changed) with the video footage
 

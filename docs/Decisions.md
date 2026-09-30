@@ -90,3 +90,6 @@ Newest at the bottom. Each one says why, so nobody undoes it by accident.
 31. **Know when Quick Tap changes, even without reading it.** A `ContentObserver` on the `columbus_*` settings (in the
     always-running wallpaper process) forgets `back_tap_seen` on any change, so turning Quick Tap off makes the button
     offer setup again; the next back tap that opens the sliders marks it set up again. (2026-09-30)
+32. **Landscape sliders sit at the top centre.** In landscape the camera is off to one side, so the sliders no longer
+    grow from it; they slide down from the top-centre edge (fading in) and scale back up into it. Portrait still grows
+    them from the camera hole. (2026-09-30)
