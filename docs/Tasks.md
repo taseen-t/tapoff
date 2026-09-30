@@ -140,7 +140,7 @@ Every request goes here the moment it's asked. Tick subtasks as they land. Never
           preview and chooser (backed out, nothing set); Sliders switch and Quick Tap → Open app → TapOff
     - [x] Taseen asked for the Play Protect workaround in the guide (Play Store → profile → Play Protect → gear →
           switch off; he chose Pause, which turns back on by itself the next day)
-  - [ ] Voiceover: 8 of 12 lines made (intro, install, Play Protect, Shizuku, Developer options, Start, permission,
+  - [x] Voiceover: 8 of 12 lines made (intro, install, Play Protect, Shizuku, Developer options, Start, permission,
         wallpaper); ElevenLabs then disabled the account's free tier ("unusual activity"), probably from 12 requests at
         once; Taseen chose: sliders and ending lines reused from the brag voiceover, Wireless debugging and Pairing
         carried by captions
@@ -154,7 +154,12 @@ Every request goes here the moment it's asked. Tick subtasks as they land. Never
         mix at about −14 LUFS. Vision's "accurate" text model fails on this macOS build (e5rt error 13), so the
         scan uses "fast" mode, and every blurred range is also checked by eye
 - [x] Remote Control turned on for this session (Taseen asked)
-  - [ ] Voiceover (Jerry), build in the brag video's 3D style, check stills, render, send
+  - [x] Voiceover (Jerry), one line per request after the block lifted
+  - [x] Privacy: 3,142 frames scanned, blurred and re-scanned (0 leaks), contact sheets checked by eye (fixed a file
+        name OCR read with spaces, the edge of an account photo, faint rows behind installer dialogs)
+  - [x] Built in the brag video's 3D style: STEP n/7 header and progress bar, word-by-word captions with UI terms
+        highlighted, tap chain for the Play Protect path, pixel-hand taps and zooms, drawn About phone screen
+  - [ ] Render, check, send (portrait only, ~99 s)
 - [ ] Taseen tests on a second Android, then fixes
 - [ ] Refresh site screenshots (tile changed) with the video footage
 

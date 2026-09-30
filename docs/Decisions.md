@@ -133,3 +133,12 @@ Newest at the bottom. Each one says why, so nobody undoes it by accident.
     no body colour), so it stays see-through and shines at the edges; a soft light band on the case back follows the
     phone's turn, because real reflections of thin lights pass in under a frame during a flip. The screen gets no
     glare so the recordings stay clean (Taseen's call). (2026-09-30)
+39. **Play Protect's block has a workaround: pause app scanning.** #18 said browser installs had no way past the
+    block. They do: Play Store → profile → Play Protect → gear → turn off "Scan apps with Play Protect" → **Pause**
+    (it turns itself back on the next day), then install again. Tested on the Pixel 7: blocked before, "App updated"
+    after. Taseen asked for it in the setup guide. The guide recommends Pause over Turn off because it undoes itself;
+    the computer install stays as the option that touches no security setting. (2026-10-01)
+40. **Guide footage is proven clean, not just blurred.** Following the UplinkeSIM videos: OCR every used frame, blur
+    only what the edit uses, re-scan the output until it finds nothing, then check contact sheets by eye (which caught
+    three things OCR missed). The page can only load frames on the blur step's allowlist. (2026-10-01)
+

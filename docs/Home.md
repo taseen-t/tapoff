@@ -16,6 +16,7 @@ brightness, and wallpapers drawn around the camera hole. Open source (MIT), side
 - [[Tasks]]: every request, with subtasks ticked as they land.
 - [[Progress log]]: one entry per session, newest first.
 - [[Checks]]: what to run before and after work.
+- [[Videos]]: how the brag video and the setup guide are made, and the privacy pipeline.
 - `Code graph/`: the Graphify export of the whole codebase (regenerate, don't edit).
 
 ## Keeping this current
