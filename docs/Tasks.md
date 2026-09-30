@@ -57,6 +57,9 @@ Every request goes here the moment it's asked. Tick subtasks as they land. Never
           of the double-tap screen-off and the sliders, animated acrylic case; weather/city blurred off the home
           screen; in brag-output-2026-09-30-2030/ (not committed: large files)
     - [ ] Taseen watches the brag video; re-roll anything
+      - [x] Bezels too wide: now a thin clear-case rim (1.8% of width) and a Pixel-like bezel (2.4%)
+      - [ ] Back of the phone looked flat: use Aborsoft 3D's free Pixel 7 Pro model (Sketchfab, CC BY 4.0, credit
+            in the video and share copy), recoloured to Snow; Taseen downloads it (Sketchfab needs a sign-in)
   - [x] Record TapOff on the phone over USB (brag: screen-off and sliders; more for the walkthrough later)
   - [ ] Build, check stills, render all six
 
