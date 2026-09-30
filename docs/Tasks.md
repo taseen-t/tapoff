@@ -51,9 +51,13 @@ Every request goes here the moment it's asked. Tick subtasks as they land. Never
   - [ ] Taseen picks a voice, films the case clips, answers the case-study questions
     - [x] Answers (2026-09-30): male voice that sounds most human (not AI-like), bank not named, first person with
           handle only (no face), brag video first; setup videos still wanted, now showing Shizuku
-    - [ ] Voice picked from samples
-    - [ ] Case clips in ~/Desktop/tapoff-clips (folder doesn't exist yet)
-  - [ ] Record TapOff on the phone over USB
+    - [x] Voice picked from samples: Jerry B. – Hyper-Real (eleven_v3); Mark and Matt heard, Arthur needs a paid tier
+    - [x] Case clips: Taseen said to make them as animations instead of filming (no downloaded footage, for copyright)
+    - [x] Brag video (portrait + landscape) first: 23 s, Jerry voiceover, chiptune written in code, real recordings
+          of the double-tap screen-off and the sliders, animated acrylic case; weather/city blurred off the home
+          screen; in brag-output-2026-09-30-2030/ (not committed: large files)
+    - [ ] Taseen watches the brag video; re-roll anything
+  - [x] Record TapOff on the phone over USB (brag: screen-off and sliders; more for the walkthrough later)
   - [ ] Build, check stills, render all six
 
 ## 2026-09-30 (later) · 1.8

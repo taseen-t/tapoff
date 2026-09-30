@@ -5,6 +5,23 @@ tags: [tapoff, log]
 
 Newest first. Each entry: done / blocked / next.
 
+## 2026-09-30 (night) · Shizuku PR, brag video
+**Done**
+- Shizuku PR https://github.com/RikkaApps/Shizuku/pull/2537 (re-attach crash; found by reading, not reproduced).
+- Voice: Jerry B. – Hyper-Real (eleven_v3), picked from three samples. Brag video in portrait and landscape: real
+  phone recordings (double-tap screen-off, back-tap sliders), animated acrylic-case hook, site art, chiptune and
+  sound effects written in code. About 1,200 ElevenLabs credits used in total (samples + one voiceover take).
+- Privacy: the home screen's At a Glance line showed the city, so it is blurred in every frame.
+
+**Notes**
+- Shell volume changes (`cmd media_session volume --set`) are ignored on the Pixel; a double volume-key press restored
+  the level after recording.
+- One timing-test tap went to the phone (status-bar corner) before its screenshot was looked at; nothing happened.
+  Screenshot first, every time.
+
+**Next**
+- Taseen reviews the brag video; then the walkthrough, case study and Shizuku setup videos.
+
 ## 2026-09-30 (evening) · 1.9: setup without a computer
 **Done**
 - Settings' setup card has **Set up without a computer**: guide + Play Store link when Shizuku is missing, opens
