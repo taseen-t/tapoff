@@ -1,12 +1,12 @@
 ---
 source_file: "docs/Home.md"
 type: "document"
-community: "Checks.md"
+community: "Progress log"
 location: "L4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Checksmd
+  - community/Progress_log
 ---
 
 # TapOff
@@ -16,4 +16,4 @@ tags:
 - [[Keeping this current]] - `contains` [EXTRACTED]
 - [[Notes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Checksmd
+#graphify/document #graphify/EXTRACTED #community/Progress_log

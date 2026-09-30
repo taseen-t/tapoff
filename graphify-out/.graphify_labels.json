@@ -1,14 +1,13 @@
 {
-  "0": "android.content.Context",
+  "0": "MainActivity",
   "1": "MainActivity.java",
   "2": "TapWallpaper",
-  "3": "GlassCard",
-  "4": "NotchPanel",
+  "3": "android.graphics.Paint",
+  "4": "android.content.Context",
   "5": "android.graphics.Canvas",
-  "6": "Checks.md",
+  "6": "Progress log",
   "7": "Wallpapers.java",
   "8": "Wallpapers",
-  "9": "TapWallpaper.java",
   "10": "Override",
   "11": "log",
   "12": "TapOff",
@@ -18,6 +17,5 @@
   "16": "uri",
   "17": "imagebutton",
   "18": "overshootinterpolator",
-  "19": "NotchPanel.java",
-  "20": "SlidersActivity"
+  "19": "NotchPanel.java"
 }

@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/MainActivity.java"
 type: "code"
-community: "Wallpapers"
+community: "MainActivity"
 location: "L425"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Wallpapers
+  - community/MainActivity
 ---
 
 # .tileArt()
@@ -17,4 +17,4 @@ tags:
 - [[MainActivity]] - `method` [EXTRACTED]
 - [[android.graphics.Bitmap]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Wallpapers
+#graphify/code #graphify/EXTRACTED #community/MainActivity

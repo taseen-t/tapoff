@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/MainActivity.java"
 type: "code"
-community: "android.content.Context"
+community: "MainActivity"
 location: "L477"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidcontentContext
+  - community/MainActivity
 ---
 
 # .switchArt()
@@ -19,4 +19,4 @@ tags:
 - [[UI_1]] - `references` [INFERRED]
 - [[android.widget.Switch]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidcontentContext
+#graphify/code #graphify/EXTRACTED #community/MainActivity

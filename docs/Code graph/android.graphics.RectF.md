@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "NotchPanel"
+community: "android.content.Context"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NotchPanel
+  - community/androidcontentContext
 ---
 
 # android.graphics.RectF
@@ -18,4 +18,4 @@ tags:
 - [[NotchPanel.java]] - `imports` [EXTRACTED]
 - [[Panel]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NotchPanel
+#graphify/code #graphify/EXTRACTED #community/androidcontentContext

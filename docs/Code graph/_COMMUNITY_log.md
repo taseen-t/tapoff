@@ -28,15 +28,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 3 edges to [[_COMMUNITY_NotchPanel.java]]
 - 2 edges to [[_COMMUNITY_MainActivity.java]]
-- 2 edges to [[_COMMUNITY_NotchPanel.java]]
-- 1 edge to [[_COMMUNITY_NotchPanel]]
+- 1 edge to [[_COMMUNITY_android.content.Context]]
 - 1 edge to [[_COMMUNITY_TapWallpaper]]
 - 1 edge to [[_COMMUNITY_ShizukuSetup.java]]
 - 1 edge to [[_COMMUNITY_Wallpapers.java]]
-- 1 edge to [[_COMMUNITY_TapWallpaper.java]]
 
 ## Top bridge nodes
-- [[log]] - degree 7, connects to 5 communities
+- [[log]] - degree 7, connects to 4 communities
 - [[android.media.AudioManager]] - degree 3, connects to 2 communities
 - [[dot-onClick()]] - degree 3, connects to 1 community

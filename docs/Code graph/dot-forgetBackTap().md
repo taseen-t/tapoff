@@ -1,18 +1,18 @@
 ---
 source_file: "src/com/taseen/tapoff/SlidersActivity.java"
 type: "code"
-community: "SlidersActivity"
+community: "MainActivity.java"
 location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SlidersActivity
+  - community/MainActivityjava
 ---
 
 # .forgetBackTap()
 
 ## Connections
-- [[Context_1]] - `references` [EXTRACTED]
+- [[Context]] - `references` [EXTRACTED]
 - [[SlidersActivity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SlidersActivity
+#graphify/code #graphify/EXTRACTED #community/MainActivityjava

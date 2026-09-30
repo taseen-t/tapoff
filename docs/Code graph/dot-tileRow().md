@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/MainActivity.java"
 type: "code"
-community: "android.content.Context"
+community: "MainActivity"
 location: "L895"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidcontentContext
+  - community/MainActivity
 ---
 
 # .tileRow()
@@ -21,4 +21,4 @@ tags:
 - [[MainActivity]] - `method` [EXTRACTED]
 - [[android.widget.LinearLayout]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidcontentContext
+#graphify/code #graphify/EXTRACTED #community/MainActivity

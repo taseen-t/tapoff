@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/GlassCard.java"
 type: "code"
-community: "GlassCard"
+community: "Wallpapers"
 location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GlassCard
+  - community/Wallpapers
 ---
 
 # .setPhoto()
@@ -17,4 +17,4 @@ tags:
 - [[GlassCard]] - `method` [EXTRACTED]
 - [[android.graphics.Bitmap]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GlassCard
+#graphify/code #graphify/EXTRACTED #community/Wallpapers

@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/MainActivity.java"
 type: "code"
-community: "android.content.Context"
+community: "MainActivity"
 location: "L798"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidcontentContext
+  - community/MainActivity
 ---
 
 # .onTouchEvent()
@@ -18,4 +18,4 @@ tags:
 - [[SwipeRoot]] - `method` [EXTRACTED]
 - [[android.view.MotionEvent]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidcontentContext
+#graphify/code #graphify/EXTRACTED #community/MainActivity

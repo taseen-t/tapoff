@@ -1,17 +1,19 @@
 ---
 type: community
-members: 25
+members: 27
 ---
 
-# Checks.md
+# Progress log
 
-**Members:** 25 nodes
+**Members:** 27 nodes
 
 ## Members
 - [[2026-09-30]] - document - docs/Tasks.md
 - [[2026-09-30 (evening) · 1.9 setup without a computer]] - document - docs/Progress log.md
+- [[2026-09-30 (late) · Play Protect block a no-computer way in]] - document - docs/Progress log.md
 - [[2026-09-30 (later) · 1.8]] - document - docs/Tasks.md
 - [[2026-09-30 (later) · 1.8 back-tap sliders, favourites, NASA]] - document - docs/Progress log.md
+- [[2026-09-30 (night) · Shizuku PR, brag video]] - document - docs/Progress log.md
 - [[2026-09-30 · 1.7 slide the edges]] - document - docs/Progress log.md
 - [[Architecture_1]] - document - docs/Architecture.md
 - [[Before 2026-09-30 · 1.0 to 1.6]] - document - docs/Progress log.md
@@ -37,13 +39,12 @@ members: 25
 ## Live Query (requires Dataview plugin)
 
 ```dataview
-TABLE source_file, type FROM #community/Checksmd
+TABLE source_file, type FROM #community/Progress_log
 SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_TapWallpaper]]
-- 1 edge to [[_COMMUNITY_SlidersActivity]]
+- 2 edges to [[_COMMUNITY_TapWallpaper]]
 
 ## Top bridge nodes
 - [[Architecture_1]] - degree 5, connects to 1 community

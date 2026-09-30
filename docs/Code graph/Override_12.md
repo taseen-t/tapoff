@@ -1,16 +1,19 @@
 ---
 source_file: ""
 type: "code"
-community: "NotchPanel"
+community: "Wallpapers"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NotchPanel
+  - community/Wallpapers
 ---
 
 # Override
 
 ## Connections
-- [[dot-onCreate()_3]] - `references` [EXTRACTED]
+- [[dot-onDraw()_4]] - `references` [EXTRACTED]
+- [[dot-onMeasure()]] - `references` [EXTRACTED]
+- [[dot-onSizeChanged()]] - `references` [EXTRACTED]
+- [[dot-setPressed()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NotchPanel
+#graphify/code #graphify/EXTRACTED #community/Wallpapers

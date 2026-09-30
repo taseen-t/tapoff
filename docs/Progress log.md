@@ -5,6 +5,24 @@ tags: [tapoff, log]
 
 Newest first. Each entry: done / blocked / next.
 
+## 2026-09-30 (late) · Play Protect block: a no-computer way in
+
+**Done**
+- Second phone hit "App blocked to protect your device" on install. Root cause is Google's enhanced fraud protection:
+  a browser or file manager may not install any app that declares an accessibility service, and it is now on in 185
+  markets (the docs still said "Pakistan, India and others"). The dialog has only an OK button.
+- The exemption is the installing uid, not the app: installs run as shell aren't checked. Shizuku runs as shell, so the
+  no-computer setup now goes Shizuku → InstallerX Revived (authorizer Shizuku) → TapOff → grant, instead of asking the
+  phone to install the APK first and then hitting the wall. README, site steps and site FAQ rewritten; decision #38.
+- No code change: the accessibility service is the screen-off feature, so no manifest edit can dodge the classifier.
+
+**Blocked**
+- Unconfirmed on the blocked phone — Taseen has it, the Pixel here can't reproduce the block.
+
+**Next**
+- Confirm the Shizuku + InstallerX install there; try the Play Protect "turn off app scanning" toggle as a shorter
+  route and add it to the FAQ if it works; consider the free Play Protect appeal.
+
 ## 2026-09-30 (night) · Shizuku PR, brag video
 **Done**
 - Shizuku PR https://github.com/RikkaApps/Shizuku/pull/2537 (re-attach crash; found by reading, not reproduced).

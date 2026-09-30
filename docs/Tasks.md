@@ -119,6 +119,25 @@ Every request goes here the moment it's asked. Tick subtasks as they land. Never
 - [ ] Taseen tests on a second Android, then fixes
 - [ ] Refresh site screenshots (tile changed) with the video footage
 
+- [ ] Play Protect blocked the install on Taseen's second phone (Samsung): "App blocked to protect your device"
+  - [x] Root cause: Google's enhanced fraud protection blocks any browser/file-manager install of an app declaring an
+        accessibility service (its four-permission list: READ_SMS, RECEIVE_SMS, notification listener, accessibility).
+        Now on in 185 markets, not just a few countries. Nothing in the manifest can dodge it without losing the lock.
+  - [x] No-computer path reordered: Shizuku first, then InstallerX Revived (authorizer Shizuku) installs TapOff as
+        shell, the same exemption `adb install` has (README, site steps, site FAQ)
+  - [x] Decision #38, progress log, Graphify refreshed
+  - [ ] Taseen confirms the Shizuku + InstallerX install goes through on the blocked phone. If it is blocked anyway,
+        the install may be attributed to InstallerX instead of shell: check with `adb shell dumpsys package
+        com.taseen.tapoff | grep installerPackageName` (an `adb install` leaves it `null`, checked on the Pixel) and
+        set InstallerX's installer package to `com.android.shell` in its settings
+  - [ ] Also worth a try there, 30 seconds: Play Store → Play Protect → gear → turn off app scanning → install → turn
+        it back on. If that works, add it to the FAQ as the shortest route (unverified, so it isn't in the docs yet)
+  - [ ] Play Protect appeal for TapOff (free, slow, the only thing that unblocks everyone): the service reads nothing —
+        no event types, `canRetrieveWindowContent="false"`
+  - [x] In-app updater through Shizuku `pm install` instead of opening the releases page: considered, dropped. Whoever
+        can update that way already has Shizuku and InstallerX, which does the same job; it would only work while
+        Shizuku is running, and it can't help the first install anyway
+
 ## Open
 - [ ] Play Store listing? Costs $25 once. Waiting on Taseen (never spend without a yes).
 - [ ] Custom domain? Waiting on whether Taseen is a student (GitHub Student Pack has free domains).

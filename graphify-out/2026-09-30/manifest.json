@@ -84,9 +84,9 @@
     "semantic_hash": ""
   },
   "docs/Checks.md": {
-    "mtime": 1790736500.3785028,
-    "seen": 1790736508.017944,
-    "ast_hash": "eab257111f49cba6bacfb2099ad89ef9",
+    "mtime": 1790781638.1434374,
+    "seen": 1790781639.0956411,
+    "ast_hash": "7df1319bbb272ec4c9222a224b5ed804",
     "semantic_hash": ""
   },
   "docs/Decisions.md": {
@@ -102,15 +102,15 @@
     "semantic_hash": ""
   },
   "docs/Progress log.md": {
-    "mtime": 1790762749.0020669,
-    "seen": 1790762750.000938,
-    "ast_hash": "3d47c73193bc00aa56176cc456ca0968",
+    "mtime": 1790781638.1430922,
+    "seen": 1790781639.0956428,
+    "ast_hash": "db824037f4a1527472610fc9d45f12dc",
     "semantic_hash": ""
   },
   "docs/Tasks.md": {
-    "mtime": 1790781285.3683748,
-    "seen": 1790781305.2598999,
-    "ast_hash": "09864df49e99cd929b4338d20f91b84b",
+    "mtime": 1790781638.142442,
+    "seen": 1790781639.095644,
+    "ast_hash": "2efce84709e61d845e3bbdc6ea34e6e5",
     "semantic_hash": ""
   },
   "site/index.html": {

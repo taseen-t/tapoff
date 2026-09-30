@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/DoubleTapHint.java"
 type: "code"
-community: "GlassCard"
+community: "android.graphics.Paint"
 location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GlassCard
+  - community/androidgraphicsPaint
 ---
 
 # .press()
@@ -15,4 +15,4 @@ tags:
 - [[dot-onDraw()_1]] - `calls` [EXTRACTED]
 - [[DoubleTapHint]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GlassCard
+#graphify/code #graphify/EXTRACTED #community/androidgraphicsPaint

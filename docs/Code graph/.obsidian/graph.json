@@ -1,7 +1,7 @@
 {
   "colorGroups": [
     {
-      "query": "tag:#community/androidcontentContext",
+      "query": "tag:#community/MainActivity",
       "color": {
         "a": 1,
         "rgb": 5142951
@@ -22,14 +22,14 @@
       }
     },
     {
-      "query": "tag:#community/GlassCard",
+      "query": "tag:#community/androidgraphicsPaint",
       "color": {
         "a": 1,
         "rgb": 7780274
       }
     },
     {
-      "query": "tag:#community/NotchPanel",
+      "query": "tag:#community/androidcontentContext",
       "color": {
         "a": 1,
         "rgb": 5873999
@@ -43,7 +43,7 @@
       }
     },
     {
-      "query": "tag:#community/Checksmd",
+      "query": "tag:#community/Progress_log",
       "color": {
         "a": 1,
         "rgb": 11565729
@@ -61,13 +61,6 @@
       "color": {
         "a": 1,
         "rgb": 10253663
-      }
-    },
-    {
-      "query": "tag:#community/TapWallpaperjava",
-      "color": {
-        "a": 1,
-        "rgb": 12234924
       }
     },
     {
@@ -138,13 +131,6 @@
       "color": {
         "a": 1,
         "rgb": 12234924
-      }
-    },
-    {
-      "query": "tag:#community/SlidersActivity",
-      "color": {
-        "a": 1,
-        "rgb": 5142951
       }
     }
   ]

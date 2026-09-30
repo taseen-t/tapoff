@@ -30,9 +30,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_android.content.Context]]
-- 3 edges to [[_COMMUNITY_MainActivity.java]]
-- 1 edge to [[_COMMUNITY_NotchPanel]]
+- 7 edges to [[_COMMUNITY_MainActivity]]
+- 2 edges to [[_COMMUNITY_MainActivity.java]]
+- 1 edge to [[_COMMUNITY_ShizukuSetup.java]]
 
 ## Top bridge nodes
 - [[Override_1]] - degree 14, connects to 3 communities

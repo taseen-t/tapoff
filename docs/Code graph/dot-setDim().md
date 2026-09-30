@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/GlassCard.java"
 type: "code"
-community: "GlassCard"
+community: "Wallpapers"
 location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GlassCard
+  - community/Wallpapers
 ---
 
 # .setDim()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GlassCard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GlassCard
+#graphify/code #graphify/EXTRACTED #community/Wallpapers

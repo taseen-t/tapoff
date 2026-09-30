@@ -1,17 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "NotchPanel"
+community: "android.graphics.Canvas"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NotchPanel
+  - community/androidgraphicsCanvas
 ---
 
 # Override
 
 ## Connections
-- [[dot-onDraw()_4]] - `references` [EXTRACTED]
-- [[dot-onTouchEvent()_1]] - `references` [EXTRACTED]
+- [[dot-onDraw()_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NotchPanel
+#graphify/code #graphify/EXTRACTED #community/androidgraphicsCanvas

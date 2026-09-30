@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/NotchPanel.java"
 type: "code"
-community: "NotchPanel"
+community: "android.content.Context"
 location: "L84"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NotchPanel
+  - community/androidcontentContext
 ---
 
 # .sync()
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-allowed()]] - `calls` [EXTRACTED]
 - [[dot-enabled()_1]] - `calls` [EXTRACTED]
-- [[dot-onCreate()_4]] - `calls` [INFERRED]
+- [[dot-onCreate()_3]] - `calls` [INFERRED]
 - [[dot-remove()]] - `calls` [EXTRACTED]
 - [[NotchPanel]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NotchPanel
+#graphify/code #graphify/EXTRACTED #community/androidcontentContext

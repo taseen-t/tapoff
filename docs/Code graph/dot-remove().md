@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/NotchPanel.java"
 type: "code"
-community: "TapWallpaper"
+community: "android.content.Context"
 location: "L89"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TapWallpaper
+  - community/androidcontentContext
 ---
 
 # .remove()
@@ -17,4 +17,4 @@ tags:
 - [[dot-sync()]] - `calls` [EXTRACTED]
 - [[NotchPanel]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TapWallpaper
+#graphify/code #graphify/EXTRACTED #community/androidcontentContext

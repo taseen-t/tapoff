@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/MainActivity.java"
 type: "code"
-community: "android.content.Context"
+community: "MainActivity.java"
 location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidcontentContext
+  - community/MainActivityjava
 ---
 
 # .chooser()
@@ -18,4 +18,4 @@ tags:
 - [[android.content.Context]] - `references` [EXTRACTED]
 - [[android.content.Intent]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidcontentContext
+#graphify/code #graphify/EXTRACTED #community/MainActivityjava

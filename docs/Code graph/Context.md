@@ -1,18 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "TapWallpaper"
+community: "MainActivity.java"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TapWallpaper
+  - community/MainActivityjava
 ---
 
 # Context
 
 ## Connections
-- [[dot-enabled()]] - `references` [EXTRACTED]
-- [[dot-photo()]] - `references` [EXTRACTED]
-- [[dot-setEnabled()]] - `references` [EXTRACTED]
+- [[dot-backTapSeen()]] - `references` [EXTRACTED]
+- [[dot-forgetBackTap()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TapWallpaper
+#graphify/code #graphify/EXTRACTED #community/MainActivityjava

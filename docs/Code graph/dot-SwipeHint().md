@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/SwipeHint.java"
 type: "code"
-community: "GlassCard"
+community: "android.graphics.Paint"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GlassCard
+  - community/androidgraphicsPaint
 ---
 
 # .SwipeHint()
@@ -15,4 +15,4 @@ tags:
 - [[SwipeHint]] - `method` [EXTRACTED]
 - [[android.content.Context]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GlassCard
+#graphify/code #graphify/EXTRACTED #community/androidgraphicsPaint

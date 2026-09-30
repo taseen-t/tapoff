@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-lockTile()]] - `calls` [EXTRACTED]
-- [[Context]] - `references` [EXTRACTED]
+- [[Context_1]] - `references` [EXTRACTED]
 - [[TapWallpaper]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TapWallpaper

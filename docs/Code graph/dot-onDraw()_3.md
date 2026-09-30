@@ -1,19 +1,19 @@
 ---
 source_file: "src/com/taseen/tapoff/SwipeHint.java"
 type: "code"
-community: "GlassCard"
+community: "android.graphics.Canvas"
 location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GlassCard
+  - community/androidgraphicsCanvas
 ---
 
 # .onDraw()
 
 ## Connections
-- [[Override_10]] - `references` [EXTRACTED]
+- [[Override_11]] - `references` [EXTRACTED]
 - [[SwipeHint]] - `method` [EXTRACTED]
 - [[android.graphics.Canvas]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GlassCard
+#graphify/code #graphify/EXTRACTED #community/androidgraphicsCanvas

@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "GlassCard"
+community: "android.content.Context"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GlassCard
+  - community/androidcontentContext
 ---
 
 # Override
 
 ## Connections
-- [[dot-onDraw()_3]] - `references` [EXTRACTED]
+- [[dot-onCreate()_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GlassCard
+#graphify/code #graphify/EXTRACTED #community/androidcontentContext

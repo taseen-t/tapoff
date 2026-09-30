@@ -1,17 +1,17 @@
 ---
-source_file: "docs/Tasks.md"
+source_file: "docs/Progress log.md"
 type: "document"
 community: "Progress log"
-location: "L74"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
   - community/Progress_log
 ---
 
-# 2026-09-30 (later) · 1.8
+# 2026-09-30 (late) · Play Protect block: a no-computer way in
 
 ## Connections
-- [[Tasks_1]] - `contains` [EXTRACTED]
+- [[Progress log_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Progress_log

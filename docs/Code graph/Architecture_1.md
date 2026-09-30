@@ -1,12 +1,12 @@
 ---
 source_file: "docs/Architecture.md"
 type: "document"
-community: "Checks.md"
+community: "Progress log"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Checksmd
+  - community/Progress_log
 ---
 
 # Architecture.md
@@ -18,4 +18,4 @@ tags:
 - [[Home]] - `references` [EXTRACTED]
 - [[Progress log]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Checksmd
+#graphify/document #graphify/EXTRACTED #community/Progress_log

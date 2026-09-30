@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/Ui.java"
 type: "code"
-community: "android.content.Context"
+community: "MainActivity"
 location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidcontentContext
+  - community/MainActivity
 ---
 
 # ON_PHOTO
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Pill]] - `case_of` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidcontentContext
+#graphify/code #graphify/EXTRACTED #community/MainActivity

@@ -2,7 +2,7 @@
   "0": "android.content.Context",
   "1": "MainActivity.java",
   "2": "TapWallpaper",
-  "3": "android.graphics.Bitmap",
+  "3": "GlassCard",
   "4": "NotchPanel",
   "5": "android.graphics.Canvas",
   "6": "Checks.md",
@@ -18,5 +18,6 @@
   "16": "uri",
   "17": "imagebutton",
   "18": "overshootinterpolator",
-  "19": "NotchPanel.java"
+  "19": "NotchPanel.java",
+  "20": "SlidersActivity"
 }

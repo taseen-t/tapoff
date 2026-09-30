@@ -19,6 +19,7 @@ tags:
 - [[dot-onServiceConnected()]] - `method` [EXTRACTED]
 - [[dot-tapFile()]] - `method` [EXTRACTED]
 - [[dot-tapPoint()]] - `method` [EXTRACTED]
+- [[Decisions]] - `references` [INFERRED]
 - [[Iris]] - `contains` [EXTRACTED]
 - [[LockService.java]] - `contains` [EXTRACTED]
 - [[Processes]] - `references` [INFERRED]

@@ -118,3 +118,14 @@ Newest at the bottom. Each one says why, so nobody undoes it by accident.
     chose Aborsoft 3D's Pixel 7 Pro (CC BY 4.0) over a hand-built model or buying one: recoloured to Snow, credited on
     each video's outro card and in its share copy. It shows the Pro's three lenses, not the Pixel 7's two. The model
     file stays out of the repo. (2026-09-30)
+38. **The no-computer setup starts with Shizuku, which installs TapOff too.** #18 said Play Protect's block had no way
+    past it on the phone; it has one. The block only applies to installs from an "internet-sideloading source" (browser,
+    file manager, messaging app); an install run as the shell uid is not checked, which is why `adb install` is exempt.
+    Shizuku runs as shell, so a Shizuku-backed installer (InstallerX Revived, open source) gets TapOff on the phone with
+    no computer. Setup therefore goes Shizuku → InstallerX → TapOff → grant. Google has expanded the block from a few
+    countries to 185 markets and 2.8 billion devices
+    (https://blog.google/security/keeping-google-play-android-app-ecosystem-safe-2025/), so the docs no longer name
+    countries. Nothing in TapOff's manifest can avoid it: the
+    accessibility service *is* the screen-off feature, and device-admin `lockNow()` was already ruled out in
+    `LockService`'s note (it forces the PIN instead of leaving the fingerprint). (2026-09-30)
+

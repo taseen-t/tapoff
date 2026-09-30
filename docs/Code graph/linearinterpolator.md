@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "GlassCard"
+community: "NotchPanel.java"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/GlassCard
+  - community/NotchPaneljava
 ---
 
 # linearinterpolator
@@ -14,4 +14,4 @@ tags:
 - [[DoubleTapHint.java]] - `imports` [EXTRACTED]
 - [[NotchPanel.java]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/GlassCard
+#graphify/concept #graphify/EXTRACTED #community/NotchPaneljava
