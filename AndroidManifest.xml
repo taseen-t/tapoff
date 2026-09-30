@@ -9,6 +9,8 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <!-- Sets the lock screen wallpaper. -->
     <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <!-- The invisible left-edge strip for sliding the volume. The user allows it in Settings. -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <!-- The tap you feel when double-tap locks. -->
     <uses-permission android:name="android.permission.VIBRATE" />
     <!-- Read Pixel's built-in wallpapers in place. -->

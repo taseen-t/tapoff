@@ -56,7 +56,11 @@ public class MainActivity extends Activity {
     private ScrollView feed, settings;
     private LinearLayout feedList;
     private TextView lockStatus;
-    private ImageView tileImage;
+    private ImageView tileImage, volumeImage;
+    private TextView volumeStatus;
+    private Switch volumeSwitch;
+    private boolean wantEdgeVolume; // the user turned it on and went to allow the permission
+    private Bitmap volumeBitmap;
     private Switch homeSwitch, lockSwitch;
     private View setupCard;
     private Button setTapOff;
@@ -121,6 +125,7 @@ public class MainActivity extends Activity {
         feedList.setOrientation(LinearLayout.VERTICAL);
         feedList.addView(title("TapOff"));
         feedList.addView(lockTile());
+        feedList.addView(volumeTile());
         feedList.addView(section("Wallpapers"));
         feed.addView(feedList);
         feed.setOnScrollChangeListener((v, x, y, ox, oy) -> stackCards());
@@ -167,6 +172,10 @@ public class MainActivity extends Activity {
 
     private void refreshState() {
         loadTileImage();
+        if (wantEdgeVolume && EdgeVolume.allowed(this)) EdgeVolume.setEnabled(this, true);
+        wantEdgeVolume = false;
+        volumeSwitch.setChecked(EdgeVolume.enabled(this) && EdgeVolume.allowed(this));
+        EdgeVolume.changed(this); // the permission may have changed while we were away
         homeSwitch.setChecked(TapWallpaper.enabled(this));
         lockSwitch.setChecked(LockService.lockScreenOn(this));
         refreshStatus();
@@ -199,20 +208,14 @@ public class MainActivity extends Activity {
 
     // The app's main job, set apart from the photo cards: your wallpaper behind a dark fade, white controls on
     // top, so it reads the same in light and dark mode.
-    private FrameLayout lockTile() {
-        int onText = 0xFFFFFFFF, soft = 0xCCFFFFFF;
-        FrameLayout tile = new FrameLayout(this);
+    // A feature tile: TapOff's art behind a dark fade, a glass icon chip, a title and a status line, white on top
+    // so it reads the same in light and dark mode. Returns the column the switches go in.
+    private LinearLayout artTile(FrameLayout tile, ImageView art, String title, int iconRes, TextView status) {
+        int onText = 0xFFFFFFFF;
         tile.setBackground(Ui.shape(this, 28, 0xFF1B1C20, 0));
         tile.setClipToOutline(true);
-        tileImage = new ImageView(this) {
-            // Fill whatever height the controls give the tile; never let the photo decide it.
-            @Override protected void onMeasure(int wSpec, int hSpec) {
-                setMeasuredDimension(MeasureSpec.getSize(wSpec),
-                    MeasureSpec.getMode(hSpec) == MeasureSpec.EXACTLY ? MeasureSpec.getSize(hSpec) : 0);
-            }
-        };
-        tileImage.setScaleType(ImageView.ScaleType.CENTER_CROP);
-        tile.addView(tileImage, new FrameLayout.LayoutParams(-1, -1));
+        art.setScaleType(ImageView.ScaleType.CENTER_CROP);
+        tile.addView(art, new FrameLayout.LayoutParams(-1, -1));
         View fade = new View(this);
         fade.setBackground(new GradientDrawable(GradientDrawable.Orientation.LEFT_RIGHT, new int[] {0x99000000, 0x00000000}));
         tile.addView(fade, new FrameLayout.LayoutParams(-1, -1));
@@ -224,7 +227,7 @@ public class MainActivity extends Activity {
         LinearLayout head = new LinearLayout(this);
         head.setGravity(Gravity.CENTER_VERTICAL);
         ImageView icon = new ImageView(this);
-        icon.setImageResource(R.drawable.ic_tap);
+        icon.setImageResource(iconRes);
         icon.setImageTintList(ColorStateList.valueOf(onText));
         icon.setBackground(Ui.glass(this, 24, 0x33FFFFFF));
         int ip = Ui.dp(this, 10);
@@ -233,11 +236,34 @@ public class MainActivity extends Activity {
         LinearLayout words = new LinearLayout(this);
         words.setOrientation(LinearLayout.VERTICAL);
         words.setPadding(Ui.dp(this, 14), 0, 0, 0);
-        words.addView(Ui.text(this, "Double-tap to turn off", 18, 600, onText));
-        lockStatus = Ui.text(this, "", 13, 400, soft);
-        words.addView(lockStatus);
+        words.addView(Ui.text(this, title, 18, 600, onText));
+        words.addView(status);
         head.addView(words, new LinearLayout.LayoutParams(0, -2, 1));
         content.addView(head);
+        tile.addView(content, new FrameLayout.LayoutParams(-1, -2));
+        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(-1, -2);
+        int m = Ui.dp(this, 16);
+        lp.setMargins(m, 0, m, 0);
+        tile.setLayoutParams(lp);
+        return content;
+    }
+
+    // Fills whatever height the controls give the tile; never lets the picture decide it.
+    private ImageView tileArtView() {
+        return new ImageView(this) {
+            @Override protected void onMeasure(int wSpec, int hSpec) {
+                setMeasuredDimension(MeasureSpec.getSize(wSpec),
+                    MeasureSpec.getMode(hSpec) == MeasureSpec.EXACTLY ? MeasureSpec.getSize(hSpec) : 0);
+            }
+        };
+    }
+
+    private FrameLayout lockTile() {
+        int onText = 0xFFFFFFFF, soft = 0xCCFFFFFF;
+        FrameLayout tile = new FrameLayout(this);
+        tileImage = tileArtView();
+        lockStatus = Ui.text(this, "", 13, 400, soft);
+        LinearLayout content = artTile(tile, tileImage, "Double-tap to turn off", R.drawable.ic_tap, lockStatus);
 
         homeSwitch = switchRow(content, "Home screen", "Empty space, with a tap you feel", onText, soft);
         homeSwitch.setOnCheckedChangeListener((b, checked) -> {
@@ -254,12 +280,30 @@ public class MainActivity extends Activity {
             }
             refreshStatus();
         });
-        tile.addView(content, new FrameLayout.LayoutParams(-1, -2));
+        return tile;
+    }
 
-        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(-1, -2);
-        int m = Ui.dp(this, 16);
-        lp.setMargins(m, 0, m, 0);
-        tile.setLayoutParams(lp);
+    // Slide up or down on the left edge for volume. Needs "Display over other apps", which only the user can allow.
+    private FrameLayout volumeTile() {
+        int onText = 0xFFFFFFFF, soft = 0xCCFFFFFF;
+        FrameLayout tile = new FrameLayout(this);
+        volumeImage = tileArtView();
+        volumeStatus = Ui.text(this, "", 13, 400, soft);
+        LinearLayout content = artTile(tile, volumeImage, "Slide for volume", R.drawable.ic_volume, volumeStatus);
+        volumeSwitch = switchRow(content, "Left edge", "Slide up or down along it, like in VLC", onText, soft);
+        volumeSwitch.setOnCheckedChangeListener((b, checked) -> {
+            if (checked && !EdgeVolume.allowed(this)) {
+                b.setChecked(false);
+                wantEdgeVolume = true;
+                Toast.makeText(this, "Allow TapOff here, then come back", Toast.LENGTH_LONG).show();
+                startActivity(new Intent(android.provider.Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
+                    Uri.parse("package:" + getPackageName())));
+                return;
+            }
+            EdgeVolume.setEnabled(this, checked);
+            refreshStatus();
+        });
+        ((LinearLayout.LayoutParams) tile.getLayoutParams()).topMargin = Ui.dp(this, 12);
         return tile;
     }
 
@@ -267,16 +311,42 @@ public class MainActivity extends Activity {
     private void loadTileImage() {
         if (tileBitmap != null) {
             tileImage.setImageBitmap(tileBitmap);
+            volumeImage.setImageBitmap(volumeBitmap);
             return;
         }
         int w = getResources().getDisplayMetrics().widthPixels - 2 * Ui.dp(this, 16), h = Ui.dp(this, 200);
         bg.execute(() -> {
-            Bitmap b = tileArt(w, h);
+            Bitmap b = tileArt(w, h), v = volumeArt(w, Ui.dp(this, 140));
             runOnUiThread(() -> {
                 tileBitmap = b;
+                volumeBitmap = v;
                 tileImage.setImageBitmap(b);
+                volumeImage.setImageBitmap(v);
             });
         });
+    }
+
+    // The volume tile's art: the same LED grid, with a column on the right lit like a volume meter.
+    private Bitmap volumeArt(int w, int h) {
+        Bitmap b = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888);
+        android.graphics.Canvas c = new android.graphics.Canvas(b);
+        android.graphics.Paint p = new android.graphics.Paint(android.graphics.Paint.ANTI_ALIAS_FLAG);
+        p.setShader(new android.graphics.LinearGradient(0, 0, w, h, 0xFF24242C, 0xFF0B0B0E, android.graphics.Shader.TileMode.CLAMP));
+        c.drawRect(0, 0, w, h, p);
+        p.setShader(null);
+        float step = Ui.dp(this, 11), dot = Ui.dp(this, 3);
+        int cols = (int) (w / step);
+        for (int col = 0; col < cols; col++) {
+            float x = step / 2 + col * step;
+            // Towards the right, columns rise like a volume meter; further left they fade to the plain grid.
+            float level = Math.max(0, (float) (col - cols * 0.55) / (cols * 0.45f));
+            for (float y = step / 2; y < h; y += step) {
+                boolean lit = y > h * (1 - level * 0.85f);
+                p.setColor(((lit ? (int) (40 + 150 * level) : 14) << 24) | 0xFFFFFF);
+                c.drawRect(x - dot / 2, y - dot / 2, x + dot / 2, y + dot / 2, p);
+            }
+        }
+        return b;
     }
 
     private Bitmap tileArt(int w, int h) {
@@ -332,6 +402,9 @@ public class MainActivity extends Activity {
     }
 
     private void refreshStatus() {
+        if (!volumeSwitch.isChecked()) volumeStatus.setText("Off");
+        else if (!Wallpapers.isActive(this)) volumeStatus.setText("Works while TapOff is your wallpaper");
+        else volumeStatus.setText("On. Slide the left edge of the screen.");
         if (!LockService.canLock(this)) lockStatus.setText("Needs a one-time setup, see Settings");
         else if (homeSwitch.isChecked() && lockSwitch.isChecked()) lockStatus.setText("On for the home and lock screen");
         else if (homeSwitch.isChecked()) lockStatus.setText("On for the home screen");
