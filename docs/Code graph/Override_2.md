@@ -1,18 +1,19 @@
 ---
 source_file: ""
 type: "code"
-community: "LockService.java"
+community: "android.graphics.Bitmap"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LockServicejava
+  - community/androidgraphicsBitmap
 ---
 
 # Override
 
 ## Connections
-- [[dot-onAccessibilityEvent()]] - `references` [EXTRACTED]
-- [[dot-onInterrupt()]] - `references` [EXTRACTED]
-- [[dot-onServiceConnected()]] - `references` [EXTRACTED]
+- [[dot-onDraw()]] - `references` [EXTRACTED]
+- [[dot-onMeasure()]] - `references` [EXTRACTED]
+- [[dot-onSizeChanged()]] - `references` [EXTRACTED]
+- [[dot-setPressed()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LockServicejava
+#graphify/code #graphify/EXTRACTED #community/androidgraphicsBitmap

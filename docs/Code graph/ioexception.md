@@ -1,17 +1,18 @@
 ---
 source_file: ""
 type: "concept"
-community: "Wallpapers.java"
+community: "SlidersActivity.java"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Wallpapersjava
+  - community/SlidersActivityjava
 ---
 
 # ioexception
 
 ## Connections
-- [[EdgeSlider.java]] - `imports` [EXTRACTED]
+- [[NotchPanel.java]] - `imports` [EXTRACTED]
+- [[SlidersActivity.java]] - `imports` [EXTRACTED]
 - [[Wallpapers.java]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Wallpapersjava
+#graphify/concept #graphify/EXTRACTED #community/SlidersActivityjava

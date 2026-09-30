@@ -1,20 +1,22 @@
 ---
-source_file: "src/com/taseen/tapoff/EdgeSlider.java"
+source_file: "src/com/taseen/tapoff/NotchPanel.java"
 type: "code"
-community: "EdgeSlider"
-location: "L39"
+community: "NotchPanel"
+location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EdgeSlider
+  - community/NotchPanel
 ---
 
 # .enabled()
 
 ## Connections
+- [[dot-onCreate()_3]] - `calls` [EXTRACTED]
+- [[dot-open()]] - `calls` [EXTRACTED]
 - [[dot-refreshState()]] - `calls` [EXTRACTED]
 - [[dot-sync()]] - `calls` [EXTRACTED]
-- [[EdgeSlider]] - `method` [EXTRACTED]
+- [[NotchPanel]] - `method` [EXTRACTED]
 - [[android.content.Context]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EdgeSlider
+#graphify/code #graphify/EXTRACTED #community/NotchPanel

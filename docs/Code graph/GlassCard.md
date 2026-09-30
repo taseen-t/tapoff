@@ -1,18 +1,19 @@
 ---
 source_file: "src/com/taseen/tapoff/GlassCard.java"
 type: "code"
-community: "CutoutArt.java"
+community: "android.graphics.Bitmap"
 location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CutoutArtjava
+  - community/androidgraphicsBitmap
 ---
 
 # GlassCard
 
 ## Connections
 - [[dot-GlassCard()]] - `method` [EXTRACTED]
+- [[dot-addCard()]] - `references` [EXTRACTED]
 - [[dot-bind()]] - `method` [EXTRACTED]
 - [[dot-onDraw()]] - `method` [EXTRACTED]
 - [[dot-onMeasure()]] - `method` [EXTRACTED]
@@ -29,4 +30,4 @@ tags:
 - [[android.graphics.drawable.Drawable]] - `references` [EXTRACTED]
 - [[android.view.View]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CutoutArtjava
+#graphify/code #graphify/EXTRACTED #community/androidgraphicsBitmap

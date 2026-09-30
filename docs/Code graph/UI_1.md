@@ -1,19 +1,20 @@
 ---
 source_file: "docs/Architecture.md"
 type: "document"
-community: ".onDraw"
-location: "L45"
+community: "android.content.Context"
+location: "L49"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/onDraw
+  - community/androidcontentContext
 ---
 
 # UI
 
 ## Connections
 - [[dot-blend()]] - `references` [INFERRED]
+- [[dot-checkForUpdate()]] - `references` [INFERRED]
 - [[dot-switchArt()]] - `references` [INFERRED]
 - [[Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/onDraw
+#graphify/document #graphify/INFERRED #community/androidcontentContext

@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/MainActivity.java"
 type: "code"
-community: "Override"
-location: "L679"
+community: "MainActivity.java"
+location: "L791"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Override
+  - community/MainActivityjava
 ---
 
 # .beginPageDrag()
@@ -15,4 +15,4 @@ tags:
 - [[dot-onInterceptTouchEvent()]] - `calls` [EXTRACTED]
 - [[MainActivity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Override
+#graphify/code #graphify/EXTRACTED #community/MainActivityjava

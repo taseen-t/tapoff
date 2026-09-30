@@ -1,19 +1,19 @@
 ---
 source_file: "src/com/taseen/tapoff/Ui.java"
 type: "code"
-community: ".onDraw"
+community: "android.content.Context"
 location: "L97"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/onDraw
+  - community/androidcontentContext
 ---
 
 # .blend()
 
 ## Connections
-- [[dot-onDraw()_2]] - `calls` [EXTRACTED]
+- [[dot-drawPill()]] - `calls` [EXTRACTED]
 - [[UI_1]] - `references` [INFERRED]
 - [[Ui]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/onDraw
+#graphify/code #graphify/EXTRACTED #community/androidcontentContext

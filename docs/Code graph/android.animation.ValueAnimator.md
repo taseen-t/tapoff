@@ -1,18 +1,19 @@
 ---
 source_file: ""
 type: "code"
-community: "CutoutArt.java"
+community: "android.view.View"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CutoutArtjava
+  - community/androidviewView
 ---
 
 # android.animation.ValueAnimator
 
 ## Connections
-- [[EdgeSlider.java]] - `imports` [EXTRACTED]
-- [[Notch]] - `references` [EXTRACTED]
+- [[DoubleTapHint.java]] - `imports` [EXTRACTED]
+- [[NotchPanel.java]] - `imports` [EXTRACTED]
+- [[Panel]] - `references` [EXTRACTED]
 - [[SwipeHint.java]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CutoutArtjava
+#graphify/code #graphify/EXTRACTED #community/androidviewView

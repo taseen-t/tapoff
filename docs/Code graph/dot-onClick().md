@@ -1,19 +1,18 @@
 ---
-source_file: "src/com/taseen/tapoff/ScreenOffTile.java"
+source_file: "src/com/taseen/tapoff/VolumeTile.java"
 type: "code"
-community: "LockService.java"
+community: "log"
 location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LockServicejava
+  - community/log
 ---
 
 # .onClick()
 
 ## Connections
-- [[dot-lock()]] - `calls` [EXTRACTED]
-- [[Override_3]] - `references` [EXTRACTED]
-- [[ScreenOffTile]] - `method` [EXTRACTED]
+- [[Override_1]] - `references` [EXTRACTED]
+- [[VolumeTile]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LockServicejava
+#graphify/code #graphify/EXTRACTED #community/log

@@ -1,16 +1,13 @@
 ---
 source_file: ""
 type: "concept"
-community: "Wallpapers.java"
+community: "overshootinterpolator"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Wallpapersjava
+  - community/overshootinterpolator
 ---
 
 # overshootinterpolator
 
-## Connections
-- [[EdgeSlider.java]] - `imports` [EXTRACTED]
-
-#graphify/concept #graphify/EXTRACTED #community/Wallpapersjava
+#graphify/concept #graphify/EXTRACTED #community/overshootinterpolator

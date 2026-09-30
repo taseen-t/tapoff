@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "CutoutArt.java"
+community: "android.view.View"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CutoutArtjava
+  - community/androidviewView
 ---
 
 # Override
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[dot-onDraw()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CutoutArtjava
+#graphify/code #graphify/EXTRACTED #community/androidviewView

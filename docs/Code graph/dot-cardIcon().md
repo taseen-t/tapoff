@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/MainActivity.java"
 type: "code"
-community: "android.content.Context"
-location: "L507"
+community: "android.graphics.Bitmap"
+location: "L601"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidcontentContext
+  - community/androidgraphicsBitmap
 ---
 
 # .cardIcon()
@@ -15,4 +15,4 @@ tags:
 - [[dot-addCard()]] - `calls` [EXTRACTED]
 - [[MainActivity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidcontentContext
+#graphify/code #graphify/EXTRACTED #community/androidgraphicsBitmap

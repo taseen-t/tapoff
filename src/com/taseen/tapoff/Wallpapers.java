@@ -48,7 +48,19 @@ final class Wallpapers {
         {"Abstract", "+abstract" + PEOPLE, "z8gz7w", "9me7j8 eogzx8"},
         {"Minimal", "+minimalism" + PEOPLE, "lqjqdp", "572128 2ek616 gp5ywd w8232p jx57qm"},
         {"Dreamscape", "+digital art +landscape" + PEOPLE, "jxkr9q", "exl7kr ex7o7w"},
-        {"Space", "+nebula" + PEOPLE, "d65kwm", ""},
+    };
+    // NASA's image library, full-resolution originals. Hand-picked: its search can't tell how big an original is
+    // (some are 50 MB, some under 2,000px), and it mixes in captioned press sheets and diagrams. Each of these is at
+    // least 2,200px tall, under 12 MB and has no text on it; checked on 2026-09-30. {NASA id, title}; the first is the
+    // card's cover.
+    private static final String[][] NASA = {
+        {"PIA01322", "Heart of Orion"}, {"PIA03606", "Crab Nebula"}, {"PIA03678", "Helix Nebula"},
+        {"GSFC_20171208_Archive_e001518", "Horsehead Nebula"}, {"0302063", "Omega Nebula"},
+        {"0300724", "Calabash Nebula"}, {"0203047", "Cone Nebula"}, {"PIA14415", "Tarantula Nebula"},
+        {"GSFC_20171208_Archive_e002039", "Bubbles and Baby Stars"}, {"0302062", "Orion Bow Shock"},
+        {"9905980", "Crab Nebula in X-rays"}, {"GSFC_20171208_Archive_e001578", "NGC 5189"},
+        {"PIA25433", "Eagle Nebula"}, {"PIA03096", "Towering Infernos"}, {"potw1853a", "Newborn Star"},
+        {"GSFC_20171208_Archive_e000034", "Spirograph Nebula"},
     };
 
     static final class Item {
@@ -86,9 +98,13 @@ final class Wallpapers {
         } catch (IOException | JSONException e) {
             Log.w("TapOff", "Bing unavailable", e);
         }
+        out.accept(nasa());
+        // Wallhaven searches overlap (the same picture can be tagged abstract and minimal), so each picture shows up
+        // only in the first set that has it.
+        java.util.Set<String> seen = new java.util.HashSet<>();
         for (String[] t : THEMES) {
             try {
-                Collection col = wallhaven(c, t[0], t[1], t[2], t[3]);
+                Collection col = wallhaven(c, t[0], t[1], t[2], t[3], seen);
                 if (!col.items.isEmpty()) out.accept(col);
             } catch (IOException | JSONException e) {
                 Log.w("TapOff", "Wallhaven " + t[0] + " unavailable", e);
@@ -98,14 +114,15 @@ final class Wallpapers {
 
     private static Collection pixel(Context c) {
         List<Item> items = new ArrayList<>();
+        java.util.Set<Integer> seen = new java.util.HashSet<>();
         try {
             Resources res = pixelRes(c);
             try (XmlResourceParser x = res.getXml(res.getIdentifier("wallpapers", "xml", PIXEL_PACK))) {
                 for (int t = x.getEventType(); t != XmlPullParser.END_DOCUMENT; t = x.next()) {
                     if (t != XmlPullParser.START_TAG || !"static-wallpaper".equals(x.getName())) continue;
-                    int title = x.getAttributeResourceValue(null, "title", 0);
-                    items.add(new Item(title != 0 ? res.getString(title) : "Pixel", null, null,
-                        "", x.getAttributeResourceValue(null, "src", 0)));
+                    int title = x.getAttributeResourceValue(null, "title", 0), src = x.getAttributeResourceValue(null, "src", 0);
+                    if (!seen.add(src)) continue; // the pack can list a wallpaper under more than one category
+                    items.add(new Item(title != 0 ? res.getString(title) : "Pixel", null, null, "", src));
                 }
             }
         } catch (Exception e) { // no Pixel pack on this phone, or its format changed
@@ -127,8 +144,17 @@ final class Wallpapers {
         return new Collection("Today", "Bing", items);
     }
 
-    private static Collection wallhaven(Context c, String name, String query, String cover, String blocked)
-            throws IOException, JSONException {
+    private static Collection nasa() {
+        List<Item> items = new ArrayList<>();
+        for (String[] n : NASA) {
+            String base = "https://images-assets.nasa.gov/image/" + n[0] + "/" + n[0];
+            items.add(new Item(n[1], base + "~orig.jpg", base + "~small.jpg", "NASA", 0));
+        }
+        return new Collection("NASA", "NASA", items);
+    }
+
+    private static Collection wallhaven(Context c, String name, String query, String cover, String blocked,
+                                        java.util.Set<String> seen) throws IOException, JSONException {
         // Keyed by the search itself, so changing a search never reuses an old list.
         JSONArray a = new JSONObject(list(c, "wallhaven-" + sha1(query),
             "https://wallhaven.cc/api/v1/search?q=" + URLEncoder.encode(query, StandardCharsets.UTF_8)
@@ -138,7 +164,7 @@ final class Wallpapers {
         for (int i = 0; i < a.length(); i++) {
             JSONObject o = a.getJSONObject(i);
             String id = o.getString("id");
-            if (blocked.contains(id)) continue;
+            if (blocked.contains(id) || !seen.add(id)) continue;
             Item it = new Item(name, o.getString("path"), null, "", 0);
             if (id.equals(cover)) items.add(0, it);
             else items.add(it);
@@ -147,7 +173,7 @@ final class Wallpapers {
     }
 
     // A cached API response, refreshed after LIST_TTL_MS.
-    private static String list(Context c, String key, String url) throws IOException {
+    static String list(Context c, String key, String url) throws IOException {
         File f = new File(c.getCacheDir(), "lists/" + key + ".json");
         if (System.currentTimeMillis() - f.lastModified() > LIST_TTL_MS) {
             try {
@@ -271,7 +297,67 @@ final class Wallpapers {
         }
         // Rename so the wallpaper never reads a half-written file.
         Files.move(tmp.toPath(), out.toPath(), StandardCopyOption.REPLACE_EXISTING);
-        WallpaperManager.getInstance(c).setBitmap(bmp, null, true, WallpaperManager.FLAG_LOCK);
+        WallpaperManager.getInstance(c).setBitmap(bmp, screenCrop(c, bmp), true, WallpaperManager.FLAG_LOCK);
+    }
+
+    // The part of the picture the home screen shows: centre-cropped to the screen, like TapWallpaper draws it. Given no
+    // crop, Android frames the lock screen its own way, zoomed differently from the home screen.
+    static android.graphics.Rect screenCrop(Context c, Bitmap b) {
+        android.graphics.Rect screen = c.getSystemService(android.view.WindowManager.class).getMaximumWindowMetrics().getBounds();
+        float scale = Math.max((float) screen.width() / b.getWidth(), (float) screen.height() / b.getHeight());
+        int w = Math.min(b.getWidth(), Math.round(screen.width() / scale));
+        int h = Math.min(b.getHeight(), Math.round(screen.height() / scale));
+        int x = (b.getWidth() - w) / 2, y = (b.getHeight() - h) / 2;
+        return new android.graphics.Rect(x, y, x + w, y + h);
+    }
+
+    // Favourites, newest first, in a small JSON file. A picture is remembered by its address, a Pixel one by its
+    // resource id. ponytail: a Pixel wallpaper-pack update could renumber ids; store resource names if that bites.
+    static String key(Item it) {
+        return it.full != null ? it.full : "res:" + it.res;
+    }
+
+    static List<Item> favourites(Context c) {
+        List<Item> out = new ArrayList<>();
+        try {
+            JSONArray a = new JSONArray(new String(Files.readAllBytes(favourites(c, false).toPath()), StandardCharsets.UTF_8));
+            for (int i = 0; i < a.length(); i++) {
+                JSONObject o = a.getJSONObject(i);
+                out.add(new Item(o.getString("title"), o.has("full") ? o.getString("full") : null,
+                    o.has("cover") ? o.getString("cover") : null, o.optString("credit"), o.optInt("res")));
+            }
+        } catch (IOException | JSONException e) { // none saved yet
+        }
+        return out;
+    }
+
+    static boolean isFavourite(Context c, Item it) {
+        for (Item f : favourites(c)) if (key(f).equals(key(it))) return true;
+        return false;
+    }
+
+    static synchronized void setFavourite(Context c, Item it, boolean on) {
+        List<Item> list = favourites(c);
+        list.removeIf(f -> key(f).equals(key(it)));
+        if (on) list.add(0, it);
+        try {
+            JSONArray a = new JSONArray();
+            for (Item f : list) {
+                JSONObject o = new JSONObject().put("title", f.title).put("credit", f.credit).put("res", f.res);
+                if (f.full != null) o.put("full", f.full);
+                if (f.cover != null) o.put("cover", f.cover);
+                a.put(o);
+            }
+            File tmp = favourites(c, true);
+            Files.write(tmp.toPath(), a.toString().getBytes(StandardCharsets.UTF_8));
+            Files.move(tmp.toPath(), favourites(c, false).toPath(), StandardCopyOption.REPLACE_EXISTING);
+        } catch (IOException | JSONException e) {
+            Log.w("TapOff", "couldn't save favourites", e);
+        }
+    }
+
+    private static File favourites(Context c, boolean temp) {
+        return new File(c.getFilesDir(), temp ? "favourites.tmp" : "favourites.json");
     }
 
     static boolean isActive(Context c) {

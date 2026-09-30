@@ -1,12 +1,12 @@
 ---
 source_file: "docs/Architecture.md"
 type: "document"
-community: "LockService.java"
-location: "L60"
+community: "TapWallpaper"
+location: "L66"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LockServicejava
+  - community/TapWallpaper
 ---
 
 # Website (`site/`)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LockServicejava
+#graphify/document #graphify/EXTRACTED #community/TapWallpaper

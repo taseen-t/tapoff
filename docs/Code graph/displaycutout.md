@@ -12,5 +12,6 @@ tags:
 
 ## Connections
 - [[CutoutArt.java]] - `imports` [EXTRACTED]
+- [[NotchPanel.java]] - `imports` [EXTRACTED]
 
 #graphify/concept #graphify/EXTRACTED #community/CutoutArtjava

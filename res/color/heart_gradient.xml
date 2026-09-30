@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The favourite heart's red gradient, in the heart path's own coordinates (Material's 960 grid, y from -960 to 0). -->
+<gradient xmlns:android="http://schemas.android.com/apk/res/android"
+    android:type="linear" android:startX="120" android:startY="-860" android:endX="840" android:endY="-120"
+    android:startColor="#FFFF6A88" android:centerColor="#FFFF2D55" android:endColor="#FFC2185B" />

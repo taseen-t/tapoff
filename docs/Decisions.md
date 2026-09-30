@@ -46,3 +46,33 @@ Newest at the bottom. Each one says why, so nobody undoes it by accident.
     wrap on phones (`min-width: 0` on flex and grid children) or they push the page sideways. (2026-09-30)
 17. **1.7.1, not a replaced 1.7.** Screenshots and icons changed after 1.7 was published; a new version keeps the
     1.7 download honest. (2026-09-30)
+18. **Install from a computer.** Play Protect's enhanced fraud protection (on in Pakistan, India and others) blocks
+    installing any app with an accessibility service from a browser or file manager ("App blocked to protect your
+    device"), with no way past it. `adb install` isn't blocked, and setup already needs adb, so the site and README
+    now install and grant in one command. (2026-09-30)
+19. **Lock screen gets a crop hint.** Without one Android framed the lock screen its own way, zoomed differently from the
+    home screen's centre crop (seen on a second phone). `setBitmap` now gets the same centre-crop rect. (2026-09-30)
+20. **Update check through the lists' cache.** GitHub's latest-release JSON is fetched like a wallpaper list (12 h
+    cache, quiet offline), so no new networking code; the privacy note says so. (2026-09-30)
+21. **NASA as hand-picked originals.** The picture-of-the-day API needs a key and its demo key allows 10 requests an
+    hour per IP (shared behind mobile carrier NAT). The image library needs no key, but its 1920px "large" copies look
+    pixelated cropped to a phone, and its search can't tell original sizes (some 50 MB). So: 16 ids, each at least
+    2,200px tall, under 12 MB, no text on them. It replaced Wallhaven's nebula set, mostly re-uploaded Hubble photos
+    (one nebula appeared three times). (2026-09-30)
+22. **No duplicates across wallpaper sets.** Wallhaven searches overlap (5 pictures were in both Abstract and Minimal),
+    so a picture shows only in the first set that has it; the Pixel pack is de-duplicated by resource. (2026-09-30)
+23. **Sliders open by back tap, not by tapping the camera (in portrait).** Taseen wanted a tap on the camera, but the
+    status bar window sits above every app overlay and owns the top 136px, camera included, so the tap never reaches
+    TapOff (measured with `dumpsys input`). Options offered: a spot under the camera, keep edge slides, a Quick
+    Settings tile, or Pixel's Quick Tap. He chose Quick Tap. The camera tap stays in landscape, where the status bar
+    isn't over it. The VLC-style edge strips are gone. (2026-09-30)
+24. **The sliders' window covers only the sliders.** A full-screen window made the phone unusable while they were
+    out. Now `FLAG_NOT_TOUCH_MODAL` + `FLAG_WATCH_OUTSIDE_TOUCH`: touches elsewhere reach apps and also close the
+    sliders. (2026-09-30)
+25. **Favourites like Instagram.** Double-tap only adds (never removes), with a red gradient heart that pops, wiggles
+    and floats away; the heart by the name toggles. A double-tap hint (hand, heart floating up) follows the swipe hint
+    instead of text. (2026-09-30)
+26. **"Back tap is set up" comes from use, not from settings.** Apps can't read Quick Tap's `columbus_*` settings
+    (hidden Secure settings, same as `double_tap_to_sleep`). So `SlidersActivity` notes the first time something other
+    than the home screen's app icon opens it (checked with the referrer), and the button changes then. It still opens
+    Quick Tap's settings page. (2026-09-30)

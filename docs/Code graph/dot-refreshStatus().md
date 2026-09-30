@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/MainActivity.java"
 type: "code"
-community: "EdgeSlider"
-location: "L466"
+community: "NotchPanel"
+location: "L540"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EdgeSlider
+  - community/NotchPanel
 ---
 
 # .refreshStatus()
@@ -16,7 +16,7 @@ tags:
 - [[dot-isActive()]] - `calls` [EXTRACTED]
 - [[dot-lockTile()]] - `calls` [EXTRACTED]
 - [[dot-refreshState()]] - `calls` [EXTRACTED]
-- [[dot-setEdge()]] - `calls` [EXTRACTED]
+- [[dot-volumeTile()]] - `calls` [EXTRACTED]
 - [[MainActivity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EdgeSlider
+#graphify/code #graphify/EXTRACTED #community/NotchPanel

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The pixel hand from the app icon tapping the back of a Pixel (outline and camera bar): back tap. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp" android:height="24dp" android:viewportWidth="54" android:viewportHeight="54">
+    <group android:translateX="-27" android:translateY="-28">
+        <path android:fillColor="#FFFFFFFF" android:fillAlpha="0.45" android:pathData="M32.98,30.00H65.03V31.98H32.98ZM31.00,31.98H32.98V84.03H31.00ZM65.03,31.98H67.00V62.00H65.03ZM32.98,31.98H33.96V32.96H32.98ZM64.04,31.98H65.03V32.96H64.04Z" />
+        <path android:fillColor="#FFFFFFFF" android:fillAlpha="0.45" android:pathData="M33.98,35.00H64.03V39.00H33.98Z" />
+        <group android:translateY="14">
+            <path android:fillColor="#FFFFFFFF" android:fillAlpha="0.7" android:pathData="@string/hand_burst" />
+            <path android:fillColor="#FFFFFFFF" android:pathData="@string/hand_body" />
+        </group>
+    </group>
+</vector>

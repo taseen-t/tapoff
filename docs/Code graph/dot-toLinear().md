@@ -1,19 +1,18 @@
 ---
-source_file: "src/com/taseen/tapoff/EdgeSlider.java"
+source_file: "src/com/taseen/tapoff/NotchPanel.java"
 type: "code"
-community: "EdgeSlider"
-location: "L301"
+community: "NotchPanel"
+location: "L434"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EdgeSlider
+  - community/NotchPanel
 ---
 
 # .toLinear()
 
 ## Connections
-- [[dot-onBrightnessTouch()]] - `calls` [EXTRACTED]
-- [[Edge sliders (`EdgeSlider.java`)]] - `references` [INFERRED]
-- [[EdgeSlider]] - `method` [EXTRACTED]
+- [[dot-write()]] - `calls` [EXTRACTED]
+- [[NotchPanel]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EdgeSlider
+#graphify/code #graphify/EXTRACTED #community/NotchPanel

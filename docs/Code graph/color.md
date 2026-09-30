@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "LockService.java"
+community: "CutoutArt.java"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/LockServicejava
+  - community/CutoutArtjava
 ---
 
 # color
@@ -14,4 +14,4 @@ tags:
 - [[LockService.java]] - `imports` [EXTRACTED]
 - [[TapWallpaper.java]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/LockServicejava
+#graphify/concept #graphify/EXTRACTED #community/CutoutArtjava

@@ -45,6 +45,12 @@ public class MainActivity extends Activity {
     private static final String[] APPEARANCE = {"System", "Light", "Dark"};
     private static final int[] NIGHT_MODE = {UiModeManager.MODE_NIGHT_AUTO, UiModeManager.MODE_NIGHT_NO, UiModeManager.MODE_NIGHT_YES};
 
+    private static final String GRANT = "adb shell pm grant com.taseen.tapoff android.permission.WRITE_SECURE_SETTINGS",
+        SETUP_GUIDE = "https://tapoff.vercel.app/#setup",
+        RELEASES_API = "https://api.github.com/repos/taseen-t/tapoff/releases/latest",
+        RELEASES = "https://github.com/taseen-t/tapoff/releases/latest",
+        QUICK_TAP_SETTINGS = "com.google.android.settings.gestures.QUICK_TAP_SETTINGS";
+
     private final ExecutorService bg = Executors.newFixedThreadPool(3);
     // ponytail: every card stays alive (no recycling) so the deck can show; fine for the ~8 collections.
     private final List<GlassCard> cards = new ArrayList<>();
@@ -58,11 +64,16 @@ public class MainActivity extends Activity {
     private TextView lockStatus;
     private ImageView tileImage, volumeImage;
     private TextView volumeStatus;
-    private Switch volumeSwitch, brightnessSwitch;
-    private int wantEdge = -1; // the edge slider the user turned on before going to allow the permission
+    private Switch panelSwitch, cameraSwitch;
+    private Button backTap;
+    private boolean wantPanel; // turned on, and went to allow "Display over other apps"
     private Bitmap volumeBitmap;
     private Switch homeSwitch, lockSwitch;
     private View setupCard;
+    private Button update;
+    private View wallpapersHeader;
+    private GlassCard favCard;
+    private String latestVersion; // set once GitHub has a newer release than this one
     private Button setTapOff;
     private final TextView[] tabs = new TextView[2];
     private View indicator;
@@ -81,6 +92,7 @@ public class MainActivity extends Activity {
             collections.add(col);
             addCard(col);
         })));
+        checkForUpdate();
     }
 
     @Override protected void onSaveInstanceState(Bundle out) {
@@ -114,6 +126,7 @@ public class MainActivity extends Activity {
 
     private void buildUi(int showTab) {
         cards.clear();
+        favCard = null;
         tab = -1;
         FrameLayout root = new SwipeRoot(this);
         root.setBackgroundColor(Ui.bg(this));
@@ -124,9 +137,16 @@ public class MainActivity extends Activity {
         feedList = new LinearLayout(this);
         feedList.setOrientation(LinearLayout.VERTICAL);
         feedList.addView(title("TapOff"));
+        update = Ui.pill(this, "", Ui.Pill.PRIMARY);
+        update.setOnClickListener(v -> startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(RELEASES))));
+        LinearLayout.LayoutParams updateLp = new LinearLayout.LayoutParams(-1, -2);
+        updateLp.setMargins(Ui.dp(this, 16), 0, Ui.dp(this, 16), Ui.dp(this, 12));
+        feedList.addView(update, updateLp);
+        showUpdate();
         feedList.addView(lockTile());
         feedList.addView(volumeTile());
-        feedList.addView(section("Wallpapers"));
+        wallpapersHeader = section("Wallpapers");
+        feedList.addView(wallpapersHeader);
         feed.addView(feedList);
         feed.setOnScrollChangeListener((v, x, y, ox, oy) -> stackCards());
         feedList.addOnLayoutChangeListener((v, l, t, r, b, ol, ot, or, ob) -> stackCards());
@@ -172,17 +192,64 @@ public class MainActivity extends Activity {
 
     private void refreshState() {
         loadTileImage();
-        if (wantEdge >= 0 && EdgeSlider.allowed(this, wantEdge)) EdgeSlider.setEnabled(this, wantEdge, true);
-        wantEdge = -1;
-        volumeSwitch.setChecked(EdgeSlider.enabled(this, EdgeSlider.VOLUME) && EdgeSlider.allowed(this, EdgeSlider.VOLUME));
-        brightnessSwitch.setChecked(EdgeSlider.enabled(this, EdgeSlider.BRIGHTNESS)
-            && EdgeSlider.allowed(this, EdgeSlider.BRIGHTNESS));
-        EdgeSlider.changed(this); // the permissions may have changed while we were away
+        refreshFavourites();
+        if (wantPanel && NotchPanel.allowed(this)) NotchPanel.setEnabled(this, true);
+        wantPanel = false;
+        panelSwitch.setChecked(NotchPanel.enabled(this) && NotchPanel.allowed(this));
+        cameraSwitch.setChecked(NotchPanel.cameraTap(this));
+        backTap.setText(SlidersActivity.backTapSeen(this) ? "Back tap is set up" : "Set up back tap");
+        NotchPanel.changed(this); // the permission may have changed while we were away
         homeSwitch.setChecked(TapWallpaper.enabled(this));
         lockSwitch.setChecked(LockService.lockScreenOn(this));
         refreshStatus();
         setupCard.setVisibility(LockService.canLock(this) ? View.GONE : View.VISIBLE);
         setTapOff.setVisibility(Wallpapers.isActive(this) ? View.GONE : View.VISIBLE);
+    }
+
+    private String versionName() {
+        try {
+            return getPackageManager().getPackageInfo(getPackageName(), 0).versionName;
+        } catch (android.content.pm.PackageManager.NameNotFoundException e) {
+            return "";
+        }
+    }
+
+    // Asks GitHub for the newest release, through the wallpaper lists' cache (so at most twice a day, and quiet
+    // offline). A newer one shows an Update button under the title.
+    private void checkForUpdate() {
+        bg.execute(() -> {
+            try {
+                String latest = new org.json.JSONObject(Wallpapers.list(this, "release", RELEASES_API))
+                    .getString("tag_name").replaceFirst("^v", "");
+                if (!newer(latest, versionName())) return;
+                runOnUiThread(() -> {
+                    latestVersion = latest;
+                    showUpdate();
+                });
+            } catch (Exception e) {
+                Log.w("TapOff", "update check failed", e);
+            }
+        });
+    }
+
+    private void showUpdate() {
+        update.setVisibility(latestVersion == null ? View.GONE : View.VISIBLE);
+        if (latestVersion != null) update.setText("Update to TapOff " + latestVersion);
+    }
+
+    // True if version a (like "1.8" or "1.7.1") is later than version b.
+    static boolean newer(String a, String b) {
+        String[] x = a.split("\\."), y = b.split("\\.");
+        for (int i = 0; i < Math.max(x.length, y.length); i++) {
+            int p = i < x.length ? number(x[i]) : 0, q = i < y.length ? number(y[i]) : 0;
+            if (p != q) return p > q;
+        }
+        return false;
+    }
+
+    private static int number(String part) {
+        String digits = part.replaceAll("\\D", "");
+        return digits.isEmpty() ? 0 : Integer.parseInt(digits);
     }
 
     @Override protected void onDestroy() {
@@ -285,37 +352,44 @@ public class MainActivity extends Activity {
         return tile;
     }
 
-    // Slide up or down on the left edge for volume and the right edge for brightness, like in VLC. Both need
-    // "Display over other apps", which only the user can allow.
+    // Brightness and volume sliders that grow out of the camera. They open with a double-tap on the back of the phone
+    // (Pixel's Quick Tap, pointed at SlidersActivity) or, in landscape, a tap on the camera, which can be switched off
+    // on its own. Needs "Display over other apps", which only the user can allow.
     private FrameLayout volumeTile() {
         int onText = 0xFFFFFFFF, soft = 0xCCFFFFFF;
         FrameLayout tile = new FrameLayout(this);
         volumeImage = tileArtView();
         volumeStatus = Ui.text(this, "", 13, 400, soft);
-        LinearLayout content = artTile(tile, volumeImage, "Slide the edges", R.drawable.ic_slide, volumeStatus);
-        volumeSwitch = switchRow(content, "Volume", "Slide up or down the left edge", onText, soft);
-        volumeSwitch.setOnCheckedChangeListener((b, checked) -> setEdge(b, EdgeSlider.VOLUME, checked));
-        brightnessSwitch = switchRow(content, "Brightness", "Slide up or down the right edge", onText, soft);
-        brightnessSwitch.setOnCheckedChangeListener((b, checked) -> setEdge(b, EdgeSlider.BRIGHTNESS, checked));
-        ((LinearLayout.LayoutParams) tile.getLayoutParams()).topMargin = Ui.dp(this, 12);
-        return tile;
-    }
-
-    private void setEdge(android.widget.CompoundButton b, int kind, boolean on) {
-        if (on && !EdgeSlider.allowed(this, kind)) {
-            b.setChecked(false);
-            if (!LockService.canLock(this) && kind == EdgeSlider.BRIGHTNESS) {
-                Toast.makeText(this, "Needs the one-time setup in Settings first", Toast.LENGTH_LONG).show();
+        LinearLayout content = artTile(tile, volumeImage, "Brightness and volume", R.drawable.ic_back_tap, volumeStatus);
+        panelSwitch = switchRow(content, "Sliders", "Double-tap the back of the phone", onText, soft);
+        panelSwitch.setOnCheckedChangeListener((b, checked) -> {
+            if (checked && !NotchPanel.allowed(this)) {
+                b.setChecked(false);
+                wantPanel = true;
+                Toast.makeText(this, "Allow TapOff here, then come back", Toast.LENGTH_LONG).show();
+                startActivity(new Intent(android.provider.Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
+                    Uri.parse("package:" + getPackageName())));
                 return;
             }
-            wantEdge = kind;
-            Toast.makeText(this, "Allow TapOff here, then come back", Toast.LENGTH_LONG).show();
-            startActivity(new Intent(android.provider.Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
-                Uri.parse("package:" + getPackageName())));
-            return;
-        }
-        EdgeSlider.setEnabled(this, kind, on);
-        refreshStatus();
+            NotchPanel.setEnabled(this, checked);
+            refreshStatus();
+        });
+        cameraSwitch = switchRow(content, "Tap the camera", "In landscape, marked by a faint ring", onText, soft);
+        cameraSwitch.setOnCheckedChangeListener((b, checked) -> NotchPanel.setCameraTap(this, checked));
+        backTap = Ui.pill(this, "Set up back tap", Ui.Pill.ON_PHOTO);
+        backTap.setOnClickListener(v -> {
+            if (!SlidersActivity.backTapSeen(this)) Toast.makeText(this, "Open app → TapOff Sliders", Toast.LENGTH_LONG).show();
+            try {
+                startActivity(new Intent(QUICK_TAP_SETTINGS));
+            } catch (android.content.ActivityNotFoundException e) { // not a Pixel with Quick Tap
+                Toast.makeText(this, "This phone doesn't have Quick Tap", Toast.LENGTH_LONG).show();
+            }
+        });
+        LinearLayout.LayoutParams backLp = new LinearLayout.LayoutParams(-1, -2);
+        backLp.topMargin = Ui.dp(this, 12);
+        content.addView(backTap, backLp);
+        ((LinearLayout.LayoutParams) tile.getLayoutParams()).topMargin = Ui.dp(this, 12);
+        return tile;
     }
 
     // Behind the tile: TapOff's own art, a dark LED grid lit up by tap ripples around a big pixel hand.
@@ -464,10 +538,10 @@ public class MainActivity extends Activity {
     }
 
     private void refreshStatus() {
-        boolean vol = volumeSwitch.isChecked(), light = brightnessSwitch.isChecked();
-        if (!vol && !light) volumeStatus.setText("Off");
+        if (!panelSwitch.isChecked()) volumeStatus.setText("Off");
         else if (!Wallpapers.isActive(this)) volumeStatus.setText("Works while TapOff is your wallpaper");
-        else volumeStatus.setText(vol && light ? "On for volume and brightness" : vol ? "On for volume" : "On for brightness");
+        else if (!LockService.canLock(this)) volumeStatus.setText("On for volume. Brightness needs the one-time setup");
+        else volumeStatus.setText("On for brightness and volume");
         if (!LockService.canLock(this)) lockStatus.setText("Needs a one-time setup, see Settings");
         else if (homeSwitch.isChecked() && lockSwitch.isChecked()) lockStatus.setText("On for the home and lock screen");
         else if (homeSwitch.isChecked()) lockStatus.setText("On for the home screen");
@@ -475,7 +549,24 @@ public class MainActivity extends Activity {
         else lockStatus.setText("Off");
     }
 
-    private void addCard(Wallpapers.Collection col) {
+    // Favourites come first among the wallpapers and follow what's saved, so the card is rebuilt on every return.
+    private void refreshFavourites() {
+        if (favCard != null) {
+            feedList.removeView(favCard);
+            cards.remove(favCard);
+            favCard = null;
+        }
+        List<Wallpapers.Item> saved = Wallpapers.favourites(this);
+        if (saved.isEmpty()) return;
+        favCard = addCard(new Wallpapers.Collection("Favourites", "Saved", saved),
+            feedList.indexOfChild(wallpapersHeader) + 1);
+    }
+
+    private GlassCard addCard(Wallpapers.Collection col) {
+        return addCard(col, -1);
+    }
+
+    private GlassCard addCard(Wallpapers.Collection col, int at) {
         GlassCard card = new GlassCard(this);
         int n = col.items.size();
         card.bind(col.name, n + (n == 1 ? " wallpaper" : " wallpapers") + " · " + col.source, cardIcon(col.name));
@@ -483,36 +574,40 @@ public class MainActivity extends Activity {
         LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(-1, -2);
         int m = Ui.dp(this, 16);
         lp.setMargins(m, 0, m, Ui.dp(this, CARD_GAP_DP));
-        feedList.addView(card, lp);
+        feedList.addView(card, at, lp);
         cards.add(card);
-        Bitmap cached = covers.get(col.name);
+        // Keyed by the first picture too, since the favourites card's first picture changes.
+        String coverKey = col.name + "|" + Wallpapers.key(col.items.get(0));
+        Bitmap cached = covers.get(coverKey);
         if (cached != null) {
             card.setPhoto(cached);
-            return;
+            return card;
         }
         int w = Math.max(1, getResources().getDisplayMetrics().widthPixels - 2 * m);
         bg.execute(() -> {
             try {
                 Bitmap b = Wallpapers.decode(this, col.items.get(0), true, w, Math.round(w * 0.62f));
                 runOnUiThread(() -> {
-                    covers.put(col.name, b);
+                    covers.put(coverKey, b);
                     card.setPhoto(b);
                 });
             } catch (Exception e) {
                 Log.w("TapOff", "no cover for " + col.name, e);
             }
         });
+        return card;
     }
 
     private static int cardIcon(String name) {
         switch (name) {
+            case "Favourites": return R.drawable.ic_heart_fill;
             case "Pixel": return R.drawable.ic_card_pixel;
             case "Cutout": return R.drawable.ic_card_cutout;
             case "Today": return R.drawable.ic_card_today;
             case "Abstract": return R.drawable.ic_card_abstract;
             case "Minimal": return R.drawable.ic_card_minimal;
             case "Dreamscape": return R.drawable.ic_card_dream;
-            case "Space": return R.drawable.ic_card_space;
+            case "NASA": return R.drawable.ic_card_space;
             default: return R.drawable.ic_grid;
         }
     }
@@ -544,12 +639,28 @@ public class MainActivity extends Activity {
 
         LinearLayout setup = card(list);
         setup.addView(Ui.text(this, "One-time setup", 18, 600, Ui.ink(this)));
-        TextView how = Ui.text(this, "Double-tap lock needs a permission only a computer can give. With the phone "
-            + "plugged in, run:\nadb shell pm grant com.taseen.tapoff android.permission.WRITE_SECURE_SETTINGS",
-            14, 400, Ui.muted(this));
-        how.setTextIsSelectable(true);
-        how.setPadding(0, Ui.dp(this, 6), 0, 0);
+        TextView how = Ui.text(this, "Turning the screen off needs one permission that only a computer can give. "
+            + "Turn on USB debugging, plug the phone in, and run this on the computer:", 14, 400, Ui.muted(this));
+        how.setPadding(0, Ui.dp(this, 6), 0, Ui.dp(this, 10));
         setup.addView(how);
+        TextView cmd = Ui.text(this, GRANT, 12, 400, Ui.ink(this));
+        cmd.setTypeface(android.graphics.Typeface.MONOSPACE);
+        cmd.setTextIsSelectable(true);
+        cmd.setBackground(Ui.shape(this, 12, Ui.dark(this) ? 0x14FFFFFF : 0x0D000000, 0));
+        int pad = Ui.dp(this, 12);
+        cmd.setPadding(pad, pad, pad, pad);
+        setup.addView(cmd, new LinearLayout.LayoutParams(-1, -2));
+        Button copy = Ui.pill(this, "Copy command", Ui.Pill.PRIMARY);
+        copy.setOnClickListener(v -> getSystemService(android.content.ClipboardManager.class)
+            .setPrimaryClip(android.content.ClipData.newPlainText("TapOff setup", GRANT)));
+        LinearLayout.LayoutParams copyLp = new LinearLayout.LayoutParams(-1, -2);
+        copyLp.topMargin = Ui.dp(this, 12);
+        setup.addView(copy, copyLp);
+        Button guide = Ui.pill(this, "Step-by-step guide", Ui.Pill.SECONDARY);
+        guide.setOnClickListener(v -> startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(SETUP_GUIDE))));
+        LinearLayout.LayoutParams guideLp = new LinearLayout.LayoutParams(-1, -2);
+        guideLp.topMargin = Ui.dp(this, 8);
+        setup.addView(guide, guideLp);
         setupCard = setup;
 
         LinearLayout look = card(list);
@@ -607,7 +718,8 @@ public class MainActivity extends Activity {
         help.addView(bug, new LinearLayout.LayoutParams(-1, -2));
 
         TextView privacy = Ui.text(this, "Accessibility stays off. TapOff switches it on for a moment only while "
-            + "locking, so bank apps keep working.", 12.5f, 400, Ui.faint(this));
+            + "locking, so bank apps keep working. It goes online only for wallpapers and to check GitHub for "
+            + "updates.\nTapOff " + versionName(), 12.5f, 400, Ui.faint(this));
         privacy.setPadding(Ui.dp(this, 4), Ui.dp(this, 4), Ui.dp(this, 4), 0);
         list.addView(privacy);
 

@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "CutoutArt.java"
+community: "NotchPanel"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CutoutArtjava
+  - community/NotchPanel
 ---
 
 # LayoutParams
 
 ## Connections
-- [[dot-params()]] - `references` [EXTRACTED]
+- [[dot-overlay()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CutoutArtjava
+#graphify/code #graphify/EXTRACTED #community/NotchPanel

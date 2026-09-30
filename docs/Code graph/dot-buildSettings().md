@@ -2,7 +2,7 @@
 source_file: "src/com/taseen/tapoff/MainActivity.java"
 type: "code"
 community: "android.content.Context"
-location: "L538"
+location: "L633"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -28,6 +28,7 @@ tags:
 - [[dot-text()]] - `calls` [EXTRACTED]
 - [[dot-tileRow()]] - `calls` [EXTRACTED]
 - [[dot-title()]] - `calls` [EXTRACTED]
+- [[dot-versionName()]] - `calls` [EXTRACTED]
 - [[MainActivity]] - `method` [EXTRACTED]
 - [[android.widget.ScrollView]] - `references` [EXTRACTED]
 

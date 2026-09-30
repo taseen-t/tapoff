@@ -1,18 +1,17 @@
 ---
 source_file: "src/com/taseen/tapoff/PreviewActivity.java"
 type: "code"
-community: "MainActivity.java"
-location: "L189"
+community: "PreviewActivity"
+location: "L289"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MainActivityjava
+  - community/PreviewActivity
 ---
 
 # .toggleControls()
 
 ## Connections
-- [[dot-onTouch()]] - `calls` [EXTRACTED]
 - [[PreviewActivity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MainActivityjava
+#graphify/code #graphify/EXTRACTED #community/PreviewActivity

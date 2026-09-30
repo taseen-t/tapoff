@@ -1,17 +1,18 @@
 ---
 source_file: ""
 type: "concept"
-community: "MainActivity.java"
+community: "SlidersActivity.java"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/MainActivityjava
+  - community/SlidersActivityjava
 ---
 
 # uri
 
 ## Connections
 - [[MainActivity.java]] - `imports` [EXTRACTED]
+- [[SlidersActivity.java]] - `imports` [EXTRACTED]
 - [[Wallpapers.java]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/MainActivityjava
+#graphify/concept #graphify/EXTRACTED #community/SlidersActivityjava

@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: ".onDraw"
+community: "android.view.View"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/onDraw
+  - community/androidviewView
 ---
 
 # Override
 
 ## Connections
-- [[dot-onDraw()_2]] - `references` [EXTRACTED]
+- [[dot-onDraw()_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/onDraw
+#graphify/code #graphify/EXTRACTED #community/androidviewView

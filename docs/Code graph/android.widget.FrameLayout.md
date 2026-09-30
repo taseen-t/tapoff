@@ -17,6 +17,7 @@ tags:
 - [[dot-lockTile()]] - `references` [EXTRACTED]
 - [[dot-volumeTile()]] - `references` [EXTRACTED]
 - [[MainActivity.java]] - `imports` [EXTRACTED]
+- [[PreviewActivity]] - `references` [EXTRACTED]
 - [[PreviewActivity.java]] - `imports` [EXTRACTED]
 - [[SwipeRoot]] - `inherits` [EXTRACTED]
 

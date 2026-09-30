@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- The pixel hand from the app icon with an up-and-down arrow beside the finger: slide along the edge. -->
-<vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="24dp" android:height="24dp" android:viewportWidth="54" android:viewportHeight="54">
-    <group android:translateX="-27" android:translateY="-28">
-        <path android:fillColor="#FFFFFFFF" android:fillAlpha="0.7" android:pathData="M36.89,30.00H38.86V31.98H36.89ZM34.91,31.98H40.84V33.95H34.91ZM32.94,33.95H42.81V35.93H32.94ZM36.89,35.92H38.86V37.90H36.89ZM36.89,37.90H38.86V39.88H36.89ZM36.89,39.88H38.86V41.85H36.89ZM36.89,41.85H38.86V43.83H36.89ZM36.89,43.83H38.86V45.80H36.89ZM32.94,45.80H42.81V47.77H32.94ZM34.91,47.78H40.84V49.75H34.91ZM36.89,49.75H38.86V51.73H36.89Z" />
-        <path android:fillColor="#FFFFFFFF" android:pathData="@string/hand_body" />
-    </group>
-</vector>

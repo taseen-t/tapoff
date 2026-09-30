@@ -1,21 +1,24 @@
 ---
-source_file: "src/com/taseen/tapoff/EdgeSlider.java"
+source_file: "src/com/taseen/tapoff/NotchPanel.java"
 type: "code"
-community: "EdgeSlider"
-location: "L83"
+community: "NotchPanel"
+location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EdgeSlider
+  - community/NotchPanel
 ---
 
 # .sync()
 
 ## Connections
-- [[dot-add()]] - `calls` [EXTRACTED]
+- [[dot-addSpot()]] - `calls` [EXTRACTED]
 - [[dot-allowed()]] - `calls` [EXTRACTED]
+- [[dot-cameraTap()]] - `calls` [EXTRACTED]
 - [[dot-enabled()_1]] - `calls` [EXTRACTED]
+- [[dot-onCreate()_2]] - `calls` [INFERRED]
 - [[dot-remove()]] - `calls` [EXTRACTED]
-- [[EdgeSlider]] - `method` [EXTRACTED]
+- [[dot-rotated()]] - `calls` [EXTRACTED]
+- [[NotchPanel]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EdgeSlider
+#graphify/code #graphify/EXTRACTED #community/NotchPanel

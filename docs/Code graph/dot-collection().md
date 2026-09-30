@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/CutoutArt.java"
 type: "code"
-community: "Wallpapers"
+community: "PreviewActivity"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Wallpapers
+  - community/PreviewActivity
 ---
 
 # .collection()
@@ -15,4 +15,4 @@ tags:
 - [[dot-load()_2]] - `calls` [EXTRACTED]
 - [[CutoutArt]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Wallpapers
+#graphify/code #graphify/EXTRACTED #community/PreviewActivity

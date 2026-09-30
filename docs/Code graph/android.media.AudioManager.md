@@ -1,18 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "Wallpapers.java"
+community: "log"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Wallpapersjava
+  - community/log
 ---
 
 # android.media.AudioManager
 
 ## Connections
-- [[EdgeSlider]] - `references` [EXTRACTED]
-- [[EdgeSlider.java]] - `imports` [EXTRACTED]
+- [[NotchPanel]] - `references` [EXTRACTED]
+- [[NotchPanel.java]] - `imports` [EXTRACTED]
 - [[VolumeTile.java]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Wallpapersjava
+#graphify/code #graphify/EXTRACTED #community/log

@@ -1,20 +1,18 @@
 ---
 source_file: "docs/Decisions.md"
 type: "document"
-community: "Checks.md"
-location: "L1"
+community: "SlidersActivity.java"
+location: "L4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Checksmd
+  - community/SlidersActivityjava
 ---
 
-# Decisions.md
+# Decisions
 
 ## Connections
-- [[Architecture_1]] - `references` [EXTRACTED]
-- [[Checks]] - `references` [EXTRACTED]
 - [[Decisions_1]] - `contains` [EXTRACTED]
-- [[Home]] - `references` [EXTRACTED]
+- [[SlidersActivity]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Checksmd
+#graphify/document #graphify/EXTRACTED #community/SlidersActivityjava

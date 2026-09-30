@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "CutoutArt.java"
+community: "android.view.View"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/CutoutArtjava
+  - community/androidviewView
 ---
 
 # lineargradient
@@ -15,4 +15,4 @@ tags:
 - [[GlassCard.java]] - `imports` [EXTRACTED]
 - [[SwipeHint.java]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/CutoutArtjava
+#graphify/concept #graphify/EXTRACTED #community/androidviewView

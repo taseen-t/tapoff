@@ -22,42 +22,48 @@ targetSdk 35. Package `com.taseen.tapoff`, sources in `src/com/taseen/tapoff/`.
 | On connect: black overlay fades in (150 ms), `GLOBAL_ACTION_LOCK_SCREEN`, then `disableSelf()` after 1 s | `LockService.onServiceConnected` |
 | Lock-screen double-tap: Pixel's hidden Secure setting `double_tap_to_sleep`, write-only, state kept in prefs | `LockService.setLockScreen` |
 
-## Edge sliders (`EdgeSlider.java`)
-- One instance per edge, both created in `TapWallpaper.onCreate`. Each adds an invisible 14dp × 60%-height
-  `TYPE_APPLICATION_OVERLAY` strip (needs "Display over other apps").
-- **Left, volume:** every 28dp of travel → `adjustStreamVolume` on `STREAM_MUSIC` (or `STREAM_VOICE_CALL` during a
-  call) with `FLAG_SHOW_UI`, plus a tick haptic.
-- **Right, brightness:** writes `Settings.System.SCREEN_BRIGHTNESS` through Android's slider curve (HLG,
-  `toLinear` / `toPosition`), full range over 320dp of travel.
-- **Brightness level** (sun: Material `light_mode`, reused from `ic_card_today`): the `Notch` view, a touchable overlay centred on the camera hole (`CutoutArt.hole`). It grows
-  out of the hole (320 ms overshoot), styled like the Quick Settings slider in Material You colours, and shrinks back
-  in 900 ms after release.
-- Sideways swipes are the system back gesture; the strip just sees `ACTION_CANCEL`.
+## Brightness and volume sliders (`NotchPanel.java`)
+- Hosted in `TapWallpaper` (one instance). Opened by:
+  - **Back tap:** Pixel's Quick Tap → Open app → **TapOff Sliders** launches `SlidersActivity` (translucent, finishes at
+    once), which sends `NotchPanel.OPEN` to the wallpaper process.
+  - **Tapping the camera, landscape only:** a small touchable overlay around the cutout, drawing a faint ring. In
+    portrait the status bar window (touchable region `[0,0][1080,136]`, above every app overlay) owns the camera, so no
+    spot there.
+- The panel: one window covering only the sliders (and in portrait the way up to the camera), `FLAG_NOT_TOUCH_MODAL`
+  + `FLAG_WATCH_OUTSIDE_TOUCH`, so the rest of the screen keeps working and `ACTION_OUTSIDE` puts them away. Closes
+  3 s after the last touch.
+- Sliders grow out of the camera (landscape: out of the middle of the stack), styled like the Quick Settings slider in
+  Material You colours. Brightness writes `SCREEN_BRIGHTNESS` through Android's HLG curve (only shown when the
+  one-time permission exists); volume sets `STREAM_MUSIC` (call stream in a call) with a tick per step.
+- Marker files: `notch_panel_on` (sliders), `camera_tap_off` (landscape camera tap and its ring).
 
 ## Wallpapers
 | Part | Where |
 |---|---|
-| Sources: Pixel pack (read in place), Cutout, Bing, curated Wallhaven themes; lists cached 12 h, images capped at 400 MB | `Wallpapers.java` |
+| Sources: Pixel pack (read in place), Cutout, Bing, NASA (hand-picked full-resolution originals), curated Wallhaven themes; duplicates dropped across sets; lists cached 12 h, images capped at 400 MB | `Wallpapers.java` |
+| Favourites: `files/favourites.json`, newest first, keyed by address (Pixel: resource id); shown as the first card | `Wallpapers.favourites`, `MainActivity.refreshFavourites` |
 | Cutout designs drawn around the real camera hole | `CutoutArt.java` |
 | Draws `files/wallpaper.jpg`, Material You colours via `onComputeColors` | `TapWallpaper` |
-| Applying: atomic write of `wallpaper.jpg`, then `setBitmap(FLAG_LOCK)` for the lock screen | `Wallpapers.apply` |
+| Applying: atomic write of `wallpaper.jpg`, then `setBitmap(FLAG_LOCK)` with a crop hint matching the home screen's centre crop | `Wallpapers.apply`, `screenCrop` |
 
 ## UI
 | Part | Where |
 |---|---|
-| Feed (Double-tap tile, Slide the edges tile, wallpaper deck), Settings page, tab bar, swipe between tabs, theme crossfade | `MainActivity.java` |
+| Feed (Double-tap tile, Brightness and volume tile, wallpaper deck), Settings page (copyable setup command), tab bar, swipe between tabs, theme crossfade | `MainActivity.java` |
 | Switches: track and knob drawn from how far the knob has slid, so they morph while Switch animates | `MainActivity.switchArt` |
 | Wallpaper cards | `GlassCard.java` |
-| Full-screen preview with drag pager and swipe hint | `PreviewActivity.java`, `SwipeHint.java` |
+| Full-screen preview with drag pager, swipe hint, heart by the name, double-tap to favourite (red heart that wiggles), double-tap hint | `PreviewActivity.java`, `SwipeHint.java`, `DoubleTapHint.java` |
+| Update check: GitHub's latest release through the lists' cache; a newer tag shows an Update button under the title | `MainActivity.checkForUpdate` |
 | Colours, shapes, text, pills, `blend` | `Ui.java` |
 | Quick Settings tiles | `ScreenOffTile.java`, `VolumeTile.java` |
 
 ## Icons
-- App: Material Symbols Rounded as vector drawables (`res/drawable/ic_*.xml`, viewport 960). The pixel hand
-  (`ic_tap`, `ic_slide`, launcher icon) is TapOff's own art from `res/values/paths.xml`.
+- App: Material Symbols Rounded as vector drawables (`res/drawable/ic_*.xml`, viewport 960); the favourite heart uses
+  a gradient colour resource (`res/color/heart_gradient.xml`). The pixel hand (`ic_tap`, `ic_back_tap`, launcher icon)
+  is TapOff's own art from `res/values/paths.xml`. TapOff Sliders has its own launcher icon (`ic_sliders_launcher`).
 - Site: Lucide SVGs inlined in `site/index.html`.
 
 ## Website (`site/`)
 One static `index.html` (no build step, no trackers), images in `site/img/`. Deployed with
 `npx vercel@latest deploy --prod --yes` from `site/`. Sections: hero with spec strip, store-style screenshots, brags,
-double-tap demo, cutout gallery, story, edge sliders demo, setup, FAQ.
+double-tap demo, cutout gallery, story, back-tap sliders demo, setup (computer install), FAQ.

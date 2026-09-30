@@ -1,29 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "Override"
+community: "log"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Override
+  - community/log
 ---
 
 # Override
 
 ## Connections
-- [[dot-getIntrinsicHeight()]] - `references` [EXTRACTED]
-- [[dot-getIntrinsicWidth()]] - `references` [EXTRACTED]
-- [[dot-getOpacity()]] - `references` [EXTRACTED]
-- [[dot-onActivityResult()]] - `references` [EXTRACTED]
-- [[dot-onBoundsChange()]] - `references` [EXTRACTED]
-- [[dot-onConfigurationChanged()]] - `references` [EXTRACTED]
-- [[dot-onCreate()]] - `references` [EXTRACTED]
-- [[dot-onDestroy()_1]] - `references` [EXTRACTED]
-- [[dot-onInterceptTouchEvent()]] - `references` [EXTRACTED]
-- [[dot-onResume()]] - `references` [EXTRACTED]
-- [[dot-onSaveInstanceState()]] - `references` [EXTRACTED]
-- [[dot-onTouchEvent()]] - `references` [EXTRACTED]
-- [[dot-setAlpha()]] - `references` [EXTRACTED]
-- [[dot-setColorFilter()]] - `references` [EXTRACTED]
+- [[dot-onClick()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Override
+#graphify/code #graphify/EXTRACTED #community/log

@@ -52,6 +52,32 @@ Every request goes here the moment it's asked. Tick subtasks as they land. Never
   - [ ] Record TapOff on the phone over USB
   - [ ] Build, check stills, render all six
 
+## 2026-09-30 (later) · 1.8
+- [x] Fix issues from Taseen's screenshots
+  - [x] Lock and home screen framed the same wallpaper differently (crop hint)
+  - [x] Setup command couldn't be copied (code block, Copy and guide buttons)
+  - [x] Play Protect blocked the install on a second phone (install from a computer; site, README, FAQ)
+- [x] Automatic update check (GitHub latest release, Update button)
+- [x] Remove duplicate wallpapers (across Wallhaven sets, repeat nebulae)
+- [x] NASA wallpapers
+  - [x] Tried APOD (needs a key, rate-limited) and the image library's 1920px copies (pixelated)
+  - [x] Hand-picked full-resolution originals, no text on them (text rule applies to NASA only)
+- [x] Favourites
+  - [x] Heart next to the wallpaper's name
+  - [x] Double-tap to favourite, red gradient heart that wiggles like Instagram's
+  - [x] Hand animation hint (double-tap, heart floats up) after the swipe hint, instead of text
+  - [x] Favourites card first in the feed
+- [x] Brightness and volume from the camera instead of the edges
+  - [x] Both sliders in the brightness slider's style, finger-draggable, centred in landscape
+  - [x] Tapping the camera: blocked by the status bar in portrait; kept in landscape with a faint ring, own switch
+  - [x] Back tap (Quick Tap → TapOff Sliders), chosen by Taseen
+  - [x] Rest of the screen usable while the sliders are out
+  - [x] Tile icon: pixel hand tapping the back of a phone, no outline showing through the hand
+  - [x] Button says "Back tap is set up" once a back tap has opened the sliders, and opens Quick Tap's settings
+- [x] Site: double-tap section moved up, sliders section rewritten for back tap
+- [ ] Taseen tests on a second Android, then fixes
+- [ ] Refresh site screenshots (tile changed) with the video footage
+
 ## Open
 - [ ] Play Store listing? Costs $25 once. Waiting on Taseen (never spend without a yes).
 - [ ] Custom domain? Waiting on whether Taseen is a student (GitHub Student Pack has free domains).

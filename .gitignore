@@ -10,3 +10,6 @@ out/
 .DS_Store
 .vercel
 graphify-out/cache/
+
+# Video work (large files)
+brag-output/

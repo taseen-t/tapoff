@@ -2,7 +2,7 @@
 source_file: "src/com/taseen/tapoff/MainActivity.java"
 type: "code"
 community: "Override"
-location: "L458"
+location: "L532"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,7 @@ tags:
 # .onBoundsChange()
 
 ## Connections
-- [[Override_1]] - `references` [EXTRACTED]
+- [[Override]] - `references` [EXTRACTED]
 - [[Rect]] - `references` [EXTRACTED]
 - [[SwitchPart]] - `method` [EXTRACTED]
 

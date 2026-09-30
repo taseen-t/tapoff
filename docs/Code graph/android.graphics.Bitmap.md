@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "CutoutArt.java"
+community: "android.graphics.Bitmap"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CutoutArtjava
+  - community/androidgraphicsBitmap
 ---
 
 # android.graphics.Bitmap
@@ -14,6 +14,7 @@ tags:
 - [[dot-apply()_1]] - `references` [EXTRACTED]
 - [[dot-decode()]] - `references` [EXTRACTED]
 - [[dot-render()]] - `references` [EXTRACTED]
+- [[dot-screenCrop()]] - `references` [EXTRACTED]
 - [[dot-setPhoto()]] - `references` [EXTRACTED]
 - [[dot-tileArt()]] - `references` [EXTRACTED]
 - [[dot-volumeArt()]] - `references` [EXTRACTED]
@@ -28,4 +29,4 @@ tags:
 - [[TapWallpaper.java]] - `imports` [EXTRACTED]
 - [[Wallpapers.java]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CutoutArtjava
+#graphify/code #graphify/EXTRACTED #community/androidgraphicsBitmap

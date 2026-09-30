@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/SwipeHint.java"
 type: "code"
-community: "CutoutArt.java"
+community: "android.view.View"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CutoutArtjava
+  - community/androidviewView
 ---
 
 # .SwipeHint()
@@ -15,4 +15,4 @@ tags:
 - [[SwipeHint]] - `method` [EXTRACTED]
 - [[android.content.Context]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CutoutArtjava
+#graphify/code #graphify/EXTRACTED #community/androidviewView

@@ -1,21 +1,19 @@
 ---
-source_file: "src/com/taseen/tapoff/TapWallpaper.java"
+source_file: "src/com/taseen/tapoff/PreviewActivity.java"
 type: "code"
-community: "LockService.java"
-location: "L77"
+community: "PreviewActivity"
+location: "L358"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LockServicejava
+  - community/PreviewActivity
 ---
 
 # .load()
 
 ## Connections
-- [[dot-onComputeColors()]] - `calls` [EXTRACTED]
-- [[dot-onSurfaceRedrawNeeded()]] - `calls` [EXTRACTED]
-- [[dot-onVisibilityChanged()]] - `calls` [EXTRACTED]
-- [[dot-photo()]] - `calls` [EXTRACTED]
-- [[TapEngine]] - `method` [EXTRACTED]
+- [[dot-decode()]] - `calls` [EXTRACTED]
+- [[dot-show()]] - `calls` [EXTRACTED]
+- [[PreviewActivity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LockServicejava
+#graphify/code #graphify/EXTRACTED #community/PreviewActivity

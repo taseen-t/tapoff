@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "Wallpapers.java"
+community: "NotchPanel.java"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Wallpapersjava
+  - community/NotchPaneljava
 ---
 
 # systemclock
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[TapWallpaper.java]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Wallpapersjava
+#graphify/concept #graphify/EXTRACTED #community/NotchPaneljava

@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/TapWallpaper.java"
 type: "code"
-community: "Wallpapers.java"
+community: "NotchPanel.java"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Wallpapersjava
+  - community/NotchPaneljava
 ---
 
 # TapWallpaper.java
@@ -32,4 +32,4 @@ tags:
 - [[viewconfiguration]] - `imports` [EXTRACTED]
 - [[wallpapermanager]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Wallpapersjava
+#graphify/code #graphify/EXTRACTED #community/NotchPaneljava

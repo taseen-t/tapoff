@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/MainActivity.java"
 type: "code"
-community: "android.content.Context"
-location: "L93"
+community: "Override"
+location: "L105"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidcontentContext
+  - community/Override
 ---
 
 # .onConfigurationChanged()
@@ -16,6 +16,6 @@ tags:
 - [[dot-refreshState()]] - `calls` [EXTRACTED]
 - [[Configuration]] - `references` [EXTRACTED]
 - [[MainActivity]] - `method` [EXTRACTED]
-- [[Override_1]] - `references` [EXTRACTED]
+- [[Override]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidcontentContext
+#graphify/code #graphify/EXTRACTED #community/Override

@@ -1,20 +1,22 @@
 ---
 source_file: "src/com/taseen/tapoff/PreviewActivity.java"
 type: "code"
-community: "MainActivity.java"
-location: "L239"
+community: "PreviewActivity"
+location: "L339"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MainActivityjava
+  - community/PreviewActivity
 ---
 
 # .show()
 
 ## Connections
-- [[dot-load()]] - `calls` [EXTRACTED]
+- [[dot-isFavourite()]] - `calls` [EXTRACTED]
+- [[dot-load()_1]] - `calls` [EXTRACTED]
 - [[dot-onCreate()_1]] - `calls` [EXTRACTED]
 - [[dot-settle()]] - `calls` [EXTRACTED]
+- [[dot-showHeart()]] - `calls` [EXTRACTED]
 - [[PreviewActivity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MainActivityjava
+#graphify/code #graphify/EXTRACTED #community/PreviewActivity

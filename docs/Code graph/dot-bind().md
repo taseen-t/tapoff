@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/GlassCard.java"
 type: "code"
-community: "CutoutArt.java"
+community: "android.graphics.Bitmap"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CutoutArtjava
+  - community/androidgraphicsBitmap
 ---
 
 # .bind()
@@ -15,4 +15,4 @@ tags:
 - [[dot-addCard()]] - `calls` [INFERRED]
 - [[GlassCard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CutoutArtjava
+#graphify/code #graphify/EXTRACTED #community/androidgraphicsBitmap

@@ -1,25 +1,27 @@
 ---
 source_file: "src/com/taseen/tapoff/TapWallpaper.java"
 type: "code"
-community: "LockService.java"
+community: "TapWallpaper"
 location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LockServicejava
+  - community/TapWallpaper
 ---
 
 # TapWallpaper
 
 ## Connections
 - [[dot-enabled()]] - `method` [EXTRACTED]
+- [[dot-onConfigurationChanged()_1]] - `method` [EXTRACTED]
 - [[dot-onCreate()_2]] - `method` [EXTRACTED]
 - [[dot-onCreateEngine()]] - `method` [EXTRACTED]
-- [[dot-onDestroy()_2]] - `method` [EXTRACTED]
+- [[dot-onDestroy()_1]] - `method` [EXTRACTED]
 - [[dot-photo()]] - `method` [EXTRACTED]
-- [[dot-setEnabled()]] - `method` [EXTRACTED]
+- [[dot-setEnabled()_1]] - `method` [EXTRACTED]
+- [[Brightness and volume sliders (`NotchPanel.java`)]] - `references` [INFERRED]
 - [[BroadcastReceiver]] - `references` [EXTRACTED]
-- [[EdgeSlider]] - `references` [EXTRACTED]
+- [[NotchPanel]] - `references` [EXTRACTED]
 - [[Processes]] - `references` [INFERRED]
 - [[Screen off]] - `references` [INFERRED]
 - [[TapEngine]] - `contains` [EXTRACTED]
@@ -27,4 +29,4 @@ tags:
 - [[Wallpapers_1]] - `references` [INFERRED]
 - [[android.service.wallpaper.WallpaperService]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LockServicejava
+#graphify/code #graphify/EXTRACTED #community/TapWallpaper

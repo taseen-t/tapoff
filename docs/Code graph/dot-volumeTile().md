@@ -2,7 +2,7 @@
 source_file: "src/com/taseen/tapoff/MainActivity.java"
 type: "code"
 community: "android.content.Context"
-location: "L290"
+location: "L358"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,10 +12,15 @@ tags:
 # .volumeTile()
 
 ## Connections
+- [[dot-allowed()]] - `calls` [EXTRACTED]
 - [[dot-artTile()]] - `calls` [EXTRACTED]
+- [[dot-backTapSeen()]] - `calls` [EXTRACTED]
 - [[dot-buildUi()]] - `calls` [EXTRACTED]
 - [[dot-dp()]] - `calls` [EXTRACTED]
-- [[dot-setEdge()]] - `calls` [EXTRACTED]
+- [[dot-pill()]] - `calls` [EXTRACTED]
+- [[dot-refreshStatus()]] - `calls` [EXTRACTED]
+- [[dot-setCameraTap()]] - `calls` [EXTRACTED]
+- [[dot-setEnabled()]] - `calls` [EXTRACTED]
 - [[dot-switchRow()]] - `calls` [EXTRACTED]
 - [[dot-text()]] - `calls` [EXTRACTED]
 - [[dot-tileArtView()]] - `calls` [EXTRACTED]

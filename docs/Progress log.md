@@ -5,6 +5,20 @@ tags: [tapoff, log]
 
 Newest first. Each entry: done / blocked / next.
 
+## 2026-09-30 (later) · 1.8: back-tap sliders, favourites, NASA
+**Done**
+- Fixed a second phone's issues: lock/home framing, copyable setup command, Play Protect block (computer install).
+- Update check, duplicate wallpapers removed, NASA full-resolution set, favourites with an Instagram-style heart.
+- Replaced the edge strips with sliders that grow out of the camera. Measured that the status bar owns camera taps in
+  portrait; back tap via Quick Tap opens them (Taseen set it up on his phone), camera tap kept in landscape.
+- One wrong tap of mine switched Taseen's lock-screen double-tap off; noticed and switched back on straight away.
+
+**Blocked**
+- Landscape camera tap not tested on a device yet (rotating needs a system setting change).
+
+**Next**
+- Taseen tests on his second Android; fix what comes up; then retake screenshots and make the three videos.
+
 ## 2026-09-30 · 1.7: slide the edges
 **Done**
 - Left-edge volume tested on the Pixel 7. Found Android swallowing the first ~0.5 s of each slide when nothing

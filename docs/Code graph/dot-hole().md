@@ -1,22 +1,21 @@
 ---
 source_file: "src/com/taseen/tapoff/CutoutArt.java"
 type: "code"
-community: "CutoutArt.java"
+community: "NotchPanel"
 location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CutoutArtjava
+  - community/NotchPanel
 ---
 
 # .hole()
 
 ## Connections
-- [[dot-Notch()]] - `calls` [EXTRACTED]
+- [[dot-hole()_1]] - `calls` [EXTRACTED]
 - [[dot-render()]] - `calls` [EXTRACTED]
 - [[CutoutArt]] - `method` [EXTRACTED]
-- [[Edge sliders (`EdgeSlider.java`)]] - `references` [INFERRED]
 - [[android.content.Context]] - `references` [EXTRACTED]
 - [[android.graphics.RectF]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CutoutArtjava
+#graphify/code #graphify/EXTRACTED #community/NotchPanel

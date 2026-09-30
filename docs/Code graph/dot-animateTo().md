@@ -1,18 +1,19 @@
 ---
-source_file: "src/com/taseen/tapoff/EdgeSlider.java"
+source_file: "src/com/taseen/tapoff/NotchPanel.java"
 type: "code"
-community: "CutoutArt.java"
-location: "L249"
+community: "android.view.View"
+location: "L299"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CutoutArtjava
+  - community/androidviewView
 ---
 
 # .animateTo()
 
 ## Connections
-- [[dot-showLevel()]] - `calls` [INFERRED]
-- [[Notch]] - `method` [EXTRACTED]
+- [[dot-onTouchEvent()_1]] - `calls` [EXTRACTED]
+- [[dot-open()]] - `calls` [INFERRED]
+- [[Panel]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CutoutArtjava
+#graphify/code #graphify/EXTRACTED #community/androidviewView

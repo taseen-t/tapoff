@@ -1,18 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "LockService.java"
+community: "SlidersActivity.java"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LockServicejava
+  - community/SlidersActivityjava
 ---
 
 # Context
 
 ## Connections
-- [[dot-enabled()]] - `references` [EXTRACTED]
-- [[dot-photo()]] - `references` [EXTRACTED]
-- [[dot-setEnabled()]] - `references` [EXTRACTED]
+- [[dot-backTapSeen()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LockServicejava
+#graphify/code #graphify/EXTRACTED #community/SlidersActivityjava

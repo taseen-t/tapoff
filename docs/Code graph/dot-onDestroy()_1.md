@@ -1,18 +1,19 @@
 ---
-source_file: "src/com/taseen/tapoff/MainActivity.java"
+source_file: "src/com/taseen/tapoff/TapWallpaper.java"
 type: "code"
-community: "Override"
-location: "L188"
+community: "TapWallpaper"
+location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Override
+  - community/TapWallpaper
 ---
 
 # .onDestroy()
 
 ## Connections
-- [[MainActivity]] - `method` [EXTRACTED]
-- [[Override_1]] - `references` [EXTRACTED]
+- [[dot-remove()]] - `calls` [INFERRED]
+- [[Override_5]] - `references` [EXTRACTED]
+- [[TapWallpaper]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Override
+#graphify/code #graphify/EXTRACTED #community/TapWallpaper

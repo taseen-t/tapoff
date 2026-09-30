@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "concept"
-community: "LockService.java"
+community: "CutoutArt.java"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/LockServicejava
+  - community/CutoutArtjava
 ---
 
 # settings
 
 ## Connections
-- [[EdgeSlider.java]] - `imports` [EXTRACTED]
 - [[LockService.java]] - `imports` [EXTRACTED]
+- [[NotchPanel.java]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/LockServicejava
+#graphify/concept #graphify/EXTRACTED #community/CutoutArtjava

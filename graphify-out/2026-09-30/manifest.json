@@ -1,20 +1,14 @@
 {
   "build.sh": {
-    "mtime": 1790736792.9264421,
-    "seen": 1790737036.106773,
-    "ast_hash": "904d63fa66d9a1d4847a9a5bab73d1da",
+    "mtime": 1790762346.0899527,
+    "seen": 1790762750.000919,
+    "ast_hash": "0c090e19f2919e3cdf891f99dc1ec2c4",
     "semantic_hash": ""
   },
   "src/com/taseen/tapoff/CutoutArt.java": {
     "mtime": 1790735376.5504,
     "seen": 1790736508.017935,
     "ast_hash": "f722a60b0e6e53140dc0ba5edb8e30c2",
-    "semantic_hash": ""
-  },
-  "src/com/taseen/tapoff/EdgeSlider.java": {
-    "mtime": 1790736823.127555,
-    "seen": 1790737036.1067772,
-    "ast_hash": "79cf54b3ea75f65df7a204893d0d1ca0",
     "semantic_hash": ""
   },
   "src/com/taseen/tapoff/GlassCard.java": {
@@ -30,15 +24,15 @@
     "semantic_hash": ""
   },
   "src/com/taseen/tapoff/MainActivity.java": {
-    "mtime": 1790736367.1126564,
-    "seen": 1790736508.0179389,
-    "ast_hash": "d28f06ebe9549593917d6f007f941e11",
+    "mtime": 1790762283.2710238,
+    "seen": 1790762750.000928,
+    "ast_hash": "4e079554f3662eb974ece6c67b187416",
     "semantic_hash": ""
   },
   "src/com/taseen/tapoff/PreviewActivity.java": {
-    "mtime": 1790706199.0764017,
-    "seen": 1790736508.0179389,
-    "ast_hash": "7807e1d1ab5f4dc9beb39446f5405338",
+    "mtime": 1790762104.6693146,
+    "seen": 1790762750.000929,
+    "ast_hash": "b1980e912dc984f188abcf7076b6b6b5",
     "semantic_hash": ""
   },
   "src/com/taseen/tapoff/ScreenOffTile.java": {
@@ -54,9 +48,9 @@
     "semantic_hash": ""
   },
   "src/com/taseen/tapoff/TapWallpaper.java": {
-    "mtime": 1790734480.1449227,
-    "seen": 1790736508.017941,
-    "ast_hash": "c2f1d8168ea345dd5e2401d060ced13c",
+    "mtime": 1790762007.8755605,
+    "seen": 1790762750.000932,
+    "ast_hash": "86cb1d436f91e893cfc42f6a62151c44",
     "semantic_hash": ""
   },
   "src/com/taseen/tapoff/Ui.java": {
@@ -72,21 +66,21 @@
     "semantic_hash": ""
   },
   "src/com/taseen/tapoff/Wallpapers.java": {
-    "mtime": 1790689622.6890113,
-    "seen": 1790736508.0179431,
-    "ast_hash": "eb27277396b7e838b81ba16e1c7c4613",
+    "mtime": 1790761661.8891835,
+    "seen": 1790762750.000934,
+    "ast_hash": "1f78411f66024bb95f552b01aca3e4eb",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1790736894.3565063,
-    "seen": 1790737036.106786,
-    "ast_hash": "c704605f95db122436afeb37e021a189",
+    "mtime": 1790762692.9243011,
+    "seen": 1790762750.0009348,
+    "ast_hash": "2c080f85f12e54c5a404cc9572e0d33d",
     "semantic_hash": ""
   },
   "docs/Architecture.md": {
-    "mtime": 1790737063.0460887,
-    "seen": 1790737063.840611,
-    "ast_hash": "8c6f426d6cc433a1acdac0836bbbad7e",
+    "mtime": 1790762749.0003679,
+    "seen": 1790762750.000936,
+    "ast_hash": "4573d013a90e6deab92c00c830d286b2",
     "semantic_hash": ""
   },
   "docs/Checks.md": {
@@ -96,9 +90,9 @@
     "semantic_hash": ""
   },
   "docs/Decisions.md": {
-    "mtime": 1790737063.0461788,
-    "seen": 1790737063.8406131,
-    "ast_hash": "b398afe1b8615954aeec12a9e4f89475",
+    "mtime": 1790762749.001259,
+    "seen": 1790762750.000937,
+    "ast_hash": "84048363491005359cea2cf08fe3b13d",
     "semantic_hash": ""
   },
   "docs/Home.md": {
@@ -108,27 +102,45 @@
     "semantic_hash": ""
   },
   "docs/Progress log.md": {
-    "mtime": 1790737063.0459173,
-    "seen": 1790737063.8406138,
-    "ast_hash": "9f58bda44ce08003dbebc745186351fd",
+    "mtime": 1790762749.0020669,
+    "seen": 1790762750.000938,
+    "ast_hash": "3d47c73193bc00aa56176cc456ca0968",
     "semantic_hash": ""
   },
   "docs/Tasks.md": {
-    "mtime": 1790737063.0457723,
-    "seen": 1790737063.8406148,
-    "ast_hash": "726ff046b0e0890337df481b0bb18c52",
+    "mtime": 1790762749.0016048,
+    "seen": 1790762750.000939,
+    "ast_hash": "a2e4a94aa980d2c36c572db213425611",
     "semantic_hash": ""
   },
   "site/index.html": {
-    "mtime": 1790736894.3561568,
-    "seen": 1790737036.106791,
-    "ast_hash": "990d2d0a5f94c3b91cbe6711f10b6e16",
+    "mtime": 1790762692.9002874,
+    "seen": 1790762750.00094,
+    "ast_hash": "18bf064ea60747137cf453aac1b156c9",
     "semantic_hash": ""
   },
   "site/icon.svg": {
     "mtime": 1790705640.9091592,
     "seen": 1790736508.017947,
     "ast_hash": "f5ddb36098ed5c9ba1b6fec08d197875",
+    "semantic_hash": ""
+  },
+  "src/com/taseen/tapoff/DoubleTapHint.java": {
+    "mtime": 1790762104.6696265,
+    "seen": 1790762750.0009239,
+    "ast_hash": "1a4e1800653c9ff8eb7dde680ee9ebca",
+    "semantic_hash": ""
+  },
+  "src/com/taseen/tapoff/NotchPanel.java": {
+    "mtime": 1790762007.875249,
+    "seen": 1790762750.000928,
+    "ast_hash": "bd5f9b2ffc9395e5556718af32a33c05",
+    "semantic_hash": ""
+  },
+  "src/com/taseen/tapoff/SlidersActivity.java": {
+    "mtime": 1790762040.3520503,
+    "seen": 1790762750.000931,
+    "ast_hash": "c695ca71fa246894205c9500e5701bfc",
     "semantic_hash": ""
   }
 }

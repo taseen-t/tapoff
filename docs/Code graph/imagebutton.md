@@ -1,16 +1,13 @@
 ---
 source_file: ""
 type: "concept"
-community: "MainActivity.java"
+community: "imagebutton"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/MainActivityjava
+  - community/imagebutton
 ---
 
 # imagebutton
 
-## Connections
-- [[PreviewActivity.java]] - `imports` [EXTRACTED]
-
-#graphify/concept #graphify/EXTRACTED #community/MainActivityjava
+#graphify/concept #graphify/EXTRACTED #community/imagebutton

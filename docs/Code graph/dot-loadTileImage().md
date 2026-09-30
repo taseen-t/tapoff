@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/MainActivity.java"
 type: "code"
-community: "CutoutArt.java"
-location: "L322"
+community: "android.graphics.Bitmap"
+location: "L396"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CutoutArtjava
+  - community/androidgraphicsBitmap
 ---
 
 # .loadTileImage()
@@ -18,4 +18,4 @@ tags:
 - [[dot-volumeArt()]] - `calls` [EXTRACTED]
 - [[MainActivity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CutoutArtjava
+#graphify/code #graphify/EXTRACTED #community/androidgraphicsBitmap

@@ -14,6 +14,7 @@ tags:
 ## Connections
 - [[dot-bg()]] - `calls` [EXTRACTED]
 - [[dot-buildSettings()]] - `calls` [EXTRACTED]
+- [[dot-buildUi()]] - `calls` [EXTRACTED]
 - [[dot-dark()]] - `calls` [EXTRACTED]
 - [[dot-dp()]] - `calls` [EXTRACTED]
 - [[dot-font()]] - `calls` [EXTRACTED]
@@ -21,6 +22,7 @@ tags:
 - [[dot-onCreate()_1]] - `calls` [EXTRACTED]
 - [[dot-shape()]] - `calls` [EXTRACTED]
 - [[dot-tileRow()]] - `calls` [EXTRACTED]
+- [[dot-volumeTile()]] - `calls` [EXTRACTED]
 - [[Pill]] - `references` [EXTRACTED]
 - [[Ui]] - `method` [EXTRACTED]
 - [[android.content.Context]] - `references` [EXTRACTED]

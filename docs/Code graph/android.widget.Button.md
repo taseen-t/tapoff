@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "MainActivity.java"
+community: "android.content.Context"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MainActivityjava
+  - community/androidcontentContext
 ---
 
 # android.widget.Button
@@ -18,4 +18,4 @@ tags:
 - [[PreviewActivity.java]] - `imports` [EXTRACTED]
 - [[Ui.java]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MainActivityjava
+#graphify/code #graphify/EXTRACTED #community/androidcontentContext

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>TapOff</title>
-<meta name="description" content="Double-tap to turn your Android screen off, without leaving accessibility on, so your bank apps keep working. Slide the screen edges for volume and brightness, like VLC. Plus 13 wallpapers drawn around your camera hole. Free, no logins, open source.">
+<meta name="description" content="Double-tap to turn your Android screen off, without leaving accessibility on, so your bank apps keep working. Double-tap the back of the phone for brightness and volume sliders. Plus 13 wallpapers drawn around your camera hole. Free, no logins, open source.">
 <meta property="og:title" content="TapOff: double-tap, screen off">
 <meta property="og:description" content="The power-button fix for Android, plus wallpapers made for your camera hole. Free, no logins, no ads.">
 <meta property="og:image" content="https://tapoff.vercel.app/img/main_dark.webp">
@@ -110,7 +110,7 @@ h1 { font-size: clamp(48px, 7.6vw, 88px); line-height: .98; letter-spacing: -.03
 .card.big { grid-column: span 2; display: flex; gap: 22px; align-items: center; }
 .card.big .num { font-family: "Silkscreen", monospace; font-size: 64px; line-height: 1; }
 
-/* edge sliders: a phone whose thumbs slide the edges; brightness drops out of the camera */
+/* back-tap sliders: two taps on the back of the phone, then brightness and volume grow out of the camera */
 .edges { display: grid; grid-template-columns: 300px 1fr; gap: 40px; align-items: center; }
 .phone { position: relative; width: 240px; height: 480px; margin: 0 auto; border-radius: 40px; background: #0b0b0e;
   border: 8px solid #1c1c20; box-shadow: 0 30px 80px rgba(0,0,0,.35), 0 0 0 1px var(--line); overflow: hidden; }
@@ -118,37 +118,38 @@ h1 { font-size: clamp(48px, 7.6vw, 88px); line-height: .98; letter-spacing: -.03
   box-shadow: 0 0 0 1px #222; z-index: 3; }
 .phone .grid { position: absolute; inset: 0; background-image: radial-gradient(circle, rgba(255,255,255,.08) 1.3px, transparent 1.6px);
   background-size: 14px 14px; }
-.phone .thumb { position: absolute; width: 34px; height: 34px; border-radius: 50%; background: rgba(255,255,255,.2);
-  box-shadow: 0 0 0 2px rgba(255,255,255,.55); opacity: 0; }
-.phone .thumb.l { left: -12px; animation: thumbL 6.4s infinite; }
-.phone .thumb.r { right: -12px; animation: thumbR 6.4s infinite; }
-.phone .vol { position: absolute; right: 14px; top: 150px; width: 36px; height: 150px; border-radius: 18px; background: #26262b;
-  overflow: hidden; opacity: 0; animation: volPanel 6.4s infinite; }
-.phone .vol i { position: absolute; left: 0; right: 0; bottom: 0; background: #e8e8ee; border-radius: 18px; animation: volFill 6.4s infinite; }
-.phone .island { position: absolute; top: 12px; left: 50%; width: 12px; height: 12px; transform: translateX(-50%); border-radius: 20px;
-  background: #000; overflow: hidden; z-index: 2; animation: island 6.4s infinite; }
-.phone .island i { position: absolute; left: 0; top: 0; bottom: 0; background: #d9d9e0; border-radius: 20px; opacity: 0;
-  animation: islandFill 6.4s infinite; }
-.phone .island b { position: absolute; left: 0; top: 0; bottom: 0; right: 0; background: #2a2a2f; opacity: 0; animation: islandTrack 6.4s infinite; }
-@keyframes thumbL { 0% { top: 330px; opacity: 0; } 5% { top: 330px; opacity: 1; } 30% { top: 170px; } 42% { top: 230px; opacity: 1; }
-  48%, 100% { top: 230px; opacity: 0; } }
-@keyframes thumbR { 0%, 50% { top: 330px; opacity: 0; } 55% { top: 330px; opacity: 1; } 80% { top: 170px; } 92% { top: 230px; opacity: 1; }
-  98%, 100% { top: 230px; opacity: 0; } }
-@keyframes volPanel { 0%, 3% { opacity: 0; } 7%, 44% { opacity: 1; } 50%, 100% { opacity: 0; } }
-@keyframes volFill { 0%, 5% { height: 36%; } 30% { height: 86%; } 42%, 100% { height: 62%; } }
-@keyframes island { 0%, 53% { width: 12px; height: 12px; top: 12px; }
-  59% { width: 184px; height: 34px; top: 34px; } 57.5% { width: 196px; }
-  92% { width: 184px; height: 34px; top: 34px; } 97%, 100% { width: 12px; height: 12px; top: 12px; } }
-@keyframes islandTrack { 0%, 55% { opacity: 0; } 58%, 92% { opacity: 1; } 95%, 100% { opacity: 0; } }
-@keyframes islandFill { 0%, 55% { width: 30%; opacity: 0; } 58% { width: 30%; opacity: 1; } 80% { width: 92%; } 92% { width: 62%; opacity: 1; }
-  95%, 100% { width: 62%; opacity: 0; } }
-.phone .sun { position: absolute; left: 9px; top: 50%; width: 16px; height: 16px; margin-top: -8px; color: #3a3a40; }
+.phone .knock { position: absolute; left: 50%; top: 52%; width: 70px; height: 70px; margin: -35px; border-radius: 50%;
+  border: 2px solid rgba(255,255,255,.55); opacity: 0; animation: knock 5.6s infinite; }
+.phone .knock.two { animation-delay: .22s; }
+.phone .knocklabel { position: absolute; left: 0; right: 0; top: calc(52% + 52px); text-align: center; font-family: "Silkscreen", monospace;
+  font-size: 12px; letter-spacing: .12em; color: rgba(255,255,255,.65); opacity: 0; animation: knocklabel 5.6s infinite; }
+.phone .pill { position: absolute; left: 50%; top: 12px; width: 12px; height: 12px; transform: translateX(-50%); border-radius: 20px;
+  background: #000; overflow: hidden; z-index: 2; }
+.phone .pill.b { animation: pillB 5.6s infinite; }
+.phone .pill.v { animation: pillV 5.6s infinite; }
+.phone .pill b { position: absolute; inset: 0; background: #2a2a2f; opacity: 0; animation: pillTrack 5.6s infinite; }
+.phone .pill i { position: absolute; left: 0; top: 0; bottom: 0; background: #d9d9e0; border-radius: 20px; opacity: 0; }
+.phone .pill.b i { animation: fillB 5.6s infinite; }
+.phone .pill.v i { animation: fillV 5.6s infinite; }
+.phone .ico { position: absolute; left: 9px; top: 50%; width: 16px; height: 16px; margin-top: -8px; color: #3a3a40; }
+@keyframes knock { 0%, 4% { transform: scale(.4); opacity: 0; } 5% { opacity: .9; } 14%, 100% { transform: scale(1.5); opacity: 0; } }
+@keyframes knocklabel { 0%, 4% { opacity: 0; } 8%, 17% { opacity: 1; } 22%, 100% { opacity: 0; } }
+@keyframes pillB { 0%, 20% { width: 12px; height: 12px; top: 12px; } 26% { width: 204px; }
+  27% { width: 196px; height: 34px; top: 34px; } 86% { width: 196px; height: 34px; top: 34px; } 93%, 100% { width: 12px; height: 12px; top: 12px; } }
+@keyframes pillV { 0%, 23% { width: 12px; height: 12px; top: 12px; } 29% { width: 204px; }
+  30% { width: 196px; height: 34px; top: 78px; } 84% { width: 196px; height: 34px; top: 78px; } 91%, 100% { width: 12px; height: 12px; top: 12px; } }
+@keyframes pillTrack { 0%, 23% { opacity: 0; } 28%, 84% { opacity: 1; } 90%, 100% { opacity: 0; } }
+@keyframes fillB { 0%, 25% { width: 38%; opacity: 0; } 30% { opacity: 1; } 42% { width: 38%; } 58% { width: 84%; } 84% { width: 70%; opacity: 1; }
+  90%, 100% { width: 70%; opacity: 0; } }
+@keyframes fillV { 0%, 28% { width: 30%; opacity: 0; } 33% { opacity: 1; } 62% { width: 30%; } 76% { width: 66%; } 84% { width: 66%; opacity: 1; }
+  90%, 100% { width: 66%; opacity: 0; } }
 .edgecards { display: grid; gap: 12px; }
 .edgecards .card h3, .steps2 .card h3 { margin-top: 6px; }
 .tag { font-family: "Silkscreen", monospace; font-size: 12px; color: var(--muted); letter-spacing: .08em; }
 @media (prefers-reduced-motion: reduce) {
-  .phone .thumb, .phone .vol, .phone .vol i, .phone .island, .phone .island i, .phone .island b { animation: none; }
-  .phone .island { width: 184px; height: 34px; top: 34px; } .phone .island b, .phone .island i { opacity: 1; } .phone .island i { width: 62%; }
+  .phone .knock, .phone .knocklabel, .phone .pill, .phone .pill b, .phone .pill i { animation: none; }
+  .phone .pill { width: 196px; height: 34px; top: 34px; } .phone .pill.v { top: 78px; }
+  .phone .pill b, .phone .pill i { opacity: 1; } .phone .pill i { width: 62%; }
 }
 
 /* wallpapers */
@@ -199,6 +200,7 @@ h1 { font-size: clamp(48px, 7.6vw, 88px); line-height: .98; letter-spacing: -.03
 .step h3 { margin: 8px 0 6px; font-size: 18px; }
 .step p, .step li { color: var(--muted); font-size: 15px; margin: 0 0 6px; }
 .step ol { margin: 6px 0 0; padding-left: 20px; }
+.step .note { margin-top: 10px; font-size: 14px; }
 .code { display: flex; align-items: center; gap: 10px; margin-top: 10px; background: #0d0e10; border: 1px solid var(--line);
   border-radius: 14px; padding: 12px 12px 12px 16px; }
 .code code { flex: 1; min-width: 0; color: #f6f6f7; font: 13px/1.5 ui-monospace, "SF Mono", Menlo, monospace; overflow-x: auto; white-space: nowrap; }
@@ -258,7 +260,7 @@ footer { border-top: 1px solid var(--line); margin-top: 64px; padding: 28px 0 48
   <nav>
     <a class="brand" href="/"><img src="icon.svg" alt="">TapOff</a>
     <div class="navlinks">
-      <a class="opt" href="#edges">Edges</a>
+      <a class="opt" href="#sliders">Sliders</a>
       <a class="opt" href="#wallpapers">Wallpapers</a>
       <a class="opt" href="#story">Why I built it</a>
       <a class="opt" href="https://github.com/taseen-t/tapoff">GitHub</a>
@@ -271,8 +273,8 @@ footer { border-top: 1px solid var(--line); margin-top: 64px; padding: 28px 0 48
       <p class="eyebrow">tap tap · free for everyone</p>
       <h1>Double-tap.<br>Screen off.</h1>
       <p class="lede">The power-button fix Pixel never shipped. Double-tap your home screen and it goes dark, without
-        leaving accessibility on, so your bank apps keep working. Slide the screen edges for volume and brightness,
-        and pick from wallpapers made for your camera hole.</p>
+        leaving accessibility on, so your bank apps keep working. Double-tap the back of your Pixel for brightness
+        and volume sliders, and pick from wallpapers made for your camera hole.</p>
       <dl class="specs" aria-label="TapOff in numbers">
         <div><dt>0</dt><dd>logins or<br>sign-ups</dd></div>
         <div><dt>0</dt><dd>ads or<br>trackers</dd></div>
@@ -306,8 +308,8 @@ footer { border-top: 1px solid var(--line); margin-top: 64px; padding: 28px 0 48
         <div class="frame"><img src="img/wall/sunflower.webp" alt="Sunflower wallpaper with the camera as its centre" width="360" height="800" loading="lazy"></div></div>
       <div class="shot mint"><h3>Preview it. Set it on home and lock in one tap.</h3>
         <div class="frame"><img src="img/preview_lollipop.webp" alt="Full-screen wallpaper preview with the Set wallpaper button" width="540" height="1200" loading="lazy"></div></div>
-      <div class="shot"><h3>Slide the edges for volume and brightness</h3>
-        <div class="frame"><img src="img/main_light.webp" alt="TapOff main screen in light mode with the Slide the edges switches" width="540" height="1200" loading="lazy"></div></div>
+      <div class="shot"><h3>Brightness and volume, a back tap away</h3>
+        <div class="frame"><img src="img/main_light.webp" alt="TapOff main screen in light mode with the Brightness and volume switches" width="540" height="1200" loading="lazy"></div></div>
       <div class="shot pink"><h3>Light, dark, or follow your phone</h3>
         <div class="frame"><img src="img/settings_light.webp" alt="TapOff settings in light mode" width="540" height="1200" loading="lazy"></div></div>
     </div>
@@ -328,7 +330,7 @@ footer { border-top: 1px solid var(--line); margin-top: 64px; padding: 28px 0 48
       <div class="card"><div class="icon"><svg aria-hidden="true" class="lucide lucide-circle-dot" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><circle cx="12" cy="12" r="1"/><circle cx="12" cy="12" r="10"/></svg></div>
         <h3>Wallpapers for your camera hole</h3><p>13 designs drawn live around your real camera cutout, at your screen's exact size.</p></div>
       <div class="card"><div class="icon"><svg aria-hidden="true" class="lucide lucide-layout-dashboard" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg></div>
-        <h3>And plenty more wallpapers</h3><p>Pixel's own, today's Bing photo, hand-picked art, or your photo. Home and lock screen at once.</p></div>
+        <h3>And plenty more wallpapers</h3><p>Pixel's own, today's Bing photo, NASA's Hubble photos, hand-picked art, or your photo. Double-tap one to save it to Favourites.</p></div>
       <div class="card"><div class="icon"><svg aria-hidden="true" class="lucide lucide-sliders-horizontal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M10 5H3"/><path d="M12 19H3"/><path d="M14 3v4"/><path d="M16 17v4"/><path d="M21 12h-9"/><path d="M21 19h-5"/><path d="M21 5h-7"/><path d="M8 10v4"/><path d="M8 12H3"/></svg></div>
         <h3>Quick Settings tiles</h3><p>Screen off and Volume, one swipe down from anywhere, for when the buttons won't cooperate.</p></div>
       <div class="card"><div class="icon"><svg aria-hidden="true" class="lucide lucide-shield-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg></div>
@@ -383,8 +385,8 @@ footer { border-top: 1px solid var(--line); margin-top: 64px; padding: 28px 0 48
       <figure class="wall"><img src="img/wall/golf.webp" alt="Hole in one" width="360" height="800" loading="lazy"><figcaption>Hole in one</figcaption></figure>
       <figure class="wall"><img src="img/wall/pulse.webp" alt="Pixel pulse" width="360" height="800" loading="lazy"><figcaption>Pixel pulse</figcaption></figure>
     </div>
-    <p class="morewalls">Plus Pixel's built-in wallpapers, a fresh Bing photo every day, and hand-picked Abstract, Minimal,
-      Dreamscape and Space art.</p>
+    <p class="morewalls">Plus Pixel's built-in wallpapers, a fresh Bing photo every day, NASA's Hubble photos at full
+      resolution, and hand-picked Abstract, Minimal and Dreamscape art. Double-tap any wallpaper to save it to Favourites.</p>
   </section>
 
   <section id="story">
@@ -411,27 +413,30 @@ footer { border-top: 1px solid var(--line); margin-top: 64px; padding: 28px 0 48
     </div>
   </section>
 
-  <section id="edges">
-    <p class="eyebrow">new · slide the edges</p>
-    <h2>Your buttons, moved to the edges.</h2>
-    <p class="sub">Case making the buttons stiff? Slide your thumb up or down the left edge for volume and the right edge for
-      brightness, in any app, like in VLC. No buttons, no pulling down Quick Settings.</p>
+  <section id="sliders">
+    <p class="eyebrow">new · back tap</p>
+    <h2>Brightness and volume, one back tap away.</h2>
+    <p class="sub">Case making the buttons stiff? Double-tap the back of your Pixel and two sliders grow out of the camera,
+      right where your thumb already is. Drag, let go, and they tuck back in.</p>
     <div class="edges">
       <div class="phone" aria-hidden="true">
         <span class="grid"></span><span class="cam"></span>
-        <span class="island"><b></b><i><svg class="lucide lucide-sun sun" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg></i></span>
-        <span class="vol"><i></i></span>
-        <span class="thumb l"></span><span class="thumb r"></span>
+        <span class="knock"></span><span class="knock two"></span><span class="knocklabel">tap · tap</span>
+        <span class="pill b"><b></b><i></i><svg class="lucide lucide-sun ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg></span>
+        <span class="pill v"><b></b><i></i><svg class="lucide lucide-volume-2 ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z"/><path d="M16 9a5 5 0 0 1 0 6"/><path d="M19.364 18.364a9 9 0 0 0 0-12.728"/></svg></span>
       </div>
       <div class="edgecards">
-        <div class="card"><span class="tag">left edge</span><h3>Volume, one notch per swipe step</h3>
-          <p>Android's own volume panel slides in, with a small tick you can feel for every step. During a call it changes the
-            call volume, like the buttons would.</p></div>
-        <div class="card"><span class="tag">right edge</span><h3>Brightness that drops out of your camera</h3>
-          <p>A little slider grows out of the camera hole in your wallpaper's colours, follows your thumb, and tucks back in
-            when you let go. Adaptive brightness stays on and keeps what you picked.</p></div>
-        <div class="card"><span class="tag">still works</span><h3>Back gesture untouched</h3>
-          <p>The strips are thin and only listen for up and down. Swipe inwards and Android's back gesture works as always.</p></div>
+        <div class="card"><span class="tag">back tap</span><h3>Double-tap the back of the phone</h3>
+          <p>Uses Pixel's own Quick Tap: point it at TapOff Sliders once, and a double-tap on the back opens them from any app.
+            No buttons, no pulling down Quick Settings.</p></div>
+        <div class="card"><span class="tag">drag</span><h3>Sliders that grow out of your camera</h3>
+          <p>Brightness and volume in your wallpaper's colours. The level jumps to your finger and follows it, with a tick for
+            every volume step. Adaptive brightness stays on and keeps what you picked.</p></div>
+        <div class="card"><span class="tag">landscape</span><h3>Or tap the camera</h3>
+          <p>Watching something sideways? Tap the camera, marked by a faint ring, and the sliders open in the middle of the
+            screen.</p></div>
+        <div class="card"><span class="tag">out of the way</span><h3>The rest of the screen keeps working</h3>
+          <p>Only the sliders take touches. Touch anything else and it works as normal while they tuck back into the camera.</p></div>
       </div>
     </div>
   </section>
@@ -439,30 +444,37 @@ footer { border-top: 1px solid var(--line); margin-top: 64px; padding: 28px 0 48
   <section id="setup">
     <p class="eyebrow">set it up</p>
     <h2>Five minutes, once</h2>
-    <p class="sub">The last step needs a computer for about a minute. After that, you never think about it again.</p>
+    <p class="sub">A computer does the install and one permission in a single step. After that, you never think about it again.</p>
     <div class="steps">
-      <div class="step"><div><h3>Install the APK</h3>
-        <p>Download TapOff.apk on your phone and open it. Allow your browser to install apps when Android asks.</p></div></div>
+      <div class="step"><div><h3>Turn on USB debugging</h3>
+        <p>On the phone: Settings → About phone → tap <b>Build number</b> 7 times, then Settings → System → Developer options →
+          <b>USB debugging</b> on.</p></div></div>
+      <div class="step"><div><h3>Install it from a computer</h3>
+        <ol>
+          <li>Download <a href="https://github.com/taseen-t/tapoff/releases/latest/download/TapOff.apk">TapOff.apk</a> and
+            <a href="https://developer.android.com/tools/releases/platform-tools">Android platform-tools</a>.</li>
+          <li>Plug the phone in and allow the prompt on it.</li>
+          <li>In the folder with TapOff.apk, run this. It installs TapOff and gives it its one permission:</li>
+        </ol>
+        <div class="code"><code id="cmd">adb install -r TapOff.apk &amp;&amp; adb shell pm grant com.taseen.tapoff android.permission.WRITE_SECURE_SETTINGS</code>
+          <button class="copy" type="button" data-copy="cmd">Copy</button></div>
+        <p class="note">Turn USB debugging off again afterwards if you like; the permission stays.</p></div></div>
       <div class="step"><div><h3>Make TapOff your wallpaper</h3>
         <p>Open TapOff → Settings → <b>Set TapOff as home wallpaper</b> → choose <b>Home screen and lock screen</b>. Then pick
           any wallpaper you like inside the app. The double-tap works through the wallpaper.</p></div></div>
-      <div class="step"><div><h3>Give it one permission from a computer</h3>
-        <ol>
-          <li>On the phone: Settings → About phone → tap <b>Build number</b> 7 times, then Settings → System → Developer options → <b>USB debugging</b> on.</li>
-          <li>On the computer: install <a href="https://developer.android.com/tools/releases/platform-tools">Android platform-tools</a>, plug the phone in and allow the prompt.</li>
-          <li>Run this, then turn USB debugging off again if you like:</li>
-        </ol>
-        <div class="code"><code id="cmd">adb shell pm grant com.taseen.tapoff android.permission.WRITE_SECURE_SETTINGS</code>
-          <button class="copy" type="button" data-copy="cmd">Copy</button></div></div></div>
-      <div class="step"><div><h3>Optional: slide the edges</h3>
-        <p>Turn on <b>Volume</b> or <b>Brightness</b> in TapOff. Android asks you to allow <b>Display over other apps</b> for
-          TapOff; allow it and come back. Brightness also needs the computer step above.</p></div></div>
+      <div class="step"><div><h3>Optional: brightness and volume sliders</h3>
+        <p>Turn on <b>Sliders</b> in TapOff and allow <b>Display over other apps</b>. Then tap <b>Set up back tap</b>: Quick Tap →
+          <b>Open app</b> → the gear → <b>TapOff Sliders</b>.</p></div></div>
     </div>
   </section>
 
   <section>
     <p class="eyebrow">questions</p>
     <div class="faq">
+    <details><summary>Play Protect says "App blocked to protect your device"</summary>
+      <p>Some phones (Google's fraud protection, on in countries like Pakistan and India) block installing any app with an
+        accessibility service from a browser or file manager. Installing from a computer isn't blocked, which is why the
+        setup above uses one: <code>adb install</code> puts it on the phone.</p></details>
     <details><summary>Why does it need a computer once?</summary>
       <p>Switching an accessibility service on and off by itself needs a permission that only a computer can grant. Without it,
         TapOff still works as a wallpaper app; the double-tap just won't turn the screen off.</p></details>
@@ -473,7 +485,7 @@ footer { border-top: 1px solid var(--line); margin-top: 64px; padding: 28px 0 48
       <p>The home-screen double-tap works with launchers that pass taps on empty space to the wallpaper, which includes Pixel
         Launcher and most launchers built like it. The lock-screen switch uses a Pixel feature. Built and tested on a Pixel 7
         running Android 17.</p></details>
-    <details><summary>Does the brightness slide fight adaptive brightness?</summary>
+    <details><summary>Does the brightness slider fight adaptive brightness?</summary>
       <p>No. It changes brightness the same way the Quick Settings slider does: adaptive brightness stays on and keeps
         the level you picked. In normal light Android caps brightness a little below full, so the very top of the
         slide may not get any brighter.</p></details>

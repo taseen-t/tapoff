@@ -1,21 +1,19 @@
 ---
-source_file: "src/com/taseen/tapoff/EdgeSlider.java"
+source_file: "src/com/taseen/tapoff/TapWallpaper.java"
 type: "code"
-community: "EdgeSlider"
-location: "L43"
+community: "TapWallpaper"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EdgeSlider
+  - community/TapWallpaper
 ---
 
 # .setEnabled()
 
 ## Connections
-- [[dot-changed()]] - `calls` [EXTRACTED]
-- [[dot-refreshState()]] - `calls` [EXTRACTED]
-- [[dot-setEdge()]] - `calls` [EXTRACTED]
-- [[EdgeSlider]] - `method` [EXTRACTED]
-- [[android.content.Context]] - `references` [EXTRACTED]
+- [[dot-lockTile()]] - `calls` [EXTRACTED]
+- [[Context_1]] - `references` [EXTRACTED]
+- [[TapWallpaper]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EdgeSlider
+#graphify/code #graphify/EXTRACTED #community/TapWallpaper

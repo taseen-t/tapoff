@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/PreviewActivity.java"
 type: "code"
-community: "android.content.Context"
-location: "L286"
+community: "TapWallpaper"
+location: "L387"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidcontentContext
+  - community/TapWallpaper
 ---
 
 # .apply()
@@ -18,4 +18,4 @@ tags:
 - [[dot-onCreate()_1]] - `calls` [EXTRACTED]
 - [[PreviewActivity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidcontentContext
+#graphify/code #graphify/EXTRACTED #community/TapWallpaper

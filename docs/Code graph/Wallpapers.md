@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/Wallpapers.java"
 type: "code"
-community: "Wallpapers"
+community: "PreviewActivity"
 location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Wallpapers
+  - community/PreviewActivity
 ---
 
 # Wallpapers
@@ -17,12 +17,18 @@ tags:
 - [[dot-cached()]] - `method` [EXTRACTED]
 - [[dot-decode()]] - `method` [EXTRACTED]
 - [[dot-download()]] - `method` [EXTRACTED]
+- [[dot-favourites()]] - `method` [EXTRACTED]
 - [[dot-isActive()]] - `method` [EXTRACTED]
+- [[dot-isFavourite()]] - `method` [EXTRACTED]
+- [[dot-key()]] - `method` [EXTRACTED]
 - [[dot-list()]] - `method` [EXTRACTED]
 - [[dot-load()_2]] - `method` [EXTRACTED]
+- [[dot-nasa()]] - `method` [EXTRACTED]
 - [[dot-pause()]] - `method` [EXTRACTED]
 - [[dot-pixel()]] - `method` [EXTRACTED]
 - [[dot-pixelRes()]] - `method` [EXTRACTED]
+- [[dot-screenCrop()]] - `method` [EXTRACTED]
+- [[dot-setFavourite()_1]] - `method` [EXTRACTED]
 - [[dot-sha1()]] - `method` [EXTRACTED]
 - [[dot-trimCache()]] - `method` [EXTRACTED]
 - [[dot-wallhaven()]] - `method` [EXTRACTED]
@@ -31,4 +37,4 @@ tags:
 - [[Wallpapers.java]] - `contains` [EXTRACTED]
 - [[android.content.res.Resources]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Wallpapers
+#graphify/code #graphify/EXTRACTED #community/PreviewActivity

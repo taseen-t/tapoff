@@ -31,6 +31,18 @@
 
         <activity android:name=".PreviewActivity" android:exported="false" />
 
+        <!-- Opens the brightness and volume sliders and closes straight away. Its own icon, so Pixel's Quick Tap
+             (double-tap the back of the phone) can pick it. -->
+        <activity android:name=".SlidersActivity" android:exported="true" android:label="TapOff Sliders"
+            android:icon="@mipmap/ic_sliders_launcher" android:roundIcon="@mipmap/ic_sliders_launcher"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" android:excludeFromRecents="true"
+            android:noHistory="true" android:taskAffinity="">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <!-- Own process: a crash in the app's screens must never make Android drop the wallpaper. -->
         <service android:name=".TapWallpaper"
             android:process=":wallpaper"

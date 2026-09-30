@@ -42,25 +42,32 @@ public class TapWallpaper extends WallpaperService {
         }
     }
 
-    // The edge sliders live here: Android keeps the wallpaper's process running, so no notification is needed.
-    private final EdgeSlider[] edges = new EdgeSlider[2];
-    private final android.content.BroadcastReceiver edgeChanged = new android.content.BroadcastReceiver() {
+    // The camera-tap sliders live here: Android keeps the wallpaper's process running, so no notification is needed.
+    private NotchPanel notch;
+    private final android.content.BroadcastReceiver notchChanged = new android.content.BroadcastReceiver() {
         @Override public void onReceive(android.content.Context c, android.content.Intent i) {
-            for (EdgeSlider e : edges) e.sync();
+            if (NotchPanel.OPEN.equals(i.getAction())) notch.open();
+            else notch.sync();
         }
     };
 
     @Override public void onCreate() {
         super.onCreate();
-        edges[EdgeSlider.VOLUME] = new EdgeSlider(this, EdgeSlider.VOLUME);
-        edges[EdgeSlider.BRIGHTNESS] = new EdgeSlider(this, EdgeSlider.BRIGHTNESS);
-        for (EdgeSlider e : edges) e.sync();
-        registerReceiver(edgeChanged, new android.content.IntentFilter(EdgeSlider.CHANGED), RECEIVER_NOT_EXPORTED);
+        notch = new NotchPanel(this);
+        notch.sync();
+        android.content.IntentFilter f = new android.content.IntentFilter(NotchPanel.CHANGED);
+        f.addAction(NotchPanel.OPEN);
+        registerReceiver(notchChanged, f, RECEIVER_NOT_EXPORTED);
+    }
+
+    @Override public void onConfigurationChanged(android.content.res.Configuration config) {
+        super.onConfigurationChanged(config);
+        notch.rotated();
     }
 
     @Override public void onDestroy() {
-        unregisterReceiver(edgeChanged);
-        for (EdgeSlider e : edges) e.remove();
+        unregisterReceiver(notchChanged);
+        notch.remove();
         super.onDestroy();
     }
 

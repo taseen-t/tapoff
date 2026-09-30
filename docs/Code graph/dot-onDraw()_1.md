@@ -1,19 +1,20 @@
 ---
-source_file: "src/com/taseen/tapoff/SwipeHint.java"
+source_file: "src/com/taseen/tapoff/DoubleTapHint.java"
 type: "code"
-community: "CutoutArt.java"
-location: "L44"
+community: "android.view.View"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CutoutArtjava
+  - community/androidviewView
 ---
 
 # .onDraw()
 
 ## Connections
+- [[dot-press()]] - `calls` [EXTRACTED]
+- [[DoubleTapHint]] - `method` [EXTRACTED]
 - [[Override_6]] - `references` [EXTRACTED]
-- [[SwipeHint]] - `method` [EXTRACTED]
 - [[android.graphics.Canvas]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CutoutArtjava
+#graphify/code #graphify/EXTRACTED #community/androidviewView

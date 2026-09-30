@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Wallpapers.java"
+community: "log"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Wallpapersjava
+  - community/log
 ---
 
 # android.service.quicksettings.TileService
@@ -16,4 +16,4 @@ tags:
 - [[VolumeTile]] - `inherits` [EXTRACTED]
 - [[VolumeTile.java]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Wallpapersjava
+#graphify/code #graphify/EXTRACTED #community/log

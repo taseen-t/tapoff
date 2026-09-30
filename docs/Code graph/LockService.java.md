@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/LockService.java"
 type: "code"
-community: "LockService.java"
+community: "CutoutArt.java"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LockServicejava
+  - community/CutoutArtjava
 ---
 
 # LockService.java
@@ -28,4 +28,4 @@ tags:
 - [[pixelformat]] - `imports` [EXTRACTED]
 - [[settings]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LockServicejava
+#graphify/code #graphify/EXTRACTED #community/CutoutArtjava

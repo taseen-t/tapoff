@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "CutoutArt.java"
+community: "android.view.View"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/CutoutArtjava
+  - community/androidviewView
 ---
 
 # path
@@ -14,4 +14,4 @@ tags:
 - [[CutoutArt.java]] - `imports` [EXTRACTED]
 - [[GlassCard.java]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/CutoutArtjava
+#graphify/concept #graphify/EXTRACTED #community/androidviewView

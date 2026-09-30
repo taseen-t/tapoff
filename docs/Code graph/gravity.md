@@ -1,19 +1,19 @@
 ---
 source_file: ""
 type: "concept"
-community: "MainActivity.java"
+community: "NotchPanel.java"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/MainActivityjava
+  - community/NotchPaneljava
 ---
 
 # gravity
 
 ## Connections
-- [[EdgeSlider.java]] - `imports` [EXTRACTED]
 - [[MainActivity.java]] - `imports` [EXTRACTED]
+- [[NotchPanel.java]] - `imports` [EXTRACTED]
 - [[PreviewActivity.java]] - `imports` [EXTRACTED]
 - [[Ui.java]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/MainActivityjava
+#graphify/concept #graphify/EXTRACTED #community/NotchPaneljava

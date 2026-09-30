@@ -15,21 +15,21 @@
       }
     },
     {
-      "query": "tag:#community/LockServicejava",
+      "query": "tag:#community/TapWallpaper",
       "color": {
         "a": 1,
         "rgb": 14767961
       }
     },
     {
-      "query": "tag:#community/CutoutArtjava",
+      "query": "tag:#community/androidviewView",
       "color": {
         "a": 1,
         "rgb": 7780274
       }
     },
     {
-      "query": "tag:#community/EdgeSlider",
+      "query": "tag:#community/NotchPanel",
       "color": {
         "a": 1,
         "rgb": 5873999
@@ -57,14 +57,14 @@
       }
     },
     {
-      "query": "tag:#community/Wallpapers",
+      "query": "tag:#community/PreviewActivity",
       "color": {
         "a": 1,
         "rgb": 10253663
       }
     },
     {
-      "query": "tag:#community/onDraw",
+      "query": "tag:#community/NotchPaneljava",
       "color": {
         "a": 1,
         "rgb": 12234924
@@ -78,10 +78,24 @@
       }
     },
     {
+      "query": "tag:#community/log",
+      "color": {
+        "a": 1,
+        "rgb": 15896107
+      }
+    },
+    {
       "query": "tag:#community/TapOff",
       "color": {
         "a": 1,
         "rgb": 14767961
+      }
+    },
+    {
+      "query": "tag:#community/CutoutArtjava",
+      "color": {
+        "a": 1,
+        "rgb": 7780274
       }
     },
     {
@@ -96,6 +110,34 @@
       "color": {
         "a": 1,
         "rgb": 15583560
+      }
+    },
+    {
+      "query": "tag:#community/androidgraphicsBitmap",
+      "color": {
+        "a": 1,
+        "rgb": 11565729
+      }
+    },
+    {
+      "query": "tag:#community/imagebutton",
+      "color": {
+        "a": 1,
+        "rgb": 16752039
+      }
+    },
+    {
+      "query": "tag:#community/overshootinterpolator",
+      "color": {
+        "a": 1,
+        "rgb": 10253663
+      }
+    },
+    {
+      "query": "tag:#community/SlidersActivityjava",
+      "color": {
+        "a": 1,
+        "rgb": 12234924
       }
     }
   ]

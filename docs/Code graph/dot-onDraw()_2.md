@@ -1,20 +1,20 @@
 ---
-source_file: "src/com/taseen/tapoff/EdgeSlider.java"
+source_file: "src/com/taseen/tapoff/NotchPanel.java"
 type: "code"
-community: ".onDraw"
-location: "L272"
+community: "android.view.View"
+location: "L323"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/onDraw
+  - community/androidviewView
 ---
 
 # .onDraw()
 
 ## Connections
-- [[dot-blend()]] - `calls` [EXTRACTED]
-- [[Notch]] - `method` [EXTRACTED]
-- [[Override_8]] - `references` [EXTRACTED]
+- [[dot-drawPill()]] - `calls` [EXTRACTED]
+- [[Override_7]] - `references` [EXTRACTED]
+- [[Panel]] - `method` [EXTRACTED]
 - [[android.graphics.Canvas]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/onDraw
+#graphify/code #graphify/EXTRACTED #community/androidviewView

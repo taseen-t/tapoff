@@ -1,16 +1,22 @@
 {
   "0": "android.content.Context",
   "1": "MainActivity.java",
-  "2": "LockService.java",
-  "3": "CutoutArt.java",
-  "4": "EdgeSlider",
+  "2": "TapWallpaper",
+  "3": "android.view.View",
+  "4": "NotchPanel",
   "5": "android.graphics.Canvas",
   "6": "Checks.md",
   "7": "Wallpapers.java",
-  "8": "Wallpapers",
-  "9": ".onDraw",
+  "8": "PreviewActivity",
+  "9": "NotchPanel.java",
   "10": "Override",
+  "11": "log",
   "12": "TapOff",
+  "13": "CutoutArt.java",
   "14": "build.sh",
-  "15": "Pill"
+  "15": "Pill",
+  "16": "android.graphics.Bitmap",
+  "17": "imagebutton",
+  "18": "overshootinterpolator",
+  "19": "SlidersActivity.java"
 }

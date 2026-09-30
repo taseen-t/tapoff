@@ -1,16 +1,19 @@
 ---
 source_file: ""
 type: "code"
-community: "Wallpapers.java"
+community: "android.view.View"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Wallpapersjava
+  - community/androidviewView
 ---
 
 # Override
 
 ## Connections
-- [[dot-onClick()_1]] - `references` [EXTRACTED]
+- [[dot-onDraw()_2]] - `references` [EXTRACTED]
+- [[dot-onDraw()_3]] - `references` [EXTRACTED]
+- [[dot-onTouchEvent()_1]] - `references` [EXTRACTED]
+- [[dot-onTouchEvent()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Wallpapersjava
+#graphify/code #graphify/EXTRACTED #community/androidviewView

@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "android.content.Context"
+community: "Override"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidcontentContext
+  - community/Override
 ---
 
 # Configuration
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[dot-onConfigurationChanged()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidcontentContext
+#graphify/code #graphify/EXTRACTED #community/Override
