@@ -10,7 +10,7 @@ Newest first. Each entry: done / blocked / next.
 - Shizuku PR https://github.com/RikkaApps/Shizuku/pull/2537 (re-attach crash; found by reading, not reproduced).
 - Voice: Jerry B. – Hyper-Real (eleven_v3), picked from three samples. Brag video in portrait and landscape: real
   phone recordings (double-tap screen-off, back-tap sliders), animated acrylic-case hook, site art, chiptune and
-  sound effects written in code. About 1,200 ElevenLabs credits used in total (samples + one voiceover take).
+  sound effects written in code. About 850 ElevenLabs credits used in total (3 samples at 161 + one 365-credit voiceover take).
 - Privacy: the home screen's At a Glance line showed the city, so it is blurred in every frame.
 
 **Notes**
