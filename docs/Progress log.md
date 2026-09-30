@@ -20,7 +20,7 @@ Newest first. Each entry: done / blocked / next.
 - The "Shizuku not installed" dialog and "not started" paths on a device (Shizuku was already installed and running).
 
 **Next**
-- Shizuku PR only with Taseen's yes (candidate: a second `attachApplication` from one process crashes the server).
+- Shizuku PR opened with Taseen's yes: https://github.com/RikkaApps/Shizuku/pull/2537 (one-line fix for the re-attach crash).
 - Videos (setup videos now show Shizuku), second-phone test, retests.
 
 ## 2026-09-30 (later) · 1.8: back-tap sliders, favourites, NASA

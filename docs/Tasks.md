@@ -94,7 +94,7 @@ Every request goes here the moment it's asked. Tick subtasks as they land. Never
   - [x] No Gradle: vendored the trimmed Apache-2.0 Shizuku AIDL + BinderContainer, compiled with build-tools' aidl
   - [x] Site setup, README, docs, Graphify (installing from the web still hits Play Protect in some regions, so the computer install stays there)
   - [x] Tested end to end on the Pixel (revoked, then Set up without a computer → Shizuku's Allow → granted, card gone)
-  - [ ] Look through Shizuku's code for bugs worth a PR (found: a second attachApplication from one process crashes the server); PR only with Taseen's yes
+  - [x] Look through Shizuku's code for bugs worth a PR: a second attachApplication from one process crashes the server. Taseen said yes; opened https://github.com/RikkaApps/Shizuku/pull/2537 (found by reading, not reproduced)
   - [x] Release with the landscape sliders (755a74d) as 1.9, deploy the site
 - [ ] Setup videos (portrait + landscape): still wanted (Taseen, 2026-09-30), now showing the Shizuku setup
 - [ ] Taseen tests on a second Android, then fixes
