@@ -1,0 +1,21 @@
+---
+source_file: "src/com/taseen/tapoff/Wallpapers.java"
+type: "code"
+community: "EdgeSlider"
+location: "L277"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/EdgeSlider
+---
+
+# .isActive()
+
+## Connections
+- [[dot-apply()]] - `calls` [EXTRACTED]
+- [[dot-refreshState()]] - `calls` [EXTRACTED]
+- [[dot-refreshStatus()]] - `calls` [EXTRACTED]
+- [[Wallpapers]] - `method` [EXTRACTED]
+- [[android.content.Context]] - `references` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/EdgeSlider

@@ -1,7 +1,8 @@
 # TapOff
 
 Double-tap to turn your Android phone's screen off, for when the power button is worn out, hard to press
-through a case, or just too far away. Plus a wallpaper browser with wallpapers drawn around your camera hole.
+through a case, or just too far away. Slide the screen edges for volume and brightness, like in VLC. Plus a
+wallpaper browser with wallpapers drawn around your camera hole.
 
 **Download:** [TapOff.apk](https://github.com/taseen-t/tapoff/releases/latest/download/TapOff.apk) ·
 **Website:** https://tapoff.vercel.app
@@ -13,6 +14,10 @@ through a case, or just too far away. Plus a wallpaper browser with wallpapers d
 - **Keeps bank apps working.** Many banking apps refuse to open while any accessibility service is on.
   TapOff's is off all the time and switches on for about a second only while it turns the screen off.
 - **Fingerprint unlock still works** afterwards. The screen fades to black instead of flashing the lock screen.
+- **Slide the edges** in any app: up or down the left edge for volume, the right edge for brightness.
+  Volume shows Android's own volume panel, with a tick for every step. Brightness shows a small slider that grows
+  out of the camera hole in your wallpaper's colours and shrinks back in. Adaptive brightness stays on and learns
+  from it, like the Quick Settings slider. The back gesture still works. Needs "Display over other apps".
 - **Wallpapers:** Pixel's built-in ones, today's Bing photo, hand-checked art from Wallhaven, your own photo,
   and **Cutout**: 13 designs drawn live around your phone's camera hole (a black hole, a galaxy, a sunflower,
   a record, a keyhole...). Whatever you pick goes on the home and lock screen.
@@ -56,6 +61,7 @@ Set `JAVA_HOME` and `ANDROID_HOME` if they aren't the Homebrew defaults. The fir
 |---|---|
 | Live wallpaper that hears home-screen taps (`android.wallpaper.tap`) and draws your wallpaper | `TapWallpaper.java` |
 | Accessibility service that fades to black, locks, and switches itself off | `LockService.java` |
+| Edge strips for volume and brightness, and the brightness slider from the camera hole | `EdgeSlider.java` |
 | Wallpaper sources, on-phone cache, applying to home and lock screen | `Wallpapers.java` |
 | The Cutout designs, drawn around the real camera hole | `CutoutArt.java` |
 | Main screen, deck of cards, settings | `MainActivity.java`, `GlassCard.java` |
@@ -72,7 +78,8 @@ screen; it only turns the screen off.
 
 - Photos of the day from Bing; art from [Wallhaven](https://wallhaven.cc). Each belongs to its owner.
 - Pixel wallpapers are read from the Pixel wallpaper app already on your phone; none are included here.
-- The swipe hint's hand is Material Icons "touch_app" (Apache 2.0).
+- App icons are [Material Symbols](https://fonts.google.com/icons) and the swipe hint's hand is Material Icons
+  "touch_app" (Apache 2.0). Website icons are [Lucide](https://lucide.dev) (ISC).
 
 ## Bugs
 

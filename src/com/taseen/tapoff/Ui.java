@@ -90,4 +90,11 @@ final class Ui {
         b.setBackground(new RippleDrawable(ColorStateList.valueOf(0x33808080), bg, null));
         return b;
     }
+
+    private static final android.animation.ArgbEvaluator ARGB = new android.animation.ArgbEvaluator();
+
+    // A colour part-way between two others, alpha included.
+    static int blend(int from, int to, float f) {
+        return (int) ARGB.evaluate(f, from, to);
+    }
 }

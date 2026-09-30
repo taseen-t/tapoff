@@ -58,8 +58,8 @@ public class MainActivity extends Activity {
     private TextView lockStatus;
     private ImageView tileImage, volumeImage;
     private TextView volumeStatus;
-    private Switch volumeSwitch;
-    private boolean wantEdgeVolume; // the user turned it on and went to allow the permission
+    private Switch volumeSwitch, brightnessSwitch;
+    private int wantEdge = -1; // the edge slider the user turned on before going to allow the permission
     private Bitmap volumeBitmap;
     private Switch homeSwitch, lockSwitch;
     private View setupCard;
@@ -172,10 +172,12 @@ public class MainActivity extends Activity {
 
     private void refreshState() {
         loadTileImage();
-        if (wantEdgeVolume && EdgeVolume.allowed(this)) EdgeVolume.setEnabled(this, true);
-        wantEdgeVolume = false;
-        volumeSwitch.setChecked(EdgeVolume.enabled(this) && EdgeVolume.allowed(this));
-        EdgeVolume.changed(this); // the permission may have changed while we were away
+        if (wantEdge >= 0 && EdgeSlider.allowed(this, wantEdge)) EdgeSlider.setEnabled(this, wantEdge, true);
+        wantEdge = -1;
+        volumeSwitch.setChecked(EdgeSlider.enabled(this, EdgeSlider.VOLUME) && EdgeSlider.allowed(this, EdgeSlider.VOLUME));
+        brightnessSwitch.setChecked(EdgeSlider.enabled(this, EdgeSlider.BRIGHTNESS)
+            && EdgeSlider.allowed(this, EdgeSlider.BRIGHTNESS));
+        EdgeSlider.changed(this); // the permissions may have changed while we were away
         homeSwitch.setChecked(TapWallpaper.enabled(this));
         lockSwitch.setChecked(LockService.lockScreenOn(this));
         refreshStatus();
@@ -283,28 +285,37 @@ public class MainActivity extends Activity {
         return tile;
     }
 
-    // Slide up or down on the left edge for volume. Needs "Display over other apps", which only the user can allow.
+    // Slide up or down on the left edge for volume and the right edge for brightness, like in VLC. Both need
+    // "Display over other apps", which only the user can allow.
     private FrameLayout volumeTile() {
         int onText = 0xFFFFFFFF, soft = 0xCCFFFFFF;
         FrameLayout tile = new FrameLayout(this);
         volumeImage = tileArtView();
         volumeStatus = Ui.text(this, "", 13, 400, soft);
-        LinearLayout content = artTile(tile, volumeImage, "Slide for volume", R.drawable.ic_volume, volumeStatus);
-        volumeSwitch = switchRow(content, "Left edge", "Slide up or down along it, like in VLC", onText, soft);
-        volumeSwitch.setOnCheckedChangeListener((b, checked) -> {
-            if (checked && !EdgeVolume.allowed(this)) {
-                b.setChecked(false);
-                wantEdgeVolume = true;
-                Toast.makeText(this, "Allow TapOff here, then come back", Toast.LENGTH_LONG).show();
-                startActivity(new Intent(android.provider.Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
-                    Uri.parse("package:" + getPackageName())));
-                return;
-            }
-            EdgeVolume.setEnabled(this, checked);
-            refreshStatus();
-        });
+        LinearLayout content = artTile(tile, volumeImage, "Slide the edges", R.drawable.ic_slide, volumeStatus);
+        volumeSwitch = switchRow(content, "Volume", "Slide up or down the left edge", onText, soft);
+        volumeSwitch.setOnCheckedChangeListener((b, checked) -> setEdge(b, EdgeSlider.VOLUME, checked));
+        brightnessSwitch = switchRow(content, "Brightness", "Slide up or down the right edge", onText, soft);
+        brightnessSwitch.setOnCheckedChangeListener((b, checked) -> setEdge(b, EdgeSlider.BRIGHTNESS, checked));
         ((LinearLayout.LayoutParams) tile.getLayoutParams()).topMargin = Ui.dp(this, 12);
         return tile;
+    }
+
+    private void setEdge(android.widget.CompoundButton b, int kind, boolean on) {
+        if (on && !EdgeSlider.allowed(this, kind)) {
+            b.setChecked(false);
+            if (!LockService.canLock(this) && kind == EdgeSlider.BRIGHTNESS) {
+                Toast.makeText(this, "Needs the one-time setup in Settings first", Toast.LENGTH_LONG).show();
+                return;
+            }
+            wantEdge = kind;
+            Toast.makeText(this, "Allow TapOff here, then come back", Toast.LENGTH_LONG).show();
+            startActivity(new Intent(android.provider.Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
+                Uri.parse("package:" + getPackageName())));
+            return;
+        }
+        EdgeSlider.setEnabled(this, kind, on);
+        refreshStatus();
     }
 
     // Behind the tile: TapOff's own art, a dark LED grid lit up by tap ripples around a big pixel hand.
@@ -316,7 +327,7 @@ public class MainActivity extends Activity {
         }
         int w = getResources().getDisplayMetrics().widthPixels - 2 * Ui.dp(this, 16), h = Ui.dp(this, 200);
         bg.execute(() -> {
-            Bitmap b = tileArt(w, h), v = volumeArt(w, Ui.dp(this, 140));
+            Bitmap b = tileArt(w, h), v = volumeArt(w, h);
             runOnUiThread(() -> {
                 tileBitmap = b;
                 volumeBitmap = v;
@@ -390,21 +401,73 @@ public class MainActivity extends Activity {
         words.addView(Ui.text(this, what, 12.5f, 400, soft));
         row.addView(words, new LinearLayout.LayoutParams(0, -2, 1));
         Switch sw = new Switch(this);
-        sw.setContentDescription("Double-tap to turn off, " + name);
-        int[][] states = {{android.R.attr.state_checked}, {}};
-        sw.setThumbTintList(new ColorStateList(states, new int[] {onText, soft}));
-        sw.setTrackTintList(new ColorStateList(states,
-            new int[] {(onText & 0x00FFFFFF) | 0x80000000, (onText & 0x00FFFFFF) | 0x33000000}));
+        sw.setContentDescription(name + ", " + what);
+        switchArt(sw, onText, soft);
         row.addView(sw);
         row.setOnClickListener(v -> sw.toggle());
         tile.addView(row);
         return sw;
     }
 
+    // On: a solid white track with a big dark knob. Off: a dim outlined track with a small light knob. Clear over
+    // the art. Both are drawn from how far the knob has slid, so while Switch animates it across, the knob grows or
+    // shrinks and the colours blend along the way. The 32dp-square knob also sizes the track: 64x32dp.
+    private void switchArt(Switch sw, int onText, int soft) {
+        android.graphics.Rect track = new android.graphics.Rect(), thumb = new android.graphics.Rect();
+        float dp = Ui.dp(this, 1);
+        java.util.function.DoubleSupplier slid = () -> {
+            int travel = track.width() - thumb.width();
+            return travel <= 0 ? 0 : Math.max(0, Math.min(1, (thumb.left - track.left) / (float) travel));
+        };
+        android.graphics.Paint paint = new android.graphics.Paint(android.graphics.Paint.ANTI_ALIAS_FLAG);
+        sw.setTrackDrawable(new SwitchPart(track, 0) {
+            @Override public void draw(android.graphics.Canvas c) {
+                float p = (float) slid.getAsDouble(), r = getBounds().height() / 2f, inset = dp;
+                paint.setStyle(android.graphics.Paint.Style.FILL);
+                paint.setColor(Ui.blend(0x40000000, onText, p));
+                c.drawRoundRect(getBounds().left + inset, getBounds().top + inset, getBounds().right - inset,
+                    getBounds().bottom - inset, r, r, paint);
+                paint.setStyle(android.graphics.Paint.Style.STROKE);
+                paint.setStrokeWidth(2 * dp);
+                paint.setColor(Ui.blend(soft, onText, p));
+                c.drawRoundRect(getBounds().left + inset, getBounds().top + inset, getBounds().right - inset,
+                    getBounds().bottom - inset, r, r, paint);
+            }
+        });
+        sw.setThumbDrawable(new SwitchPart(thumb, Math.round(32 * dp)) {
+            @Override public void draw(android.graphics.Canvas c) {
+                float p = (float) slid.getAsDouble();
+                paint.setStyle(android.graphics.Paint.Style.FILL);
+                paint.setColor(Ui.blend(soft, 0xFF16161A, p));
+                c.drawCircle(getBounds().exactCenterX(), getBounds().exactCenterY(), (8 + 4 * p) * dp, paint);
+            }
+        });
+        sw.setSwitchMinWidth(0);
+    }
+
+    // A drawable that remembers where Switch put it, so the other half of the switch can tell how far it slid.
+    private abstract static class SwitchPart extends android.graphics.drawable.Drawable {
+        private final android.graphics.Rect where;
+        private final int size;
+
+        SwitchPart(android.graphics.Rect where, int size) {
+            this.where = where;
+            this.size = size;
+        }
+
+        @Override protected void onBoundsChange(android.graphics.Rect b) { where.set(b); }
+        @Override public int getIntrinsicWidth() { return size > 0 ? size : -1; }
+        @Override public int getIntrinsicHeight() { return size > 0 ? size : -1; }
+        @Override public void setAlpha(int a) {}
+        @Override public void setColorFilter(android.graphics.ColorFilter f) {}
+        @Override public int getOpacity() { return android.graphics.PixelFormat.TRANSLUCENT; }
+    }
+
     private void refreshStatus() {
-        if (!volumeSwitch.isChecked()) volumeStatus.setText("Off");
+        boolean vol = volumeSwitch.isChecked(), light = brightnessSwitch.isChecked();
+        if (!vol && !light) volumeStatus.setText("Off");
         else if (!Wallpapers.isActive(this)) volumeStatus.setText("Works while TapOff is your wallpaper");
-        else volumeStatus.setText("On. Slide the left edge of the screen.");
+        else volumeStatus.setText(vol && light ? "On for volume and brightness" : vol ? "On for volume" : "On for brightness");
         if (!LockService.canLock(this)) lockStatus.setText("Needs a one-time setup, see Settings");
         else if (homeSwitch.isChecked() && lockSwitch.isChecked()) lockStatus.setText("On for the home and lock screen");
         else if (homeSwitch.isChecked()) lockStatus.setText("On for the home screen");

@@ -70,7 +70,7 @@ final class CutoutArt {
         return b;
     }
 
-    private static RectF hole(Context c) {
+    static RectF hole(Context c) {
         try {
             DisplayCutout cut = c.getDisplay().getCutout();
             if (cut == null || cut.getCutoutPath() == null) return null;

@@ -1,0 +1,21 @@
+---
+source_file: "src/com/taseen/tapoff/Ui.java"
+type: "code"
+community: "android.content.Context"
+location: "L17"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/androidcontentContext
+---
+
+# Pill
+
+## Connections
+- [[dot-pill()]] - `references` [EXTRACTED]
+- [[ON_PHOTO]] - `case_of` [EXTRACTED]
+- [[PRIMARY]] - `case_of` [EXTRACTED]
+- [[SECONDARY]] - `case_of` [EXTRACTED]
+- [[Ui]] - `contains` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/androidcontentContext

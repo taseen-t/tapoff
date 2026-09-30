@@ -1,0 +1,134 @@
+{
+  "build.sh": {
+    "mtime": 1790734207.196761,
+    "seen": 1790736508.0179331,
+    "ast_hash": "5b1ce3a43dee3d081a26084ec12429cb",
+    "semantic_hash": ""
+  },
+  "src/com/taseen/tapoff/CutoutArt.java": {
+    "mtime": 1790735376.5504,
+    "seen": 1790736508.017935,
+    "ast_hash": "f722a60b0e6e53140dc0ba5edb8e30c2",
+    "semantic_hash": ""
+  },
+  "src/com/taseen/tapoff/EdgeSlider.java": {
+    "mtime": 1790736367.1120927,
+    "seen": 1790736508.017937,
+    "ast_hash": "8bda7037fe15951250e8ab03d2a5fc83",
+    "semantic_hash": ""
+  },
+  "src/com/taseen/tapoff/GlassCard.java": {
+    "mtime": 1790707537.0546887,
+    "seen": 1790736508.017937,
+    "ast_hash": "e2c548ef5f953cdff722fd9982c8b042",
+    "semantic_hash": ""
+  },
+  "src/com/taseen/tapoff/LockService.java": {
+    "mtime": 1790703947.2537768,
+    "seen": 1790736508.017938,
+    "ast_hash": "18467a9b884995370044ce435a82517f",
+    "semantic_hash": ""
+  },
+  "src/com/taseen/tapoff/MainActivity.java": {
+    "mtime": 1790736367.1126564,
+    "seen": 1790736508.0179389,
+    "ast_hash": "d28f06ebe9549593917d6f007f941e11",
+    "semantic_hash": ""
+  },
+  "src/com/taseen/tapoff/PreviewActivity.java": {
+    "mtime": 1790706199.0764017,
+    "seen": 1790736508.0179389,
+    "ast_hash": "7807e1d1ab5f4dc9beb39446f5405338",
+    "semantic_hash": ""
+  },
+  "src/com/taseen/tapoff/ScreenOffTile.java": {
+    "mtime": 1790686598.7638013,
+    "seen": 1790736508.01794,
+    "ast_hash": "37425500bd391c3e12f886ddc6247ed8",
+    "semantic_hash": ""
+  },
+  "src/com/taseen/tapoff/SwipeHint.java": {
+    "mtime": 1790688092.6929352,
+    "seen": 1790736508.01794,
+    "ast_hash": "e5a6d8874d8c197cc01d8a60236f8117",
+    "semantic_hash": ""
+  },
+  "src/com/taseen/tapoff/TapWallpaper.java": {
+    "mtime": 1790734480.1449227,
+    "seen": 1790736508.017941,
+    "ast_hash": "c2f1d8168ea345dd5e2401d060ced13c",
+    "semantic_hash": ""
+  },
+  "src/com/taseen/tapoff/Ui.java": {
+    "mtime": 1790736367.1118245,
+    "seen": 1790736508.017942,
+    "ast_hash": "8a536cd5dfe3a0dcad76bf13c26e7eb4",
+    "semantic_hash": ""
+  },
+  "src/com/taseen/tapoff/VolumeTile.java": {
+    "mtime": 1790686025.9289591,
+    "seen": 1790736508.017942,
+    "ast_hash": "c2429086457dfae649bd9b049737cf02",
+    "semantic_hash": ""
+  },
+  "src/com/taseen/tapoff/Wallpapers.java": {
+    "mtime": 1790689622.6890113,
+    "seen": 1790736508.0179431,
+    "ast_hash": "eb27277396b7e838b81ba16e1c7c4613",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1790736248.5466719,
+    "seen": 1790736508.0179431,
+    "ast_hash": "fe026edb9f51e7a3bb1a958b9d3d3dc6",
+    "semantic_hash": ""
+  },
+  "docs/Architecture.md": {
+    "mtime": 1790736499.9842954,
+    "seen": 1790736508.017944,
+    "ast_hash": "e094fa5af2601384b4925c095846e928",
+    "semantic_hash": ""
+  },
+  "docs/Checks.md": {
+    "mtime": 1790736500.3785028,
+    "seen": 1790736508.017944,
+    "ast_hash": "eab257111f49cba6bacfb2099ad89ef9",
+    "semantic_hash": ""
+  },
+  "docs/Decisions.md": {
+    "mtime": 1790736500.0863237,
+    "seen": 1790736508.017945,
+    "ast_hash": "965f007f9d316ee88629a8ef83715020",
+    "semantic_hash": ""
+  },
+  "docs/Home.md": {
+    "mtime": 1790736499.8635857,
+    "seen": 1790736508.017945,
+    "ast_hash": "f04a72e1bc288a16c60b33520e3294ed",
+    "semantic_hash": ""
+  },
+  "docs/Progress log.md": {
+    "mtime": 1790736500.2825172,
+    "seen": 1790736508.017946,
+    "ast_hash": "c69f44900aa29e5093e3fa331bdbbff2",
+    "semantic_hash": ""
+  },
+  "docs/Tasks.md": {
+    "mtime": 1790736500.187618,
+    "seen": 1790736508.017946,
+    "ast_hash": "16756e10e623e074f9ce538d643ab827",
+    "semantic_hash": ""
+  },
+  "site/index.html": {
+    "mtime": 1790736438.9693832,
+    "seen": 1790736508.017947,
+    "ast_hash": "a9db4fb6482132e1752c6e51ed9df7a6",
+    "semantic_hash": ""
+  },
+  "site/icon.svg": {
+    "mtime": 1790705640.9091592,
+    "seen": 1790736508.017947,
+    "ast_hash": "f5ddb36098ed5c9ba1b6fec08d197875",
+    "semantic_hash": ""
+  }
+}

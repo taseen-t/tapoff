@@ -1,0 +1,7 @@
+# Graphify must not read its own Obsidian export or build output
+docs/Code graph/
+graphify-out/
+out/
+site/img/
+*.apk
+*.idsig

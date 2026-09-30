@@ -42,22 +42,25 @@ public class TapWallpaper extends WallpaperService {
         }
     }
 
-    // The edge volume strip lives here: Android keeps the wallpaper's process running, so no notification is needed.
-    private EdgeVolume edge;
+    // The edge sliders live here: Android keeps the wallpaper's process running, so no notification is needed.
+    private final EdgeSlider[] edges = new EdgeSlider[2];
     private final android.content.BroadcastReceiver edgeChanged = new android.content.BroadcastReceiver() {
-        @Override public void onReceive(android.content.Context c, android.content.Intent i) { edge.sync(); }
+        @Override public void onReceive(android.content.Context c, android.content.Intent i) {
+            for (EdgeSlider e : edges) e.sync();
+        }
     };
 
     @Override public void onCreate() {
         super.onCreate();
-        edge = new EdgeVolume(this);
-        edge.sync();
-        registerReceiver(edgeChanged, new android.content.IntentFilter(EdgeVolume.CHANGED), RECEIVER_NOT_EXPORTED);
+        edges[EdgeSlider.VOLUME] = new EdgeSlider(this, EdgeSlider.VOLUME);
+        edges[EdgeSlider.BRIGHTNESS] = new EdgeSlider(this, EdgeSlider.BRIGHTNESS);
+        for (EdgeSlider e : edges) e.sync();
+        registerReceiver(edgeChanged, new android.content.IntentFilter(EdgeSlider.CHANGED), RECEIVER_NOT_EXPORTED);
     }
 
     @Override public void onDestroy() {
         unregisterReceiver(edgeChanged);
-        edge.remove();
+        for (EdgeSlider e : edges) e.remove();
         super.onDestroy();
     }
 
