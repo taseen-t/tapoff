@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/CutoutArt.java"
 type: "code"
-community: "PreviewActivity"
+community: "android.content.Context"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PreviewActivity
+  - community/androidcontentContext
 ---
 
 # .collection()
@@ -15,4 +15,4 @@ tags:
 - [[dot-load()_2]] - `calls` [EXTRACTED]
 - [[CutoutArt]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PreviewActivity
+#graphify/code #graphify/EXTRACTED #community/androidcontentContext

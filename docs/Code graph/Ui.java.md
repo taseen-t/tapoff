@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/Ui.java"
 type: "code"
-community: "android.content.Context"
+community: "MainActivity.java"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidcontentContext
+  - community/MainActivityjava
 ---
 
 # Ui.java
@@ -23,4 +23,4 @@ tags:
 - [[gravity]] - `imports` [EXTRACTED]
 - [[rippledrawable]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidcontentContext
+#graphify/code #graphify/EXTRACTED #community/MainActivityjava

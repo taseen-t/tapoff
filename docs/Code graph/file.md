@@ -1,19 +1,20 @@
 ---
 source_file: ""
 type: "concept"
-community: "SlidersActivity.java"
+community: "NotchPanel.java"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/SlidersActivityjava
+  - community/NotchPaneljava
 ---
 
 # file
 
 ## Connections
+- [[LockService.java]] - `imports` [EXTRACTED]
 - [[NotchPanel.java]] - `imports` [EXTRACTED]
 - [[SlidersActivity.java]] - `imports` [EXTRACTED]
 - [[TapWallpaper.java]] - `imports` [EXTRACTED]
 - [[Wallpapers.java]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/SlidersActivityjava
+#graphify/concept #graphify/EXTRACTED #community/NotchPaneljava

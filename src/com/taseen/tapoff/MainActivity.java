@@ -64,11 +64,11 @@ public class MainActivity extends Activity {
     private TextView lockStatus;
     private ImageView tileImage, volumeImage;
     private TextView volumeStatus;
-    private Switch panelSwitch, cameraSwitch;
+    private Switch panelSwitch;
     private Button backTap;
     private boolean wantPanel; // turned on, and went to allow "Display over other apps"
     private Bitmap volumeBitmap;
-    private Switch homeSwitch, lockSwitch;
+    private Switch homeSwitch;
     private View setupCard;
     private Button update;
     private View wallpapersHeader;
@@ -196,11 +196,12 @@ public class MainActivity extends Activity {
         if (wantPanel && NotchPanel.allowed(this)) NotchPanel.setEnabled(this, true);
         wantPanel = false;
         panelSwitch.setChecked(NotchPanel.enabled(this) && NotchPanel.allowed(this));
-        cameraSwitch.setChecked(NotchPanel.cameraTap(this));
-        backTap.setText(SlidersActivity.backTapSeen(this) ? "Back tap is set up" : "Set up back tap");
+        // Once set up, the button greys out but still opens Quick Tap's settings, to change or turn it off.
+        boolean seen = SlidersActivity.backTapSeen(this);
+        backTap.setText(seen ? "Back tap is set up" : "Set up back tap");
+        backTap.setAlpha(seen ? 0.55f : 1f);
         NotchPanel.changed(this); // the permission may have changed while we were away
         homeSwitch.setChecked(TapWallpaper.enabled(this));
-        lockSwitch.setChecked(LockService.lockScreenOn(this));
         refreshStatus();
         setupCard.setVisibility(LockService.canLock(this) ? View.GONE : View.VISIBLE);
         setTapOff.setVisibility(Wallpapers.isActive(this) ? View.GONE : View.VISIBLE);
@@ -339,22 +340,11 @@ public class MainActivity extends Activity {
             TapWallpaper.setEnabled(this, checked);
             refreshStatus();
         });
-        lockSwitch = switchRow(content, "Lock screen", "Pixel's own double-tap, no vibration", onText, soft);
-        lockSwitch.setOnCheckedChangeListener((b, checked) -> {
-            try {
-                LockService.setLockScreen(this, checked);
-            } catch (SecurityException e) {
-                b.setChecked(!checked);
-                Toast.makeText(this, "Needs the one-time setup in Settings first", Toast.LENGTH_LONG).show();
-            }
-            refreshStatus();
-        });
         return tile;
     }
 
     // Brightness and volume sliders that grow out of the camera. They open with a double-tap on the back of the phone
-    // (Pixel's Quick Tap, pointed at SlidersActivity) or, in landscape, a tap on the camera, which can be switched off
-    // on its own. Needs "Display over other apps", which only the user can allow.
+    // (Pixel's Quick Tap, pointed at SlidersActivity). Needs "Display over other apps", which only the user can allow.
     private FrameLayout volumeTile() {
         int onText = 0xFFFFFFFF, soft = 0xCCFFFFFF;
         FrameLayout tile = new FrameLayout(this);
@@ -374,8 +364,6 @@ public class MainActivity extends Activity {
             NotchPanel.setEnabled(this, checked);
             refreshStatus();
         });
-        cameraSwitch = switchRow(content, "Tap the camera", "In landscape, marked by a faint ring", onText, soft);
-        cameraSwitch.setOnCheckedChangeListener((b, checked) -> NotchPanel.setCameraTap(this, checked));
         backTap = Ui.pill(this, "Set up back tap", Ui.Pill.ON_PHOTO);
         backTap.setOnClickListener(v -> {
             if (!SlidersActivity.backTapSeen(this)) Toast.makeText(this, "Open app → TapOff Sliders", Toast.LENGTH_LONG).show();
@@ -543,10 +531,7 @@ public class MainActivity extends Activity {
         else if (!LockService.canLock(this)) volumeStatus.setText("On for volume. Brightness needs the one-time setup");
         else volumeStatus.setText("On for brightness and volume");
         if (!LockService.canLock(this)) lockStatus.setText("Needs a one-time setup, see Settings");
-        else if (homeSwitch.isChecked() && lockSwitch.isChecked()) lockStatus.setText("On for the home and lock screen");
-        else if (homeSwitch.isChecked()) lockStatus.setText("On for the home screen");
-        else if (lockSwitch.isChecked()) lockStatus.setText("On for the lock screen");
-        else lockStatus.setText("Off");
+        else lockStatus.setText(homeSwitch.isChecked() ? "On for the home screen" : "Off");
     }
 
     // Favourites come first among the wallpapers and follow what's saved, so the card is rebuilt on every return.

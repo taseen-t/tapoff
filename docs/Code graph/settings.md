@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "CutoutArt.java"
+community: "NotchPanel.java"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/CutoutArtjava
+  - community/NotchPaneljava
 ---
 
 # settings
@@ -14,4 +14,4 @@ tags:
 - [[LockService.java]] - `imports` [EXTRACTED]
 - [[NotchPanel.java]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/CutoutArtjava
+#graphify/concept #graphify/EXTRACTED #community/NotchPaneljava

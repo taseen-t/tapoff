@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-galaxy()]] - `calls` [EXTRACTED]
 - [[dot-gargantua()]] - `calls` [EXTRACTED]
-- [[dot-iris()]] - `calls` [EXTRACTED]
+- [[dot-iris()_1]] - `calls` [EXTRACTED]
 - [[dot-keyhole()]] - `calls` [EXTRACTED]
 - [[dot-neon()]] - `calls` [EXTRACTED]
 - [[dot-neonArc()]] - `calls` [EXTRACTED]

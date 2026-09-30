@@ -12,7 +12,7 @@ tags:
 # VolumeTile
 
 ## Connections
-- [[dot-onClick()]] - `method` [EXTRACTED]
+- [[dot-onClick()_1]] - `method` [EXTRACTED]
 - [[VolumeTile.java]] - `contains` [EXTRACTED]
 - [[android.service.quicksettings.TileService]] - `inherits` [EXTRACTED]
 

@@ -2,7 +2,7 @@
 source_file: "src/com/taseen/tapoff/MainActivity.java"
 type: "code"
 community: "android.graphics.Bitmap"
-location: "L415"
+location: "L403"
 tags:
   - graphify/code
   - graphify/EXTRACTED

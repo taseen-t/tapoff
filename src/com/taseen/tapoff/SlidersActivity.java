@@ -17,6 +17,15 @@ public class SlidersActivity extends Activity {
         return new File(c.getFilesDir(), "back_tap_seen").exists();
     }
 
+    // Quick Tap's setting changed (turned off, or pointed elsewhere): until the next back tap opens this, the app goes
+    // back to offering to set it up. TapOff can't read the setting, but it is told when it changes.
+    static void forgetBackTap(android.content.Context c) {
+        new File(c.getFilesDir(), "back_tap_seen").delete();
+    }
+
+    // The Quick Tap settings to watch: on/off, which action, which app.
+    static final String[] QUICK_TAP_KEYS = {"columbus_enabled", "columbus_action", "columbus_launch_app"};
+
     @Override protected void onCreate(Bundle saved) {
         super.onCreate(saved);
         if (!fromLauncher()) {

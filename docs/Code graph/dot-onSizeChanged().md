@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-updateCrop()]] - `calls` [EXTRACTED]
 - [[GlassCard]] - `method` [EXTRACTED]
-- [[Override_2]] - `references` [EXTRACTED]
+- [[Override_4]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/androidgraphicsBitmap

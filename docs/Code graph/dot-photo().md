@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[dot-apply()_1]] - `calls` [EXTRACTED]
-- [[dot-load()]] - `calls` [EXTRACTED]
-- [[Context_1]] - `references` [EXTRACTED]
+- [[dot-load()_1]] - `calls` [EXTRACTED]
+- [[Context]] - `references` [EXTRACTED]
 - [[TapWallpaper]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TapWallpaper

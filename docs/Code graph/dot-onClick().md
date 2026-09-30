@@ -1,5 +1,5 @@
 ---
-source_file: "src/com/taseen/tapoff/VolumeTile.java"
+source_file: "src/com/taseen/tapoff/ScreenOffTile.java"
 type: "code"
 community: "log"
 location: "L8"
@@ -12,7 +12,8 @@ tags:
 # .onClick()
 
 ## Connections
-- [[Override_1]] - `references` [EXTRACTED]
-- [[VolumeTile]] - `method` [EXTRACTED]
+- [[dot-lock()]] - `calls` [EXTRACTED]
+- [[Override_2]] - `references` [EXTRACTED]
+- [[ScreenOffTile]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/log

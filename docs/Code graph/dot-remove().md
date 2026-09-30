@@ -1,20 +1,20 @@
 ---
 source_file: "src/com/taseen/tapoff/NotchPanel.java"
 type: "code"
-community: "NotchPanel"
-location: "L117"
+community: "TapWallpaper"
+location: "L89"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NotchPanel
+  - community/TapWallpaper
 ---
 
 # .remove()
 
 ## Connections
-- [[dot-onDestroy()_1]] - `calls` [INFERRED]
-- [[dot-rotated()]] - `calls` [EXTRACTED]
+- [[dot-onConfigurationChanged()_1]] - `calls` [INFERRED]
+- [[dot-onDestroy()_2]] - `calls` [INFERRED]
 - [[dot-sync()]] - `calls` [EXTRACTED]
 - [[NotchPanel]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NotchPanel
+#graphify/code #graphify/EXTRACTED #community/TapWallpaper

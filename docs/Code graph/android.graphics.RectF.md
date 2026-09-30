@@ -12,7 +12,6 @@ tags:
 
 ## Connections
 - [[dot-Panel()]] - `references` [EXTRACTED]
-- [[dot-Spot()]] - `references` [EXTRACTED]
 - [[dot-hole()]] - `references` [EXTRACTED]
 - [[dot-hole()_1]] - `references` [EXTRACTED]
 - [[CutoutArt.java]] - `imports` [EXTRACTED]

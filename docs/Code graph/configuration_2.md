@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "NotchPanel.java"
+community: "MainActivity.java"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/NotchPaneljava
+  - community/MainActivityjava
 ---
 
 # configuration
@@ -14,4 +14,4 @@ tags:
 - [[NotchPanel.java]] - `imports` [EXTRACTED]
 - [[Ui.java]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/NotchPaneljava
+#graphify/concept #graphify/EXTRACTED #community/MainActivityjava

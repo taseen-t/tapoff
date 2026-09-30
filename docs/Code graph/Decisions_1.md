@@ -2,19 +2,17 @@
 source_file: "docs/Decisions.md"
 type: "document"
 community: "Checks.md"
-location: "L1"
+location: "L4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
   - community/Checksmd
 ---
 
-# Decisions.md
+# Decisions
 
 ## Connections
-- [[Architecture_1]] - `references` [EXTRACTED]
-- [[Checks]] - `references` [EXTRACTED]
 - [[Decisions]] - `contains` [EXTRACTED]
-- [[Home]] - `references` [EXTRACTED]
+- [[SlidersActivity]] - `references` [INFERRED]
 
 #graphify/document #graphify/EXTRACTED #community/Checksmd

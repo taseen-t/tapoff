@@ -7,7 +7,7 @@ import android.util.Log;
 public class ScreenOffTile extends TileService {
     @Override public void onClick() {
         try {
-            LockService.lock(this);
+            LockService.lock(this, -1, -1);
         } catch (SecurityException e) {
             Log.w("TapOff", "lock permission not granted yet", e);
         }

@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "android.view.View"
+community: "android.graphics.Paint"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidviewView
+  - community/androidgraphicsPaint
 ---
 
 # android.graphics.Paint
@@ -18,12 +18,13 @@ tags:
 - [[DoubleTapHint.java]] - `imports` [EXTRACTED]
 - [[GlassCard]] - `references` [EXTRACTED]
 - [[GlassCard.java]] - `imports` [EXTRACTED]
+- [[Iris]] - `references` [EXTRACTED]
+- [[LockService.java]] - `imports` [EXTRACTED]
 - [[NotchPanel.java]] - `imports` [EXTRACTED]
 - [[Panel]] - `references` [EXTRACTED]
-- [[Spot]] - `references` [EXTRACTED]
 - [[SwipeHint]] - `references` [EXTRACTED]
 - [[SwipeHint.java]] - `imports` [EXTRACTED]
 - [[TapEngine]] - `references` [EXTRACTED]
 - [[TapWallpaper.java]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidviewView
+#graphify/code #graphify/EXTRACTED #community/androidgraphicsPaint

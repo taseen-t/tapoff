@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/PreviewActivity.java"
 type: "code"
-community: "android.content.Context"
+community: "MainActivity.java"
 location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidcontentContext
+  - community/MainActivityjava
 ---
 
 # .onCreate()
@@ -23,8 +23,8 @@ tags:
 - [[dot-show()]] - `calls` [EXTRACTED]
 - [[dot-showTip()]] - `calls` [EXTRACTED]
 - [[dot-text()]] - `calls` [EXTRACTED]
-- [[Override_10]] - `references` [EXTRACTED]
+- [[Override]] - `references` [EXTRACTED]
 - [[PreviewActivity]] - `method` [EXTRACTED]
 - [[android.os.Bundle]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidcontentContext
+#graphify/code #graphify/EXTRACTED #community/MainActivityjava

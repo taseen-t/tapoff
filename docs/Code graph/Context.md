@@ -1,16 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "SlidersActivity.java"
+community: "TapWallpaper"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SlidersActivityjava
+  - community/TapWallpaper
 ---
 
 # Context
 
 ## Connections
-- [[dot-backTapSeen()]] - `references` [EXTRACTED]
+- [[dot-enabled()]] - `references` [EXTRACTED]
+- [[dot-photo()]] - `references` [EXTRACTED]
+- [[dot-setEnabled()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SlidersActivityjava
+#graphify/code #graphify/EXTRACTED #community/TapWallpaper

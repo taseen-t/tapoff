@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/NotchPanel.java"
 type: "code"
-community: "android.view.View"
-location: "L355"
+community: "NotchPanel"
+location: "L268"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidviewView
+  - community/NotchPanel
 ---
 
 # .onTouchEvent()
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-animateTo()]] - `calls` [EXTRACTED]
 - [[dot-hit()]] - `calls` [EXTRACTED]
-- [[Override_7]] - `references` [EXTRACTED]
+- [[Override_9]] - `references` [EXTRACTED]
 - [[Panel]] - `method` [EXTRACTED]
 - [[android.view.MotionEvent]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidviewView
+#graphify/code #graphify/EXTRACTED #community/NotchPanel

@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/PreviewActivity.java"
 type: "code"
-community: "android.content.Context"
+community: "MainActivity.java"
 location: "L170"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidcontentContext
+  - community/MainActivityjava
 ---
 
 # .image()
@@ -17,4 +17,4 @@ tags:
 - [[android.widget.FrameLayout]] - `references` [EXTRACTED]
 - [[android.widget.ImageView]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidcontentContext
+#graphify/code #graphify/EXTRACTED #community/MainActivityjava

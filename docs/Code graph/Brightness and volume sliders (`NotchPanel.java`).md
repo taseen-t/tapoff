@@ -2,7 +2,7 @@
 source_file: "docs/Architecture.md"
 type: "document"
 community: "TapWallpaper"
-location: "L25"
+location: "L24"
 tags:
   - graphify/document
   - graphify/INFERRED

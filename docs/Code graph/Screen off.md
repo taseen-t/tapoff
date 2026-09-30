@@ -15,7 +15,6 @@ tags:
 - [[dot-lock()]] - `references` [INFERRED]
 - [[dot-onCommand()]] - `references` [INFERRED]
 - [[dot-onServiceConnected()]] - `references` [INFERRED]
-- [[dot-setLockScreen()]] - `references` [INFERRED]
 - [[Architecture]] - `contains` [EXTRACTED]
 - [[TapWallpaper]] - `references` [INFERRED]
 

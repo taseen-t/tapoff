@@ -1,19 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "android.graphics.Bitmap"
+community: "log"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidgraphicsBitmap
+  - community/log
 ---
 
 # Override
 
 ## Connections
-- [[dot-onDraw()]] - `references` [EXTRACTED]
-- [[dot-onMeasure()]] - `references` [EXTRACTED]
-- [[dot-onSizeChanged()]] - `references` [EXTRACTED]
-- [[dot-setPressed()]] - `references` [EXTRACTED]
+- [[dot-onClick()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidgraphicsBitmap
+#graphify/code #graphify/EXTRACTED #community/log

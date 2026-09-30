@@ -21,7 +21,6 @@ import android.view.DisplayCutout;
 import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.ViewConfiguration;
 import android.view.WindowManager;
 import android.view.animation.LinearInterpolator;
 import android.view.animation.OvershootInterpolator;
@@ -29,10 +28,9 @@ import java.io.File;
 import java.io.IOException;
 
 // Brightness and volume sliders in the style of Quick Settings' brightness slider, in the wallpaper's Material You
-// colours. Double-tap the back of the phone (Pixel's Quick Tap, opening SlidersActivity) or, in landscape, tap the
-// camera: they grow out of the camera hole and follow your finger; in landscape they sit in the middle of the screen.
-// Overlays drawn from the wallpaper's process, which Android keeps running while TapOff is the wallpaper (needs
-// "Display over other apps").
+// colours. Double-tap the back of the phone (Pixel's Quick Tap, opening SlidersActivity): they grow out of the camera
+// hole and follow your finger; in landscape they sit in the middle of the screen. An overlay drawn from the
+// wallpaper's process, which Android keeps running while TapOff is the wallpaper (needs "Display over other apps").
 final class NotchPanel {
     static final String CHANGED = "com.taseen.tapoff.NOTCH_PANEL_CHANGED", OPEN = "com.taseen.tapoff.OPEN_SLIDERS";
     // Tuning knobs: slider size, and how long the sliders stay after the last touch.
@@ -40,31 +38,18 @@ final class NotchPanel {
     private static final long HIDE_AFTER_MS = 3000;
     private static final int BRIGHTNESS = 0, VOLUME = 1;
 
-    // Marker files, so the app and the wallpaper process see changes at once. The sliders are off unless turned on;
-    // tapping the camera (marked by a faint ring) is on unless turned off.
+    // Off unless turned on. A marker file, so the app and the wallpaper process see changes at once.
     static boolean enabled(Context c) {
         return new File(c.getFilesDir(), "notch_panel_on").exists();
     }
 
-    static boolean cameraTap(Context c) {
-        return !new File(c.getFilesDir(), "camera_tap_off").exists();
-    }
-
     static void setEnabled(Context c, boolean on) {
-        mark(c, "notch_panel_on", on);
-    }
-
-    static void setCameraTap(Context c, boolean on) {
-        mark(c, "camera_tap_off", !on);
-    }
-
-    private static void mark(Context c, String name, boolean present) {
-        File f = new File(c.getFilesDir(), name);
+        File f = new File(c.getFilesDir(), "notch_panel_on");
         try {
-            if (present) f.createNewFile();
+            if (on) f.createNewFile();
             else f.delete();
         } catch (IOException e) {
-            Log.w("TapOff", "couldn't save " + name, e);
+            Log.w("TapOff", "couldn't save the sliders switch", e);
         }
         changed(c);
     }
@@ -87,7 +72,6 @@ final class NotchPanel {
     private final WindowManager wm;
     private final AudioManager audio;
     private final float dp;
-    private Spot spot;
     private Panel panel;
 
     NotchPanel(Context c) {
@@ -98,27 +82,13 @@ final class NotchPanel {
     }
 
     void sync() {
-        boolean want = enabled(c) && allowed(c);
-        if (!want) remove();
-        if (spot != null && (!want || !cameraTap(c))) {
-            wm.removeView(spot);
-            spot = null;
-        } else if (want && spot == null && cameraTap(c)) {
-            addSpot();
-        }
+        if (!enabled(c) || !allowed(c)) remove();
     }
 
-    // The screen turned, so the camera is somewhere else now.
-    void rotated() {
-        remove();
-        sync();
-    }
-
+    // Also when the screen turns: the camera is somewhere else now.
     void remove() {
         if (panel != null) wm.removeView(panel);
         panel = null;
-        if (spot != null) wm.removeView(spot);
-        spot = null;
     }
 
     private Context display() {
@@ -139,26 +109,6 @@ final class NotchPanel {
 
     private static boolean portrait(Context dc) {
         return dc.getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT;
-    }
-
-    // Tapping the camera, in landscape only: in portrait the status bar sits over the camera and takes every tap there.
-    private void addSpot() {
-        Context dc = display();
-        if (portrait(dc)) return;
-        RectF hole = hole(dc), frame = new RectF(hole);
-        frame.inset(-10 * dp, -10 * dp);
-        spot = new Spot(c, hole, frame);
-        WindowManager.LayoutParams lp = overlay(Math.round(frame.width()), Math.round(frame.height()));
-        lp.gravity = Gravity.TOP | Gravity.LEFT;
-        lp.x = Math.round(frame.left);
-        lp.y = Math.round(frame.top);
-        lp.setTitle("TapOff camera tap");
-        try {
-            wm.addView(spot, lp);
-        } catch (RuntimeException e) { // permission revoked between the check and now
-            Log.w("TapOff", "couldn't add the camera tap", e);
-            spot = null;
-        }
     }
 
     // Touchable, so Android draws it fully opaque (it forces untouchable app overlays see-through).
@@ -195,43 +145,6 @@ final class NotchPanel {
             return;
         }
         panel.animateTo(1);
-    }
-
-    // The tap target, with a faint ring around the camera so people know it's there.
-    private final class Spot extends View {
-        private final float cx, cy, r;
-        private final Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        private final int slop = ViewConfiguration.get(c).getScaledTouchSlop();
-        private float downX, downY;
-
-        Spot(Context c, RectF hole, RectF frame) {
-            super(c);
-            cx = hole.centerX() - frame.left;
-            cy = hole.centerY() - frame.top;
-            r = hole.width() / 2 + 5 * dp;
-            paint.setStyle(Paint.Style.STROKE);
-        }
-
-        @Override protected void onDraw(Canvas canvas) {
-            // A dark hairline under a light one, so it shows on light and dark wallpapers alike.
-            paint.setStrokeWidth(3 * dp);
-            paint.setColor(0x1F000000);
-            canvas.drawCircle(cx, cy, r, paint);
-            paint.setStrokeWidth(1.2f * dp);
-            paint.setColor(0x59FFFFFF);
-            canvas.drawCircle(cx, cy, r, paint);
-        }
-
-        @Override public boolean onTouchEvent(MotionEvent e) {
-            if (e.getActionMasked() == MotionEvent.ACTION_DOWN) {
-                downX = e.getX();
-                downY = e.getY();
-            } else if (e.getActionMasked() == MotionEvent.ACTION_UP
-                && Math.hypot(e.getX() - downX, e.getY() - downY) < slop) {
-                open();
-            }
-            return true;
-        }
     }
 
     // The two sliders, drawn in the window's own coordinates.

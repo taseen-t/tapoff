@@ -17,7 +17,7 @@ members: 24
 - [[dot-gargantua()]] - code - src/com/taseen/tapoff/CutoutArt.java
 - [[dot-glow()]] - code - src/com/taseen/tapoff/CutoutArt.java
 - [[dot-golf()]] - code - src/com/taseen/tapoff/CutoutArt.java
-- [[dot-iris()]] - code - src/com/taseen/tapoff/CutoutArt.java
+- [[dot-iris()_1]] - code - src/com/taseen/tapoff/CutoutArt.java
 - [[dot-keyhole()]] - code - src/com/taseen/tapoff/CutoutArt.java
 - [[dot-lollipop()]] - code - src/com/taseen/tapoff/CutoutArt.java
 - [[dot-neon()]] - code - src/com/taseen/tapoff/CutoutArt.java
@@ -41,17 +41,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_android.view.View]]
-- 3 edges to [[_COMMUNITY_PreviewActivity]]
-- 2 edges to [[_COMMUNITY_CutoutArt.java]]
-- 2 edges to [[_COMMUNITY_NotchPanel]]
+- 7 edges to [[_COMMUNITY_android.graphics.Paint]]
+- 5 edges to [[_COMMUNITY_android.content.Context]]
+- 4 edges to [[_COMMUNITY_NotchPanel]]
+- 3 edges to [[_COMMUNITY_LockService.java]]
 - 2 edges to [[_COMMUNITY_android.graphics.Bitmap]]
-- 2 edges to [[_COMMUNITY_android.content.Context]]
+- 1 edge to [[_COMMUNITY_TapWallpaper]]
 - 1 edge to [[_COMMUNITY_NotchPanel.java]]
 
 ## Top bridge nodes
-- [[android.graphics.Canvas]] - degree 29, connects to 4 communities
-- [[dot-render()]] - degree 20, connects to 4 communities
+- [[android.graphics.Canvas]] - degree 30, connects to 6 communities
 - [[CutoutArt]] - degree 25, connects to 3 communities
+- [[dot-render()]] - degree 20, connects to 3 communities
 - [[dot-fill()]] - degree 17, connects to 1 community
 - [[dot-stroke()]] - degree 15, connects to 1 community

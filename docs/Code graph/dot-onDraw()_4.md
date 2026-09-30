@@ -1,19 +1,20 @@
 ---
-source_file: "src/com/taseen/tapoff/SwipeHint.java"
+source_file: "src/com/taseen/tapoff/NotchPanel.java"
 type: "code"
-community: "android.view.View"
-location: "L44"
+community: "NotchPanel"
+location: "L236"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidviewView
+  - community/NotchPanel
 ---
 
 # .onDraw()
 
 ## Connections
-- [[Override_8]] - `references` [EXTRACTED]
-- [[SwipeHint]] - `method` [EXTRACTED]
+- [[dot-drawPill()]] - `calls` [EXTRACTED]
+- [[Override_9]] - `references` [EXTRACTED]
+- [[Panel]] - `method` [EXTRACTED]
 - [[android.graphics.Canvas]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidviewView
+#graphify/code #graphify/EXTRACTED #community/NotchPanel

@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/MainActivity.java"
 type: "code"
-community: "android.content.Context"
-location: "L633"
+community: "MainActivity"
+location: "L618"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidcontentContext
+  - community/MainActivity
 ---
 
 # .buildSettings()
@@ -32,4 +32,4 @@ tags:
 - [[MainActivity]] - `method` [EXTRACTED]
 - [[android.widget.ScrollView]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidcontentContext
+#graphify/code #graphify/EXTRACTED #community/MainActivity

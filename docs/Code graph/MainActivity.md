@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/MainActivity.java"
 type: "code"
-community: "android.content.Context"
+community: "MainActivity"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidcontentContext
+  - community/MainActivity
 ---
 
 # MainActivity
@@ -30,7 +30,7 @@ tags:
 - [[dot-onActivityResult()]] - `method` [EXTRACTED]
 - [[dot-onConfigurationChanged()]] - `method` [EXTRACTED]
 - [[dot-onCreate()]] - `method` [EXTRACTED]
-- [[dot-onDestroy()]] - `method` [EXTRACTED]
+- [[dot-onDestroy()_1]] - `method` [EXTRACTED]
 - [[dot-onResume()]] - `method` [EXTRACTED]
 - [[dot-onSaveInstanceState()]] - `method` [EXTRACTED]
 - [[dot-park()]] - `method` [EXTRACTED]
@@ -68,4 +68,4 @@ tags:
 - [[android.widget.Switch]] - `references` [EXTRACTED]
 - [[android.widget.TextView]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidcontentContext
+#graphify/code #graphify/EXTRACTED #community/MainActivity

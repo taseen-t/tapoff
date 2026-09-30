@@ -10,14 +10,14 @@ a wallpaper browser with wallpapers drawn around your camera hole.
 ## What it does
 
 - **Double-tap the home screen** on any empty space and the screen turns off, with a tap you feel.
-- **Double-tap the lock screen** too. On Pixels this switches on Android's own lock-screen double-tap.
 - **Keeps bank apps working.** Many banking apps refuse to open while any accessibility service is on.
   TapOff's is off all the time and switches on for about a second only while it turns the screen off.
-- **Fingerprint unlock still works** afterwards. The screen fades to black instead of flashing the lock screen.
+- **Fingerprint unlock still works** afterwards. The darkness closes in on the spot you tapped instead of flashing
+  the lock screen.
 - **Brightness and volume sliders** that grow out of the camera hole, in your wallpaper's colours. Open them by
-  double-tapping the back of the phone (Pixel's Quick Tap → Open app → TapOff Sliders) or, in landscape, by tapping
-  the camera, marked by a faint ring. Drag to change; touch anything else and they tuck back in while the rest of the
-  screen keeps working. Adaptive brightness stays on. Needs "Display over other apps".
+  double-tapping the back of the phone (Pixel's Quick Tap → Open app → TapOff Sliders); in landscape they open in the
+  middle of the screen. Drag to change; touch anything else and they tuck back in while the rest of the screen keeps
+  working. Adaptive brightness stays on. Needs "Display over other apps".
 - **Wallpapers:** Pixel's built-in ones, today's Bing photo, hand-checked art from Wallhaven, your own photo,
   and **Cutout**: 13 designs drawn live around your phone's camera hole (a black hole, a galaxy, a sunflower,
   a record, a keyhole...), and NASA's Hubble photos at full resolution. Whatever you pick goes on the home and lock
@@ -66,7 +66,7 @@ Set `JAVA_HOME` and `ANDROID_HOME` if they aren't the Homebrew defaults. The fir
 |---|---|
 | Live wallpaper that hears home-screen taps (`android.wallpaper.tap`) and draws your wallpaper | `TapWallpaper.java` |
 | Accessibility service that fades to black, locks, and switches itself off | `LockService.java` |
-| Brightness and volume sliders from the camera hole, the landscape camera tap | `NotchPanel.java` |
+| Brightness and volume sliders from the camera hole | `NotchPanel.java` |
 | What Quick Tap opens to show the sliders | `SlidersActivity.java` |
 | Wallpaper sources, on-phone cache, applying to home and lock screen | `Wallpapers.java` |
 | The Cutout designs, drawn around the real camera hole | `CutoutArt.java` |

@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/GlassCard.java"
 type: "code"
-community: "android.view.View"
+community: "android.graphics.Paint"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidviewView
+  - community/androidgraphicsPaint
 ---
 
 # GlassCard.java
@@ -25,4 +25,4 @@ tags:
 - [[rectf]] - `imports` [EXTRACTED]
 - [[shader]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidviewView
+#graphify/code #graphify/EXTRACTED #community/androidgraphicsPaint

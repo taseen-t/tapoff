@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-onCommand()]] - `calls` [EXTRACTED]
 - [[dot-refreshState()]] - `calls` [EXTRACTED]
-- [[Context_1]] - `references` [EXTRACTED]
+- [[Context]] - `references` [EXTRACTED]
 - [[TapWallpaper]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TapWallpaper

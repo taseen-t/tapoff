@@ -2,19 +2,17 @@
 source_file: "src/com/taseen/tapoff/LockService.java"
 type: "code"
 community: "TapWallpaper"
-location: "L70"
+location: "L71"
 tags:
   - graphify/code
   - graphify/EXTRACTED
   - community/TapWallpaper
 ---
 
-# .setLockScreen()
+# .close()
 
 ## Connections
-- [[dot-lockTile()]] - `calls` [EXTRACTED]
-- [[LockService]] - `method` [EXTRACTED]
-- [[Screen off]] - `references` [INFERRED]
-- [[android.content.Context]] - `references` [EXTRACTED]
+- [[dot-onServiceConnected()]] - `calls` [INFERRED]
+- [[Iris]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TapWallpaper

@@ -1,11 +1,11 @@
 ---
 type: community
-members: 24
+members: 25
 ---
 
 # Checks.md
 
-**Members:** 24 nodes
+**Members:** 25 nodes
 
 ## Members
 - [[2026-09-30]] - document - docs/Tasks.md
@@ -18,6 +18,7 @@ members: 24
 - [[Checks_1]] - document - docs/Checks.md
 - [[Checks]] - document - docs/Checks.md
 - [[Decisions_1]] - document - docs/Decisions.md
+- [[Decisions]] - document - docs/Decisions.md
 - [[Done before this vault existed (v1.0–1.6)]] - document - docs/Tasks.md
 - [[Home]] - document - docs/Home.md
 - [[Keeping this current]] - document - docs/Home.md
@@ -41,9 +42,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_SlidersActivity.java]]
+- 1 edge to [[_COMMUNITY_NotchPanel]]
 - 1 edge to [[_COMMUNITY_TapWallpaper]]
 
 ## Top bridge nodes
 - [[Architecture_1]] - degree 5, connects to 1 community
-- [[Decisions_1]] - degree 4, connects to 1 community
+- [[Decisions_1]] - degree 2, connects to 1 community

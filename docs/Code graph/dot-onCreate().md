@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/MainActivity.java"
 type: "code"
-community: "android.content.Context"
+community: "MainActivity"
 location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidcontentContext
+  - community/MainActivity
 ---
 
 # .onCreate()
@@ -17,7 +17,7 @@ tags:
 - [[dot-checkForUpdate()]] - `calls` [EXTRACTED]
 - [[dot-load()_2]] - `calls` [EXTRACTED]
 - [[MainActivity]] - `method` [EXTRACTED]
-- [[Override]] - `references` [EXTRACTED]
+- [[Override_1]] - `references` [EXTRACTED]
 - [[android.os.Bundle]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidcontentContext
+#graphify/code #graphify/EXTRACTED #community/MainActivity

@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "android.view.View"
+community: "android.graphics.Paint"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidviewView
+  - community/androidgraphicsPaint
 ---
 
 # android.graphics.drawable.Drawable
@@ -20,4 +20,4 @@ tags:
 - [[SwipeHint]] - `references` [EXTRACTED]
 - [[SwipeHint.java]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidviewView
+#graphify/code #graphify/EXTRACTED #community/androidgraphicsPaint

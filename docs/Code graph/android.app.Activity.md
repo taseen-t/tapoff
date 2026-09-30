@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "SlidersActivity.java"
+community: "NotchPanel"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SlidersActivityjava
+  - community/NotchPanel
 ---
 
 # android.app.Activity
@@ -18,4 +18,4 @@ tags:
 - [[SlidersActivity]] - `inherits` [EXTRACTED]
 - [[SlidersActivity.java]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SlidersActivityjava
+#graphify/code #graphify/EXTRACTED #community/NotchPanel

@@ -39,6 +39,5 @@ tags:
 - [[vibrationattributes]] - `imports` [EXTRACTED]
 - [[vibrationeffect]] - `imports` [EXTRACTED]
 - [[vibratormanager]] - `imports` [EXTRACTED]
-- [[viewconfiguration]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/NotchPaneljava

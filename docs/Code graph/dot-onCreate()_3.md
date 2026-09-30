@@ -2,7 +2,7 @@
 source_file: "src/com/taseen/tapoff/SlidersActivity.java"
 type: "code"
 community: "NotchPanel"
-location: "L20"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -17,7 +17,7 @@ tags:
 - [[dot-fromLauncher()]] - `calls` [EXTRACTED]
 - [[dot-isActive()]] - `calls` [EXTRACTED]
 - [[dot-requestOpen()]] - `calls` [EXTRACTED]
-- [[Override_9]] - `references` [EXTRACTED]
+- [[Override_10]] - `references` [EXTRACTED]
 - [[SlidersActivity]] - `method` [EXTRACTED]
 - [[android.os.Bundle]] - `references` [EXTRACTED]
 

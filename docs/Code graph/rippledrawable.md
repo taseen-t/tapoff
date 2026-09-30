@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "android.content.Context"
+community: "MainActivity.java"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/androidcontentContext
+  - community/MainActivityjava
 ---
 
 # rippledrawable
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Ui.java]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/androidcontentContext
+#graphify/concept #graphify/EXTRACTED #community/MainActivityjava

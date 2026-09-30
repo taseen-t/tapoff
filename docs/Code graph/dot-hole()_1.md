@@ -2,7 +2,7 @@
 source_file: "src/com/taseen/tapoff/NotchPanel.java"
 type: "code"
 community: "NotchPanel"
-location: "L128"
+location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,6 @@ tags:
 # .hole()
 
 ## Connections
-- [[dot-addSpot()]] - `calls` [EXTRACTED]
 - [[dot-hole()]] - `calls` [EXTRACTED]
 - [[dot-open()]] - `calls` [EXTRACTED]
 - [[NotchPanel]] - `method` [EXTRACTED]

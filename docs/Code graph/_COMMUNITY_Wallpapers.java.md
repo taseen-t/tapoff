@@ -1,11 +1,11 @@
 ---
 type: community
-members: 21
+members: 19
 ---
 
 # Wallpapers.java
 
-**Members:** 21 nodes
+**Members:** 19 nodes
 
 ## Members
 - [[Wallpapers.java]] - code - src/com/taseen/tapoff/Wallpapers.java
@@ -13,7 +13,6 @@ members: 21
 - [[comparator]] - concept
 - [[consumer]] - concept
 - [[fileoutputstream]] - concept
-- [[files]] - concept
 - [[httpurlconnection]] - concept
 - [[imagedecoder]] - concept
 - [[inputstream]] - concept
@@ -23,7 +22,6 @@ members: 21
 - [[messagedigest]] - concept
 - [[nosuchalgorithmexception]] - concept
 - [[semaphore]] - concept
-- [[standardcharsets]] - concept
 - [[standardcopyoption]] - concept
 - [[url]] - concept
 - [[urlencoder]] - concept
@@ -38,13 +36,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_SlidersActivity.java]]
-- 2 edges to [[_COMMUNITY_PreviewActivity]]
-- 2 edges to [[_COMMUNITY_CutoutArt.java]]
-- 1 edge to [[_COMMUNITY_android.content.Context]]
+- 4 edges to [[_COMMUNITY_LockService.java]]
+- 3 edges to [[_COMMUNITY_android.content.Context]]
+- 3 edges to [[_COMMUNITY_NotchPanel.java]]
 - 1 edge to [[_COMMUNITY_android.graphics.Bitmap]]
 - 1 edge to [[_COMMUNITY_log]]
-- 1 edge to [[_COMMUNITY_NotchPanel.java]]
+- 1 edge to [[_COMMUNITY_TapWallpaper.java]]
 
 ## Top bridge nodes
-- [[Wallpapers.java]] - degree 31, connects to 7 communities
+- [[Wallpapers.java]] - degree 31, connects to 6 communities

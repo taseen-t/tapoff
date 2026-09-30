@@ -1,20 +1,20 @@
 ---
-source_file: "src/com/taseen/tapoff/NotchPanel.java"
+source_file: "src/com/taseen/tapoff/DoubleTapHint.java"
 type: "code"
-community: "android.view.View"
-location: "L323"
+community: "android.graphics.Paint"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidviewView
+  - community/androidgraphicsPaint
 ---
 
 # .onDraw()
 
 ## Connections
-- [[dot-drawPill()]] - `calls` [EXTRACTED]
+- [[dot-press()]] - `calls` [EXTRACTED]
+- [[DoubleTapHint]] - `method` [EXTRACTED]
 - [[Override_7]] - `references` [EXTRACTED]
-- [[Panel]] - `method` [EXTRACTED]
 - [[android.graphics.Canvas]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidviewView
+#graphify/code #graphify/EXTRACTED #community/androidgraphicsPaint

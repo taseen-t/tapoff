@@ -2,7 +2,7 @@
 source_file: "src/com/taseen/tapoff/TapWallpaper.java"
 type: "code"
 community: "TapWallpaper"
-location: "L54"
+location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-sync()]] - `calls` [INFERRED]
-- [[Override_5]] - `references` [EXTRACTED]
+- [[Override_6]] - `references` [EXTRACTED]
 - [[TapWallpaper]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TapWallpaper

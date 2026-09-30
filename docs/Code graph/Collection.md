@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/Wallpapers.java"
 type: "code"
-community: "PreviewActivity"
+community: "android.content.Context"
 location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PreviewActivity
+  - community/androidcontentContext
 ---
 
 # Collection
@@ -16,4 +16,4 @@ tags:
 - [[Item]] - `references` [EXTRACTED]
 - [[Wallpapers]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PreviewActivity
+#graphify/code #graphify/EXTRACTED #community/androidcontentContext

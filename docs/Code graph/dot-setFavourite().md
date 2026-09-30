@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/PreviewActivity.java"
 type: "code"
-community: "PreviewActivity"
+community: "MainActivity.java"
 location: "L265"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PreviewActivity
+  - community/MainActivityjava
 ---
 
 # .setFavourite()
@@ -19,4 +19,4 @@ tags:
 - [[dot-showHeart()]] - `calls` [EXTRACTED]
 - [[PreviewActivity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PreviewActivity
+#graphify/code #graphify/EXTRACTED #community/MainActivityjava

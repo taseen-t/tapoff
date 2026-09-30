@@ -1,54 +1,52 @@
 ---
 type: community
-members: 47
+members: 45
 ---
 
 # TapWallpaper
 
-**Members:** 47 nodes
+**Members:** 45 nodes
 
 ## Members
-- [[dot-apply()]] - code - src/com/taseen/tapoff/PreviewActivity.java
-- [[dot-apply()_1]] - code - src/com/taseen/tapoff/Wallpapers.java
+- [[dot-Iris()]] - code - src/com/taseen/tapoff/LockService.java
+- [[dot-close()]] - code - src/com/taseen/tapoff/LockService.java
 - [[dot-draw()]] - code - src/com/taseen/tapoff/TapWallpaper.java
 - [[dot-enabled()]] - code - src/com/taseen/tapoff/TapWallpaper.java
-- [[dot-load()]] - code - src/com/taseen/tapoff/TapWallpaper.java
+- [[dot-load()_1]] - code - src/com/taseen/tapoff/TapWallpaper.java
 - [[dot-lock()]] - code - src/com/taseen/tapoff/LockService.java
-- [[dot-lockScreenOn()]] - code - src/com/taseen/tapoff/LockService.java
 - [[dot-onAccessibilityEvent()]] - code - src/com/taseen/tapoff/LockService.java
-- [[dot-onClick()_1]] - code - src/com/taseen/tapoff/ScreenOffTile.java
 - [[dot-onCommand()]] - code - src/com/taseen/tapoff/TapWallpaper.java
 - [[dot-onComputeColors()]] - code - src/com/taseen/tapoff/TapWallpaper.java
 - [[dot-onConfigurationChanged()_1]] - code - src/com/taseen/tapoff/TapWallpaper.java
 - [[dot-onCreate()_2]] - code - src/com/taseen/tapoff/TapWallpaper.java
 - [[dot-onCreateEngine()]] - code - src/com/taseen/tapoff/TapWallpaper.java
-- [[dot-onDestroy()_1]] - code - src/com/taseen/tapoff/TapWallpaper.java
+- [[dot-onDestroy()_2]] - code - src/com/taseen/tapoff/TapWallpaper.java
+- [[dot-onDraw()_1]] - code - src/com/taseen/tapoff/LockService.java
 - [[dot-onInterrupt()]] - code - src/com/taseen/tapoff/LockService.java
 - [[dot-onServiceConnected()]] - code - src/com/taseen/tapoff/LockService.java
 - [[dot-onSurfaceRedrawNeeded()]] - code - src/com/taseen/tapoff/TapWallpaper.java
 - [[dot-onVisibilityChanged()]] - code - src/com/taseen/tapoff/TapWallpaper.java
 - [[dot-photo()]] - code - src/com/taseen/tapoff/TapWallpaper.java
-- [[dot-refreshFavourites()]] - code - src/com/taseen/tapoff/MainActivity.java
-- [[dot-screenCrop()]] - code - src/com/taseen/tapoff/Wallpapers.java
-- [[dot-setEnabled()_1]] - code - src/com/taseen/tapoff/TapWallpaper.java
-- [[dot-setLockScreen()]] - code - src/com/taseen/tapoff/LockService.java
+- [[dot-remove()]] - code - src/com/taseen/tapoff/NotchPanel.java
+- [[dot-setEnabled()]] - code - src/com/taseen/tapoff/TapWallpaper.java
+- [[dot-tapFile()]] - code - src/com/taseen/tapoff/LockService.java
+- [[dot-tapPoint()]] - code - src/com/taseen/tapoff/LockService.java
 - [[Architecture]] - document - docs/Architecture.md
 - [[Brightness and volume sliders (`NotchPanel.java`)]] - document - docs/Architecture.md
 - [[BroadcastReceiver]] - code
 - [[Configuration_1]] - code
-- [[Context_1]] - code
+- [[ContentObserver]] - code
+- [[Context]] - code
 - [[Engine]] - code
 - [[Icons]] - document - docs/Architecture.md
+- [[Iris]] - code - src/com/taseen/tapoff/LockService.java
 - [[LockService]] - code - src/com/taseen/tapoff/LockService.java
-- [[Override_3]] - code
-- [[Override_4]] - code
 - [[Override_5]] - code
+- [[Override_6]] - code
 - [[Processes]] - document - docs/Architecture.md
-- [[Rect_1]] - code
 - [[Screen off]] - document - docs/Architecture.md
 - [[TapEngine]] - code - src/com/taseen/tapoff/TapWallpaper.java
 - [[TapWallpaper]] - code - src/com/taseen/tapoff/TapWallpaper.java
-- [[Wallpapers_1]] - document - docs/Architecture.md
 - [[Website (`site`)]] - document - docs/Architecture.md
 - [[android.accessibilityservice.AccessibilityService]] - code
 - [[android.app.WallpaperColors]] - code
@@ -64,21 +62,21 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 12 edges to [[_COMMUNITY_android.content.Context]]
-- 9 edges to [[_COMMUNITY_NotchPanel]]
-- 6 edges to [[_COMMUNITY_PreviewActivity]]
-- 4 edges to [[_COMMUNITY_android.graphics.Bitmap]]
-- 4 edges to [[_COMMUNITY_NotchPanel.java]]
-- 3 edges to [[_COMMUNITY_CutoutArt.java]]
+- 8 edges to [[_COMMUNITY_android.content.Context]]
+- 7 edges to [[_COMMUNITY_NotchPanel]]
+- 4 edges to [[_COMMUNITY_TapWallpaper.java]]
+- 3 edges to [[_COMMUNITY_MainActivity]]
+- 3 edges to [[_COMMUNITY_android.graphics.Paint]]
+- 3 edges to [[_COMMUNITY_LockService.java]]
+- 2 edges to [[_COMMUNITY_MainActivity.java]]
+- 1 edge to [[_COMMUNITY_android.graphics.Bitmap]]
 - 1 edge to [[_COMMUNITY_log]]
-- 1 edge to [[_COMMUNITY_SlidersActivity.java]]
-- 1 edge to [[_COMMUNITY_android.view.View]]
-- 1 edge to [[_COMMUNITY_MainActivity.java]]
+- 1 edge to [[_COMMUNITY_android.graphics.Canvas]]
 - 1 edge to [[_COMMUNITY_Checks]]
 
 ## Top bridge nodes
-- [[dot-refreshFavourites()]] - degree 5, connects to 4 communities
-- [[dot-apply()_1]] - degree 7, connects to 3 communities
-- [[dot-screenCrop()]] - degree 6, connects to 3 communities
-- [[dot-apply()]] - degree 5, connects to 3 communities
-- [[TapWallpaper]] - degree 16, connects to 2 communities
+- [[TapWallpaper]] - degree 17, connects to 3 communities
+- [[Architecture]] - degree 8, connects to 3 communities
+- [[LockService]] - degree 11, connects to 2 communities
+- [[TapEngine]] - degree 11, connects to 2 communities
+- [[dot-lock()]] - degree 6, connects to 2 communities

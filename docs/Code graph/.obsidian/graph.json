@@ -1,7 +1,7 @@
 {
   "colorGroups": [
     {
-      "query": "tag:#community/androidcontentContext",
+      "query": "tag:#community/MainActivity",
       "color": {
         "a": 1,
         "rgb": 5142951
@@ -22,7 +22,7 @@
       }
     },
     {
-      "query": "tag:#community/androidviewView",
+      "query": "tag:#community/androidgraphicsPaint",
       "color": {
         "a": 1,
         "rgb": 7780274
@@ -57,14 +57,14 @@
       }
     },
     {
-      "query": "tag:#community/PreviewActivity",
+      "query": "tag:#community/androidcontentContext",
       "color": {
         "a": 1,
         "rgb": 10253663
       }
     },
     {
-      "query": "tag:#community/NotchPaneljava",
+      "query": "tag:#community/TapWallpaperjava",
       "color": {
         "a": 1,
         "rgb": 12234924
@@ -92,7 +92,7 @@
       }
     },
     {
-      "query": "tag:#community/CutoutArtjava",
+      "query": "tag:#community/LockServicejava",
       "color": {
         "a": 1,
         "rgb": 7780274
@@ -103,13 +103,6 @@
       "color": {
         "a": 1,
         "rgb": 5873999
-      }
-    },
-    {
-      "query": "tag:#community/Pill",
-      "color": {
-        "a": 1,
-        "rgb": 15583560
       }
     },
     {
@@ -134,7 +127,7 @@
       }
     },
     {
-      "query": "tag:#community/SlidersActivityjava",
+      "query": "tag:#community/NotchPaneljava",
       "color": {
         "a": 1,
         "rgb": 12234924

@@ -1,19 +1,18 @@
 ---
 source_file: ""
 type: "concept"
-community: "NotchPanel.java"
+community: "TapWallpaper.java"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/NotchPaneljava
+  - community/TapWallpaperjava
 ---
 
 # viewconfiguration
 
 ## Connections
 - [[MainActivity.java]] - `imports` [EXTRACTED]
-- [[NotchPanel.java]] - `imports` [EXTRACTED]
 - [[PreviewActivity.java]] - `imports` [EXTRACTED]
 - [[TapWallpaper.java]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/NotchPaneljava
+#graphify/concept #graphify/EXTRACTED #community/TapWallpaperjava

@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "CutoutArt.java"
+community: "LockService.java"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/CutoutArtjava
+  - community/LockServicejava
 ---
 
 # componentname
@@ -14,4 +14,4 @@ tags:
 - [[LockService.java]] - `imports` [EXTRACTED]
 - [[MainActivity.java]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/CutoutArtjava
+#graphify/concept #graphify/EXTRACTED #community/LockServicejava

@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/MainActivity.java"
 type: "code"
-community: "android.content.Context"
-location: "L737"
+community: "MainActivity"
+location: "L722"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidcontentContext
+  - community/MainActivity
 ---
 
 # SwipeRoot
@@ -19,4 +19,4 @@ tags:
 - [[android.view.VelocityTracker]] - `references` [EXTRACTED]
 - [[android.widget.FrameLayout]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidcontentContext
+#graphify/code #graphify/EXTRACTED #community/MainActivity

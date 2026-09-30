@@ -19,23 +19,20 @@ targetSdk 35. Package `com.taseen.tapoff`, sources in `src/com/taseen/tapoff/`.
 | Pixel Launcher sends `android.wallpaper.tap` for taps on empty home-screen space | `TapWallpaper.TapEngine.onCommand` |
 | Two taps within `DOUBLE_TAP_MS` (400) and double-tap slop → heavy-click haptic | `TapWallpaper` |
 | Adds itself to `ENABLED_ACCESSIBILITY_SERVICES` (needs `WRITE_SECURE_SETTINGS`, granted once over adb) | `LockService.lock` |
-| On connect: black overlay fades in (150 ms), `GLOBAL_ACTION_LOCK_SCREEN`, then `disableSelf()` after 1 s | `LockService.onServiceConnected` |
-| Lock-screen double-tap: Pixel's hidden Secure setting `double_tap_to_sleep`, write-only, state kept in prefs | `LockService.setLockScreen` |
+| On connect: darkness closes in on the tap point (soft-edged iris, 420 ms; the point comes from the wallpaper process in `files/tap_point`), `GLOBAL_ACTION_LOCK_SCREEN`, then `disableSelf()` after 1 s | `LockService.onServiceConnected`, `Iris` |
 
 ## Brightness and volume sliders (`NotchPanel.java`)
-- Hosted in `TapWallpaper` (one instance). Opened by:
-  - **Back tap:** Pixel's Quick Tap → Open app → **TapOff Sliders** launches `SlidersActivity` (translucent, finishes at
-    once), which sends `NotchPanel.OPEN` to the wallpaper process.
-  - **Tapping the camera, landscape only:** a small touchable overlay around the cutout, drawing a faint ring. In
-    portrait the status bar window (touchable region `[0,0][1080,136]`, above every app overlay) owns the camera, so no
-    spot there.
+- Hosted in `TapWallpaper` (one instance). Opened by a **back tap**: Pixel's Quick Tap → Open app → **TapOff
+  Sliders** launches `SlidersActivity` (translucent, finishes at once), which sends `NotchPanel.OPEN` to the wallpaper
+  process. `TapWallpaper` also watches Quick Tap's `columbus_*` settings for changes (it can't read them) so the app
+  can stop saying "Back tap is set up" when they change.
 - The panel: one window covering only the sliders (and in portrait the way up to the camera), `FLAG_NOT_TOUCH_MODAL`
   + `FLAG_WATCH_OUTSIDE_TOUCH`, so the rest of the screen keeps working and `ACTION_OUTSIDE` puts them away. Closes
   3 s after the last touch.
 - Sliders grow out of the camera (landscape: out of the middle of the stack), styled like the Quick Settings slider in
   Material You colours. Brightness writes `SCREEN_BRIGHTNESS` through Android's HLG curve (only shown when the
   one-time permission exists); volume sets `STREAM_MUSIC` (call stream in a call) with a tick per step.
-- Marker files: `notch_panel_on` (sliders), `camera_tap_off` (landscape camera tap and its ring).
+- Marker files: `notch_panel_on` (sliders), `back_tap_seen` (a back tap has opened them since Quick Tap last changed).
 
 ## Wallpapers
 | Part | Where |

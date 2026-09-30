@@ -1,8 +1,8 @@
 {
   "build.sh": {
-    "mtime": 1790762346.0899527,
-    "seen": 1790762750.000919,
-    "ast_hash": "0c090e19f2919e3cdf891f99dc1ec2c4",
+    "mtime": 1790763238.2987244,
+    "seen": 1790763904.907707,
+    "ast_hash": "9387621585841e12905e3915cd9d6a7b",
     "semantic_hash": ""
   },
   "src/com/taseen/tapoff/CutoutArt.java": {
@@ -18,15 +18,15 @@
     "semantic_hash": ""
   },
   "src/com/taseen/tapoff/LockService.java": {
-    "mtime": 1790703947.2537768,
-    "seen": 1790736508.017938,
-    "ast_hash": "18467a9b884995370044ce435a82517f",
+    "mtime": 1790763111.5371888,
+    "seen": 1790763904.907715,
+    "ast_hash": "5cc892718ac99b9d3283d72bb957010c",
     "semantic_hash": ""
   },
   "src/com/taseen/tapoff/MainActivity.java": {
-    "mtime": 1790762803.5688124,
-    "seen": 1790762877.680686,
-    "ast_hash": "cbc1328c9c516dba46ced277018bfeec",
+    "mtime": 1790763486.3688247,
+    "seen": 1790763904.907715,
+    "ast_hash": "22cec8826a2f857b16cf132b61e9ae04",
     "semantic_hash": ""
   },
   "src/com/taseen/tapoff/PreviewActivity.java": {
@@ -36,9 +36,9 @@
     "semantic_hash": ""
   },
   "src/com/taseen/tapoff/ScreenOffTile.java": {
-    "mtime": 1790686598.7638013,
-    "seen": 1790736508.01794,
-    "ast_hash": "37425500bd391c3e12f886ddc6247ed8",
+    "mtime": 1790763058.8651652,
+    "seen": 1790763904.9077172,
+    "ast_hash": "6d116fa6e91f30dc0d8ac7bba5fdf878",
     "semantic_hash": ""
   },
   "src/com/taseen/tapoff/SwipeHint.java": {
@@ -48,9 +48,9 @@
     "semantic_hash": ""
   },
   "src/com/taseen/tapoff/TapWallpaper.java": {
-    "mtime": 1790762007.8755605,
-    "seen": 1790762750.000932,
-    "ast_hash": "86cb1d436f91e893cfc42f6a62151c44",
+    "mtime": 1790763486.3683257,
+    "seen": 1790763904.907719,
+    "ast_hash": "3e2d5e401e7b6263664f91dc5449d970",
     "semantic_hash": ""
   },
   "src/com/taseen/tapoff/Ui.java": {
@@ -72,15 +72,15 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1790762692.9243011,
-    "seen": 1790762750.0009348,
-    "ast_hash": "2c080f85f12e54c5a404cc9572e0d33d",
+    "mtime": 1790763752.530213,
+    "seen": 1790763904.907722,
+    "ast_hash": "aa8b1067c7a52836d3aa1cc58a32a350",
     "semantic_hash": ""
   },
   "docs/Architecture.md": {
-    "mtime": 1790762749.0003679,
-    "seen": 1790762750.000936,
-    "ast_hash": "4573d013a90e6deab92c00c830d286b2",
+    "mtime": 1790763752.5307794,
+    "seen": 1790763904.907723,
+    "ast_hash": "08c18c43b85f9bd26906e6166c21010f",
     "semantic_hash": ""
   },
   "docs/Checks.md": {
@@ -90,9 +90,9 @@
     "semantic_hash": ""
   },
   "docs/Decisions.md": {
-    "mtime": 1790762876.7652266,
-    "seen": 1790762877.680696,
-    "ast_hash": "f3b33cbc137556228ed493f786be6918",
+    "mtime": 1790763752.5311203,
+    "seen": 1790763904.9077241,
+    "ast_hash": "9c0d4f4799072a08c8ba2779c30b2e59",
     "semantic_hash": ""
   },
   "docs/Home.md": {
@@ -108,15 +108,15 @@
     "semantic_hash": ""
   },
   "docs/Tasks.md": {
-    "mtime": 1790762876.765541,
-    "seen": 1790762877.6806982,
-    "ast_hash": "5889f35d088a56ad2ebe752dc7c3fdb4",
+    "mtime": 1790763752.5315876,
+    "seen": 1790763904.907726,
+    "ast_hash": "521c552e731e1cf419330681c4399e0e",
     "semantic_hash": ""
   },
   "site/index.html": {
-    "mtime": 1790762692.9002874,
-    "seen": 1790762750.00094,
-    "ast_hash": "18bf064ea60747137cf453aac1b156c9",
+    "mtime": 1790763885.323328,
+    "seen": 1790763904.907727,
+    "ast_hash": "a0e7fcf3c23ad37e183d4f6f94187cf0",
     "semantic_hash": ""
   },
   "site/icon.svg": {
@@ -132,15 +132,15 @@
     "semantic_hash": ""
   },
   "src/com/taseen/tapoff/NotchPanel.java": {
-    "mtime": 1790762007.875249,
-    "seen": 1790762750.000928,
-    "ast_hash": "bd5f9b2ffc9395e5556718af32a33c05",
+    "mtime": 1790763486.3681645,
+    "seen": 1790763904.907716,
+    "ast_hash": "22b59bd54090c1e83eac6700ea5e6883",
     "semantic_hash": ""
   },
   "src/com/taseen/tapoff/SlidersActivity.java": {
-    "mtime": 1790762803.5445628,
-    "seen": 1790762877.6806889,
-    "ast_hash": "0fa28d3542c638c3a0a480c8fb99b9ed",
+    "mtime": 1790763421.3419263,
+    "seen": 1790763904.907718,
+    "ast_hash": "5ca372bd81129ea658aa095aa3280f7a",
     "semantic_hash": ""
   }
 }

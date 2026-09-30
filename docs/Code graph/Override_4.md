@@ -1,16 +1,19 @@
 ---
 source_file: ""
 type: "code"
-community: "TapWallpaper"
+community: "android.graphics.Bitmap"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TapWallpaper
+  - community/androidgraphicsBitmap
 ---
 
 # Override
 
 ## Connections
-- [[dot-onClick()_1]] - `references` [EXTRACTED]
+- [[dot-onDraw()]] - `references` [EXTRACTED]
+- [[dot-onMeasure()]] - `references` [EXTRACTED]
+- [[dot-onSizeChanged()]] - `references` [EXTRACTED]
+- [[dot-setPressed()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TapWallpaper
+#graphify/code #graphify/EXTRACTED #community/androidgraphicsBitmap

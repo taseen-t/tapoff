@@ -1,19 +1,21 @@
 ---
-source_file: "src/com/taseen/tapoff/TapWallpaper.java"
+source_file: "src/com/taseen/tapoff/NotchPanel.java"
 type: "code"
-community: "TapWallpaper"
-location: "L35"
+community: "NotchPanel"
+location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TapWallpaper
+  - community/NotchPanel
 ---
 
 # .setEnabled()
 
 ## Connections
-- [[dot-lockTile()]] - `calls` [EXTRACTED]
-- [[Context_1]] - `references` [EXTRACTED]
-- [[TapWallpaper]] - `method` [EXTRACTED]
+- [[dot-changed()]] - `calls` [EXTRACTED]
+- [[dot-refreshState()]] - `calls` [EXTRACTED]
+- [[dot-volumeTile()]] - `calls` [EXTRACTED]
+- [[NotchPanel]] - `method` [EXTRACTED]
+- [[android.content.Context]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TapWallpaper
+#graphify/code #graphify/EXTRACTED #community/NotchPanel

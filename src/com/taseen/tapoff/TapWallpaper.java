@@ -51,8 +51,16 @@ public class TapWallpaper extends WallpaperService {
         }
     };
 
+    // Runs here because this process is always up while TapOff is the wallpaper, so no change to Quick Tap is missed.
+    private final android.database.ContentObserver quickTapChanged =
+        new android.database.ContentObserver(new android.os.Handler(android.os.Looper.getMainLooper())) {
+            @Override public void onChange(boolean self) { SlidersActivity.forgetBackTap(TapWallpaper.this); }
+        };
+
     @Override public void onCreate() {
         super.onCreate();
+        for (String key : SlidersActivity.QUICK_TAP_KEYS)
+            getContentResolver().registerContentObserver(android.provider.Settings.Secure.getUriFor(key), false, quickTapChanged);
         notch = new NotchPanel(this);
         notch.sync();
         android.content.IntentFilter f = new android.content.IntentFilter(NotchPanel.CHANGED);
@@ -62,10 +70,11 @@ public class TapWallpaper extends WallpaperService {
 
     @Override public void onConfigurationChanged(android.content.res.Configuration config) {
         super.onConfigurationChanged(config);
-        notch.rotated();
+        notch.remove(); // the camera is somewhere else now
     }
 
     @Override public void onDestroy() {
+        getContentResolver().unregisterContentObserver(quickTapChanged);
         unregisterReceiver(notchChanged);
         notch.remove();
         super.onDestroy();
@@ -136,7 +145,7 @@ public class TapWallpaper extends WallpaperService {
                     VibrationEffect.createPredefined(VibrationEffect.EFFECT_HEAVY_CLICK),
                     VibrationAttributes.createForUsage(VibrationAttributes.USAGE_TOUCH));
                 try {
-                    LockService.lock(TapWallpaper.this);
+                    LockService.lock(TapWallpaper.this, x, y);
                 } catch (SecurityException e) {
                     Log.w("TapOff", "lock permission not granted yet", e);
                 }

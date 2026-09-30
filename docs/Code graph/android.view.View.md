@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "android.view.View"
+community: "android.graphics.Paint"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidviewView
+  - community/androidgraphicsPaint
 ---
 
 # android.view.View
@@ -16,6 +16,7 @@ tags:
 - [[DoubleTapHint.java]] - `imports` [EXTRACTED]
 - [[GlassCard]] - `inherits` [EXTRACTED]
 - [[GlassCard.java]] - `imports` [EXTRACTED]
+- [[Iris]] - `inherits` [EXTRACTED]
 - [[LockService.java]] - `imports` [EXTRACTED]
 - [[MainActivity]] - `references` [EXTRACTED]
 - [[MainActivity.java]] - `imports` [EXTRACTED]
@@ -23,8 +24,7 @@ tags:
 - [[Panel]] - `inherits` [EXTRACTED]
 - [[PreviewActivity]] - `references` [EXTRACTED]
 - [[PreviewActivity.java]] - `imports` [EXTRACTED]
-- [[Spot]] - `inherits` [EXTRACTED]
 - [[SwipeHint]] - `inherits` [EXTRACTED]
 - [[SwipeHint.java]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidviewView
+#graphify/code #graphify/EXTRACTED #community/androidgraphicsPaint

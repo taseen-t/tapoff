@@ -75,6 +75,15 @@ Every request goes here the moment it's asked. Tick subtasks as they land. Never
   - [x] Tile icon: pixel hand tapping the back of a phone, no outline showing through the hand
   - [x] Button says "Back tap is set up" once a back tap has opened the sliders, and opens Quick Tap's settings
 - [x] Site: double-tap section moved up, sliders section rewritten for back tap
+- [x] Screen off: darkness closes in on the tapped spot instead of a quick fade
+- [x] Back tap button greys out once set up, still opens Quick Tap settings
+- [x] Remove the lock-screen double-tap option and its code
+- [x] Site: back tap shown on the back of the phone, the phone flips, then the sliders
+- [x] Site: new screenshots; the strip shows only the app, no wallpaper shots
+- [x] Remove the camera-tap setting and its code
+- [x] Button stops saying "Back tap is set up" when Quick Tap is changed or turned off
+- [ ] Back tap not opening the sliders on Taseen's phone: Quick Tap was off; to retest with it on (and with "Take
+      screenshot" to rule out the acrylic case)
 - [ ] Taseen tests on a second Android, then fixes
 - [ ] Refresh site screenshots (tile changed) with the video footage
 

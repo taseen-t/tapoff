@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "SlidersActivity.java"
+community: "NotchPanel.java"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/SlidersActivityjava
+  - community/NotchPaneljava
 ---
 
 # toast
@@ -15,4 +15,4 @@ tags:
 - [[PreviewActivity.java]] - `imports` [EXTRACTED]
 - [[SlidersActivity.java]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/SlidersActivityjava
+#graphify/concept #graphify/EXTRACTED #community/NotchPaneljava

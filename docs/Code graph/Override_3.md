@@ -1,18 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "TapWallpaper"
+community: "log"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TapWallpaper
+  - community/log
 ---
 
 # Override
 
 ## Connections
-- [[dot-onAccessibilityEvent()]] - `references` [EXTRACTED]
-- [[dot-onInterrupt()]] - `references` [EXTRACTED]
-- [[dot-onServiceConnected()]] - `references` [EXTRACTED]
+- [[dot-onClick()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TapWallpaper
+#graphify/code #graphify/EXTRACTED #community/log

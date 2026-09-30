@@ -76,3 +76,17 @@ Newest at the bottom. Each one says why, so nobody undoes it by accident.
     (hidden Secure settings, same as `double_tap_to_sleep`). So `SlidersActivity` notes the first time something other
     than the home screen's app icon opens it (checked with the referrer), and the button changes then. It still opens
     Quick Tap's settings page. (2026-09-30)
+27. **Screen off closes in on the tap.** A flat 150 ms fade looked like a snap. The darkness now shrinks to where the
+    home screen was double-tapped (the wallpaper writes the point to a file the lock service reads, since they run in
+    different processes). (2026-09-30)
+28. **Lock-screen double-tap switch removed.** Taseen doesn't need it; the switch, its prefs and the code writing
+    `double_tap_to_sleep` are gone (supersedes #3). The Android setting it turned on stays as it is on phones that had
+    it. (2026-09-30)
+29. **The site's screenshot strip shows only the app.** Wallpaper shots (Sunflower, Lollipop preview) moved out; the
+    wallpapers have their own gallery further down. (2026-09-30)
+30. **Camera tap removed.** It only ever worked in landscape and Taseen asked to drop it: the landscape spot, its ring,
+    the switch and the code are gone. Back tap is the one way in; in landscape the sliders still open centred.
+    (2026-09-30)
+31. **Know when Quick Tap changes, even without reading it.** A `ContentObserver` on the `columbus_*` settings (in the
+    always-running wallpaper process) forgets `back_tap_seen` on any change, so turning Quick Tap off makes the button
+    offer setup again; the next back tap that opens the sliders marks it set up again. (2026-09-30)

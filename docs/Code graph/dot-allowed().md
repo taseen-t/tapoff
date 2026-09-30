@@ -2,7 +2,7 @@
 source_file: "src/com/taseen/tapoff/NotchPanel.java"
 type: "code"
 community: "NotchPanel"
-location: "L82"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED

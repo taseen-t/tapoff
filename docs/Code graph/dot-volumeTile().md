@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/MainActivity.java"
 type: "code"
-community: "android.content.Context"
-location: "L358"
+community: "MainActivity"
+location: "L348"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidcontentContext
+  - community/MainActivity
 ---
 
 # .volumeTile()
@@ -19,12 +19,11 @@ tags:
 - [[dot-dp()]] - `calls` [EXTRACTED]
 - [[dot-pill()]] - `calls` [EXTRACTED]
 - [[dot-refreshStatus()]] - `calls` [EXTRACTED]
-- [[dot-setCameraTap()]] - `calls` [EXTRACTED]
-- [[dot-setEnabled()]] - `calls` [EXTRACTED]
+- [[dot-setEnabled()_1]] - `calls` [EXTRACTED]
 - [[dot-switchRow()]] - `calls` [EXTRACTED]
 - [[dot-text()]] - `calls` [EXTRACTED]
 - [[dot-tileArtView()]] - `calls` [EXTRACTED]
 - [[MainActivity]] - `method` [EXTRACTED]
 - [[android.widget.FrameLayout]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidcontentContext
+#graphify/code #graphify/EXTRACTED #community/MainActivity

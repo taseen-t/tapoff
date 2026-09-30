@@ -2,7 +2,7 @@
 source_file: "src/com/taseen/tapoff/TapWallpaper.java"
 type: "code"
 community: "TapWallpaper"
-location: "L121"
+location: "L130"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,8 +12,8 @@ tags:
 # .onComputeColors()
 
 ## Connections
-- [[dot-load()]] - `calls` [EXTRACTED]
-- [[Override_5]] - `references` [EXTRACTED]
+- [[dot-load()_1]] - `calls` [EXTRACTED]
+- [[Override_6]] - `references` [EXTRACTED]
 - [[TapEngine]] - `method` [EXTRACTED]
 - [[Wallpapers_1]] - `references` [INFERRED]
 - [[android.app.WallpaperColors]] - `references` [EXTRACTED]

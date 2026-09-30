@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/Wallpapers.java"
 type: "code"
-community: "TapWallpaper"
+community: "android.content.Context"
 location: "L305"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TapWallpaper
+  - community/androidcontentContext
 ---
 
 # .screenCrop()
@@ -19,4 +19,4 @@ tags:
 - [[android.content.Context]] - `references` [EXTRACTED]
 - [[android.graphics.Bitmap]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TapWallpaper
+#graphify/code #graphify/EXTRACTED #community/androidcontentContext
