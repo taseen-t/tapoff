@@ -1,22 +1,19 @@
 ---
 source_file: ""
 type: "code"
-community: "TapWallpaper"
+community: "CutoutArt.java"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TapWallpaper
+  - community/CutoutArtjava
 ---
 
 # Override
 
 ## Connections
-- [[dot-onCommand()]] - `references` [EXTRACTED]
-- [[dot-onComputeColors()]] - `references` [EXTRACTED]
-- [[dot-onCreate()_2]] - `references` [EXTRACTED]
-- [[dot-onCreateEngine()]] - `references` [EXTRACTED]
-- [[dot-onDestroy()_2]] - `references` [EXTRACTED]
-- [[dot-onSurfaceRedrawNeeded()]] - `references` [EXTRACTED]
-- [[dot-onVisibilityChanged()]] - `references` [EXTRACTED]
+- [[dot-onDraw()]] - `references` [EXTRACTED]
+- [[dot-onMeasure()]] - `references` [EXTRACTED]
+- [[dot-onSizeChanged()]] - `references` [EXTRACTED]
+- [[dot-setPressed()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TapWallpaper
+#graphify/code #graphify/EXTRACTED #community/CutoutArtjava

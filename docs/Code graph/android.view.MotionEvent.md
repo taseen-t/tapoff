@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "MainActivity.java"
+community: "EdgeSlider"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MainActivityjava
+  - community/EdgeSlider
 ---
 
 # android.view.MotionEvent
@@ -20,4 +20,4 @@ tags:
 - [[MainActivity.java]] - `imports` [EXTRACTED]
 - [[PreviewActivity.java]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MainActivityjava
+#graphify/code #graphify/EXTRACTED #community/EdgeSlider

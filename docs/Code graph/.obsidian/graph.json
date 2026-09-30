@@ -15,7 +15,7 @@
       }
     },
     {
-      "query": "tag:#community/TapWallpaper",
+      "query": "tag:#community/LockServicejava",
       "color": {
         "a": 1,
         "rgb": 14767961
@@ -64,7 +64,7 @@
       }
     },
     {
-      "query": "tag:#community/EdgeSliderjava",
+      "query": "tag:#community/onDraw",
       "color": {
         "a": 1,
         "rgb": 12234924
@@ -78,13 +78,6 @@
       }
     },
     {
-      "query": "tag:#community/log",
-      "color": {
-        "a": 1,
-        "rgb": 15896107
-      }
-    },
-    {
       "query": "tag:#community/TapOff",
       "color": {
         "a": 1,
@@ -92,17 +85,17 @@
       }
     },
     {
-      "query": "tag:#community/LockServicejava",
-      "color": {
-        "a": 1,
-        "rgb": 7780274
-      }
-    },
-    {
       "query": "tag:#community/buildsh",
       "color": {
         "a": 1,
         "rgb": 5873999
+      }
+    },
+    {
+      "query": "tag:#community/Pill",
+      "color": {
+        "a": 1,
+        "rgb": 15583560
       }
     }
   ]

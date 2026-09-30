@@ -1,27 +1,21 @@
 ---
 type: community
-members: 54
+members: 44
 ---
 
 # MainActivity.java
 
-**Members:** 54 nodes
+**Members:** 44 nodes
 
 ## Members
 - [[dot-SwipeRoot()]] - code - src/com/taseen/tapoff/MainActivity.java
-- [[dot-apply()]] - code - src/com/taseen/tapoff/PreviewActivity.java
-- [[dot-beginPageDrag()]] - code - src/com/taseen/tapoff/MainActivity.java
 - [[dot-drag()]] - code - src/com/taseen/tapoff/PreviewActivity.java
-- [[dot-dragPages()]] - code - src/com/taseen/tapoff/MainActivity.java
-- [[dot-image()]] - code - src/com/taseen/tapoff/PreviewActivity.java
 - [[dot-intent()]] - code - src/com/taseen/tapoff/PreviewActivity.java
 - [[dot-load()]] - code - src/com/taseen/tapoff/PreviewActivity.java
 - [[dot-onActivityResult()]] - code - src/com/taseen/tapoff/MainActivity.java
-- [[dot-onCreate()_1]] - code - src/com/taseen/tapoff/PreviewActivity.java
 - [[dot-onDestroy()]] - code - src/com/taseen/tapoff/PreviewActivity.java
-- [[dot-onInterceptTouchEvent()]] - code - src/com/taseen/tapoff/MainActivity.java
+- [[dot-onSaveInstanceState()]] - code - src/com/taseen/tapoff/MainActivity.java
 - [[dot-onTouch()]] - code - src/com/taseen/tapoff/PreviewActivity.java
-- [[dot-onTouchEvent()]] - code - src/com/taseen/tapoff/MainActivity.java
 - [[dot-settle()]] - code - src/com/taseen/tapoff/PreviewActivity.java
 - [[dot-show()]] - code - src/com/taseen/tapoff/PreviewActivity.java
 - [[dot-toggleControls()]] - code - src/com/taseen/tapoff/PreviewActivity.java
@@ -36,13 +30,9 @@ members: 54
 - [[android.content.res.Configuration]] - code
 - [[android.graphics.Typeface]] - code
 - [[android.os.Bundle]] - code
-- [[android.view.MotionEvent]] - code
 - [[android.view.VelocityTracker]] - code
-- [[android.view.View]] - code
 - [[android.widget.Button]] - code
-- [[android.widget.ImageView]] - code
 - [[android.widget.ProgressBar]] - code
-- [[android.widget.ScrollView]] - code
 - [[colorstatelist]] - concept
 - [[decelerateinterpolator]] - concept
 - [[executors]] - concept
@@ -71,20 +61,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 45 edges to [[_COMMUNITY_android.content.Context]]
-- 12 edges to [[_COMMUNITY_CutoutArt.java]]
-- 7 edges to [[_COMMUNITY_EdgeSlider.java]]
-- 5 edges to [[_COMMUNITY_EdgeSlider]]
+- 41 edges to [[_COMMUNITY_android.content.Context]]
+- 11 edges to [[_COMMUNITY_CutoutArt.java]]
+- 8 edges to [[_COMMUNITY_Wallpapers.java]]
 - 4 edges to [[_COMMUNITY_Override]]
-- 3 edges to [[_COMMUNITY_TapWallpaper]]
+- 3 edges to [[_COMMUNITY_LockService.java]]
+- 3 edges to [[_COMMUNITY_EdgeSlider]]
 - 2 edges to [[_COMMUNITY_Wallpapers]]
-- 2 edges to [[_COMMUNITY_LockService.java]]
-- 2 edges to [[_COMMUNITY_log]]
-- 1 edge to [[_COMMUNITY_Wallpapers.java]]
 
 ## Top bridge nodes
 - [[MainActivity.java]] - degree 34, connects to 5 communities
-- [[android.view.View]] - degree 13, connects to 5 communities
 - [[PreviewActivity.java]] - degree 32, connects to 4 communities
 - [[PreviewActivity]] - degree 22, connects to 4 communities
-- [[android.os.Bundle]] - degree 7, connects to 4 communities
+- [[android.os.Bundle]] - degree 7, connects to 3 communities
+- [[SwipeRoot]] - degree 6, connects to 2 communities

@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/MainActivity.java"
 type: "code"
-community: "android.content.Context"
+community: "CutoutArt.java"
 location: "L341"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidcontentContext
+  - community/CutoutArtjava
 ---
 
 # .volumeArt()
@@ -17,4 +17,4 @@ tags:
 - [[MainActivity]] - `method` [EXTRACTED]
 - [[android.graphics.Bitmap]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidcontentContext
+#graphify/code #graphify/EXTRACTED #community/CutoutArtjava

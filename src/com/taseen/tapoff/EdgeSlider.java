@@ -209,7 +209,8 @@ final class EdgeSlider {
         private final Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
         private final RectF pill = new RectF();
         private final float cx, cy, r, w, h, top;
-        private final int track, fill, icon;
+        private final int track, fill;
+        private final android.graphics.drawable.Drawable sun;
 
         Notch(Context dc) {
             super(dc);
@@ -224,7 +225,8 @@ final class EdgeSlider {
             top = hole.bottom + 10 * dp;
             track = dc.getColor(android.R.color.system_neutral1_800);
             fill = dc.getColor(android.R.color.system_accent1_200);
-            icon = dc.getColor(android.R.color.system_accent1_800);
+            sun = dc.getDrawable(com.taseen.tapoff.R.drawable.ic_card_today).mutate(); // Material Symbols "light_mode"
+            sun.setTint(dc.getColor(android.R.color.system_accent1_800));
         }
 
         // A window just big enough for the full pill. Touchable, so Android draws it fully opaque; it only eats taps
@@ -285,18 +287,10 @@ final class EdgeSlider {
             canvas.drawRoundRect(pill.left, pill.top, fillRight, pill.bottom, round, round, paint);
             canvas.restore();
             // The sun, inside the filled end.
-            float sx = pill.left + ph / 2, sy = midY, d = dp;
-            paint.setColor(Ui.blend(0x00000000, icon, show));
-            canvas.drawCircle(sx, sy, 4.5f * d, paint);
-            paint.setStyle(Paint.Style.STROKE);
-            paint.setStrokeWidth(2 * d);
-            paint.setStrokeCap(Paint.Cap.ROUND);
-            for (int i = 0; i < 8; i++) {
-                double a = i * Math.PI / 4;
-                float cos = (float) Math.cos(a), sin = (float) Math.sin(a);
-                canvas.drawLine(sx + cos * 7.5f * d, sy + sin * 7.5f * d, sx + cos * 10 * d, sy + sin * 10 * d, paint);
-            }
-            paint.setStyle(Paint.Style.FILL);
+            int half = Math.round(10 * dp), sx = Math.round(pill.left + ph / 2), sy = Math.round(midY);
+            sun.setBounds(sx - half, sy - half, sx + half, sy + half);
+            sun.setAlpha(Math.round(255 * show));
+            sun.draw(canvas);
         }
     }
 

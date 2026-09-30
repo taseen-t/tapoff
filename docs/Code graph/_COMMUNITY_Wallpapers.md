@@ -40,7 +40,7 @@ SORT file.name ASC
 - 3 edges to [[_COMMUNITY_android.graphics.Canvas]]
 - 2 edges to [[_COMMUNITY_MainActivity.java]]
 - 2 edges to [[_COMMUNITY_Wallpapers.java]]
-- 1 edge to [[_COMMUNITY_TapWallpaper]]
+- 1 edge to [[_COMMUNITY_LockService.java]]
 - 1 edge to [[_COMMUNITY_EdgeSlider]]
 - 1 edge to [[_COMMUNITY_CutoutArt.java]]
 

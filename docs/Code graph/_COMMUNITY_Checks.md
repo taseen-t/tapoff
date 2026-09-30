@@ -40,7 +40,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_TapWallpaper]]
+- 1 edge to [[_COMMUNITY_LockService.java]]
 
 ## Top bridge nodes
-- [[Architecture_1]] - degree 4, connects to 1 community
+- [[Architecture_1]] - degree 5, connects to 1 community

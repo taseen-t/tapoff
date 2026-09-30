@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "EdgeSlider"
+community: "CutoutArt.java"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EdgeSlider
+  - community/CutoutArtjava
 ---
 
 # LayoutParams
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[dot-params()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EdgeSlider
+#graphify/code #graphify/EXTRACTED #community/CutoutArtjava

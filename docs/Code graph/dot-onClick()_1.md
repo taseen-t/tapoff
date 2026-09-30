@@ -1,18 +1,18 @@
 ---
 source_file: "src/com/taseen/tapoff/VolumeTile.java"
 type: "code"
-community: "log"
+community: "Wallpapers.java"
 location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/log
+  - community/Wallpapersjava
 ---
 
 # .onClick()
 
 ## Connections
-- [[Override_3]] - `references` [EXTRACTED]
+- [[Override_7]] - `references` [EXTRACTED]
 - [[VolumeTile]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/log
+#graphify/code #graphify/EXTRACTED #community/Wallpapersjava

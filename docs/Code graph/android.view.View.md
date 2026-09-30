@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "MainActivity.java"
+community: "CutoutArt.java"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MainActivityjava
+  - community/CutoutArtjava
 ---
 
 # android.view.View
@@ -25,4 +25,4 @@ tags:
 - [[SwipeHint]] - `inherits` [EXTRACTED]
 - [[SwipeHint.java]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MainActivityjava
+#graphify/code #graphify/EXTRACTED #community/CutoutArtjava

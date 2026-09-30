@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/EdgeSlider.java"
 type: "code"
-community: "EdgeSlider"
-location: "L232"
+community: "CutoutArt.java"
+location: "L234"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EdgeSlider
+  - community/CutoutArtjava
 ---
 
 # .params()
@@ -16,4 +16,4 @@ tags:
 - [[LayoutParams]] - `references` [EXTRACTED]
 - [[Notch]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EdgeSlider
+#graphify/code #graphify/EXTRACTED #community/CutoutArtjava

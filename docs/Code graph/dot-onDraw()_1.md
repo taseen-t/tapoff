@@ -12,7 +12,7 @@ tags:
 # .onDraw()
 
 ## Connections
-- [[Override_7]] - `references` [EXTRACTED]
+- [[Override_6]] - `references` [EXTRACTED]
 - [[SwipeHint]] - `method` [EXTRACTED]
 - [[android.graphics.Canvas]] - `references` [EXTRACTED]
 

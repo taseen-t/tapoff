@@ -41,15 +41,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_CutoutArt.java]]
+- 11 edges to [[_COMMUNITY_CutoutArt.java]]
 - 3 edges to [[_COMMUNITY_Wallpapers]]
-- 3 edges to [[_COMMUNITY_EdgeSlider]]
 - 2 edges to [[_COMMUNITY_android.content.Context]]
-- 1 edge to [[_COMMUNITY_EdgeSlider.java]]
+- 1 edge to [[_COMMUNITY_dot-onDraw]]
+- 1 edge to [[_COMMUNITY_Wallpapers.java]]
 
 ## Top bridge nodes
-- [[dot-render()]] - degree 20, connects to 4 communities
-- [[CutoutArt]] - degree 25, connects to 3 communities
 - [[android.graphics.Canvas]] - degree 25, connects to 3 communities
+- [[dot-render()]] - degree 20, connects to 3 communities
+- [[CutoutArt]] - degree 25, connects to 2 communities
 - [[dot-fill()]] - degree 17, connects to 1 community
 - [[dot-stroke()]] - degree 15, connects to 1 community

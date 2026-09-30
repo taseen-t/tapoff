@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/EdgeSlider.java"
 type: "code"
-community: "EdgeSlider"
+community: "CutoutArt.java"
 location: "L189"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EdgeSlider
+  - community/CutoutArtjava
 ---
 
 # .showLevel()
@@ -18,4 +18,4 @@ tags:
 - [[dot-params()]] - `calls` [INFERRED]
 - [[EdgeSlider]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EdgeSlider
+#graphify/code #graphify/EXTRACTED #community/CutoutArtjava

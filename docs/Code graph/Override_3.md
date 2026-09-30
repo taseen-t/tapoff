@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "log"
+community: "LockService.java"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/log
+  - community/LockServicejava
 ---
 
 # Override
 
 ## Connections
-- [[dot-onClick()_1]] - `references` [EXTRACTED]
+- [[dot-onClick()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/log
+#graphify/code #graphify/EXTRACTED #community/LockServicejava

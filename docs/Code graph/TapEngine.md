@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/TapWallpaper.java"
 type: "code"
-community: "TapWallpaper"
+community: "LockService.java"
 location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TapWallpaper
+  - community/LockServicejava
 ---
 
 # TapEngine
@@ -24,4 +24,4 @@ tags:
 - [[android.graphics.Bitmap]] - `references` [EXTRACTED]
 - [[android.graphics.Paint]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TapWallpaper
+#graphify/code #graphify/EXTRACTED #community/LockServicejava

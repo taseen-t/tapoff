@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/PreviewActivity.java"
 type: "code"
-community: "MainActivity.java"
+community: "android.content.Context"
 location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MainActivityjava
+  - community/androidcontentContext
 ---
 
 # .onCreate()
@@ -24,4 +24,4 @@ tags:
 - [[PreviewActivity]] - `method` [EXTRACTED]
 - [[android.os.Bundle]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MainActivityjava
+#graphify/code #graphify/EXTRACTED #community/androidcontentContext

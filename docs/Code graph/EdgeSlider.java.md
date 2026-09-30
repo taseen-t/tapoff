@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/EdgeSlider.java"
 type: "code"
-community: "EdgeSlider.java"
+community: "Wallpapers.java"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EdgeSliderjava
+  - community/Wallpapersjava
 ---
 
 # EdgeSlider.java
@@ -36,4 +36,4 @@ tags:
 - [[vibrationeffect]] - `imports` [EXTRACTED]
 - [[vibratormanager]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EdgeSliderjava
+#graphify/code #graphify/EXTRACTED #community/Wallpapersjava

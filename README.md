@@ -16,8 +16,8 @@ wallpaper browser with wallpapers drawn around your camera hole.
 - **Fingerprint unlock still works** afterwards. The screen fades to black instead of flashing the lock screen.
 - **Slide the edges** in any app: up or down the left edge for volume, the right edge for brightness.
   Volume shows Android's own volume panel, with a tick for every step. Brightness shows a small slider that grows
-  out of the camera hole in your wallpaper's colours and shrinks back in. Adaptive brightness stays on and learns
-  from it, like the Quick Settings slider. The back gesture still works. Needs "Display over other apps".
+  out of the camera hole in your wallpaper's colours and shrinks back in. Adaptive brightness stays on and keeps
+  the level you picked, like the Quick Settings slider. The back gesture still works. Needs "Display over other apps".
 - **Wallpapers:** Pixel's built-in ones, today's Bing photo, hand-checked art from Wallhaven, your own photo,
   and **Cutout**: 13 designs drawn live around your phone's camera hole (a black hole, a galaxy, a sunflower,
   a record, a keyhole...). Whatever you pick goes on the home and lock screen.

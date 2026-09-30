@@ -25,9 +25,10 @@ Newest at the bottom. Each one says why, so nobody undoes it by accident.
     adjustments for about half a second while nothing is playing (the "first press shows the panel" rule): a slide
     sent 8 steps and only 3 applied. Media stream (call stream during calls) matches Pixel's buttons. (2026-09-30)
 11. **Brightness writes `SCREEN_BRIGHTNESS` with no extra permission.** Holders of `WRITE_SECURE_SETTINGS` may write
-    System settings, and TapOff already has it from the one-time setup. Measured: with adaptive brightness on, the
-    write applies at once and adaptive stays on, treating it as the user's adjustment, like the Quick Settings slider.
-    The current max can be capped (0.5 in normal light), so the top of the slide may do nothing. (2026-09-30)
+    System settings, and TapOff already has it from the one-time setup. Measured with a real edge slide and adaptive
+    brightness on: the screen went 0.15 → 0.04 at once and was still 0.04 six seconds later, and adaptive stayed on
+    (`screen_brightness_mode` 1). Whether adaptive *learns* from it is not verified, so the site doesn't claim it. The
+    current max can be capped (0.5 in normal light), so the top of the slide may do nothing. (2026-09-30)
 12. **Own brightness pill instead of SystemUI's brightness dialog.** The dialog
     (`com.android.intent.action.SHOW_BRIGHTNESS_DIALOG`, with `android.intent.extra.FROM_BRIGHTNESS_KEY` it closes
     itself after about 3 s) works, but it's an activity, so it pauses the app underneath, and its open and close
@@ -38,7 +39,10 @@ Newest at the bottom. Each one says why, so nobody undoes it by accident.
 14. **Switch parts are custom drawables, not state lists.** A `StateListDrawable` crossfade left a muddy double knob
     mid-slide, and `InsetDrawable` padding made Switch measure itself too small and clip. The track and knob now
     compute how far the knob has slid and draw size and colour from that. (2026-09-30)
-15. **Official icon sets only.** Material Symbols in the app, Lucide on the site. Hand-drawn icons looked off
-    (the fingerprint especially). (2026-09-30)
+15. **Official icon sets only.** Material Symbols in the app (including the sun in the brightness pill), Lucide on
+    the site (including the sun in the phone demo). Hand-drawn icons looked off, the fingerprint especially.
+    (2026-09-30)
 16. **Site stays one static file.** No build step, no analytics, no "built with Claude" line. Setup commands must
     wrap on phones (`min-width: 0` on flex and grid children) or they push the page sideways. (2026-09-30)
+17. **1.7.1, not a replaced 1.7.** Screenshots and icons changed after 1.7 was published; a new version keeps the
+    1.7 download honest. (2026-09-30)

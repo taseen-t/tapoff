@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "EdgeSlider.java"
+community: "Wallpapers.java"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/EdgeSliderjava
+  - community/Wallpapersjava
 ---
 
 # canvas
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[TapWallpaper.java]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/EdgeSliderjava
+#graphify/concept #graphify/EXTRACTED #community/Wallpapersjava

@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "TapWallpaper"
+community: "LockService.java"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TapWallpaper
+  - community/LockServicejava
 ---
 
 # android.service.wallpaper.WallpaperService
@@ -14,4 +14,4 @@ tags:
 - [[TapWallpaper]] - `inherits` [EXTRACTED]
 - [[TapWallpaper.java]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TapWallpaper
+#graphify/code #graphify/EXTRACTED #community/LockServicejava

@@ -16,5 +16,6 @@ tags:
 - [[Checks]] - `references` [EXTRACTED]
 - [[Decisions]] - `references` [EXTRACTED]
 - [[Home]] - `references` [EXTRACTED]
+- [[Progress log]] - `references` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Checksmd

@@ -1,18 +1,22 @@
 ---
 source_file: ""
 type: "code"
-community: "TapWallpaper"
+community: "LockService.java"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TapWallpaper
+  - community/LockServicejava
 ---
 
 # Override
 
 ## Connections
-- [[dot-onAccessibilityEvent()]] - `references` [EXTRACTED]
-- [[dot-onInterrupt()]] - `references` [EXTRACTED]
-- [[dot-onServiceConnected()]] - `references` [EXTRACTED]
+- [[dot-onCommand()]] - `references` [EXTRACTED]
+- [[dot-onComputeColors()]] - `references` [EXTRACTED]
+- [[dot-onCreate()_2]] - `references` [EXTRACTED]
+- [[dot-onCreateEngine()]] - `references` [EXTRACTED]
+- [[dot-onDestroy()_2]] - `references` [EXTRACTED]
+- [[dot-onSurfaceRedrawNeeded()]] - `references` [EXTRACTED]
+- [[dot-onVisibilityChanged()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TapWallpaper
+#graphify/code #graphify/EXTRACTED #community/LockServicejava

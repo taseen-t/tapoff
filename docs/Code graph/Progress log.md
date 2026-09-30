@@ -12,6 +12,7 @@ tags:
 # Progress log.md
 
 ## Connections
+- [[Architecture_1]] - `references` [EXTRACTED]
 - [[Checks]] - `references` [EXTRACTED]
 - [[Home]] - `references` [EXTRACTED]
 - [[Progress log_1]] - `contains` [EXTRACTED]

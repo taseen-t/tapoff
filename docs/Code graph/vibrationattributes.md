@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "EdgeSlider.java"
+community: "Wallpapers.java"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/EdgeSliderjava
+  - community/Wallpapersjava
 ---
 
 # vibrationattributes
@@ -14,4 +14,4 @@ tags:
 - [[EdgeSlider.java]] - `imports` [EXTRACTED]
 - [[TapWallpaper.java]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/EdgeSliderjava
+#graphify/concept #graphify/EXTRACTED #community/Wallpapersjava

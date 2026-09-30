@@ -1,12 +1,12 @@
 ---
 source_file: "docs/Architecture.md"
 type: "document"
-community: "TapWallpaper"
+community: "LockService.java"
 location: "L16"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/TapWallpaper
+  - community/LockServicejava
 ---
 
 # Screen off
@@ -19,4 +19,4 @@ tags:
 - [[Architecture]] - `contains` [EXTRACTED]
 - [[TapWallpaper]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/TapWallpaper
+#graphify/document #graphify/INFERRED #community/LockServicejava

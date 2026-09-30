@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/CutoutArt.java"
 type: "code"
-community: "EdgeSlider"
+community: "CutoutArt.java"
 location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EdgeSlider
+  - community/CutoutArtjava
 ---
 
 # .hole()
@@ -19,4 +19,4 @@ tags:
 - [[android.content.Context]] - `references` [EXTRACTED]
 - [[android.graphics.RectF]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EdgeSlider
+#graphify/code #graphify/EXTRACTED #community/CutoutArtjava

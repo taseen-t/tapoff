@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "CutoutArt.java"
+community: "Wallpapers.java"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CutoutArtjava
+  - community/Wallpapersjava
 ---
 
 # Override
 
 ## Connections
-- [[dot-onDraw()_1]] - `references` [EXTRACTED]
+- [[dot-onClick()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CutoutArtjava
+#graphify/code #graphify/EXTRACTED #community/Wallpapersjava

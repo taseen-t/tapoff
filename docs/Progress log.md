@@ -17,12 +17,18 @@ Newest first. Each entry: done / blocked / next.
 - Site: edge sliders section with an animated phone, double-tap demo, spec strip instead of chips, new screenshots,
   setup section fixed on phones.
 - This vault and the Graphify graph.
+- 1.7.1: remaining hand-drawn suns replaced with Material Symbols / Lucide, adaptive brightness measured with a real
+  slide (holds, mode stays on), right-edge back gesture tested, setup step for "Display over other apps", screenshots
+  retaken on the final build.
 
 **Blocked**
 - Play Store and domain decisions wait on Taseen.
 
 **Next**
+- Taseen to open a bank app with both edge sliders on and tap around: some banking apps block taps while another
+  app draws an overlay.
 - Watch for reports of the brightness pill clashing with apps that draw near the camera.
+- Graphify doesn't parse XML, so `AndroidManifest.xml` and `res/` aren't in the code graph; [[Architecture]] covers them.
 
 ## Before 2026-09-30 · 1.0 to 1.6
 Built the double-tap screen-off, lock-screen switch, Quick Settings tiles, wallpaper browser with Cutout designs,

@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/TapWallpaper.java"
 type: "code"
-community: "TapWallpaper"
+community: "LockService.java"
 location: "L77"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TapWallpaper
+  - community/LockServicejava
 ---
 
 # .load()
@@ -18,4 +18,4 @@ tags:
 - [[dot-photo()]] - `calls` [EXTRACTED]
 - [[TapEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TapWallpaper
+#graphify/code #graphify/EXTRACTED #community/LockServicejava

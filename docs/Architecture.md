@@ -29,7 +29,7 @@ targetSdk 35. Package `com.taseen.tapoff`, sources in `src/com/taseen/tapoff/`.
   call) with `FLAG_SHOW_UI`, plus a tick haptic.
 - **Right, brightness:** writes `Settings.System.SCREEN_BRIGHTNESS` through Android's slider curve (HLG,
   `toLinear` / `toPosition`), full range over 320dp of travel.
-- **Brightness level:** the `Notch` view, a touchable overlay centred on the camera hole (`CutoutArt.hole`). It grows
+- **Brightness level** (sun: Material `light_mode`, reused from `ic_card_today`): the `Notch` view, a touchable overlay centred on the camera hole (`CutoutArt.hole`). It grows
   out of the hole (320 ms overshoot), styled like the Quick Settings slider in Material You colours, and shrinks back
   in 900 ms after release.
 - Sideways swipes are the system back gesture; the strip just sees `ACTION_CANCEL`.

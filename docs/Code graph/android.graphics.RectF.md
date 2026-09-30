@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "EdgeSlider"
+community: "CutoutArt.java"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EdgeSlider
+  - community/CutoutArtjava
 ---
 
 # android.graphics.RectF
@@ -16,4 +16,4 @@ tags:
 - [[EdgeSlider.java]] - `imports` [EXTRACTED]
 - [[Notch]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EdgeSlider
+#graphify/code #graphify/EXTRACTED #community/CutoutArtjava

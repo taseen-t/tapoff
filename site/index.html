@@ -142,8 +142,7 @@ h1 { font-size: clamp(48px, 7.6vw, 88px); line-height: .98; letter-spacing: -.03
 @keyframes islandTrack { 0%, 55% { opacity: 0; } 58%, 92% { opacity: 1; } 95%, 100% { opacity: 0; } }
 @keyframes islandFill { 0%, 55% { width: 30%; opacity: 0; } 58% { width: 30%; opacity: 1; } 80% { width: 92%; } 92% { width: 62%; opacity: 1; }
   95%, 100% { width: 62%; opacity: 0; } }
-.phone .sun { position: absolute; left: 11px; top: 50%; width: 12px; height: 12px; margin-top: -6px; border-radius: 50%;
-  background: #55555c; box-shadow: 0 0 0 3px #d9d9e0, 0 0 0 4px #55555c; transform: scale(.55); }
+.phone .sun { position: absolute; left: 9px; top: 50%; width: 16px; height: 16px; margin-top: -8px; color: #3a3a40; }
 .edgecards { display: grid; gap: 12px; }
 .edgecards .card h3, .steps2 .card h3 { margin-top: 6px; }
 .tag { font-family: "Silkscreen", monospace; font-size: 12px; color: var(--muted); letter-spacing: .08em; }
@@ -347,7 +346,7 @@ footer { border-top: 1px solid var(--line); margin-top: 64px; padding: 28px 0 48
     <div class="edges">
       <div class="phone" aria-hidden="true">
         <span class="grid"></span><span class="cam"></span>
-        <span class="island"><b></b><i><span class="sun"></span></i></span>
+        <span class="island"><b></b><i><svg class="lucide lucide-sun sun" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg></i></span>
         <span class="vol"><i></i></span>
         <span class="thumb l"></span><span class="thumb r"></span>
       </div>
@@ -357,7 +356,7 @@ footer { border-top: 1px solid var(--line); margin-top: 64px; padding: 28px 0 48
             call volume, like the buttons would.</p></div>
         <div class="card"><span class="tag">right edge</span><h3>Brightness that drops out of your camera</h3>
           <p>A little slider grows out of the camera hole in your wallpaper's colours, follows your thumb, and tucks back in
-            when you let go. Adaptive brightness stays on and learns what you picked.</p></div>
+            when you let go. Adaptive brightness stays on and keeps what you picked.</p></div>
         <div class="card"><span class="tag">still works</span><h3>Back gesture untouched</h3>
           <p>The strips are thin and only listen for up and down. Swipe inwards and Android's back gesture works as always.</p></div>
       </div>
@@ -455,6 +454,9 @@ footer { border-top: 1px solid var(--line); margin-top: 64px; padding: 28px 0 48
         </ol>
         <div class="code"><code id="cmd">adb shell pm grant com.taseen.tapoff android.permission.WRITE_SECURE_SETTINGS</code>
           <button class="copy" type="button" data-copy="cmd">Copy</button></div></div></div>
+      <div class="step"><div><h3>Optional: slide the edges</h3>
+        <p>Turn on <b>Volume</b> or <b>Brightness</b> in TapOff. Android asks you to allow <b>Display over other apps</b> for
+          TapOff; allow it and come back. Brightness also needs the computer step above.</p></div></div>
     </div>
   </section>
 
@@ -472,8 +474,9 @@ footer { border-top: 1px solid var(--line); margin-top: 64px; padding: 28px 0 48
         Launcher and most launchers built like it. The lock-screen switch uses a Pixel feature. Built and tested on a Pixel 7
         running Android 17.</p></details>
     <details><summary>Does the brightness slide fight adaptive brightness?</summary>
-      <p>No. It changes brightness the same way the Quick Settings slider does, so adaptive brightness stays on and learns
-        the level you picked.</p></details>
+      <p>No. It changes brightness the same way the Quick Settings slider does: adaptive brightness stays on and keeps
+        the level you picked. In normal light Android caps brightness a little below full, so the very top of the
+        slide may not get any brighter.</p></details>
     <details><summary>Found a bug?</summary>
       <p>Message <a href="https://x.com/taseen_tariq_">@taseen_tariq_</a> on X. If you can't send a DM, reply to any post, or open
         an issue on <a href="https://github.com/taseen-t/tapoff/issues">GitHub</a>.</p></details>

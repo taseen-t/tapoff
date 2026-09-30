@@ -40,6 +40,12 @@ Every request goes here the moment it's asked. Tick subtasks as they land. Never
   - [x] Use real icon libraries (Lucide on the site, Material Symbols in the app), fix the fingerprint icon
 - [x] Document everything in an Obsidian vault and a Graphify graph of the whole codebase
 - [x] Release 1.7 and deploy the site
+- [x] 1.7.1 follow-ups
+  - [x] Last hand-drawn icons gone (the pill's sun in the app, the demo's sun on the site)
+  - [x] Adaptive brightness measured with a real slide; unverified "learns" wording removed
+  - [x] Right-edge back gesture tested
+  - [x] Setup section mentions "Display over other apps"
+  - [x] Screenshots retaken on the final build
 
 ## Open
 - [ ] Play Store listing? Costs $25 once. Waiting on Taseen (never spend without a yes).

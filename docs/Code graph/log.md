@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "log"
+community: "Wallpapers.java"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/log
+  - community/Wallpapersjava
 ---
 
 # log
@@ -18,4 +18,4 @@ tags:
 - [[TapWallpaper.java]] - `imports` [EXTRACTED]
 - [[Wallpapers.java]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/log
+#graphify/concept #graphify/EXTRACTED #community/Wallpapersjava

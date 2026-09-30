@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "EdgeSlider"
+community: ".onDraw"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EdgeSlider
+  - community/onDraw
 ---
 
 # Override
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[dot-onDraw()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EdgeSlider
+#graphify/code #graphify/EXTRACTED #community/onDraw

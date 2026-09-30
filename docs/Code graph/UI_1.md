@@ -1,12 +1,12 @@
 ---
 source_file: "docs/Architecture.md"
 type: "document"
-community: "EdgeSlider"
+community: ".onDraw"
 location: "L45"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/EdgeSlider
+  - community/onDraw
 ---
 
 # UI
@@ -16,4 +16,4 @@ tags:
 - [[dot-switchArt()]] - `references` [INFERRED]
 - [[Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/EdgeSlider
+#graphify/document #graphify/INFERRED #community/onDraw

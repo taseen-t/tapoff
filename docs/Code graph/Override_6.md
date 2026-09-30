@@ -11,9 +11,6 @@ tags:
 # Override
 
 ## Connections
-- [[dot-onDraw()]] - `references` [EXTRACTED]
-- [[dot-onMeasure()]] - `references` [EXTRACTED]
-- [[dot-onSizeChanged()]] - `references` [EXTRACTED]
-- [[dot-setPressed()]] - `references` [EXTRACTED]
+- [[dot-onDraw()_1]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CutoutArtjava

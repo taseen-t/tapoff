@@ -1,8 +1,8 @@
 {
   "build.sh": {
-    "mtime": 1790734207.196761,
-    "seen": 1790736508.0179331,
-    "ast_hash": "5b1ce3a43dee3d081a26084ec12429cb",
+    "mtime": 1790736792.9264421,
+    "seen": 1790737036.106773,
+    "ast_hash": "904d63fa66d9a1d4847a9a5bab73d1da",
     "semantic_hash": ""
   },
   "src/com/taseen/tapoff/CutoutArt.java": {
@@ -12,9 +12,9 @@
     "semantic_hash": ""
   },
   "src/com/taseen/tapoff/EdgeSlider.java": {
-    "mtime": 1790736367.1120927,
-    "seen": 1790736508.017937,
-    "ast_hash": "8bda7037fe15951250e8ab03d2a5fc83",
+    "mtime": 1790736823.127555,
+    "seen": 1790737036.1067772,
+    "ast_hash": "79cf54b3ea75f65df7a204893d0d1ca0",
     "semantic_hash": ""
   },
   "src/com/taseen/tapoff/GlassCard.java": {
@@ -78,15 +78,15 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1790736248.5466719,
-    "seen": 1790736508.0179431,
-    "ast_hash": "fe026edb9f51e7a3bb1a958b9d3d3dc6",
+    "mtime": 1790736894.3565063,
+    "seen": 1790737036.106786,
+    "ast_hash": "c704605f95db122436afeb37e021a189",
     "semantic_hash": ""
   },
   "docs/Architecture.md": {
-    "mtime": 1790736499.9842954,
-    "seen": 1790736508.017944,
-    "ast_hash": "e094fa5af2601384b4925c095846e928",
+    "mtime": 1790737063.0460887,
+    "seen": 1790737063.840611,
+    "ast_hash": "8c6f426d6cc433a1acdac0836bbbad7e",
     "semantic_hash": ""
   },
   "docs/Checks.md": {
@@ -96,9 +96,9 @@
     "semantic_hash": ""
   },
   "docs/Decisions.md": {
-    "mtime": 1790736500.0863237,
-    "seen": 1790736508.017945,
-    "ast_hash": "965f007f9d316ee88629a8ef83715020",
+    "mtime": 1790737063.0461788,
+    "seen": 1790737063.8406131,
+    "ast_hash": "b398afe1b8615954aeec12a9e4f89475",
     "semantic_hash": ""
   },
   "docs/Home.md": {
@@ -108,21 +108,21 @@
     "semantic_hash": ""
   },
   "docs/Progress log.md": {
-    "mtime": 1790736500.2825172,
-    "seen": 1790736508.017946,
-    "ast_hash": "c69f44900aa29e5093e3fa331bdbbff2",
+    "mtime": 1790737063.0459173,
+    "seen": 1790737063.8406138,
+    "ast_hash": "9f58bda44ce08003dbebc745186351fd",
     "semantic_hash": ""
   },
   "docs/Tasks.md": {
-    "mtime": 1790736500.187618,
-    "seen": 1790736508.017946,
-    "ast_hash": "16756e10e623e074f9ce538d643ab827",
+    "mtime": 1790737063.0457723,
+    "seen": 1790737063.8406148,
+    "ast_hash": "726ff046b0e0890337df481b0bb18c52",
     "semantic_hash": ""
   },
   "site/index.html": {
-    "mtime": 1790736438.9693832,
-    "seen": 1790736508.017947,
-    "ast_hash": "a9db4fb6482132e1752c6e51ed9df7a6",
+    "mtime": 1790736894.3561568,
+    "seen": 1790737036.106791,
+    "ast_hash": "990d2d0a5f94c3b91cbe6711f10b6e16",
     "semantic_hash": ""
   },
   "site/icon.svg": {
