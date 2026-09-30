@@ -70,20 +70,23 @@ h1 { font-size: clamp(48px, 7.6vw, 88px); line-height: .98; letter-spacing: -.03
 .meta { margin-top: 14px; font-size: 13px; color: var(--faint); }
 
 .stage { position: relative; display: grid; place-items: center; min-height: 440px; }
-.tap { position: relative; width: 200px; height: 200px; }
-.tap img { position: relative; z-index: 2; width: 100%; height: 100%; border-radius: 46px;
-  box-shadow: 0 30px 80px rgba(0,0,0,.45), 0 0 0 1px var(--line); animation: press 2.6s infinite; }
-.tap .ring { position: absolute; inset: 0; border-radius: 50%; border: 2px solid var(--ink); opacity: 0;
-  animation: ripple 2.6s infinite; }
-.tap .ring.two { animation-delay: .28s; }
-.tap .ring.three { animation-delay: .56s; }
+/* the pixel hand from the icon, tapping twice; ripples spread from its fingertip (40.7%, 14.8% of the drawing) */
+.tap { --tap: 260px; position: relative; width: var(--tap); height: var(--tap); color: var(--ink); }
+.tap svg { position: absolute; inset: 0; width: 100%; height: 100%; transform-origin: 40.7% 14.8%; animation: heropress 2.6s infinite; }
+.tap .burst { opacity: 0; animation: heroburst 2.6s infinite; }
+.tap .ripples { position: absolute; left: 40.7%; top: 14.8%; }
+.tap .ring { position: absolute; width: calc(var(--tap) * .4); height: calc(var(--tap) * .4); left: calc(var(--tap) * -.2);
+  top: calc(var(--tap) * -.2); border-radius: 50%; border: 2px solid var(--ink); opacity: 0; animation: ripple 2.6s infinite; }
+.tap .ring.two { animation-delay: .26s; }
+.tap .ring.three { animation-delay: .52s; }
 .taplabel { position: absolute; bottom: 18px; font-family: "Silkscreen", monospace; color: var(--muted);
   letter-spacing: .12em; animation: blink 2.6s infinite; }
-@keyframes press { 0%, 100% { transform: scale(1); } 4% { transform: scale(.93); } 9% { transform: scale(1); }
-  14% { transform: scale(.93); } 19% { transform: scale(1); } }
-@keyframes ripple { 0% { transform: scale(.7); opacity: 0; } 5% { opacity: .5; } 40% { transform: scale(2.1); opacity: 0; } 100% { opacity: 0; } }
+@keyframes heropress { 0%, 100% { transform: scale(1); } 4% { transform: scale(.9); } 9% { transform: scale(1); }
+  14% { transform: scale(.9); } 19% { transform: scale(1); } }
+@keyframes heroburst { 0%, 3% { opacity: 0; } 5%, 22% { opacity: .75; } 32%, 100% { opacity: 0; } }
+@keyframes ripple { 0% { transform: scale(.5); opacity: 0; } 5% { opacity: .55; } 45% { transform: scale(2.4); opacity: 0; } 100% { opacity: 0; } }
 @keyframes blink { 0%, 30% { opacity: 1; } 45%, 100% { opacity: .35; } }
-@media (prefers-reduced-motion: reduce) { .tap img, .tap .ring, .taplabel { animation: none; } }
+@media (prefers-reduced-motion: reduce) { .tap svg, .tap .ring, .taplabel { animation: none; } .tap .burst { opacity: .75; animation: none; } }
 
 /* store-style screenshots */
 .store { display: grid; grid-auto-flow: column; grid-auto-columns: 244px; gap: 16px; overflow-x: auto;
@@ -131,12 +134,12 @@ h1 { font-size: clamp(48px, 7.6vw, 88px); line-height: .98; letter-spacing: -.03
 .phoneback .visor b { position: absolute; right: 44px; top: 18px; width: 10px; height: 10px; border-radius: 50%; background: #e9e4d8; }
 .tapspot { position: absolute; left: 50%; top: 58%; }
 .tapspot svg { position: absolute; left: -37px; top: -13px; width: 90px; height: 90px; transform-origin: 37px 13px;
-  animation: press 6.4s infinite; }
-.tapspot .burst { animation: burst 6.4s infinite; }
+  animation: backpress 6.4s infinite; }
+.tapspot .burst { animation: backburst 6.4s infinite; }
 @keyframes flip { 0%, 18% { transform: rotateY(180deg); } 30%, 86% { transform: rotateY(0deg); } 96%, 100% { transform: rotateY(-180deg); } }
-@keyframes press { 0%, 4% { transform: scale(1); } 5% { transform: scale(.86); } 6.5%, 9.5% { transform: scale(1); } 10.5% { transform: scale(.86); }
+@keyframes backpress { 0%, 4% { transform: scale(1); } 5% { transform: scale(.86); } 6.5%, 9.5% { transform: scale(1); } 10.5% { transform: scale(.86); }
   12%, 100% { transform: scale(1); } }
-@keyframes burst { 0%, 4.5% { opacity: 0; } 5.5%, 13% { opacity: .75; } 16%, 100% { opacity: 0; } }
+@keyframes backburst { 0%, 4.5% { opacity: 0; } 5.5%, 13% { opacity: .75; } 16%, 100% { opacity: 0; } }
 .edges { display: grid; grid-template-columns: 300px 1fr; gap: 40px; align-items: center; }
 .phone { position: relative; width: 240px; height: 480px; margin: 0 auto; border-radius: 40px; background: #0b0b0e;
   border: 8px solid #1c1c20; box-shadow: 0 30px 80px rgba(0,0,0,.35), 0 0 0 1px var(--line); overflow: hidden; }
@@ -270,8 +273,7 @@ footer { border-top: 1px solid var(--line); margin-top: 64px; padding: 28px 0 48
   .edges { grid-template-columns: 1fr; }
 }
 @media (max-width: 480px) {
-  .tap { width: 150px; height: 150px; }
-  .tap img { border-radius: 36px; }
+  .tap { --tap: 190px; }
   .options, .steps2 { grid-template-columns: 1fr; }
   .btn { width: 100%; }
   .specs { grid-template-columns: repeat(2, auto); row-gap: 16px; }
@@ -320,8 +322,8 @@ footer { border-top: 1px solid var(--line); margin-top: 64px; padding: 28px 0 48
     </div>
     <div class="stage" aria-hidden="true">
       <div class="tap">
-        <span class="ring"></span><span class="ring two"></span><span class="ring three"></span>
-        <img src="icon.svg" alt="">
+        <span class="ripples"><span class="ring"></span><span class="ring two"></span><span class="ring three"></span></span>
+        <svg viewBox="27 28 54 54"><path class="burst" fill="currentColor" d="M41.17,30.00H43.14V31.97H41.17ZM43.14,31.97H45.12V33.95H43.14ZM48.08,30.00H50.05V33.95H48.08ZM54.99,30.00H56.96V31.97H54.99ZM53.01,31.97H54.99V33.95H53.01ZM38.87,36.91H42.82V38.88H38.87ZM54.99,36.91H58.93V38.88H54.99Z"/><path fill="currentColor" d="M47.09,35.92H51.04V37.89H47.09ZM45.12,37.89H47.09V59.93H45.12ZM51.04,37.89H53.01V55.99H51.04ZM53.01,46.12H56.96V48.09H53.01ZM56.96,48.09H62.88V50.07H56.96ZM56.96,48.09H58.93V55.99H56.96ZM62.88,50.07H66.83V52.04H62.88ZM62.88,50.07H64.86V57.96H62.88ZM66.83,52.04H69.13V54.01H66.83ZM69.13,54.01H71.11V70.13H69.13ZM36.89,54.01H42.82V55.99H36.89ZM36.89,54.01H38.87V59.93H36.89ZM42.82,55.99H45.12V57.96H42.82ZM38.87,59.93H40.84V61.91H38.87ZM40.84,61.91H42.82V65.86H40.84ZM42.82,65.86H44.79V69.80H42.82ZM44.79,69.80H46.76V74.08H44.79ZM47.09,74.08H49.07V80.00H47.09ZM47.09,78.03H66.83V80.00H47.09ZM65.18,74.08H67.16V80.00H65.18ZM67.16,70.13H69.13V74.08H67.16Z"/></svg>
       </div>
       <span class="taplabel">tap · tap</span>
     </div>

@@ -80,6 +80,7 @@ Every request goes here the moment it's asked. Tick subtasks as they land. Never
 - [x] Remove the lock-screen double-tap option and its code
 - [x] Site: back tap shown on the back of the phone, the phone flips, then the sliders
 - [x] Site: new screenshots; the strip shows only the app, no wallpaper shots
+- [x] Site: hero shows only the pixel hand tapping with ripples, not the whole icon
 - [x] Remove the camera-tap setting and its code
 - [x] Button stops saying "Back tap is set up" when Quick Tap is changed or turned off
 - [ ] Back tap not opening the sliders on Taseen's phone: Quick Tap was off; to retest with it on (and with "Take
