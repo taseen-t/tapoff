@@ -144,6 +144,16 @@ Every request goes here the moment it's asked. Tick subtasks as they land. Never
         wallpaper); ElevenLabs then disabled the account's free tier ("unusual activity"), probably from 12 requests at
         once; Taseen chose: sliders and ending lines reused from the brag voiceover, Wireless debugging and Pairing
         carried by captions
+    - [x] Retried later at Taseen's request, one line per request, waiting for each: the block had lifted. Made
+          Wireless debugging, Pairing, the Play Protect workaround (Play Store → profile → Play Protect → gear →
+          pause scanning → install again) and a shorter sliders line; the old "use the computer install instead"
+          line is dropped. About 1,250 credits for the guide in total, as approved. The ending reuses the brag take.
+  - [x] Method from Taseen's UplinkeSIM video docs (~/Desktop/uplink-video/docs): on-device OCR (Apple Vision) finds
+        personal text, blur only the frames the edit uses, re-scan to prove 0 leaks, check contact sheets by eye,
+        captions for every step with a STEP counter, keep text out of the right-hand Reels/TikTok button strip,
+        mix at about −14 LUFS. Vision's "accurate" text model fails on this macOS build (e5rt error 13), so the
+        scan uses "fast" mode, and every blurred range is also checked by eye
+- [x] Remote Control turned on for this session (Taseen asked)
   - [ ] Voiceover (Jerry), build in the brag video's 3D style, check stills, render, send
 - [ ] Taseen tests on a second Android, then fixes
 - [ ] Refresh site screenshots (tile changed) with the video footage
