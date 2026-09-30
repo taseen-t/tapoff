@@ -58,8 +58,16 @@ Every request goes here the moment it's asked. Tick subtasks as they land. Never
           screen; in brag-output-2026-09-30-2030/ (not committed: large files)
     - [ ] Taseen watches the brag video; re-roll anything
       - [x] Bezels too wide: now a thin clear-case rim (1.8% of width) and a Pixel-like bezel (2.4%)
-      - [ ] Back of the phone looked flat: use Aborsoft 3D's free Pixel 7 Pro model (Sketchfab, CC BY 4.0, credit
-            in the video and share copy), recoloured to Snow; Taseen downloads it (Sketchfab needs a sign-in)
+      - [x] Back of the phone looked flat: Aborsoft 3D's free Pixel 7 Pro model (Sketchfab, CC BY 4.0), downloaded by
+            Taseen, rendered with three.js; frame recoloured from Hazel gold to Snow silver; credit on the outro card and
+            in the share copy
+        - [x] The recordings play on the model's screen (a canvas texture fitted to the screen's UV range, which uses
+              only 6–94% / 8–96% of the texture; before the fit the bottom of each recording was cut off)
+        - [x] Clear acrylic case: thin rim plus a back plate on the glass; the camera bar pokes out through a
+              full-width cutout (Taseen: "this camera bump should be out of the case")
+        - [x] Gentle sway so the phone feels held; the hand's tap points come from the 3D projection
+        - [x] TAP · TAP label and knock rings dark on the white back
+      - [ ] Re-render both formats and send
   - [x] Record TapOff on the phone over USB (brag: screen-off and sliders; more for the walkthrough later)
   - [ ] Build, check stills, render all six
 

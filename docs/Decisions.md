@@ -113,3 +113,8 @@ Newest at the bottom. Each one says why, so nobody undoes it by accident.
     `attachApplication`; a second attach from the same process crashes in the server (null client record) and the old
     binder would get the permission result anyway. So one static app binder handles results for whatever is pending.
     (2026-09-30)
+37. **Videos use a free 3D Pixel 7 Pro, credited.** No free, license-clean model of the regular Pixel 7 could be
+    downloaded (the one on Sketchfab was deleted, Printables sits behind a bot check, the good one is paid). Taseen
+    chose Aborsoft 3D's Pixel 7 Pro (CC BY 4.0) over a hand-built model or buying one: recoloured to Snow, credited on
+    each video's outro card and in its share copy. It shows the Pro's three lenses, not the Pixel 7's two. The model
+    file stays out of the repo. (2026-09-30)
