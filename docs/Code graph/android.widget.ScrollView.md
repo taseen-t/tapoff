@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "MainActivity.java"
+community: "MainActivity"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MainActivityjava
+  - community/MainActivity
 ---
 
 # android.widget.ScrollView
@@ -15,4 +15,4 @@ tags:
 - [[MainActivity]] - `references` [EXTRACTED]
 - [[MainActivity.java]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MainActivityjava
+#graphify/code #graphify/EXTRACTED #community/MainActivity

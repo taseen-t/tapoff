@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/MainActivity.java"
 type: "code"
-community: "Wallpapers"
+community: "GlassCard"
 location: "L550"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Wallpapers
+  - community/GlassCard
 ---
 
 # .addCard()
@@ -26,4 +26,4 @@ tags:
 - [[GlassCard]] - `references` [EXTRACTED]
 - [[MainActivity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Wallpapers
+#graphify/code #graphify/EXTRACTED #community/GlassCard

@@ -1,30 +1,18 @@
 ---
-source_file: "src/com/taseen/tapoff/PreviewActivity.java"
+source_file: "src/com/taseen/tapoff/ShizukuSetup.java"
 type: "code"
-community: "MainActivity.java"
-location: "L76"
+community: "ShizukuSetup.java"
+location: "L109"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MainActivityjava
+  - community/ShizukuSetupjava
 ---
 
 # .onCreate()
 
 ## Connections
-- [[dot-apply()]] - `calls` [EXTRACTED]
-- [[dot-dp()]] - `calls` [EXTRACTED]
-- [[dot-glass()]] - `calls` [EXTRACTED]
-- [[dot-image()]] - `calls` [EXTRACTED]
-- [[dot-isFavourite()]] - `calls` [EXTRACTED]
-- [[dot-onTouch()]] - `calls` [EXTRACTED]
-- [[dot-pill()]] - `calls` [EXTRACTED]
-- [[dot-setFavourite()]] - `calls` [EXTRACTED]
-- [[dot-show()]] - `calls` [EXTRACTED]
-- [[dot-showTip()]] - `calls` [EXTRACTED]
-- [[dot-text()]] - `calls` [EXTRACTED]
-- [[Override]] - `references` [EXTRACTED]
-- [[PreviewActivity]] - `method` [EXTRACTED]
-- [[android.os.Bundle]] - `references` [EXTRACTED]
+- [[Override_3]] - `references` [EXTRACTED]
+- [[ShizukuSetup]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MainActivityjava
+#graphify/code #graphify/EXTRACTED #community/ShizukuSetupjava

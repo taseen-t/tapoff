@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Wallpapers"
+community: "GlassCard"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Wallpapers
+  - community/GlassCard
 ---
 
 # Override
@@ -16,4 +16,4 @@ tags:
 - [[dot-onSizeChanged()]] - `references` [EXTRACTED]
 - [[dot-setPressed()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Wallpapers
+#graphify/code #graphify/EXTRACTED #community/GlassCard

@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/LockService.java"
 type: "code"
-community: "TapWallpaper"
+community: "TapWallpaper.java"
 location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TapWallpaper
+  - community/TapWallpaperjava
 ---
 
 # .onServiceConnected()
@@ -16,7 +16,7 @@ tags:
 - [[dot-close()]] - `calls` [INFERRED]
 - [[dot-tapPoint()]] - `calls` [EXTRACTED]
 - [[LockService]] - `method` [EXTRACTED]
-- [[Override_6]] - `references` [EXTRACTED]
+- [[Override_5]] - `references` [EXTRACTED]
 - [[Screen off]] - `references` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/TapWallpaper
+#graphify/code #graphify/EXTRACTED #community/TapWallpaperjava

@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "android.graphics.Paint"
+community: "NotchPanel.java"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/androidgraphicsPaint
+  - community/NotchPaneljava
 ---
 
 # shader
@@ -16,4 +16,4 @@ tags:
 - [[LockService.java]] - `imports` [EXTRACTED]
 - [[SwipeHint.java]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/androidgraphicsPaint
+#graphify/concept #graphify/EXTRACTED #community/NotchPaneljava

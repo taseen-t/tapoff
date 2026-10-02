@@ -14,9 +14,10 @@ tags:
 ## Connections
 - [[Architecture_1]] - `references` [EXTRACTED]
 - [[Checks]] - `references` [EXTRACTED]
-- [[Decisions_1]] - `references` [EXTRACTED]
+- [[Decisions]] - `references` [EXTRACTED]
 - [[Progress log]] - `references` [EXTRACTED]
 - [[TapOff_1]] - `contains` [EXTRACTED]
 - [[Tasks]] - `references` [EXTRACTED]
+- [[Videos]] - `references` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Progress_log

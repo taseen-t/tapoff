@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "LockService.java"
+community: "NotchPanel.java"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/LockServicejava
+  - community/NotchPaneljava
 ---
 
 # arraylist
@@ -17,4 +17,4 @@ tags:
 - [[PreviewActivity.java]] - `imports` [EXTRACTED]
 - [[Wallpapers.java]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/LockServicejava
+#graphify/concept #graphify/EXTRACTED #community/NotchPaneljava

@@ -162,7 +162,13 @@ Every request goes here the moment it's asked. Tick subtasks as they land. Never
   - [x] Render, check, send (portrait only, 98.9 s, −14.2 LUFS): guide-portrait.mp4, poster guide-portrait.jpg,
         guide-share-copy.txt; final render scanned too (1,483 frames, 0 leaks)
   - [ ] Taseen watches it; re-roll anything
-  - [ ] Site and README: add the Play Protect pause workaround next to the computer install (ask Taseen first)
+  - [x] Site and README: add the Play Protect pause workaround next to the computer install
+- [x] Put the setup video on the website (Taseen, 2026-10-02)
+  - [x] 720p web copy (8.7 MB) and WebP poster in `site/video/`, `preload="none"`
+  - [x] Beside the setup steps on wide screens, above them on phones; credits for ElevenLabs and the 3D model
+  - [x] Steps and FAQ match the video (pause route first, InstallerX and computer kept)
+  - [x] Deploy and check it plays on the live site (served as video/mp4 with range requests; plays and seeks in
+        Chrome at phone width)
 - [ ] Taseen tests on a second Android, then fixes
 - [ ] Refresh site screenshots (tile changed) with the video footage
 
@@ -177,8 +183,10 @@ Every request goes here the moment it's asked. Tick subtasks as they land. Never
         the install may be attributed to InstallerX instead of shell: check with `adb shell dumpsys package
         com.taseen.tapoff | grep installerPackageName` (an `adb install` leaves it `null`, checked on the Pixel) and
         set InstallerX's installer package to `com.android.shell` in its settings
-  - [ ] Also worth a try there, 30 seconds: Play Store → Play Protect → gear → turn off app scanning → install → turn
-        it back on. If that works, add it to the FAQ as the shortest route (unverified, so it isn't in the docs yet)
+  - [x] Also worth a try there, 30 seconds: Play Store → Play Protect → gear → turn off app scanning → install → turn
+        it back on. If that works, add it to the FAQ as the shortest route. Verified on the Pixel 7 while filming the
+        guide (blocked → Pause → "App updated"); site steps, FAQ and README now lead with it, InstallerX kept as the
+        other way (decision #40). Still to confirm on the Samsung
   - [ ] Play Protect appeal for TapOff (free, slow, the only thing that unblocks everyone): the service reads nothing —
         no event types, `canRetrieveWindowContent="false"`
   - [x] In-app updater through Shizuku `pm install` instead of opening the releases page: considered, dropped. Whoever

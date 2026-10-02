@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Override"
+community: "MainActivity.java"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Override
+  - community/MainActivityjava
 ---
 
 # Drawable
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SwitchPart]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Override
+#graphify/code #graphify/EXTRACTED #community/MainActivityjava

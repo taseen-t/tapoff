@@ -12,7 +12,7 @@ tags:
 # .requestOpen()
 
 ## Connections
-- [[dot-onCreate()_4]] - `calls` [EXTRACTED]
+- [[dot-onCreate()_3]] - `calls` [EXTRACTED]
 - [[NotchPanel]] - `method` [EXTRACTED]
 - [[android.content.Context]] - `references` [EXTRACTED]
 

@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "android.graphics.Canvas"
+community: "PreviewActivity"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidgraphicsCanvas
+  - community/PreviewActivity
 ---
 
 # Override
 
 ## Connections
-- [[dot-onDraw()_3]] - `references` [EXTRACTED]
+- [[dot-onCreate()_4]] - `references` [EXTRACTED]
+- [[dot-onDestroy()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidgraphicsCanvas
+#graphify/code #graphify/EXTRACTED #community/PreviewActivity

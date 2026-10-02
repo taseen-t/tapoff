@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "ShizukuSetup.java"
+community: "MainActivity.java"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ShizukuSetupjava
+  - community/MainActivityjava
 ---
 
 # android.os.Bundle
@@ -14,8 +14,8 @@ tags:
 - [[dot-call()]] - `references` [EXTRACTED]
 - [[dot-onCommand()]] - `references` [EXTRACTED]
 - [[dot-onCreate()]] - `references` [EXTRACTED]
-- [[dot-onCreate()_1]] - `references` [EXTRACTED]
 - [[dot-onCreate()_4]] - `references` [EXTRACTED]
+- [[dot-onCreate()_3]] - `references` [EXTRACTED]
 - [[dot-onSaveInstanceState()]] - `references` [EXTRACTED]
 - [[MainActivity.java]] - `imports` [EXTRACTED]
 - [[PreviewActivity.java]] - `imports` [EXTRACTED]
@@ -23,4 +23,4 @@ tags:
 - [[SlidersActivity.java]] - `imports` [EXTRACTED]
 - [[TapWallpaper.java]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ShizukuSetupjava
+#graphify/code #graphify/EXTRACTED #community/MainActivityjava

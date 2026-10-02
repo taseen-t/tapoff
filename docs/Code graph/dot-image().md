@@ -12,7 +12,7 @@ tags:
 # .image()
 
 ## Connections
-- [[dot-onCreate()_1]] - `calls` [EXTRACTED]
+- [[dot-onCreate()_4]] - `calls` [EXTRACTED]
 - [[PreviewActivity]] - `method` [EXTRACTED]
 - [[android.widget.FrameLayout]] - `references` [EXTRACTED]
 - [[android.widget.ImageView]] - `references` [EXTRACTED]

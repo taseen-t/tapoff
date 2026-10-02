@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/LockService.java"
 type: "code"
-community: "TapWallpaper"
+community: "TapWallpaper.java"
 location: "L130"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TapWallpaper
+  - community/TapWallpaperjava
 ---
 
 # .lock()
@@ -19,4 +19,4 @@ tags:
 - [[Screen off]] - `references` [INFERRED]
 - [[android.content.Context]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TapWallpaper
+#graphify/code #graphify/EXTRACTED #community/TapWallpaperjava

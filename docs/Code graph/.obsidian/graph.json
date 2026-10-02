@@ -15,14 +15,14 @@
       }
     },
     {
-      "query": "tag:#community/TapWallpaper",
+      "query": "tag:#community/TapWallpaperjava",
       "color": {
         "a": 1,
         "rgb": 14767961
       }
     },
     {
-      "query": "tag:#community/androidgraphicsPaint",
+      "query": "tag:#community/NotchPaneljava",
       "color": {
         "a": 1,
         "rgb": 7780274
@@ -57,17 +57,17 @@
       }
     },
     {
-      "query": "tag:#community/Wallpapers",
+      "query": "tag:#community/PreviewActivity",
       "color": {
         "a": 1,
         "rgb": 10253663
       }
     },
     {
-      "query": "tag:#community/Override",
+      "query": "tag:#community/GlassCard",
       "color": {
         "a": 1,
-        "rgb": 5142951
+        "rgb": 12234924
       }
     },
     {
@@ -82,13 +82,6 @@
       "color": {
         "a": 1,
         "rgb": 14767961
-      }
-    },
-    {
-      "query": "tag:#community/LockServicejava",
-      "color": {
-        "a": 1,
-        "rgb": 7780274
       }
     },
     {
@@ -124,13 +117,6 @@
       "color": {
         "a": 1,
         "rgb": 10253663
-      }
-    },
-    {
-      "query": "tag:#community/NotchPaneljava",
-      "color": {
-        "a": 1,
-        "rgb": 12234924
       }
     }
   ]

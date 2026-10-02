@@ -224,6 +224,13 @@ h1 { font-size: clamp(48px, 7.6vw, 88px); line-height: .98; letter-spacing: -.03
 
 /* setup */
 .steps { display: grid; gap: 12px; counter-reset: s; }
+/* the setup video sits beside the steps on wide screens, above them on phones */
+.setup { display: grid; grid-template-columns: 320px minmax(0, 1fr); gap: 32px; align-items: start; }
+.guide { margin: 0; position: sticky; top: 24px; }
+.guide video { display: block; width: 100%; height: auto; aspect-ratio: 9 / 16; border-radius: 28px; border: 1px solid var(--line);
+  background: #000; }
+.guide figcaption { margin-top: 10px; font-size: 13px; line-height: 1.45; color: var(--faint); }
+@media (max-width: 900px) { .setup { grid-template-columns: 1fr; } .guide { position: static; width: 100%; max-width: 340px; margin: 0 auto 8px; } }
 .step { display: grid; grid-template-columns: 46px 1fr; gap: 16px; background: var(--surface); border: 1px solid var(--line);
   border-radius: 24px; padding: 22px; }
 .step::before { counter-increment: s; content: counter(s); font-family: "Silkscreen", monospace; font-size: 22px;
@@ -483,21 +490,31 @@ footer { border-top: 1px solid var(--line); margin-top: 64px; padding: 28px 0 48
     <h2>Five minutes, once</h2>
     <p class="sub">Install TapOff and give it one permission, on the phone with the free Shizuku app or from a computer.
       After that, you never think about it again.</p>
+    <div class="setup">
+    <figure class="guide">
+      <video controls playsinline preload="none" poster="video/setup-guide.webp" width="720" height="1280">
+        <source src="video/setup-guide.mp4" type="video/mp4">
+      </video>
+      <figcaption>The whole setup, start to finish, in 99 seconds. Voice: ElevenLabs. 3D phone: “Google Pixel 7 Pro” by
+        Aborsoft 3D, CC BY 4.0.</figcaption>
+    </figure>
     <div class="steps">
-      <div class="step"><div><h3>No computer: Shizuku installs it and sets it up</h3>
+      <div class="step"><div><h3>No computer: install it, then Shizuku sets it up</h3>
         <ol>
+          <li>Download <a href="https://github.com/taseen-t/tapoff/releases/latest/download/TapOff.apk">TapOff.apk</a> on the
+            phone and install it. Play Protect says <b>App blocked to protect your device</b>? Play Store → your profile →
+            <b>Play Protect</b> → the gear → turn off <b>Scan apps with Play Protect</b> → <b>Pause</b>, then install again.
+            Scanning turns itself back on the next day.</li>
           <li>Install <a href="https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api">Shizuku</a> from the
             Play Store, open it and start it with <b>Wireless debugging</b>. It walks you through pairing on the phone
             itself; you need Wi-Fi.</li>
-          <li>Install <a href="https://github.com/wxxsfxyzm/InstallerX-Revived/releases/latest">InstallerX Revived</a> and set
-            its <b>Authorizer</b> to <b>Shizuku</b>. It installs apps as shell, the way a computer's
-            <code>adb install</code> does, which Play Protect doesn't block.</li>
-          <li>Download <a href="https://github.com/taseen-t/tapoff/releases/latest/download/TapOff.apk">TapOff.apk</a> on the
-            phone and open it with InstallerX Revived.</li>
           <li>Open TapOff → Settings → <b>Set up without a computer</b> → <b>Allow</b>.</li>
         </ol>
-        <p class="note">The permission stays, so Shizuku can go afterwards. Keep it and you can install TapOff's updates
-          the same way.</p></div></div>
+        <p class="note">Rather not pause Play Protect? Start Shizuku first, then install
+          <a href="https://github.com/wxxsfxyzm/InstallerX-Revived/releases/latest">InstallerX Revived</a>, set its
+          <b>Authorizer</b> to <b>Shizuku</b> and open TapOff.apk with it: it installs as shell, the way a computer's
+          <code>adb install</code> does, which Play Protect doesn't check. The permission stays, so Shizuku can go
+          afterwards.</p></div></div>
       <div class="step"><div><h3>Or: install it from a computer</h3>
         <ol>
           <li>On the phone: Settings → About phone → tap <b>Build number</b> 7 times, then Settings → System → Developer
@@ -517,6 +534,7 @@ footer { border-top: 1px solid var(--line); margin-top: 64px; padding: 28px 0 48
         <p>Turn on <b>Sliders</b> in TapOff and allow <b>Display over other apps</b>. Then tap <b>Set up back tap</b>: Quick Tap →
           <b>Open app</b> → the gear → <b>TapOff Sliders</b>.</p></div></div>
     </div>
+    </div>
   </section>
 
   <section>
@@ -524,9 +542,10 @@ footer { border-top: 1px solid var(--line); margin-top: 64px; padding: 28px 0 48
     <div class="faq">
     <details><summary>Play Protect says "App blocked to protect your device"</summary>
       <p>Google's fraud protection, now on in 185 markets, stops a browser or file manager from installing any app that has
-        an accessibility service — TapOff's is what turns the screen off. That dialog has no way past it, but installing as
-        shell isn't checked at all: either Shizuku with InstallerX Revived on the phone, or <code>adb install</code> from a
-        computer. Both are in the setup above.</p></details>
+        an accessibility service — TapOff's is what turns the screen off. Three ways past it, all in the setup above:
+        pause Play Protect's app scanning for a day (Play Store → profile → Play Protect → gear → turn scanning off →
+        Pause) and install again; install as shell with Shizuku and InstallerX Revived; or <code>adb install</code> from a
+        computer.</p></details>
     <details><summary>Why does it need Shizuku or a computer once?</summary>
       <p>Switching an accessibility service on and off by itself needs a permission that apps can't give themselves; only
         Android's debugging tools can. Shizuku uses Wireless debugging on the phone to give it; a computer uses USB

@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/MainActivity.java"
 type: "code"
-community: "MainActivity"
+community: "MainActivity.java"
 location: "L188"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MainActivity
+  - community/MainActivityjava
 ---
 
 # .onResume()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-refreshState()]] - `calls` [EXTRACTED]
 - [[MainActivity]] - `method` [EXTRACTED]
-- [[Override_1]] - `references` [EXTRACTED]
+- [[Override]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MainActivity
+#graphify/code #graphify/EXTRACTED #community/MainActivityjava

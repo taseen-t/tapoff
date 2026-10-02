@@ -5,7 +5,7 @@ tags: [tapoff, videos]
 
 How TapOff's videos are made. The work folder (`brag-output-2026-09-30-2030/` in the repo root) is git-ignored and
 never pushed: it holds raw phone recordings with personal details in them. This note is the recipe; see [[Decisions]]
-#37–39 for the why.
+#37 and #39–42 for the why.
 
 ## Shared style
 - **Frames are HTML.** Every frame is a pure function of time, rendered by Playwright (Chrome) and encoded by ffmpeg.
@@ -48,6 +48,10 @@ TapOff's permission → wallpaper → optional sliders → it works. Built from 
 5. **Check by eye:** contact sheets of every blurred range. This caught what OCR missed (a file name read with spaces,
    the edge of an account photo, faint text behind a dimmed dialog).
 6. About phone is never filmed (device identifiers); the Build-number step is drawn instead, with Android's own toasts.
+
+### On the site
+`site/video/setup-guide.mp4` is a 720×1280 copy (8.7 MB) with a WebP poster, beside the setup steps; see
+[[Decisions]] #42.
 
 ### Rebuild
 ```

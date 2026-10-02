@@ -17,6 +17,8 @@ tags:
 - [[2026-09-30 (later) · 1.8 back-tap sliders, favourites, NASA]] - `contains` [EXTRACTED]
 - [[2026-09-30 (night) · Shizuku PR, brag video]] - `contains` [EXTRACTED]
 - [[2026-09-30 · 1.7 slide the edges]] - `contains` [EXTRACTED]
+- [[2026-10-01 · Setup guide video]] - `contains` [EXTRACTED]
+- [[2026-10-02 · Setup video on the website]] - `contains` [EXTRACTED]
 - [[Before 2026-09-30 · 1.0 to 1.6]] - `contains` [EXTRACTED]
 - [[Progress log]] - `contains` [EXTRACTED]
 

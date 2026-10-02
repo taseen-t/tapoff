@@ -1,20 +1,20 @@
 ---
 source_file: "docs/Decisions.md"
 type: "document"
-community: "Progress log"
-location: "L1"
+community: "Wallpapers.java"
+location: "L4"
 tags:
   - graphify/document
-  - graphify/EXTRACTED
-  - community/Progress_log
+  - graphify/INFERRED
+  - community/Wallpapersjava
 ---
 
-# Decisions.md
+# Decisions
 
 ## Connections
-- [[Architecture_1]] - `references` [EXTRACTED]
-- [[Checks]] - `references` [EXTRACTED]
 - [[Decisions]] - `contains` [EXTRACTED]
-- [[Home]] - `references` [EXTRACTED]
+- [[LockService]] - `references` [INFERRED]
+- [[ShizukuSetup]] - `references` [INFERRED]
+- [[SlidersActivity]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Progress_log
+#graphify/document #graphify/INFERRED #community/Wallpapersjava

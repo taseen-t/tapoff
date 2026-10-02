@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "TapWallpaper"
+community: "TapWallpaper.java"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TapWallpaper
+  - community/TapWallpaperjava
 ---
 
 # Configuration
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[dot-onConfigurationChanged()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TapWallpaper
+#graphify/code #graphify/EXTRACTED #community/TapWallpaperjava

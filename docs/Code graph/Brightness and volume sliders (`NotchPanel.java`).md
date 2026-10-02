@@ -1,12 +1,12 @@
 ---
 source_file: "docs/Architecture.md"
 type: "document"
-community: "TapWallpaper"
+community: "TapWallpaper.java"
 location: "L37"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/TapWallpaper
+  - community/TapWallpaperjava
 ---
 
 # Brightness and volume sliders (`NotchPanel.java`)
@@ -16,4 +16,4 @@ tags:
 - [[SlidersActivity]] - `references` [INFERRED]
 - [[TapWallpaper]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/TapWallpaper
+#graphify/document #graphify/INFERRED #community/TapWallpaperjava

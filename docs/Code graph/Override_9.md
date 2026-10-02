@@ -1,17 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "android.content.Context"
+community: "NotchPanel.java"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidcontentContext
+  - community/NotchPaneljava
 ---
 
 # Override
 
 ## Connections
-- [[dot-onDraw()_2]] - `references` [EXTRACTED]
-- [[dot-onTouchEvent()_1]] - `references` [EXTRACTED]
+- [[dot-onDraw()_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidcontentContext
+#graphify/code #graphify/EXTRACTED #community/NotchPaneljava

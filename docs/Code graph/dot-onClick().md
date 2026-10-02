@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-lock()]] - `calls` [EXTRACTED]
-- [[Override_2]] - `references` [EXTRACTED]
+- [[Override_1]] - `references` [EXTRACTED]
 - [[ScreenOffTile]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/log

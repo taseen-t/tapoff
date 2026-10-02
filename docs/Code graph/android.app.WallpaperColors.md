@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "TapWallpaper"
+community: "TapWallpaper.java"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TapWallpaper
+  - community/TapWallpaperjava
 ---
 
 # android.app.WallpaperColors
@@ -14,4 +14,4 @@ tags:
 - [[dot-onComputeColors()]] - `references` [EXTRACTED]
 - [[TapWallpaper.java]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TapWallpaper
+#graphify/code #graphify/EXTRACTED #community/TapWallpaperjava

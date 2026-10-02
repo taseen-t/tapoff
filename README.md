@@ -36,20 +36,24 @@ that apps can't give themselves, so setup is a one-time step, on the phone or fr
 
 ### Without a computer (Shizuku)
 
-Play Protect blocks a browser or file manager from installing any app with an accessibility service ("App blocked to
-protect your device", no way past that dialog), and Google has it on in 185 markets. Installing as *shell* isn't
-blocked, which is what `adb install` is and what Shizuku can do on the phone. So Shizuku goes first here, and installs
-TapOff.
+Watch it first if you like: the [setup video](https://tapoff.vercel.app/#setup) (99 s) shows every step below on a
+Pixel.
 
-1. Install [Shizuku](https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api) from the Play Store,
+1. Download [TapOff.apk](https://github.com/taseen-t/tapoff/releases/latest/download/TapOff.apk) on the phone and
+   install it. If Play Protect says "App blocked to protect your device": Play Store → your profile → **Play
+   Protect** → the gear → turn off **Scan apps with Play Protect** → **Pause**, then install again. Scanning turns
+   itself back on the next day.
+2. Install [Shizuku](https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api) from the Play Store,
    open it and start it with **Wireless debugging** (it walks you through pairing on the phone; needs Wi-Fi).
-2. Install [InstallerX Revived](https://github.com/wxxsfxyzm/InstallerX-Revived/releases/latest) (third-party, open
-   source) and set its **Authorizer** to **Shizuku**. It installs as shell, the same way a computer's `adb install`
-   does. It has no accessibility service itself, so nothing blocks installing it.
-3. Download [TapOff.apk](https://github.com/taseen-t/tapoff/releases/latest/download/TapOff.apk) on the phone and open
-   it with InstallerX Revived.
-4. Open TapOff → Settings → **Set up without a computer** → **Allow**. The permission stays, so Shizuku can go
-   afterwards — keep it if you want to install TapOff's updates the same way.
+3. Open TapOff → Settings → **Set up without a computer** → **Allow**. The permission stays, so Shizuku can go
+   afterwards.
+
+Why Play Protect blocks it: Google's fraud protection (on in 185 markets) stops a browser or file manager from
+installing any app with an accessibility service, and TapOff's accessibility service is what turns the screen off.
+The block doesn't apply while app scanning is paused, or to installs run as *shell*. So instead of pausing, you can
+start Shizuku first, install [InstallerX Revived](https://github.com/wxxsfxyzm/InstallerX-Revived/releases/latest)
+(third-party, open source), set its **Authorizer** to **Shizuku** and open TapOff.apk with it: it installs as shell,
+the same way a computer's `adb install` does. Keep Shizuku and you can install TapOff's updates that way too.
 
 ### With a computer
 

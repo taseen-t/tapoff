@@ -1,21 +1,21 @@
 ---
 source_file: "src/com/taseen/tapoff/TapWallpaper.java"
 type: "code"
-community: "TapWallpaper"
+community: "TapWallpaper.java"
 location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TapWallpaper
+  - community/TapWallpaperjava
 ---
 
 # .onSurfaceRedrawNeeded()
 
 ## Connections
 - [[dot-draw()]] - `calls` [EXTRACTED]
-- [[dot-load()_1]] - `calls` [EXTRACTED]
-- [[Override_7]] - `references` [EXTRACTED]
+- [[dot-load()]] - `calls` [EXTRACTED]
+- [[Override_6]] - `references` [EXTRACTED]
 - [[TapEngine]] - `method` [EXTRACTED]
 - [[android.view.SurfaceHolder]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TapWallpaper
+#graphify/code #graphify/EXTRACTED #community/TapWallpaperjava

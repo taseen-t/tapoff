@@ -1,19 +1,19 @@
 ---
 source_file: "src/com/taseen/tapoff/MainActivity.java"
 type: "code"
-community: "Override"
+community: "MainActivity.java"
 location: "L524"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Override
+  - community/MainActivityjava
 ---
 
 # .setColorFilter()
 
 ## Connections
 - [[ColorFilter]] - `references` [EXTRACTED]
-- [[Override_1]] - `references` [EXTRACTED]
+- [[Override]] - `references` [EXTRACTED]
 - [[SwitchPart]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Override
+#graphify/code #graphify/EXTRACTED #community/MainActivityjava

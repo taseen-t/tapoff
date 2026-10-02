@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/SlidersActivity.java"
 type: "code"
-community: "NotchPanel.java"
+community: "Wallpapers.java"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NotchPaneljava
+  - community/Wallpapersjava
 ---
 
 # SlidersActivity.java
@@ -21,4 +21,4 @@ tags:
 - [[ioexception]] - `imports` [EXTRACTED]
 - [[toast]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NotchPaneljava
+#graphify/code #graphify/EXTRACTED #community/Wallpapersjava

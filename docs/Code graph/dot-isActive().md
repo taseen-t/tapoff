@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-apply()]] - `calls` [EXTRACTED]
-- [[dot-onCreate()_4]] - `calls` [EXTRACTED]
+- [[dot-onCreate()_3]] - `calls` [EXTRACTED]
 - [[dot-refreshState()]] - `calls` [EXTRACTED]
 - [[dot-refreshStatus()]] - `calls` [EXTRACTED]
 - [[Wallpapers]] - `method` [EXTRACTED]

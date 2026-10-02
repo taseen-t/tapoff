@@ -10,8 +10,8 @@ members: 11
 ## Members
 - [[dot-onClick()]] - code - src/com/taseen/tapoff/ScreenOffTile.java
 - [[dot-onClick()_1]] - code - src/com/taseen/tapoff/VolumeTile.java
+- [[Override_1]] - code
 - [[Override_2]] - code
-- [[Override_3]] - code
 - [[ScreenOffTile]] - code - src/com/taseen/tapoff/ScreenOffTile.java
 - [[ScreenOffTile.java]] - code - src/com/taseen/tapoff/ScreenOffTile.java
 - [[VolumeTile]] - code - src/com/taseen/tapoff/VolumeTile.java
@@ -28,14 +28,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_NotchPanel.java]]
+- 2 edges to [[_COMMUNITY_TapWallpaper.java]]
 - 2 edges to [[_COMMUNITY_MainActivity.java]]
+- 2 edges to [[_COMMUNITY_NotchPanel.java]]
 - 1 edge to [[_COMMUNITY_android.content.Context]]
-- 1 edge to [[_COMMUNITY_TapWallpaper]]
 - 1 edge to [[_COMMUNITY_ShizukuSetup.java]]
 - 1 edge to [[_COMMUNITY_Wallpapers.java]]
 
 ## Top bridge nodes
-- [[log]] - degree 7, connects to 4 communities
+- [[log]] - degree 7, connects to 5 communities
 - [[android.media.AudioManager]] - degree 3, connects to 2 communities
 - [[dot-onClick()]] - degree 3, connects to 1 community

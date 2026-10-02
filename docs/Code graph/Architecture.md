@@ -1,12 +1,12 @@
 ---
 source_file: "docs/Architecture.md"
 type: "document"
-community: "TapWallpaper"
+community: "TapWallpaper.java"
 location: "L4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TapWallpaper
+  - community/TapWallpaperjava
 ---
 
 # Architecture
@@ -22,4 +22,4 @@ tags:
 - [[Wallpapers_1]] - `contains` [EXTRACTED]
 - [[Website (`site`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TapWallpaper
+#graphify/document #graphify/EXTRACTED #community/TapWallpaperjava

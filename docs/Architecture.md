@@ -77,4 +77,5 @@ Shizuku's AIDL (`src/moe/shizuku/server/*.aidl`, trimmed, Apache 2.0) is compile
 ## Website (`site/`)
 One static `index.html` (no build step, no trackers), images in `site/img/`. Deployed with
 `npx vercel@latest deploy --prod --yes` from `site/`. Sections: hero with spec strip, store-style screenshots, brags,
-double-tap demo, cutout gallery, story, back-tap sliders demo, setup (Shizuku on the phone, or the computer install), FAQ.
+double-tap demo, cutout gallery, story, back-tap sliders demo, setup (the 99 s setup video in `site/video/` beside the steps: Shizuku on the phone, or the
+computer install), FAQ.

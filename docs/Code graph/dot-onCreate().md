@@ -17,7 +17,7 @@ tags:
 - [[dot-checkForUpdate()]] - `calls` [EXTRACTED]
 - [[dot-load()_2]] - `calls` [EXTRACTED]
 - [[MainActivity]] - `method` [EXTRACTED]
-- [[Override_1]] - `references` [EXTRACTED]
+- [[Override]] - `references` [EXTRACTED]
 - [[android.os.Bundle]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MainActivity

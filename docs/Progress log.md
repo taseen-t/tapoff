@@ -23,6 +23,19 @@ Newest first. Each entry: done / blocked / next.
 - Confirm the Shizuku + InstallerX install there; try the Play Protect "turn off app scanning" toggle as a shorter
   route and add it to the FAQ if it works; consider the free Play Protect appeal.
 
+## 2026-10-02 · Setup video on the website
+**Done**
+- The 99 s setup guide is on tapoff.vercel.app, beside the setup steps (above them on phones): a 720p copy (8.7 MB,
+  WebP poster, loads nothing until played), with credits for ElevenLabs and the 3D model ([[Decisions]] #42).
+- Site steps, FAQ and README now match the video: install, pause Play Protect's scanning if it blocks, Shizuku,
+  Allow. The Shizuku + InstallerX shell route from the parallel session (#38) stays as the other way; its open
+  "worth a try" item is done (verified on the Pixel 7, #40).
+- Two sessions had both written a decision #38; this session's entries renumbered to 39–41.
+- Live check: page has the new steps, the MP4 is served with range requests, plays and seeks in Chrome.
+
+**Next**
+- Confirm the pause route on the Samsung that first hit the block. Walkthrough and case study videos.
+
 ## 2026-10-01 · Setup guide video
 **Done**
 - Guide video (portrait, 98.9 s): install, the Play Protect workaround Taseen asked for, Shizuku, Developer options,
@@ -36,7 +49,7 @@ Newest first. Each entry: done / blocked / next.
 - Remote Control turned on for this session.
 
 **Found**
-- Pausing Play Protect's app scanning lets a browser install of TapOff through ([[Decisions]] #39), so #18's "no way
+- Pausing Play Protect's app scanning lets a browser install of TapOff through ([[Decisions]] #40), so #18's "no way
   past it" was wrong. The site and README don't say so yet.
 - Apple Vision's "accurate" OCR fails on this macOS build (e5rt error 13); "fast" works.
 

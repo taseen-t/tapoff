@@ -1,12 +1,12 @@
 ---
 source_file: "docs/Architecture.md"
 type: "document"
-community: "Wallpapers"
+community: "PreviewActivity"
 location: "L50"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Wallpapers
+  - community/PreviewActivity
 ---
 
 # Wallpapers
@@ -20,4 +20,4 @@ tags:
 - [[Architecture]] - `contains` [EXTRACTED]
 - [[TapWallpaper]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Wallpapers
+#graphify/document #graphify/INFERRED #community/PreviewActivity

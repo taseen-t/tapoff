@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/NotchPanel.java"
 type: "code"
-community: "android.content.Context"
+community: "NotchPanel.java"
 location: "L151"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidcontentContext
+  - community/NotchPaneljava
 ---
 
 # Panel
@@ -27,4 +27,4 @@ tags:
 - [[android.view.View]] - `inherits` [EXTRACTED]
 - [[android.view.animation.OvershootInterpolator]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidcontentContext
+#graphify/code #graphify/EXTRACTED #community/NotchPaneljava

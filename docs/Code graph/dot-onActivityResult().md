@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-intent()]] - `calls` [EXTRACTED]
 - [[MainActivity]] - `method` [EXTRACTED]
-- [[Override_1]] - `references` [EXTRACTED]
+- [[Override]] - `references` [EXTRACTED]
 - [[android.content.Intent]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MainActivityjava

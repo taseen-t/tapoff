@@ -1,18 +1,18 @@
 ---
 source_file: "src/com/taseen/tapoff/MainActivity.java"
 type: "code"
-community: "Override"
+community: "MainActivity.java"
 location: "L525"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Override
+  - community/MainActivityjava
 ---
 
 # .getOpacity()
 
 ## Connections
-- [[Override_1]] - `references` [EXTRACTED]
+- [[Override]] - `references` [EXTRACTED]
 - [[SwitchPart]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Override
+#graphify/code #graphify/EXTRACTED #community/MainActivityjava

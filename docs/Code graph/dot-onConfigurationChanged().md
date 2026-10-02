@@ -16,6 +16,6 @@ tags:
 - [[dot-refreshState()]] - `calls` [EXTRACTED]
 - [[Configuration]] - `references` [EXTRACTED]
 - [[MainActivity]] - `method` [EXTRACTED]
-- [[Override_1]] - `references` [EXTRACTED]
+- [[Override]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MainActivity

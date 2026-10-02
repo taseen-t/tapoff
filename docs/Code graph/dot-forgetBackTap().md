@@ -1,18 +1,18 @@
 ---
 source_file: "src/com/taseen/tapoff/SlidersActivity.java"
 type: "code"
-community: "MainActivity.java"
+community: "Wallpapers.java"
 location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MainActivityjava
+  - community/Wallpapersjava
 ---
 
 # .forgetBackTap()
 
 ## Connections
-- [[Context]] - `references` [EXTRACTED]
+- [[Context_1]] - `references` [EXTRACTED]
 - [[SlidersActivity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MainActivityjava
+#graphify/code #graphify/EXTRACTED #community/Wallpapersjava

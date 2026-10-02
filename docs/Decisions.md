@@ -129,16 +129,21 @@ Newest at the bottom. Each one says why, so nobody undoes it by accident.
     countries. Nothing in TapOff's manifest can avoid it: the
     accessibility service *is* the screen-off feature, and device-admin `lockNow()` was already ruled out in
     `LockService`'s note (it forces the PIN instead of leaving the fingerprint). (2026-09-30)
-38. **Video case look: clear, shiny, nothing on the screen.** The acrylic case is drawn as reflections only (additive,
+39. **Video case look: clear, shiny, nothing on the screen.** The acrylic case is drawn as reflections only (additive,
     no body colour), so it stays see-through and shines at the edges; a soft light band on the case back follows the
     phone's turn, because real reflections of thin lights pass in under a frame during a flip. The screen gets no
     glare so the recordings stay clean (Taseen's call). (2026-09-30)
-39. **Play Protect's block has a workaround: pause app scanning.** #18 said browser installs had no way past the
-    block. They do: Play Store → profile → Play Protect → gear → turn off "Scan apps with Play Protect" → **Pause**
+40. **Play Protect's block has a workaround: pause app scanning.** #18 said browser installs had no way past the
+    block, and #38 found the shell route (Shizuku + InstallerX). Pausing is shorter: Play Store → profile → Play Protect → gear → turn off "Scan apps with Play Protect" → **Pause**
     (it turns itself back on the next day), then install again. Tested on the Pixel 7: blocked before, "App updated"
     after. Taseen asked for it in the setup guide. The guide recommends Pause over Turn off because it undoes itself;
-    the computer install stays as the option that touches no security setting. (2026-10-01)
-40. **Guide footage is proven clean, not just blurred.** Following the UplinkeSIM videos: OCR every used frame, blur
+    the shell route and the computer install stay as the options that touch no security setting. Verified on the
+    Pixel 7 only, not yet on the Samsung that first hit the block. Site, FAQ and README now lead with it. (2026-10-01)
+41. **Guide footage is proven clean, not just blurred.** Following the UplinkeSIM videos: OCR every used frame, blur
     only what the edit uses, re-scan the output until it finds nothing, then check contact sheets by eye (which caught
     three things OCR missed). The page can only load frames on the blur step's allowlist. (2026-10-01)
+42. **The setup video lives on the site as a 720p copy.** The 1080p master is 30 MB; the site's copy
+    (`site/video/setup-guide.mp4`, 720×1280, H.264, 8.7 MB, `preload="none"` with a WebP poster) loads nothing until
+    someone presses play, so the page stays light. It sits beside the setup steps (above them on phones) and carries the
+    credits its sources ask for: ElevenLabs (free-tier voice) and Aborsoft 3D (CC BY 4.0 phone model). (2026-10-02)
 

@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/MainActivity.java"
 type: "code"
-community: "Override"
+community: "MainActivity.java"
 location: "L511"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Override
+  - community/MainActivityjava
 ---
 
 # SwitchPart
@@ -23,4 +23,4 @@ tags:
 - [[MainActivity]] - `contains` [EXTRACTED]
 - [[Rect]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Override
+#graphify/code #graphify/EXTRACTED #community/MainActivityjava

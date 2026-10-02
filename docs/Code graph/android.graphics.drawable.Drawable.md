@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "android.graphics.Paint"
+community: "NotchPanel.java"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidgraphicsPaint
+  - community/NotchPaneljava
 ---
 
 # android.graphics.drawable.Drawable
@@ -20,4 +20,4 @@ tags:
 - [[SwipeHint]] - `references` [EXTRACTED]
 - [[SwipeHint.java]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidgraphicsPaint
+#graphify/code #graphify/EXTRACTED #community/NotchPaneljava

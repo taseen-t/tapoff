@@ -1,11 +1,11 @@
 ---
 type: community
-members: 65
+members: 62
 ---
 
 # MainActivity
 
-**Members:** 65 nodes
+**Members:** 62 nodes
 
 ## Members
 - [[dot-GlassCard()]] - code - src/com/taseen/tapoff/GlassCard.java
@@ -17,9 +17,9 @@ members: 65
 - [[dot-buildUi()]] - code - src/com/taseen/tapoff/MainActivity.java
 - [[dot-card()]] - code - src/com/taseen/tapoff/MainActivity.java
 - [[dot-checkForUpdate()]] - code - src/com/taseen/tapoff/MainActivity.java
+- [[dot-chooser()]] - code - src/com/taseen/tapoff/MainActivity.java
 - [[dot-dark()]] - code - src/com/taseen/tapoff/Ui.java
 - [[dot-dp()]] - code - src/com/taseen/tapoff/Ui.java
-- [[dot-dragPages()]] - code - src/com/taseen/tapoff/MainActivity.java
 - [[dot-faint()]] - code - src/com/taseen/tapoff/Ui.java
 - [[dot-font()]] - code - src/com/taseen/tapoff/Ui.java
 - [[dot-glass()]] - code - src/com/taseen/tapoff/Ui.java
@@ -33,12 +33,8 @@ members: 65
 - [[dot-number()]] - code - src/com/taseen/tapoff/MainActivity.java
 - [[dot-onConfigurationChanged()]] - code - src/com/taseen/tapoff/MainActivity.java
 - [[dot-onCreate()]] - code - src/com/taseen/tapoff/MainActivity.java
-- [[dot-onResume()]] - code - src/com/taseen/tapoff/MainActivity.java
-- [[dot-onTouchEvent()]] - code - src/com/taseen/tapoff/MainActivity.java
 - [[dot-park()]] - code - src/com/taseen/tapoff/MainActivity.java
 - [[dot-pill()]] - code - src/com/taseen/tapoff/Ui.java
-- [[dot-refreshState()]] - code - src/com/taseen/tapoff/MainActivity.java
-- [[dot-refreshStatus()]] - code - src/com/taseen/tapoff/MainActivity.java
 - [[dot-releasePages()]] - code - src/com/taseen/tapoff/MainActivity.java
 - [[dot-section()]] - code - src/com/taseen/tapoff/MainActivity.java
 - [[dot-select()]] - code - src/com/taseen/tapoff/MainActivity.java
@@ -71,6 +67,7 @@ members: 65
 - [[android.widget.FrameLayout]] - code
 - [[android.widget.ImageView]] - code
 - [[android.widget.LinearLayout]] - code
+- [[android.widget.ScrollView]] - code
 - [[android.widget.Switch]] - code
 - [[android.widget.TextView]] - code
 
@@ -82,17 +79,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 42 edges to [[_COMMUNITY_MainActivity.java]]
+- 34 edges to [[_COMMUNITY_MainActivity.java]]
 - 22 edges to [[_COMMUNITY_android.content.Context]]
-- 14 edges to [[_COMMUNITY_Wallpapers]]
-- 7 edges to [[_COMMUNITY_Override]]
-- 7 edges to [[_COMMUNITY_ShizukuSetup.java]]
-- 4 edges to [[_COMMUNITY_TapWallpaper]]
-- 2 edges to [[_COMMUNITY_android.graphics.Paint]]
+- 18 edges to [[_COMMUNITY_PreviewActivity]]
+- 7 edges to [[_COMMUNITY_GlassCard]]
+- 3 edges to [[_COMMUNITY_NotchPanel.java]]
+- 3 edges to [[_COMMUNITY_TapWallpaper.java]]
+- 2 edges to [[_COMMUNITY_Wallpapers.java]]
+- 2 edges to [[_COMMUNITY_ShizukuSetup.java]]
 
 ## Top bridge nodes
-- [[MainActivity]] - degree 56, connects to 6 communities
-- [[dot-refreshState()]] - degree 15, connects to 5 communities
+- [[MainActivity]] - degree 56, connects to 8 communities
 - [[dot-dp()]] - degree 23, connects to 3 communities
+- [[dot-pill()]] - degree 15, connects to 3 communities
 - [[dot-onCreate()]] - degree 7, connects to 3 communities
-- [[dot-buildSettings()]] - degree 20, connects to 2 communities
+- [[dot-chooser()]] - degree 5, connects to 3 communities

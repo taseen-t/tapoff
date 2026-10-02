@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/GlassCard.java"
 type: "code"
-community: "Wallpapers"
+community: "GlassCard"
 location: "L87"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Wallpapers
+  - community/GlassCard
 ---
 
 # .updateCrop()
@@ -16,4 +16,4 @@ tags:
 - [[dot-setPhoto()]] - `calls` [EXTRACTED]
 - [[GlassCard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Wallpapers
+#graphify/code #graphify/EXTRACTED #community/GlassCard
