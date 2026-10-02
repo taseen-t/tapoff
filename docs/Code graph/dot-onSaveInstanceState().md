@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[MainActivity]] - `method` [EXTRACTED]
-- [[Override]] - `references` [EXTRACTED]
+- [[Override_2]] - `references` [EXTRACTED]
 - [[android.os.Bundle]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MainActivityjava

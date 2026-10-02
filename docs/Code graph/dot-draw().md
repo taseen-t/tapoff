@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/TapWallpaper.java"
 type: "code"
-community: "TapWallpaper.java"
+community: "TapWallpaper"
 location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TapWallpaperjava
+  - community/TapWallpaper
 ---
 
 # .draw()
@@ -16,4 +16,4 @@ tags:
 - [[dot-onVisibilityChanged()]] - `calls` [EXTRACTED]
 - [[TapEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TapWallpaperjava
+#graphify/code #graphify/EXTRACTED #community/TapWallpaper

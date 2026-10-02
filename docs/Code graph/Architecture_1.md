@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Architecture]] - `contains` [EXTRACTED]
 - [[Checks]] - `references` [EXTRACTED]
-- [[Decisions]] - `references` [EXTRACTED]
+- [[Decisions_1]] - `references` [EXTRACTED]
 - [[Home]] - `references` [EXTRACTED]
 - [[Progress log]] - `references` [EXTRACTED]
 

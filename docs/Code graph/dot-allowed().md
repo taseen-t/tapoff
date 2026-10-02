@@ -12,7 +12,7 @@ tags:
 # .allowed()
 
 ## Connections
-- [[dot-onCreate()_3]] - `calls` [EXTRACTED]
+- [[dot-onCreate()_4]] - `calls` [EXTRACTED]
 - [[dot-open()]] - `calls` [EXTRACTED]
 - [[dot-refreshState()]] - `calls` [EXTRACTED]
 - [[dot-sync()]] - `calls` [EXTRACTED]

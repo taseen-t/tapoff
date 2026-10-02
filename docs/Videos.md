@@ -50,13 +50,15 @@ TapOff's permission → wallpaper → optional sliders → it works. Built from 
 6. About phone is never filmed (device identifiers); the Build-number step is drawn instead, with Android's own toasts.
 
 ### On the site
-`site/video/setup-guide.mp4` is a 720×1280 copy (8.7 MB) with a WebP poster, beside the setup steps; see
-[[Decisions]] #42.
+`site/video/setup-guide.mp4` is a 720×1280 copy (8 MB) with a WebP poster (the intro frame), beside the setup steps,
+with the site's own hover-only controls; see [[Decisions]] #42–44. The phone sits 1,320 px tall at y 1,160 so the
+halo under it stays in frame.
 
 ### Rebuild
 ```
 python3 tools/scan.py && python3 tools/redact.py && python3 tools/verify.py
 python3 timeline.py && python3 build_page.py
 python3 -m http.server 8766 --bind 127.0.0.1   # from the work folder root
-node render_guide.js frames && python3 mix_guide.py
+node render_guide.js frames 0 1000 & node render_guide.js frames 1000 2000 & node render_guide.js frames 2000 2966 & wait
+python3 mix_guide.py && ./encode.sh && python3 tools/verify_output.py   # 1080p master + the site's 720p copy, then OCR
 ```

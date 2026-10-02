@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/SwipeHint.java"
 type: "code"
-community: "NotchPanel.java"
+community: "android.graphics.Paint"
 location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NotchPaneljava
+  - community/androidgraphicsPaint
 ---
 
 # SwipeHint
@@ -19,4 +19,4 @@ tags:
 - [[android.graphics.drawable.Drawable]] - `references` [EXTRACTED]
 - [[android.view.View]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NotchPaneljava
+#graphify/code #graphify/EXTRACTED #community/androidgraphicsPaint

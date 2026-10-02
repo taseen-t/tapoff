@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "TapWallpaper.java"
+community: "TapWallpaper"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TapWallpaperjava
+  - community/TapWallpaper
 ---
 
 # Engine
@@ -14,4 +14,4 @@ tags:
 - [[dot-onCreateEngine()]] - `references` [EXTRACTED]
 - [[TapEngine]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TapWallpaperjava
+#graphify/code #graphify/EXTRACTED #community/TapWallpaper

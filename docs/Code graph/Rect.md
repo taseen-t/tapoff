@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "MainActivity.java"
+community: "Override"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MainActivityjava
+  - community/Override
 ---
 
 # Rect
@@ -15,4 +15,4 @@ tags:
 - [[dot-onBoundsChange()]] - `references` [EXTRACTED]
 - [[SwitchPart]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MainActivityjava
+#graphify/code #graphify/EXTRACTED #community/Override

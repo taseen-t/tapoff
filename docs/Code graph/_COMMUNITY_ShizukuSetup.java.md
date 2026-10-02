@@ -16,7 +16,7 @@ members: 37
 - [[dot-grant()]] - code - src/com/taseen/tapoff/ShizukuSetup.java
 - [[dot-insert()]] - code - src/com/taseen/tapoff/ShizukuSetup.java
 - [[dot-installed()]] - code - src/com/taseen/tapoff/ShizukuSetup.java
-- [[dot-onCreate()_1]] - code - src/com/taseen/tapoff/ShizukuSetup.java
+- [[dot-onCreate()_2]] - code - src/com/taseen/tapoff/ShizukuSetup.java
 - [[dot-pmGrant()]] - code - src/com/taseen/tapoff/ShizukuSetup.java
 - [[dot-query()]] - code - src/com/taseen/tapoff/ShizukuSetup.java
 - [[dot-running()]] - code - src/com/taseen/tapoff/ShizukuSetup.java
@@ -55,16 +55,16 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 5 edges to [[_COMMUNITY_android.content.Context]]
-- 3 edges to [[_COMMUNITY_Wallpapers.java]]
 - 3 edges to [[_COMMUNITY_MainActivity.java]]
 - 2 edges to [[_COMMUNITY_MainActivity]]
+- 2 edges to [[_COMMUNITY_TapWallpaper]]
+- 2 edges to [[_COMMUNITY_NotchPanel.java]]
+- 1 edge to [[_COMMUNITY_Wallpapers.java]]
 - 1 edge to [[_COMMUNITY_log]]
-- 1 edge to [[_COMMUNITY_TapWallpaper.java]]
-- 1 edge to [[_COMMUNITY_NotchPanel.java]]
 
 ## Top bridge nodes
 - [[ShizukuSetup.java]] - degree 17, connects to 3 communities
-- [[android.net.Uri]] - degree 9, connects to 2 communities
+- [[android.net.Uri]] - degree 9, connects to 3 communities
 - [[dot-setupWithShizuku()]] - degree 8, connects to 2 communities
 - [[Setup without a computer (`ShizukuSetup.java`)]] - degree 6, connects to 2 communities
 - [[ShizukuSetup]] - degree 17, connects to 1 community

@@ -5,6 +5,20 @@ tags: [tapoff, log]
 
 Newest first. Each entry: done / blocked / next.
 
+## 2026-10-02 (evening) · Video controls, video shadow, telling people
+**Done**
+- Setup video on the site has its own controls in the site's style, hover-only, auto-hiding ([[Decisions]] #43).
+- The halo under the 3D phone no longer runs off the bottom of the setup video; re-rendered (three Chrome workers
+  in parallel, about 2 minutes), OCR re-check 0 leaks, deployed and checked live ([[Decisions]] #44).
+- Agent Reach skill installed for research (CLI via pipx, skill in ~/.claude/skills).
+
+**Blocked**
+- Reddit blocks the in-app browser and scripts; its research goes through the public Arctic Shift archive and
+  web search. Agent Reach's Reddit and Instagram channels need Taseen's logged-in Chrome (OpenCLI extension).
+
+**Next**
+- Reddit communities and drafts, Instagram content research, the Infinite Desk study.
+
 ## 2026-09-30 (late) · Play Protect block: a no-computer way in
 
 **Done**

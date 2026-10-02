@@ -12,7 +12,7 @@ tags:
 # ScreenOffTile
 
 ## Connections
-- [[dot-onClick()]] - `method` [EXTRACTED]
+- [[dot-onClick()_1]] - `method` [EXTRACTED]
 - [[ScreenOffTile.java]] - `contains` [EXTRACTED]
 - [[android.service.quicksettings.TileService]] - `inherits` [EXTRACTED]
 

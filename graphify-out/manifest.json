@@ -78,9 +78,9 @@
     "semantic_hash": ""
   },
   "docs/Architecture.md": {
-    "mtime": 1790954582.781732,
-    "seen": 1790954785.4019241,
-    "ast_hash": "c27a0e5f24671357d850b27c9b73bbde",
+    "mtime": 1790957113.2414474,
+    "seen": 1790957114.358067,
+    "ast_hash": "ae98ccaa5b84d82b9435ca6a78bb0a29",
     "semantic_hash": ""
   },
   "docs/Checks.md": {
@@ -90,9 +90,9 @@
     "semantic_hash": ""
   },
   "docs/Decisions.md": {
-    "mtime": 1790954542.565542,
-    "seen": 1790954785.401925,
-    "ast_hash": "f338959ed15e8badc62449e9b4466f38",
+    "mtime": 1790957106.0038376,
+    "seen": 1790957114.358069,
+    "ast_hash": "a7b85c9f88b93ab8e76836b778109565",
     "semantic_hash": ""
   },
   "docs/Home.md": {
@@ -102,21 +102,21 @@
     "semantic_hash": ""
   },
   "docs/Progress log.md": {
-    "mtime": 1790954784.225148,
-    "seen": 1790954785.4019258,
-    "ast_hash": "1b8fad522ae9c201d7d9a9f5390aa1d1",
+    "mtime": 1790957106.004601,
+    "seen": 1790957114.3580701,
+    "ast_hash": "e0950b19ef4e9277c8bdd62f23fa4eae",
     "semantic_hash": ""
   },
   "docs/Tasks.md": {
-    "mtime": 1790954784.2249098,
-    "seen": 1790954785.401927,
-    "ast_hash": "8e76d5f0d74e20a09b17cc4b2e6b3881",
+    "mtime": 1790957106.0042682,
+    "seen": 1790957114.358071,
+    "ast_hash": "3af5a250abb68cf348c6b2bc5b55a02d",
     "semantic_hash": ""
   },
   "site/index.html": {
-    "mtime": 1790954392.1314185,
-    "seen": 1790954785.401929,
-    "ast_hash": "67ba7bf344bd943a754e3c37d6a4e7b1",
+    "mtime": 1790956468.1286395,
+    "seen": 1790957114.358072,
+    "ast_hash": "ddffd036e292b51f45c4815a7c678048",
     "semantic_hash": ""
   },
   "site/icon.svg": {
@@ -156,21 +156,21 @@
     "semantic_hash": ""
   },
   "docs/Videos.md": {
-    "mtime": 1790954582.7805257,
-    "seen": 1790954785.401928,
-    "ast_hash": "7410cd37b65c370996192dad5d83cc20",
+    "mtime": 1790957106.004854,
+    "seen": 1790957114.358071,
+    "ast_hash": "ca17a1dc9c5ab036f41f675fd0e91105",
     "semantic_hash": ""
   },
   "site/video/setup-guide.webp": {
-    "mtime": 1790831771.1569908,
-    "seen": 1790954785.40193,
-    "ast_hash": "d3dd1afb0bd708b0f6349a5a3007be8f",
+    "mtime": 1790956778.9667835,
+    "seen": 1790957114.358073,
+    "ast_hash": "d5468c83185b05cd62eb688347189b95",
     "semantic_hash": ""
   },
   "site/video/setup-guide.mp4": {
-    "mtime": 1790819963.9886973,
-    "seen": 1790954785.40193,
-    "ast_hash": "3f504e17a2d2add2fd1003cb6bdd1ad5",
+    "mtime": 1790956476.6750994,
+    "seen": 1790957114.3580742,
+    "ast_hash": "edec0495c3d8a33a460f501114534e45",
     "semantic_hash": ""
   }
 }

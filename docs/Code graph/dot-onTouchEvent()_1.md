@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/NotchPanel.java"
 type: "code"
-community: "NotchPanel.java"
+community: "Panel"
 location: "L274"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NotchPaneljava
+  - community/Panel
 ---
 
 # .onTouchEvent()
@@ -18,4 +18,4 @@ tags:
 - [[Panel]] - `method` [EXTRACTED]
 - [[android.view.MotionEvent]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NotchPaneljava
+#graphify/code #graphify/EXTRACTED #community/Panel

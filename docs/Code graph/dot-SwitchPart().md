@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/MainActivity.java"
 type: "code"
-community: "MainActivity.java"
+community: "Override"
 location: "L515"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MainActivityjava
+  - community/Override
 ---
 
 # .SwitchPart()
@@ -16,4 +16,4 @@ tags:
 - [[Rect]] - `references` [EXTRACTED]
 - [[SwitchPart]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MainActivityjava
+#graphify/code #graphify/EXTRACTED #community/Override

@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "PreviewActivity"
+community: "MainActivity"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PreviewActivity
+  - community/MainActivity
 ---
 
 # android.graphics.Bitmap
@@ -29,4 +29,4 @@ tags:
 - [[TapWallpaper.java]] - `imports` [EXTRACTED]
 - [[Wallpapers.java]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PreviewActivity
+#graphify/code #graphify/EXTRACTED #community/MainActivity

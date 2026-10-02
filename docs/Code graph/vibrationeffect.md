@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "TapWallpaper.java"
+community: "NotchPanel.java"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/TapWallpaperjava
+  - community/NotchPaneljava
 ---
 
 # vibrationeffect
@@ -14,4 +14,4 @@ tags:
 - [[NotchPanel.java]] - `imports` [EXTRACTED]
 - [[TapWallpaper.java]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/TapWallpaperjava
+#graphify/concept #graphify/EXTRACTED #community/NotchPaneljava

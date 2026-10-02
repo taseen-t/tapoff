@@ -1,8 +1,8 @@
 ---
-source_file: "src/com/taseen/tapoff/MainActivity.java"
+source_file: "src/com/taseen/tapoff/PreviewActivity.java"
 type: "code"
 community: "MainActivity.java"
-location: "L256"
+location: "L417"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,7 @@ tags:
 # .onDestroy()
 
 ## Connections
-- [[MainActivity]] - `method` [EXTRACTED]
 - [[Override]] - `references` [EXTRACTED]
+- [[PreviewActivity]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MainActivityjava

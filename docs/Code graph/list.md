@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "NotchPanel.java"
+community: "CutoutArt.java"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/NotchPaneljava
+  - community/CutoutArtjava
 ---
 
 # list
@@ -17,4 +17,4 @@ tags:
 - [[PreviewActivity.java]] - `imports` [EXTRACTED]
 - [[Wallpapers.java]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/NotchPaneljava
+#graphify/concept #graphify/EXTRACTED #community/CutoutArtjava

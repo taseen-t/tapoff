@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "NotchPanel.java"
+community: "android.graphics.Paint"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NotchPaneljava
+  - community/androidgraphicsPaint
 ---
 
 # Override
 
 ## Connections
-- [[dot-onDraw()_3]] - `references` [EXTRACTED]
+- [[dot-onDraw()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NotchPaneljava
+#graphify/code #graphify/EXTRACTED #community/androidgraphicsPaint

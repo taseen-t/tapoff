@@ -1,18 +1,18 @@
 ---
 source_file: "src/com/taseen/tapoff/MainActivity.java"
 type: "code"
-community: "MainActivity.java"
+community: "Override"
 location: "L522"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MainActivityjava
+  - community/Override
 ---
 
 # .getIntrinsicHeight()
 
 ## Connections
-- [[Override]] - `references` [EXTRACTED]
+- [[Override_2]] - `references` [EXTRACTED]
 - [[SwitchPart]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MainActivityjava
+#graphify/code #graphify/EXTRACTED #community/Override

@@ -1,11 +1,11 @@
 ---
 type: community
-members: 62
+members: 61
 ---
 
 # MainActivity
 
-**Members:** 62 nodes
+**Members:** 61 nodes
 
 ## Members
 - [[dot-GlassCard()]] - code - src/com/taseen/tapoff/GlassCard.java
@@ -23,7 +23,6 @@ members: 62
 - [[dot-faint()]] - code - src/com/taseen/tapoff/Ui.java
 - [[dot-font()]] - code - src/com/taseen/tapoff/Ui.java
 - [[dot-glass()]] - code - src/com/taseen/tapoff/Ui.java
-- [[dot-image()]] - code - src/com/taseen/tapoff/PreviewActivity.java
 - [[dot-ink()]] - code - src/com/taseen/tapoff/Ui.java
 - [[dot-line()]] - code - src/com/taseen/tapoff/Ui.java
 - [[dot-loadTileImage()]] - code - src/com/taseen/tapoff/MainActivity.java
@@ -63,9 +62,9 @@ members: 62
 - [[SECONDARY]] - code - src/com/taseen/tapoff/Ui.java
 - [[UI_1]] - document - docs/Architecture.md
 - [[Ui]] - code - src/com/taseen/tapoff/Ui.java
+- [[android.graphics.Bitmap]] - code
 - [[android.graphics.drawable.GradientDrawable]] - code
 - [[android.widget.FrameLayout]] - code
-- [[android.widget.ImageView]] - code
 - [[android.widget.LinearLayout]] - code
 - [[android.widget.ScrollView]] - code
 - [[android.widget.Switch]] - code
@@ -79,18 +78,23 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 34 edges to [[_COMMUNITY_MainActivity.java]]
-- 22 edges to [[_COMMUNITY_android.content.Context]]
-- 18 edges to [[_COMMUNITY_PreviewActivity]]
-- 7 edges to [[_COMMUNITY_GlassCard]]
-- 3 edges to [[_COMMUNITY_NotchPanel.java]]
-- 3 edges to [[_COMMUNITY_TapWallpaper.java]]
-- 2 edges to [[_COMMUNITY_Wallpapers.java]]
+- 42 edges to [[_COMMUNITY_MainActivity.java]]
+- 24 edges to [[_COMMUNITY_android.content.Context]]
+- 9 edges to [[_COMMUNITY_GlassCard]]
+- 7 edges to [[_COMMUNITY_TapWallpaper]]
+- 6 edges to [[_COMMUNITY_Override]]
+- 3 edges to [[_COMMUNITY_android.graphics.Paint]]
+- 3 edges to [[_COMMUNITY_Wallpapers]]
 - 2 edges to [[_COMMUNITY_ShizukuSetup.java]]
+- 1 edge to [[_COMMUNITY_Panel]]
+- 1 edge to [[_COMMUNITY_android.graphics.Canvas]]
+- 1 edge to [[_COMMUNITY_CutoutArt.java]]
+- 1 edge to [[_COMMUNITY_TapWallpaper.java]]
+- 1 edge to [[_COMMUNITY_Wallpapers.java]]
 
 ## Top bridge nodes
-- [[MainActivity]] - degree 56, connects to 8 communities
+- [[android.graphics.Bitmap]] - degree 17, connects to 9 communities
+- [[MainActivity]] - degree 56, connects to 7 communities
+- [[dot-onCreate()]] - degree 7, connects to 4 communities
 - [[dot-dp()]] - degree 23, connects to 3 communities
-- [[dot-pill()]] - degree 15, connects to 3 communities
-- [[dot-onCreate()]] - degree 7, connects to 3 communities
-- [[dot-chooser()]] - degree 5, connects to 3 communities
+- [[dot-buildUi()]] - degree 18, connects to 2 communities

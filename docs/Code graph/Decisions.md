@@ -1,22 +1,20 @@
 ---
 source_file: "docs/Decisions.md"
 type: "document"
-community: "Progress log"
-location: "L1"
+community: "TapWallpaper"
+location: "L4"
 tags:
   - graphify/document
-  - graphify/EXTRACTED
-  - community/Progress_log
+  - graphify/INFERRED
+  - community/TapWallpaper
 ---
 
-# Decisions.md
+# Decisions
 
 ## Connections
-- [[Architecture_1]] - `references` [EXTRACTED]
-- [[Checks]] - `references` [EXTRACTED]
 - [[Decisions_1]] - `contains` [EXTRACTED]
-- [[Home]] - `references` [EXTRACTED]
-- [[Progress log]] - `references` [EXTRACTED]
-- [[Videos]] - `references` [EXTRACTED]
+- [[LockService]] - `references` [INFERRED]
+- [[ShizukuSetup]] - `references` [INFERRED]
+- [[SlidersActivity]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Progress_log
+#graphify/document #graphify/INFERRED #community/TapWallpaper

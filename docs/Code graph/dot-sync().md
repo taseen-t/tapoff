@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-allowed()]] - `calls` [EXTRACTED]
 - [[dot-enabled()_1]] - `calls` [EXTRACTED]
-- [[dot-onCreate()_2]] - `calls` [INFERRED]
+- [[dot-onCreate()_3]] - `calls` [INFERRED]
 - [[dot-remove()]] - `calls` [EXTRACTED]
 - [[NotchPanel]] - `method` [EXTRACTED]
 

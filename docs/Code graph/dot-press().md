@@ -1,18 +1,18 @@
 ---
 source_file: "src/com/taseen/tapoff/DoubleTapHint.java"
 type: "code"
-community: "NotchPanel.java"
+community: "android.graphics.Paint"
 location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NotchPaneljava
+  - community/androidgraphicsPaint
 ---
 
 # .press()
 
 ## Connections
-- [[dot-onDraw()_1]] - `calls` [EXTRACTED]
+- [[dot-onDraw()_2]] - `calls` [EXTRACTED]
 - [[DoubleTapHint]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NotchPaneljava
+#graphify/code #graphify/EXTRACTED #community/androidgraphicsPaint

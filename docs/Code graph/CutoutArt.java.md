@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/CutoutArt.java"
 type: "code"
-community: "NotchPanel.java"
+community: "CutoutArt.java"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NotchPaneljava
+  - community/CutoutArtjava
 ---
 
 # CutoutArt.java
@@ -30,4 +30,4 @@ tags:
 - [[shader]] - `imports` [EXTRACTED]
 - [[sweepgradient]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NotchPaneljava
+#graphify/code #graphify/EXTRACTED #community/CutoutArtjava

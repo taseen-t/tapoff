@@ -146,4 +146,13 @@ Newest at the bottom. Each one says why, so nobody undoes it by accident.
     (`site/video/setup-guide.mp4`, 720×1280, H.264, 8.7 MB, `preload="none"` with a WebP poster) loads nothing until
     someone presses play, so the page stays light. It sits beside the setup steps (above them on phones) and carries the
     credits its sources ask for: ElevenLabs (free-tier voice) and Aborsoft 3D (CC BY 4.0 phone model). (2026-10-02)
-
+43. **The setup video has its own controls.** The browser's bar didn't match the site. Now: a white round play button
+    while paused, and a bar (seek line, pixel-font time, Lucide play/pause, mute and full-screen icons) that shows while
+    the pointer moves over the video and leaves about a second after the last move or control use, even with the
+    pointer still there (2.2 s after a tap on phones). Click the picture to play or pause; keys k, m, f and the arrows
+    work. The `<video>` keeps `controls` in the HTML and the script removes it, so without the script the browser's
+    own controls are still there. `preload` went from `none` to `metadata` so the time and seek line know the length
+    before play (a few KB, thanks to faststart). (2026-10-02)
+44. **The guide's phone is a little smaller and higher** (1,320 px tall at y 1,160, was 1,400 at 1,195), so the dark
+    halo under it ends inside the frame instead of being cut by the bottom edge. Re-rendered, re-encoded and re-checked
+    (0 leaks); the poster is the new intro frame. (2026-10-02)

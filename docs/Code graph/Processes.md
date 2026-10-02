@@ -1,12 +1,12 @@
 ---
 source_file: "docs/Architecture.md"
 type: "document"
-community: "TapWallpaper.java"
+community: "TapWallpaper"
 location: "L9"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/TapWallpaperjava
+  - community/TapWallpaper
 ---
 
 # Processes
@@ -18,4 +18,4 @@ tags:
 - [[PreviewActivity]] - `references` [INFERRED]
 - [[TapWallpaper]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/TapWallpaperjava
+#graphify/document #graphify/INFERRED #community/TapWallpaper

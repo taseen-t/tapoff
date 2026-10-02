@@ -1,18 +1,18 @@
 ---
 source_file: "src/com/taseen/tapoff/SlidersActivity.java"
 type: "code"
-community: "Wallpapers.java"
+community: "android.content.Context"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Wallpapersjava
+  - community/androidcontentContext
 ---
 
 # .fromLauncher()
 
 ## Connections
-- [[dot-onCreate()_3]] - `calls` [EXTRACTED]
+- [[dot-onCreate()_4]] - `calls` [EXTRACTED]
 - [[SlidersActivity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Wallpapersjava
+#graphify/code #graphify/EXTRACTED #community/androidcontentContext

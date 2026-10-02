@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/Wallpapers.java"
 type: "code"
-community: "PreviewActivity"
+community: "Wallpapers"
 location: "L147"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PreviewActivity
+  - community/Wallpapers
 ---
 
 # .nasa()
@@ -17,4 +17,4 @@ tags:
 - [[dot-load()_2]] - `calls` [EXTRACTED]
 - [[Wallpapers]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PreviewActivity
+#graphify/code #graphify/EXTRACTED #community/Wallpapers

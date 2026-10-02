@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/MainActivity.java"
 type: "code"
-community: "PreviewActivity"
+community: "TapWallpaper"
 location: "L538"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PreviewActivity
+  - community/TapWallpaper
 ---
 
 # .refreshFavourites()
@@ -18,4 +18,4 @@ tags:
 - [[MainActivity]] - `method` [EXTRACTED]
 - [[Wallpapers_1]] - `references` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/PreviewActivity
+#graphify/code #graphify/EXTRACTED #community/TapWallpaper

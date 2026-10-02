@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/PreviewActivity.java"
 type: "code"
-community: "PreviewActivity"
+community: "MainActivity.java"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PreviewActivity
+  - community/MainActivityjava
 ---
 
 # PreviewActivity
@@ -17,9 +17,9 @@ tags:
 - [[dot-favouriteAt()]] - `method` [EXTRACTED]
 - [[dot-image()]] - `method` [EXTRACTED]
 - [[dot-intent()]] - `method` [EXTRACTED]
-- [[dot-load()_1]] - `method` [EXTRACTED]
-- [[dot-onCreate()_4]] - `method` [EXTRACTED]
-- [[dot-onDestroy()_2]] - `method` [EXTRACTED]
+- [[dot-load()]] - `method` [EXTRACTED]
+- [[dot-onCreate()_1]] - `method` [EXTRACTED]
+- [[dot-onDestroy()]] - `method` [EXTRACTED]
 - [[dot-onTouch()]] - `method` [EXTRACTED]
 - [[dot-setFavourite()]] - `method` [EXTRACTED]
 - [[dot-settle()]] - `method` [EXTRACTED]
@@ -42,4 +42,4 @@ tags:
 - [[android.widget.ProgressBar]] - `references` [EXTRACTED]
 - [[android.widget.TextView]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PreviewActivity
+#graphify/code #graphify/EXTRACTED #community/MainActivityjava

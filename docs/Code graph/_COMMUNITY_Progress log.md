@@ -1,11 +1,11 @@
 ---
 type: community
-members: 37
+members: 39
 ---
 
 # Progress log
 
-**Members:** 37 nodes
+**Members:** 39 nodes
 
 ## Members
 - [[2026-09-30]] - document - docs/Tasks.md
@@ -16,14 +16,16 @@ members: 37
 - [[2026-09-30 (night) · Shizuku PR, brag video]] - document - docs/Progress log.md
 - [[2026-09-30 · 1.7 slide the edges]] - document - docs/Progress log.md
 - [[2026-10-01 · Setup guide video]] - document - docs/Progress log.md
+- [[2026-10-02 (evening) · Video controls, video shadow, telling people]] - document - docs/Progress log.md
 - [[2026-10-02 · Setup video on the website]] - document - docs/Progress log.md
+- [[2026-10-02 · Telling people]] - document - docs/Tasks.md
 - [[Architecture_1]] - document - docs/Architecture.md
 - [[Before 2026-09-30 · 1.0 to 1.6]] - document - docs/Progress log.md
 - [[Before every commit]] - document - docs/Checks.md
 - [[Brag video (portrait + landscape, 23 s)]] - document - docs/Videos.md
 - [[Checks_1]] - document - docs/Checks.md
 - [[Checks]] - document - docs/Checks.md
-- [[Decisions]] - document - docs/Decisions.md
+- [[Decisions_1]] - document - docs/Decisions.md
 - [[Done before this vault existed (v1.0–1.6)]] - document - docs/Tasks.md
 - [[Home]] - document - docs/Home.md
 - [[Keeping this current]] - document - docs/Home.md
@@ -54,9 +56,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_TapWallpaper.java]]
-- 1 edge to [[_COMMUNITY_Wallpapers.java]]
+- 2 edges to [[_COMMUNITY_TapWallpaper]]
 
 ## Top bridge nodes
-- [[Decisions]] - degree 6, connects to 1 community
+- [[Decisions_1]] - degree 7, connects to 1 community
 - [[Architecture_1]] - degree 5, connects to 1 community

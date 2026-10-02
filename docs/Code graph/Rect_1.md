@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "PreviewActivity"
+community: "TapWallpaper"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PreviewActivity
+  - community/TapWallpaper
 ---
 
 # Rect
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[dot-screenCrop()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PreviewActivity
+#graphify/code #graphify/EXTRACTED #community/TapWallpaper

@@ -193,6 +193,22 @@ Every request goes here the moment it's asked. Tick subtasks as they land. Never
         can update that way already has Shizuku and InstallerX, which does the same job; it would only work while
         Shizuku is running, and it can't help the first install anyway
 
+## 2026-10-02 · Telling people
+- [ ] Reddit: find the communities where TapOff solves a real problem, see what gets reach there, write a post per
+      community from the problem side (the developer telling their story, not a pitch). Taseen posts.
+  - [x] Install the Agent Reach skill (Panniantong/Agent-Reach, MIT): CLI via pipx, skill in ~/.claude/skills
+  - [ ] Which subreddits, how big, and what their rules say about posting your own app
+  - [ ] What gets upvotes there (top posts about double-tap to sleep, edge sliders, Shizuku apps, "I made")
+  - [ ] Drafts, one per community, with the questions comments will ask answered up front
+- [ ] Instagram: what kind of problem-solving content gets the most views, so TapOff makes more of that
+- [x] Setup video: custom controls matching the site, shown only on hover, gone about a second after the last move
+      or control use even while hovered ([[Decisions]] #43)
+- [x] The shadow under the phone was cut by the bottom of the setup video: phone smaller and higher, re-rendered,
+      privacy re-check 0 leaks, new poster ([[Decisions]] #44). The app itself has no bottom shadow that clips (only
+      the tab bar, 16 dp above the navigation bar); if Taseen meant a screen in the app, get a screenshot
+- [ ] YouTube: study the "Infinite Desk" channel ("we explore better ways of thinking") and plan TapOff videos in that
+      style
+
 ## Open
 - [ ] Play Store listing? Costs $25 once. Waiting on Taseen (never spend without a yes).
 - [ ] Custom domain? Waiting on whether Taseen is a student (GitHub Student Pack has free domains).

@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Wallpapers.java"
+community: "android.content.Context"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Wallpapersjava
+  - community/androidcontentContext
 ---
 
 # Context
@@ -14,4 +14,4 @@ tags:
 - [[dot-backTapSeen()]] - `references` [EXTRACTED]
 - [[dot-forgetBackTap()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Wallpapersjava
+#graphify/code #graphify/EXTRACTED #community/androidcontentContext

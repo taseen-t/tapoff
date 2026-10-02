@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "NotchPanel.java"
+community: "android.graphics.Paint"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NotchPaneljava
+  - community/androidgraphicsPaint
 ---
 
 # android.view.View
@@ -27,4 +27,4 @@ tags:
 - [[SwipeHint]] - `inherits` [EXTRACTED]
 - [[SwipeHint.java]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NotchPaneljava
+#graphify/code #graphify/EXTRACTED #community/androidgraphicsPaint

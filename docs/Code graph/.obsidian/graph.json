@@ -15,14 +15,14 @@
       }
     },
     {
-      "query": "tag:#community/TapWallpaperjava",
+      "query": "tag:#community/TapWallpaper",
       "color": {
         "a": 1,
         "rgb": 14767961
       }
     },
     {
-      "query": "tag:#community/NotchPaneljava",
+      "query": "tag:#community/androidgraphicsPaint",
       "color": {
         "a": 1,
         "rgb": 7780274
@@ -57,7 +57,7 @@
       }
     },
     {
-      "query": "tag:#community/PreviewActivity",
+      "query": "tag:#community/Wallpapers",
       "color": {
         "a": 1,
         "rgb": 10253663
@@ -68,6 +68,13 @@
       "color": {
         "a": 1,
         "rgb": 12234924
+      }
+    },
+    {
+      "query": "tag:#community/NotchPaneljava",
+      "color": {
+        "a": 1,
+        "rgb": 5142951
       }
     },
     {
@@ -82,6 +89,13 @@
       "color": {
         "a": 1,
         "rgb": 14767961
+      }
+    },
+    {
+      "query": "tag:#community/Override",
+      "color": {
+        "a": 1,
+        "rgb": 7780274
       }
     },
     {
@@ -117,6 +131,27 @@
       "color": {
         "a": 1,
         "rgb": 10253663
+      }
+    },
+    {
+      "query": "tag:#community/TapWallpaperjava",
+      "color": {
+        "a": 1,
+        "rgb": 12234924
+      }
+    },
+    {
+      "query": "tag:#community/Panel",
+      "color": {
+        "a": 1,
+        "rgb": 5142951
+      }
+    },
+    {
+      "query": "tag:#community/CutoutArtjava",
+      "color": {
+        "a": 1,
+        "rgb": 15896107
       }
     }
   ]

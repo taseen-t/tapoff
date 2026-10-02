@@ -227,8 +227,44 @@ h1 { font-size: clamp(48px, 7.6vw, 88px); line-height: .98; letter-spacing: -.03
 /* the setup video sits beside the steps on wide screens, above them on phones */
 .setup { display: grid; grid-template-columns: 320px minmax(0, 1fr); gap: 32px; align-items: start; }
 .guide { margin: 0; position: sticky; top: 24px; }
-.guide video { display: block; width: 100%; height: auto; aspect-ratio: 9 / 16; border-radius: 28px; border: 1px solid var(--line);
-  background: #000; }
+.player { position: relative; border-radius: 28px; border: 1px solid var(--line); background: #000; overflow: hidden; }
+.player video { display: block; width: 100%; height: auto; aspect-ratio: 9 / 16; }
+/* own controls, always light on the dark video; without the script the browser's controls stay */
+.player:not(.js) .big, .player:not(.js) .bar { display: none; }
+.player button { border: 0; padding: 0; margin: 0; background: none; color: #fff; cursor: pointer; display: grid; place-items: center; }
+.player :focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+.player svg { width: 18px; height: 18px; }
+.player .big { position: absolute; left: 50%; top: 50%; width: 68px; height: 68px; margin: -34px 0 0 -34px; border-radius: 50%;
+  background: #fff; color: #0a0a0b; box-shadow: 0 12px 36px rgba(0,0,0,.5); transition: opacity .2s, transform .2s; }
+.player .big svg { width: 24px; height: 24px; margin-left: 3px; }
+.player .big:hover { transform: scale(1.06); }
+.player.playing .big { opacity: 0; transform: scale(.85); pointer-events: none; }
+.player .bar { position: absolute; left: 0; right: 0; bottom: 0; padding: 36px 12px 10px; color: #fff;
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.75)); opacity: 0; transform: translateY(10px);
+  transition: opacity .2s, transform .2s; pointer-events: none; }
+.player.show .bar { opacity: 1; transform: none; }
+.player.show .bar .seek, .player.show .bar button { pointer-events: auto; } /* the rest of the bar lets clicks reach the video */
+.player.playing:not(.show) { cursor: none; }
+.player .row { display: flex; align-items: center; gap: 2px; }
+.player .row button { width: 36px; height: 36px; border-radius: 50%; }
+.player .row button:hover { background: rgba(255,255,255,.14); }
+.player .time { font-size: 11px; margin: 0 auto 0 6px; white-space: nowrap; }
+.player .i-pause, .player .i-off, .player .i-min, .player.playing .i-play, .player.muted .i-on, .player.full .i-max { display: none; }
+.player.playing .i-pause, .player.muted .i-off, .player.full .i-min { display: block; }
+.player .seek { -webkit-appearance: none; appearance: none; display: block; width: calc(100% - 12px); height: 18px; margin: 0 6px 2px;
+  background: none; cursor: pointer; --p: 0%; }
+.player .seek::-webkit-slider-runnable-track { height: 4px; border-radius: 2px;
+  background: linear-gradient(#fff, #fff) 0 / var(--p) 100% no-repeat, rgba(255,255,255,.28); }
+.player .seek::-webkit-slider-thumb { -webkit-appearance: none; width: 14px; height: 14px; margin-top: -5px; border-radius: 50%;
+  background: #fff; transform: scale(.0001); transition: transform .15s; }
+.player .seek:hover::-webkit-slider-thumb, .player .seek:active::-webkit-slider-thumb,
+.player .seek:focus-visible::-webkit-slider-thumb { transform: scale(1); }
+.player .seek::-moz-range-track { height: 4px; border-radius: 2px; background: rgba(255,255,255,.28); }
+.player .seek::-moz-range-progress { height: 4px; border-radius: 2px; background: #fff; }
+.player .seek::-moz-range-thumb { width: 14px; height: 14px; border: 0; border-radius: 50%; background: #fff; }
+.player:fullscreen { border: 0; border-radius: 0; display: grid; place-items: center; }
+.player:fullscreen video { width: auto; height: 100vh; max-width: 100%; }
+@media (prefers-reduced-motion: reduce) { .player .big, .player .bar, .player .seek::-webkit-slider-thumb { transition: none; } }
 .guide figcaption { margin-top: 10px; font-size: 13px; line-height: 1.45; color: var(--faint); }
 @media (max-width: 900px) { .setup { grid-template-columns: 1fr; } .guide { position: static; width: 100%; max-width: 340px; margin: 0 auto 8px; } }
 .step { display: grid; grid-template-columns: 46px 1fr; gap: 16px; background: var(--surface); border: 1px solid var(--line);
@@ -492,9 +528,30 @@ footer { border-top: 1px solid var(--line); margin-top: 64px; padding: 28px 0 48
       After that, you never think about it again.</p>
     <div class="setup">
     <figure class="guide">
-      <video controls playsinline preload="none" poster="video/setup-guide.webp" width="720" height="1280">
-        <source src="video/setup-guide.mp4" type="video/mp4">
-      </video>
+      <div class="player">
+        <video controls playsinline preload="metadata" poster="video/setup-guide.webp" width="720" height="1280">
+          <source src="video/setup-guide.mp4" type="video/mp4">
+        </video>
+        <button class="big" type="button" aria-label="Play the setup video"><svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"/></svg></button>
+        <div class="bar">
+          <input class="seek" type="range" min="0" max="100" step="0.1" value="0" aria-label="Seek">
+          <div class="row">
+            <button class="pp" type="button" aria-label="Play or pause">
+              <svg aria-hidden="true" class="i-play" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+              <svg aria-hidden="true" class="i-pause" viewBox="0 0 24 24" fill="currentColor"><rect x="14" y="3" width="5" height="18" rx="1"/><rect x="5" y="3" width="5" height="18" rx="1"/></svg>
+            </button>
+            <span class="time pixel">0:00 / 1:38</span>
+            <button class="mute" type="button" aria-label="Mute or unmute">
+              <svg aria-hidden="true" class="i-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z"/><path d="M16 9a5 5 0 0 1 0 6"/><path d="M19.364 18.364a9 9 0 0 0 0-12.728"/></svg>
+              <svg aria-hidden="true" class="i-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z"/><line x1="22" x2="16" y1="9" y2="15"/><line x1="16" x2="22" y1="9" y2="15"/></svg>
+            </button>
+            <button class="fs" type="button" aria-label="Full screen">
+              <svg aria-hidden="true" class="i-max" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M21 8V5a2 2 0 0 0-2-2h-3"/><path d="M3 16v3a2 2 0 0 0 2 2h3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/></svg>
+              <svg aria-hidden="true" class="i-min" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3v3a2 2 0 0 1-2 2H3"/><path d="M21 8h-3a2 2 0 0 1-2-2V3"/><path d="M3 16h3a2 2 0 0 1 2 2v3"/><path d="M16 21v-3a2 2 0 0 1 2-2h3"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
       <figcaption>The whole setup, start to finish, in 99 seconds. Voice: ElevenLabs. 3D phone: “Google Pixel 7 Pro” by
         Aborsoft 3D, CC BY 4.0.</figcaption>
     </figure>
@@ -594,6 +651,70 @@ footer { border-top: 1px solid var(--line); margin-top: 64px; padding: 28px 0 48
         setTimeout(function () { b.textContent = 'Copy'; }, 1500);
       });
     });
+  });
+
+  // The setup video's own controls: they show while the pointer moves over it and leave about a second after the
+  // last move or use of a control, even with the pointer still there.
+  document.querySelectorAll('.player').forEach(function (p) {
+    var v = p.querySelector('video'), seek = p.querySelector('.seek'), time = p.querySelector('.time');
+    var timer, touch = false, dragging = false;
+    v.controls = false;
+    p.classList.add('js');
+    function fmt(s) { s = Math.floor(s) || 0; return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0'); }
+    function sync() {
+      var d = v.duration || 0, pc = d ? v.currentTime / d * 100 : 0;
+      if (!dragging) seek.value = pc;
+      seek.style.setProperty('--p', seek.value + '%');
+      time.textContent = fmt(v.currentTime) + ' / ' + fmt(d || 98.9);
+    }
+    function show() {
+      p.classList.add('show');
+      clearTimeout(timer);
+      timer = setTimeout(function () { if (!dragging) p.classList.remove('show'); }, touch ? 2200 : 1000);
+    }
+    function hideNow() { clearTimeout(timer); if (!dragging) p.classList.remove('show'); }
+    function toggle() { if (v.paused || v.ended) v.play(); else v.pause(); }
+    function full() {
+      if (document.fullscreenElement) document.exitFullscreen();
+      else if (p.requestFullscreen) p.requestFullscreen();
+      else if (v.webkitEnterFullscreen) v.webkitEnterFullscreen(); // iPhone: only the video itself can go full screen
+    }
+
+    p.addEventListener('pointerdown', function (e) { touch = e.pointerType !== 'mouse'; });
+    p.addEventListener('pointermove', function (e) { if (e.pointerType === 'mouse') show(); });
+    p.addEventListener('pointerleave', function (e) { if (e.pointerType === 'mouse') hideNow(); });
+    p.addEventListener('focusin', show);
+    p.addEventListener('keydown', function (e) {
+      show();
+      if (e.target === seek && /Arrow/.test(e.key)) return;
+      if (e.key === 'k') toggle();
+      else if (e.key === 'm') v.muted = !v.muted;
+      else if (e.key === 'f') full();
+      else if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') v.currentTime += e.key === 'ArrowRight' ? 5 : -5;
+      else return;
+      e.preventDefault();
+    });
+    // A click on the picture plays or pauses; a tap on a phone first brings the controls up.
+    v.addEventListener('click', function () {
+      if (touch && !p.classList.contains('show')) show();
+      else { toggle(); show(); }
+    });
+    p.querySelector('.big').addEventListener('click', function () { v.play(); show(); });
+    p.querySelector('.pp').addEventListener('click', function () { toggle(); show(); });
+    p.querySelector('.mute').addEventListener('click', function () { v.muted = !v.muted; show(); });
+    p.querySelector('.fs').addEventListener('click', function () { full(); show(); });
+    seek.addEventListener('pointerdown', function () { dragging = true; show(); });
+    document.addEventListener('pointerup', function () { if (dragging) { dragging = false; show(); } });
+    seek.addEventListener('input', function () {
+      if (v.duration) v.currentTime = seek.value / 100 * v.duration;
+      sync(); show();
+    });
+
+    v.addEventListener('play', function () { p.classList.add('playing'); });
+    v.addEventListener('pause', function () { p.classList.remove('playing'); });
+    v.addEventListener('volumechange', function () { p.classList.toggle('muted', v.muted); });
+    ['timeupdate', 'loadedmetadata', 'durationchange', 'seeked'].forEach(function (n) { v.addEventListener(n, sync); });
+    document.addEventListener('fullscreenchange', function () { p.classList.toggle('full', document.fullscreenElement === p); });
   });
 </script>
 </body>

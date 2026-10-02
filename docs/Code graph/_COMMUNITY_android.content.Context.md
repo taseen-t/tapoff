@@ -1,24 +1,27 @@
 ---
 type: community
-members: 32
+members: 38
 ---
 
 # android.content.Context
 
-**Members:** 32 nodes
+**Members:** 38 nodes
 
 ## Members
 - [[dot-NotchPanel()]] - code - src/com/taseen/tapoff/NotchPanel.java
 - [[dot-Panel()]] - code - src/com/taseen/tapoff/NotchPanel.java
 - [[dot-allowed()]] - code - src/com/taseen/tapoff/NotchPanel.java
+- [[dot-backTapSeen()]] - code - src/com/taseen/tapoff/SlidersActivity.java
 - [[dot-canLock()]] - code - src/com/taseen/tapoff/LockService.java
 - [[dot-changed()]] - code - src/com/taseen/tapoff/NotchPanel.java
 - [[dot-display()]] - code - src/com/taseen/tapoff/NotchPanel.java
 - [[dot-enabled()_1]] - code - src/com/taseen/tapoff/NotchPanel.java
+- [[dot-forgetBackTap()]] - code - src/com/taseen/tapoff/SlidersActivity.java
+- [[dot-fromLauncher()]] - code - src/com/taseen/tapoff/SlidersActivity.java
 - [[dot-hole()]] - code - src/com/taseen/tapoff/CutoutArt.java
 - [[dot-hole()_1]] - code - src/com/taseen/tapoff/NotchPanel.java
 - [[dot-isActive()]] - code - src/com/taseen/tapoff/Wallpapers.java
-- [[dot-onCreate()_3]] - code - src/com/taseen/tapoff/SlidersActivity.java
+- [[dot-onCreate()_4]] - code - src/com/taseen/tapoff/SlidersActivity.java
 - [[dot-open()]] - code - src/com/taseen/tapoff/NotchPanel.java
 - [[dot-overlay()]] - code - src/com/taseen/tapoff/NotchPanel.java
 - [[dot-portrait()]] - code - src/com/taseen/tapoff/NotchPanel.java
@@ -35,9 +38,12 @@ members: 32
 - [[dot-toLinear()]] - code - src/com/taseen/tapoff/NotchPanel.java
 - [[dot-toPosition()]] - code - src/com/taseen/tapoff/NotchPanel.java
 - [[dot-write()]] - code - src/com/taseen/tapoff/NotchPanel.java
+- [[Context_1]] - code
 - [[LayoutParams]] - code
 - [[NotchPanel]] - code - src/com/taseen/tapoff/NotchPanel.java
-- [[Override_10]] - code
+- [[Override_11]] - code
+- [[SlidersActivity]] - code - src/com/taseen/tapoff/SlidersActivity.java
+- [[android.app.Activity]] - code
 - [[android.content.Context]] - code
 - [[android.graphics.RectF]] - code
 
@@ -49,19 +55,23 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 22 edges to [[_COMMUNITY_MainActivity]]
-- 17 edges to [[_COMMUNITY_NotchPanel.java]]
-- 17 edges to [[_COMMUNITY_PreviewActivity]]
-- 10 edges to [[_COMMUNITY_TapWallpaper.java]]
-- 7 edges to [[_COMMUNITY_MainActivity.java]]
+- 24 edges to [[_COMMUNITY_MainActivity]]
+- 15 edges to [[_COMMUNITY_TapWallpaper]]
+- 13 edges to [[_COMMUNITY_Wallpapers]]
+- 10 edges to [[_COMMUNITY_MainActivity.java]]
+- 7 edges to [[_COMMUNITY_NotchPanel.java]]
+- 5 edges to [[_COMMUNITY_Panel]]
 - 5 edges to [[_COMMUNITY_ShizukuSetup.java]]
+- 5 edges to [[_COMMUNITY_android.graphics.Paint]]
 - 4 edges to [[_COMMUNITY_android.graphics.Canvas]]
-- 4 edges to [[_COMMUNITY_Wallpapers.java]]
+- 2 edges to [[_COMMUNITY_CutoutArt.java]]
 - 1 edge to [[_COMMUNITY_log]]
+- 1 edge to [[_COMMUNITY_Override]]
+- 1 edge to [[_COMMUNITY_Wallpapers.java]]
 
 ## Top bridge nodes
-- [[android.content.Context]] - degree 65, connects to 8 communities
-- [[dot-refreshState()]] - degree 15, connects to 6 communities
-- [[NotchPanel]] - degree 25, connects to 3 communities
-- [[dot-onCreate()_3]] - degree 8, connects to 2 communities
-- [[dot-canLock()]] - degree 7, connects to 2 communities
+- [[android.content.Context]] - degree 65, connects to 10 communities
+- [[NotchPanel]] - degree 25, connects to 4 communities
+- [[dot-refreshState()]] - degree 15, connects to 4 communities
+- [[android.app.Activity]] - degree 6, connects to 3 communities
+- [[android.graphics.RectF]] - degree 6, connects to 3 communities

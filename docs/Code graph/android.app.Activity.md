@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Wallpapers.java"
+community: "android.content.Context"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Wallpapersjava
+  - community/androidcontentContext
 ---
 
 # android.app.Activity
@@ -18,4 +18,4 @@ tags:
 - [[SlidersActivity]] - `inherits` [EXTRACTED]
 - [[SlidersActivity.java]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Wallpapersjava
+#graphify/code #graphify/EXTRACTED #community/androidcontentContext
