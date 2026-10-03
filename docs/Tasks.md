@@ -215,8 +215,10 @@ Every request goes here the moment it's asked. Tick subtasks as they land. Never
         cut from the already privacy-checked render, 360 px, 1.6 MB, in `site/img/demo.gif`
   - [x] Four app screenshots under the download line, six Cutout wallpapers under Wallpapers, the setup video's
         poster linking to the video, all reusing the site's images
-  - [ ] GitHub's social preview image (the card when the repo link is shared) can only be uploaded by Taseen:
-        repo Settings → General → Social preview → Edit → upload `site/img/main_dark.webp` or a 1280×640 card
+  - [x] 1280×640 social preview banner made: `site/img/social.png` (pixel-hand icon, "Double-tap. Screen off.", two
+        app screenshots). Also the site's link preview now (`og:image`, large card on X/Reddit) ([[Decisions]] #46)
+  - [ ] Taseen uploads it on GitHub (no API for it): repo Settings → General → Social preview → Edit → Upload an
+        image → `site/img/social.png`
 
 ## Open
 - [ ] Play Store listing? Costs $25 once. Waiting on Taseen (never spend without a yes).

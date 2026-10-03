@@ -9388,7 +9388,7 @@
       "node_kind": "heading",
       "norm_label": "2026-09-30 \u00b7 1.7: slide the edges",
       "source_file": "docs/Progress log.md",
-      "source_location": "L137"
+      "source_location": "L138"
     },
     {
       "id": "docs_progress_log_2026_09_30_evening_1_9_setup_without_a_computer",
@@ -9400,7 +9400,7 @@
       "node_kind": "heading",
       "norm_label": "2026-09-30 (evening) \u00b7 1.9: setup without a computer",
       "source_file": "docs/Progress log.md",
-      "source_location": "L105"
+      "source_location": "L106"
     },
     {
       "id": "docs_progress_log_2026_09_30_late_play_protect_block_a_no_computer_way_in",
@@ -9412,7 +9412,7 @@
       "node_kind": "heading",
       "norm_label": "2026-09-30 (late) \u00b7 play protect block: a no-computer way in",
       "source_file": "docs/Progress log.md",
-      "source_location": "L30"
+      "source_location": "L31"
     },
     {
       "id": "docs_progress_log_2026_09_30_later_1_8_back_tap_sliders_favourites_nasa",
@@ -9424,7 +9424,7 @@
       "node_kind": "heading",
       "norm_label": "2026-09-30 (later) \u00b7 1.8: back-tap sliders, favourites, nasa",
       "source_file": "docs/Progress log.md",
-      "source_location": "L123"
+      "source_location": "L124"
     },
     {
       "id": "docs_progress_log_2026_09_30_night_shizuku_pr_brag_video",
@@ -9436,7 +9436,7 @@
       "node_kind": "heading",
       "norm_label": "2026-09-30 (night) \u00b7 shizuku pr, brag video",
       "source_file": "docs/Progress log.md",
-      "source_location": "L81"
+      "source_location": "L82"
     },
     {
       "id": "docs_progress_log_2026_10_01_setup_guide_video",
@@ -9448,7 +9448,7 @@
       "node_kind": "heading",
       "norm_label": "2026-10-01 \u00b7 setup guide video",
       "source_file": "docs/Progress log.md",
-      "source_location": "L61"
+      "source_location": "L62"
     },
     {
       "id": "docs_progress_log_2026_10_02_evening_video_controls_video_shadow_telling_people",
@@ -9460,7 +9460,7 @@
       "node_kind": "heading",
       "norm_label": "2026-10-02 (evening) \u00b7 video controls, video shadow, telling people",
       "source_file": "docs/Progress log.md",
-      "source_location": "L16"
+      "source_location": "L17"
     },
     {
       "id": "docs_progress_log_2026_10_02_setup_video_on_the_website",
@@ -9472,7 +9472,7 @@
       "node_kind": "heading",
       "norm_label": "2026-10-02 \u00b7 setup video on the website",
       "source_file": "docs/Progress log.md",
-      "source_location": "L48"
+      "source_location": "L49"
     },
     {
       "id": "docs_progress_log_2026_10_03_pictures_on_the_github_page",
@@ -9496,7 +9496,7 @@
       "node_kind": "heading",
       "norm_label": "before 2026-09-30 \u00b7 1.0 to 1.6",
       "source_file": "docs/Progress log.md",
-      "source_location": "L162"
+      "source_location": "L163"
     },
     {
       "id": "docs_progress_log_progress_log",
@@ -9580,7 +9580,7 @@
       "node_kind": "heading",
       "norm_label": "open",
       "source_file": "docs/Tasks.md",
-      "source_location": "L221"
+      "source_location": "L223"
     },
     {
       "id": "docs_tasks_tasks",
@@ -21034,7 +21034,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/Progress log.md",
-      "source_location": "L105",
+      "source_location": "L106",
       "weight": 1.0
     },
     {
@@ -21045,7 +21045,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/Progress log.md",
-      "source_location": "L123",
+      "source_location": "L124",
       "weight": 1.0
     },
     {
@@ -21056,18 +21056,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/Progress log.md",
-      "source_location": "L137",
-      "weight": 1.0
-    },
-    {
-      "source": "docs_progress_log_progress_log",
-      "target": "docs_progress_log_2026_10_02_evening_video_controls_video_shadow_telling_people",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/Progress log.md",
-      "source_location": "L16",
+      "source_location": "L138",
       "weight": 1.0
     },
     {
@@ -21078,7 +21067,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/Progress log.md",
-      "source_location": "L162",
+      "source_location": "L163",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_progress_log_progress_log",
+      "target": "docs_progress_log_2026_10_02_evening_video_controls_video_shadow_telling_people",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/Progress log.md",
+      "source_location": "L17",
       "weight": 1.0
     },
     {
@@ -21089,7 +21089,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/Progress log.md",
-      "source_location": "L30",
+      "source_location": "L31",
       "weight": 1.0
     },
     {
@@ -21100,7 +21100,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/Progress log.md",
-      "source_location": "L48",
+      "source_location": "L49",
       "weight": 1.0
     },
     {
@@ -21111,7 +21111,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/Progress log.md",
-      "source_location": "L61",
+      "source_location": "L62",
       "weight": 1.0
     },
     {
@@ -21133,7 +21133,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/Progress log.md",
-      "source_location": "L81",
+      "source_location": "L82",
       "weight": 1.0
     },
     {
@@ -21188,7 +21188,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/Tasks.md",
-      "source_location": "L221",
+      "source_location": "L223",
       "weight": 1.0
     },
     {
@@ -24367,7 +24367,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/Progress log.md",
-      "source_location": "L160",
+      "source_location": "L161",
       "weight": 1.0
     },
     {
@@ -24378,7 +24378,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/Progress log.md",
-      "source_location": "L70",
+      "source_location": "L71",
       "weight": 1.0
     },
     {
@@ -24813,5 +24813,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "2d20b14241f7e7742dac1949b5fb68fd42887fcb"
+  "built_at_commit": "ebdbbf25a7034e77b58bc5254aac3ab572e21176"
 }

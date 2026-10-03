@@ -159,3 +159,7 @@ Newest at the bottom. Each one says why, so nobody undoes it by accident.
 45. **The README shows TapOff instead of only describing it.** A GIF (not a video: GitHub only plays videos uploaded
     through its web editor) of the guide's finale opens the page, then the site's screenshots and wallpapers. Images
     are referenced from `site/img/` so the site and the README share one copy. (2026-10-03)
+46. **One 1280×640 banner for every link preview.** `site/img/social.png` is GitHub's social preview (uploaded by
+    hand in the repo settings) and the site's `og:image` with a large Twitter card, replacing the tall main-screen
+    screenshot that previews cropped badly. Drawn as HTML in the site's style and screenshotted with Playwright; the
+    source is in the git-ignored work folder (`social/social.html`, `node social/render.js`). (2026-10-03)

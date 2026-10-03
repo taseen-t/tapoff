@@ -1,13 +1,13 @@
 {
   "0": "MainActivity",
   "1": "MainActivity.java",
-  "2": "TapWallpaper",
+  "2": "android.graphics.Bitmap",
   "3": "android.graphics.Paint",
   "4": "android.content.Context",
   "5": "android.graphics.Canvas",
   "6": "Progress log",
   "7": "Wallpapers.java",
-  "8": "Wallpapers",
+  "8": "PreviewActivity",
   "9": "GlassCard",
   "10": "NotchPanel.java",
   "11": "log",
@@ -18,7 +18,7 @@
   "16": "uri",
   "17": "imagebutton",
   "18": "overshootinterpolator",
-  "19": "TapWallpaper.java",
-  "20": "Panel",
+  "19": "LockService",
+  "20": "LockService.java",
   "21": "CutoutArt.java"
 }
