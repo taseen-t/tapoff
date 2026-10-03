@@ -1,19 +1,18 @@
 ---
-source_file: "src/com/taseen/tapoff/ScreenOffTile.java"
+source_file: "src/com/taseen/tapoff/VolumeTile.java"
 type: "code"
-community: "TapWallpaper"
+community: "log"
 location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TapWallpaper
+  - community/log
 ---
 
 # .onClick()
 
 ## Connections
-- [[dot-lock()]] - `calls` [EXTRACTED]
-- [[Override_6]] - `references` [EXTRACTED]
-- [[ScreenOffTile]] - `method` [EXTRACTED]
+- [[Override_1]] - `references` [EXTRACTED]
+- [[VolumeTile]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TapWallpaper
+#graphify/code #graphify/EXTRACTED #community/log

@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/LockService.java"
 type: "code"
-community: "TapWallpaper"
+community: "LockService"
 location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TapWallpaper
+  - community/LockService
 ---
 
 # Iris
@@ -19,4 +19,4 @@ tags:
 - [[android.graphics.Paint]] - `references` [EXTRACTED]
 - [[android.view.View]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TapWallpaper
+#graphify/code #graphify/EXTRACTED #community/LockService

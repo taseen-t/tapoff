@@ -1,19 +1,18 @@
 ---
-source_file: "src/com/taseen/tapoff/TapWallpaper.java"
+source_file: "src/com/taseen/tapoff/PreviewActivity.java"
 type: "code"
-community: "TapWallpaper"
-location: "L76"
+community: "PreviewActivity"
+location: "L417"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TapWallpaper
+  - community/PreviewActivity
 ---
 
 # .onDestroy()
 
 ## Connections
-- [[dot-remove()]] - `calls` [INFERRED]
-- [[Override_7]] - `references` [EXTRACTED]
-- [[TapWallpaper]] - `method` [EXTRACTED]
+- [[Override_11]] - `references` [EXTRACTED]
+- [[PreviewActivity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TapWallpaper
+#graphify/code #graphify/EXTRACTED #community/PreviewActivity

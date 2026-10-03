@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "TapWallpaper.java"
+community: "NotchPanel.java"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/TapWallpaperjava
+  - community/NotchPaneljava
 ---
 
 # wallpapermanager
@@ -15,4 +15,4 @@ tags:
 - [[TapWallpaper.java]] - `imports` [EXTRACTED]
 - [[Wallpapers.java]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/TapWallpaperjava
+#graphify/concept #graphify/EXTRACTED #community/NotchPaneljava

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-onConfigurationChanged()_1]] - `calls` [INFERRED]
-- [[dot-onDestroy()_2]] - `calls` [INFERRED]
+- [[dot-onDestroy()_1]] - `calls` [INFERRED]
 - [[dot-sync()]] - `calls` [EXTRACTED]
 - [[NotchPanel]] - `method` [EXTRACTED]
 

@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "MainActivity.java"
+community: "ShizukuSetup.java"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MainActivityjava
+  - community/ShizukuSetupjava
 ---
 
 # android.os.Bundle
@@ -23,4 +23,4 @@ tags:
 - [[SlidersActivity.java]] - `imports` [EXTRACTED]
 - [[TapWallpaper.java]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MainActivityjava
+#graphify/code #graphify/EXTRACTED #community/ShizukuSetupjava

@@ -1,14 +1,15 @@
 ---
 type: community
-members: 61
+members: 66
 ---
 
 # MainActivity
 
-**Members:** 61 nodes
+**Members:** 66 nodes
 
 ## Members
 - [[dot-GlassCard()]] - code - src/com/taseen/tapoff/GlassCard.java
+- [[dot-apply()]] - code - src/com/taseen/tapoff/PreviewActivity.java
 - [[dot-artTile()]] - code - src/com/taseen/tapoff/MainActivity.java
 - [[dot-bg()]] - code - src/com/taseen/tapoff/Ui.java
 - [[dot-blend()]] - code - src/com/taseen/tapoff/Ui.java
@@ -23,6 +24,7 @@ members: 61
 - [[dot-faint()]] - code - src/com/taseen/tapoff/Ui.java
 - [[dot-font()]] - code - src/com/taseen/tapoff/Ui.java
 - [[dot-glass()]] - code - src/com/taseen/tapoff/Ui.java
+- [[dot-image()]] - code - src/com/taseen/tapoff/PreviewActivity.java
 - [[dot-ink()]] - code - src/com/taseen/tapoff/Ui.java
 - [[dot-line()]] - code - src/com/taseen/tapoff/Ui.java
 - [[dot-loadTileImage()]] - code - src/com/taseen/tapoff/MainActivity.java
@@ -32,13 +34,16 @@ members: 61
 - [[dot-number()]] - code - src/com/taseen/tapoff/MainActivity.java
 - [[dot-onConfigurationChanged()]] - code - src/com/taseen/tapoff/MainActivity.java
 - [[dot-onCreate()]] - code - src/com/taseen/tapoff/MainActivity.java
+- [[dot-onCreate()_1]] - code - src/com/taseen/tapoff/PreviewActivity.java
 - [[dot-park()]] - code - src/com/taseen/tapoff/MainActivity.java
 - [[dot-pill()]] - code - src/com/taseen/tapoff/Ui.java
+- [[dot-refreshStatus()]] - code - src/com/taseen/tapoff/MainActivity.java
 - [[dot-releasePages()]] - code - src/com/taseen/tapoff/MainActivity.java
 - [[dot-section()]] - code - src/com/taseen/tapoff/MainActivity.java
 - [[dot-select()]] - code - src/com/taseen/tapoff/MainActivity.java
 - [[dot-setAppearance()]] - code - src/com/taseen/tapoff/MainActivity.java
 - [[dot-shape()]] - code - src/com/taseen/tapoff/Ui.java
+- [[dot-showTip()]] - code - src/com/taseen/tapoff/PreviewActivity.java
 - [[dot-showUpdate()]] - code - src/com/taseen/tapoff/MainActivity.java
 - [[dot-stackCards()]] - code - src/com/taseen/tapoff/MainActivity.java
 - [[dot-styleSegments()]] - code - src/com/taseen/tapoff/MainActivity.java
@@ -62,9 +67,9 @@ members: 61
 - [[SECONDARY]] - code - src/com/taseen/tapoff/Ui.java
 - [[UI_1]] - document - docs/Architecture.md
 - [[Ui]] - code - src/com/taseen/tapoff/Ui.java
-- [[android.graphics.Bitmap]] - code
 - [[android.graphics.drawable.GradientDrawable]] - code
 - [[android.widget.FrameLayout]] - code
+- [[android.widget.ImageView]] - code
 - [[android.widget.LinearLayout]] - code
 - [[android.widget.ScrollView]] - code
 - [[android.widget.Switch]] - code
@@ -78,23 +83,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 42 edges to [[_COMMUNITY_MainActivity.java]]
-- 24 edges to [[_COMMUNITY_android.content.Context]]
-- 9 edges to [[_COMMUNITY_GlassCard]]
-- 7 edges to [[_COMMUNITY_TapWallpaper]]
-- 6 edges to [[_COMMUNITY_Override]]
-- 3 edges to [[_COMMUNITY_android.graphics.Paint]]
-- 3 edges to [[_COMMUNITY_Wallpapers]]
-- 2 edges to [[_COMMUNITY_ShizukuSetup.java]]
-- 1 edge to [[_COMMUNITY_Panel]]
-- 1 edge to [[_COMMUNITY_android.graphics.Canvas]]
-- 1 edge to [[_COMMUNITY_CutoutArt.java]]
-- 1 edge to [[_COMMUNITY_TapWallpaper.java]]
-- 1 edge to [[_COMMUNITY_Wallpapers.java]]
+- 26 edges to [[_COMMUNITY_MainActivity.java]]
+- 26 edges to [[_COMMUNITY_android.content.Context]]
+- 15 edges to [[_COMMUNITY_PreviewActivity]]
+- 8 edges to [[_COMMUNITY_GlassCard]]
+- 7 edges to [[_COMMUNITY_android.graphics.Bitmap]]
+- 6 edges to [[_COMMUNITY_ShizukuSetup.java]]
+- 5 edges to [[_COMMUNITY_Override]]
+- 2 edges to [[_COMMUNITY_android.graphics.Paint]]
 
 ## Top bridge nodes
-- [[android.graphics.Bitmap]] - degree 17, connects to 9 communities
 - [[MainActivity]] - degree 56, connects to 7 communities
 - [[dot-onCreate()]] - degree 7, connects to 4 communities
 - [[dot-dp()]] - degree 23, connects to 3 communities
+- [[dot-apply()]] - degree 5, connects to 3 communities
 - [[dot-buildUi()]] - degree 18, connects to 2 communities

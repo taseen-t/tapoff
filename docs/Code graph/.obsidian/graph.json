@@ -15,7 +15,7 @@
       }
     },
     {
-      "query": "tag:#community/TapWallpaper",
+      "query": "tag:#community/androidgraphicsBitmap",
       "color": {
         "a": 1,
         "rgb": 14767961
@@ -57,7 +57,7 @@
       }
     },
     {
-      "query": "tag:#community/Wallpapers",
+      "query": "tag:#community/PreviewActivity",
       "color": {
         "a": 1,
         "rgb": 10253663
@@ -134,14 +134,14 @@
       }
     },
     {
-      "query": "tag:#community/TapWallpaperjava",
+      "query": "tag:#community/LockService",
       "color": {
         "a": 1,
         "rgb": 12234924
       }
     },
     {
-      "query": "tag:#community/Panel",
+      "query": "tag:#community/LockServicejava",
       "color": {
         "a": 1,
         "rgb": 5142951

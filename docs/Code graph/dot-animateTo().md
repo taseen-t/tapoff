@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/NotchPanel.java"
 type: "code"
-community: "Panel"
+community: "android.content.Context"
 location: "L216"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Panel
+  - community/androidcontentContext
 ---
 
 # .animateTo()
@@ -16,4 +16,4 @@ tags:
 - [[dot-open()]] - `calls` [INFERRED]
 - [[Panel]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Panel
+#graphify/code #graphify/EXTRACTED #community/androidcontentContext

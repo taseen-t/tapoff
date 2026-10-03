@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/LockService.java"
 type: "code"
-community: "android.content.Context"
+community: "ShizukuSetup.java"
 location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidcontentContext
+  - community/ShizukuSetupjava
 ---
 
 # .canLock()
@@ -20,4 +20,4 @@ tags:
 - [[Setup without a computer (`ShizukuSetup.java`)]] - `references` [INFERRED]
 - [[android.content.Context]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidcontentContext
+#graphify/code #graphify/EXTRACTED #community/ShizukuSetupjava

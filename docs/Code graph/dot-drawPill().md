@@ -1,20 +1,20 @@
 ---
 source_file: "src/com/taseen/tapoff/NotchPanel.java"
 type: "code"
-community: "Panel"
+community: "android.content.Context"
 location: "L257"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Panel
+  - community/androidcontentContext
 ---
 
 # .drawPill()
 
 ## Connections
 - [[dot-blend()]] - `calls` [EXTRACTED]
-- [[dot-onDraw()_1]] - `calls` [EXTRACTED]
+- [[dot-onDraw()_2]] - `calls` [EXTRACTED]
 - [[Panel]] - `method` [EXTRACTED]
 - [[android.graphics.Canvas]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Panel
+#graphify/code #graphify/EXTRACTED #community/androidcontentContext

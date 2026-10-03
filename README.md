@@ -1,11 +1,20 @@
 # TapOff
 
+<p align="center"><img src="site/img/demo.gif" width="300" alt="Double-tap the home screen and the screen turns off. Double-tap the back of the phone and brightness and volume sliders grow out of the camera."></p>
+
 Double-tap to turn your Android phone's screen off, for when the power button is worn out, hard to press
 through a case, or just too far away. Double-tap the back of the phone for brightness and volume sliders. Plus
 a wallpaper browser with wallpapers drawn around your camera hole.
 
 **Download:** [TapOff.apk](https://github.com/taseen-t/tapoff/releases/latest/download/TapOff.apk) ·
 **Website:** https://tapoff.vercel.app
+
+<p align="center">
+  <img src="site/img/main_dark.webp" width="23%" alt="TapOff's main screen in dark mode: the double-tap and sliders switches, then wallpaper collections">
+  <img src="site/img/main_light.webp" width="23%" alt="The same screen in light mode">
+  <img src="site/img/sliders_dark.webp" width="23%" alt="Brightness and volume sliders grown out of the camera hole">
+  <img src="site/img/favourite.webp" width="23%" alt="The Sunflower Cutout wallpaper in preview, saved to Favourites with a double-tap">
+</p>
 
 In most countries, opening that APK from a browser or file manager is blocked by Play Protect ("App blocked to protect
 your device"), because TapOff has an accessibility service. [Install](#install) has the two ways in.
@@ -25,6 +34,11 @@ your device"), because TapOff has an accessibility service. [Install](#install) 
   and **Cutout**: 13 designs drawn live around your phone's camera hole (a black hole, a galaxy, a sunflower,
   a record, a keyhole...), and NASA's Hubble photos at full resolution. Whatever you pick goes on the home and lock
   screen. Double-tap one in the preview to save it to **Favourites**.
+
+  <img src="site/img/wall/sunflower.webp" width="15%" alt="Sunflower"> <img src="site/img/wall/galaxy.webp" width="15%" alt="Galaxy">
+  <img src="site/img/wall/vinyl.webp" width="15%" alt="Vinyl"> <img src="site/img/wall/keyhole.webp" width="15%" alt="Keyhole">
+  <img src="site/img/wall/gargantua.webp" width="15%" alt="Gargantua"> <img src="site/img/wall/taptap.webp" width="15%" alt="Tap tap">
+
 - **Quick Settings tiles** for Screen off and Volume.
 - Light, dark or follow the system.
 - Checks GitHub for a newer version and offers an update button.
@@ -35,6 +49,8 @@ TapOff needs Android 13 or newer. It was built and tested on a Pixel 7 running A
 that apps can't give themselves, so setup is a one-time step, on the phone or from a computer.
 
 ### Without a computer (Shizuku)
+
+<a href="https://tapoff.vercel.app/#setup"><img src="site/video/setup-guide.webp" width="200" align="right" alt="The setup video: tap to watch it on the website"></a>
 
 Watch it first if you like: the [setup video](https://tapoff.vercel.app/#setup) (99 s) shows every step below on a
 Pixel.

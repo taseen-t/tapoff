@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/NotchPanel.java"
 type: "code"
-community: "Panel"
+community: "android.content.Context"
 location: "L151"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Panel
+  - community/androidcontentContext
 ---
 
 # Panel
@@ -16,7 +16,7 @@ tags:
 - [[dot-animateTo()]] - `method` [EXTRACTED]
 - [[dot-drawPill()]] - `method` [EXTRACTED]
 - [[dot-hit()]] - `method` [EXTRACTED]
-- [[dot-onDraw()_1]] - `method` [EXTRACTED]
+- [[dot-onDraw()_2]] - `method` [EXTRACTED]
 - [[dot-onTouchEvent()_1]] - `method` [EXTRACTED]
 - [[dot-set()]] - `method` [EXTRACTED]
 - [[NotchPanel]] - `contains` [EXTRACTED]
@@ -27,4 +27,4 @@ tags:
 - [[android.view.View]] - `inherits` [EXTRACTED]
 - [[android.view.animation.OvershootInterpolator]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Panel
+#graphify/code #graphify/EXTRACTED #community/androidcontentContext

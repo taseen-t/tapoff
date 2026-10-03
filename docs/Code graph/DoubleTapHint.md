@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-DoubleTapHint()]] - `method` [EXTRACTED]
-- [[dot-onDraw()_2]] - `method` [EXTRACTED]
+- [[dot-onDraw()_1]] - `method` [EXTRACTED]
 - [[dot-press()]] - `method` [EXTRACTED]
 - [[DoubleTapHint.java]] - `contains` [EXTRACTED]
 - [[android.graphics.Paint]] - `references` [EXTRACTED]

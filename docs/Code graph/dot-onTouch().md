@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/PreviewActivity.java"
 type: "code"
-community: "MainActivity.java"
+community: "PreviewActivity"
 location: "L178"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MainActivityjava
+  - community/PreviewActivity
 ---
 
 # .onTouch()
@@ -19,4 +19,4 @@ tags:
 - [[PreviewActivity]] - `method` [EXTRACTED]
 - [[android.view.MotionEvent]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MainActivityjava
+#graphify/code #graphify/EXTRACTED #community/PreviewActivity

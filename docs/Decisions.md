@@ -156,3 +156,6 @@ Newest at the bottom. Each one says why, so nobody undoes it by accident.
 44. **The guide's phone is a little smaller and higher** (1,320 px tall at y 1,160, was 1,400 at 1,195), so the dark
     halo under it ends inside the frame instead of being cut by the bottom edge. Re-rendered, re-encoded and re-checked
     (0 leaks); the poster is the new intro frame. (2026-10-02)
+45. **The README shows TapOff instead of only describing it.** A GIF (not a video: GitHub only plays videos uploaded
+    through its web editor) of the guide's finale opens the page, then the site's screenshots and wallpapers. Images
+    are referenced from `site/img/` so the site and the README share one copy. (2026-10-03)

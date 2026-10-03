@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "TapWallpaper"
+community: "LockService"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TapWallpaper
+  - community/LockService
 ---
 
 # Override
@@ -16,4 +16,4 @@ tags:
 - [[dot-onInterrupt()]] - `references` [EXTRACTED]
 - [[dot-onServiceConnected()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TapWallpaper
+#graphify/code #graphify/EXTRACTED #community/LockService

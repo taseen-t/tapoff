@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "NotchPanel.java"
+community: "LockService.java"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NotchPaneljava
+  - community/LockServicejava
 ---
 
 # android.view.WindowManager
@@ -15,4 +15,4 @@ tags:
 - [[NotchPanel]] - `references` [EXTRACTED]
 - [[NotchPanel.java]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NotchPaneljava
+#graphify/code #graphify/EXTRACTED #community/LockServicejava

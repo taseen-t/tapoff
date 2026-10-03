@@ -1,22 +1,22 @@
 ---
 source_file: "src/com/taseen/tapoff/LockService.java"
 type: "code"
-community: "TapWallpaper"
+community: "android.graphics.Bitmap"
 location: "L130"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TapWallpaper
+  - community/androidgraphicsBitmap
 ---
 
 # .lock()
 
 ## Connections
-- [[dot-onClick()_1]] - `calls` [EXTRACTED]
+- [[dot-onClick()]] - `calls` [EXTRACTED]
 - [[dot-onCommand()]] - `calls` [EXTRACTED]
 - [[dot-tapFile()]] - `calls` [EXTRACTED]
 - [[LockService]] - `method` [EXTRACTED]
 - [[Screen off]] - `references` [INFERRED]
 - [[android.content.Context]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TapWallpaper
+#graphify/code #graphify/EXTRACTED #community/androidgraphicsBitmap

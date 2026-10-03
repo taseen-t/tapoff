@@ -5,6 +5,14 @@ tags: [tapoff, log]
 
 Newest first. Each entry: done / blocked / next.
 
+## 2026-10-03 · Pictures on the GitHub page
+**Done**
+- README now opens with a demo GIF, then four app screenshots, a Cutout wallpaper strip and the setup video's
+  poster ([[Decisions]] #45).
+
+**Next**
+- Taseen uploads a social preview image in the repo settings (no API for it). Reddit, Instagram, Infinite Desk.
+
 ## 2026-10-02 (evening) · Video controls, video shadow, telling people
 **Done**
 - Setup video on the site has its own controls in the site's style, hover-only, auto-hiding ([[Decisions]] #43).

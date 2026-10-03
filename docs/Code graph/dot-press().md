@@ -12,7 +12,7 @@ tags:
 # .press()
 
 ## Connections
-- [[dot-onDraw()_2]] - `calls` [EXTRACTED]
+- [[dot-onDraw()_1]] - `calls` [EXTRACTED]
 - [[DoubleTapHint]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/androidgraphicsPaint

@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "NotchPanel.java"
+community: "LockService.java"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/NotchPaneljava
+  - community/LockServicejava
 ---
 
 # packagemanager
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[LockService.java]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/NotchPaneljava
+#graphify/concept #graphify/EXTRACTED #community/LockServicejava

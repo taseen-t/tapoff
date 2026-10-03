@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/MainActivity.java"
 type: "code"
-community: "MainActivity.java"
+community: "ShizukuSetup.java"
 location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MainActivityjava
+  - community/ShizukuSetupjava
 ---
 
 # .onSaveInstanceState()
@@ -16,4 +16,4 @@ tags:
 - [[Override_2]] - `references` [EXTRACTED]
 - [[android.os.Bundle]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MainActivityjava
+#graphify/code #graphify/EXTRACTED #community/ShizukuSetupjava

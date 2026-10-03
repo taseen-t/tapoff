@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/Wallpapers.java"
 type: "code"
-community: "Wallpapers"
+community: "PreviewActivity"
 location: "L316"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Wallpapers
+  - community/PreviewActivity
 ---
 
 # .key()
@@ -18,4 +18,4 @@ tags:
 - [[Item]] - `references` [EXTRACTED]
 - [[Wallpapers]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Wallpapers
+#graphify/code #graphify/EXTRACTED #community/PreviewActivity

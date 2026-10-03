@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/SwipeHint.java"
 type: "code"
-community: "android.graphics.Paint"
+community: "android.graphics.Canvas"
 location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidgraphicsPaint
+  - community/androidgraphicsCanvas
 ---
 
 # .onDraw()
@@ -16,4 +16,4 @@ tags:
 - [[SwipeHint]] - `method` [EXTRACTED]
 - [[android.graphics.Canvas]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidgraphicsPaint
+#graphify/code #graphify/EXTRACTED #community/androidgraphicsCanvas

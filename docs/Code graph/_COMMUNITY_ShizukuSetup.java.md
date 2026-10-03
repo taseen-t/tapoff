@@ -1,15 +1,16 @@
 ---
 type: community
-members: 37
+members: 40
 ---
 
 # ShizukuSetup.java
 
-**Members:** 37 nodes
+**Members:** 40 nodes
 
 ## Members
 - [[dot-BinderContainer()]] - code - src/moe/shizuku/api/BinderContainer.java
 - [[dot-call()]] - code - src/com/taseen/tapoff/ShizukuSetup.java
+- [[dot-canLock()]] - code - src/com/taseen/tapoff/LockService.java
 - [[dot-delete()]] - code - src/com/taseen/tapoff/ShizukuSetup.java
 - [[dot-describeContents()]] - code - src/moe/shizuku/api/BinderContainer.java
 - [[dot-getType()]] - code - src/com/taseen/tapoff/ShizukuSetup.java
@@ -17,6 +18,7 @@ members: 37
 - [[dot-insert()]] - code - src/com/taseen/tapoff/ShizukuSetup.java
 - [[dot-installed()]] - code - src/com/taseen/tapoff/ShizukuSetup.java
 - [[dot-onCreate()_2]] - code - src/com/taseen/tapoff/ShizukuSetup.java
+- [[dot-onSaveInstanceState()]] - code - src/com/taseen/tapoff/MainActivity.java
 - [[dot-pmGrant()]] - code - src/com/taseen/tapoff/ShizukuSetup.java
 - [[dot-query()]] - code - src/com/taseen/tapoff/ShizukuSetup.java
 - [[dot-running()]] - code - src/com/taseen/tapoff/ShizukuSetup.java
@@ -36,6 +38,7 @@ members: 37
 - [[android.content.ContentValues]] - code
 - [[android.database.Cursor]] - code
 - [[android.net.Uri]] - code
+- [[android.os.Bundle]] - code
 - [[android.os.Handler]] - code
 - [[android.os.IBinder]] - code
 - [[android.os.Parcel]] - code
@@ -54,17 +57,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_android.content.Context]]
+- 7 edges to [[_COMMUNITY_android.content.Context]]
+- 6 edges to [[_COMMUNITY_MainActivity]]
 - 3 edges to [[_COMMUNITY_MainActivity.java]]
-- 2 edges to [[_COMMUNITY_MainActivity]]
-- 2 edges to [[_COMMUNITY_TapWallpaper]]
-- 2 edges to [[_COMMUNITY_NotchPanel.java]]
+- 3 edges to [[_COMMUNITY_NotchPanel.java]]
+- 2 edges to [[_COMMUNITY_LockService]]
+- 2 edges to [[_COMMUNITY_android.graphics.Bitmap]]
+- 1 edge to [[_COMMUNITY_Override]]
 - 1 edge to [[_COMMUNITY_Wallpapers.java]]
 - 1 edge to [[_COMMUNITY_log]]
+- 1 edge to [[_COMMUNITY_LockService.java]]
 
 ## Top bridge nodes
-- [[ShizukuSetup.java]] - degree 17, connects to 3 communities
+- [[android.os.Bundle]] - degree 11, connects to 5 communities
 - [[android.net.Uri]] - degree 9, connects to 3 communities
+- [[dot-canLock()]] - degree 7, connects to 3 communities
+- [[ShizukuSetup.java]] - degree 17, connects to 2 communities
 - [[dot-setupWithShizuku()]] - degree 8, connects to 2 communities
-- [[Setup without a computer (`ShizukuSetup.java`)]] - degree 6, connects to 2 communities
-- [[ShizukuSetup]] - degree 17, connects to 1 community

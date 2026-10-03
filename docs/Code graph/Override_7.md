@@ -1,23 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "TapWallpaper"
+community: "android.graphics.Paint"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TapWallpaper
+  - community/androidgraphicsPaint
 ---
 
 # Override
 
 ## Connections
-- [[dot-onCommand()]] - `references` [EXTRACTED]
-- [[dot-onComputeColors()]] - `references` [EXTRACTED]
-- [[dot-onConfigurationChanged()_1]] - `references` [EXTRACTED]
-- [[dot-onCreate()_3]] - `references` [EXTRACTED]
-- [[dot-onCreateEngine()]] - `references` [EXTRACTED]
-- [[dot-onDestroy()_2]] - `references` [EXTRACTED]
-- [[dot-onSurfaceRedrawNeeded()]] - `references` [EXTRACTED]
-- [[dot-onVisibilityChanged()]] - `references` [EXTRACTED]
+- [[dot-onDraw()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TapWallpaper
+#graphify/code #graphify/EXTRACTED #community/androidgraphicsPaint

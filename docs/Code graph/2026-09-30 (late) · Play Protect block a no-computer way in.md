@@ -2,7 +2,7 @@
 source_file: "docs/Progress log.md"
 type: "document"
 community: "Progress log"
-location: "L22"
+location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED

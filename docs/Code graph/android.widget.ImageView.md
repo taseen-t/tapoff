@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "MainActivity.java"
+community: "MainActivity"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MainActivityjava
+  - community/MainActivity
 ---
 
 # android.widget.ImageView
@@ -19,4 +19,4 @@ tags:
 - [[PreviewActivity]] - `references` [EXTRACTED]
 - [[PreviewActivity.java]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MainActivityjava
+#graphify/code #graphify/EXTRACTED #community/MainActivity

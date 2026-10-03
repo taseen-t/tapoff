@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "android.graphics.Paint"
+community: "CutoutArt.java"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/androidgraphicsPaint
+  - community/CutoutArtjava
 ---
 
 # shader
@@ -16,4 +16,4 @@ tags:
 - [[LockService.java]] - `imports` [EXTRACTED]
 - [[SwipeHint.java]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/androidgraphicsPaint
+#graphify/concept #graphify/EXTRACTED #community/CutoutArtjava

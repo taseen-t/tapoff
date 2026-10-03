@@ -209,6 +209,15 @@ Every request goes here the moment it's asked. Tick subtasks as they land. Never
 - [ ] YouTube: study the "Infinite Desk" channel ("we explore better ways of thinking") and plan TapOff videos in that
       style
 
+## 2026-10-03
+- [x] GitHub page had no pictures of TapOff
+  - [x] README opens with a demo GIF from the setup video's finale (double-tap → screen off, back tap → sliders),
+        cut from the already privacy-checked render, 360 px, 1.6 MB, in `site/img/demo.gif`
+  - [x] Four app screenshots under the download line, six Cutout wallpapers under Wallpapers, the setup video's
+        poster linking to the video, all reusing the site's images
+  - [ ] GitHub's social preview image (the card when the repo link is shared) can only be uploaded by Taseen:
+        repo Settings → General → Social preview → Edit → upload `site/img/main_dark.webp` or a 1280×640 card
+
 ## Open
 - [ ] Play Store listing? Costs $25 once. Waiting on Taseen (never spend without a yes).
 - [ ] Custom domain? Waiting on whether Taseen is a student (GitHub Student Pack has free domains).

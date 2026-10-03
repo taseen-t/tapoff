@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "TapWallpaper.java"
+community: "android.graphics.Bitmap"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TapWallpaperjava
+  - community/androidgraphicsBitmap
 ---
 
 # android.view.SurfaceHolder
@@ -14,4 +14,4 @@ tags:
 - [[dot-onSurfaceRedrawNeeded()]] - `references` [EXTRACTED]
 - [[TapWallpaper.java]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TapWallpaperjava
+#graphify/code #graphify/EXTRACTED #community/androidgraphicsBitmap

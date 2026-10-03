@@ -1,11 +1,11 @@
 ---
 type: community
-members: 24
+members: 39
 ---
 
-# Wallpapers
+# PreviewActivity
 
-**Members:** 24 nodes
+**Members:** 39 nodes
 
 ## Members
 - [[dot-Collection()_1]] - code - src/com/taseen/tapoff/Wallpapers.java
@@ -15,43 +15,59 @@ members: 24
 - [[dot-collection()]] - code - src/com/taseen/tapoff/CutoutArt.java
 - [[dot-decode()]] - code - src/com/taseen/tapoff/Wallpapers.java
 - [[dot-download()]] - code - src/com/taseen/tapoff/Wallpapers.java
+- [[dot-drag()]] - code - src/com/taseen/tapoff/PreviewActivity.java
+- [[dot-favouriteAt()]] - code - src/com/taseen/tapoff/PreviewActivity.java
 - [[dot-favourites()]] - code - src/com/taseen/tapoff/Wallpapers.java
 - [[dot-isFavourite()]] - code - src/com/taseen/tapoff/Wallpapers.java
 - [[dot-key()]] - code - src/com/taseen/tapoff/Wallpapers.java
 - [[dot-list()]] - code - src/com/taseen/tapoff/Wallpapers.java
+- [[dot-load()_1]] - code - src/com/taseen/tapoff/PreviewActivity.java
 - [[dot-load()_2]] - code - src/com/taseen/tapoff/Wallpapers.java
 - [[dot-nasa()]] - code - src/com/taseen/tapoff/Wallpapers.java
+- [[dot-onDestroy()_2]] - code - src/com/taseen/tapoff/PreviewActivity.java
+- [[dot-onTouch()]] - code - src/com/taseen/tapoff/PreviewActivity.java
 - [[dot-pause()]] - code - src/com/taseen/tapoff/Wallpapers.java
 - [[dot-pixel()]] - code - src/com/taseen/tapoff/Wallpapers.java
 - [[dot-pixelRes()]] - code - src/com/taseen/tapoff/Wallpapers.java
+- [[dot-setFavourite()]] - code - src/com/taseen/tapoff/PreviewActivity.java
 - [[dot-setFavourite()_1]] - code - src/com/taseen/tapoff/Wallpapers.java
+- [[dot-settle()]] - code - src/com/taseen/tapoff/PreviewActivity.java
 - [[dot-sha1()]] - code - src/com/taseen/tapoff/Wallpapers.java
+- [[dot-show()]] - code - src/com/taseen/tapoff/PreviewActivity.java
+- [[dot-showHeart()]] - code - src/com/taseen/tapoff/PreviewActivity.java
+- [[dot-tapped()]] - code - src/com/taseen/tapoff/PreviewActivity.java
+- [[dot-toggleControls()]] - code - src/com/taseen/tapoff/PreviewActivity.java
 - [[dot-trimCache()]] - code - src/com/taseen/tapoff/Wallpapers.java
 - [[dot-wallhaven()]] - code - src/com/taseen/tapoff/Wallpapers.java
 - [[Collection]] - code - src/com/taseen/tapoff/Wallpapers.java
 - [[Item]] - code - src/com/taseen/tapoff/Wallpapers.java
+- [[Override_11]] - code
+- [[PreviewActivity]] - code - src/com/taseen/tapoff/PreviewActivity.java
 - [[Wallpapers]] - code - src/com/taseen/tapoff/Wallpapers.java
 - [[android.content.res.Resources]] - code
+- [[android.widget.ImageButton]] - code
+- [[android.widget.ProgressBar]] - code
 
 ## Live Query (requires Dataview plugin)
 
 ```dataview
-TABLE source_file, type FROM #community/Wallpapers
+TABLE source_file, type FROM #community/PreviewActivity
 SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 13 edges to [[_COMMUNITY_android.content.Context]]
-- 6 edges to [[_COMMUNITY_MainActivity.java]]
-- 4 edges to [[_COMMUNITY_TapWallpaper]]
+- 15 edges to [[_COMMUNITY_MainActivity]]
+- 14 edges to [[_COMMUNITY_android.content.Context]]
+- 7 edges to [[_COMMUNITY_MainActivity.java]]
+- 6 edges to [[_COMMUNITY_android.graphics.Bitmap]]
 - 3 edges to [[_COMMUNITY_android.graphics.Canvas]]
-- 3 edges to [[_COMMUNITY_MainActivity]]
+- 3 edges to [[_COMMUNITY_GlassCard]]
 - 2 edges to [[_COMMUNITY_Wallpapers.java]]
-- 2 edges to [[_COMMUNITY_GlassCard]]
+- 1 edge to [[_COMMUNITY_android.graphics.Paint]]
 
 ## Top bridge nodes
-- [[dot-decode()]] - degree 9, connects to 5 communities
+- [[PreviewActivity]] - degree 29, connects to 5 communities
+- [[dot-decode()]] - degree 9, connects to 4 communities
 - [[Wallpapers]] - degree 24, connects to 3 communities
-- [[Item]] - degree 11, connects to 2 communities
-- [[dot-favourites()]] - degree 10, connects to 2 communities
+- [[dot-favourites()]] - degree 10, connects to 3 communities
 - [[dot-load()_2]] - degree 9, connects to 2 communities

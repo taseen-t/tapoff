@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/LockService.java"
 type: "code"
-community: "NotchPanel.java"
+community: "LockService.java"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NotchPaneljava
+  - community/LockServicejava
 ---
 
 # LockService.java
@@ -35,4 +35,4 @@ tags:
 - [[shader]] - `imports` [EXTRACTED]
 - [[standardcharsets]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NotchPaneljava
+#graphify/code #graphify/EXTRACTED #community/LockServicejava

@@ -1,11 +1,11 @@
 ---
 type: community
-members: 39
+members: 41
 ---
 
 # Progress log
 
-**Members:** 39 nodes
+**Members:** 41 nodes
 
 ## Members
 - [[2026-09-30]] - document - docs/Tasks.md
@@ -19,6 +19,8 @@ members: 39
 - [[2026-10-02 (evening) · Video controls, video shadow, telling people]] - document - docs/Progress log.md
 - [[2026-10-02 · Setup video on the website]] - document - docs/Progress log.md
 - [[2026-10-02 · Telling people]] - document - docs/Tasks.md
+- [[2026-10-03]] - document - docs/Tasks.md
+- [[2026-10-03 · Pictures on the GitHub page]] - document - docs/Progress log.md
 - [[Architecture_1]] - document - docs/Architecture.md
 - [[Before 2026-09-30 · 1.0 to 1.6]] - document - docs/Progress log.md
 - [[Before every commit]] - document - docs/Checks.md
@@ -56,7 +58,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_TapWallpaper]]
+- 1 edge to [[_COMMUNITY_LockService]]
+- 1 edge to [[_COMMUNITY_android.graphics.Bitmap]]
 
 ## Top bridge nodes
 - [[Decisions_1]] - degree 7, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/Architecture.md"
 type: "document"
-community: "TapWallpaper"
+community: "android.graphics.Bitmap"
 location: "L16"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/TapWallpaper
+  - community/androidgraphicsBitmap
 ---
 
 # Screen off
@@ -18,4 +18,4 @@ tags:
 - [[Architecture]] - `contains` [EXTRACTED]
 - [[TapWallpaper]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/TapWallpaper
+#graphify/document #graphify/INFERRED #community/androidgraphicsBitmap

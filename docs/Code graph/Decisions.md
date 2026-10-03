@@ -1,12 +1,12 @@
 ---
 source_file: "docs/Decisions.md"
 type: "document"
-community: "TapWallpaper"
+community: "LockService"
 location: "L4"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/TapWallpaper
+  - community/LockService
 ---
 
 # Decisions
@@ -17,4 +17,4 @@ tags:
 - [[ShizukuSetup]] - `references` [INFERRED]
 - [[SlidersActivity]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/TapWallpaper
+#graphify/document #graphify/INFERRED #community/LockService

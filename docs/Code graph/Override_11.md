@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "android.content.Context"
+community: "PreviewActivity"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidcontentContext
+  - community/PreviewActivity
 ---
 
 # Override
 
 ## Connections
-- [[dot-onCreate()_4]] - `references` [EXTRACTED]
+- [[dot-onCreate()_1]] - `references` [EXTRACTED]
+- [[dot-onDestroy()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidcontentContext
+#graphify/code #graphify/EXTRACTED #community/PreviewActivity
