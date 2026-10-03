@@ -163,3 +163,7 @@ Newest at the bottom. Each one says why, so nobody undoes it by accident.
     hand in the repo settings) and the site's `og:image` with a large Twitter card, replacing the tall main-screen
     screenshot that previews cropped badly. Drawn as HTML in the site's style and screenshotted with Playwright; the
     source is in the git-ignored work folder (`social/social.html`, `node social/render.js`). (2026-10-03)
+47. **The README opens with a vertical banner that moves.** The banner's top (icon, name, "Double-tap. Screen off.", URL)
+    is stacked on the setup video's finale in one GIF, so the page shows both the brand and the two gestures. The top
+    is 752 px tall at 1,080 wide so its 44 px dot grid runs on into the video cropped from y 180 without a seam.
+    Source: `social/hero.html`, `node social/hero.js && social/hero.sh` in the work folder. (2026-10-03)

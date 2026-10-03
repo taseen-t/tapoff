@@ -217,6 +217,8 @@ Every request goes here the moment it's asked. Tick subtasks as they land. Never
         poster linking to the video, all reusing the site's images
   - [x] 1280×640 social preview banner made: `site/img/social.png` (pixel-hand icon, "Double-tap. Screen off.", two
         app screenshots). Also the site's link preview now (`og:image`, large card on X/Reddit) ([[Decisions]] #46)
+  - [x] README's top image made vertical like the banner: TapOff's name, "Double-tap. Screen off." and the URL stacked
+        over the setup video's finale, one GIF (450×1003, 2.3 MB) ([[Decisions]] #47)
   - [ ] Taseen uploads it on GitHub (no API for it): repo Settings → General → Social preview → Edit → Upload an
         image → `site/img/social.png`
 
