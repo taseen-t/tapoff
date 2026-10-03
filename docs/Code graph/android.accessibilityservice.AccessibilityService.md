@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "LockService"
+community: "LockService.java"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LockService
+  - community/LockServicejava
 ---
 
 # android.accessibilityservice.AccessibilityService
@@ -14,4 +14,4 @@ tags:
 - [[LockService]] - `inherits` [EXTRACTED]
 - [[LockService.java]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LockService
+#graphify/code #graphify/EXTRACTED #community/LockServicejava

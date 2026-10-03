@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "android.graphics.Bitmap"
+community: "MainActivity"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidgraphicsBitmap
+  - community/MainActivity
 ---
 
 # android.graphics.Bitmap
 
 ## Connections
-- [[dot-apply()_1]] - `references` [EXTRACTED]
+- [[dot-apply()]] - `references` [EXTRACTED]
 - [[dot-decode()]] - `references` [EXTRACTED]
 - [[dot-render()]] - `references` [EXTRACTED]
 - [[dot-screenCrop()]] - `references` [EXTRACTED]
@@ -29,4 +29,4 @@ tags:
 - [[TapWallpaper.java]] - `imports` [EXTRACTED]
 - [[Wallpapers.java]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidgraphicsBitmap
+#graphify/code #graphify/EXTRACTED #community/MainActivity

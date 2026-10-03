@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-artTile()]] - `calls` [EXTRACTED]
-- [[dot-onCreate()_1]] - `calls` [EXTRACTED]
+- [[dot-onCreate()_4]] - `calls` [EXTRACTED]
 - [[dot-shape()]] - `calls` [EXTRACTED]
 - [[Ui]] - `method` [EXTRACTED]
 - [[android.content.Context]] - `references` [EXTRACTED]

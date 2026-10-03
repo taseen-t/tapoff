@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/TapWallpaper.java"
 type: "code"
-community: "android.graphics.Bitmap"
+community: "TapWallpaper"
 location: "L130"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidgraphicsBitmap
+  - community/TapWallpaper
 ---
 
 # .onComputeColors()
@@ -18,4 +18,4 @@ tags:
 - [[Wallpapers_1]] - `references` [INFERRED]
 - [[android.app.WallpaperColors]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidgraphicsBitmap
+#graphify/code #graphify/EXTRACTED #community/TapWallpaper

@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/TapWallpaper.java"
 type: "code"
-community: "android.graphics.Bitmap"
+community: "TapWallpaper"
 location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidgraphicsBitmap
+  - community/TapWallpaper
 ---
 
 # TapWallpaper
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-enabled()]] - `method` [EXTRACTED]
 - [[dot-onConfigurationChanged()_1]] - `method` [EXTRACTED]
-- [[dot-onCreate()_3]] - `method` [EXTRACTED]
+- [[dot-onCreate()_2]] - `method` [EXTRACTED]
 - [[dot-onCreateEngine()]] - `method` [EXTRACTED]
 - [[dot-onDestroy()_1]] - `method` [EXTRACTED]
 - [[dot-photo()]] - `method` [EXTRACTED]
@@ -30,4 +30,4 @@ tags:
 - [[Wallpapers_1]] - `references` [INFERRED]
 - [[android.service.wallpaper.WallpaperService]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidgraphicsBitmap
+#graphify/code #graphify/EXTRACTED #community/TapWallpaper

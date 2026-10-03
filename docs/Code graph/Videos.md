@@ -1,12 +1,12 @@
 ---
 source_file: "docs/Videos.md"
 type: "document"
-community: "Progress log"
+community: "Decisions.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Progress_log
+  - community/Decisionsmd
 ---
 
 # Videos.md
@@ -17,4 +17,4 @@ tags:
 - [[Progress log]] - `references` [EXTRACTED]
 - [[Videos_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Progress_log
+#graphify/document #graphify/EXTRACTED #community/Decisionsmd

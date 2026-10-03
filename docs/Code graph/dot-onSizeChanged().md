@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-updateCrop()]] - `calls` [EXTRACTED]
 - [[GlassCard]] - `method` [EXTRACTED]
-- [[Override_12]] - `references` [EXTRACTED]
+- [[Override_8]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/GlassCard

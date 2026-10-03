@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/TapWallpaper.java"
 type: "code"
-community: "android.graphics.Bitmap"
+community: "TapWallpaper"
 location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidgraphicsBitmap
+  - community/TapWallpaper
 ---
 
 # .load()
@@ -18,4 +18,4 @@ tags:
 - [[dot-photo()]] - `calls` [EXTRACTED]
 - [[TapEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidgraphicsBitmap
+#graphify/code #graphify/EXTRACTED #community/TapWallpaper

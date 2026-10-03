@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/CutoutArt.java"
 type: "code"
-community: "CutoutArt.java"
+community: "LockService.java"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CutoutArtjava
+  - community/LockServicejava
 ---
 
 # CutoutArt.java
@@ -30,4 +30,4 @@ tags:
 - [[shader]] - `imports` [EXTRACTED]
 - [[sweepgradient]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CutoutArtjava
+#graphify/code #graphify/EXTRACTED #community/LockServicejava

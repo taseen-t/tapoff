@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "PreviewActivity"
+community: "MainActivity.java"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PreviewActivity
+  - community/MainActivityjava
 ---
 
 # android.widget.ProgressBar
@@ -14,4 +14,4 @@ tags:
 - [[PreviewActivity]] - `references` [EXTRACTED]
 - [[PreviewActivity.java]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PreviewActivity
+#graphify/code #graphify/EXTRACTED #community/MainActivityjava

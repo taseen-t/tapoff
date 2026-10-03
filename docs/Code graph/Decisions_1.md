@@ -1,12 +1,12 @@
 ---
 source_file: "docs/Decisions.md"
 type: "document"
-community: "Progress log"
+community: "Decisions.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Progress_log
+  - community/Decisionsmd
 ---
 
 # Decisions.md
@@ -17,7 +17,8 @@ tags:
 - [[Decisions]] - `contains` [EXTRACTED]
 - [[Home]] - `references` [EXTRACTED]
 - [[Progress log]] - `references` [EXTRACTED]
+- [[Research - reach_1]] - `references` [EXTRACTED]
 - [[Tasks]] - `references` [EXTRACTED]
 - [[Videos]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Progress_log
+#graphify/document #graphify/EXTRACTED #community/Decisionsmd

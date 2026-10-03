@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "android.graphics.Bitmap"
+community: "TapWallpaper"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidgraphicsBitmap
+  - community/TapWallpaper
 ---
 
 # BroadcastReceiver
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[TapWallpaper]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidgraphicsBitmap
+#graphify/code #graphify/EXTRACTED #community/TapWallpaper

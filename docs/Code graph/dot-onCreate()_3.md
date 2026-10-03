@@ -1,19 +1,24 @@
 ---
-source_file: "src/com/taseen/tapoff/TapWallpaper.java"
+source_file: "src/com/taseen/tapoff/SlidersActivity.java"
 type: "code"
-community: "android.graphics.Bitmap"
-location: "L60"
+community: "android.content.Context"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidgraphicsBitmap
+  - community/androidcontentContext
 ---
 
 # .onCreate()
 
 ## Connections
-- [[dot-sync()]] - `calls` [INFERRED]
-- [[Override_6]] - `references` [EXTRACTED]
-- [[TapWallpaper]] - `method` [EXTRACTED]
+- [[dot-allowed()]] - `calls` [EXTRACTED]
+- [[dot-enabled()_1]] - `calls` [EXTRACTED]
+- [[dot-fromLauncher()]] - `calls` [EXTRACTED]
+- [[dot-isActive()]] - `calls` [EXTRACTED]
+- [[dot-requestOpen()]] - `calls` [EXTRACTED]
+- [[Override_11]] - `references` [EXTRACTED]
+- [[SlidersActivity]] - `method` [EXTRACTED]
+- [[android.os.Bundle]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidgraphicsBitmap
+#graphify/code #graphify/EXTRACTED #community/androidcontentContext

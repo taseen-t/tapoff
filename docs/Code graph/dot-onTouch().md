@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-drag()]] - `calls` [EXTRACTED]
-- [[dot-onCreate()_1]] - `calls` [EXTRACTED]
+- [[dot-onCreate()_4]] - `calls` [EXTRACTED]
 - [[dot-settle()]] - `calls` [EXTRACTED]
 - [[dot-tapped()]] - `calls` [EXTRACTED]
 - [[PreviewActivity]] - `method` [EXTRACTED]

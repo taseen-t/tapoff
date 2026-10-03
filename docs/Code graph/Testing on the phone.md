@@ -1,12 +1,12 @@
 ---
 source_file: "docs/Checks.md"
 type: "document"
-community: "Progress log"
+community: "Checks"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Progress_log
+  - community/Checks
 ---
 
 # Testing on the phone
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Checks_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Progress_log
+#graphify/document #graphify/EXTRACTED #community/Checks

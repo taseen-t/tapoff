@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "log"
+community: "android.service.quicksettings.TileService"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/log
+  - community/androidservicequicksettingsTileService
 ---
 
 # android.media.AudioManager
@@ -15,4 +15,4 @@ tags:
 - [[NotchPanel.java]] - `imports` [EXTRACTED]
 - [[VolumeTile.java]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/log
+#graphify/code #graphify/EXTRACTED #community/androidservicequicksettingsTileService

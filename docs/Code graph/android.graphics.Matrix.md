@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "CutoutArt.java"
+community: "GlassCard"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CutoutArtjava
+  - community/GlassCard
 ---
 
 # android.graphics.Matrix
@@ -15,4 +15,4 @@ tags:
 - [[GlassCard.java]] - `imports` [EXTRACTED]
 - [[TapWallpaper.java]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CutoutArtjava
+#graphify/code #graphify/EXTRACTED #community/GlassCard

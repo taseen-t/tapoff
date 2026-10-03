@@ -1,11 +1,11 @@
 ---
 type: community
-members: 26
+members: 24
 ---
 
 # android.graphics.Canvas
 
-**Members:** 26 nodes
+**Members:** 24 nodes
 
 ## Members
 - [[dot-alpha()]] - code - src/com/taseen/tapoff/CutoutArt.java
@@ -23,7 +23,6 @@ members: 26
 - [[dot-neon()]] - code - src/com/taseen/tapoff/CutoutArt.java
 - [[dot-neonArc()]] - code - src/com/taseen/tapoff/CutoutArt.java
 - [[dot-neonRing()]] - code - src/com/taseen/tapoff/CutoutArt.java
-- [[dot-onDraw()_3]] - code - src/com/taseen/tapoff/SwipeHint.java
 - [[dot-pixelPulse()]] - code - src/com/taseen/tapoff/CutoutArt.java
 - [[dot-render()]] - code - src/com/taseen/tapoff/CutoutArt.java
 - [[dot-stars()]] - code - src/com/taseen/tapoff/CutoutArt.java
@@ -32,7 +31,6 @@ members: 26
 - [[dot-tapTap()]] - code - src/com/taseen/tapoff/CutoutArt.java
 - [[dot-vinyl()]] - code - src/com/taseen/tapoff/CutoutArt.java
 - [[CutoutArt]] - code - src/com/taseen/tapoff/CutoutArt.java
-- [[Override_10]] - code
 - [[android.graphics.Canvas]] - code
 
 ## Live Query (requires Dataview plugin)
@@ -43,18 +41,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_android.graphics.Paint]]
+- 8 edges to [[_COMMUNITY_GlassCard]]
 - 6 edges to [[_COMMUNITY_android.content.Context]]
-- 3 edges to [[_COMMUNITY_CutoutArt.java]]
-- 3 edges to [[_COMMUNITY_PreviewActivity]]
-- 1 edge to [[_COMMUNITY_LockService]]
-- 1 edge to [[_COMMUNITY_android.graphics.Bitmap]]
-- 1 edge to [[_COMMUNITY_GlassCard]]
+- 3 edges to [[_COMMUNITY_LockService.java]]
+- 3 edges to [[_COMMUNITY_Wallpapers]]
+- 1 edge to [[_COMMUNITY_TapWallpaper]]
+- 1 edge to [[_COMMUNITY_MainActivity]]
 - 1 edge to [[_COMMUNITY_NotchPanel.java]]
-- 1 edge to [[_COMMUNITY_LockService.java]]
 
 ## Top bridge nodes
-- [[android.graphics.Canvas]] - degree 30, connects to 7 communities
+- [[android.graphics.Canvas]] - degree 30, connects to 5 communities
 - [[CutoutArt]] - degree 25, connects to 3 communities
 - [[dot-render()]] - degree 20, connects to 3 communities
 - [[dot-fill()]] - degree 17, connects to 1 community

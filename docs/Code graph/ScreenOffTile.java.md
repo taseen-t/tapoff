@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/ScreenOffTile.java"
 type: "code"
-community: "log"
+community: "NotchPanel.java"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/log
+  - community/NotchPaneljava
 ---
 
 # ScreenOffTile.java
@@ -16,4 +16,4 @@ tags:
 - [[android.service.quicksettings.TileService]] - `imports` [EXTRACTED]
 - [[log]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/log
+#graphify/code #graphify/EXTRACTED #community/NotchPaneljava

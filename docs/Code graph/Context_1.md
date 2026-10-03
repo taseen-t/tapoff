@@ -1,17 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "android.content.Context"
+community: "TapWallpaper"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidcontentContext
+  - community/TapWallpaper
 ---
 
 # Context
 
 ## Connections
-- [[dot-backTapSeen()]] - `references` [EXTRACTED]
-- [[dot-forgetBackTap()]] - `references` [EXTRACTED]
+- [[dot-enabled()]] - `references` [EXTRACTED]
+- [[dot-photo()]] - `references` [EXTRACTED]
+- [[dot-setEnabled()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidcontentContext
+#graphify/code #graphify/EXTRACTED #community/TapWallpaper

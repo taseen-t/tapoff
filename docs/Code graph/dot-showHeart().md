@@ -12,7 +12,7 @@ tags:
 # .showHeart()
 
 ## Connections
-- [[dot-setFavourite()]] - `calls` [EXTRACTED]
+- [[dot-setFavourite()_1]] - `calls` [EXTRACTED]
 - [[dot-show()]] - `calls` [EXTRACTED]
 - [[PreviewActivity]] - `method` [EXTRACTED]
 

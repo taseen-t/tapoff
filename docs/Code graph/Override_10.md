@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "android.graphics.Canvas"
+community: "android.content.Context"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidgraphicsCanvas
+  - community/androidcontentContext
 ---
 
 # Override
 
 ## Connections
-- [[dot-onDraw()_3]] - `references` [EXTRACTED]
+- [[dot-onDraw()_4]] - `references` [EXTRACTED]
+- [[dot-onTouchEvent()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidgraphicsCanvas
+#graphify/code #graphify/EXTRACTED #community/androidcontentContext

@@ -1,21 +1,23 @@
 ---
-source_file: "src/com/taseen/tapoff/PreviewActivity.java"
+source_file: "src/com/taseen/tapoff/Wallpapers.java"
 type: "code"
-community: "MainActivity"
-location: "L387"
+community: "Wallpapers"
+location: "L293"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MainActivity
+  - community/Wallpapers
 ---
 
 # .apply()
 
 ## Connections
 - [[dot-apply()_1]] - `calls` [EXTRACTED]
-- [[dot-chooser()]] - `calls` [EXTRACTED]
-- [[dot-isActive()]] - `calls` [EXTRACTED]
-- [[dot-onCreate()_1]] - `calls` [EXTRACTED]
-- [[PreviewActivity]] - `method` [EXTRACTED]
+- [[dot-photo()]] - `calls` [EXTRACTED]
+- [[dot-screenCrop()]] - `calls` [EXTRACTED]
+- [[Wallpapers]] - `method` [EXTRACTED]
+- [[Wallpapers_1]] - `references` [INFERRED]
+- [[android.content.Context]] - `references` [EXTRACTED]
+- [[android.graphics.Bitmap]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MainActivity
+#graphify/code #graphify/EXTRACTED #community/Wallpapers

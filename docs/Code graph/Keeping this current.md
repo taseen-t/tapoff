@@ -1,12 +1,12 @@
 ---
 source_file: "docs/Home.md"
 type: "document"
-community: "Progress log"
-location: "L22"
+community: "TapOff"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Progress_log
+  - community/TapOff
 ---
 
 # Keeping this current
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TapOff_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Progress_log
+#graphify/document #graphify/EXTRACTED #community/TapOff

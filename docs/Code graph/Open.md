@@ -1,12 +1,12 @@
 ---
 source_file: "docs/Tasks.md"
 type: "document"
-community: "Progress log"
-location: "L228"
+community: "Tasks"
+location: "L238"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Progress_log
+  - community/Tasks
 ---
 
 # Open
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Tasks_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Progress_log
+#graphify/document #graphify/EXTRACTED #community/Tasks

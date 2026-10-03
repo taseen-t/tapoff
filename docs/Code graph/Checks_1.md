@@ -1,12 +1,12 @@
 ---
 source_file: "docs/Checks.md"
 type: "document"
-community: "Progress log"
+community: "Checks"
 location: "L4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Progress_log
+  - community/Checks
 ---
 
 # Checks
@@ -19,4 +19,4 @@ tags:
 - [[Taseen's own checks (every task, unasked)]] - `contains` [EXTRACTED]
 - [[Testing on the phone]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Progress_log
+#graphify/document #graphify/EXTRACTED #community/Checks

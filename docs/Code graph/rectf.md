@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "CutoutArt.java"
+community: "GlassCard"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/CutoutArtjava
+  - community/GlassCard
 ---
 
 # rectf
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[GlassCard.java]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/CutoutArtjava
+#graphify/concept #graphify/EXTRACTED #community/GlassCard

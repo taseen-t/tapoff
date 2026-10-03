@@ -1,19 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "GlassCard"
+community: "PreviewActivity"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GlassCard
+  - community/PreviewActivity
 ---
 
 # Override
 
 ## Connections
-- [[dot-onDraw()_4]] - `references` [EXTRACTED]
-- [[dot-onMeasure()]] - `references` [EXTRACTED]
-- [[dot-onSizeChanged()]] - `references` [EXTRACTED]
-- [[dot-setPressed()]] - `references` [EXTRACTED]
+- [[dot-onCreate()_4]] - `references` [EXTRACTED]
+- [[dot-onDestroy()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GlassCard
+#graphify/code #graphify/EXTRACTED #community/PreviewActivity

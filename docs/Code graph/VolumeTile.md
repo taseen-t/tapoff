@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/VolumeTile.java"
 type: "code"
-community: "log"
+community: "android.service.quicksettings.TileService"
 location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/log
+  - community/androidservicequicksettingsTileService
 ---
 
 # VolumeTile
@@ -16,4 +16,4 @@ tags:
 - [[VolumeTile.java]] - `contains` [EXTRACTED]
 - [[android.service.quicksettings.TileService]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/log
+#graphify/code #graphify/EXTRACTED #community/androidservicequicksettingsTileService

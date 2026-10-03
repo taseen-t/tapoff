@@ -1,29 +1,21 @@
 ---
 type: community
-members: 33
+members: 25
 ---
 
 # MainActivity.java
 
-**Members:** 33 nodes
+**Members:** 25 nodes
 
 ## Members
-- [[dot-SwipeRoot()]] - code - src/com/taseen/tapoff/MainActivity.java
-- [[dot-beginPageDrag()]] - code - src/com/taseen/tapoff/MainActivity.java
-- [[dot-dragPages()]] - code - src/com/taseen/tapoff/MainActivity.java
-- [[dot-intent()]] - code - src/com/taseen/tapoff/PreviewActivity.java
-- [[dot-onActivityResult()]] - code - src/com/taseen/tapoff/MainActivity.java
-- [[dot-onInterceptTouchEvent()]] - code - src/com/taseen/tapoff/MainActivity.java
-- [[dot-onTouchEvent()]] - code - src/com/taseen/tapoff/MainActivity.java
 - [[MainActivity.java]] - code - src/com/taseen/tapoff/MainActivity.java
 - [[PreviewActivity.java]] - code - src/com/taseen/tapoff/PreviewActivity.java
-- [[SwipeRoot]] - code - src/com/taseen/tapoff/MainActivity.java
 - [[Ui.java]] - code - src/com/taseen/tapoff/Ui.java
-- [[android.content.Intent]] - code
 - [[android.graphics.Typeface]] - code
-- [[android.view.MotionEvent]] - code
-- [[android.view.VelocityTracker]] - code
 - [[android.widget.Button]] - code
+- [[android.widget.ImageButton]] - code
+- [[android.widget.ProgressBar]] - code
+- [[android.widget.ScrollView]] - code
 - [[colorstatelist]] - concept
 - [[configuration_2]] - concept
 - [[decelerateinterpolator]] - concept
@@ -50,22 +42,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 26 edges to [[_COMMUNITY_MainActivity]]
-- 8 edges to [[_COMMUNITY_android.content.Context]]
-- 8 edges to [[_COMMUNITY_NotchPanel.java]]
-- 7 edges to [[_COMMUNITY_PreviewActivity]]
-- 5 edges to [[_COMMUNITY_CutoutArt.java]]
-- 3 edges to [[_COMMUNITY_Override]]
-- 3 edges to [[_COMMUNITY_ShizukuSetup.java]]
-- 2 edges to [[_COMMUNITY_android.graphics.Bitmap]]
-- 2 edges to [[_COMMUNITY_log]]
-- 2 edges to [[_COMMUNITY_android.graphics.Paint]]
-- 1 edge to [[_COMMUNITY_GlassCard]]
-- 1 edge to [[_COMMUNITY_LockService.java]]
+- 21 edges to [[_COMMUNITY_MainActivity]]
+- 7 edges to [[_COMMUNITY_NotchPanel.java]]
+- 6 edges to [[_COMMUNITY_PreviewActivity]]
+- 6 edges to [[_COMMUNITY_LockService.java]]
+- 6 edges to [[_COMMUNITY_android.os.Bundle]]
+- 4 edges to [[_COMMUNITY_android.view.MotionEvent]]
+- 3 edges to [[_COMMUNITY_android.content.Context]]
+- 2 edges to [[_COMMUNITY_GlassCard]]
+- 1 edge to [[_COMMUNITY_ShizukuSetup.java]]
 
 ## Top bridge nodes
 - [[MainActivity.java]] - degree 34, connects to 9 communities
-- [[PreviewActivity.java]] - degree 32, connects to 9 communities
-- [[android.view.MotionEvent]] - degree 7, connects to 3 communities
-- [[dot-intent()]] - degree 5, connects to 3 communities
+- [[PreviewActivity.java]] - degree 32, connects to 8 communities
 - [[Ui.java]] - degree 10, connects to 2 communities
+- [[android.widget.Button]] - degree 6, connects to 2 communities
+- [[android.graphics.Typeface]] - degree 3, connects to 2 communities

@@ -1,21 +1,21 @@
 ---
 source_file: "src/com/taseen/tapoff/MainActivity.java"
 type: "code"
-community: "MainActivity"
+community: "PreviewActivity"
 location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MainActivity
+  - community/PreviewActivity
 ---
 
 # .chooser()
 
 ## Connections
-- [[dot-apply()]] - `calls` [EXTRACTED]
+- [[dot-apply()_1]] - `calls` [EXTRACTED]
 - [[dot-buildSettings()]] - `calls` [EXTRACTED]
 - [[MainActivity]] - `method` [EXTRACTED]
 - [[android.content.Context]] - `references` [EXTRACTED]
 - [[android.content.Intent]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MainActivity
+#graphify/code #graphify/EXTRACTED #community/PreviewActivity

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/Tasks.md"
 type: "document"
-community: "Progress log"
+community: "Decisions.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Progress_log
+  - community/Decisionsmd
 ---
 
 # Tasks.md
@@ -15,6 +15,7 @@ tags:
 - [[Checks]] - `references` [EXTRACTED]
 - [[Decisions_1]] - `references` [EXTRACTED]
 - [[Home]] - `references` [EXTRACTED]
+- [[Research - reach_1]] - `references` [EXTRACTED]
 - [[Tasks_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Progress_log
+#graphify/document #graphify/EXTRACTED #community/Decisionsmd

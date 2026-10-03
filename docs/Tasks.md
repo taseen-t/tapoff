@@ -197,17 +197,27 @@ Every request goes here the moment it's asked. Tick subtasks as they land. Never
 - [ ] Reddit: find the communities where TapOff solves a real problem, see what gets reach there, write a post per
       community from the problem side (the developer telling their story, not a pitch). Taseen posts.
   - [x] Install the Agent Reach skill (Panniantong/Agent-Reach, MIT): CLI via pipx, skill in ~/.claude/skills
-  - [ ] Which subreddits, how big, and what their rules say about posting your own app
-  - [ ] What gets upvotes there (top posts about double-tap to sleep, edge sliders, Shizuku apps, "I made")
-  - [ ] Drafts, one per community, with the questions comments will ask answered up front
-- [ ] Instagram: what kind of problem-solving content gets the most views, so TapOff makes more of that
+  - [x] Which subreddits, how big, and what their rules say about posting your own app ([[Research - reach]])
+  - [x] What gets upvotes there (top posts about double-tap to sleep, edge sliders, Shizuku apps, "I made")
+  - [x] Drafts, one per community, with the questions comments will ask answered up front (8 subreddits, in the
+        git-ignored `outreach/` folder, not the repo)
+  - [ ] Taseen: which account posts (r/Android needs 3+ months and posting history there); did a bank app really refuse
+        to open beside an accessibility service (drafts say "some" until then)
+  - [ ] Taseen posts, one sub a day, with time to answer comments
+- [x] Instagram: what kind of problem-solving content gets the most views, so TapOff makes more of that
+  - [x] 6 tags, 72 Reels: a phone problem in the first line + a hidden trick or app that fixes it + a quick demo, under
+        broad tags (#techtips median 3.95M views, #pixeltips 564). 3 Reel outlines written
+  - [ ] Make the Reels (run `verify_output` on the brag video before cutting from it)
 - [x] Setup video: custom controls matching the site, shown only on hover, gone about a second after the last move
       or control use even while hovered ([[Decisions]] #43)
 - [x] The shadow under the phone was cut by the bottom of the setup video: phone smaller and higher, re-rendered,
       privacy re-check 0 leaks, new poster ([[Decisions]] #44). The app itself has no bottom shadow that clips (only
       the tab bar, 16 dp above the navigation bar); if Taseen meant a screen in the app, get a screenshot
-- [ ] YouTube: study the "Infinite Desk" channel ("we explore better ways of thinking") and plan TapOff videos in that
+- [x] YouTube: study the "Infinite Desk" channel ("we explore better ways of thinking") and plan TapOff videos in that
       style
+  - [x] @InfiniteDesk, 395K subscribers: Shorts median 613K views, long videos 7.6K. Format: 40–80 s, problem →
+        failed attempts → the clever fix, 3D + calm voiceover. 3 Short outlines written
+  - [ ] Pick one, write the script, ask before generating voice, render with the 3D phone engine
 
 ## 2026-10-03
 - [x] GitHub page had no pictures of TapOff

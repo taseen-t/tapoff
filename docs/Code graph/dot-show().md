@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[dot-isFavourite()]] - `calls` [EXTRACTED]
-- [[dot-load()_1]] - `calls` [EXTRACTED]
-- [[dot-onCreate()_1]] - `calls` [EXTRACTED]
+- [[dot-load()_2]] - `calls` [EXTRACTED]
+- [[dot-onCreate()_4]] - `calls` [EXTRACTED]
 - [[dot-settle()]] - `calls` [EXTRACTED]
 - [[dot-showHeart()]] - `calls` [EXTRACTED]
 - [[PreviewActivity]] - `method` [EXTRACTED]

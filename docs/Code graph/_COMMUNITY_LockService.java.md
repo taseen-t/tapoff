@@ -1,20 +1,29 @@
 ---
 type: community
-members: 7
+members: 16
 ---
 
 # LockService.java
 
-**Members:** 7 nodes
+**Members:** 16 nodes
 
 ## Members
+- [[CutoutArt.java]] - code - src/com/taseen/tapoff/CutoutArt.java
 - [[LockService.java]] - code - src/com/taseen/tapoff/LockService.java
-- [[android.view.WindowManager]] - code
+- [[android.accessibilityservice.AccessibilityService]] - code
+- [[arraylist]] - concept
 - [[componentname]] - concept
 - [[contentresolver]] - concept
+- [[dashpatheffect]] - concept
+- [[displaycutout]] - concept
 - [[files]] - concept
+- [[list]] - concept
 - [[packagemanager]] - concept
+- [[pixelformat]] - concept
+- [[radialgradient]] - concept
+- [[random]] - concept
 - [[standardcharsets]] - concept
+- [[sweepgradient]] - concept
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,19 +33,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_NotchPanel.java]]
-- 4 edges to [[_COMMUNITY_CutoutArt.java]]
-- 3 edges to [[_COMMUNITY_LockService]]
-- 2 edges to [[_COMMUNITY_android.content.Context]]
-- 2 edges to [[_COMMUNITY_android.graphics.Paint]]
-- 2 edges to [[_COMMUNITY_Wallpapers.java]]
-- 1 edge to [[_COMMUNITY_MainActivity.java]]
+- 7 edges to [[_COMMUNITY_GlassCard]]
+- 6 edges to [[_COMMUNITY_MainActivity.java]]
+- 4 edges to [[_COMMUNITY_NotchPanel.java]]
+- 4 edges to [[_COMMUNITY_Wallpapers.java]]
+- 3 edges to [[_COMMUNITY_TapWallpaper]]
+- 3 edges to [[_COMMUNITY_android.graphics.Canvas]]
+- 3 edges to [[_COMMUNITY_android.content.Context]]
+- 2 edges to [[_COMMUNITY_android.os.Bundle]]
+- 1 edge to [[_COMMUNITY_MainActivity]]
 - 1 edge to [[_COMMUNITY_ShizukuSetup.java]]
-- 1 edge to [[_COMMUNITY_android.graphics.Canvas]]
 
 ## Top bridge nodes
 - [[LockService.java]] - degree 22, connects to 7 communities
-- [[android.view.WindowManager]] - degree 3, connects to 2 communities
-- [[componentname]] - degree 2, connects to 1 community
-- [[files]] - degree 2, connects to 1 community
-- [[standardcharsets]] - degree 2, connects to 1 community
+- [[CutoutArt.java]] - degree 17, connects to 5 communities
+- [[arraylist]] - degree 5, connects to 2 communities
+- [[list]] - degree 5, connects to 2 communities
+- [[android.accessibilityservice.AccessibilityService]] - degree 2, connects to 1 community

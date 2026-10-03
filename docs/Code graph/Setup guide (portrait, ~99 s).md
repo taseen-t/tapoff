@@ -1,12 +1,12 @@
 ---
 source_file: "docs/Videos.md"
 type: "document"
-community: "Progress log"
+community: "Setup guide (portrait, ~99 s)"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Progress_log
+  - community/Setup_guide_portrait_99_s
 ---
 
 # Setup guide (portrait, ~99 s)
@@ -17,4 +17,4 @@ tags:
 - [[Rebuild]] - `contains` [EXTRACTED]
 - [[Videos_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Progress_log
+#graphify/document #graphify/EXTRACTED #community/Setup_guide_portrait_99_s

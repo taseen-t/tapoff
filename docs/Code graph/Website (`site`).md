@@ -1,12 +1,12 @@
 ---
 source_file: "docs/Architecture.md"
 type: "document"
-community: "android.graphics.Bitmap"
+community: "TapWallpaper"
 location: "L77"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/androidgraphicsBitmap
+  - community/TapWallpaper
 ---
 
 # Website (`site/`)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/androidgraphicsBitmap
+#graphify/document #graphify/EXTRACTED #community/TapWallpaper

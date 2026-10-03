@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-blend()]] - `calls` [EXTRACTED]
-- [[dot-onDraw()_2]] - `calls` [EXTRACTED]
+- [[dot-onDraw()_4]] - `calls` [EXTRACTED]
 - [[Panel]] - `method` [EXTRACTED]
 - [[android.graphics.Canvas]] - `references` [EXTRACTED]
 

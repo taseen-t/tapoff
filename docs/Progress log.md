@@ -5,6 +5,21 @@ tags: [tapoff, log]
 
 Newest first. Each entry: done / blocked / next.
 
+## 2026-10-03 (later) · Research: Reddit, Instagram, Infinite Desk
+**Done**
+- Reddit: 17 subreddits sized and rule-checked, 20+ searches read for what gets upvotes, the double-tap threads read.
+  Pixel's own double-tap to sleep is lock screen only; demand and objections noted ([[Research - reach]]).
+- Instagram: 6 hashtags, 72 Reels with views. YouTube: Infinite Desk's 56 videos ranked, top Shorts' scripts read.
+- Drafts for 8 subreddits, 3 Reels and 3 Shorts, in the git-ignored `outreach/` folder ([[Decisions]] #48–49).
+- Research tools learned: OpenCLI reads Reddit with real scores; the Arctic Shift archive can't rank posts; Instagram
+  hashtag pages show views logged out.
+
+**Blocked**
+- Posting is Taseen's. Two answers needed first: which account, and whether a bank app really refused to open.
+
+**Next**
+- Post on r/androidapps first; make Reel 1 and Short A.
+
 ## 2026-10-03 · Pictures on the GitHub page
 **Done**
 - README now opens with a demo GIF, then four app screenshots, a Cutout wallpaper strip and the setup video's

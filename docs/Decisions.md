@@ -166,3 +166,15 @@ Newest at the bottom. Each one says why, so nobody undoes it by accident.
 47. **The README keeps the plain demo GIF on top.** Banner versions of it were tried (brand stacked over the demo, then
     brand left and demo right, 960×480); Taseen preferred the first GIF, so it's back, at 3× its first size: `width="900"` (capped at the README's width) from a 720×1280 cut, 5.4 MB. The banner sources stay in the
     work folder (`social/hero*.html`, `hero*.js`, `hero*.sh`) in case they're wanted elsewhere. (2026-10-03)
+48. **Reddit: Pixel communities and app communities first, written by the developer, drafts kept out of the repo.**
+    Pixel's own double-tap to sleep is lock screen only (confirmed in an 821-upvote r/GooglePixel thread), and Samsung
+    and OnePlus launchers already do it, so TapOff's gap is Pixel. Order: r/androidapps, r/SideProject,
+    r/pixel_phones, r/Android (if the account meets its gate), then r/opensource, r/fossdroid, r/androiddev. Never
+    r/GooglePixel: it bans all self-promotion. Every draft says "I'm the dev" and opens with the broken-button story,
+    the shape that wins in every sub checked. Unposted text stays in the git-ignored `outreach/` folder so it isn't
+    public before it's posted. See [[Research - reach]]. (2026-10-03)
+49. **Videos: Reels for reach, Shorts in the Infinite Desk shape.** On Instagram, broad tags carry reach and niche ones
+    barely move, so Reels open with a phone problem and use #techtips / #phonehacks / #androidhacks. Infinite Desk's
+    long videos do 7.6K against 613K for its Shorts, so TapOff's version is Shorts only: problem → failed attempts →
+    the fix, which is TapOff's real design history (button wears out, launcher-only gestures, always-on
+    accessibility, device-admin PIN, then wallpaper taps + one-second accessibility). (2026-10-03)

@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "MainActivity.java"
+community: "android.view.MotionEvent"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MainActivityjava
+  - community/androidviewMotionEvent
 ---
 
 # android.view.MotionEvent
@@ -19,4 +19,4 @@ tags:
 - [[NotchPanel.java]] - `imports` [EXTRACTED]
 - [[PreviewActivity.java]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MainActivityjava
+#graphify/code #graphify/EXTRACTED #community/androidviewMotionEvent

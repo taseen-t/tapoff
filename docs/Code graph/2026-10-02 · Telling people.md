@@ -1,12 +1,12 @@
 ---
 source_file: "docs/Tasks.md"
 type: "document"
-community: "Progress log"
+community: "Tasks"
 location: "L196"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Progress_log
+  - community/Tasks
 ---
 
 # 2026-10-02 · Telling people
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Tasks_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Progress_log
+#graphify/document #graphify/EXTRACTED #community/Tasks

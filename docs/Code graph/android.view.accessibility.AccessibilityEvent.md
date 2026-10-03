@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "LockService"
+community: "TapWallpaper"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LockService
+  - community/TapWallpaper
 ---
 
 # android.view.accessibility.AccessibilityEvent
@@ -14,4 +14,4 @@ tags:
 - [[dot-onAccessibilityEvent()]] - `references` [EXTRACTED]
 - [[LockService.java]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LockService
+#graphify/code #graphify/EXTRACTED #community/TapWallpaper

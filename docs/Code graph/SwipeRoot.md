@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/MainActivity.java"
 type: "code"
-community: "MainActivity.java"
+community: "android.view.MotionEvent"
 location: "L763"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MainActivityjava
+  - community/androidviewMotionEvent
 ---
 
 # SwipeRoot
@@ -19,4 +19,4 @@ tags:
 - [[android.view.VelocityTracker]] - `references` [EXTRACTED]
 - [[android.widget.FrameLayout]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MainActivityjava
+#graphify/code #graphify/EXTRACTED #community/androidviewMotionEvent

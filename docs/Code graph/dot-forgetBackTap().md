@@ -1,18 +1,18 @@
 ---
 source_file: "src/com/taseen/tapoff/SlidersActivity.java"
 type: "code"
-community: "android.content.Context"
+community: "TapWallpaper"
 location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidcontentContext
+  - community/TapWallpaper
 ---
 
 # .forgetBackTap()
 
 ## Connections
-- [[Context_1]] - `references` [EXTRACTED]
+- [[Context]] - `references` [EXTRACTED]
 - [[SlidersActivity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidcontentContext
+#graphify/code #graphify/EXTRACTED #community/TapWallpaper

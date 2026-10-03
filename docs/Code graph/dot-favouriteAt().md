@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-dp()]] - `calls` [EXTRACTED]
-- [[dot-setFavourite()]] - `calls` [EXTRACTED]
+- [[dot-setFavourite()_1]] - `calls` [EXTRACTED]
 - [[dot-tapped()]] - `calls` [EXTRACTED]
 - [[PreviewActivity]] - `method` [EXTRACTED]
 

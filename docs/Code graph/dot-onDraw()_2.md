@@ -1,20 +1,19 @@
 ---
-source_file: "src/com/taseen/tapoff/NotchPanel.java"
+source_file: "src/com/taseen/tapoff/GlassCard.java"
 type: "code"
-community: "android.content.Context"
-location: "L240"
+community: "GlassCard"
+location: "L94"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidcontentContext
+  - community/GlassCard
 ---
 
 # .onDraw()
 
 ## Connections
-- [[dot-drawPill()]] - `calls` [EXTRACTED]
+- [[GlassCard]] - `method` [EXTRACTED]
 - [[Override_8]] - `references` [EXTRACTED]
-- [[Panel]] - `method` [EXTRACTED]
 - [[android.graphics.Canvas]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidcontentContext
+#graphify/code #graphify/EXTRACTED #community/GlassCard

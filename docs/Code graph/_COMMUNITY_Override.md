@@ -31,12 +31,13 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 5 edges to [[_COMMUNITY_MainActivity]]
-- 3 edges to [[_COMMUNITY_MainActivity.java]]
-- 1 edge to [[_COMMUNITY_ShizukuSetup.java]]
+- 2 edges to [[_COMMUNITY_android.view.MotionEvent]]
+- 1 edge to [[_COMMUNITY_android.os.Bundle]]
 - 1 edge to [[_COMMUNITY_android.content.Context]]
+- 1 edge to [[_COMMUNITY_PreviewActivity]]
 
 ## Top bridge nodes
-- [[Override_2]] - degree 14, connects to 4 communities
+- [[Override_2]] - degree 14, connects to 5 communities
 - [[SwitchPart]] - degree 10, connects to 1 community
 - [[dot-SwitchPart()]] - degree 3, connects to 1 community
 - [[dot-onDestroy()]] - degree 2, connects to 1 community

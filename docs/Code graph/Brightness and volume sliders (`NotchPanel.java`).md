@@ -1,12 +1,12 @@
 ---
 source_file: "docs/Architecture.md"
 type: "document"
-community: "android.graphics.Bitmap"
+community: "TapWallpaper"
 location: "L37"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/androidgraphicsBitmap
+  - community/TapWallpaper
 ---
 
 # Brightness and volume sliders (`NotchPanel.java`)
@@ -16,4 +16,4 @@ tags:
 - [[SlidersActivity]] - `references` [INFERRED]
 - [[TapWallpaper]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/androidgraphicsBitmap
+#graphify/document #graphify/INFERRED #community/TapWallpaper

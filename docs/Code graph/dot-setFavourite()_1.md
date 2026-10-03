@@ -1,8 +1,8 @@
 ---
-source_file: "src/com/taseen/tapoff/Wallpapers.java"
+source_file: "src/com/taseen/tapoff/PreviewActivity.java"
 type: "code"
 community: "PreviewActivity"
-location: "L339"
+location: "L265"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,11 +12,11 @@ tags:
 # .setFavourite()
 
 ## Connections
-- [[dot-favourites()]] - `calls` [EXTRACTED]
-- [[dot-key()]] - `calls` [EXTRACTED]
+- [[dot-favouriteAt()]] - `calls` [EXTRACTED]
+- [[dot-isFavourite()]] - `calls` [EXTRACTED]
+- [[dot-onCreate()_4]] - `calls` [EXTRACTED]
 - [[dot-setFavourite()]] - `calls` [EXTRACTED]
-- [[Item]] - `references` [EXTRACTED]
-- [[Wallpapers]] - `method` [EXTRACTED]
-- [[android.content.Context]] - `references` [EXTRACTED]
+- [[dot-showHeart()]] - `calls` [EXTRACTED]
+- [[PreviewActivity]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PreviewActivity
