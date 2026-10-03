@@ -9388,7 +9388,7 @@
       "node_kind": "heading",
       "norm_label": "2026-09-30 \u00b7 1.7: slide the edges",
       "source_file": "docs/Progress log.md",
-      "source_location": "L139"
+      "source_location": "L140"
     },
     {
       "id": "docs_progress_log_2026_09_30_evening_1_9_setup_without_a_computer",
@@ -9400,7 +9400,7 @@
       "node_kind": "heading",
       "norm_label": "2026-09-30 (evening) \u00b7 1.9: setup without a computer",
       "source_file": "docs/Progress log.md",
-      "source_location": "L107"
+      "source_location": "L108"
     },
     {
       "id": "docs_progress_log_2026_09_30_late_play_protect_block_a_no_computer_way_in",
@@ -9412,7 +9412,7 @@
       "node_kind": "heading",
       "norm_label": "2026-09-30 (late) \u00b7 play protect block: a no-computer way in",
       "source_file": "docs/Progress log.md",
-      "source_location": "L32"
+      "source_location": "L33"
     },
     {
       "id": "docs_progress_log_2026_09_30_later_1_8_back_tap_sliders_favourites_nasa",
@@ -9424,7 +9424,7 @@
       "node_kind": "heading",
       "norm_label": "2026-09-30 (later) \u00b7 1.8: back-tap sliders, favourites, nasa",
       "source_file": "docs/Progress log.md",
-      "source_location": "L125"
+      "source_location": "L126"
     },
     {
       "id": "docs_progress_log_2026_09_30_night_shizuku_pr_brag_video",
@@ -9436,7 +9436,7 @@
       "node_kind": "heading",
       "norm_label": "2026-09-30 (night) \u00b7 shizuku pr, brag video",
       "source_file": "docs/Progress log.md",
-      "source_location": "L83"
+      "source_location": "L84"
     },
     {
       "id": "docs_progress_log_2026_10_01_setup_guide_video",
@@ -9448,7 +9448,7 @@
       "node_kind": "heading",
       "norm_label": "2026-10-01 \u00b7 setup guide video",
       "source_file": "docs/Progress log.md",
-      "source_location": "L63"
+      "source_location": "L64"
     },
     {
       "id": "docs_progress_log_2026_10_02_evening_video_controls_video_shadow_telling_people",
@@ -9460,7 +9460,7 @@
       "node_kind": "heading",
       "norm_label": "2026-10-02 (evening) \u00b7 video controls, video shadow, telling people",
       "source_file": "docs/Progress log.md",
-      "source_location": "L18"
+      "source_location": "L19"
     },
     {
       "id": "docs_progress_log_2026_10_02_setup_video_on_the_website",
@@ -9472,7 +9472,7 @@
       "node_kind": "heading",
       "norm_label": "2026-10-02 \u00b7 setup video on the website",
       "source_file": "docs/Progress log.md",
-      "source_location": "L50"
+      "source_location": "L51"
     },
     {
       "id": "docs_progress_log_2026_10_03_pictures_on_the_github_page",
@@ -9496,7 +9496,7 @@
       "node_kind": "heading",
       "norm_label": "before 2026-09-30 \u00b7 1.0 to 1.6",
       "source_file": "docs/Progress log.md",
-      "source_location": "L164"
+      "source_location": "L165"
     },
     {
       "id": "docs_progress_log_progress_log",
@@ -9580,7 +9580,7 @@
       "node_kind": "heading",
       "norm_label": "open",
       "source_file": "docs/Tasks.md",
-      "source_location": "L225"
+      "source_location": "L226"
     },
     {
       "id": "docs_tasks_tasks",
@@ -21034,7 +21034,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/Progress log.md",
-      "source_location": "L107",
+      "source_location": "L108",
       "weight": 1.0
     },
     {
@@ -21045,7 +21045,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/Progress log.md",
-      "source_location": "L125",
+      "source_location": "L126",
       "weight": 1.0
     },
     {
@@ -21056,7 +21056,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/Progress log.md",
-      "source_location": "L139",
+      "source_location": "L140",
       "weight": 1.0
     },
     {
@@ -21067,7 +21067,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/Progress log.md",
-      "source_location": "L164",
+      "source_location": "L165",
       "weight": 1.0
     },
     {
@@ -21078,7 +21078,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/Progress log.md",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0
     },
     {
@@ -21089,7 +21089,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/Progress log.md",
-      "source_location": "L32",
+      "source_location": "L33",
       "weight": 1.0
     },
     {
@@ -21100,7 +21100,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/Progress log.md",
-      "source_location": "L50",
+      "source_location": "L51",
       "weight": 1.0
     },
     {
@@ -21111,7 +21111,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/Progress log.md",
-      "source_location": "L63",
+      "source_location": "L64",
       "weight": 1.0
     },
     {
@@ -21133,7 +21133,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/Progress log.md",
-      "source_location": "L83",
+      "source_location": "L84",
       "weight": 1.0
     },
     {
@@ -21188,7 +21188,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/Tasks.md",
-      "source_location": "L225",
+      "source_location": "L226",
       "weight": 1.0
     },
     {
@@ -24367,7 +24367,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/Progress log.md",
-      "source_location": "L162",
+      "source_location": "L163",
       "weight": 1.0
     },
     {
@@ -24378,7 +24378,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/Progress log.md",
-      "source_location": "L72",
+      "source_location": "L73",
       "weight": 1.0
     },
     {
@@ -24813,5 +24813,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "ac1780805a6fdbbccb9388ae95b4d5b677577029"
+  "built_at_commit": "a46c4d2e373d25cd5250425838009f9aa885c540"
 }

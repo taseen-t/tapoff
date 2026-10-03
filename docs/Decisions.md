@@ -163,10 +163,6 @@ Newest at the bottom. Each one says why, so nobody undoes it by accident.
     hand in the repo settings) and the site's `og:image` with a large Twitter card, replacing the tall main-screen
     screenshot that previews cropped badly. Drawn as HTML in the site's style and screenshotted with Playwright; the
     source is in the git-ignored work folder (`social/social.html`, `node social/render.js`). (2026-10-03)
-47. **The README opens with a landscape banner that moves.** The social banner's text on the left, the setup video's
-    finale on the right (screen off, then the flip and back tap), in one 960×480 GIF shown full width. The caption
-    under the title switches from "screen off" to "brightness and volume" when the video turns to the back (2.76 s).
-    The video is cropped to x 176–892, y 440–1892 and scaled to 640 tall; the banner's dot grid is the video's 44 px
-    grid at the same scale and offset, so there's no seam. Source in the work folder: `social/hero_land.html`,
-    `node social/hero_land.js && social/hero_land.sh`. (A vertical version came first; Taseen meant landscape.)
-    (2026-10-03)
+47. **The README keeps the plain demo GIF on top.** Banner versions of it were tried (brand stacked over the demo, then
+    brand left and demo right, 960×480); Taseen preferred the first GIF, so it's back. The banner sources stay in the
+    work folder (`social/hero*.html`, `hero*.js`, `hero*.sh`) in case they're wanted elsewhere. (2026-10-03)

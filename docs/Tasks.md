@@ -217,9 +217,8 @@ Every request goes here the moment it's asked. Tick subtasks as they land. Never
         poster linking to the video, all reusing the site's images
   - [x] 1280×640 social preview banner made: `site/img/social.png` (pixel-hand icon, "Double-tap. Screen off.", two
         app screenshots). Also the site's link preview now (`og:image`, large card on X/Reddit) ([[Decisions]] #46)
-  - [x] README's top image as a banner that moves: first made vertical (brand stacked over the demo), but Taseen meant
-        landscape. Now 960×480 like the social banner: text left with a caption that follows the demo, the setup
-        video's finale on the right, one GIF (1.6 MB) ([[Decisions]] #47)
+  - [x] README's top image as a banner that moves: tried vertical, then landscape (text left, demo right). Taseen
+        preferred the first one, so it's back to the plain demo GIF ([[Decisions]] #47)
   - [ ] Taseen uploads it on GitHub (no API for it): repo Settings → General → Social preview → Edit → Upload an
         image → `site/img/social.png`
 

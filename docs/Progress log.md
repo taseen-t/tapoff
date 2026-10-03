@@ -9,8 +9,7 @@ Newest first. Each entry: done / blocked / next.
 **Done**
 - README now opens with a demo GIF, then four app screenshots, a Cutout wallpaper strip and the setup video's
   poster ([[Decisions]] #45).
-- README's top image is now a landscape banner that moves: brand on the left, the double-tap demo on the right
-  ([[Decisions]] #47).
+- Tried a vertical and a landscape banner for the README's top image; back to the original demo GIF ([[Decisions]] #47).
 - 1280×640 banner `site/img/social.png` for GitHub's social preview and the site's link previews ([[Decisions]] #46).
 
 **Next**
