@@ -1,6 +1,6 @@
 # TapOff
 
-<p align="center"><img src="site/img/demo.gif" width="300" alt="Double-tap the home screen and the screen turns off. Double-tap the back of the phone and brightness and volume sliders grow out of the camera."></p>
+<p align="center"><img src="site/img/demo.gif" width="420" alt="Double-tap the home screen and the screen turns off. Double-tap the back of the phone and brightness and volume sliders grow out of the camera."></p>
 
 Double-tap to turn your Android phone's screen off, for when the power button is worn out, hard to press
 through a case, or just too far away. Double-tap the back of the phone for brightness and volume sliders. Plus

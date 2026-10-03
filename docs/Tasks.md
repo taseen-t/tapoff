@@ -219,6 +219,7 @@ Every request goes here the moment it's asked. Tick subtasks as they land. Never
         app screenshots). Also the site's link preview now (`og:image`, large card on X/Reddit) ([[Decisions]] #46)
   - [x] README's top image as a banner that moves: tried vertical, then landscape (text left, demo right). Taseen
         preferred the first one, so it's back to the plain demo GIF ([[Decisions]] #47)
+  - [x] Bigger: shown 420 px wide (was 300), re-cut at 480×853 (was 360×640) so it stays sharp, 2.6 MB
   - [ ] Taseen uploads it on GitHub (no API for it): repo Settings → General → Social preview → Edit → Upload an
         image → `site/img/social.png`
 

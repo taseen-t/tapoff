@@ -164,5 +164,5 @@ Newest at the bottom. Each one says why, so nobody undoes it by accident.
     screenshot that previews cropped badly. Drawn as HTML in the site's style and screenshotted with Playwright; the
     source is in the git-ignored work folder (`social/social.html`, `node social/render.js`). (2026-10-03)
 47. **The README keeps the plain demo GIF on top.** Banner versions of it were tried (brand stacked over the demo, then
-    brand left and demo right, 960×480); Taseen preferred the first GIF, so it's back. The banner sources stay in the
+    brand left and demo right, 960×480); Taseen preferred the first GIF, so it's back, shown 420 px wide from a 480×853 cut so it stays sharp. The banner sources stay in the
     work folder (`social/hero*.html`, `hero*.js`, `hero*.sh`) in case they're wanted elsewhere. (2026-10-03)
