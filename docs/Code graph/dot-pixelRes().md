@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/Wallpapers.java"
 type: "code"
-community: "Wallpapers"
+community: "android.content.Context"
 location: "L272"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Wallpapers
+  - community/androidcontentContext
 ---
 
 # .pixelRes()
@@ -18,4 +18,4 @@ tags:
 - [[android.content.Context]] - `references` [EXTRACTED]
 - [[android.content.res.Resources]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Wallpapers
+#graphify/code #graphify/EXTRACTED #community/androidcontentContext

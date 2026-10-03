@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/Wallpapers.java"
 type: "code"
-community: "Wallpapers"
+community: "android.content.Context"
 location: "L316"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Wallpapers
+  - community/androidcontentContext
 ---
 
 # .key()
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-addCard()]] - `calls` [EXTRACTED]
 - [[dot-isFavourite()]] - `calls` [EXTRACTED]
-- [[dot-setFavourite()]] - `calls` [EXTRACTED]
+- [[dot-setFavourite()_1]] - `calls` [EXTRACTED]
 - [[Item]] - `references` [EXTRACTED]
 - [[Wallpapers]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Wallpapers
+#graphify/code #graphify/EXTRACTED #community/androidcontentContext

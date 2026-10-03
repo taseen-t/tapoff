@@ -11,6 +11,9 @@ tags:
 # Override
 
 ## Connections
-- [[dot-onDraw()_3]] - `references` [EXTRACTED]
+- [[dot-onDraw()_2]] - `references` [EXTRACTED]
+- [[dot-onMeasure()]] - `references` [EXTRACTED]
+- [[dot-onSizeChanged()]] - `references` [EXTRACTED]
+- [[dot-setPressed()]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/GlassCard

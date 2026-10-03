@@ -1,52 +1,44 @@
 ---
 type: community
-members: 39
+members: 31
 ---
 
 # android.content.Context
 
-**Members:** 39 nodes
+**Members:** 31 nodes
 
 ## Members
-- [[dot-NotchPanel()]] - code - src/com/taseen/tapoff/NotchPanel.java
-- [[dot-Panel()]] - code - src/com/taseen/tapoff/NotchPanel.java
-- [[dot-allowed()]] - code - src/com/taseen/tapoff/NotchPanel.java
-- [[dot-animateTo()]] - code - src/com/taseen/tapoff/NotchPanel.java
-- [[dot-blend()]] - code - src/com/taseen/tapoff/Ui.java
-- [[dot-changed()]] - code - src/com/taseen/tapoff/NotchPanel.java
-- [[dot-display()]] - code - src/com/taseen/tapoff/NotchPanel.java
-- [[dot-drawPill()]] - code - src/com/taseen/tapoff/NotchPanel.java
-- [[dot-enabled()_1]] - code - src/com/taseen/tapoff/NotchPanel.java
-- [[dot-hit()]] - code - src/com/taseen/tapoff/NotchPanel.java
-- [[dot-hole()]] - code - src/com/taseen/tapoff/CutoutArt.java
-- [[dot-hole()_1]] - code - src/com/taseen/tapoff/NotchPanel.java
-- [[dot-isActive()]] - code - src/com/taseen/tapoff/Wallpapers.java
-- [[dot-onCreate()_3]] - code - src/com/taseen/tapoff/SlidersActivity.java
-- [[dot-onDraw()_4]] - code - src/com/taseen/tapoff/NotchPanel.java
-- [[dot-onResume()]] - code - src/com/taseen/tapoff/MainActivity.java
-- [[dot-onTouchEvent()_1]] - code - src/com/taseen/tapoff/NotchPanel.java
-- [[dot-open()]] - code - src/com/taseen/tapoff/NotchPanel.java
-- [[dot-overlay()]] - code - src/com/taseen/tapoff/NotchPanel.java
-- [[dot-portrait()]] - code - src/com/taseen/tapoff/NotchPanel.java
-- [[dot-read()]] - code - src/com/taseen/tapoff/NotchPanel.java
-- [[dot-refreshState()]] - code - src/com/taseen/tapoff/MainActivity.java
-- [[dot-requestOpen()]] - code - src/com/taseen/tapoff/NotchPanel.java
-- [[dot-set()]] - code - src/com/taseen/tapoff/NotchPanel.java
-- [[dot-setEnabled()_1]] - code - src/com/taseen/tapoff/NotchPanel.java
-- [[dot-statusBar()]] - code - src/com/taseen/tapoff/NotchPanel.java
-- [[dot-stream()]] - code - src/com/taseen/tapoff/NotchPanel.java
-- [[dot-sync()]] - code - src/com/taseen/tapoff/NotchPanel.java
-- [[dot-toLinear()]] - code - src/com/taseen/tapoff/NotchPanel.java
-- [[dot-toPosition()]] - code - src/com/taseen/tapoff/NotchPanel.java
-- [[dot-write()]] - code - src/com/taseen/tapoff/NotchPanel.java
-- [[LayoutParams]] - code
-- [[NotchPanel]] - code - src/com/taseen/tapoff/NotchPanel.java
-- [[Override_10]] - code
-- [[Override_11]] - code
-- [[Panel]] - code - src/com/taseen/tapoff/NotchPanel.java
+- [[dot-Collection()_1]] - code - src/com/taseen/tapoff/Wallpapers.java
+- [[dot-Item()]] - code - src/com/taseen/tapoff/Wallpapers.java
+- [[dot-apply()_1]] - code - src/com/taseen/tapoff/Wallpapers.java
+- [[dot-bing()]] - code - src/com/taseen/tapoff/Wallpapers.java
+- [[dot-cached()]] - code - src/com/taseen/tapoff/Wallpapers.java
+- [[dot-collection()]] - code - src/com/taseen/tapoff/CutoutArt.java
+- [[dot-decode()]] - code - src/com/taseen/tapoff/Wallpapers.java
+- [[dot-download()]] - code - src/com/taseen/tapoff/Wallpapers.java
+- [[dot-favourites()]] - code - src/com/taseen/tapoff/Wallpapers.java
+- [[dot-isFavourite()]] - code - src/com/taseen/tapoff/Wallpapers.java
+- [[dot-key()]] - code - src/com/taseen/tapoff/Wallpapers.java
+- [[dot-list()]] - code - src/com/taseen/tapoff/Wallpapers.java
+- [[dot-load()_2]] - code - src/com/taseen/tapoff/Wallpapers.java
+- [[dot-nasa()]] - code - src/com/taseen/tapoff/Wallpapers.java
+- [[dot-pause()]] - code - src/com/taseen/tapoff/Wallpapers.java
+- [[dot-pixel()]] - code - src/com/taseen/tapoff/Wallpapers.java
+- [[dot-pixelRes()]] - code - src/com/taseen/tapoff/Wallpapers.java
+- [[dot-refreshFavourites()]] - code - src/com/taseen/tapoff/MainActivity.java
+- [[dot-screenCrop()]] - code - src/com/taseen/tapoff/Wallpapers.java
+- [[dot-setFavourite()]] - code - src/com/taseen/tapoff/PreviewActivity.java
+- [[dot-setFavourite()_1]] - code - src/com/taseen/tapoff/Wallpapers.java
+- [[dot-sha1()]] - code - src/com/taseen/tapoff/Wallpapers.java
+- [[dot-trimCache()]] - code - src/com/taseen/tapoff/Wallpapers.java
+- [[dot-wallhaven()]] - code - src/com/taseen/tapoff/Wallpapers.java
+- [[Collection]] - code - src/com/taseen/tapoff/Wallpapers.java
+- [[Item]] - code - src/com/taseen/tapoff/Wallpapers.java
+- [[Rect_1]] - code
+- [[Wallpapers]] - code - src/com/taseen/tapoff/Wallpapers.java
+- [[Wallpapers_1]] - document - docs/Architecture.md
 - [[android.content.Context]] - code
-- [[android.graphics.RectF]] - code
-- [[android.view.animation.OvershootInterpolator]] - code
+- [[android.content.res.Resources]] - code
 
 ## Live Query (requires Dataview plugin)
 
@@ -57,24 +49,19 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 23 edges to [[_COMMUNITY_MainActivity]]
-- 16 edges to [[_COMMUNITY_Wallpapers]]
-- 11 edges to [[_COMMUNITY_TapWallpaper]]
-- 10 edges to [[_COMMUNITY_GlassCard]]
-- 6 edges to [[_COMMUNITY_android.graphics.Canvas]]
-- 6 edges to [[_COMMUNITY_ShizukuSetup.java]]
-- 5 edges to [[_COMMUNITY_NotchPanel.java]]
-- 3 edges to [[_COMMUNITY_PreviewActivity]]
-- 3 edges to [[_COMMUNITY_MainActivity.java]]
-- 3 edges to [[_COMMUNITY_LockService.java]]
-- 2 edges to [[_COMMUNITY_android.view.MotionEvent]]
-- 1 edge to [[_COMMUNITY_android.service.quicksettings.TileService]]
-- 1 edge to [[_COMMUNITY_Override]]
-- 1 edge to [[_COMMUNITY_android.os.Bundle]]
-- 1 edge to [[_COMMUNITY_Wallpapers.java]]
+- 18 edges to [[_COMMUNITY_NotchPanel]]
+- 11 edges to [[_COMMUNITY_MainActivity.java]]
+- 9 edges to [[_COMMUNITY_GlassCard]]
+- 7 edges to [[_COMMUNITY_TapWallpaper]]
+- 5 edges to [[_COMMUNITY_android.graphics.Canvas]]
+- 3 edges to [[_COMMUNITY_Wallpapers.java]]
+- 2 edges to [[_COMMUNITY_LockService.java]]
+- 1 edge to [[_COMMUNITY_ShizukuSetup.java]]
+- 1 edge to [[_COMMUNITY_NotchPanel.java]]
 
 ## Top bridge nodes
-- [[android.content.Context]] - degree 65, connects to 12 communities
-- [[dot-refreshState()]] - degree 15, connects to 4 communities
-- [[NotchPanel]] - degree 25, connects to 3 communities
-- [[dot-isActive()]] - degree 6, connects to 3 communities
-- [[dot-onCreate()_3]] - degree 8, connects to 2 communities
+- [[android.content.Context]] - degree 65, connects to 10 communities
+- [[dot-decode()]] - degree 9, connects to 4 communities
+- [[dot-refreshFavourites()]] - degree 5, connects to 3 communities
+- [[Wallpapers]] - degree 24, connects to 2 communities
+- [[Item]] - degree 11, connects to 2 communities

@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/VolumeTile.java"
 type: "code"
-community: "android.service.quicksettings.TileService"
+community: "log"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidservicequicksettingsTileService
+  - community/log
 ---
 
 # VolumeTile.java
@@ -16,4 +16,4 @@ tags:
 - [[android.media.AudioManager]] - `imports` [EXTRACTED]
 - [[android.service.quicksettings.TileService]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidservicequicksettingsTileService
+#graphify/code #graphify/EXTRACTED #community/log

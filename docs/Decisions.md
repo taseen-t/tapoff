@@ -178,3 +178,14 @@ Newest at the bottom. Each one says why, so nobody undoes it by accident.
     long videos do 7.6K against 613K for its Shorts, so TapOff's version is Shorts only: problem → failed attempts →
     the fix, which is TapOff's real design history (button wears out, launcher-only gestures, always-on
     accessibility, device-admin PIN, then wallpaper taps + one-second accessibility). (2026-10-03)
+50. **F-Droid: not IzzyOnDroid, maybe official F-Droid later, Obtainium now.** IzzyOnDroid rejects apps whose code was
+    written with generative AI, and TapOff's commits are co-authored by Claude; we don't hide that. Official F-Droid
+    has no AI policy yet, builds from source with a free toolchain (build.sh qualifies), would likely flag the Bing and
+    Wallhaven wallpapers as NonFreeNet, and signs with its own key. It needs a merge request from Taseen's GitLab
+    account. Shizuku is unrelated: it grants the permission; F-Droid is where people install and update. Obtainium
+    already tracks the GitHub releases. (2026-10-03)
+51. **The launch guide lives outside the repo.** It holds the unposted Reddit texts, so the full guide is in Claude's
+    private global notes and on a private page for Taseen; the public repo keeps [[Research - reach]]. Content mix:
+    about 70% made by Claude (3D, screen recordings, AI voice), 20% Taseen's hands on the real phone (proof it's
+    real), 10% his own voice for the story and replies. Two videos a week (Reel + Short), one Reddit post a week for
+    six weeks, then keep the two formats with the best median views. (2026-10-03)

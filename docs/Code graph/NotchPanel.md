@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/NotchPanel.java"
 type: "code"
-community: "android.content.Context"
+community: "NotchPanel"
 location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidcontentContext
+  - community/NotchPanel
 ---
 
 # NotchPanel
@@ -38,4 +38,4 @@ tags:
 - [[android.media.AudioManager]] - `references` [EXTRACTED]
 - [[android.view.WindowManager]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidcontentContext
+#graphify/code #graphify/EXTRACTED #community/NotchPanel

@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/MainActivity.java"
 type: "code"
-community: "android.content.Context"
+community: "NotchPanel"
 location: "L188"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidcontentContext
+  - community/NotchPanel
 ---
 
 # .onResume()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-refreshState()]] - `calls` [EXTRACTED]
 - [[MainActivity]] - `method` [EXTRACTED]
-- [[Override_2]] - `references` [EXTRACTED]
+- [[Override_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidcontentContext
+#graphify/code #graphify/EXTRACTED #community/NotchPanel

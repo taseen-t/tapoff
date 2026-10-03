@@ -1,17 +1,17 @@
 # Graph Report - tapoff  (2026-10-03)
 
 ## Corpus Check
-- 26 files · ~39,925 words
+- 26 files · ~40,393 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 41 file(s) not represented in the graph (top: .xml 34, (none) 4, .aidl 3)
 
 ## Summary
-- 483 nodes · 1218 edges · 28 communities (23 shown, 5 thin omitted)
+- 484 nodes · 1219 edges · 26 communities (21 shown, 5 thin omitted)
 - Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 34 edges (avg confidence: 0.92)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `d2fb8fb1`
+- Built from commit: `6c26d724`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -20,14 +20,13 @@
 - MainActivity.java
 - TapWallpaper
 - GlassCard
-- android.content.Context
+- NotchPanel
 - android.graphics.Canvas
 - Progress log
 - Wallpapers.java
-- Wallpapers
-- PreviewActivity
-- NotchPanel.java
-- android.service.quicksettings.TileService
+- android.content.Context
+- TapWallpaper.java
+- log
 - TapOff
 - Override
 - build.sh
@@ -36,9 +35,8 @@
 - imagebutton
 - overshootinterpolator
 - Reddit
-- android.os.Bundle
+- NotchPanel.java
 - LockService.java
-- android.view.MotionEvent
 - Tasks
 - Setup guide (portrait, ~99 s)
 - Checks
@@ -71,51 +69,47 @@
 ## Import Cycles
 - None detected.
 
-## Communities (28 total, 5 thin omitted)
+## Communities (26 total, 5 thin omitted)
 
 ### Community 0 - "MainActivity"
-Cohesion: 0.11
-Nodes (16): android.graphics.Bitmap, android.graphics.drawable.GradientDrawable, android.widget.FrameLayout, android.widget.ImageView, android.widget.LinearLayout, android.widget.Switch, android.widget.TextView, ArgbEvaluator (+8 more)
+Cohesion: 0.10
+Nodes (15): android.graphics.Bitmap, android.graphics.drawable.GradientDrawable, android.widget.LinearLayout, android.widget.ScrollView, android.widget.Switch, android.widget.TextView, ArgbEvaluator, UI (+7 more)
 
 ### Community 1 - "MainActivity.java"
-Cohesion: 0.10
-Nodes (22): android.graphics.Typeface, android.widget.Button, android.widget.ImageButton, android.widget.ProgressBar, android.widget.ScrollView, colorstatelist, configuration, decelerateinterpolator (+14 more)
+Cohesion: 0.07
+Nodes (31): android.app.Activity, android.content.Intent, android.graphics.Typeface, android.view.MotionEvent, android.view.VelocityTracker, android.view.View, android.widget.Button, android.widget.FrameLayout (+23 more)
 
 ### Community 2 - "TapWallpaper"
 Cohesion: 0.07
-Nodes (22): android.app.WallpaperColors, android.view.accessibility.AccessibilityEvent, android.view.SurfaceHolder, BroadcastReceiver, ContentObserver, Architecture, Brightness and volume sliders (`NotchPanel.java`), Icons (+14 more)
+Nodes (24): android.accessibilityservice.AccessibilityService, android.app.WallpaperColors, android.service.wallpaper.WallpaperService, android.view.accessibility.AccessibilityEvent, android.view.SurfaceHolder, BroadcastReceiver, ContentObserver, Architecture (+16 more)
 
 ### Community 3 - "GlassCard"
-Cohesion: 0.09
-Nodes (18): acceleratedecelerateinterpolator, android.animation.ValueAnimator, android.graphics.drawable.Drawable, android.graphics.Matrix, android.graphics.Paint, android.view.View, lineargradient, linearinterpolator (+10 more)
+Cohesion: 0.08
+Nodes (17): acceleratedecelerateinterpolator, android.animation.ValueAnimator, android.graphics.drawable.Drawable, android.graphics.Matrix, android.graphics.Paint, lineargradient, linearinterpolator, path (+9 more)
 
-### Community 4 - "android.content.Context"
-Cohesion: 0.11
-Nodes (8): android.content.Context, android.graphics.RectF, android.view.animation.OvershootInterpolator, LayoutParams, Override, NotchPanel, Panel, Override
+### Community 4 - "NotchPanel"
+Cohesion: 0.08
+Nodes (8): android.graphics.RectF, android.view.animation.OvershootInterpolator, Setup without a computer (`ShizukuSetup.java`), LayoutParams, Override, NotchPanel, Panel, Override
 
 ### Community 6 - "Progress log"
-Cohesion: 0.17
-Nodes (12): 2026-09-30 · 1.7: slide the edges, 2026-09-30 (evening) · 1.9: setup without a computer, 2026-09-30 (late) · Play Protect block: a no-computer way in, 2026-09-30 (later) · 1.8: back-tap sliders, favourites, NASA, 2026-09-30 (night) · Shizuku PR, brag video, 2026-10-01 · Setup guide video, 2026-10-02 (evening) · Video controls, video shadow, telling people, 2026-10-02 · Setup video on the website (+4 more)
+Cohesion: 0.15
+Nodes (13): 2026-09-30 · 1.7: slide the edges, 2026-09-30 (evening) · 1.9: setup without a computer, 2026-09-30 (late) · Play Protect block: a no-computer way in, 2026-09-30 (later) · 1.8: back-tap sliders, favourites, NASA, 2026-09-30 (night) · Shizuku PR, brag video, 2026-10-01 · Setup guide video, 2026-10-02 (evening) · Video controls, video shadow, telling people, 2026-10-02 · Setup video on the website (+5 more)
 
 ### Community 7 - "Wallpapers.java"
 Cohesion: 0.11
 Nodes (18): arrays, comparator, consumer, fileoutputstream, httpurlconnection, imagedecoder, inputstream, jsonarray (+10 more)
 
-### Community 8 - "Wallpapers"
-Cohesion: 0.16
-Nodes (6): android.content.res.Resources, Wallpapers, Collection, Item, Rect, Wallpapers
-
-### Community 9 - "PreviewActivity"
+### Community 8 - "android.content.Context"
 Cohesion: 0.18
-Nodes (3): android.content.Intent, Override, PreviewActivity
+Nodes (7): android.content.Context, android.content.res.Resources, Wallpapers, Collection, Item, Rect, Wallpapers
 
-### Community 10 - "NotchPanel.java"
-Cohesion: 0.13
-Nodes (15): android.service.wallpaper.WallpaperService, android.view.WindowManager, bitmapfactory, canvas, color, display, displaymanager, log (+7 more)
+### Community 10 - "TapWallpaper.java"
+Cohesion: 0.22
+Nodes (8): bitmapfactory, canvas, color, systemclock, vibrationeffect, vibratormanager, viewconfiguration, wallpapermanager
 
-### Community 11 - "android.service.quicksettings.TileService"
-Cohesion: 0.25
-Nodes (6): android.media.AudioManager, android.service.quicksettings.TileService, Override, ScreenOffTile, Override, VolumeTile
+### Community 11 - "log"
+Cohesion: 0.22
+Nodes (7): android.media.AudioManager, android.service.quicksettings.TileService, log, Override, ScreenOffTile, Override, VolumeTile
 
 ### Community 12 - "TapOff"
 Cohesion: 0.15
@@ -130,24 +124,20 @@ Cohesion: 0.50
 Nodes (3): JAVA_HOME, PATH, build.sh script
 
 ### Community 15 - "ShizukuSetup.java"
-Cohesion: 0.10
-Nodes (20): android.content.ContentProvider, android.content.ContentValues, android.database.Cursor, android.net.Uri, android.os.Handler, android.os.IBinder, android.os.Parcel, android.os.Parcelable (+12 more)
+Cohesion: 0.11
+Nodes (20): android.content.ContentProvider, android.content.ContentValues, android.database.Cursor, android.net.Uri, android.os.Bundle, android.os.Handler, android.os.IBinder, android.os.Parcel (+12 more)
 
 ### Community 19 - "Reddit"
 Cohesion: 0.22
 Nodes (9): Facts each post must get right, Instagram (Reels), Method, Reddit, Research - reach, The demand is real, and the competition is known, What gets upvotes, What to post where (+1 more)
 
-### Community 20 - "android.os.Bundle"
-Cohesion: 0.25
-Nodes (6): android.app.Activity, android.os.Bundle, file, intent, ioexception, toast
+### Community 20 - "NotchPanel.java"
+Cohesion: 0.22
+Nodes (9): android.view.WindowManager, display, displaymanager, file, intent, ioexception, pixelformat, toast (+1 more)
 
 ### Community 21 - "LockService.java"
-Cohesion: 0.14
-Nodes (14): android.accessibilityservice.AccessibilityService, arraylist, componentname, contentresolver, dashpatheffect, displaycutout, files, list (+6 more)
-
-### Community 22 - "android.view.MotionEvent"
-Cohesion: 0.29
-Nodes (3): android.view.MotionEvent, android.view.VelocityTracker, SwipeRoot
+Cohesion: 0.15
+Nodes (13): arraylist, componentname, contentresolver, dashpatheffect, displaycutout, files, list, packagemanager (+5 more)
 
 ### Community 24 - "Tasks"
 Cohesion: 0.29
@@ -166,24 +156,24 @@ Cohesion: 0.67
 Nodes (3): Keeping this current, Notes, TapOff
 
 ## Knowledge Gaps
-- **54 isolated node(s):** `build.sh script`, `JAVA_HOME`, `PATH`, `PRIMARY`, `SECONDARY` (+49 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 121 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **55 isolated node(s):** `build.sh script`, `JAVA_HOME`, `PATH`, `PRIMARY`, `SECONDARY` (+50 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 122 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **5 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `MainActivity` connect `MainActivity` to `MainActivity.java`, `TapWallpaper`, `GlassCard`, `android.content.Context`, `Wallpapers`, `PreviewActivity`, `Override`, `ShizukuSetup.java`, `android.os.Bundle`, `android.view.MotionEvent`?**
+- **Why does `MainActivity` connect `MainActivity` to `MainActivity.java`, `TapWallpaper`, `GlassCard`, `NotchPanel`, `android.content.Context`, `Override`, `ShizukuSetup.java`?**
   _High betweenness centrality (0.147) - this node is a cross-community bridge._
 - **Why does `Decisions` connect `TapWallpaper` to `ShizukuSetup.java`, `Decisions.md`?**
-  _High betweenness centrality (0.109) - this node is a cross-community bridge._
-- **Why does `Architecture` connect `TapWallpaper` to `MainActivity`, `Wallpapers`, `ShizukuSetup.java`, `Decisions.md`?**
-  _High betweenness centrality (0.087) - this node is a cross-community bridge._
+  _High betweenness centrality (0.110) - this node is a cross-community bridge._
+- **Why does `Architecture` connect `TapWallpaper` to `MainActivity`, `android.content.Context`, `NotchPanel`, `Decisions.md`?**
+  _High betweenness centrality (0.089) - this node is a cross-community bridge._
 - **What connects `build.sh script`, `JAVA_HOME`, `PATH` to the rest of the system?**
-  _54 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _55 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `MainActivity` be split into smaller, more focused modules?**
-  _Cohesion score 0.10564971751412429 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.09779825908858167 - nodes in this community are weakly interconnected._
 - **Should `MainActivity.java` be split into smaller, more focused modules?**
-  _Cohesion score 0.10333333333333333 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06636500754147813 - nodes in this community are weakly interconnected._
 - **Should `TapWallpaper` be split into smaller, more focused modules?**
-  _Cohesion score 0.07439613526570048 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07215541165587419 - nodes in this community are weakly interconnected._

@@ -15,7 +15,7 @@ tags:
 - [[dot-backTapSeen()]] - `method` [EXTRACTED]
 - [[dot-forgetBackTap()]] - `method` [EXTRACTED]
 - [[dot-fromLauncher()]] - `method` [EXTRACTED]
-- [[dot-onCreate()_3]] - `method` [EXTRACTED]
+- [[dot-onCreate()_4]] - `method` [EXTRACTED]
 - [[Brightness and volume sliders (`NotchPanel.java`)]] - `references` [INFERRED]
 - [[Decisions]] - `references` [INFERRED]
 - [[SlidersActivity.java]] - `contains` [EXTRACTED]

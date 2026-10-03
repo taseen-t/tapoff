@@ -1,17 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "PreviewActivity"
+community: "NotchPanel"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PreviewActivity
+  - community/NotchPanel
 ---
 
 # Override
 
 ## Connections
 - [[dot-onCreate()_4]] - `references` [EXTRACTED]
-- [[dot-onDestroy()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PreviewActivity
+#graphify/code #graphify/EXTRACTED #community/NotchPanel

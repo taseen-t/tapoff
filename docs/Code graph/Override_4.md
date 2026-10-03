@@ -11,7 +11,12 @@ tags:
 # Override
 
 ## Connections
-- [[dot-describeContents()]] - `references` [EXTRACTED]
-- [[dot-writeToParcel()]] - `references` [EXTRACTED]
+- [[dot-call()]] - `references` [EXTRACTED]
+- [[dot-delete()]] - `references` [EXTRACTED]
+- [[dot-getType()]] - `references` [EXTRACTED]
+- [[dot-insert()]] - `references` [EXTRACTED]
+- [[dot-onCreate()_2]] - `references` [EXTRACTED]
+- [[dot-query()]] - `references` [EXTRACTED]
+- [[dot-update()]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ShizukuSetupjava

@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/MainActivity.java"
 type: "code"
-community: "ShizukuSetup.java"
+community: "NotchPanel"
 location: "L619"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ShizukuSetupjava
+  - community/NotchPanel
 ---
 
 # .setupWithShizuku()
@@ -21,4 +21,4 @@ tags:
 - [[MainActivity]] - `method` [EXTRACTED]
 - [[Setup without a computer (`ShizukuSetup.java`)]] - `references` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/ShizukuSetupjava
+#graphify/code #graphify/EXTRACTED #community/NotchPanel

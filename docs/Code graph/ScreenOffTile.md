@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/ScreenOffTile.java"
 type: "code"
-community: "android.service.quicksettings.TileService"
+community: "log"
 location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidservicequicksettingsTileService
+  - community/log
 ---
 
 # ScreenOffTile
@@ -16,4 +16,4 @@ tags:
 - [[ScreenOffTile.java]] - `contains` [EXTRACTED]
 - [[android.service.quicksettings.TileService]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidservicequicksettingsTileService
+#graphify/code #graphify/EXTRACTED #community/log

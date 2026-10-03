@@ -1,12 +1,12 @@
 ---
 source_file: "docs/Architecture.md"
 type: "document"
-community: "ShizukuSetup.java"
+community: "NotchPanel"
 location: "L24"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/ShizukuSetupjava
+  - community/NotchPanel
 ---
 
 # Setup without a computer (`ShizukuSetup.java`)
@@ -19,4 +19,4 @@ tags:
 - [[dot-setupWithShizuku()]] - `references` [INFERRED]
 - [[Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/ShizukuSetupjava
+#graphify/document #graphify/INFERRED #community/NotchPanel

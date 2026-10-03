@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/MainActivity.java"
 type: "code"
-community: "PreviewActivity"
+community: "MainActivity.java"
 location: "L1004"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PreviewActivity
+  - community/MainActivityjava
 ---
 
 # .onActivityResult()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-intent()]] - `calls` [EXTRACTED]
 - [[MainActivity]] - `method` [EXTRACTED]
-- [[Override_2]] - `references` [EXTRACTED]
+- [[Override_3]] - `references` [EXTRACTED]
 - [[android.content.Intent]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PreviewActivity
+#graphify/code #graphify/EXTRACTED #community/MainActivityjava

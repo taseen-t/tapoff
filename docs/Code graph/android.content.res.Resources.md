@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Wallpapers"
+community: "android.content.Context"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Wallpapers
+  - community/androidcontentContext
 ---
 
 # android.content.res.Resources
@@ -15,4 +15,4 @@ tags:
 - [[Wallpapers]] - `references` [EXTRACTED]
 - [[Wallpapers.java]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Wallpapers
+#graphify/code #graphify/EXTRACTED #community/androidcontentContext

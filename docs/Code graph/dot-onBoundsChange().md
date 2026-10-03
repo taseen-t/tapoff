@@ -12,7 +12,7 @@ tags:
 # .onBoundsChange()
 
 ## Connections
-- [[Override_2]] - `references` [EXTRACTED]
+- [[Override_3]] - `references` [EXTRACTED]
 - [[Rect]] - `references` [EXTRACTED]
 - [[SwitchPart]] - `method` [EXTRACTED]
 

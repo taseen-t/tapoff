@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "android.os.Bundle"
+community: "NotchPanel.java"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/androidosBundle
+  - community/NotchPaneljava
 ---
 
 # file
@@ -17,4 +17,4 @@ tags:
 - [[TapWallpaper.java]] - `imports` [EXTRACTED]
 - [[Wallpapers.java]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/androidosBundle
+#graphify/concept #graphify/EXTRACTED #community/NotchPaneljava

@@ -12,8 +12,8 @@ tags:
 # .onComputeColors()
 
 ## Connections
-- [[dot-load()]] - `calls` [EXTRACTED]
-- [[Override_6]] - `references` [EXTRACTED]
+- [[dot-load()_1]] - `calls` [EXTRACTED]
+- [[Override_7]] - `references` [EXTRACTED]
 - [[TapEngine]] - `method` [EXTRACTED]
 - [[Wallpapers_1]] - `references` [INFERRED]
 - [[android.app.WallpaperColors]] - `references` [EXTRACTED]

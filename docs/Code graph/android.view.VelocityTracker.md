@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "android.view.MotionEvent"
+community: "MainActivity.java"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidviewMotionEvent
+  - community/MainActivityjava
 ---
 
 # android.view.VelocityTracker
@@ -16,4 +16,4 @@ tags:
 - [[PreviewActivity.java]] - `imports` [EXTRACTED]
 - [[SwipeRoot]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidviewMotionEvent
+#graphify/code #graphify/EXTRACTED #community/MainActivityjava

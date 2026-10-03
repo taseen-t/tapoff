@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/MainActivity.java"
 type: "code"
-community: "android.view.MotionEvent"
+community: "MainActivity.java"
 location: "L817"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidviewMotionEvent
+  - community/MainActivityjava
 ---
 
 # .beginPageDrag()
@@ -15,4 +15,4 @@ tags:
 - [[dot-onInterceptTouchEvent()]] - `calls` [EXTRACTED]
 - [[MainActivity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidviewMotionEvent
+#graphify/code #graphify/EXTRACTED #community/MainActivityjava

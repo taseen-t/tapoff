@@ -12,8 +12,8 @@ tags:
 # .photo()
 
 ## Connections
-- [[dot-apply()]] - `calls` [EXTRACTED]
-- [[dot-load()]] - `calls` [EXTRACTED]
+- [[dot-apply()_1]] - `calls` [EXTRACTED]
+- [[dot-load()_1]] - `calls` [EXTRACTED]
 - [[Context_1]] - `references` [EXTRACTED]
 - [[TapWallpaper]] - `method` [EXTRACTED]
 

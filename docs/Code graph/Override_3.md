@@ -1,22 +1,29 @@
 ---
 source_file: ""
 type: "code"
-community: "ShizukuSetup.java"
+community: "Override"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ShizukuSetupjava
+  - community/Override
 ---
 
 # Override
 
 ## Connections
-- [[dot-call()]] - `references` [EXTRACTED]
-- [[dot-delete()]] - `references` [EXTRACTED]
-- [[dot-getType()]] - `references` [EXTRACTED]
-- [[dot-insert()]] - `references` [EXTRACTED]
-- [[dot-onCreate()_1]] - `references` [EXTRACTED]
-- [[dot-query()]] - `references` [EXTRACTED]
-- [[dot-update()]] - `references` [EXTRACTED]
+- [[dot-getIntrinsicHeight()]] - `references` [EXTRACTED]
+- [[dot-getIntrinsicWidth()]] - `references` [EXTRACTED]
+- [[dot-getOpacity()]] - `references` [EXTRACTED]
+- [[dot-onActivityResult()]] - `references` [EXTRACTED]
+- [[dot-onBoundsChange()]] - `references` [EXTRACTED]
+- [[dot-onConfigurationChanged()]] - `references` [EXTRACTED]
+- [[dot-onCreate()]] - `references` [EXTRACTED]
+- [[dot-onDestroy()_1]] - `references` [EXTRACTED]
+- [[dot-onInterceptTouchEvent()]] - `references` [EXTRACTED]
+- [[dot-onResume()]] - `references` [EXTRACTED]
+- [[dot-onSaveInstanceState()]] - `references` [EXTRACTED]
+- [[dot-onTouchEvent()]] - `references` [EXTRACTED]
+- [[dot-setAlpha()]] - `references` [EXTRACTED]
+- [[dot-setColorFilter()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ShizukuSetupjava
+#graphify/code #graphify/EXTRACTED #community/Override

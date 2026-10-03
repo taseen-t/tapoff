@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "android.content.Context"
+community: "NotchPanel"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidcontentContext
+  - community/NotchPanel
 ---
 
 # android.view.animation.OvershootInterpolator
@@ -14,4 +14,4 @@ tags:
 - [[NotchPanel.java]] - `imports` [EXTRACTED]
 - [[Panel]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidcontentContext
+#graphify/code #graphify/EXTRACTED #community/NotchPanel

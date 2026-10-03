@@ -5,6 +5,21 @@ tags: [tapoff, log]
 
 Newest first. Each entry: done / blocked / next.
 
+## 2026-10-03 (evening) · Launch guide, F-Droid
+**Done**
+- Launch guide: research summary, a week-by-week video calendar to March 2027 (12 videos specified), the face /
+  voice / Claude mix, the 9 Reddit posts with context. Published privately for Taseen; Claude's copy in the private
+  global notes ([[Decisions]] #51).
+- F-Droid checked: IzzyOnDroid rejects AI-written code; official F-Droid possible later; Obtainium works now
+  ([[Decisions]] #50).
+- Drafts now use Taseen's real bank-app story; r/Android waits (no posting history there); r/PakistaniTech needs a
+  modmail first.
+- Baseline before posting: 36 downloads across all releases, 10 for v1.9.
+
+**Next**
+- Taseen posts on r/androidapps; tests Developer options off; decides on F-Droid. Claude makes V1 when the hand clips
+  arrive.
+
 ## 2026-10-03 (later) · Research: Reddit, Instagram, Infinite Desk
 **Done**
 - Reddit: 17 subreddits sized and rule-checked, 20+ searches read for what gets upvotes, the double-tap threads read.

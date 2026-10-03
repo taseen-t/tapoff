@@ -11,7 +11,7 @@ tags:
 # android.graphics.Bitmap
 
 ## Connections
-- [[dot-apply()]] - `references` [EXTRACTED]
+- [[dot-apply()_1]] - `references` [EXTRACTED]
 - [[dot-decode()]] - `references` [EXTRACTED]
 - [[dot-render()]] - `references` [EXTRACTED]
 - [[dot-screenCrop()]] - `references` [EXTRACTED]

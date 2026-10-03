@@ -37,12 +37,12 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 4 edges to [[_COMMUNITY_LockService.java]]
-- 2 edges to [[_COMMUNITY_Wallpapers]]
+- 3 edges to [[_COMMUNITY_android.content.Context]]
 - 2 edges to [[_COMMUNITY_NotchPanel.java]]
-- 2 edges to [[_COMMUNITY_android.os.Bundle]]
 - 1 edge to [[_COMMUNITY_MainActivity]]
 - 1 edge to [[_COMMUNITY_ShizukuSetup.java]]
-- 1 edge to [[_COMMUNITY_android.content.Context]]
+- 1 edge to [[_COMMUNITY_log]]
+- 1 edge to [[_COMMUNITY_TapWallpaper.java]]
 
 ## Top bridge nodes
 - [[Wallpapers.java]] - degree 31, connects to 7 communities

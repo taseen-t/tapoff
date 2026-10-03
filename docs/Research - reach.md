@@ -5,7 +5,9 @@ tags: [tapoff, research, launch]
 
 Where telling people about TapOff can land, what gets reach there, and the video styles worth copying. Researched
 2026-10-03. Posts are written from the problem side, by the developer, never as a pitch or as a "user who found it".
-Drafts live outside the repo (they're unposted); this note keeps the findings. See [[Decisions]] #48–49.
+Drafts and the full launch guide (video calendar to March 2027, the posts) live outside the repo because they're
+unposted: Claude's copy is in its private global notes (`tapoff/Launch guide.md`). This note keeps the findings. See
+[[Decisions]] #48–51.
 
 ## Reddit
 

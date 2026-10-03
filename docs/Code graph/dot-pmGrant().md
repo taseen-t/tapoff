@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/ShizukuSetup.java"
 type: "code"
-community: "ShizukuSetup.java"
+community: "NotchPanel"
 location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ShizukuSetupjava
+  - community/NotchPanel
 ---
 
 # .pmGrant()
@@ -16,4 +16,4 @@ tags:
 - [[Setup without a computer (`ShizukuSetup.java`)]] - `references` [INFERRED]
 - [[ShizukuSetup]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ShizukuSetupjava
+#graphify/code #graphify/EXTRACTED #community/NotchPanel

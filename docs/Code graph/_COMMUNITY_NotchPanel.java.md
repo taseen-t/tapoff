@@ -1,31 +1,24 @@
 ---
 type: community
-members: 18
+members: 11
 ---
 
 # NotchPanel.java
 
-**Members:** 18 nodes
+**Members:** 11 nodes
 
 ## Members
 - [[NotchPanel.java]] - code - src/com/taseen/tapoff/NotchPanel.java
-- [[ScreenOffTile.java]] - code - src/com/taseen/tapoff/ScreenOffTile.java
-- [[TapWallpaper.java]] - code - src/com/taseen/tapoff/TapWallpaper.java
-- [[android.service.wallpaper.WallpaperService]] - code
+- [[SlidersActivity.java]] - code - src/com/taseen/tapoff/SlidersActivity.java
 - [[android.view.WindowManager]] - code
-- [[bitmapfactory]] - concept
-- [[canvas]] - concept
-- [[color]] - concept
 - [[display]] - concept
 - [[displaymanager]] - concept
-- [[log]] - concept
-- [[settings]] - concept
-- [[systemclock]] - concept
+- [[file]] - concept
+- [[intent]] - concept
+- [[ioexception]] - concept
+- [[pixelformat]] - concept
+- [[toast]] - concept
 - [[vibrationattributes]] - concept
-- [[vibrationeffect]] - concept
-- [[vibratormanager]] - concept
-- [[viewconfiguration]] - concept
-- [[wallpapermanager]] - concept
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,21 +29,20 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 7 edges to [[_COMMUNITY_MainActivity.java]]
-- 7 edges to [[_COMMUNITY_GlassCard]]
-- 5 edges to [[_COMMUNITY_android.content.Context]]
-- 5 edges to [[_COMMUNITY_android.os.Bundle]]
-- 4 edges to [[_COMMUNITY_TapWallpaper]]
-- 4 edges to [[_COMMUNITY_LockService.java]]
-- 3 edges to [[_COMMUNITY_android.service.quicksettings.TileService]]
+- 6 edges to [[_COMMUNITY_LockService.java]]
+- 4 edges to [[_COMMUNITY_NotchPanel]]
+- 4 edges to [[_COMMUNITY_TapWallpaper.java]]
+- 4 edges to [[_COMMUNITY_GlassCard]]
+- 2 edges to [[_COMMUNITY_log]]
+- 2 edges to [[_COMMUNITY_ShizukuSetup.java]]
 - 2 edges to [[_COMMUNITY_Wallpapers.java]]
-- 1 edge to [[_COMMUNITY_MainActivity]]
-- 1 edge to [[_COMMUNITY_android.view.MotionEvent]]
+- 1 edge to [[_COMMUNITY_TapWallpaper]]
+- 1 edge to [[_COMMUNITY_android.content.Context]]
 - 1 edge to [[_COMMUNITY_android.graphics.Canvas]]
-- 1 edge to [[_COMMUNITY_ShizukuSetup.java]]
 
 ## Top bridge nodes
 - [[NotchPanel.java]] - degree 27, connects to 8 communities
-- [[TapWallpaper.java]] - degree 19, connects to 4 communities
-- [[log]] - degree 7, connects to 3 communities
+- [[SlidersActivity.java]] - degree 8, connects to 3 communities
+- [[file]] - degree 5, connects to 3 communities
+- [[ioexception]] - degree 4, connects to 2 communities
 - [[android.view.WindowManager]] - degree 3, connects to 2 communities
-- [[wallpapermanager]] - degree 3, connects to 2 communities

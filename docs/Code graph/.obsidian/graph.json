@@ -29,7 +29,7 @@
       }
     },
     {
-      "query": "tag:#community/androidcontentContext",
+      "query": "tag:#community/NotchPanel",
       "color": {
         "a": 1,
         "rgb": 5873999
@@ -57,28 +57,21 @@
       }
     },
     {
-      "query": "tag:#community/Wallpapers",
+      "query": "tag:#community/androidcontentContext",
       "color": {
         "a": 1,
         "rgb": 10253663
       }
     },
     {
-      "query": "tag:#community/PreviewActivity",
-      "color": {
-        "a": 1,
-        "rgb": 12234924
-      }
-    },
-    {
-      "query": "tag:#community/NotchPaneljava",
+      "query": "tag:#community/TapWallpaperjava",
       "color": {
         "a": 1,
         "rgb": 5142951
       }
     },
     {
-      "query": "tag:#community/androidservicequicksettingsTileService",
+      "query": "tag:#community/log",
       "color": {
         "a": 1,
         "rgb": 15896107
@@ -141,7 +134,7 @@
       }
     },
     {
-      "query": "tag:#community/androidosBundle",
+      "query": "tag:#community/NotchPaneljava",
       "color": {
         "a": 1,
         "rgb": 5142951
@@ -152,13 +145,6 @@
       "color": {
         "a": 1,
         "rgb": 15896107
-      }
-    },
-    {
-      "query": "tag:#community/androidviewMotionEvent",
-      "color": {
-        "a": 1,
-        "rgb": 14767961
       }
     },
     {

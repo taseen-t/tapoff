@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-draw()]] - `method` [EXTRACTED]
-- [[dot-load()]] - `method` [EXTRACTED]
+- [[dot-load()_1]] - `method` [EXTRACTED]
 - [[dot-onCommand()]] - `method` [EXTRACTED]
 - [[dot-onComputeColors()]] - `method` [EXTRACTED]
 - [[dot-onCreateEngine()]] - `calls` [EXTRACTED]

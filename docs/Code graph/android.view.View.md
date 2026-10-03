@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "GlassCard"
+community: "MainActivity.java"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GlassCard
+  - community/MainActivityjava
 ---
 
 # android.view.View
@@ -27,4 +27,4 @@ tags:
 - [[SwipeHint]] - `inherits` [EXTRACTED]
 - [[SwipeHint.java]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GlassCard
+#graphify/code #graphify/EXTRACTED #community/MainActivityjava

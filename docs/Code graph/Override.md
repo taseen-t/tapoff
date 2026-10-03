@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "android.service.quicksettings.TileService"
+community: "MainActivity.java"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidservicequicksettingsTileService
+  - community/MainActivityjava
 ---
 
 # Override
 
 ## Connections
-- [[dot-onClick()]] - `references` [EXTRACTED]
+- [[dot-onCreate()_1]] - `references` [EXTRACTED]
+- [[dot-onDestroy()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidservicequicksettingsTileService
+#graphify/code #graphify/EXTRACTED #community/MainActivityjava

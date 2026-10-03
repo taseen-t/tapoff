@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "android.os.Bundle"
+community: "MainActivity.java"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/androidosBundle
+  - community/MainActivityjava
 ---
 
 # android.app.Activity
@@ -18,4 +18,4 @@ tags:
 - [[SlidersActivity]] - `inherits` [EXTRACTED]
 - [[SlidersActivity.java]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/androidosBundle
+#graphify/code #graphify/EXTRACTED #community/MainActivityjava

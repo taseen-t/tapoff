@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "android.os.Bundle"
+community: "NotchPanel.java"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/androidosBundle
+  - community/NotchPaneljava
 ---
 
 # intent
@@ -14,4 +14,4 @@ tags:
 - [[NotchPanel.java]] - `imports` [EXTRACTED]
 - [[SlidersActivity.java]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/androidosBundle
+#graphify/concept #graphify/EXTRACTED #community/NotchPaneljava

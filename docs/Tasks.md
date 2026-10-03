@@ -203,7 +203,15 @@ Every request goes here the moment it's asked. Tick subtasks as they land. Never
         git-ignored `outreach/` folder, not the repo)
   - [ ] Taseen: which account posts (r/Android needs 3+ months and posting history there); did a bank app really refuse
         to open beside an accessibility service (drafts say "some" until then)
-  - [ ] Taseen posts, one sub a day, with time to answer comments
+  - [x] Taseen's answers: posts from his personal account (no r/Android history yet, so r/Android waits); his bank app
+        really wouldn't open beside an always-on accessibility service and works with TapOff (drafts updated)
+  - [ ] Taseen posts, one sub a day, with time to answer comments (r/androidapps first)
+  - [ ] Taseen tests: Developer options fully off → does the double-tap still work? (bank apps make people turn it off)
+- [x] Complete launch guide: what we found, the posts with their context, a video calendar from now to March, and
+      whether videos need Taseen's face or voice. One copy for Taseen (published page), one for Claude (private global
+      notes, since the repo is public and the posts aren't out yet) ([[Decisions]] #51)
+- [ ] F-Droid? IzzyOnDroid is out (rejects AI-written code); official F-Droid is possible but slow and needs Taseen's
+      GitLab account. Obtainium works now. Waiting on Taseen's go ([[Decisions]] #50)
 - [x] Instagram: what kind of problem-solving content gets the most views, so TapOff makes more of that
   - [x] 6 tags, 72 Reels: a phone problem in the first line + a hidden trick or app that fixes it + a quick demo, under
         broad tags (#techtips median 3.95M views, #pixeltips 564). 3 Reel outlines written

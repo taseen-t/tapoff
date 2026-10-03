@@ -15,9 +15,9 @@ tags:
 - [[dot-addCard()]] - `calls` [EXTRACTED]
 - [[dot-buildUi()]] - `calls` [EXTRACTED]
 - [[dot-checkForUpdate()]] - `calls` [EXTRACTED]
-- [[dot-load()_1]] - `calls` [EXTRACTED]
+- [[dot-load()_2]] - `calls` [EXTRACTED]
 - [[MainActivity]] - `method` [EXTRACTED]
-- [[Override_2]] - `references` [EXTRACTED]
+- [[Override_3]] - `references` [EXTRACTED]
 - [[android.os.Bundle]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MainActivity

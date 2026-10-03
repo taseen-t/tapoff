@@ -1,25 +1,21 @@
 ---
-source_file: "src/com/taseen/tapoff/Wallpapers.java"
+source_file: "src/com/taseen/tapoff/TapWallpaper.java"
 type: "code"
-community: "Wallpapers"
-location: "L91"
+community: "TapWallpaper"
+location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Wallpapers
+  - community/TapWallpaper
 ---
 
 # .load()
 
 ## Connections
-- [[dot-bing()]] - `calls` [EXTRACTED]
-- [[dot-collection()]] - `calls` [EXTRACTED]
-- [[dot-nasa()]] - `calls` [EXTRACTED]
-- [[dot-onCreate()]] - `calls` [EXTRACTED]
-- [[dot-pixel()]] - `calls` [EXTRACTED]
-- [[dot-trimCache()]] - `calls` [EXTRACTED]
-- [[dot-wallhaven()]] - `calls` [EXTRACTED]
-- [[Wallpapers]] - `method` [EXTRACTED]
-- [[android.content.Context]] - `references` [EXTRACTED]
+- [[dot-onComputeColors()]] - `calls` [EXTRACTED]
+- [[dot-onSurfaceRedrawNeeded()]] - `calls` [EXTRACTED]
+- [[dot-onVisibilityChanged()]] - `calls` [EXTRACTED]
+- [[dot-photo()]] - `calls` [EXTRACTED]
+- [[TapEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Wallpapers
+#graphify/code #graphify/EXTRACTED #community/TapWallpaper

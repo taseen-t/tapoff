@@ -1,12 +1,12 @@
 ---
 source_file: "src/com/taseen/tapoff/ShizukuSetup.java"
 type: "code"
-community: "ShizukuSetup.java"
+community: "NotchPanel"
 location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ShizukuSetupjava
+  - community/NotchPanel
 ---
 
 # .running()
@@ -15,4 +15,4 @@ tags:
 - [[dot-setupWithShizuku()]] - `calls` [EXTRACTED]
 - [[ShizukuSetup]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ShizukuSetupjava
+#graphify/code #graphify/EXTRACTED #community/NotchPanel

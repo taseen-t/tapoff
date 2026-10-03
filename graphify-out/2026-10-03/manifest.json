@@ -90,27 +90,27 @@
     "semantic_hash": ""
   },
   "docs/Decisions.md": {
-    "mtime": 1790989655.0532057,
-    "seen": 1790989656.025182,
-    "ast_hash": "7b1a1ca5c7226a016dea4ebc9a207ee1",
+    "mtime": 1791006438.810704,
+    "seen": 1791006439.817257,
+    "ast_hash": "dcfe9144ba88a299c2a1f687ed076dd4",
     "semantic_hash": ""
   },
   "docs/Home.md": {
-    "mtime": 1790812073.7930715,
-    "seen": 1790954785.4019258,
-    "ast_hash": "eddaa3e7987f198c96d31984515359ec",
+    "mtime": 1791006438.812417,
+    "seen": 1791006439.817258,
+    "ast_hash": "448413e81bc407a55a3778ced335511f",
     "semantic_hash": ""
   },
   "docs/Progress log.md": {
-    "mtime": 1790989466.5656748,
-    "seen": 1790989467.525745,
-    "ast_hash": "547f6be1df24e151e923d60237b0cdc2",
+    "mtime": 1791006438.8117476,
+    "seen": 1791006439.817259,
+    "ast_hash": "709fd773f36adc3eafb9fe7c06c26a79",
     "semantic_hash": ""
   },
   "docs/Tasks.md": {
-    "mtime": 1790989655.0518181,
-    "seen": 1790989656.025184,
-    "ast_hash": "5c659c9d8fc272d41adf35278cc21fa1",
+    "mtime": 1791006438.8100865,
+    "seen": 1791006439.817261,
+    "ast_hash": "0482e45398b1e11327419b69e56d03c6",
     "semantic_hash": ""
   },
   "site/index.html": {
@@ -171,6 +171,12 @@
     "mtime": 1790956476.6750994,
     "seen": 1790957114.3580742,
     "ast_hash": "edec0495c3d8a33a460f501114534e45",
+    "semantic_hash": ""
+  },
+  "docs/Research - reach.md": {
+    "mtime": 1791006255.103773,
+    "seen": 1791006439.81726,
+    "ast_hash": "493194c5c97f6066ab0da66145b4409a",
     "semantic_hash": ""
   }
 }

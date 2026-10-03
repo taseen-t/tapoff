@@ -1,18 +1,18 @@
 ---
 source_file: "docs/Architecture.md"
 type: "document"
-community: "Wallpapers"
+community: "android.content.Context"
 location: "L50"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Wallpapers
+  - community/androidcontentContext
 ---
 
 # Wallpapers
 
 ## Connections
-- [[dot-apply()]] - `references` [INFERRED]
+- [[dot-apply()_1]] - `references` [INFERRED]
 - [[dot-favourites()]] - `references` [INFERRED]
 - [[dot-onComputeColors()]] - `references` [INFERRED]
 - [[dot-refreshFavourites()]] - `references` [INFERRED]
@@ -20,4 +20,4 @@ tags:
 - [[Architecture]] - `contains` [EXTRACTED]
 - [[TapWallpaper]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Wallpapers
+#graphify/document #graphify/INFERRED #community/androidcontentContext

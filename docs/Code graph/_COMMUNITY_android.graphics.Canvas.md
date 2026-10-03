@@ -42,9 +42,9 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 8 edges to [[_COMMUNITY_GlassCard]]
-- 6 edges to [[_COMMUNITY_android.content.Context]]
+- 5 edges to [[_COMMUNITY_android.content.Context]]
+- 4 edges to [[_COMMUNITY_NotchPanel]]
 - 3 edges to [[_COMMUNITY_LockService.java]]
-- 3 edges to [[_COMMUNITY_Wallpapers]]
 - 1 edge to [[_COMMUNITY_TapWallpaper]]
 - 1 edge to [[_COMMUNITY_MainActivity]]
 - 1 edge to [[_COMMUNITY_NotchPanel.java]]
